@@ -1,0 +1,636 @@
+{
+  "status": "passed",
+  "stage": "native_food_window_complete",
+  "elapsed": 48000,
+  "initialGameTime": 51813,
+  "gameTime": 99813,
+  "actors": [
+    {
+      "id": "438701f4-3aba-4cda-b583-46051f1e0f53",
+      "name": "Oak-4387",
+      "food": 20,
+      "health": 20.0,
+      "position": [
+        -484.2167955212849,
+        64.0,
+        -325.6634440439777
+      ],
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "goal": "HOE",
+        "logs": 0,
+        "activity": "looking for preparation wood",
+        "lastPath": "none",
+        "pathQueries": 0,
+        "recipes": 0
+      },
+      "boating": {
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0,
+        "recipes": 0,
+        "activity": "needs accessible natural boat wood",
+        "landings": 0,
+        "phase": "PREPARE"
+      },
+      "harvest": {
+        "replantsFromStock": 0,
+        "doorsClosed": 4,
+        "doorsOpened": 3,
+        "replantsFromHarvest": 0,
+        "swordHits": 0,
+        "cropsHarvested": 0
+      },
+      "foodAccess": {
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {
+          "gameTime": 53135,
+          "store": "-488, 63, -352",
+          "visited": 15,
+          "steps": 14,
+          "digs": 0,
+          "table": "-478, 63, -361"
+        },
+        "lastFailure": "native clear walking stretch rejected from (-488.4138662520424, 63.41999998688698, -354.30000001192093) toward -492, 63, -338",
+        "activity": "walking toward village food supplies"
+      },
+      "sleeping": false,
+      "crafting": "crafted bread",
+      "breadCrafted": 5,
+      "family": {
+        "status": "saving food for a child",
+        "mood": "CONTENT",
+        "nurseries": [],
+        "seekingFood": true,
+        "fatigue": 0.11937499999999883
+      },
+      "harvestReceipt": {}
+    },
+    {
+      "id": "5432d3df-f37a-4371-9465-aa1568bb4b02",
+      "name": "Nell-5432",
+      "food": 20,
+      "health": 20.0,
+      "position": [
+        -493.8693809698258,
+        64.0,
+        -333.32315411681515
+      ],
+      "inventory": "[4 minecraft:wheat_seeds, 1 minecraft:carrot, 3 minecraft:wheat]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "goal": "HOE",
+        "logs": 0,
+        "activity": "needs accessible natural wood",
+        "lastPath": "none",
+        "pathQueries": 0,
+        "recipes": 0
+      },
+      "boating": {
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0,
+        "recipes": 0,
+        "activity": "boat preparation timed out",
+        "landings": 0,
+        "phase": "NONE"
+      },
+      "harvest": {
+        "replantsFromStock": 2,
+        "doorsClosed": 2,
+        "doorsOpened": 1,
+        "replantsFromHarvest": 2,
+        "swordHits": 0,
+        "cropsHarvested": 4
+      },
+      "foodAccess": {
+        "arrivals": 1,
+        "digs": 0,
+        "lastPlan": {
+          "gameTime": 63172,
+          "store": "-488, 63, -352",
+          "visited": 27,
+          "steps": 25,
+          "digs": 0,
+          "table": "-478, 63, -361"
+        },
+        "lastFailure": "none",
+        "activity": "gathered real hay after reaching the store"
+      },
+      "sleeping": false,
+      "crafting": "going to crafting table",
+      "breadCrafted": 6,
+      "family": {
+        "status": "saving food for a child",
+        "mood": "CONTENT",
+        "nurseries": [],
+        "seekingFood": true,
+        "fatigue": 0.13718749999999846
+      },
+      "harvestReceipt": {
+        "gameTime": 72552,
+        "position": "-489, 64, -323",
+        "crop": "WHEAT",
+        "plantingSource": "owned stock",
+        "nativeDrops": [
+          "1 minecraft:wheat",
+          "3 minecraft:wheat_seeds"
+        ],
+        "inventoryBefore": [
+          "2 minecraft:wheat",
+          "2 minecraft:wheat_seeds",
+          "2 minecraft:carrot",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "inventoryAfter": [
+          "3 minecraft:wheat",
+          "4 minecraft:wheat_seeds",
+          "2 minecraft:carrot",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "overflow": [],
+        "hoeDamageBefore": 0,
+        "hoeDamageAfter": 0,
+        "hoeBroke": false,
+        "usedHoe": false,
+        "cropAfter": "Block{minecraft:wheat}[age\u003d0]"
+      }
+    },
+    {
+      "id": "af2b94ad-f799-4b93-a2c3-e958b2836c84",
+      "name": "Dara-af2b",
+      "food": 19,
+      "health": 20.0,
+      "position": [
+        -487.73976859747876,
+        63.9375,
+        -319.70022021733377
+      ],
+      "inventory": "[2 minecraft:carrot]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "goal": "HOE",
+        "logs": 0,
+        "activity": "looking for preparation wood",
+        "lastPath": "none",
+        "pathQueries": 0,
+        "recipes": 0
+      },
+      "boating": {
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0,
+        "recipes": 0,
+        "activity": "needs accessible natural boat wood",
+        "landings": 0,
+        "phase": "PREPARE"
+      },
+      "harvest": {
+        "replantsFromStock": 1,
+        "doorsClosed": 8,
+        "doorsOpened": 9,
+        "replantsFromHarvest": 1,
+        "swordHits": 0,
+        "cropsHarvested": 2
+      },
+      "foodAccess": {
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {
+          "gameTime": 71581,
+          "store": "-487, 63, -352",
+          "visited": 208,
+          "steps": 36,
+          "digs": 0,
+          "table": "-478, 63, -361"
+        },
+        "lastFailure": "none",
+        "activity": "collecting existing village hay"
+      },
+      "sleeping": false,
+      "crafting": "crafted bread",
+      "breadCrafted": 4,
+      "family": {
+        "status": "saving food for a child",
+        "mood": "CONTENT",
+        "nurseries": [],
+        "seekingFood": true,
+        "fatigue": 0.18381249999999916
+      },
+      "harvestReceipt": {
+        "gameTime": 98141,
+        "position": "-488, 64, -320",
+        "crop": "CARROT",
+        "plantingSource": "owned stock",
+        "nativeDrops": [
+          "1 minecraft:carrot",
+          "2 minecraft:carrot"
+        ],
+        "inventoryBefore": [
+          "1 minecraft:carrot",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "inventoryAfter": [
+          "3 minecraft:carrot",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "overflow": [],
+        "hoeDamageBefore": 0,
+        "hoeDamageAfter": 0,
+        "hoeBroke": false,
+        "usedHoe": false,
+        "cropAfter": "Block{minecraft:carrots}[age\u003d0]"
+      }
+    },
+    {
+      "id": "96cbd3bc-ebc5-4522-b101-b83ee55c471f",
+      "name": "Birch-96cb",
+      "food": 20,
+      "health": 20.0,
+      "position": [
+        -490.9846324796471,
+        64.07916909499465,
+        -330.97768201387674
+      ],
+      "inventory": "[3 minecraft:beetroot_seeds, 4 minecraft:potato, 1 minecraft:wheat, 2 minecraft:wheat_seeds]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "goal": "HOE",
+        "logs": 0,
+        "activity": "looking for preparation wood",
+        "lastPath": "none",
+        "pathQueries": 0,
+        "recipes": 0
+      },
+      "boating": {
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0,
+        "recipes": 0,
+        "activity": "no observed safe water crossing",
+        "landings": 0,
+        "phase": "NONE"
+      },
+      "harvest": {
+        "replantsFromStock": 1,
+        "doorsClosed": 0,
+        "doorsOpened": 1,
+        "replantsFromHarvest": 3,
+        "swordHits": 0,
+        "cropsHarvested": 4
+      },
+      "foodAccess": {
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {
+          "gameTime": 70970,
+          "store": "-487, 63, -352",
+          "visited": 177,
+          "steps": 32,
+          "digs": 0,
+          "table": "-478, 63, -361"
+        },
+        "lastFailure": "none",
+        "activity": "collecting existing village hay"
+      },
+      "sleeping": false,
+      "crafting": "crafted bread",
+      "breadCrafted": 3,
+      "family": {
+        "status": "saving food for a child",
+        "mood": "UNHAPPY",
+        "nurseries": [],
+        "seekingFood": false,
+        "fatigue": 0.7665625000000298
+      },
+      "harvestReceipt": {
+        "gameTime": 83760,
+        "position": "-488, 64, -323",
+        "crop": "WHEAT",
+        "plantingSource": "native harvest",
+        "nativeDrops": [
+          "1 minecraft:wheat",
+          "3 minecraft:wheat_seeds"
+        ],
+        "inventoryBefore": [
+          "1 minecraft:beetroot",
+          "3 minecraft:beetroot_seeds",
+          "7 minecraft:potato",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "inventoryAfter": [
+          "1 minecraft:beetroot",
+          "3 minecraft:beetroot_seeds",
+          "7 minecraft:potato",
+          "1 minecraft:wheat",
+          "2 minecraft:wheat_seeds",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "overflow": [],
+        "hoeDamageBefore": 0,
+        "hoeDamageAfter": 0,
+        "hoeBroke": false,
+        "usedHoe": false,
+        "cropAfter": "Block{minecraft:wheat}[age\u003d0]"
+      }
+    },
+    {
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "name": "Clover-edc5",
+      "food": 20,
+      "health": 20.0,
+      "position": [
+        -464.50098570729847,
+        63.0,
+        -376.3341850912099
+      ],
+      "inventory": "[2 minecraft:bread, 1 minecraft:wooden_pickaxe, 1 minecraft:carrot]",
+      "held": "1 minecraft:wooden_hoe",
+      "wood": {
+        "goal": "NONE",
+        "logs": 0,
+        "activity": "no preparation job",
+        "lastPath": "none",
+        "pathQueries": 0,
+        "recipes": 0
+      },
+      "boating": {
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0,
+        "recipes": 0,
+        "activity": "no water trip",
+        "landings": 0,
+        "phase": "NONE"
+      },
+      "harvest": {
+        "replantsFromStock": 0,
+        "doorsClosed": 2,
+        "doorsOpened": 2,
+        "replantsFromHarvest": 1,
+        "swordHits": 0,
+        "cropsHarvested": 1
+      },
+      "foodAccess": {
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {},
+        "lastFailure": "none",
+        "activity": "no food access trip"
+      },
+      "sleeping": false,
+      "crafting": "crafted bread",
+      "breadCrafted": 1,
+      "family": {
+        "status": "saving food for a child",
+        "mood": "CONTENT",
+        "nurseries": [],
+        "seekingFood": true,
+        "fatigue": 0.11874999999999884
+      },
+      "harvestReceipt": {
+        "gameTime": 83174,
+        "position": "-486, 64, -325",
+        "crop": "CARROT",
+        "plantingSource": "native harvest",
+        "nativeDrops": [
+          "1 minecraft:carrot",
+          "3 minecraft:carrot"
+        ],
+        "inventoryBefore": [
+          "2 minecraft:bread",
+          "1 minecraft:wooden_pickaxe",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "inventoryAfter": [
+          "2 minecraft:bread",
+          "1 minecraft:wooden_pickaxe",
+          "3 minecraft:carrot",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "overflow": [],
+        "hoeDamageBefore": 0,
+        "hoeDamageAfter": 1,
+        "hoeBroke": false,
+        "usedHoe": true,
+        "cropAfter": "Block{minecraft:carrots}[age\u003d0]"
+      }
+    },
+    {
+      "id": "1d165330-2598-410c-827e-cc3b13c7bef9",
+      "name": "Birch-1d16",
+      "food": 20,
+      "health": 20.0,
+      "position": [
+        -489.2441472461776,
+        63.0,
+        -352.7607913125627
+      ],
+      "inventory": "[1 minecraft:beetroot_seeds, 2 minecraft:bread, 3 minecraft:wheat]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "goal": "HOE",
+        "logs": 0,
+        "activity": "needs accessible natural wood",
+        "lastPath": "none",
+        "pathQueries": 0,
+        "recipes": 0
+      },
+      "boating": {
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0,
+        "recipes": 0,
+        "activity": "no water trip",
+        "landings": 0,
+        "phase": "NONE"
+      },
+      "harvest": {
+        "replantsFromStock": 0,
+        "doorsClosed": 6,
+        "doorsOpened": 6,
+        "replantsFromHarvest": 0,
+        "swordHits": 0,
+        "cropsHarvested": 0
+      },
+      "foodAccess": {
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {},
+        "lastFailure": "none",
+        "activity": "no food access trip"
+      },
+      "sleeping": false,
+      "crafting": "going to crafting table",
+      "breadCrafted": 3,
+      "family": {
+        "status": "saving food for a child",
+        "mood": "CONTENT",
+        "nurseries": [],
+        "seekingFood": true,
+        "fatigue": 0.12031249999999881
+      },
+      "harvestReceipt": {}
+    },
+    {
+      "id": "c5578b5b-8991-428d-9d82-7cb57a956269",
+      "name": "Alder-c557",
+      "food": 9,
+      "health": 20.0,
+      "position": [
+        -467.3125,
+        62.710764312744146,
+        -365.0308607870923
+      ],
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "goal": "NONE",
+        "logs": 0,
+        "activity": "no preparation job",
+        "lastPath": "none",
+        "pathQueries": 0,
+        "recipes": 0
+      },
+      "boating": {
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0,
+        "recipes": 0,
+        "activity": "boat preparation timed out",
+        "landings": 0,
+        "phase": "NONE"
+      },
+      "harvest": {
+        "replantsFromStock": 0,
+        "doorsClosed": 6,
+        "doorsOpened": 5,
+        "replantsFromHarvest": 0,
+        "swordHits": 0,
+        "cropsHarvested": 0
+      },
+      "foodAccess": {
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {},
+        "lastFailure": "none",
+        "activity": "no food access trip"
+      },
+      "sleeping": false,
+      "crafting": "idle",
+      "breadCrafted": 0,
+      "family": {
+        "status": "saving food for a child",
+        "mood": "MISERABLE",
+        "nurseries": [],
+        "seekingFood": false,
+        "fatigue": 0.7300000000000266
+      },
+      "harvestReceipt": {}
+    },
+    {
+      "id": "f572553d-4483-44b5-8ed5-6ffe7e7745b7",
+      "name": "Tansy-f572",
+      "food": 15,
+      "health": 20.0,
+      "position": [
+        -497.3223266373513,
+        63.0,
+        -324.49634267105534
+      ],
+      "inventory": "[1 minecraft:carrot, 5 minecraft:wheat, 4 minecraft:wheat_seeds]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "goal": "TABLE",
+        "logs": 0,
+        "activity": "needs accessible natural wood",
+        "lastPath": "none",
+        "pathQueries": 0,
+        "recipes": 0
+      },
+      "boating": {
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0,
+        "recipes": 0,
+        "activity": "boat preparation timed out",
+        "landings": 0,
+        "phase": "NONE"
+      },
+      "harvest": {
+        "replantsFromStock": 0,
+        "doorsClosed": 2,
+        "doorsOpened": 2,
+        "replantsFromHarvest": 0,
+        "swordHits": 0,
+        "cropsHarvested": 0
+      },
+      "foodAccess": {
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {},
+        "lastFailure": "none",
+        "activity": "no food access trip"
+      },
+      "sleeping": false,
+      "crafting": "needs crafting table",
+      "breadCrafted": 5,
+      "family": {
+        "status": "saving food for a child",
+        "mood": "UNHAPPY",
+        "nurseries": [],
+        "seekingFood": false,
+        "fatigue": 0.1206249999999988
+      },
+      "harvestReceipt": {}
+    }
+  ],
+  "farm": {
+    "mature": 0,
+    "rawBrightness": 15,
+    "planted": 25,
+    "totalAge": 88
+  },
+  "harvestReceipts": 11,
+  "repeatYields": 0,
+  "newManagedActors": [],
+  "targetTps": 80.0,
+  "scope": "Actual copied island residents and native crops; normal clock, random growth and controller work only. No actor, food, crop, inventory or resource setters. A first harvest alone is not sustained food or birth proof."
+}

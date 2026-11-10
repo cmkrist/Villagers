@@ -1,0 +1,431 @@
+{
+  "kind": "READ ONLY native home/collision/path inspection; no path assignment or setters",
+  "gameTime": 58782,
+  "actor": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+  "home": {
+    "dimension": "minecraft:overworld",
+    "x": -269,
+    "y": 75,
+    "z": 733
+  },
+  "position": [
+    -281.52264449229,
+    70.875,
+    727.9136988296151
+  ],
+  "pose": "STANDING",
+  "width": 0.6,
+  "height": 1.95,
+  "onGround": true,
+  "box": [
+    -281.8226445042109,
+    70.875,
+    727.6136988176942,
+    -281.22264448036907,
+    72.82500004768372,
+    728.213698841536
+  ],
+  "collisionFree": true,
+  "canOpenDoors": true,
+  "homePath": {
+    "target": "-269, 76, 733",
+    "canReach": false,
+    "nodes": 15,
+    "present": true,
+    "positions": [
+      "-282, 71, 728",
+      "-281, 71, 728",
+      "-280, 71, 728",
+      "-279, 72, 728",
+      "-278, 73, 728",
+      "-278, 74, 729",
+      "-277, 75, 730",
+      "-276, 76, 730",
+      "-275, 75, 731",
+      "-274, 75, 731",
+      "-273, 75, 731",
+      "-272, 75, 731",
+      "-271, 75, 731",
+      "-270, 75, 731",
+      "-269, 75, 731"
+    ]
+  },
+  "nearby": [
+    {
+      "position": "-283, 68, 726",
+      "state": "Block{minecraft:short_grass}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-282, 68, 726",
+      "state": "Block{minecraft:mud}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.875, 1.0]"
+      ]
+    },
+    {
+      "position": "-281, 68, 726",
+      "state": "Block{minecraft:mud}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.875, 1.0]"
+      ]
+    },
+    {
+      "position": "-283, 69, 726",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-282, 69, 726",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-281, 69, 726",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-283, 70, 726",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-282, 70, 726",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-281, 70, 726",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-283, 71, 726",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-282, 71, 726",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-281, 71, 726",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-283, 72, 726",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-282, 72, 726",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-281, 72, 726",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-283, 68, 727",
+      "state": "Block{minecraft:mud}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.875, 1.0]"
+      ]
+    },
+    {
+      "position": "-282, 68, 727",
+      "state": "Block{minecraft:mud}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.875, 1.0]"
+      ]
+    },
+    {
+      "position": "-281, 68, 727",
+      "state": "Block{minecraft:mud}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.875, 1.0]"
+      ]
+    },
+    {
+      "position": "-283, 69, 727",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-282, 69, 727",
+      "state": "Block{minecraft:mud}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.875, 1.0]"
+      ]
+    },
+    {
+      "position": "-281, 69, 727",
+      "state": "Block{minecraft:mud}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.875, 1.0]"
+      ]
+    },
+    {
+      "position": "-283, 70, 727",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-282, 70, 727",
+      "state": "Block{minecraft:vine}[east\u003dfalse,north\u003dfalse,south\u003dfalse,up\u003dfalse,west\u003dtrue]",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-281, 70, 727",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-283, 71, 727",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-282, 71, 727",
+      "state": "Block{minecraft:vine}[east\u003dfalse,north\u003dfalse,south\u003dfalse,up\u003dfalse,west\u003dtrue]",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-281, 71, 727",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-283, 72, 727",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-282, 72, 727",
+      "state": "Block{minecraft:vine}[east\u003dfalse,north\u003dfalse,south\u003dfalse,up\u003dfalse,west\u003dtrue]",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-281, 72, 727",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-283, 68, 728",
+      "state": "Block{minecraft:mud}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.875, 1.0]"
+      ]
+    },
+    {
+      "position": "-282, 68, 728",
+      "state": "Block{minecraft:mud}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.875, 1.0]"
+      ]
+    },
+    {
+      "position": "-281, 68, 728",
+      "state": "Block{minecraft:mud}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.875, 1.0]"
+      ]
+    },
+    {
+      "position": "-283, 69, 728",
+      "state": "Block{minecraft:mud}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.875, 1.0]"
+      ]
+    },
+    {
+      "position": "-282, 69, 728",
+      "state": "Block{minecraft:mud}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.875, 1.0]"
+      ]
+    },
+    {
+      "position": "-281, 69, 728",
+      "state": "Block{minecraft:mud}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.875, 1.0]"
+      ]
+    },
+    {
+      "position": "-283, 70, 728",
+      "state": "Block{minecraft:mud}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.875, 1.0]"
+      ]
+    },
+    {
+      "position": "-282, 70, 728",
+      "state": "Block{minecraft:mud}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.875, 1.0]"
+      ]
+    },
+    {
+      "position": "-281, 70, 728",
+      "state": "Block{minecraft:mud}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.875, 1.0]"
+      ]
+    },
+    {
+      "position": "-283, 71, 728",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-282, 71, 728",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-281, 71, 728",
+      "state": "Block{minecraft:vine}[east\u003dfalse,north\u003dfalse,south\u003dfalse,up\u003dfalse,west\u003dtrue]",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-283, 72, 728",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-282, 72, 728",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-281, 72, 728",
+      "state": "Block{minecraft:vine}[east\u003dfalse,north\u003dfalse,south\u003dfalse,up\u003dfalse,west\u003dtrue]",
+      "intersectsBody": false,
+      "shape": []
+    }
+  ],
+  "localCandidates": [
+    {
+      "feet": [
+        -282.52264449229,
+        69.875,
+        727.9136988296151
+      ],
+      "lowerCollisionFree": false,
+      "path": {
+        "target": "-283, 69, 727",
+        "canReach": true,
+        "nodes": 2,
+        "present": true,
+        "positions": [
+          "-282, 71, 728",
+          "-283, 69, 727"
+        ]
+      }
+    },
+    {
+      "feet": [
+        -280.52264449229,
+        69.875,
+        727.9136988296151
+      ],
+      "lowerCollisionFree": false,
+      "path": {
+        "target": "-281, 70, 727",
+        "canReach": true,
+        "nodes": 2,
+        "present": true,
+        "positions": [
+          "-282, 71, 728",
+          "-281, 70, 727"
+        ]
+      }
+    },
+    {
+      "feet": [
+        -281.52264449229,
+        69.875,
+        726.9136988296151
+      ],
+      "lowerCollisionFree": true,
+      "path": {
+        "target": "-282, 69, 726",
+        "canReach": true,
+        "nodes": 3,
+        "present": true,
+        "positions": [
+          "-282, 71, 728",
+          "-282, 70, 727",
+          "-282, 69, 726"
+        ]
+      }
+    },
+    {
+      "feet": [
+        -281.52264449229,
+        69.875,
+        728.9136988296151
+      ],
+      "lowerCollisionFree": false,
+      "path": {
+        "target": "-282, 71, 728",
+        "canReach": true,
+        "nodes": 1,
+        "present": true,
+        "positions": [
+          "-282, 71, 728"
+        ]
+      }
+    }
+  ]
+}

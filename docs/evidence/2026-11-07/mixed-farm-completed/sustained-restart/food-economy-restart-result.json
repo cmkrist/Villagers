@@ -1,0 +1,53 @@
+{
+  "status": "failed",
+  "failure": "java.lang.AssertionError: wheat costs not replayed on restart",
+  "events": [
+    {
+      "phase": "reopened saved fixture WITHOUT supplies, chamber edits or actor setters",
+      "tick": 96061,
+      "producer": {
+        "id": "464f4f44-4543-4f4e-0000-000000000007",
+        "food": 20,
+        "mood": "CONTENT",
+        "wheat": 2,
+        "crafted": 0,
+        "target": 15,
+        "bread": 1,
+        "received": 0,
+        "given": 1,
+        "requestCount": 0
+      },
+      "requester": {
+        "id": "464f4f44-4543-4f4e-0000-000000000002",
+        "food": 9,
+        "mood": "CONTENT",
+        "wheat": 0,
+        "crafted": 0,
+        "target": 15,
+        "bread": 1,
+        "received": 1,
+        "given": 0,
+        "requestCount": 0
+      },
+      "earnedMealObserved": false,
+      "foodDeliveries": 0,
+      "foodDeliveryPathRejections": 0,
+      "cropAges": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "harvestsByCell": {},
+      "nearbyObserverCount": 0,
+      "earnedBreadInRequesterBag": 1,
+      "plotsCultivated": 0,
+      "meanServerTickMillis": 1.554042
+    }
+  ],
+  "fixture": "NEW isolated47bare dirt plots with supplied water/light/beds/table; one finite native farm grant; producer initially holds64wheat and64beet seeds plusoneironhoe; selected founders; normal80exhaustion/day and3random tick speed at80TPS; initial6marked bread each; ordinary controller tills, pays and chooses crops; no grain resupply or post-setup body/clock/growth setters; not primary history or full-threat survival acceptance"
+}

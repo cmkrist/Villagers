@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="local.villagers.mind.PlayerImpressionPersistenceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:36:11.322Z" hostname="td001" time="0.005">
+  <properties/>
+  <testcase name="schemaOneJsonMigratesWithoutLosingIdentityHomeOrActionLearning()" classname="local.villagers.mind.PlayerImpressionPersistenceTest" time="0.003"/>
+  <testcase name="socialHistoryAndCooldownsSurviveDiskReload()" classname="local.villagers.mind.PlayerImpressionPersistenceTest" time="0.0"/>
+  <testcase name="oldSnapshotConstructorIsAcceptedAndSavesAsCurrentSchema()" classname="local.villagers.mind.PlayerImpressionPersistenceTest" time="0.001"/>
+  <testcase name="unknownFutureSchemaRemainsUntouchedDuringMigration()" classname="local.villagers.mind.PlayerImpressionPersistenceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

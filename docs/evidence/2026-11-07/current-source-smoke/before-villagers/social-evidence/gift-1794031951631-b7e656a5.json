@@ -1,0 +1,99 @@
+{
+  "at": "2026-11-07T06:12:31.630122676Z",
+  "game_time": 5504,
+  "operation": "gift",
+  "role": "play",
+  "learning_mode": "adaptive",
+  "before": {
+    "observer_hand": "0 minecraft:air",
+    "villager_position": "(-225.5827262781753, 86.41999998688698, 774.6999999880791)",
+    "health": 20.0,
+    "distance": 1.8257723,
+    "impression": {
+      "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+      "awe": 0.85,
+      "trust": 0.11000000000000001,
+      "fear": 0.13999999999999999,
+      "confidence": 0.08,
+      "lastObservedTick": 5383,
+      "lastExposureTick": 5383,
+      "lastGiftTick": -1,
+      "lastProtectionTick": -1,
+      "evidenceCount": 2,
+      "notes": [
+        {
+          "tick": 5183,
+          "evidence": "EXPOSURE"
+        },
+        {
+          "tick": 5383,
+          "evidence": "EXPOSURE"
+        }
+      ]
+    },
+    "social_activity": {
+      "reaction": "NEUTRAL",
+      "avoidance_episodes": 0,
+      "active_until": 0,
+      "attention_episodes": 2,
+      "next_episode_at": 5583,
+      "approach_episodes": 0,
+      "rejected_paths": 0
+    },
+    "observer_uuid": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+    "observer_position": "(-227.31250362585533, 87.0, 774.629894093414)",
+    "villager_uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+    "line_of_sight": true
+  },
+  "intervention": "Explicit operator fixture: exactly one minecraft:bread, followed by real Villagers.offerGift; failed leftovers remain in the observer hand.",
+  "native_gift_transferred": true,
+  "resident_bread_before": 0,
+  "resident_bread_after": 1,
+  "observer_hand_after": "0 minecraft:air",
+  "after": {
+    "observer_hand": "0 minecraft:air",
+    "villager_position": "(-225.5827262781753, 86.41999998688698, 774.6999999880791)",
+    "health": 20.0,
+    "distance": 1.8257723,
+    "impression": {
+      "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+      "awe": 0.88,
+      "trust": 0.29000000000000004,
+      "fear": 0.03999999999999998,
+      "confidence": 0.21000000000000002,
+      "lastObservedTick": 5504,
+      "lastExposureTick": 5383,
+      "lastGiftTick": 5504,
+      "lastProtectionTick": -1,
+      "evidenceCount": 3,
+      "notes": [
+        {
+          "tick": 5183,
+          "evidence": "EXPOSURE"
+        },
+        {
+          "tick": 5383,
+          "evidence": "EXPOSURE"
+        },
+        {
+          "tick": 5504,
+          "evidence": "USEFUL_GIFT"
+        }
+      ]
+    },
+    "social_activity": {
+      "reaction": "NEUTRAL",
+      "avoidance_episodes": 0,
+      "active_until": 0,
+      "attention_episodes": 2,
+      "next_episode_at": 5583,
+      "approach_episodes": 0,
+      "rejected_paths": 0
+    },
+    "observer_uuid": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+    "observer_position": "(-227.31250362585533, 87.0, 774.629894093414)",
+    "villager_uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+    "line_of_sight": true
+  },
+  "harm_attempt_used": false
+}

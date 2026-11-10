@@ -1,0 +1,150 @@
+{
+  "capturedUTC": "2026-11-07T22:16:19.097591+00:00",
+  "nativeAcceptance": "FAILED; sustainable food adequacy, earned bread sharing and repeat regrowth are NOT established",
+  "highStartingRations": {
+    "status": "budget exhausted",
+    "initialBreadPerAdult": 6,
+    "durationTicks": 48000,
+    "nativeHarvests": 0,
+    "finalCropAges": [
+      0,
+      3,
+      5,
+      13,
+      3,
+      6,
+      3,
+      7
+    ],
+    "interpretation": "Producer still held personal reserve; production not exercised within this window."
+  },
+  "limitedStartingRations": {
+    "status": "failed",
+    "failure": "java.lang.AssertionError: both fixture adults must survive; never replaced",
+    "initialBreadPerAdult": 2,
+    "lastPeriodicObservation": {
+      "phase": "renewable observation",
+      "tick": 43200,
+      "producer": {
+        "wheat": 2,
+        "crafted": 0,
+        "target": 15,
+        "bread": 0,
+        "received": 0,
+        "given": 0,
+        "requestCount": 0,
+        "id": "464f4f44-4543-4f4e-0000-000000000007",
+        "food": 16,
+        "mood": "CONTENT"
+      },
+      "requester": {
+        "wheat": 0,
+        "crafted": 0,
+        "target": 15,
+        "bread": 0,
+        "received": 0,
+        "given": 0,
+        "requestCount": 12,
+        "id": "464f4f44-4543-4f4e-0000-000000000002",
+        "food": 0,
+        "mood": "MISERABLE"
+      },
+      "cropAges": [
+        2,
+        4,
+        6,
+        9,
+        13,
+        6,
+        2,
+        1
+      ],
+      "harvestsByCell": {
+        "11, 81, 4": 1,
+        "8, 81, 7": 1
+      },
+      "nearbyObserverCount": 1,
+      "earnedBreadInRequesterBag": 0
+    },
+    "nativePaidHarvests": 3,
+    "wheatIncome": 3,
+    "exactlyOneBreadRecipeVerifiedByMemoryAndFiniteInput": true,
+    "paidReplantAndSeedConservationVerifiedForEveryReceipt": true,
+    "breadSharingEstablished": false,
+    "repeatHarvestOfSameCellEstablished": false,
+    "actors": [
+      {
+        "role": "producer",
+        "id": "464f4f44-4543-4f4e-0000-000000000007",
+        "food": {
+          "foodLevel": 20,
+          "saturation": 6.0,
+          "exhaustion": 0.9677107,
+          "timer": 0
+        },
+        "death": null,
+        "finalBreadCraftingMemories": [
+          {
+            "index": 410,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Crafted 1 bread from 3 wheat at 3, 81, 4"
+          }
+        ]
+      },
+      {
+        "role": "requester",
+        "id": "464f4f44-4543-4f4e-0000-000000000002",
+        "food": {
+          "foodLevel": 0,
+          "saturation": 0.0,
+          "exhaustion": 2.5388873,
+          "timer": 0
+        },
+        "death": {
+          "tick": 43668,
+          "cause": "starve"
+        },
+        "finalBreadCraftingMemories": []
+      }
+    ]
+  },
+  "interventions": "Prepared farm,48age-zero wheat,water/light/beds/table,64seed bank,oneironhoe,selected founders,declared marked initial rations,stationary observer,80TPS. Normal80base exhaustion and3random tick speed. No post-setup food/grain/age/health/clock/crop/growth/learning/body-position setters.",
+  "primaryWorldOpenedOrModified": false,
+  "ownedTerminal": [
+    {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/renewable-food-server-v2",
+      "pid": 1106183,
+      "startTicks": "16726588",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/renewable-food-server-v2",
+      "launchedAtEpoch": 1794088441.9587061,
+      "serverExitCode": 0,
+      "runnerExitCode": 1,
+      "sameIdentityAlive": false
+    },
+    {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/renewable-food-server-v3",
+      "pid": 1111819,
+      "startTicks": "16788216",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/renewable-food-server-v3",
+      "launchedAtEpoch": 1794089058.236192,
+      "serverExitCode": 0,
+      "runnerExitCode": 1,
+      "sameIdentityAlive": false
+    }
+  ],
+  "sourceChecks": {
+    "javaTests": {
+      "tests": 331,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "pythonTests": 10
+  },
+  "newCode": {
+    "queueTravel": "Separate2560tick planning queue bound from400tick travel/80tick movement stall; stale dispatch rejection; deterministic128requester check.",
+    "cropLayout": "Prefer a possessed alternative seed when visible same-crop neighbours crowd a newly granted plot. Permissions, payment and replant reserves unchanged. Native new-plot selection remains pending."
+  },
+  "nextExperiment": "Validate actual paid new-plot planting with mixed real seed choices, declared startup reserves sufficient for native first-crop latency, and an observation window covering regrowth. Preserve these failed fixture outcomes; never merge same-UUID histories or alter Lead primary/deaths."
+}

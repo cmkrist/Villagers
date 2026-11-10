@@ -1,0 +1,66 @@
+{
+  "status": "restart-passed",
+  "events": [
+    {
+      "phase": "reopen without supplies or actor/terrain/budget setters",
+      "tick": 2168,
+      "foodAtPurchase": -1,
+      "giftBoundaryChecked": false,
+      "buyer": {
+        "food": 15,
+        "health": 20.0,
+        "money": 0,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      },
+      "seller": {
+        "food": 20,
+        "health": 20.0,
+        "money": 1,
+        "bread": 3,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      }
+    },
+    {
+      "phase": "clean restart retained food, inputs and earned money",
+      "tick": 2268,
+      "foodAtPurchase": -1,
+      "giftBoundaryChecked": false,
+      "buyer": {
+        "food": 15,
+        "health": 20.0,
+        "money": 0,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      },
+      "seller": {
+        "food": 20,
+        "health": 20.0,
+        "money": 1,
+        "bread": 3,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      }
+    }
+  ],
+  "fixture": "NEW isolated supplied peaceful lit chamber,beds,table,two adults with working hoes/common initial language; generous/frugal non-greedy seller starts three bread/six wheat; glutton buyer starts no food and receives one marked coin by real operator gift. Initial buyer charitable-request budget set beyond test window to isolate paid intent.80TPS,400base exhaustion/day. No post-setup supplies,body/health/clock/growth/position/budget setters or scripted successful trade/production/meal. One explicit native gift-denial attempt checks the paid-request boundary. Finite consent/income test, not renewable or sustainable survival."
+}

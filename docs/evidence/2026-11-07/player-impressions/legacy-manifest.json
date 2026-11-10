@@ -1,0 +1,866 @@
+{
+  "schema_version": 1,
+  "captured_at_utc": "2026-11-07T06:10:35.199413+00:00",
+  "purpose": "Read-only schema1 pre-upgrade baseline for player-impression schema2 migration audit",
+  "source_runtime": "/home/niko/.internal/source/Villagers/runs/play",
+  "world": "/home/niko/.internal/source/Villagers/runs/play/saves/VillageTrial",
+  "client_running_at_capture": false,
+  "source_lock": "No session.lock exists: play copy has not been opened; no client process found; no lock file created",
+  "mind_count": 11,
+  "schema_versions": [
+    1
+  ],
+  "archive_set_sha256": "dc60f158bdd523150b7f93aedc14d57a9597c1e7339052ccf3feb75d87d8e47d",
+  "canonical_field_hash_format": "SHA256 of UTF8 JSON with sorted keys, no whitespace, finite numbers; complete original bytes separately archived",
+  "comparison_expectations": {
+    "migration_only_exact": [
+      "id",
+      "name",
+      "personality",
+      "home",
+      "values",
+      "visits",
+      "learningUpdates",
+      "hunger",
+      "fatigue",
+      "loneliness",
+      "memories"
+    ],
+    "new_schema2_fields": "impressions may initially be empty; no encounters invented by migration",
+    "live_runtime_caveat": "Loaded simulation can legitimately change drives, policy, memories and homes after migration. Compare at the migration boundary before interpreting later changes as data loss.",
+    "downgrade": "Keep original schema1 bytes and full-world backup;0.2.0 cannot interpret schema2"
+  },
+  "minds": {
+    "02b0b914-c640-48c3-8fee-df600f34991e": {
+      "source": "/home/niko/.internal/source/Villagers/runs/play/saves/VillageTrial/villagers/02b0b914-c640-48c3-8fee-df600f34991e/mind.json",
+      "archive": "legacy-minds/02b0b914-c640-48c3-8fee-df600f34991e.json",
+      "sha256": "35d6699dafe5b2e3de7ca83943a65f74019c9dba125bd4bd514280750d510bc0",
+      "bytes": 10976,
+      "schema_version": 1,
+      "identity": {
+        "id": "02b0b914-c640-48c3-8fee-df600f34991e",
+        "name": "Ember-02b0",
+        "personality": {
+          "boldness": 0.9725819717388747,
+          "sociability": 0.28551180109406826,
+          "curiosity": 0.8370391533879668
+        }
+      },
+      "identity_sha256": "0b2194d97bf31047bcb02cbb3ee5332b2edf77da0bcc659570b357352bb7de39",
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -214,
+        "y": 71,
+        "z": 749
+      },
+      "home_sha256": "a09d5a608f4ac14c1f02f8ece1e84c983532ca3d5cc30b1418c6f998a8c43616",
+      "policy": {
+        "learningUpdates": 52,
+        "values_sha256": "4d66aa42b700948d365030d3a8edc0dccc3cab4316ebcfb120da55e64bb8afd1",
+        "visits_sha256": "da3c91b346690c4394c97b23ba3b355ca3881bb7729d9c69c89ac0588050b6c5",
+        "contexts": 32,
+        "actions_per_context": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "total_visits": 52,
+        "minimum_value": 0.0,
+        "maximum_value": 0.09910714285714292
+      },
+      "needs": {
+        "hunger": 0.31650000000000267,
+        "fatigue": 0.18737499999999815,
+        "loneliness": 0.0998571428571404
+      },
+      "memories": {
+        "count": 48,
+        "sha256": "5a8ecc9864ac2ed58c3973b078faba12e5ad1a5cced22c3a6e2bde635214275c"
+      }
+    },
+    "1e1a7861-7b3a-4be0-8499-c0bcada07d1a": {
+      "source": "/home/niko/.internal/source/Villagers/runs/play/saves/VillageTrial/villagers/1e1a7861-7b3a-4be0-8499-c0bcada07d1a/mind.json",
+      "archive": "legacy-minds/1e1a7861-7b3a-4be0-8499-c0bcada07d1a.json",
+      "sha256": "3335556aed66f574cfb821563f2ae8a6af5c8f2a97416ed73a29e7be35fc6a24",
+      "bytes": 6921,
+      "schema_version": 1,
+      "identity": {
+        "id": "1e1a7861-7b3a-4be0-8499-c0bcada07d1a",
+        "name": "Fern-1e1a",
+        "personality": {
+          "boldness": 0.23776508431890853,
+          "sociability": 0.6458577217714316,
+          "curiosity": 0.8210603247159296
+        }
+      },
+      "identity_sha256": "6312b0ea96cd456fe4cae8cbe32211d1eff2ee35c95d6fca131119a3d7f34694",
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -274,
+        "y": 74,
+        "z": 744
+      },
+      "home_sha256": "79a074e07f31844a79aea6551151915f13e78ba2ece2caab28997b01cbe04cc0",
+      "policy": {
+        "learningUpdates": 17,
+        "values_sha256": "9fc068c6f08151742e05d5e7ac9076c8c8d2a159cf58bf13a25cca415f79e626",
+        "visits_sha256": "e84e1a38a1d8107d72077edd2a8b678b63bbaf2dbf0339466cffc4f9999e72d0",
+        "contexts": 32,
+        "actions_per_context": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "total_visits": 17,
+        "minimum_value": 0.0,
+        "maximum_value": 0.0
+      },
+      "needs": {
+        "hunger": 0.31670833333333603,
+        "fatigue": 0.18753124999999815,
+        "loneliness": 0.3000357142857116
+      },
+      "memories": {
+        "count": 17,
+        "sha256": "33cdcc22543e860664f857e3e122f54aa72d0292eab84abd9650456047d057a8"
+      }
+    },
+    "231e4c00-19df-4be5-a5ba-5ebc6d29e27f": {
+      "source": "/home/niko/.internal/source/Villagers/runs/play/saves/VillageTrial/villagers/231e4c00-19df-4be5-a5ba-5ebc6d29e27f/mind.json",
+      "archive": "legacy-minds/231e4c00-19df-4be5-a5ba-5ebc6d29e27f.json",
+      "sha256": "70de202d8b2a2f37c2d7b204cf4e1d5da1e87f01d6d4d9229819c9c7b0cf93da",
+      "bytes": 6827,
+      "schema_version": 1,
+      "identity": {
+        "id": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+        "name": "Juniper-231e",
+        "personality": {
+          "boldness": 0.4704276688014406,
+          "sociability": 0.23539098168018557,
+          "curiosity": 0.4461641399549596
+        }
+      },
+      "identity_sha256": "8e7a51566595409a5578d8c2da544a3749a4c460578c7642ec902da60ff27e85",
+      "home": null,
+      "home_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "policy": {
+        "learningUpdates": 17,
+        "values_sha256": "9fc068c6f08151742e05d5e7ac9076c8c8d2a159cf58bf13a25cca415f79e626",
+        "visits_sha256": "e84e1a38a1d8107d72077edd2a8b678b63bbaf2dbf0339466cffc4f9999e72d0",
+        "contexts": 32,
+        "actions_per_context": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "total_visits": 17,
+        "minimum_value": 0.0,
+        "maximum_value": 0.0
+      },
+      "needs": {
+        "hunger": 0.31654166666666933,
+        "fatigue": 0.18740624999999816,
+        "loneliness": 0.29989285714285446
+      },
+      "memories": {
+        "count": 17,
+        "sha256": "33cdcc22543e860664f857e3e122f54aa72d0292eab84abd9650456047d057a8"
+      }
+    },
+    "5894771d-5fcc-45c5-bb4c-4733e2c992c4": {
+      "source": "/home/niko/.internal/source/Villagers/runs/play/saves/VillageTrial/villagers/5894771d-5fcc-45c5-bb4c-4733e2c992c4/mind.json",
+      "archive": "legacy-minds/5894771d-5fcc-45c5-bb4c-4733e2c992c4.json",
+      "sha256": "5a770851534251f2a25e0093c52c4c97672d07154ab337e364adb7c81ffc8218",
+      "bytes": 10995,
+      "schema_version": 1,
+      "identity": {
+        "id": "5894771d-5fcc-45c5-bb4c-4733e2c992c4",
+        "name": "Moss-5894",
+        "personality": {
+          "boldness": 0.5607215216724727,
+          "sociability": 0.1755884529065478,
+          "curiosity": 0.274085958301994
+        }
+      },
+      "identity_sha256": "360cf4c2a34286badcdc4369979929af0a7e8007d3cf3aa11ecfe3ae40ec5098",
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -218,
+        "y": 71,
+        "z": 761
+      },
+      "home_sha256": "30b4a7c83e90b7cd9e6a81c974dbf6b1babf6e868346d5ca5bc3c17f96a4d78c",
+      "policy": {
+        "learningUpdates": 52,
+        "values_sha256": "eeb8527b8495b8ad4c60a0e5c961b63343f444f0fdda0fe6fa23b4e5688e2774",
+        "visits_sha256": "bf61659220d32e63aa0c56d39dc1baf44b856995824f1997aaa845dcc866c25c",
+        "contexts": 32,
+        "actions_per_context": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "total_visits": 52,
+        "minimum_value": 0.0,
+        "maximum_value": 0.09839285714285725
+      },
+      "needs": {
+        "hunger": 0.31670833333333603,
+        "fatigue": 0.06753124999999892,
+        "loneliness": 0.10003571428571364
+      },
+      "memories": {
+        "count": 48,
+        "sha256": "c8ac875f505b72d0df878a2457a433250d0a317a34189f98ec6e804f1fb7bd77"
+      }
+    },
+    "5ad3aad5-3e4b-4eb6-8158-87731868dc03": {
+      "source": "/home/niko/.internal/source/Villagers/runs/play/saves/VillageTrial/villagers/5ad3aad5-3e4b-4eb6-8158-87731868dc03/mind.json",
+      "archive": "legacy-minds/5ad3aad5-3e4b-4eb6-8158-87731868dc03.json",
+      "sha256": "735a166fd20158dd4fbcb1d28f8b6fefcdd2cd0dd87012e7f05ccd5f80d692cb",
+      "bytes": 10997,
+      "schema_version": 1,
+      "identity": {
+        "id": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+        "name": "Fern-5ad3",
+        "personality": {
+          "boldness": 0.15464235845090935,
+          "sociability": 0.9583362337523995,
+          "curiosity": 0.24592322277579626
+        }
+      },
+      "identity_sha256": "f21ddfe64e9d93e91a90455a8b0e9e9721056e06567daec5a4dcf54365ea7542",
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -227,
+        "y": 72,
+        "z": 773
+      },
+      "home_sha256": "dd64556f7d9b8233b364e71d768aa166e40b40f8e970b13ff6accd56ee554147",
+      "policy": {
+        "learningUpdates": 54,
+        "values_sha256": "34bd16de544db56e03271e715ddeb1bccf7d308efe7f11b8f35ca502d35d3fed",
+        "visits_sha256": "915c493a2f4de8172da65616ab0c2fbbb61ad648e4c4024940ae271ce5f493cb",
+        "contexts": 32,
+        "actions_per_context": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "total_visits": 54,
+        "minimum_value": -0.02314899553571425,
+        "maximum_value": 0.0
+      },
+      "needs": {
+        "hunger": 0.31650000000000267,
+        "fatigue": 0.18737499999999815,
+        "loneliness": 0.06749999999999988
+      },
+      "memories": {
+        "count": 48,
+        "sha256": "c90b7ad9ea79fc69eabac5a4337e8988a32c7ce8edcc0ee076f52ff564a2c597"
+      }
+    },
+    "8d572a22-a431-47a1-b419-b12ab59b4e35": {
+      "source": "/home/niko/.internal/source/Villagers/runs/play/saves/VillageTrial/villagers/8d572a22-a431-47a1-b419-b12ab59b4e35/mind.json",
+      "archive": "legacy-minds/8d572a22-a431-47a1-b419-b12ab59b4e35.json",
+      "sha256": "0ca764927e5882c40d50c33401d4da80acfdb20d70fbef05b98bcc292e48ac1c",
+      "bytes": 11070,
+      "schema_version": 1,
+      "identity": {
+        "id": "8d572a22-a431-47a1-b419-b12ab59b4e35",
+        "name": "Birch-8d57",
+        "personality": {
+          "boldness": 0.9494383755740162,
+          "sociability": 0.9938332766917319,
+          "curiosity": 0.496009451731802
+        }
+      },
+      "identity_sha256": "0c9dc03931e1d8a465ddfddfae1e3da57a376b6b7d5522e9b0e95d4ec81c10c8",
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -257,
+        "y": 73,
+        "z": 736
+      },
+      "home_sha256": "e007701340a972baf4387b328057a88ca9f3434adce007cb52d0a62c12f99bf9",
+      "policy": {
+        "learningUpdates": 38,
+        "values_sha256": "df73215d2e51a8301dd4bd48d06f6d39b65c97b8e075f42354c74aa84c58b71a",
+        "visits_sha256": "3cc4a498148a679dda4af69e2b89861a220f0939f109cf22e42321e269011206",
+        "contexts": 32,
+        "actions_per_context": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "total_visits": 38,
+        "minimum_value": -0.07062499999999966,
+        "maximum_value": 2.3437500000000888e-05
+      },
+      "needs": {
+        "hunger": 0.3167500000000027,
+        "fatigue": 0.08249999999999962,
+        "loneliness": 0.3000714285714259
+      },
+      "memories": {
+        "count": 48,
+        "sha256": "52807399c45fdd66e95997ecc07408d36bf63e95e460fb4e2bc854f5b8c1589d"
+      }
+    },
+    "c7c31152-34a1-4edd-bd84-e48f50f86088": {
+      "source": "/home/niko/.internal/source/Villagers/runs/play/saves/VillageTrial/villagers/c7c31152-34a1-4edd-bd84-e48f50f86088/mind.json",
+      "archive": "legacy-minds/c7c31152-34a1-4edd-bd84-e48f50f86088.json",
+      "sha256": "1b53d0b543a48d758e84a78e69d2cdce1e183ae6ba395325acee1592ee783191",
+      "bytes": 10938,
+      "schema_version": 1,
+      "identity": {
+        "id": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+        "name": "Dara-c7c3",
+        "personality": {
+          "boldness": 0.1184152822145077,
+          "sociability": 0.03363290250980944,
+          "curiosity": 0.9515425944177406
+        }
+      },
+      "identity_sha256": "0384a4eb0610314d62113b3f175f18037c960f1ba2a2d93d70049ac2af3aad4a",
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -248,
+        "y": 72,
+        "z": 746
+      },
+      "home_sha256": "cc4951bf52403175531c80432de0e694de4a4de8123f6eef1afc00e4dc2f6c88",
+      "policy": {
+        "learningUpdates": 43,
+        "values_sha256": "9fc068c6f08151742e05d5e7ac9076c8c8d2a159cf58bf13a25cca415f79e626",
+        "visits_sha256": "734665ba02920abf91f5f65aac2f7da86b13c3f4e610215a476f9b2dfe4386ab",
+        "contexts": 32,
+        "actions_per_context": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "total_visits": 43,
+        "minimum_value": 0.0,
+        "maximum_value": 0.0
+      },
+      "needs": {
+        "hunger": 0.31666666666666937,
+        "fatigue": 0.18749999999999814,
+        "loneliness": 0.2999999999999973
+      },
+      "memories": {
+        "count": 48,
+        "sha256": "74efe4bb527215b8938c4a11f9cfd3e09b6ccd67f3ba18fb166e3493a3699e18"
+      }
+    },
+    "ca3c6d6a-385e-4ea3-a37d-e54d948d924f": {
+      "source": "/home/niko/.internal/source/Villagers/runs/play/saves/VillageTrial/villagers/ca3c6d6a-385e-4ea3-a37d-e54d948d924f/mind.json",
+      "archive": "legacy-minds/ca3c6d6a-385e-4ea3-a37d-e54d948d924f.json",
+      "sha256": "13ade6ee478c8db277a6d54cb9c7fdcba3ca6f1af27f3b0a3fe67e8220ab6da4",
+      "bytes": 11007,
+      "schema_version": 1,
+      "identity": {
+        "id": "ca3c6d6a-385e-4ea3-a37d-e54d948d924f",
+        "name": "Willow-ca3c",
+        "personality": {
+          "boldness": 0.24244094872874922,
+          "sociability": 0.7941737339106465,
+          "curiosity": 0.4234556340090163
+        }
+      },
+      "identity_sha256": "1c2efc7b7834224cbfd22e80a952f8b3180ef82ddde5f4b8dc155ba792edd763",
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -262,
+        "y": 74,
+        "z": 746
+      },
+      "home_sha256": "6e7a56284e361c1fb3fe2aa0a5e5af2bf760dd2d2a14d2ba8ff286eada3c8129",
+      "policy": {
+        "learningUpdates": 30,
+        "values_sha256": "9fc068c6f08151742e05d5e7ac9076c8c8d2a159cf58bf13a25cca415f79e626",
+        "visits_sha256": "569f5baae364c5df97537cd26e05201ebaf688c639e117bf5bcb0add0d610aa2",
+        "contexts": 32,
+        "actions_per_context": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "total_visits": 30,
+        "minimum_value": 0.0,
+        "maximum_value": 0.0
+      },
+      "needs": {
+        "hunger": 0.31654166666666933,
+        "fatigue": 0.18740624999999816,
+        "loneliness": 0.29989285714285446
+      },
+      "memories": {
+        "count": 48,
+        "sha256": "e16a6341d4d109be1271312d02d826111c21e1dfd42f20b96f719a997cd5251e"
+      }
+    },
+    "d169dad0-0157-4e1d-bf1c-358845617474": {
+      "source": "/home/niko/.internal/source/Villagers/runs/play/saves/VillageTrial/villagers/d169dad0-0157-4e1d-bf1c-358845617474/mind.json",
+      "archive": "legacy-minds/d169dad0-0157-4e1d-bf1c-358845617474.json",
+      "sha256": "35db664c4335bc188b8d7f5b440213cecb2fc133b3e66a518345b5e2b206a121",
+      "bytes": 10986,
+      "schema_version": 1,
+      "identity": {
+        "id": "d169dad0-0157-4e1d-bf1c-358845617474",
+        "name": "Alder-d169",
+        "personality": {
+          "boldness": 0.12760142409328934,
+          "sociability": 0.8915277742121771,
+          "curiosity": 0.07882484782753763
+        }
+      },
+      "identity_sha256": "7b9daa81c30188587cbd25bc76989b8ac865a89e5bba0fb2bcaec4430d4ea1b4",
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -212,
+        "y": 71,
+        "z": 765
+      },
+      "home_sha256": "892f5b51af73928623b2eba047793e3721fb6dd60551fe8c5747e206bd9bc4ba",
+      "policy": {
+        "learningUpdates": 52,
+        "values_sha256": "be8eef9483dba342ac01f2e6e45f0e4e413476cadebb78dd8e755f33ca5c04ce",
+        "visits_sha256": "32782f74d7c743977d9ed8e96ef5b6dc0fcc4e10b5a541c3ab20c4dc8a126f9c",
+        "contexts": 32,
+        "actions_per_context": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "total_visits": 52,
+        "minimum_value": -0.039999999999999945,
+        "maximum_value": 0.02995535714285717
+      },
+      "needs": {
+        "hunger": 0.31666666666666937,
+        "fatigue": 0.18749999999999814,
+        "loneliness": 0.08607142857142867
+      },
+      "memories": {
+        "count": 48,
+        "sha256": "752eda1a3ac92ebfc44101597fd48193f33a6c07a5e19ccfe9186b8b7b83ca7d"
+      }
+    },
+    "d29c199f-5202-4fbc-97f9-92023489d70f": {
+      "source": "/home/niko/.internal/source/Villagers/runs/play/saves/VillageTrial/villagers/d29c199f-5202-4fbc-97f9-92023489d70f/mind.json",
+      "archive": "legacy-minds/d29c199f-5202-4fbc-97f9-92023489d70f.json",
+      "sha256": "2221e39369e4ca54e3e501737a49af351bc9a3871fb0fe8da5f94d47bbbee328",
+      "bytes": 10955,
+      "schema_version": 1,
+      "identity": {
+        "id": "d29c199f-5202-4fbc-97f9-92023489d70f",
+        "name": "Ember-d29c",
+        "personality": {
+          "boldness": 0.04296189663120753,
+          "sociability": 0.5873757806361882,
+          "curiosity": 0.6789328194265476
+        }
+      },
+      "identity_sha256": "418161762ca2c55a2edd87115fed0c830e436b24a951255237bc5ae007d0ae15",
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -229,
+        "y": 71,
+        "z": 760
+      },
+      "home_sha256": "346a47f18a0e26f7b24b133f9609e7b995c3ff4a343ba4f6e93c6521ee88a64c",
+      "policy": {
+        "learningUpdates": 57,
+        "values_sha256": "ecf82fdd4e15d5f210bf6d1b685a5d85f1b06ae72e9d005663db35f5fe1b26e4",
+        "visits_sha256": "2867adaeeceae52a2cbb336278dbfe9641b2f309abd4015c91ab5ce9a2ef887d",
+        "contexts": 32,
+        "actions_per_context": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "total_visits": 57,
+        "minimum_value": 0.0,
+        "maximum_value": 0.06548214285714296
+      },
+      "needs": {
+        "hunger": 0.31650000000000267,
+        "fatigue": 0.18737499999999815,
+        "loneliness": 0.0682142857142856
+      },
+      "memories": {
+        "count": 48,
+        "sha256": "94d29241a8a537a065f20c7585c4fbb68c025bce0c6b6643185943af8e1a557a"
+      }
+    },
+    "e358e923-f9d2-4d5b-a04b-b2531c8f02d9": {
+      "source": "/home/niko/.internal/source/Villagers/runs/play/saves/VillageTrial/villagers/e358e923-f9d2-4d5b-a04b-b2531c8f02d9/mind.json",
+      "archive": "legacy-minds/e358e923-f9d2-4d5b-a04b-b2531c8f02d9.json",
+      "sha256": "d10b11e0ff6daaf7a7f1c032d8ce52c8b2d7138001c93cc4257ecee15e5cb1ca",
+      "bytes": 10970,
+      "schema_version": 1,
+      "identity": {
+        "id": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+        "name": "Nell-e358",
+        "personality": {
+          "boldness": 0.40096830721597265,
+          "sociability": 0.49018480737093273,
+          "curiosity": 0.8665224451289607
+        }
+      },
+      "identity_sha256": "79cd605a3a823d95403a2ea16fa9e9e3edfcff21ec7a8f2781237c4bd735a0f3",
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -236,
+        "y": 72,
+        "z": 766
+      },
+      "home_sha256": "eff5ec809ae7c54490ce5d28d74fc132bc674e7487a2339ca97d2c155d54eb90",
+      "policy": {
+        "learningUpdates": 32,
+        "values_sha256": "9fc068c6f08151742e05d5e7ac9076c8c8d2a159cf58bf13a25cca415f79e626",
+        "visits_sha256": "f3e865321d14ef5e06159ca8e9afad7b9afadefb58b9dabb1de36476d42768fd",
+        "contexts": 32,
+        "actions_per_context": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "total_visits": 32,
+        "minimum_value": 0.0,
+        "maximum_value": 0.0
+      },
+      "needs": {
+        "hunger": 0.316583333333336,
+        "fatigue": 0.18743749999999815,
+        "loneliness": 0.29992857142856877
+      },
+      "memories": {
+        "count": 48,
+        "sha256": "99dc5459312b3e7a3224946eaac75b3d3eef48aa0248b4f2259de3613acce486"
+      }
+    }
+  }
+}

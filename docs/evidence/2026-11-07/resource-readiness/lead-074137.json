@@ -1,0 +1,80 @@
+{
+  "at": "2026-11-07T07:41:37.252354+00:00",
+  "status": "readiness_only_no_hold_or_approval",
+  "owned_java": [
+    {
+      "pid": 601856,
+      "ppid": 1,
+      "uid": 1000,
+      "start_ticks": 10936249,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope"
+    },
+    {
+      "pid": 601857,
+      "ppid": 601837,
+      "uid": 1000,
+      "start_ticks": 10936249,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope"
+    },
+    {
+      "pid": 601946,
+      "ppid": 601856,
+      "uid": 1000,
+      "start_ticks": 10936303,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope"
+    },
+    {
+      "pid": 601990,
+      "ppid": 601857,
+      "uid": 1000,
+      "start_ticks": 10936325,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope"
+    },
+    {
+      "pid": 602326,
+      "ppid": 601946,
+      "uid": 1000,
+      "start_ticks": 10937021,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/adaptive",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope"
+    },
+    {
+      "pid": 602372,
+      "ppid": 601990,
+      "uid": 1000,
+      "start_ticks": 10937054,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/frozen",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope"
+    }
+  ],
+  "parent_build_handles_terminal_exit0": [
+    62147,
+    7966
+  ],
+  "visible_smoke_handles_terminal_exit0": [
+    75717,
+    88680
+  ],
+  "smoke_java_pids_absent": [
+    683453,
+    683556,
+    683704,
+    685930,
+    686078,
+    686231
+  ],
+  "owned_timers": [],
+  "workers": "native visible_current_source finished; no source/test/build workers running",
+  "hash005": "closed_spent_immutable; no invocation",
+  "proposed_0742_0752": "not activated; superseded by head instruction, await fresh explicit mutual endpoints after Buddy readiness"
+}

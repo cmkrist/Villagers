@@ -1,0 +1,42 @@
+{
+  "jobs": [
+    {
+      "pid": 613818,
+      "ppid": 613635,
+      "start_ticks": 11068461,
+      "comm": "java",
+      "uid": 1000,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/play",
+      "owner_thread_id": "9797f55f-a15b-4a2d-b4b0-23ede83c0a99"
+    },
+    {
+      "pid": 613635,
+      "ppid": 613582,
+      "start_ticks": 11067958,
+      "comm": "java",
+      "uid": 1000,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "owner_thread_id": "9797f55f-a15b-4a2d-b4b0-23ede83c0a99"
+    },
+    {
+      "pid": 613582,
+      "ppid": 613571,
+      "start_ticks": 11067811,
+      "comm": "java",
+      "uid": 1000,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "owner_thread_id": "9797f55f-a15b-4a2d-b4b0-23ede83c0a99"
+    }
+  ],
+  "provenance": "Launched by this turn tools/play.sh; exact play JVM flag, runtime cwd and continuous Java parent chain observed. Custody only; no automatic resource-policy transfer.",
+  "bounds": {
+    "client_heap_gib": 4,
+    "gradle_heap_gib": 2,
+    "target_tps": 20,
+    "fps_cap": 60,
+    "purpose": "visible native social event smoke and one clean save/reload"
+  }
+}

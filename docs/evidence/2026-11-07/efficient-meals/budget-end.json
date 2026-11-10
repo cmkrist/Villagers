@@ -1,0 +1,81 @@
+{
+  "at": "2026-11-07T11:21:13.457952766Z",
+  "elapsed_ms": 19208,
+  "label": "budget-end",
+  "source": "rendered client; only client-tracked entities",
+  "world": "VillageTrial",
+  "role": "play",
+  "learning_mode": "adaptive",
+  "native_target_tps": 20.0,
+  "training": {
+    "learning_mode": "adaptive",
+    "state": "waiting_for_trial",
+    "role": "play",
+    "configured_target_tps": 20,
+    "game_tick_budget": 48000
+  },
+  "game_time": 33505,
+  "trial": "natural generated village",
+  "server_tick": 401,
+  "screen": "",
+  "frame_ns": 727243,
+  "camera": {
+    "x": -211.5,
+    "y": 104.0,
+    "z": 796.5,
+    "yaw": 135.0,
+    "pitch": 35.0
+  },
+  "tracked_entities": 140,
+  "tracked_villagers": 4,
+  "villagers": [
+    {
+      "uuid": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+      "name": "Dara-c7c3 · explore",
+      "x": -238.762939453125,
+      "y": 72.0,
+      "z": 756.197021484375,
+      "alive": true,
+      "health": 12.0
+    },
+    {
+      "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "name": "Nell-e358 · explore",
+      "x": -256.82862938316265,
+      "y": 68.0,
+      "z": 779.387396289207,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+      "name": "Juniper-231e · rest (unhappy)",
+      "x": -234.2069023807201,
+      "y": 73.0,
+      "z": 766.6999999880791,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "name": "Fern-5ad3 · explore",
+      "x": -226.58650715811382,
+      "y": 72.0,
+      "z": 776.6009928406638,
+      "alive": true,
+      "health": 20.0
+    }
+  ],
+  "tracked_iron_golems": 1,
+  "iron_golems": [
+    {
+      "uuid": "0dc9724f-c186-4784-aff8-5475aa216eb2",
+      "name": "Iron Golem",
+      "x": -248.85400390625,
+      "y": 72.0,
+      "z": 743.859375,
+      "alive": true,
+      "health": 100.0
+    }
+  ]
+}

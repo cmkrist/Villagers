@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="local.villagers.mind.AgentStoreTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:36:11.254Z" hostname="td001" time="0.018">
+  <properties/>
+  <testcase name="unwritablePathFailsSafely()" classname="local.villagers.mind.AgentStoreTest" time="0.001"/>
+  <testcase name="retainsIdentityHomeDrivesKnowledgeAndMemoriesAcrossReload()" classname="local.villagers.mind.AgentStoreTest" time="0.014"/>
+  <testcase name="unsupportedSchemasAreProtectedEvenWithoutLoading()" classname="local.villagers.mind.AgentStoreTest" time="0.001"/>
+  <testcase name="worldsDoNotShareAnIdentityFile()" classname="local.villagers.mind.AgentStoreTest" time="0.001"/>
+  <testcase name="malformedFilesAreQuarantinedBeforeReplacement()" classname="local.villagers.mind.AgentStoreTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

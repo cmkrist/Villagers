@@ -1,0 +1,309 @@
+{
+  "capturedUTC": "2026-11-07T23:53:10.795674+00:00",
+  "status": "Final native paid-hoe purchase, actual harvest/recipe use, paid meal, finite marked currency and clean restart passed",
+  "cases": {
+    "prototype": {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/local-trade-server",
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/local-trade-artifact",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "9186c2d45fab18b4cff95722869c0dfa0fb49b0a544eb56ded424a9725a7d8d9"
+        },
+        "fixtureSourceSHA256": "e15d9ee4e711dc75e4b8b5a221ed310ef6eec27ff192c58a5a6f1b7d62a92f0a",
+        "nativeClassBindingsChecked": 217,
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "08917d740c8618dbd6d65d74890dcb5484c379449660388b0bfc9ca900a31d7a",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "9186c2d45fab18b4cff95722869c0dfa0fb49b0a544eb56ded424a9725a7d8d9"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      },
+      "phases": [
+        {
+          "phase": "first",
+          "status": "passed",
+          "finalObservation": {
+            "phase": "ordinary paid tool, production, paid meal and currency conservation passed",
+            "tick": 5458,
+            "buyer": {
+              "id": "4c4f4341-4c54-5241-0000-000000000018",
+              "food": 8,
+              "money": 0,
+              "bread": 0,
+              "wheat": 0,
+              "crafted": 1,
+              "bought": 2,
+              "sold": 0,
+              "foodRequests": 4,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 3
+            },
+            "seller": {
+              "id": "4c4f4341-4c54-5241-0000-00000000005b",
+              "food": 20,
+              "money": 4,
+              "bread": 3,
+              "wheat": 0,
+              "crafted": 0,
+              "bought": 0,
+              "sold": 2,
+              "foodRequests": 0,
+              "held": "1 minecraft:iron_hoe",
+              "damage": 0
+            },
+            "harvestsThisLoad": 3,
+            "meanServerTickMillis": 0.100425
+          },
+          "tradeReceipts": [
+            {
+              "buyerMoneyBefore": 4,
+              "seller": "4c4f4341-4c54-5241-0000-00000000005b",
+              "buyerGoodsBefore": 0,
+              "sellerMoneyAfter": 2,
+              "gameTime": 68,
+              "sellerGoodsAfter": 0,
+              "damage": 0,
+              "item": "minecraft:wooden_hoe",
+              "sellerMoneyBefore": 0,
+              "buyer": "4c4f4341-4c54-5241-0000-000000000018",
+              "sellerGoodsBefore": 1,
+              "buyerMoneyAfter": 2,
+              "buyerGoodsAfter": 1,
+              "price": 2
+            },
+            {
+              "buyerMoneyBefore": 2,
+              "seller": "4c4f4341-4c54-5241-0000-00000000005b",
+              "buyerGoodsBefore": 0,
+              "sellerMoneyAfter": 4,
+              "gameTime": 5448,
+              "sellerGoodsAfter": 3,
+              "damage": 0,
+              "item": "minecraft:bread",
+              "sellerMoneyBefore": 2,
+              "buyer": "4c4f4341-4c54-5241-0000-000000000018",
+              "sellerGoodsBefore": 4,
+              "buyerMoneyAfter": 0,
+              "buyerGoodsAfter": 1,
+              "price": 2
+            }
+          ],
+          "conservedHarvestReceipts": 3,
+          "terminal": {
+            "pid": 1185895,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794095168.7747543
+          },
+          "exactIdentityGone": true
+        },
+        {
+          "phase": "restart",
+          "status": "restart-passed",
+          "finalObservation": {
+            "phase": "saved real money, meal, tool wear and no replay passed",
+            "tick": 5618,
+            "buyer": {
+              "id": "4c4f4341-4c54-5241-0000-000000000018",
+              "food": 8,
+              "money": 0,
+              "bread": 0,
+              "wheat": 0,
+              "crafted": 0,
+              "bought": 0,
+              "sold": 0,
+              "foodRequests": 1,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 3
+            },
+            "seller": {
+              "id": "4c4f4341-4c54-5241-0000-00000000005b",
+              "food": 20,
+              "money": 4,
+              "bread": 3,
+              "wheat": 0,
+              "crafted": 0,
+              "bought": 0,
+              "sold": 0,
+              "foodRequests": 0,
+              "held": "1 minecraft:iron_hoe",
+              "damage": 0
+            },
+            "harvestsThisLoad": 0,
+            "meanServerTickMillis": 0.963341
+          },
+          "tradeReceipts": [],
+          "conservedHarvestReceipts": 0,
+          "terminal": {
+            "pid": 1186320,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794095177.7346976
+          },
+          "exactIdentityGone": true
+        }
+      ],
+      "scope": "Earlier prototype; plain initial currency; not final-source acceptance"
+    },
+    "marked-coins": {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/local-trade-marked-coins",
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/local-trade-artifact-v4",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "75675e983fb9c3b5e5915ba3ebfc0b386c90089826b2167bd03119f21c892bac"
+        },
+        "fixtureSourceSHA256": "248cd6cafe21327b7f6fc4f70f2e7dc7a9ed01d8da13b02184a8e13d013467b7",
+        "nativeClassBindingsChecked": 217,
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "33d79e85b45bfde9e448b3593b932c5af3a023493773f6db94c430ad11575595",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "75675e983fb9c3b5e5915ba3ebfc0b386c90089826b2167bd03119f21c892bac"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      },
+      "phases": [
+        {
+          "phase": "first",
+          "status": "passed",
+          "finalObservation": {
+            "phase": "ordinary paid tool, production, paid meal and currency conservation passed",
+            "tick": 5468,
+            "buyer": {
+              "id": "4c4f4341-4c54-5241-0000-000000000018",
+              "food": 8,
+              "money": 0,
+              "bread": 0,
+              "wheat": 0,
+              "crafted": 1,
+              "bought": 2,
+              "sold": 0,
+              "foodRequests": 4,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 3
+            },
+            "seller": {
+              "id": "4c4f4341-4c54-5241-0000-00000000005b",
+              "food": 20,
+              "money": 4,
+              "bread": 3,
+              "wheat": 0,
+              "crafted": 0,
+              "bought": 0,
+              "sold": 2,
+              "foodRequests": 0,
+              "held": "1 minecraft:iron_hoe",
+              "damage": 0
+            },
+            "harvestsThisLoad": 3,
+            "meanServerTickMillis": 0.107137
+          },
+          "tradeReceipts": [
+            {
+              "item": "minecraft:wooden_hoe",
+              "damage": 0,
+              "sellerGoodsAfter": 0,
+              "gameTime": 68,
+              "sellerMoneyAfter": 2,
+              "buyerGoodsBefore": 0,
+              "seller": "4c4f4341-4c54-5241-0000-00000000005b",
+              "buyerMoneyBefore": 4,
+              "price": 2,
+              "buyerGoodsAfter": 1,
+              "buyerMoneyAfter": 2,
+              "sellerGoodsBefore": 1,
+              "buyer": "4c4f4341-4c54-5241-0000-000000000018",
+              "sellerMoneyBefore": 0
+            },
+            {
+              "item": "minecraft:bread",
+              "damage": 0,
+              "sellerGoodsAfter": 3,
+              "gameTime": 5458,
+              "sellerMoneyAfter": 4,
+              "buyerGoodsBefore": 0,
+              "seller": "4c4f4341-4c54-5241-0000-00000000005b",
+              "buyerMoneyBefore": 2,
+              "price": 2,
+              "buyerGoodsAfter": 1,
+              "buyerMoneyAfter": 0,
+              "sellerGoodsBefore": 4,
+              "buyer": "4c4f4341-4c54-5241-0000-000000000018",
+              "sellerMoneyBefore": 2
+            }
+          ],
+          "conservedHarvestReceipts": 3,
+          "terminal": {
+            "pid": 1189451,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794095496.69907
+          },
+          "exactIdentityGone": true
+        },
+        {
+          "phase": "restart",
+          "status": "restart-passed",
+          "finalObservation": {
+            "phase": "saved real money, meal, tool wear and no replay passed",
+            "tick": 5628,
+            "buyer": {
+              "id": "4c4f4341-4c54-5241-0000-000000000018",
+              "food": 8,
+              "money": 0,
+              "bread": 0,
+              "wheat": 0,
+              "crafted": 0,
+              "bought": 0,
+              "sold": 0,
+              "foodRequests": 1,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 3
+            },
+            "seller": {
+              "id": "4c4f4341-4c54-5241-0000-00000000005b",
+              "food": 20,
+              "money": 4,
+              "bread": 3,
+              "wheat": 0,
+              "crafted": 0,
+              "bought": 0,
+              "sold": 0,
+              "foodRequests": 0,
+              "held": "1 minecraft:iron_hoe",
+              "damage": 0
+            },
+            "harvestsThisLoad": 0,
+            "meanServerTickMillis": 0.576894
+          },
+          "tradeReceipts": [],
+          "conservedHarvestReceipts": 0,
+          "terminal": {
+            "pid": 1190379,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794095504.2764199
+          },
+          "exactIdentityGone": true
+        }
+      ],
+      "scope": "Final source and marked finite player handoff"
+    }
+  },
+  "build": {
+    "javaTests": 358,
+    "failures": 0,
+    "errors": 0,
+    "pythonTests": 10,
+    "log": "build-v4.log",
+    "sourceArchive": "source-v4.zip",
+    "sourcePins": "source-pins-v4.json",
+    "currentSourceDrift": []
+  },
+  "resourceAccounting": "Four real marked emerald items enter once from operator hand through real gifts during declared setup. Buyer pays two for actual spare wooden hoe, then two for actual bread. Seller retains iron hoe and15nutrition reserve. Purchased hoe pays three harvest/replants and3wear;3actual wheat fund1bread recipe. Buyer eats own crafted bread and purchased bread. Final coins buyer0/seller4; coins retain custom-name marker at payment acceptance. Clean restart preserves money, food inventories, meal nutrition and purchased tool wear without transaction/recipe replay.",
+  "limitations": [
+    "Supplied peaceful fixture, selected greedy/frugal seller and glutton buyer, common initial language, finite initial goods,80TPS and400base exhaustion/day; not primary history or normal survival evidence.",
+    "All positive exchanges, harvests, recipes and meals after setup come from ordinary controller; no post-setup supply, body, clock, growth or actor-position setters.",
+    "Native acceptance is nearby contact; travel, native foreign-language/refusal variants, death/crash accounting, repeated money circulation, calibrated prices, inequality and population capacity remain unverified.",
+    "No virtual wallet, minted endowment, global stock query or persisted debt. Per-session600tick contact cooldown is not a durable daily proposal cap.",
+    "Small-fixture mean tick times do not establish simulation capacity. Sustainable food and renewable material/tool supply remain open."
+  ],
+  "custody": "Both accepted final native phases terminal exit0 and exact PID/start identities gone. Frozen builds use separate output. Lead construction files, HANDOFF, existing clients and primary worlds not edited by this work."
+}

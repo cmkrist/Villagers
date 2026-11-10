@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="local.villagers.training.TrainingCheckpointTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:36:11.391Z" hostname="td001" time="0.005">
+  <properties/>
+  <testcase name="invalidPathsAndBudgetsAreRejected()" classname="local.villagers.training.TrainingCheckpointTest" time="0.0"/>
+  <testcase name="absentCheckpointIsDistinctFromInvalidOrFutureState()" classname="local.villagers.training.TrainingCheckpointTest" time="0.001"/>
+  <testcase name="learnerRoleChangesCannotReuseAnExistingExperiment()" classname="local.villagers.training.TrainingCheckpointTest" time="0.001"/>
+  <testcase name="rolledBackWorldDoesNotRefundPreviouslyRecordedExposure()" classname="local.villagers.training.TrainingCheckpointTest" time="0.001"/>
+  <testcase name="shutdownAndRestartKeepIdentityExposureAndBackoff()" classname="local.villagers.training.TrainingCheckpointTest" time="0.001"/>
+  <testcase name="completedFailedAndPlayStatesNeverResumeOrAccumulateMoreExposure()" classname="local.villagers.training.TrainingCheckpointTest" time="0.001"/>
+  <testcase name="completeFutureSchemaIsPreservedWithoutPriorLoad()" classname="local.villagers.training.TrainingCheckpointTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

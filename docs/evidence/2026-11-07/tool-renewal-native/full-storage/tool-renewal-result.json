@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "events": [
+    {
+      "phase": "declared initial fixture; all subsequent work uses ordinary controller",
+      "tick": 60,
+      "food": 16,
+      "inventory": [
+        "8 minecraft:wheat_seeds",
+        "6 minecraft:bread",
+        "64 minecraft:emerald",
+        "64 minecraft:emerald",
+        "64 minecraft:emerald",
+        "64 minecraft:emerald",
+        "64 minecraft:emerald",
+        "64 minecraft:emerald"
+      ],
+      "held": "1 minecraft:iron_hoe",
+      "hoeDamage": 249,
+      "hoesCrafted": 0,
+      "recipes": 0,
+      "logsGathered": 0,
+      "seedGathered": 0,
+      "seedPlanted": 0,
+      "forestryStatus": "not working",
+      "toolStatus": "not working",
+      "remainingJobs": 1,
+      "meanServerTickMillis": 0.635362
+    },
+    {
+      "phase": "full-storage denial preserved equipment, materials, terrain and authority",
+      "tick": 300,
+      "food": 16,
+      "inventory": [
+        "8 minecraft:wheat_seeds",
+        "6 minecraft:bread",
+        "64 minecraft:emerald",
+        "64 minecraft:emerald",
+        "64 minecraft:emerald",
+        "64 minecraft:emerald",
+        "64 minecraft:emerald",
+        "64 minecraft:emerald"
+      ],
+      "held": "1 minecraft:iron_hoe",
+      "hoeDamage": 249,
+      "hoesCrafted": 0,
+      "recipes": 0,
+      "logsGathered": 0,
+      "seedGathered": 0,
+      "seedPlanted": 0,
+      "forestryStatus": "not working",
+      "toolStatus": "not working",
+      "remainingJobs": 1,
+      "meanServerTickMillis": 0.486727
+    }
+  ],
+  "fixture": "NEW isolated storage-denial variant: same supplied terrain, adult with eight seeds,six bread,384emeralds filling all eight inventory slots,and iron hoe with one use left. Existing exact forestry grant. No post-setup supplies or resident/terrain setters. No survival/economic-wealth claim."
+}

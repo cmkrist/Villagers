@@ -1,0 +1,62 @@
+{
+  "capturedUTC": "2026-11-07T22:33:21.314827+00:00",
+  "kind": "NEW isolated supplied chamber; selected generous/frugal producer and glutton requester;80TPS;configured400base exhaustion/day;18operator wheat AFTER unmet request; no hunger/health/clock/age/learning/position setters after initial setup; no natural-survival or farming claim",
+  "firstPhase": "passed",
+  "restartPhase": "passed",
+  "requestGameTime": 1628,
+  "deliveryGameTime": 1639,
+  "deliveryLatencyTicks": 11,
+  "requestsNeeded": 1,
+  "resourceAccounting": {
+    "operatorWheatSupplied": 18,
+    "wheatConsumed": 15,
+    "wheatRemaining": 3,
+    "nativeBreadRecipes": 5,
+    "breadGiven": 1,
+    "breadRetained": 3,
+    "breadEatenByProducer": 1,
+    "breadReceivedAndEatenByRequester": 1
+  },
+  "finalFood": {
+    "producer": 20,
+    "requester": 18
+  },
+  "restart": {
+    "sameInventoriesAndNutrition": true,
+    "recipes": 0,
+    "transfers": 0,
+    "proactiveDeliveries": 0
+  },
+  "ownedTerminal": [
+    {
+      "pid": 1128227,
+      "startTicks": "16930023",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/food-delivery-server",
+      "launchedAtEpoch": 1794090476.3077257,
+      "exitCode": 0,
+      "sameIdentityAlive": false
+    },
+    {
+      "pid": 1128712,
+      "startTicks": "16933129",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/food-delivery-server",
+      "launchedAtEpoch": 1794090507.3721397,
+      "exitCode": 0,
+      "sameIdentityAlive": false
+    }
+  ],
+  "sourceUnchangedDuringChecksAndNativeRun": true,
+  "javaTests": {
+    "tests": 334,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "pythonTests": 10,
+  "primaryWorldOpenedOrModified": false,
+  "limits": [
+    "Explicit18wheat supplied after the understood request; not autonomous crop income.",
+    "Delivery was within reach; native travel/obstruction acceptance remains pending.",
+    "First case and restart run use frozen archived jars; failed renewable field and its starvation remain retained."
+  ]
+}

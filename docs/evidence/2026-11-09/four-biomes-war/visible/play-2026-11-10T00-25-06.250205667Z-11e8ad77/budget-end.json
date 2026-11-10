@@ -1,0 +1,98 @@
+{
+  "at": "2026-11-10T00:25:42.047176271Z",
+  "elapsed_ms": 29412,
+  "label": "budget-end",
+  "source": "rendered client; only client-tracked entities",
+  "world": "FourBiomesWar",
+  "role": "play",
+  "learning_mode": "adaptive",
+  "native_target_tps": 20.0,
+  "training": {
+    "role": "play",
+    "state": "waiting_for_trial",
+    "learning_mode": "adaptive",
+    "game_tick_budget": 48000,
+    "configured_target_tps": 20
+  },
+  "game_time": 1605,
+  "trial": "authored four-biome war scenario",
+  "server_tick": 601,
+  "screen": "",
+  "frame_ns": 899439,
+  "camera": {
+    "x": 94.07100626208836,
+    "y": 74.42978387628838,
+    "z": 92.29115123078893,
+    "yaw": 238.19994,
+    "pitch": -2.1000404
+  },
+  "tracked_entities": 32,
+  "tracked_villagers": 7,
+  "villagers": [
+    {
+      "uuid": "580073aa-f96f-4953-9aa9-968703f1488f",
+      "name": "Nell-5800 · fighting Pip-1dd2",
+      "x": -41.709716796875,
+      "y": 92.001220703125,
+      "z": 120.399169921875,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "c6d4cdea-1a58-4f05-9529-8bb1deced5f6",
+      "name": "Dara-c6d4 · retreating to Sunwell",
+      "x": -30.57484532463242,
+      "y": 85.53584062504456,
+      "z": 113.34190932421295,
+      "alive": true,
+      "health": 10.83333
+    },
+    {
+      "uuid": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "name": "Nell-8b4a · retreating to Sunwell",
+      "x": -41.9345703125,
+      "y": 92.0,
+      "z": 117.52294921875,
+      "alive": true,
+      "health": 10.0
+    },
+    {
+      "uuid": "daf3ac16-ed3d-4219-976f-ef42c1b1a4b3",
+      "name": "Nell-daf3 · retreating to Sunwell",
+      "x": 96.14111328125,
+      "y": 75.0,
+      "z": 90.285888671875,
+      "alive": true,
+      "health": 10.333335
+    },
+    {
+      "uuid": "ca4195b6-92c3-4a7a-88ce-2b27e8907e71",
+      "name": "Iris-ca41 · retreating to Sunwell",
+      "x": 95.179931640625,
+      "y": 75.0,
+      "z": 89.76318359375,
+      "alive": true,
+      "health": 9.000001
+    },
+    {
+      "uuid": "3741eeba-2907-4fed-a50a-0c8d911887f4",
+      "name": "Moss-3741 · retreating to Sunwell",
+      "x": 100.567626953125,
+      "y": 75.0,
+      "z": 80.388427734375,
+      "alive": true,
+      "health": 1.5000029
+    },
+    {
+      "uuid": "3b0a130f-46fa-4152-a344-89e87ed5b3d6",
+      "name": "Rowan-3b0a · rest",
+      "x": 115.32080078125,
+      "y": 75.0,
+      "z": 116.482666015625,
+      "alive": true,
+      "health": 20.0
+    }
+  ],
+  "tracked_iron_golems": 0,
+  "iron_golems": []
+}

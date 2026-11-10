@@ -1,0 +1,386 @@
+{
+  "status": "passed",
+  "stage": "bounded_food_window",
+  "elapsed": 1000,
+  "initialGameTime": 47811,
+  "gameTime": 48811,
+  "actors": [
+    {
+      "id": "1d165330-2598-410c-827e-cc3b13c7bef9",
+      "name": "Birch-1d16",
+      "food": 20,
+      "health": 20.0,
+      "position": [
+        -473.4965575138642,
+        64.02442408821369,
+        -363.6692217353639
+      ],
+      "inventory": "[1 minecraft:beetroot_seeds, 3 minecraft:wheat, 3 minecraft:bread]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "lastPath": "none",
+        "activity": "no preparation job",
+        "logs": 0,
+        "goal": "NONE",
+        "recipes": 0,
+        "pathQueries": 0
+      },
+      "boating": {
+        "launches": 0,
+        "logsGathered": 0,
+        "paddleTicks": 0,
+        "phase": "NONE",
+        "landings": 0,
+        "activity": "no water trip",
+        "recipes": 0
+      },
+      "harvest": {
+        "doorsOpened": 1,
+        "doorsClosed": 1,
+        "replantsFromStock": 0,
+        "cropsHarvested": 0,
+        "swordHits": 0,
+        "replantsFromHarvest": 0
+      },
+      "foodAccess": {
+        "digs": 0,
+        "arrivals": 1,
+        "activity": "gathered real hay after reaching the store",
+        "lastFailure": "none",
+        "lastPlan": {
+          "found": true,
+          "diggable": 20,
+          "closest": "-482, 63, -360",
+          "clear": 47,
+          "targets": [
+            "-484, 63, -360"
+          ],
+          "cachedCells": 85,
+          "goals": [
+            "-484, 63, -362",
+            "-485, 63, -361",
+            "-485, 64, -360",
+            "-483, 63, -360",
+            "-484, 63, -359",
+            "-482, 63, -360",
+            "-483, 63, -359",
+            "-484, 63, -358",
+            "-484, 63, -361",
+            "-483, 63, -361",
+            "-485, 63, -359"
+          ],
+          "edge": [],
+          "distance": 2
+        }
+      },
+      "sleeping": false,
+      "crafting": "crafted bread",
+      "harvestReceipt": {}
+    },
+    {
+      "id": "96cbd3bc-ebc5-4522-b101-b83ee55c471f",
+      "name": "Birch-96cb",
+      "food": 16,
+      "health": 20.0,
+      "position": [
+        -509.8788413315065,
+        62.9375,
+        -330.84334816043537
+      ],
+      "inventory": "[1 minecraft:bread]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "lastPath": "none",
+        "activity": "no preparation job",
+        "logs": 0,
+        "goal": "NONE",
+        "recipes": 0,
+        "pathQueries": 0
+      },
+      "boating": {
+        "launches": 0,
+        "logsGathered": 0,
+        "paddleTicks": 0,
+        "phase": "PREPARE",
+        "landings": 0,
+        "activity": "needs accessible natural boat wood",
+        "recipes": 0
+      },
+      "harvest": {
+        "doorsOpened": 0,
+        "doorsClosed": 0,
+        "replantsFromStock": 0,
+        "cropsHarvested": 0,
+        "swordHits": 0,
+        "replantsFromHarvest": 0
+      },
+      "foodAccess": {
+        "digs": 0,
+        "arrivals": 0,
+        "activity": "no food access trip",
+        "lastFailure": "none",
+        "lastPlan": {}
+      },
+      "sleeping": false,
+      "crafting": "idle",
+      "harvestReceipt": {}
+    },
+    {
+      "id": "438701f4-3aba-4cda-b583-46051f1e0f53",
+      "name": "Oak-4387",
+      "food": 10,
+      "health": 20.0,
+      "position": [
+        -507.5,
+        64.0,
+        -335.5
+      ],
+      "inventory": "[6 minecraft:wheat]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "lastPath": "none",
+        "activity": "looking for preparation wood",
+        "logs": 0,
+        "goal": "TABLE",
+        "recipes": 0,
+        "pathQueries": 0
+      },
+      "boating": {
+        "launches": 0,
+        "logsGathered": 0,
+        "paddleTicks": 0,
+        "phase": "NONE",
+        "landings": 0,
+        "activity": "no observed safe water crossing",
+        "recipes": 0
+      },
+      "harvest": {
+        "doorsOpened": 0,
+        "doorsClosed": 0,
+        "replantsFromStock": 0,
+        "cropsHarvested": 0,
+        "swordHits": 0,
+        "replantsFromHarvest": 0
+      },
+      "foodAccess": {
+        "digs": 0,
+        "arrivals": 0,
+        "activity": "no food access trip",
+        "lastFailure": "none",
+        "lastPlan": {
+          "gameTime": 48069,
+          "table": "-478, 63, -361",
+          "digs": 0,
+          "steps": 33,
+          "visited": 415,
+          "store": "-488, 63, -352"
+        }
+      },
+      "sleeping": false,
+      "crafting": "going to crafting table",
+      "harvestReceipt": {}
+    },
+    {
+      "id": "af2b94ad-f799-4b93-a2c3-e958b2836c84",
+      "name": "Dara-af2b",
+      "food": 11,
+      "health": 20.0,
+      "position": [
+        -508.695336487281,
+        63.0,
+        -339.4973483150898
+      ],
+      "inventory": "[3 minecraft:wheat]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "lastPath": "none",
+        "activity": "needs accessible natural wood",
+        "logs": 0,
+        "goal": "TABLE",
+        "recipes": 0,
+        "pathQueries": 0
+      },
+      "boating": {
+        "launches": 0,
+        "logsGathered": 0,
+        "paddleTicks": 0,
+        "phase": "PREPARE",
+        "landings": 0,
+        "activity": "needs accessible natural boat wood",
+        "recipes": 0
+      },
+      "harvest": {
+        "doorsOpened": 0,
+        "doorsClosed": 0,
+        "replantsFromStock": 0,
+        "cropsHarvested": 0,
+        "swordHits": 0,
+        "replantsFromHarvest": 0
+      },
+      "foodAccess": {
+        "digs": 0,
+        "arrivals": 0,
+        "activity": "no food access trip",
+        "lastFailure": "none",
+        "lastPlan": {}
+      },
+      "sleeping": false,
+      "crafting": "idle",
+      "harvestReceipt": {}
+    },
+    {
+      "id": "f572553d-4483-44b5-8ed5-6ffe7e7745b7",
+      "name": "Tansy-f572",
+      "food": 1,
+      "health": 20.0,
+      "position": [
+        -481.7716590381469,
+        63.0,
+        -291.4982858783008
+      ],
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "lastPath": "none",
+        "activity": "no preparation job",
+        "logs": 0,
+        "goal": "NONE",
+        "recipes": 0,
+        "pathQueries": 0
+      },
+      "boating": {
+        "launches": 0,
+        "logsGathered": 0,
+        "paddleTicks": 0,
+        "phase": "NONE",
+        "landings": 0,
+        "activity": "no water trip",
+        "recipes": 0
+      },
+      "harvest": {
+        "doorsOpened": 1,
+        "doorsClosed": 0,
+        "replantsFromStock": 0,
+        "cropsHarvested": 0,
+        "swordHits": 0,
+        "replantsFromHarvest": 0
+      },
+      "foodAccess": {
+        "digs": 0,
+        "arrivals": 0,
+        "activity": "no safe food passage found",
+        "lastFailure": "none",
+        "lastPlan": {}
+      },
+      "sleeping": false,
+      "crafting": "idle",
+      "harvestReceipt": {}
+    },
+    {
+      "id": "c5578b5b-8991-428d-9d82-7cb57a956269",
+      "name": "Alder-c557",
+      "food": 18,
+      "health": 20.0,
+      "position": [
+        -471.90616084126447,
+        63.0,
+        -368.6641239021074
+      ],
+      "inventory": "[3 minecraft:bread]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "lastPath": "none",
+        "activity": "no preparation job",
+        "logs": 0,
+        "goal": "NONE",
+        "recipes": 0,
+        "pathQueries": 0
+      },
+      "boating": {
+        "launches": 0,
+        "logsGathered": 0,
+        "paddleTicks": 0,
+        "phase": "NONE",
+        "landings": 0,
+        "activity": "no observed safe water crossing",
+        "recipes": 0
+      },
+      "harvest": {
+        "doorsOpened": 1,
+        "doorsClosed": 1,
+        "replantsFromStock": 0,
+        "cropsHarvested": 0,
+        "swordHits": 0,
+        "replantsFromHarvest": 0
+      },
+      "foodAccess": {
+        "digs": 0,
+        "arrivals": 0,
+        "activity": "no food access trip",
+        "lastFailure": "none",
+        "lastPlan": {}
+      },
+      "sleeping": false,
+      "crafting": "crafted bread",
+      "harvestReceipt": {}
+    },
+    {
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "name": "Clover-edc5",
+      "food": 19,
+      "health": 20.0,
+      "position": [
+        -462.3175476211178,
+        62.710764312744146,
+        -326.1287123383601
+      ],
+      "inventory": "[3 minecraft:wheat, 3 minecraft:oak_planks, 2 minecraft:stick]",
+      "held": "1 minecraft:wooden_hoe",
+      "wood": {
+        "lastPath": "none",
+        "activity": "no preparation job",
+        "logs": 0,
+        "goal": "NONE",
+        "recipes": 0,
+        "pathQueries": 0
+      },
+      "boating": {
+        "launches": 0,
+        "logsGathered": 0,
+        "paddleTicks": 214,
+        "phase": "SAIL",
+        "landings": 0,
+        "activity": "rowing toward the far shore",
+        "recipes": 0
+      },
+      "harvest": {
+        "doorsOpened": 1,
+        "doorsClosed": 0,
+        "replantsFromStock": 0,
+        "cropsHarvested": 0,
+        "swordHits": 0,
+        "replantsFromHarvest": 0
+      },
+      "foodAccess": {
+        "digs": 0,
+        "arrivals": 0,
+        "activity": "no food access trip",
+        "lastFailure": "none",
+        "lastPlan": {}
+      },
+      "sleeping": false,
+      "crafting": "crafted bread",
+      "harvestReceipt": {}
+    }
+  ],
+  "farm": {
+    "planted": 26,
+    "rawBrightness": 15,
+    "mature": 1,
+    "totalAge": 73
+  },
+  "harvestReceipts": 0,
+  "repeatYields": 0,
+  "newManagedActors": [],
+  "scope": "Actual copied island residents and native crops; normal clock, random growth and controller work only. No actor, food, crop, inventory or resource setters. A first harvest alone is not sustained food or birth proof."
+}

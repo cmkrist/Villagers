@@ -1,0 +1,8 @@
+from pathlib import Path
+import ast,struct,zlib,hashlib,sys,json
+ROOT=Path('/home/niko/.internal/source/Villagers');sys.path.insert(0,str(ROOT/'tools'));from runtime_lock import runtime_lock
+runtime=ROOT/sys.argv[1];out=ROOT/sys.argv[2];raw=out/'terrain';raw.mkdir(exist_ok=True)
+p=ROOT/'docs/evidence/2026-11-07/farm-capacity/inspect-saved-farm.py';tree=ast.parse(p.read_text());defs=[n for n in tree.body if isinstance(n,ast.ClassDef)]
+ns={'Path':Path,'struct':struct,'zlib':zlib,'hashlib':hashlib,'MAX':4*1024*1024,'ROOT':ROOT,'WORLD':runtime/'saves/VillageTrial','OUT':raw};exec(compile(ast.Module(body=defs,type_ignores=[]),str(p),'exec'),ns)
+with runtime_lock(runtime):
+ r=ns['Reader']();blocks=[{'position':[x,y,z],'state':r.block(x,y,z)} for x,y,z in [(-269,74,721),(-269,75,721),(-270,76,722),(-270,77,722),(-269,71,723),(-269,72,723),(-269,73,723),(-271,74,722),(-271,75,722),(-270,73,723),(-269,74,723),(-270,74,723)]];report={'blocks':blocks,'chunks':r.identities};(out/'plot.json').write_text(json.dumps(report,indent=2)+'\n');print(blocks)

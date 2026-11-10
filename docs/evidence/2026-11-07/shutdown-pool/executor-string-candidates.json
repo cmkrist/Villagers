@@ -1,0 +1,153 @@
+{
+  "scope": "77 isolated play mod jars and nested jars, class constant strings only; no execution attribution",
+  "classesScanned": 37969,
+  "candidates": [
+    {
+      "artifact": "Axiom-6.1.3-for-MC26.3.jar",
+      "class": "com/moulberry/axiom/render/ChunkRenderOverrider.class",
+      "strings": [
+        "newSingleThreadExecutor"
+      ]
+    },
+    {
+      "artifact": "Axiom-6.1.3-for-MC26.3.jar",
+      "class": "com/moulberry/axiom/tools/Tool.class",
+      "strings": [
+        "newSingleThreadExecutor"
+      ]
+    },
+    {
+      "artifact": "Flashback-0.43.6-for-MC26.3.jar",
+      "class": "org/bytedeco/javacv/FrameGrabber.class",
+      "strings": [
+        "newSingleThreadExecutor"
+      ]
+    },
+    {
+      "artifact": "Flashback-0.43.6-for-MC26.3.jar",
+      "class": "org/bytedeco/javacv/Parallel.class",
+      "strings": [
+        "newCachedThreadPool"
+      ]
+    },
+    {
+      "artifact": "ForgeConfigAPIPort-v26.3.1-mc26.3.x-Fabric.jar!/META-INF/jars/core-3.8.4.jar",
+      "class": "com/electronwill/nightconfig/core/file/AsyncFileConfig$LazyExecutorHolder.class",
+      "strings": [
+        "defaultThreadFactory"
+      ]
+    },
+    {
+      "artifact": "animatica-0.6.2+26.3.jar",
+      "class": "io/github/foundationgames/animatica/animation/AnimatedTexture.class",
+      "strings": [
+        "newFixedThreadPool"
+      ]
+    },
+    {
+      "artifact": "cherishedworlds-fabric-18.0.0+26.3.jar!/META-INF/jars/spectrelib-fabric-0.23.0+26.3.jar!/META-INF/jars/core-3.9.0.jar",
+      "class": "com/electronwill/nightconfig/core/file/AsyncFileConfig$LazyExecutorHolder.class",
+      "strings": [
+        "defaultThreadFactory"
+      ]
+    },
+    {
+      "artifact": "entityculling-fabric-1.11.3-mc26.3.jar!/META-INF/jars/TRansition-1.0.26-26.3-fabric-SNAPSHOT.jar",
+      "class": "dev/tr7zw/lib/sentry/HostnameCache.class",
+      "strings": [
+        "newSingleThreadExecutor"
+      ]
+    },
+    {
+      "artifact": "fabric-language-kotlin-1.14.1+kotlin.2.4.20.jar!/META-INF/jars/kotlinx-coroutines-core-jvm-1.11.0.jar",
+      "class": "kotlinx/coroutines/ThreadPoolDispatcherKt.class",
+      "strings": [
+        "newFixedThreadPool"
+      ]
+    },
+    {
+      "artifact": "fabric-language-kotlin-1.14.1+kotlin.2.4.20.jar!/META-INF/jars/kotlinx-coroutines-core-jvm-1.11.0.jar",
+      "class": "kotlinx/coroutines/ThreadPoolDispatcherKt__MultithreadedDispatchers_commonKt.class",
+      "strings": [
+        "newFixedThreadPool"
+      ]
+    },
+    {
+      "artifact": "fabric-language-kotlin-1.14.1+kotlin.2.4.20.jar!/META-INF/jars/kotlinx-coroutines-core-jvm-1.11.0.jar",
+      "class": "kotlinx/coroutines/ThreadPoolDispatcherKt__ThreadPoolDispatcherKt.class",
+      "strings": [
+        "newFixedThreadPool"
+      ]
+    },
+    {
+      "artifact": "iris-fabric-1.11.7+mc26.3.jar",
+      "class": "de/odysseus/ithaka/digraph/util/fas/AbstractFeedbackArcSetProvider.class",
+      "strings": [
+        "newFixedThreadPool"
+      ]
+    },
+    {
+      "artifact": "iris-fabric-1.11.7+mc26.3.jar",
+      "class": "net/irisshaders/iris/shaderpack/programs/ProgramSet.class",
+      "strings": [
+        "newFixedThreadPool"
+      ]
+    },
+    {
+      "artifact": "lambdynamiclights-4.13.0+26.3.jar",
+      "class": "dev/lambdaurora/lambdynlights/shadow/nightconfig/core/file/AsyncFileConfig$LazyExecutorHolder.class",
+      "strings": [
+        "defaultThreadFactory"
+      ]
+    },
+    {
+      "artifact": "modernfix-5.27.20-build.2.jar",
+      "class": "org/embeddedt/modernfix/common/mixin/perf/cache_strongholds/ChunkGeneratorMixin.class",
+      "strings": [
+        "newFixedThreadPool"
+      ]
+    },
+    {
+      "artifact": "modernfix-5.27.20-build.2.jar",
+      "class": "org/embeddedt/modernfix/util/SingleThreadedWorkerService.class",
+      "strings": [
+        "newSingleThreadExecutor"
+      ]
+    },
+    {
+      "artifact": "notenoughanimations-fabric-1.12.6-mc26.3.jar!/META-INF/jars/TRansition-1.0.25-26.3-fabric-SNAPSHOT.jar",
+      "class": "dev/tr7zw/lib/sentry/HostnameCache.class",
+      "strings": [
+        "newSingleThreadExecutor"
+      ]
+    },
+    {
+      "artifact": "overlaylib-0.12.1+26.3.jar",
+      "class": "net/lugo/overlaylib/util/ThreadUtil.class",
+      "strings": [
+        "newSingleThreadExecutor"
+      ]
+    },
+    {
+      "artifact": "skinlayers3d-fabric-1.11.3-mc26.3.jar!/META-INF/jars/TRansition-1.0.25-26.3-fabric-SNAPSHOT.jar",
+      "class": "dev/tr7zw/lib/sentry/HostnameCache.class",
+      "strings": [
+        "newSingleThreadExecutor"
+      ]
+    },
+    {
+      "artifact": "sodium-fabric-0.9.3-alpha.1+mc26.3.jar",
+      "class": "net/caffeinemc/mods/sodium/client/render/chunk/RenderSectionManager.class",
+      "strings": [
+        "newSingleThreadExecutor"
+      ]
+    },
+    {
+      "artifact": "yet_another_config_lib_v3-3.9.7+26.3-fabric.jar",
+      "class": "dev/isxander/yacl3/gui/image/ImageRendererManager.class",
+      "strings": [
+        "newSingleThreadExecutor"
+      ]
+    }
+  ]
+}

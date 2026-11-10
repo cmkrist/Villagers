@@ -1,0 +1,454 @@
+{
+  "kind": "READ ONLY native home/collision/path inspection; no path assignment or setters",
+  "gameTime": 46535,
+  "actor": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+  "home": {
+    "dimension": "minecraft:overworld",
+    "x": -269,
+    "y": 75,
+    "z": 733
+  },
+  "position": [
+    -234.2069023807201,
+    73.0,
+    766.6999999880791
+  ],
+  "pose": "STANDING",
+  "width": 0.6,
+  "height": 1.95,
+  "onGround": true,
+  "box": [
+    -234.50690239264102,
+    73.0,
+    766.3999999761581,
+    -233.90690236879917,
+    74.95000004768372,
+    767.0
+  ],
+  "collisionFree": false,
+  "canOpenDoors": true,
+  "homePath": {
+    "nodes": 1,
+    "canReach": false,
+    "target": "-269, 76, 733",
+    "positions": [
+      "-235, 73, 766"
+    ],
+    "present": true
+  },
+  "nearby": [
+    {
+      "position": "-236, 71, 765",
+      "state": "Block{minecraft:smooth_sandstone}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-235, 71, 765",
+      "state": "Block{minecraft:smooth_sandstone}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-234, 71, 765",
+      "state": "Block{minecraft:smooth_sandstone}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-236, 72, 765",
+      "state": "Block{minecraft:green_bed}[facing\u003dsouth,occupied\u003dfalse,part\u003dfoot]",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [0.1875, 0.5625, 0.1875]",
+        "AABB[0.8125, 0.0, 0.0] -\u003e [1.0, 0.5625, 0.1875]",
+        "AABB[0.0, 0.1875, 0.1875] -\u003e [1.0, 0.5625, 1.0]",
+        "AABB[0.1875, 0.1875, 0.0] -\u003e [0.8125, 0.5625, 0.1875]"
+      ]
+    },
+    {
+      "position": "-235, 72, 765",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-234, 72, 765",
+      "state": "Block{minecraft:cut_sandstone}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-236, 73, 765",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-235, 73, 765",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-234, 73, 765",
+      "state": "Block{minecraft:potted_dead_bush}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.3125, 0.0, 0.3125] -\u003e [0.6875, 0.375, 0.6875]"
+      ]
+    },
+    {
+      "position": "-236, 74, 765",
+      "state": "Block{minecraft:smooth_sandstone_slab}[type\u003dtop,waterlogged\u003dfalse]",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.5, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-235, 74, 765",
+      "state": "Block{minecraft:smooth_sandstone_slab}[type\u003dtop,waterlogged\u003dfalse]",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.5, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-234, 74, 765",
+      "state": "Block{minecraft:smooth_sandstone_slab}[type\u003dtop,waterlogged\u003dfalse]",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.5, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-236, 75, 765",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-235, 75, 765",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-234, 75, 765",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-236, 71, 766",
+      "state": "Block{minecraft:smooth_sandstone}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-235, 71, 766",
+      "state": "Block{minecraft:smooth_sandstone}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-234, 71, 766",
+      "state": "Block{minecraft:smooth_sandstone}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-236, 72, 766",
+      "state": "Block{minecraft:green_bed}[facing\u003dsouth,occupied\u003dfalse,part\u003dhead]",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.8125] -\u003e [0.1875, 0.5625, 1.0]",
+        "AABB[0.8125, 0.0, 0.8125] -\u003e [1.0, 0.5625, 1.0]",
+        "AABB[0.0, 0.1875, 0.0] -\u003e [1.0, 0.5625, 0.8125]",
+        "AABB[0.1875, 0.1875, 0.8125] -\u003e [0.8125, 0.5625, 1.0]"
+      ]
+    },
+    {
+      "position": "-235, 72, 766",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-234, 72, 766",
+      "state": "Block{minecraft:smooth_sandstone_stairs}[facing\u003dsouth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.5, 1.0]",
+        "AABB[0.0, 0.5, 0.5] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-236, 73, 766",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-235, 73, 766",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-234, 73, 766",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-236, 74, 766",
+      "state": "Block{minecraft:smooth_sandstone_slab}[type\u003dtop,waterlogged\u003dfalse]",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.5, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-235, 74, 766",
+      "state": "Block{minecraft:smooth_sandstone_slab}[type\u003dtop,waterlogged\u003dfalse]",
+      "intersectsBody": true,
+      "shape": [
+        "AABB[0.0, 0.5, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-234, 74, 766",
+      "state": "Block{minecraft:smooth_sandstone_slab}[type\u003dtop,waterlogged\u003dfalse]",
+      "intersectsBody": true,
+      "shape": [
+        "AABB[0.0, 0.5, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-236, 75, 766",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-235, 75, 766",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-234, 75, 766",
+      "state": "Block{minecraft:air}",
+      "intersectsBody": false,
+      "shape": []
+    },
+    {
+      "position": "-236, 71, 767",
+      "state": "Block{minecraft:sand}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-235, 71, 767",
+      "state": "Block{minecraft:sand}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-234, 71, 767",
+      "state": "Block{minecraft:sand}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-236, 72, 767",
+      "state": "Block{minecraft:smooth_sandstone}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-235, 72, 767",
+      "state": "Block{minecraft:smooth_sandstone}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-234, 72, 767",
+      "state": "Block{minecraft:smooth_sandstone}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-236, 73, 767",
+      "state": "Block{minecraft:smooth_sandstone}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-235, 73, 767",
+      "state": "Block{minecraft:smooth_sandstone}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-234, 73, 767",
+      "state": "Block{minecraft:smooth_sandstone}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-236, 74, 767",
+      "state": "Block{minecraft:smooth_sandstone}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-235, 74, 767",
+      "state": "Block{minecraft:smooth_sandstone_slab}[type\u003dtop,waterlogged\u003dfalse]",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.5, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-234, 74, 767",
+      "state": "Block{minecraft:smooth_sandstone}",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-236, 75, 767",
+      "state": "Block{minecraft:smooth_sandstone_stairs}[facing\u003dwest,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.5, 1.0]",
+        "AABB[0.0, 0.5, 0.0] -\u003e [0.5, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-235, 75, 767",
+      "state": "Block{minecraft:smooth_sandstone_slab}[type\u003dbottom,waterlogged\u003dfalse]",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.5, 1.0]"
+      ]
+    },
+    {
+      "position": "-234, 75, 767",
+      "state": "Block{minecraft:smooth_sandstone_stairs}[facing\u003deast,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+      "intersectsBody": false,
+      "shape": [
+        "AABB[0.0, 0.0, 0.0] -\u003e [1.0, 0.5, 1.0]",
+        "AABB[0.5, 0.5, 0.0] -\u003e [1.0, 1.0, 1.0]"
+      ]
+    }
+  ],
+  "localCandidates": [
+    {
+      "lowerCollisionFree": false,
+      "feet": [
+        -235.2069023807201,
+        72.0,
+        766.6999999880791
+      ],
+      "path": {
+        "nodes": 1,
+        "canReach": false,
+        "target": "-236, 73, 766",
+        "positions": [
+          "-235, 73, 766"
+        ],
+        "present": true
+      }
+    },
+    {
+      "lowerCollisionFree": false,
+      "feet": [
+        -233.2069023807201,
+        72.0,
+        766.6999999880791
+      ],
+      "path": {
+        "nodes": 1,
+        "canReach": false,
+        "target": "-234, 73, 766",
+        "positions": [
+          "-235, 73, 766"
+        ],
+        "present": true
+      }
+    },
+    {
+      "lowerCollisionFree": false,
+      "feet": [
+        -234.2069023807201,
+        72.0,
+        765.6999999880791
+      ],
+      "path": {
+        "nodes": 1,
+        "canReach": false,
+        "target": "-235, 72, 765",
+        "positions": [
+          "-235, 73, 766"
+        ],
+        "present": true
+      }
+    },
+    {
+      "lowerCollisionFree": false,
+      "feet": [
+        -234.2069023807201,
+        72.0,
+        767.6999999880791
+      ],
+      "path": {
+        "nodes": 1,
+        "canReach": false,
+        "target": "-235, 76, 767",
+        "positions": [
+          "-235, 73, 766"
+        ],
+        "present": true
+      }
+    }
+  ]
+}

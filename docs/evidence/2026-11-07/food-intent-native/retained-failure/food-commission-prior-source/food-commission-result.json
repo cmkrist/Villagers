@@ -1,0 +1,168 @@
+{
+  "status": "failed",
+  "failure": "java.lang.AssertionError: paid request alone cannot authorize an otherwise eligible native gift",
+  "events": [
+    {
+      "phase": "finite setup; generous seller has three bread/six wheat; buyer one actual marked coin and no charitable request budget",
+      "tick": 60,
+      "foodAtPurchase": -1,
+      "giftBoundaryChecked": false,
+      "buyer": {
+        "food": 16,
+        "health": 20.0,
+        "money": 1,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      },
+      "seller": {
+        "food": 16,
+        "health": 20.0,
+        "money": 0,
+        "bread": 3,
+        "wheat": 6,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      }
+    },
+    {
+      "phase": "observe",
+      "tick": 400,
+      "foodAtPurchase": -1,
+      "giftBoundaryChecked": false,
+      "buyer": {
+        "food": 16,
+        "health": 20.0,
+        "money": 1,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      },
+      "seller": {
+        "food": 16,
+        "health": 20.0,
+        "money": 0,
+        "bread": 3,
+        "wheat": 6,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      }
+    },
+    {
+      "phase": "observe",
+      "tick": 800,
+      "foodAtPurchase": -1,
+      "giftBoundaryChecked": false,
+      "buyer": {
+        "food": 16,
+        "health": 20.0,
+        "money": 1,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      },
+      "seller": {
+        "food": 16,
+        "health": 20.0,
+        "money": 0,
+        "bread": 3,
+        "wheat": 6,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      }
+    },
+    {
+      "phase": "observe",
+      "tick": 1200,
+      "foodAtPurchase": -1,
+      "giftBoundaryChecked": false,
+      "buyer": {
+        "food": 15,
+        "health": 20.0,
+        "money": 1,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      },
+      "seller": {
+        "food": 16,
+        "health": 20.0,
+        "money": 0,
+        "bread": 3,
+        "wheat": 6,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      }
+    },
+    {
+      "request": {
+        "kind": "FOOD",
+        "customerMoney": 1,
+        "customerFood": 13,
+        "gameTime": 1478,
+        "customer": "434f4d4d-4953-5349-0000-000000000009",
+        "price": 1
+      },
+      "phase": "actual paid production request"
+    },
+    {
+      "phase": "paid request heard",
+      "tick": 1478,
+      "foodAtPurchase": -1,
+      "giftBoundaryChecked": false,
+      "buyer": {
+        "food": 13,
+        "health": 20.0,
+        "money": 1,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      },
+      "seller": {
+        "food": 16,
+        "health": 20.0,
+        "money": 0,
+        "bread": 3,
+        "wheat": 6,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      }
+    }
+  ],
+  "fixture": "NEW isolated supplied peaceful lit chamber,beds,table,two adults with working hoes/common initial language; generous/frugal non-greedy seller starts three bread/six wheat; glutton buyer starts no food and receives one marked coin by real operator gift. Initial buyer charitable-request budget set beyond test window to isolate paid intent.80TPS,400base exhaustion/day. No post-setup supplies,body/health/clock/growth/position/budget setters or scripted successful trade/production/meal. One explicit native gift-denial attempt checks the paid-request boundary. Finite consent/income test, not renewable or sustainable survival."
+}

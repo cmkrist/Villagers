@@ -1,0 +1,121 @@
+{
+  "at": "2026-11-07T06:13:28.146816920Z",
+  "game_time": 6634,
+  "operation": "harm",
+  "role": "play",
+  "learning_mode": "adaptive",
+  "before": {
+    "observer_hand": "0 minecraft:air",
+    "villager_position": "(-240.2669280298258, 72.0, 770.2274076518482)",
+    "health": 20.0,
+    "distance": 20.302685,
+    "impression": {
+      "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+      "awe": 0.88,
+      "trust": 0.29000000000000004,
+      "fear": 0.02999999999999998,
+      "confidence": 0.24000000000000005,
+      "lastObservedTick": 5783,
+      "lastExposureTick": 5783,
+      "lastGiftTick": 5504,
+      "lastProtectionTick": -1,
+      "evidenceCount": 5,
+      "notes": [
+        {
+          "tick": 5183,
+          "evidence": "EXPOSURE"
+        },
+        {
+          "tick": 5383,
+          "evidence": "EXPOSURE"
+        },
+        {
+          "tick": 5504,
+          "evidence": "USEFUL_GIFT"
+        },
+        {
+          "tick": 5583,
+          "evidence": "EXPOSURE"
+        },
+        {
+          "tick": 5783,
+          "evidence": "EXPOSURE"
+        }
+      ]
+    },
+    "social_activity": {
+      "reaction": "NEUTRAL",
+      "avoidance_episodes": 0,
+      "active_until": 0,
+      "attention_episodes": 4,
+      "next_episode_at": 5983,
+      "approach_episodes": 0,
+      "rejected_paths": 0
+    },
+    "observer_uuid": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+    "observer_position": "(-227.31250362585533, 87.0, 774.629894093414)",
+    "villager_uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+    "line_of_sight": true
+  },
+  "intervention": "One native player.attack; no direct health or impression setters. Guard committed before attack.",
+  "accepted_health_damage": 1.0,
+  "damage_accepted": true,
+  "harm_attempt_used": true,
+  "after": {
+    "observer_hand": "0 minecraft:air",
+    "villager_position": "(-240.2669280298258, 72.0, 770.2274076518482)",
+    "health": 19.0,
+    "distance": 1.7878314,
+    "impression": {
+      "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+      "awe": 0.7,
+      "trust": -0.36,
+      "fear": 0.68,
+      "confidence": 0.5900000000000001,
+      "lastObservedTick": 6634,
+      "lastExposureTick": 5783,
+      "lastGiftTick": 5504,
+      "lastProtectionTick": -1,
+      "evidenceCount": 6,
+      "notes": [
+        {
+          "tick": 5183,
+          "evidence": "EXPOSURE"
+        },
+        {
+          "tick": 5383,
+          "evidence": "EXPOSURE"
+        },
+        {
+          "tick": 5504,
+          "evidence": "USEFUL_GIFT"
+        },
+        {
+          "tick": 5583,
+          "evidence": "EXPOSURE"
+        },
+        {
+          "tick": 5783,
+          "evidence": "EXPOSURE"
+        },
+        {
+          "tick": 6634,
+          "evidence": "PLAYER_HURT"
+        }
+      ]
+    },
+    "social_activity": {
+      "reaction": "NEUTRAL",
+      "avoidance_episodes": 0,
+      "active_until": 0,
+      "attention_episodes": 4,
+      "next_episode_at": 6734,
+      "approach_episodes": 0,
+      "rejected_paths": 0
+    },
+    "observer_uuid": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+    "observer_position": "(-238.5, 72.0, 770.5)",
+    "villager_uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+    "line_of_sight": true
+  }
+}

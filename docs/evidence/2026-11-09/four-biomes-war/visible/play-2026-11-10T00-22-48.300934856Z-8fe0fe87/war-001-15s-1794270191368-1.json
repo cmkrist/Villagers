@@ -1,0 +1,107 @@
+{
+  "at": "2026-11-10T00:23:11.369493307Z",
+  "elapsed_ms": 15031,
+  "label": "war-001-15s-1794270191368-1",
+  "source": "rendered client; only client-tracked entities",
+  "world": "FourBiomesWar",
+  "role": "play",
+  "learning_mode": "adaptive",
+  "native_target_tps": 20.0,
+  "training": {
+    "learning_mode": "adaptive",
+    "state": "waiting_for_trial",
+    "role": "play",
+    "configured_target_tps": 20,
+    "game_tick_budget": 48000
+  },
+  "game_time": 314,
+  "trial": "authored four-biome war scenario",
+  "server_tick": 314,
+  "screen": "",
+  "frame_ns": 822269,
+  "camera": {
+    "x": -95.5,
+    "y": 75.0,
+    "z": -87.5,
+    "yaw": -90.0,
+    "pitch": 15.0
+  },
+  "tracked_entities": 16,
+  "tracked_villagers": 8,
+  "villagers": [
+    {
+      "uuid": "adb4d33d-2a6b-403b-8d53-4e826701a85a",
+      "name": "Pip-adb4 · marching toward Frostwatch",
+      "x": -105.42285156414437,
+      "y": 75.0,
+      "z": -52.924560531981115,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "0a55979e-e79e-4793-b76a-d32466feb2fa",
+      "name": "Dara-0a55 · marching toward Frostwatch",
+      "x": -114.4259440123933,
+      "y": 75.0,
+      "z": -51.45239256280183,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "e3a16f27-d6be-498c-8e4c-1dfc2a6bf492",
+      "name": "Linden-e3a1 · marching toward Frostwatch",
+      "x": -99.5,
+      "y": 75.0,
+      "z": -42.05615232778655,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "d8e18f67-cb2a-4325-b06b-d58607658f98",
+      "name": "Fern-d8e1 · marching toward Frostwatch",
+      "x": -102.49983723958576,
+      "y": 75.0,
+      "z": -43.57194008799706,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "a9a630db-7193-4e3e-a50b-731e93b1e6c5",
+      "name": "Iris-a9a6 · explore",
+      "x": -87.91544596125459,
+      "y": 75.0,
+      "z": -100.03198242449434,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "968ac799-7efa-465f-91be-3e78c16d2414",
+      "name": "Linden-968a · explore",
+      "x": -88.228759765625,
+      "y": 75.0,
+      "z": -91.739501953125,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "8d2c2c42-8e52-49c9-90a0-3389c4d0ad26",
+      "name": "Hazel-8d2c · socialize",
+      "x": -87.2978515625,
+      "y": 75.0,
+      "z": -85.440673828125,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "ab3083d1-7e4b-4b74-9149-3e97fe625c18",
+      "name": "Dara-ab30 · socialize",
+      "x": -87.94718424722669,
+      "y": 75.0,
+      "z": -89.79402669595584,
+      "alive": true,
+      "health": 20.0
+    }
+  ],
+  "tracked_iron_golems": 0,
+  "iron_golems": []
+}

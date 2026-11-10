@@ -1,0 +1,66 @@
+{
+  "at": "2026-11-07T08:25:15.731370+00:00",
+  "owned_live": [
+    {
+      "pid": 601856,
+      "uid": 1000,
+      "ppid": 1,
+      "start_ticks": 10936249,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope"
+    },
+    {
+      "pid": 601857,
+      "uid": 1000,
+      "ppid": 601837,
+      "start_ticks": 10936249,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope"
+    },
+    {
+      "pid": 601946,
+      "uid": 1000,
+      "ppid": 601856,
+      "start_ticks": 10936303,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope"
+    },
+    {
+      "pid": 601990,
+      "uid": 1000,
+      "ppid": 601857,
+      "start_ticks": 10936325,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope"
+    },
+    {
+      "pid": 602326,
+      "uid": 1000,
+      "ppid": 601946,
+      "start_ticks": 10937021,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/adaptive",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope"
+    },
+    {
+      "pid": 602372,
+      "uid": 1000,
+      "ppid": 601990,
+      "start_ticks": 10937054,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/frozen",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope"
+    }
+  ],
+  "test_handles_terminal_exit0": [
+    59460,
+    66392
+  ],
+  "ordinary_birth_handle96153": "terminal exit0, no reopen",
+  "active_extra_workers_or_timers": [],
+  "hold": "none received; readiness only"
+}

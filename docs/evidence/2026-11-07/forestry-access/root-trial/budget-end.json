@@ -1,0 +1,196 @@
+{
+  "at": "2026-11-07T16:38:39.373578093Z",
+  "elapsed_ms": 79323,
+  "label": "budget-end",
+  "source": "rendered client; only client-tracked entities",
+  "world": "VillageTrial",
+  "role": "play",
+  "learning_mode": "adaptive",
+  "native_target_tps": 20.0,
+  "training": {
+    "measurement_window_server_ticks": 0,
+    "state": "play",
+    "start_server_tick": 1057,
+    "measurement_scope": "wall-clock and server-tick measurements cover this process session only",
+    "frozen": false,
+    "sprinting": false,
+    "measurement_window_seconds": 0.0,
+    "game_time": 51462,
+    "elapsed_server_ticks": 0,
+    "evidence_directory": "/home/niko/.internal/source/Villagers/runs/forestry-root/play/saves/VillageTrial/./villagers/training-evidence/play-2026-11-07T07-36-48.042031785Z-1b13d1e4",
+    "achieved_wall_tps": 0.0,
+    "server_tick": 1057,
+    "game_tick_budget": 48000,
+    "elapsed_game_ticks": 0,
+    "native_target_tps": 20.0,
+    "configured_target_tps": 20,
+    "detail": "Persistent identity, consumed exposure and terminal state restored; measurements are session-local.",
+    "resumed_elapsed_game_ticks": 0,
+    "cohort": {
+      "original": 11,
+      "missing": 0,
+      "alive": 4,
+      "terminal": 7
+    },
+    "event": "run_restored",
+    "wall_late_intervals": 0,
+    "role": "play",
+    "elapsed_wall_seconds": 0.002020562,
+    "learning_statistics": {
+      "mode": "ADAPTIVE",
+      "activeAgents": 5,
+      "decisions": 67,
+      "completedSkills": 49,
+      "safetyInterrupts": 0,
+      "agents": [
+        {
+          "uuid": "589b708d-b768-4a61-a59e-910db084b079",
+          "saturation": 0.0,
+          "fatigue": 0.22312499999999663,
+          "loneliness": 0.15071428571428658,
+          "hunger": 0.35,
+          "learningUpdates": 242,
+          "ageTicks": 14603,
+          "foodLevel": 13,
+          "generation": 1
+        },
+        {
+          "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+          "saturation": 5.0,
+          "fatigue": 0.04062500000000003,
+          "loneliness": 0.9260714285714203,
+          "hunger": 0.5,
+          "learningUpdates": 331,
+          "ageTicks": 40770,
+          "foodLevel": 10,
+          "generation": 0
+        },
+        {
+          "uuid": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+          "saturation": 0.0,
+          "fatigue": 0.08437499999999958,
+          "loneliness": 0.20305357142856734,
+          "hunger": 0.1,
+          "learningUpdates": 816,
+          "ageTicks": 40676,
+          "foodLevel": 18,
+          "generation": 0
+        },
+        {
+          "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+          "saturation": 6.0,
+          "fatigue": 0.4206249999999924,
+          "loneliness": 0.32214285714284135,
+          "hunger": 0.0,
+          "learningUpdates": 711,
+          "ageTicks": 40840,
+          "foodLevel": 20,
+          "generation": 0
+        },
+        {
+          "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+          "saturation": 0.0,
+          "fatigue": 0.4506250000000351,
+          "loneliness": 1.0,
+          "hunger": 0.05,
+          "learningUpdates": 445,
+          "ageTicks": 40810,
+          "foodLevel": 19,
+          "generation": 0
+        }
+      ]
+    },
+    "learning_mode": "adaptive",
+    "native_tick_cost_last_100": {
+      "samples": 100,
+      "meanMspt": 2.87694981,
+      "p50Mspt": 2.762523,
+      "p95Mspt": 3.739557,
+      "p99Mspt": 4.215388,
+      "maxMspt": 5.569165,
+      "overBudgetTicks": 0
+    },
+    "native_mean_mspt": 2.876949,
+    "automatic_promotion_disabled": true,
+    "learning_claim": "No improvement inferred from speed, elapsed ticks, labels or survival alone; compare independent controlled cohorts.",
+    "start_game_time": 11004,
+    "run_id": "play-2026-11-07T07-36-48.042031785Z-1b13d1e4",
+    "late_interval_definition": "Elapsed interval between observed server ticks exceeds 1.5 times the current target interval; distinct from native tick work cost.",
+    "at": "2026-11-07T16:38:12.175084832Z",
+    "wall_started_at": "2026-11-07T16:38:12.173097430Z",
+    "wall_measured_intervals": 0
+  },
+  "game_time": 52006,
+  "trial": "natural generated village",
+  "server_tick": 1601,
+  "screen": "",
+  "frame_ns": 760793,
+  "camera": {
+    "x": -239.5,
+    "y": 100.0,
+    "z": 768.5,
+    "yaw": 238.0999,
+    "pitch": 22.649994
+  },
+  "tracked_entities": 141,
+  "tracked_villagers": 5,
+  "villagers": [
+    {
+      "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "name": "Nell-e358 · socialize",
+      "x": -256.82862938316265,
+      "y": 68.0,
+      "z": 779.387396289207,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+      "name": "Juniper-231e · explore (unhappy)",
+      "x": -287.5233561205823,
+      "y": 72.0,
+      "z": 735.3058268242748,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "589b708d-b768-4a61-a59e-910db084b079",
+      "name": "Fern-589b · explore",
+      "x": -243.268798828125,
+      "y": 72.0,
+      "z": 742.39111328125,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "name": "Fern-5ad3 · rest",
+      "x": -226.5,
+      "y": 72.5625,
+      "z": 773.5,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+      "name": "Dara-c7c3 · explore",
+      "x": -259.061767578125,
+      "y": 77.0,
+      "z": 764.93798828125,
+      "alive": true,
+      "health": 20.0
+    }
+  ],
+  "tracked_iron_golems": 1,
+  "iron_golems": [
+    {
+      "uuid": "0dc9724f-c186-4784-aff8-5475aa216eb2",
+      "name": "Iron Golem",
+      "x": -238.352783203125,
+      "y": 73.0,
+      "z": 756.343017578125,
+      "alive": true,
+      "health": 100.0
+    }
+  ]
+}

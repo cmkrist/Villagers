@@ -1,0 +1,203 @@
+{
+  "initialPosition": [
+    -234.2069023807201,
+    73.0,
+    766.6999999880791
+  ],
+  "initialHomeDistance": 47.796511834378784,
+  "nativeRoofIntersections": [
+    {
+      "position": "-235, 74, 766",
+      "state": "Block{minecraft:smooth_sandstone_slab}[type=top,waterlogged=false]",
+      "intersectsBody": true,
+      "shape": [
+        "AABB[0.0, 0.5, 0.0] -> [1.0, 1.0, 1.0]"
+      ]
+    },
+    {
+      "position": "-234, 74, 766",
+      "state": "Block{minecraft:smooth_sandstone_slab}[type=top,waterlogged=false]",
+      "intersectsBody": true,
+      "shape": [
+        "AABB[0.0, 0.5, 0.0] -> [1.0, 1.0, 1.0]"
+      ]
+    }
+  ],
+  "initialNativePathNodes": 1,
+  "runs": [
+    {
+      "phase": "home-route",
+      "handle": 88305,
+      "exitCode": 0,
+      "nativeGameTime": 46377,
+      "finalSaveGameTime": 46381,
+      "position": [
+        -234.2069023807201,
+        73.0,
+        766.6999999880791
+      ],
+      "homeDistance": 47.796511834378784,
+      "survival": {
+        "homePathPlans": 20,
+        "plans": 20,
+        "recoveryUntil": 0,
+        "routeStalls": 0,
+        "intent": "NORMAL",
+        "partialHomeRoutes": 0,
+        "rejectedPaths": 0
+      },
+      "meanTickMillis": 5.175131,
+      "ownedTerminal": [
+        {
+          "pid": 873285,
+          "startTicks": "14112751",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 873387,
+          "startTicks": "14112816",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 873557,
+          "startTicks": "14113452",
+          "sameIdentityAlive": false
+        }
+      ]
+    },
+    {
+      "phase": "inspection",
+      "handle": 15058,
+      "exitCode": 0,
+      "nativeGameTime": 47182,
+      "finalSaveGameTime": 47186,
+      "position": [
+        -234.2069023807201,
+        73.0,
+        766.6999999880791
+      ],
+      "homeDistance": 47.796511834378784,
+      "survival": {
+        "homePathPlans": 20,
+        "rejectedPaths": 0,
+        "partialHomeRoutes": 0,
+        "intent": "NORMAL",
+        "routeStalls": 0,
+        "recoveryUntil": 0,
+        "plans": 20
+      },
+      "meanTickMillis": 4.863564,
+      "ownedTerminal": [
+        {
+          "pid": 875315,
+          "startTicks": "14128627",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 875427,
+          "startTicks": "14128698",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 875556,
+          "startTicks": "14129033",
+          "sameIdentityAlive": false
+        }
+      ]
+    },
+    {
+      "phase": "centering",
+      "handle": 75151,
+      "exitCode": 0,
+      "nativeGameTime": 48387,
+      "finalSaveGameTime": 48391,
+      "position": [
+        -245.08339574934067,
+        72.0,
+        741.5625327906896
+      ],
+      "homeDistance": 25.01183299226472,
+      "survival": {
+        "centeringFailures": 0,
+        "centeringActive": false,
+        "routeStalls": 0,
+        "centeringSuccesses": 1,
+        "rejectedPaths": 0,
+        "homePathPlans": 4,
+        "intent": "NORMAL",
+        "recoveryUntil": 0,
+        "plans": 4,
+        "partialHomeRoutes": 3,
+        "centeringAttempts": 1
+      },
+      "meanTickMillis": 4.902593,
+      "ownedTerminal": [
+        {
+          "pid": 877266,
+          "startTicks": "14163747",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 877370,
+          "startTicks": "14163811",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 877490,
+          "startTicks": "14164259",
+          "sameIdentityAlive": false
+        }
+      ]
+    },
+    {
+      "phase": "persistence",
+      "handle": 55186,
+      "exitCode": 0,
+      "nativeGameTime": 48792,
+      "finalSaveGameTime": 48796,
+      "position": [
+        -253.33729800783215,
+        73.0,
+        740.4279371868347
+      ],
+      "homeDistance": 16.856863449883495,
+      "survival": {
+        "partialHomeRoutes": 0,
+        "centeringAttempts": 0,
+        "centeringFailures": 0,
+        "centeringActive": false,
+        "routeStalls": 0,
+        "centeringSuccesses": 0,
+        "rejectedPaths": 0,
+        "homePathPlans": 0,
+        "intent": "NORMAL",
+        "recoveryUntil": 0,
+        "plans": 0
+      },
+      "meanTickMillis": 5.300245,
+      "ownedTerminal": [
+        {
+          "pid": 878977,
+          "startTicks": "14186394",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 879080,
+          "startTicks": "14186468",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 879197,
+          "startTicks": "14186792",
+          "sameIdentityAlive": false
+        }
+      ]
+    }
+  ],
+  "sourceWorldFilesUnchanged": 229,
+  "newFixtureResourcesClockOrActorSetters": [],
+  "bedArrivalAndForestryAccessNotProven": true,
+  "sourceArchiveSHA256": "25fcf2daeebd34a78123127cfcbd4908f242c0fee6f0f02c90e1bb321cc4f43f",
+  "sourceAndDeployed040Unchanged": "4da3ac37044f5a3fa6ef77f70a27d91d1333748176aa483ff1d735b132afecb0",
+  "unreleased041dev": "e72327176c2026f803df5a80ff4ac94766413d9a8c4ba764be5e0a53e88921e1"
+}

@@ -1,0 +1,90 @@
+{
+  "at": "2026-11-07T11:52:14.281969630Z",
+  "elapsed_ms": 19168,
+  "label": "budget-end",
+  "source": "rendered client; only client-tracked entities",
+  "world": "VillageTrial",
+  "role": "play",
+  "learning_mode": "adaptive",
+  "native_target_tps": 20.0,
+  "training": {
+    "state": "waiting_for_trial",
+    "role": "play",
+    "configured_target_tps": 20,
+    "game_tick_budget": 48000,
+    "learning_mode": "adaptive"
+  },
+  "game_time": 37114,
+  "trial": "natural generated village",
+  "server_tick": 401,
+  "screen": "",
+  "frame_ns": 1618877,
+  "camera": {
+    "x": -211.5,
+    "y": 104.0,
+    "z": 796.5,
+    "yaw": 135.0,
+    "pitch": 35.0
+  },
+  "tracked_entities": 144,
+  "tracked_villagers": 5,
+  "villagers": [
+    {
+      "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "name": "Nell-e358 · socialize",
+      "x": -256.82862938316265,
+      "y": 68.0,
+      "z": 779.387396289207,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+      "name": "Dara-c7c3 · explore",
+      "x": -236.91886393533787,
+      "y": 72.0,
+      "z": 746.6454264311687,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+      "name": "Juniper-231e · rest (unhappy)",
+      "x": -234.2069023807201,
+      "y": 73.0,
+      "z": 766.6999999880791,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "name": "Fern-5ad3 · rest",
+      "x": -226.5,
+      "y": 72.5625,
+      "z": 773.5,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "589b708d-b768-4a61-a59e-910db084b079",
+      "name": "Fern-589b · rest",
+      "x": -241.5,
+      "y": 72.6875,
+      "z": 759.5,
+      "alive": true,
+      "health": 20.0
+    }
+  ],
+  "tracked_iron_golems": 1,
+  "iron_golems": [
+    {
+      "uuid": "0dc9724f-c186-4784-aff8-5475aa216eb2",
+      "name": "Iron Golem",
+      "x": -272.26538086047367,
+      "y": 77.0,
+      "z": 757.6604817698462,
+      "alive": true,
+      "health": 100.0
+    }
+  ]
+}

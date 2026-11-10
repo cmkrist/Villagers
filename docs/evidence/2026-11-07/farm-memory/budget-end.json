@@ -1,0 +1,136 @@
+{
+  "at": "2026-11-07T20:45:39.902338259Z",
+  "elapsed_ms": 99259,
+  "label": "budget-end",
+  "source": "rendered client; only client-tracked entities",
+  "world": "VillageTrial",
+  "role": "play",
+  "learning_mode": "adaptive",
+  "native_target_tps": 20.0,
+  "training": {
+    "role": "play",
+    "wall_late_intervals": 0,
+    "event": "run_restored",
+    "cohort": {
+      "original": 11,
+      "terminal": 9,
+      "alive": 2,
+      "missing": 0
+    },
+    "resumed_elapsed_game_ticks": 0,
+    "detail": "Persistent identity, consumed exposure and terminal state restored; measurements are session-local.",
+    "configured_target_tps": 20,
+    "native_target_tps": 20.0,
+    "elapsed_game_ticks": 0,
+    "game_tick_budget": 48000,
+    "server_tick": 1062,
+    "achieved_wall_tps": 0.0,
+    "evidence_directory": "/home/niko/.internal/source/Villagers/runs/farm-memory/play/saves/VillageTrial/./villagers/training-evidence/play-2026-11-07T07-36-48.042031785Z-1b13d1e4",
+    "elapsed_server_ticks": 0,
+    "game_time": 101940,
+    "measurement_window_seconds": 0.0,
+    "sprinting": false,
+    "frozen": false,
+    "measurement_scope": "wall-clock and server-tick measurements cover this process session only",
+    "start_server_tick": 1062,
+    "state": "play",
+    "measurement_window_server_ticks": 0,
+    "wall_measured_intervals": 0,
+    "wall_started_at": "2026-11-07T20:44:52.929130709Z",
+    "at": "2026-11-07T20:44:52.931113782Z",
+    "late_interval_definition": "Elapsed interval between observed server ticks exceeds 1.5 times the current target interval; distinct from native tick work cost.",
+    "run_id": "play-2026-11-07T07-36-48.042031785Z-1b13d1e4",
+    "start_game_time": 11004,
+    "learning_claim": "No improvement inferred from speed, elapsed ticks, labels or survival alone; compare independent controlled cohorts.",
+    "automatic_promotion_disabled": true,
+    "native_mean_mspt": 3.384314,
+    "native_tick_cost_last_100": {
+      "samples": 100,
+      "meanMspt": 3.3843149599999998,
+      "p50Mspt": 3.380015,
+      "p95Mspt": 4.283059,
+      "p99Mspt": 4.908652,
+      "maxMspt": 5.091262,
+      "overBudgetTicks": 0
+    },
+    "learning_mode": "adaptive",
+    "learning_statistics": {
+      "mode": "ADAPTIVE",
+      "activeAgents": 2,
+      "decisions": 22,
+      "completedSkills": 12,
+      "safetyInterrupts": 0,
+      "agents": [
+        {
+          "learningUpdates": 871,
+          "hunger": 0.2,
+          "loneliness": 1.0,
+          "fatigue": 0.14093749999999838,
+          "saturation": 4.2,
+          "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+          "generation": 0,
+          "foodLevel": 16,
+          "ageTicks": 90950
+        },
+        {
+          "learningUpdates": 839,
+          "hunger": 0.0,
+          "loneliness": 1.0,
+          "fatigue": 0.0,
+          "saturation": 1.0,
+          "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+          "generation": 0,
+          "foodLevel": 20,
+          "ageTicks": 90890
+        }
+      ]
+    },
+    "elapsed_wall_seconds": 0.002016982
+  },
+  "game_time": 102879,
+  "trial": "natural generated village",
+  "server_tick": 2001,
+  "screen": "",
+  "frame_ns": 766153,
+  "camera": {
+    "x": -211.5,
+    "y": 104.0,
+    "z": 796.5,
+    "yaw": 135.0,
+    "pitch": 35.0
+  },
+  "tracked_entities": 139,
+  "tracked_villagers": 2,
+  "villagers": [
+    {
+      "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "name": "Nell-e358 · rest",
+      "x": -256.82862938316265,
+      "y": 68.0,
+      "z": 779.387396289207,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "name": "Fern-5ad3 · explore (unhappy)",
+      "x": -229.07861327502178,
+      "y": 72.0,
+      "z": 756.0092773384386,
+      "alive": true,
+      "health": 20.0
+    }
+  ],
+  "tracked_iron_golems": 1,
+  "iron_golems": [
+    {
+      "uuid": "0dc9724f-c186-4784-aff8-5475aa216eb2",
+      "name": "Iron Golem",
+      "x": -230.29654947848758,
+      "y": 72.0,
+      "z": 766.8409016955848,
+      "alive": true,
+      "health": 19.0
+    }
+  ]
+}

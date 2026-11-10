@@ -1,0 +1,100 @@
+[
+  {
+    "pid": 699607,
+    "ppid": 699596,
+    "start_ticks": "11750345",
+    "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+    "cwd": "/home/niko/.internal/source/Villagers",
+    "argv": [
+      "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "-Xmx64m",
+      "-Xms64m",
+      "-Dorg.gradle.appname=gradlew",
+      "-jar",
+      "/home/niko/.internal/source/Villagers/gradle/wrapper/gradle-wrapper.jar",
+      "--project-cache-dir",
+      "/home/niko/.internal/source/Villagers/runs/play/.gradle",
+      "runClient"
+    ]
+  },
+  {
+    "pid": 699878,
+    "ppid": 699718,
+    "start_ticks": "11750777",
+    "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+    "cwd": "/home/niko/.internal/source/Villagers/runs/play",
+    "argv": [
+      "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "-Dfabric.dli.config=/home/niko/.internal/source/Villagers/runs/play/.gradle/loom-cache/launch.cfg",
+      "-Dfabric.dli.env=client",
+      "-Dfabric.dli.main=net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "-Dvillagers.lab=true",
+      "-Dvillagers.learning=adaptive",
+      "-Dvillagers.role=play",
+      "-Dvillagers.training.tps=20",
+      "-Dvillagers.trial=village",
+      "@/home/niko/.internal/source/Villagers/runs/play/.build/loom-cache/argFiles/runClient",
+      "-XX:StackShadowPages=32",
+      "--sun-misc-unsafe-memory-access=allow",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx4G",
+      "-Dfile.encoding=UTF-8",
+      "-Duser.country",
+      "-Duser.language=en",
+      "-Duser.variant",
+      "net.fabricmc.devlaunchinjector.Main",
+      "--username",
+      "VillagePlayer",
+      "--width",
+      "1280",
+      "--height",
+      "720"
+    ]
+  },
+  {
+    "pid": 699596,
+    "ppid": 439660,
+    "start_ticks": "11750342",
+    "exe": "/usr/bin/bash",
+    "cwd": "/home/niko/.internal/source/Villagers",
+    "argv": [
+      "/usr/bin/bash",
+      "-lc",
+      "python3 - <<'PY'\nfrom pathlib import Path\nimport hashlib,json\nPath('docs/evidence/2026-11-07/ordinary-birth/source-sha256.json').write_text(json.dumps({str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in Path('src').rglob('*') if p.is_file()},indent=2))\nPY\n./tools/play.sh > docs/evidence/2026-11-07/ordinary-birth/launch-2-console.log 2>&1"
+    ]
+  },
+  {
+    "pid": 699718,
+    "ppid": 699607,
+    "start_ticks": "11750402",
+    "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+    "cwd": "/home/niko/.internal/source/Villagers",
+    "argv": [
+      "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "--add-opens=java.base/java.lang=ALL-UNNAMED",
+      "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED",
+      "--add-opens=java.base/java.util=ALL-UNNAMED",
+      "--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED",
+      "--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED",
+      "--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED",
+      "--add-opens=java.base/java.nio.charset=ALL-UNNAMED",
+      "--add-opens=java.base/java.net=ALL-UNNAMED",
+      "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED",
+      "--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED",
+      "--add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED",
+      "--add-opens=java.base/java.time=ALL-UNNAMED",
+      "--sun-misc-unsafe-memory-access=allow",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx2G",
+      "-Dfile.encoding=UTF-8",
+      "-Duser.country",
+      "-Duser.language=en",
+      "-Duser.variant",
+      "-cp",
+      "/home/cmkrist/.gradle/wrapper/dists/gradle-9.8.1-bin/a2l6ltp3k1vth6lwipzm5p2jp/gradle-9.8.1/lib/gradle-daemon-main-9.8.1.jar",
+      "-javaagent:/home/cmkrist/.gradle/wrapper/dists/gradle-9.8.1-bin/a2l6ltp3k1vth6lwipzm5p2jp/gradle-9.8.1/lib/agents/gradle-instrumentation-agent-9.8.1.jar",
+      "org.gradle.launcher.daemon.bootstrap.GradleDaemon",
+      "9.8.1"
+    ]
+  }
+]

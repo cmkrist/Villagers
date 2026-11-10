@@ -1,0 +1,83 @@
+{
+  "capturedUTC": "2026-11-07T18:09:15.524505+00:00",
+  "basis": "One natural checkpoint for exact known identities; no shared-scope attribution",
+  "originalSix": [
+    {
+      "pid": 601856,
+      "expectedStartTicks": 10936249,
+      "status": "absent; no replacement inferred"
+    },
+    {
+      "pid": 601857,
+      "expectedStartTicks": 10936249,
+      "status": "absent; no replacement inferred"
+    },
+    {
+      "pid": 601946,
+      "expectedStartTicks": 10936303,
+      "status": "absent; no replacement inferred"
+    },
+    {
+      "pid": 601990,
+      "expectedStartTicks": 10936325,
+      "observedStartTicks": 10936325,
+      "status": "same identity running",
+      "uid": 1000,
+      "ppid": 1,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope\n"
+    },
+    {
+      "pid": 602326,
+      "expectedStartTicks": 10937021,
+      "status": "absent; no replacement inferred"
+    },
+    {
+      "pid": 602372,
+      "expectedStartTicks": 10937054,
+      "observedStartTicks": 10937054,
+      "status": "same identity running",
+      "uid": 1000,
+      "ppid": 601990,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/frozen",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope\n"
+    }
+  ],
+  "ownedNativeChains": [
+    {
+      "pid": 951632,
+      "expectedStartTicks": 15254361,
+      "status": "absent; no replacement inferred"
+    },
+    {
+      "pid": 951740,
+      "expectedStartTicks": 15254418,
+      "status": "absent; no replacement inferred"
+    },
+    {
+      "pid": 951886,
+      "expectedStartTicks": 15254918,
+      "status": "absent; no replacement inferred"
+    },
+    {
+      "pid": 955586,
+      "expectedStartTicks": 15300159,
+      "status": "absent; no replacement inferred"
+    },
+    {
+      "pid": 955689,
+      "expectedStartTicks": 15300217,
+      "status": "absent; no replacement inferred"
+    },
+    {
+      "pid": 955802,
+      "expectedStartTicks": 15300471,
+      "status": "absent; no replacement inferred"
+    }
+  ],
+  "noOwnedAutomatedBuildReleaseTimer": true,
+  "activeResourceHold": false,
+  "newWorkers": false
+}

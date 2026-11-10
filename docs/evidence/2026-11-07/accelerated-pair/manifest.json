@@ -1,0 +1,65 @@
+{
+  "captured_at": "2026-11-07T05:53:15.696159+00:00",
+  "source_checkpoint": "run/archives/VillageTrial-natural-before-tools-20261107T051607Z",
+  "release": "0.2.0",
+  "jar_sha256": "5ce8fa0a05cf018def2e892805b7e566f058404b5eb40ff333143c0a8179f043",
+  "roles": {
+    "adaptive": {
+      "actual_tps": 80.03066038623925,
+      "target_tps": 80.0,
+      "mean_mspt": 2.500668,
+      "native_costs": {
+        "samples": 100,
+        "meanMspt": 2.50066833,
+        "p50Mspt": 2.36222,
+        "p95Mspt": 3.254005,
+        "p99Mspt": 4.176009,
+        "maxMspt": 4.815432,
+        "overBudgetTicks": 0
+      },
+      "state": "running",
+      "cohort": {
+        "original": 11,
+        "terminal": 0,
+        "alive": 11,
+        "missing": 0
+      },
+      "learning_updates_since_checkpoint": 1510,
+      "checkpoint_policy_unchanged": false,
+      "elapsed_game_ticks": 13600,
+      "elapsed_wall_seconds": 175.028862089,
+      "status_file": "runs/adaptive/saves/VillageTrial/villagers/training-evidence/adaptive-2026-11-07T05-50-20.245946098Z-6d612077/status.json",
+      "run_dir": "/home/niko/.internal/source/Villagers/runs/adaptive",
+      "initial_source_world_sha256": "cf4100d33f19544f05382135a4244dc189ff3056a0747d3ab8a544cae5853db4"
+    },
+    "frozen": {
+      "actual_tps": 80.00253603772437,
+      "target_tps": 80.0,
+      "mean_mspt": 2.857898,
+      "native_costs": {
+        "samples": 100,
+        "meanMspt": 2.8578984,
+        "p50Mspt": 2.615682,
+        "p95Mspt": 3.831367,
+        "p99Mspt": 4.535911,
+        "maxMspt": 4.756951,
+        "overBudgetTicks": 0
+      },
+      "state": "running",
+      "cohort": {
+        "terminal": 0,
+        "original": 11,
+        "missing": 0,
+        "alive": 11
+      },
+      "learning_updates_since_checkpoint": 0,
+      "checkpoint_policy_unchanged": true,
+      "elapsed_game_ticks": 13600,
+      "elapsed_wall_seconds": 175.028135058,
+      "status_file": "runs/frozen/saves/VillageTrial/villagers/training-evidence/frozen-2026-11-07T05-50-20.112941319Z-f397ca0b/status.json",
+      "run_dir": "/home/niko/.internal/source/Villagers/runs/frozen",
+      "initial_source_world_sha256": "cf4100d33f19544f05382135a4244dc189ff3056a0747d3ab8a544cae5853db4"
+    }
+  },
+  "interpretation": "Measured throughput and control isolation only; not evidence of improved survival, a trained language model or new learned skills."
+}

@@ -1,0 +1,214 @@
+{
+  "checkedUTC": "2026-11-07T11:10:13.276315+00:00",
+  "handle": 76199,
+  "exitCode": 0,
+  "kind": "CONTROLLED COPY; not ordinary survival evidence",
+  "originalWorldUnchanged": true,
+  "originalWorldSHA256": "3f1ed5533a361b0365fd88caf6d0bf90e0a4509a153b38f64fada1bf5a1501b4",
+  "nativeStopRequest": {
+    "start": 33105,
+    "end": 33505,
+    "limit": 400
+  },
+  "finalSaveGameTime": 33508,
+  "alive": 4,
+  "dead": 7,
+  "missing": 0,
+  "fern": {
+    "health": 20.0,
+    "food": {
+      "foodLevel": 10,
+      "saturation": 10.0,
+      "exhaustion": 1.2022115,
+      "timer": 0
+    },
+    "inventory": [
+      {
+        "item": "minecraft:wheat_seeds",
+        "count": 12
+      },
+      {
+        "item": "minecraft:air",
+        "count": 0
+      },
+      {
+        "item": "minecraft:air",
+        "count": 0
+      },
+      {
+        "item": "minecraft:air",
+        "count": 0
+      },
+      {
+        "item": "minecraft:air",
+        "count": 0
+      },
+      {
+        "item": "minecraft:air",
+        "count": 0
+      },
+      {
+        "item": "minecraft:air",
+        "count": 0
+      },
+      {
+        "item": "minecraft:air",
+        "count": 0
+      }
+    ],
+    "notes": [
+      {
+        "index": 499,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Planned trip to remembered farm -226, 72, 752"
+      },
+      {
+        "index": 499,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Arrived at remembered farm -226, 72, 752"
+      },
+      {
+        "index": 499,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Ate owned minecraft:bread for hunger or healing"
+      },
+      {
+        "index": 499,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Ate owned minecraft:bread for hunger or healing"
+      },
+      {
+        "index": 500,
+        "action": "EXPLORE",
+        "context": 1,
+        "reward": 0.0,
+        "note": "Observed outcome of EXPLORE"
+      },
+      {
+        "index": 500,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Completed EXPLORE at -222, 71, 749"
+      },
+      {
+        "index": 501,
+        "action": "EXPLORE",
+        "context": 1,
+        "reward": 0.0,
+        "note": "Observed outcome of EXPLORE"
+      },
+      {
+        "index": 501,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Completed EXPLORE at -216, 71, 754"
+      },
+      {
+        "index": 502,
+        "action": "EXPLORE",
+        "context": 1,
+        "reward": 0.0,
+        "note": "Observed outcome of EXPLORE"
+      },
+      {
+        "index": 502,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Completed EXPLORE at -222, 71, 751"
+      },
+      {
+        "index": 503,
+        "action": "EXPLORE",
+        "context": 1,
+        "reward": 0.0,
+        "note": "Observed outcome of EXPLORE"
+      },
+      {
+        "index": 503,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Completed EXPLORE at -223, 71, 757"
+      }
+    ]
+  },
+  "nativeAcceptance": "Real two owned-bread debits, food0 to10, healthy20 through imminent-starvation boundary, continued native movement; cooldown exact timing, sleep/danger, planting-root retention and injury-specific native checks pending",
+  "activeNewClients": [],
+  "noAutomatedBuildReleaseTimer": true,
+  "ownedTerminalCheck": [
+    {
+      "pid": 776669,
+      "startTicks": "12839174",
+      "sameIdentityAlive": false
+    },
+    {
+      "pid": 776770,
+      "startTicks": "12839233",
+      "sameIdentityAlive": false
+    },
+    {
+      "pid": 776928,
+      "startTicks": "12839748",
+      "sameIdentityAlive": false
+    }
+  ],
+  "originalSixUnchanged": [
+    {
+      "pid": 601856,
+      "ppid": 1,
+      "startTicks": 10936249,
+      "uid": 1000,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope\n"
+    },
+    {
+      "pid": 601857,
+      "ppid": 601837,
+      "startTicks": 10936249,
+      "uid": 1000,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope\n"
+    },
+    {
+      "pid": 601946,
+      "ppid": 601856,
+      "startTicks": 10936303,
+      "uid": 1000,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope\n"
+    },
+    {
+      "pid": 601990,
+      "ppid": 601857,
+      "startTicks": 10936325,
+      "uid": 1000,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope\n"
+    },
+    {
+      "pid": 602326,
+      "ppid": 601946,
+      "startTicks": 10937021,
+      "uid": 1000,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/adaptive",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope\n"
+    },
+    {
+      "pid": 602372,
+      "ppid": 601990,
+      "startTicks": 10937054,
+      "uid": 1000,
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/frozen",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope\n"
+    }
+  ]
+}

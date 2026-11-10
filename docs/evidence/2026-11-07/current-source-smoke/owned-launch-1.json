@@ -1,0 +1,54 @@
+[
+  {
+    "pid": 683453,
+    "ppid": 683443,
+    "start_ticks": "11575469",
+    "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+    "cwd": "/home/niko/.internal/source/Villagers",
+    "argv": [
+      "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "-Xmx64m",
+      "-Xms64m",
+      "-Dorg.gradle.appname=gradlew",
+      "-jar",
+      "/home/niko/.internal/source/Villagers/gradle/wrapper/gradle-wrapper.jar",
+      "--project-cache-dir",
+      "/home/niko/.internal/source/Villagers/runs/play/.gradle",
+      "runClient"
+    ]
+  },
+  {
+    "pid": 683704,
+    "ppid": 683556,
+    "start_ticks": "11576036",
+    "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+    "cwd": "/home/niko/.internal/source/Villagers/runs/play",
+    "argv": [
+      "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "-Dfabric.dli.config=/home/niko/.internal/source/Villagers/runs/play/.gradle/loom-cache/launch.cfg",
+      "-Dfabric.dli.env=client",
+      "-Dfabric.dli.main=net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "-Dvillagers.lab=true",
+      "-Dvillagers.learning=adaptive",
+      "-Dvillagers.role=play",
+      "-Dvillagers.training.tps=20",
+      "-Dvillagers.trial=village",
+      "@/home/niko/.internal/source/Villagers/runs/play/.build/loom-cache/argFiles/runClient",
+      "-XX:StackShadowPages=32",
+      "--sun-misc-unsafe-memory-access=allow",
+      "--enable-native-access=ALL-UNNAMED",
+      "-Xmx4G",
+      "-Dfile.encoding=UTF-8",
+      "-Duser.country",
+      "-Duser.language=en",
+      "-Duser.variant",
+      "net.fabricmc.devlaunchinjector.Main",
+      "--username",
+      "VillagePlayer",
+      "--width",
+      "1280",
+      "--height",
+      "720"
+    ]
+  }
+]

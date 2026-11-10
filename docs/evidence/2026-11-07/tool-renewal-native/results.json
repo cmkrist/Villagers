@@ -1,0 +1,324 @@
+{
+  "capturedUTC": "2026-11-07T23:33:00.164862+00:00",
+  "status": "Native finite tool replacement, clean partial resumption, completed-job restart and full-storage denial passed",
+  "cases": {
+    "replacement": {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/tool-renewal-server-v4",
+      "nativeClassBindingsChecked": 211,
+      "phases": [
+        {
+          "phase": "first",
+          "status": "passed",
+          "finalEvent": {
+            "phase": "actual wear, forestry, tool replacement and resumed harvest passed",
+            "tick": 459,
+            "food": 16,
+            "inventory": [
+              "9 minecraft:wheat_seeds",
+              "2 minecraft:bread",
+              "2 minecraft:wheat",
+              "0 minecraft:air",
+              "0 minecraft:air",
+              "2 minecraft:stick",
+              "1 minecraft:mangrove_log",
+              "0 minecraft:air"
+            ],
+            "held": "1 minecraft:wooden_hoe",
+            "hoeDamage": 1,
+            "hoesCrafted": 1,
+            "recipes": 3,
+            "logsGathered": 2,
+            "seedGathered": 1,
+            "seedPlanted": 1,
+            "forestryStatus": "not working",
+            "toolStatus": "made a real wooden hoe",
+            "remainingJobs": 0,
+            "meanServerTickMillis": 0.476579
+          },
+          "conservedHarvestReceipts": 2,
+          "terminal": {
+            "pid": 1177526,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794094181.167987
+          },
+          "exactIdentityGone": true
+        },
+        {
+          "phase": "restart",
+          "status": "restart-passed",
+          "finalEvent": {
+            "phase": "restart exact inventory and no replay passed",
+            "tick": 619,
+            "food": 16,
+            "inventory": [
+              "9 minecraft:wheat_seeds",
+              "2 minecraft:bread",
+              "2 minecraft:wheat",
+              "2 minecraft:stick",
+              "1 minecraft:mangrove_log",
+              "0 minecraft:air",
+              "0 minecraft:air",
+              "0 minecraft:air"
+            ],
+            "held": "1 minecraft:wooden_hoe",
+            "hoeDamage": 1,
+            "hoesCrafted": 0,
+            "recipes": 0,
+            "logsGathered": 0,
+            "seedGathered": 0,
+            "seedPlanted": 0,
+            "forestryStatus": "not working",
+            "toolStatus": "not working",
+            "remainingJobs": 0,
+            "meanServerTickMillis": 0.633027
+          },
+          "conservedHarvestReceipts": 0,
+          "terminal": {
+            "pid": 1177860,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794094190.7392244
+          },
+          "exactIdentityGone": true
+        }
+      ],
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/tool-renewal-artifact-v2",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "b87f660141fbdf34149aebc1ca6298a904b58df67dabe29b3e7183438b1054e6"
+        },
+        "fixtureSourceSHA256": "e271d0e0eaf3c513bc0c4fc87b51982e8bf65389c0f9a79f372db15f1db620a9",
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "76dc387e7adff7232b5205947341526ce8eb3a1f872f8cc18d6ac1de9a30ab28",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "b87f660141fbdf34149aebc1ca6298a904b58df67dabe29b3e7183438b1054e6"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      }
+    },
+    "partial-resume": {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/tool-renewal-partial-resume",
+      "nativeClassBindingsChecked": 211,
+      "phases": [
+        {
+          "phase": "first",
+          "status": "partial-passed",
+          "finalEvent": {
+            "phase": "clean partial checkpoint after real wear, replacement and resumed harvest; planting still owed",
+            "tick": 299,
+            "food": 16,
+            "inventory": [
+              "11 minecraft:wheat_seeds",
+              "2 minecraft:bread",
+              "2 minecraft:wheat",
+              "1 minecraft:mangrove_propagule",
+              "0 minecraft:air",
+              "2 minecraft:stick",
+              "0 minecraft:air",
+              "0 minecraft:air"
+            ],
+            "held": "1 minecraft:wooden_hoe",
+            "hoeDamage": 1,
+            "hoesCrafted": 1,
+            "recipes": 3,
+            "logsGathered": 1,
+            "seedGathered": 1,
+            "seedPlanted": 0,
+            "forestryStatus": "working approved log",
+            "toolStatus": "made a real wooden hoe",
+            "remainingJobs": 1,
+            "meanServerTickMillis": 0.385269
+          },
+          "conservedHarvestReceipts": 2,
+          "terminal": {
+            "pid": 1179224,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794094256.4016418
+          },
+          "exactIdentityGone": true
+        },
+        {
+          "phase": "resume",
+          "status": "passed",
+          "finalEvent": {
+            "phase": "partial forestry resumed from native save, paid planting and retired authority",
+            "tick": 440,
+            "food": 16,
+            "inventory": [
+              "11 minecraft:wheat_seeds",
+              "2 minecraft:bread",
+              "2 minecraft:wheat",
+              "0 minecraft:air",
+              "2 minecraft:stick",
+              "0 minecraft:air",
+              "1 minecraft:mangrove_log",
+              "0 minecraft:air"
+            ],
+            "held": "1 minecraft:wooden_hoe",
+            "hoeDamage": 1,
+            "hoesCrafted": 0,
+            "recipes": 0,
+            "logsGathered": 1,
+            "seedGathered": 0,
+            "seedPlanted": 1,
+            "forestryStatus": "not working",
+            "toolStatus": "not working",
+            "remainingJobs": 0,
+            "meanServerTickMillis": 0.76445
+          },
+          "conservedHarvestReceipts": 0,
+          "terminal": {
+            "pid": 1179391,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794094263.5803142
+          },
+          "exactIdentityGone": true
+        },
+        {
+          "phase": "restart",
+          "status": "restart-passed",
+          "finalEvent": {
+            "phase": "restart saved items and no replay passed",
+            "tick": 600,
+            "food": 16,
+            "inventory": [
+              "11 minecraft:wheat_seeds",
+              "2 minecraft:bread",
+              "2 minecraft:wheat",
+              "2 minecraft:stick",
+              "1 minecraft:mangrove_log",
+              "0 minecraft:air",
+              "0 minecraft:air",
+              "0 minecraft:air"
+            ],
+            "held": "1 minecraft:wooden_hoe",
+            "hoeDamage": 1,
+            "hoesCrafted": 0,
+            "recipes": 0,
+            "logsGathered": 0,
+            "seedGathered": 0,
+            "seedPlanted": 0,
+            "forestryStatus": "not working",
+            "toolStatus": "not working",
+            "remainingJobs": 0,
+            "meanServerTickMillis": 0.382552
+          },
+          "conservedHarvestReceipts": 0,
+          "terminal": {
+            "pid": 1179576,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794094271.0088491
+          },
+          "exactIdentityGone": true
+        }
+      ],
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/tool-renewal-artifact-v2",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "b87f660141fbdf34149aebc1ca6298a904b58df67dabe29b3e7183438b1054e6"
+        },
+        "fixtureSourceSHA256": "fc1d46387178a399185962c021162e739316432db505b7356927a0edccd62b54",
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "0f8e325949110715166d06c2e729003ee1907701a362a05770165e826cb28334",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "b87f660141fbdf34149aebc1ca6298a904b58df67dabe29b3e7183438b1054e6"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      }
+    },
+    "full-storage": {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/tool-renewal-storage-denial-v2",
+      "nativeClassBindingsChecked": 211,
+      "phases": [
+        {
+          "phase": "first",
+          "status": "passed",
+          "finalEvent": {
+            "phase": "full-storage denial preserved equipment, materials, terrain and authority",
+            "tick": 300,
+            "food": 16,
+            "inventory": [
+              "8 minecraft:wheat_seeds",
+              "6 minecraft:bread",
+              "64 minecraft:emerald",
+              "64 minecraft:emerald",
+              "64 minecraft:emerald",
+              "64 minecraft:emerald",
+              "64 minecraft:emerald",
+              "64 minecraft:emerald"
+            ],
+            "held": "1 minecraft:iron_hoe",
+            "hoeDamage": 249,
+            "hoesCrafted": 0,
+            "recipes": 0,
+            "logsGathered": 0,
+            "seedGathered": 0,
+            "seedPlanted": 0,
+            "forestryStatus": "not working",
+            "toolStatus": "not working",
+            "remainingJobs": 1,
+            "meanServerTickMillis": 0.486727
+          },
+          "conservedHarvestReceipts": 0,
+          "terminal": {
+            "pid": 1179962,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794094293.8679025
+          },
+          "exactIdentityGone": true
+        }
+      ],
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/tool-renewal-artifact-v2",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "b87f660141fbdf34149aebc1ca6298a904b58df67dabe29b3e7183438b1054e6"
+        },
+        "fixtureSourceSHA256": "fc1d46387178a399185962c021162e739316432db505b7356927a0edccd62b54",
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "cd82fe9f40b010c5732bccb48da316e903bc432406ea3da325035cbd95c9cba6",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "b87f660141fbdf34149aebc1ca6298a904b58df67dabe29b3e7183438b1054e6"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      }
+    }
+  },
+  "build": {
+    "javaTests": 345,
+    "failures": 0,
+    "errors": 0,
+    "pythonTests": 10,
+    "log": "build-v2.log",
+    "inputSourcePins": "source-pins-v2.json",
+    "inputSourceArchive": "source-v2.zip",
+    "currentSourceDrift": []
+  },
+  "failuresRetained": [
+    {
+      "runtime": "runs/tool-renewal-server",
+      "reason": "Test-only headless operator message connection was missing; setup stopped before ordinary work."
+    },
+    {
+      "runtime": "runs/tool-renewal-server-v2",
+      "reason": "Reproduced production bug: after first log, crafted hoe blocked bare-hand forestry, leaving second log and retained planting obligation unfinished."
+    },
+    {
+      "runtime": "runs/tool-renewal-server-v3",
+      "reason": "Production chain passed; restart observer incorrectly required unchanged empty-slot positions. Native inventory compaction preserved real items; corrected in v4."
+    }
+  ],
+  "productionChanges": [
+    "src/main/java/local/villagers/ForestryWork.java: store held hoe only in real empty slot for an actual valid job; require bare hand at loot/plant commit and rechecks.",
+    "src/main/java/local/villagers/AdventureActions.java: idle hoe equipping defers during active eligible forestry, while actual farming can still equip it."
+  ],
+  "conservation": "Two actual granted logs: one funds four native planks, then four sticks, then one wooden hoe; one log and two sticks remain. One real propagule gathered then planted. Actual initial hoe breaks on harvest; replacement incurs one real harvest wear. Partial reload adds only second log and spends only retained seed; no replay.",
+  "limitations": [
+    "Supplied peaceful flat fixture with one selected-by-fixed-UUID adult, declared initially near-broken iron hoe, two mature crops, seeds, bread, table, bed, tree cells and finite native operator grant.80TPS, normal80base exhaustion/day.",
+    "No post-setup supplies, body, growth, clock, position or fixture terrain setters. No primary worlds or clients modified.",
+    "Tests finite paid replacement, not natural tree regrowth, repeated grants, indefinite tool supply, long-term food adequacy, hostile survival or a full local economy.",
+    "Mean tick times are small fixture observations, not population capacity evidence."
+  ],
+  "custody": "All native processes owned by this fixture have terminal receipts and exact PID/start identities gone. No active source writes or native/build jobs from this execution; Lead construction files and HANDOFF untouched."
+}

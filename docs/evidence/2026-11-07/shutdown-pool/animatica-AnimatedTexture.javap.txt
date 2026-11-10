@@ -1,0 +1,373 @@
+Compiled from "AnimatedTexture.java"
+public class io.github.foundationgames.animatica.animation.AnimatedTexture extends net.minecraft.client.renderer.texture.DynamicTexture implements net.minecraft.client.renderer.texture.TickableTexture {
+  public static final java.util.concurrent.ExecutorService EXECUTORS;
+
+  public final io.github.foundationgames.animatica.animation.AnimatedTexture$Animation[] anims;
+
+  private final com.mojang.blaze3d.platform.NativeImage original;
+
+  private int frame;
+
+  private java.util.concurrent.CompletableFuture<java.lang.Void> frameWaitingOn;
+
+  public static java.util.Optional<io.github.foundationgames.animatica.animation.AnimatedTexture> tryCreate(net.minecraft.server.packs.resources.ResourceManager, net.minecraft.resources.Identifier, java.util.List<io.github.foundationgames.animatica.animation.AnimationMeta>);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokeinterface #1,  2            // InterfaceMethod net/minecraft/server/packs/resources/ResourceManager.getResourceOrThrow:(Lnet/minecraft/resources/Identifier;)Lnet/minecraft/server/packs/resources/Resource;
+         7: invokevirtual #7                  // Method net/minecraft/server/packs/resources/Resource.open:()Ljava/io/InputStream;
+        10: astore_3
+        11: new           #13                 // class io/github/foundationgames/animatica/animation/AnimatedTexture
+        14: dup
+        15: aload_1
+        16: dup
+        17: invokestatic  #15                 // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+        20: pop
+        21: invokedynamic #21,  0             // InvokeDynamic #0:get:(Lnet/minecraft/resources/Identifier;)Ljava/util/function/Supplier;
+        26: aload_0
+        27: aload_2
+        28: aload_3
+        29: invokestatic  #25                 // Method com/mojang/blaze3d/platform/NativeImage.read:(Ljava/io/InputStream;)Lcom/mojang/blaze3d/platform/NativeImage;
+        32: invokespecial #31                 // Method "<init>":(Ljava/util/function/Supplier;Lnet/minecraft/server/packs/resources/ResourceManager;Ljava/util/List;Lcom/mojang/blaze3d/platform/NativeImage;)V
+        35: invokestatic  #35                 // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+        38: astore        4
+        40: aload_3
+        41: ifnull        48
+        44: aload_3
+        45: invokevirtual #41                 // Method java/io/InputStream.close:()V
+        48: aload         4
+        50: areturn
+        51: astore        4
+        53: aload_3
+        54: ifnull        73
+        57: aload_3
+        58: invokevirtual #41                 // Method java/io/InputStream.close:()V
+        61: goto          73
+        64: astore        5
+        66: aload         4
+        68: aload         5
+        70: invokevirtual #49                 // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+        73: aload         4
+        75: athrow
+        76: astore_3
+        77: getstatic     #55                 // Field io/github/foundationgames/animatica/Animatica.LOG:Lorg/apache/logging/log4j/Logger;
+        80: aload_3
+        81: invokeinterface #61,  2           // InterfaceMethod org/apache/logging/log4j/Logger.error:(Ljava/lang/Object;)V
+        86: invokestatic  #67                 // Method java/util/Optional.empty:()Ljava/util/Optional;
+        89: areturn
+      Exception table:
+         from    to  target type
+            11    40    51   Class java/lang/Throwable
+            57    61    64   Class java/lang/Throwable
+             0    48    76   Class java/io/IOException
+            51    76    76   Class java/io/IOException
+
+  public io.github.foundationgames.animatica.animation.AnimatedTexture(java.util.function.Supplier<java.lang.String>, net.minecraft.server.packs.resources.ResourceManager, java.util.List<io.github.foundationgames.animatica.animation.AnimationMeta>, com.mojang.blaze3d.platform.NativeImage) throws java.io.IOException;
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload         4
+         4: invokevirtual #71                 // Method com/mojang/blaze3d/platform/NativeImage.getWidth:()I
+         7: aload         4
+         9: invokevirtual #75                 // Method com/mojang/blaze3d/platform/NativeImage.getHeight:()I
+        12: iconst_1
+        13: invokespecial #78                 // Method net/minecraft/client/renderer/texture/DynamicTexture."<init>":(Ljava/util/function/Supplier;IIZ)V
+        16: aload_0
+        17: iconst_0
+        18: putfield      #83                 // Field frame:I
+        21: aload_0
+        22: aconst_null
+        23: putfield      #87                 // Field frameWaitingOn:Ljava/util/concurrent/CompletableFuture;
+        26: aload_0
+        27: aload_3
+        28: invokeinterface #91,  1           // InterfaceMethod java/util/List.size:()I
+        33: anewarray     #96                 // class io/github/foundationgames/animatica/animation/AnimatedTexture$Animation
+        36: putfield      #98                 // Field anims:[Lio/github/foundationgames/animatica/animation/AnimatedTexture$Animation;
+        39: iconst_0
+        40: istore        5
+        42: iload         5
+        44: aload_3
+        45: invokeinterface #91,  1           // InterfaceMethod java/util/List.size:()I
+        50: if_icmpge     85
+        53: aload_0
+        54: getfield      #98                 // Field anims:[Lio/github/foundationgames/animatica/animation/AnimatedTexture$Animation;
+        57: iload         5
+        59: new           #96                 // class io/github/foundationgames/animatica/animation/AnimatedTexture$Animation
+        62: dup
+        63: aload_3
+        64: iload         5
+        66: invokeinterface #102,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+        71: checkcast     #105                // class io/github/foundationgames/animatica/animation/AnimationMeta
+        74: aload_2
+        75: invokespecial #107                // Method io/github/foundationgames/animatica/animation/AnimatedTexture$Animation."<init>":(Lio/github/foundationgames/animatica/animation/AnimationMeta;Lnet/minecraft/server/packs/resources/ResourceManager;)V
+        78: aastore
+        79: iinc          5, 1
+        82: goto          42
+        85: aload_0
+        86: aload         4
+        88: putfield      #110                // Field original:Lcom/mojang/blaze3d/platform/NativeImage;
+        91: aload_0
+        92: aload_0
+        93: invokevirtual #114                // Method getPixels:()Lcom/mojang/blaze3d/platform/NativeImage;
+        96: iconst_1
+        97: invokestatic  #118                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+       100: invokevirtual #124                // Method updateAndDraw:(Lcom/mojang/blaze3d/platform/NativeImage;ZLjava/util/concurrent/Executor;)V
+       103: aload_0
+       104: invokevirtual #128                // Method upload:()V
+       107: return
+
+  public boolean canLoop();
+    Code:
+         0: aload_0
+         1: getfield      #98                 // Field anims:[Lio/github/foundationgames/animatica/animation/AnimatedTexture$Animation;
+         4: astore_1
+         5: aload_1
+         6: arraylength
+         7: istore_2
+         8: iconst_0
+         9: istore_3
+        10: iload_3
+        11: iload_2
+        12: if_icmpge     36
+        15: aload_1
+        16: iload_3
+        17: aaload
+        18: astore        4
+        20: aload         4
+        22: invokevirtual #131                // Method io/github/foundationgames/animatica/animation/AnimatedTexture$Animation.isOnFrameZero:()Z
+        25: ifne          30
+        28: iconst_0
+        29: ireturn
+        30: iinc          3, 1
+        33: goto          10
+        36: iconst_1
+        37: ireturn
+
+  private java.util.concurrent.CompletableFuture<java.lang.Void> getFrameWaitingOn();
+    Code:
+         0: aload_0
+         1: getfield      #87                 // Field frameWaitingOn:Ljava/util/concurrent/CompletableFuture;
+         4: ifnull        22
+         7: aload_0
+         8: getfield      #87                 // Field frameWaitingOn:Ljava/util/concurrent/CompletableFuture;
+        11: invokevirtual #135                // Method java/util/concurrent/CompletableFuture.isDone:()Z
+        14: ifeq          22
+        17: aload_0
+        18: aconst_null
+        19: putfield      #87                 // Field frameWaitingOn:Ljava/util/concurrent/CompletableFuture;
+        22: aload_0
+        23: getfield      #87                 // Field frameWaitingOn:Ljava/util/concurrent/CompletableFuture;
+        26: areturn
+
+  public void updateAndDraw(com.mojang.blaze3d.platform.NativeImage, boolean, java.util.concurrent.Executor);
+    Code:
+         0: iconst_0
+         1: istore        4
+         3: aload_0
+         4: invokevirtual #140                // Method canLoop:()Z
+         7: ifeq          25
+        10: aload_0
+        11: getfield      #83                 // Field frame:I
+        14: ifle          35
+        17: aload_0
+        18: iconst_0
+        19: putfield      #83                 // Field frame:I
+        22: goto          35
+        25: aload_0
+        26: getfield      #83                 // Field frame:I
+        29: ifgt          35
+        32: iconst_1
+        33: istore        4
+        35: aload_0
+        36: getfield      #98                 // Field anims:[Lio/github/foundationgames/animatica/animation/AnimatedTexture$Animation;
+        39: astore        5
+        41: aload         5
+        43: arraylength
+        44: istore        6
+        46: iconst_0
+        47: istore        7
+        49: iload         7
+        51: iload         6
+        53: if_icmpge     83
+        56: aload         5
+        58: iload         7
+        60: aaload
+        61: astore        8
+        63: aload         8
+        65: invokevirtual #143                // Method io/github/foundationgames/animatica/animation/AnimatedTexture$Animation.isChanged:()Z
+        68: ifeq          77
+        71: iconst_1
+        72: istore        4
+        74: goto          83
+        77: iinc          7, 1
+        80: goto          49
+        83: iload         4
+        85: ifne          92
+        88: iload_2
+        89: ifeq          123
+        92: aload_0
+        93: invokevirtual #146                // Method getFrameWaitingOn:()Ljava/util/concurrent/CompletableFuture;
+        96: ifnonnull     123
+        99: aload_0
+       100: aload_0
+       101: aload_1
+       102: invokedynamic #150,  0            // InvokeDynamic #1:run:(Lio/github/foundationgames/animatica/animation/AnimatedTexture;Lcom/mojang/blaze3d/platform/NativeImage;)Ljava/lang/Runnable;
+       107: aload_3
+       108: invokestatic  #154                // Method java/util/concurrent/CompletableFuture.runAsync:(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
+       111: aload_0
+       112: invokedynamic #158,  0            // InvokeDynamic #2:accept:(Lio/github/foundationgames/animatica/animation/AnimatedTexture;)Ljava/util/function/Consumer;
+       117: invokevirtual #162                // Method java/util/concurrent/CompletableFuture.thenAccept:(Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;
+       120: putfield      #87                 // Field frameWaitingOn:Ljava/util/concurrent/CompletableFuture;
+       123: aload_0
+       124: getfield      #98                 // Field anims:[Lio/github/foundationgames/animatica/animation/AnimatedTexture$Animation;
+       127: astore        5
+       129: aload         5
+       131: arraylength
+       132: istore        6
+       134: iconst_0
+       135: istore        7
+       137: iload         7
+       139: iload         6
+       141: if_icmpge     162
+       144: aload         5
+       146: iload         7
+       148: aaload
+       149: astore        8
+       151: aload         8
+       153: invokevirtual #166                // Method io/github/foundationgames/animatica/animation/AnimatedTexture$Animation.advance:()V
+       156: iinc          7, 1
+       159: goto          137
+       162: aload_0
+       163: dup
+       164: getfield      #83                 // Field frame:I
+       167: iconst_1
+       168: iadd
+       169: putfield      #83                 // Field frame:I
+       172: return
+
+  public void tick();
+    Code:
+         0: aload_0
+         1: aload_0
+         2: invokevirtual #114                // Method getPixels:()Lcom/mojang/blaze3d/platform/NativeImage;
+         5: iconst_0
+         6: getstatic     #169                // Field EXECUTORS:Ljava/util/concurrent/ExecutorService;
+         9: invokevirtual #124                // Method updateAndDraw:(Lcom/mojang/blaze3d/platform/NativeImage;ZLjava/util/concurrent/Executor;)V
+        12: return
+
+  public void close();
+    Code:
+         0: aload_0
+         1: getfield      #98                 // Field anims:[Lio/github/foundationgames/animatica/animation/AnimatedTexture$Animation;
+         4: astore_1
+         5: aload_1
+         6: arraylength
+         7: istore_2
+         8: iconst_0
+         9: istore_3
+        10: iload_3
+        11: iload_2
+        12: if_icmpge     31
+        15: aload_1
+        16: iload_3
+        17: aaload
+        18: astore        4
+        20: aload         4
+        22: invokevirtual #173                // Method io/github/foundationgames/animatica/animation/AnimatedTexture$Animation.close:()V
+        25: iinc          3, 1
+        28: goto          10
+        31: aload_0
+        32: getfield      #110                // Field original:Lcom/mojang/blaze3d/platform/NativeImage;
+        35: invokevirtual #174                // Method com/mojang/blaze3d/platform/NativeImage.close:()V
+        38: aload_0
+        39: invokespecial #175                // Method net/minecraft/client/renderer/texture/DynamicTexture.close:()V
+        42: return
+
+  private void lambda$updateAndDraw$1(java.lang.Void);
+    Code:
+         0: invokestatic  #118                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+         3: aload_0
+         4: invokedynamic #176,  0            // InvokeDynamic #3:run:(Lio/github/foundationgames/animatica/animation/AnimatedTexture;)Ljava/lang/Runnable;
+         9: invokevirtual #179                // Method net/minecraft/client/Minecraft.execute:(Ljava/lang/Runnable;)V
+        12: return
+
+  private void lambda$updateAndDraw$0(com.mojang.blaze3d.platform.NativeImage);
+    Code:
+         0: aload_1
+         1: aload_0
+         2: getfield      #110                // Field original:Lcom/mojang/blaze3d/platform/NativeImage;
+         5: invokevirtual #183                // Method com/mojang/blaze3d/platform/NativeImage.copyFrom:(Lcom/mojang/blaze3d/platform/NativeImage;)V
+         8: aload_0
+         9: getfield      #98                 // Field anims:[Lio/github/foundationgames/animatica/animation/AnimatedTexture$Animation;
+        12: astore_3
+        13: aload_3
+        14: arraylength
+        15: istore        4
+        17: iconst_0
+        18: istore        5
+        20: iload         5
+        22: iload         4
+        24: if_icmpge     151
+        27: aload_3
+        28: iload         5
+        30: aaload
+        31: astore        6
+        33: aload         6
+        35: invokevirtual #187                // Method io/github/foundationgames/animatica/animation/AnimatedTexture$Animation.getCurrentPhase:()Lio/github/foundationgames/animatica/animation/AnimatedTexture$Phase;
+        38: astore_2
+        39: aload_2
+        40: instanceof    #191                // class io/github/foundationgames/animatica/animation/AnimatedTexture$InterpolatedPhase
+        43: ifeq          111
+        46: aload_2
+        47: checkcast     #191                // class io/github/foundationgames/animatica/animation/AnimatedTexture$InterpolatedPhase
+        50: astore        7
+        52: aload         6
+        54: getfield      #193                // Field io/github/foundationgames/animatica/animation/AnimatedTexture$Animation.sourceTexture:Lcom/mojang/blaze3d/platform/NativeImage;
+        57: iconst_0
+        58: aload         7
+        60: getfield      #196                // Field io/github/foundationgames/animatica/animation/AnimatedTexture$InterpolatedPhase.prevV:I
+        63: iconst_0
+        64: aload         7
+        66: getfield      #199                // Field io/github/foundationgames/animatica/animation/AnimatedTexture$InterpolatedPhase.v:I
+        69: aload         6
+        71: getfield      #202                // Field io/github/foundationgames/animatica/animation/AnimatedTexture$Animation.width:I
+        74: aload         6
+        76: getfield      #205                // Field io/github/foundationgames/animatica/animation/AnimatedTexture$Animation.height:I
+        79: aload_1
+        80: aload         6
+        82: getfield      #208                // Field io/github/foundationgames/animatica/animation/AnimatedTexture$Animation.targetX:I
+        85: aload         6
+        87: getfield      #211                // Field io/github/foundationgames/animatica/animation/AnimatedTexture$Animation.targetY:I
+        90: aload         7
+        92: getfield      #214                // Field io/github/foundationgames/animatica/animation/AnimatedTexture$InterpolatedPhase.blend:Lio/github/foundationgames/animatica/animation/AnimatedTexture$BlendInterpolator;
+        95: aload         6
+        97: invokevirtual #218                // Method io/github/foundationgames/animatica/animation/AnimatedTexture$Animation.getPhaseFrame:()I
+       100: invokeinterface #221,  2          // InterfaceMethod io/github/foundationgames/animatica/animation/AnimatedTexture$BlendInterpolator.getBlend:(I)F
+       105: invokestatic  #227                // Method io/github/foundationgames/animatica/util/TextureUtil.blendCopy:(Lcom/mojang/blaze3d/platform/NativeImage;IIIIIILcom/mojang/blaze3d/platform/NativeImage;IIF)V
+       108: goto          145
+       111: aload         6
+       113: getfield      #193                // Field io/github/foundationgames/animatica/animation/AnimatedTexture$Animation.sourceTexture:Lcom/mojang/blaze3d/platform/NativeImage;
+       116: iconst_0
+       117: aload_2
+       118: getfield      #233                // Field io/github/foundationgames/animatica/animation/AnimatedTexture$Phase.v:I
+       121: aload         6
+       123: getfield      #202                // Field io/github/foundationgames/animatica/animation/AnimatedTexture$Animation.width:I
+       126: aload         6
+       128: getfield      #205                // Field io/github/foundationgames/animatica/animation/AnimatedTexture$Animation.height:I
+       131: aload_1
+       132: aload         6
+       134: getfield      #208                // Field io/github/foundationgames/animatica/animation/AnimatedTexture$Animation.targetX:I
+       137: aload         6
+       139: getfield      #211                // Field io/github/foundationgames/animatica/animation/AnimatedTexture$Animation.targetY:I
+       142: invokestatic  #236                // Method io/github/foundationgames/animatica/util/TextureUtil.copy:(Lcom/mojang/blaze3d/platform/NativeImage;IIIILcom/mojang/blaze3d/platform/NativeImage;II)V
+       145: iinc          5, 1
+       148: goto          20
+       151: return
+
+  static {};
+    Code:
+         0: iconst_4
+         1: invokestatic  #240                // Method java/util/concurrent/Executors.newFixedThreadPool:(I)Ljava/util/concurrent/ExecutorService;
+         4: putstatic     #169                // Field EXECUTORS:Ljava/util/concurrent/ExecutorService;
+         7: return
+}

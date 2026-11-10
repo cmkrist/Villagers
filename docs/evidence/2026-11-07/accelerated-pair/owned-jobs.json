@@ -1,0 +1,67 @@
+{
+  "jobs": [
+    {
+      "pid": 601856,
+      "ppid": 601836,
+      "uid": 1000,
+      "comm": "java",
+      "start_ticks": 10936249,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "owner_thread_id": "9797f55f-a15b-4a2d-b4b0-23ede83c0a99"
+    },
+    {
+      "pid": 601857,
+      "ppid": 601837,
+      "uid": 1000,
+      "comm": "java",
+      "start_ticks": 10936249,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "owner_thread_id": "9797f55f-a15b-4a2d-b4b0-23ede83c0a99"
+    },
+    {
+      "pid": 601946,
+      "ppid": 601856,
+      "uid": 1000,
+      "comm": "java",
+      "start_ticks": 10936303,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "owner_thread_id": "9797f55f-a15b-4a2d-b4b0-23ede83c0a99"
+    },
+    {
+      "pid": 601990,
+      "ppid": 601857,
+      "uid": 1000,
+      "comm": "java",
+      "start_ticks": 10936325,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "owner_thread_id": "9797f55f-a15b-4a2d-b4b0-23ede83c0a99"
+    },
+    {
+      "pid": 602326,
+      "ppid": 601946,
+      "uid": 1000,
+      "comm": "java",
+      "start_ticks": 10937021,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/adaptive",
+      "owner_thread_id": "9797f55f-a15b-4a2d-b4b0-23ede83c0a99"
+    },
+    {
+      "pid": 602372,
+      "ppid": 601990,
+      "uid": 1000,
+      "comm": "java",
+      "start_ticks": 10937054,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/frozen",
+      "owner_thread_id": "9797f55f-a15b-4a2d-b4b0-23ede83c0a99"
+    }
+  ],
+  "authority": "custody only; no automatic hash exceptions, exclusive clearance or process/service actions",
+  "client_heap_cap_gib_each": 4,
+  "gradle_heap_cap_gib_each": 2
+}

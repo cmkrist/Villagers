@@ -1,0 +1,800 @@
+{
+  "capturedUTC": "2026-11-08T01:11:44.446421+00:00",
+  "status": "Current frozen source: two bulk-food fixtures and productive circulation, with all three clean restarts passed; earlier late-food failure retained",
+  "finalSourceDrift": false,
+  "finalSourceChangedPaths": [],
+  "javaTests": {
+    "tests": 370,
+    "failures": 0,
+    "errors": 0
+  },
+  "pythonChecks": 10,
+  "runs": [
+    {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/food-bundle-carrot-server",
+      "nativeClassBindingsChecked": 219,
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/food-bundle-artifact",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "d1575aa23e4b85fcf74cf6d8e7d7f0f825af870e52bcb3bf7f6a9276da1c3413"
+        },
+        "fixtureSourceSHA256": "20498599cfca4da73d89967643d664e6d23cded4249a422bdac4a702fad55a8c",
+        "nativeClassBindingsChecked": 219,
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "ba123215c73419b646591feb8591bc3985d60bdee2d65704638aa5d57b19a86a",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "d1575aa23e4b85fcf74cf6d8e7d7f0f825af870e52bcb3bf7f6a9276da1c3413"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      },
+      "checks": {
+        "balancedExchanges": 1
+      },
+      "phases": [
+        {
+          "phase": "first",
+          "status": "passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "native bundle payment, owned meals and retained reserve passed",
+            "tick": 1598,
+            "kind": "carrot",
+            "quotedQuantity": 2,
+            "foodAtPurchase": 13,
+            "buyer": {
+              "money": 0,
+              "food": 16,
+              "health": 20.0,
+              "sold": 0,
+              "foodItems": 1,
+              "bought": 1
+            },
+            "seller": {
+              "money": 2,
+              "food": 19,
+              "health": 20.0,
+              "sold": 1,
+              "foodItems": 29,
+              "bought": 0
+            }
+          },
+          "custody": {
+            "pid": 1216925,
+            "startTicks": "17844681",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-bundle-carrot-server",
+            "launchedAtEpoch": 1794099622.8870158
+          },
+          "terminal": {
+            "pid": 1216925,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794099650.5589736
+          },
+          "exactProcessGone": true
+        },
+        {
+          "phase": "restart",
+          "status": "restart-passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "clean restart preserved payment, meals and retained roots",
+            "tick": 1758,
+            "kind": "carrot",
+            "quotedQuantity": 2,
+            "foodAtPurchase": -1,
+            "buyer": {
+              "money": 0,
+              "food": 16,
+              "health": 20.0,
+              "sold": 0,
+              "foodItems": 1,
+              "bought": 0
+            },
+            "seller": {
+              "money": 2,
+              "food": 19,
+              "health": 20.0,
+              "sold": 0,
+              "foodItems": 29,
+              "bought": 0
+            }
+          },
+          "custody": {
+            "pid": 1217157,
+            "startTicks": "17847448",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-bundle-carrot-server",
+            "launchedAtEpoch": 1794099650.5593941
+          },
+          "terminal": {
+            "pid": 1217157,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794099658.3911383
+          },
+          "exactProcessGone": true
+        }
+      ]
+    },
+    {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/food-bundle-beetroot-server",
+      "nativeClassBindingsChecked": 219,
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/food-bundle-artifact",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "d1575aa23e4b85fcf74cf6d8e7d7f0f825af870e52bcb3bf7f6a9276da1c3413"
+        },
+        "fixtureSourceSHA256": "20498599cfca4da73d89967643d664e6d23cded4249a422bdac4a702fad55a8c",
+        "nativeClassBindingsChecked": 219,
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "c3ae6a79fb891f26a53366ccd8649cf9446248a82e8060681cfe5fa5403b1b89",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "d1575aa23e4b85fcf74cf6d8e7d7f0f825af870e52bcb3bf7f6a9276da1c3413"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      },
+      "checks": {
+        "balancedExchanges": 1
+      },
+      "phases": [
+        {
+          "phase": "first",
+          "status": "passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "native bundle payment, owned meals and retained reserve passed",
+            "tick": 1778,
+            "kind": "beetroot",
+            "quotedQuantity": 5,
+            "foodAtPurchase": 13,
+            "buyer": {
+              "sold": 0,
+              "health": 20.0,
+              "food": 18,
+              "money": 0,
+              "bought": 1,
+              "foodItems": 0
+            },
+            "seller": {
+              "sold": 1,
+              "health": 20.0,
+              "food": 20,
+              "money": 2,
+              "bought": 0,
+              "foodItems": 23
+            }
+          },
+          "custody": {
+            "pid": 1217377,
+            "startTicks": "17848311",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-bundle-beetroot-server",
+            "launchedAtEpoch": 1794099659.1852276
+          },
+          "terminal": {
+            "pid": 1217377,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794099689.0495334
+          },
+          "exactProcessGone": true
+        },
+        {
+          "phase": "restart",
+          "status": "restart-passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "clean restart preserved payment, meals and retained roots",
+            "tick": 1938,
+            "kind": "beetroot",
+            "quotedQuantity": 5,
+            "foodAtPurchase": -1,
+            "buyer": {
+              "foodItems": 0,
+              "bought": 0,
+              "money": 0,
+              "food": 18,
+              "health": 20.0,
+              "sold": 0
+            },
+            "seller": {
+              "foodItems": 23,
+              "bought": 0,
+              "money": 2,
+              "food": 20,
+              "health": 20.0,
+              "sold": 0
+            }
+          },
+          "custody": {
+            "pid": 1217593,
+            "startTicks": "17851297",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-bundle-beetroot-server",
+            "launchedAtEpoch": 1794099689.0500352
+          },
+          "terminal": {
+            "pid": 1217593,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794099696.9330823
+          },
+          "exactProcessGone": true
+        }
+      ]
+    },
+    {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/food-bundle-production-regression",
+      "nativeClassBindingsChecked": 219,
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/food-bundle-artifact",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "d1575aa23e4b85fcf74cf6d8e7d7f0f825af870e52bcb3bf7f6a9276da1c3413"
+        },
+        "fixtureSourceSHA256": "1e6b59b61c9068c98aa433b4a0e5c443d68c30fffd05e54c44f1faf8f472df28",
+        "nativeClassBindingsChecked": 219,
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "4d57169dd54915c73b122159ea1513164b8390f6b0c3b8dde2aa94a865258797",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "d1575aa23e4b85fcf74cf6d8e7d7f0f825af870e52bcb3bf7f6a9276da1c3413"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      },
+      "checks": {
+        "balancedExchanges": 2,
+        "paidNativeHarvests": 10
+      },
+      "phases": [
+        {
+          "phase": "first",
+          "status": "failed",
+          "failure": "java.lang.AssertionError: actual meal is bought before emergency hunger, with no zero-food interval",
+          "lastObservation": {
+            "phase": "manufactured tool sale or earned food purchase observed",
+            "tick": 9299,
+            "buyer": {
+              "id": "50524f44-4d41-524b-0000-00000000006a",
+              "food": 19,
+              "money": 2,
+              "bread": 3,
+              "wheat": 0,
+              "crafted": 4,
+              "toolDemand": "none",
+              "hoesCrafted": 0,
+              "woodRecipes": 0,
+              "tradePaths": 1,
+              "tradeRejections": 0,
+              "x": 8.356297254826497,
+              "z": 4.248523667378776,
+              "toolStatus": "missing wood for a hoe",
+              "foodStatus": "not working",
+              "foodDemand": "none",
+              "tradePathStarts": 1,
+              "lastTradePath": {
+                "peer": "6, 81, 5",
+                "nodes": 2,
+                "canReach": true,
+                "goal": "9, 81, 5",
+                "peerPosition": "(6.5, 81.0, 5.5)",
+                "actor": "(9.5, 81.0, 4.5)",
+                "gameTime": 68
+              },
+              "productionRequests": 1,
+              "lastProductionRequest": {
+                "kind": "FOOD",
+                "customerMoney": 2,
+                "customerFood": 13,
+                "gameTime": 7499,
+                "customer": "50524f44-4d41-524b-0000-00000000003f",
+                "price": 2
+              },
+              "bought": 1,
+              "sold": 1,
+              "foodRequests": 0,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 10,
+              "y": 81.5625,
+              "eye": "(8.356297254826497, 83.18250000476837, 4.248523667378776)",
+              "seesPeer": true
+            },
+            "seller": {
+              "id": "50524f44-4d41-524b-0000-00000000003f",
+              "food": 3,
+              "money": 0,
+              "bread": 1,
+              "wheat": 0,
+              "crafted": 0,
+              "toolDemand": "none",
+              "hoesCrafted": 1,
+              "woodRecipes": 3,
+              "tradePaths": 10,
+              "tradeRejections": 9,
+              "x": 6.535977913453726,
+              "z": 4.913092192702516,
+              "toolStatus": "made a real wooden hoe",
+              "foodStatus": "remembered farm unreachable",
+              "foodDemand": "none",
+              "tradePathStarts": 1,
+              "lastTradePath": {
+                "peer": "8, 81, 3",
+                "nodes": 3,
+                "canReach": true,
+                "goal": "6, 81, 4",
+                "peerPosition": "(8.749888292406613, 81.5625, 3.5065325248763846)",
+                "actor": "(6.5, 81.0, 6.281054517287309)",
+                "gameTime": 7489
+              },
+              "productionRequests": 1,
+              "lastProductionRequest": {
+                "kind": "HOE",
+                "customerMoney": 2,
+                "customerFood": 19,
+                "gameTime": 468,
+                "customer": "50524f44-4d41-524b-0000-00000000006a",
+                "price": 2
+              },
+              "bought": 1,
+              "sold": 1,
+              "foodRequests": 2,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 17,
+              "y": 81.0,
+              "eye": "(6.535977913453726, 82.62000000476837, 4.913092192702516)",
+              "seesPeer": true
+            },
+            "harvestsThisLoad": 10,
+            "meanServerTickMillis": 0.105144,
+            "minimumMakerFood": 3,
+            "minimumFarmerFood": 16,
+            "foodAtPurchase": 3,
+            "minimumMakerHealth": 20.0,
+            "minimumFarmerHealth": 20.0
+          },
+          "custody": {
+            "pid": 1217862,
+            "startTicks": "17852165",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-bundle-production-regression",
+            "launchedAtEpoch": 1794099697.7281983
+          },
+          "terminal": {
+            "pid": 1217862,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794099821.9577775
+          },
+          "exactProcessGone": true
+        }
+      ]
+    },
+    {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/food-bundle-production-regression-v2",
+      "nativeClassBindingsChecked": 219,
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/food-bundle-artifact-v2",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "cd88f89bbb1abcdf666f45406cc83bd97da30111f120a3cb517ef9a3b312bf4e"
+        },
+        "fixtureSourceSHA256": "1659dee94d54c7963e15074440e55bc402e5fced96c856a87d641218d7ccb8f8",
+        "nativeClassBindingsChecked": 219,
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "021f3565b8a63644a6e49826651cb1fcc5d981db22f9865ab86499d7cbf5e555",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "cd88f89bbb1abcdf666f45406cc83bd97da30111f120a3cb517ef9a3b312bf4e"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      },
+      "checks": {
+        "balancedExchanges": 2,
+        "paidNativeHarvests": 11
+      },
+      "phases": [
+        {
+          "phase": "first",
+          "status": "passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "request, paid native manufacture, sale, native farming, earned bread sale, returned currency and meal passed",
+            "tick": 8089,
+            "buyer": {
+              "id": "50524f44-4d41-524b-0000-00000000006a",
+              "food": 20,
+              "money": 2,
+              "bread": 3,
+              "wheat": 0,
+              "crafted": 4,
+              "toolDemand": "none",
+              "hoesCrafted": 0,
+              "woodRecipes": 0,
+              "tradePaths": 2,
+              "tradeRejections": 0,
+              "x": 8.27051561339309,
+              "z": 5.629131339215242,
+              "toolStatus": "missing wood for a hoe",
+              "foodStatus": "not working",
+              "foodDemand": "none",
+              "tradePathStarts": 2,
+              "lastTradePath": {
+                "peerPosition": "(6.5, 81.0, 5.299756514136952)",
+                "actor": "(12.2501660899645, 80.9375, 3.7259957757474433)",
+                "gameTime": 468,
+                "peer": "6, 81, 5",
+                "nodes": 5,
+                "canReach": true,
+                "goal": "8, 82, 6"
+              },
+              "foodContactPurchases": 0,
+              "productionRequests": 1,
+              "lastProductionRequest": {
+                "customerMoney": 2,
+                "customerFood": 13,
+                "gameTime": 7479,
+                "customer": "50524f44-4d41-524b-0000-00000000003f",
+                "price": 2,
+                "kind": "FOOD"
+              },
+              "bought": 1,
+              "sold": 1,
+              "foodRequests": 0,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 11,
+              "y": 81.0,
+              "eye": "(8.27051561339309, 82.62000000476837, 5.629131339215242)",
+              "seesPeer": true
+            },
+            "seller": {
+              "id": "50524f44-4d41-524b-0000-00000000003f",
+              "food": 15,
+              "money": 0,
+              "bread": 0,
+              "wheat": 0,
+              "crafted": 0,
+              "toolDemand": "none",
+              "hoesCrafted": 1,
+              "woodRecipes": 3,
+              "tradePaths": 0,
+              "tradeRejections": 0,
+              "x": 6.581928918964763,
+              "z": 4.780249562341463,
+              "toolStatus": "made a real wooden hoe",
+              "foodStatus": "remembered farm unreachable",
+              "foodDemand": "none",
+              "tradePathStarts": 0,
+              "lastTradePath": {},
+              "foodContactPurchases": 1,
+              "productionRequests": 1,
+              "lastProductionRequest": {
+                "customerMoney": 2,
+                "customerFood": 19,
+                "gameTime": 508,
+                "customer": "50524f44-4d41-524b-0000-00000000006a",
+                "price": 2,
+                "kind": "HOE"
+              },
+              "bought": 1,
+              "sold": 1,
+              "foodRequests": 1,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 17,
+              "y": 81.0,
+              "eye": "(6.581928918964763, 82.62000000476837, 4.780249562341463)",
+              "seesPeer": true
+            },
+            "harvestsThisLoad": 11,
+            "meanServerTickMillis": 0.077263,
+            "minimumMakerFood": 10,
+            "minimumFarmerFood": 16,
+            "foodAtPurchase": 10,
+            "minimumMakerHealth": 20.0,
+            "minimumFarmerHealth": 20.0
+          },
+          "custody": {
+            "pid": 1219964,
+            "startTicks": "17891385",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-bundle-production-regression-v2",
+            "launchedAtEpoch": 1794100089.9321895
+          },
+          "terminal": {
+            "pid": 1219964,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794100198.8282688
+          },
+          "exactProcessGone": true
+        },
+        {
+          "phase": "restart",
+          "status": "restart-passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "saved real money, meal, tool wear and no replay passed",
+            "tick": 8249,
+            "buyer": {
+              "id": "50524f44-4d41-524b-0000-00000000006a",
+              "food": 20,
+              "money": 2,
+              "bread": 3,
+              "wheat": 0,
+              "crafted": 0,
+              "toolDemand": "none",
+              "hoesCrafted": 0,
+              "woodRecipes": 0,
+              "tradePaths": 0,
+              "tradeRejections": 0,
+              "x": 8.27051561339309,
+              "z": 5.629131339215242,
+              "toolStatus": "not working",
+              "foodStatus": "not working",
+              "foodDemand": "none",
+              "tradePathStarts": 0,
+              "lastTradePath": {},
+              "foodContactPurchases": 0,
+              "productionRequests": 0,
+              "lastProductionRequest": {},
+              "bought": 0,
+              "sold": 0,
+              "foodRequests": 0,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 11,
+              "y": 81.0,
+              "eye": "(8.27051561339309, 82.62000000476837, 5.629131339215242)",
+              "seesPeer": true
+            },
+            "seller": {
+              "id": "50524f44-4d41-524b-0000-00000000003f",
+              "food": 15,
+              "money": 0,
+              "bread": 0,
+              "wheat": 0,
+              "crafted": 0,
+              "toolDemand": "none",
+              "hoesCrafted": 0,
+              "woodRecipes": 0,
+              "tradePaths": 0,
+              "tradeRejections": 0,
+              "x": 6.477281927501856,
+              "z": 6.314440791871789,
+              "toolStatus": "not working",
+              "foodStatus": "remembered farm unreachable",
+              "foodDemand": "none",
+              "tradePathStarts": 0,
+              "lastTradePath": {},
+              "foodContactPurchases": 0,
+              "productionRequests": 0,
+              "lastProductionRequest": {},
+              "bought": 0,
+              "sold": 0,
+              "foodRequests": 0,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 17,
+              "y": 81.0,
+              "eye": "(6.477281927501856, 82.62000000476837, 6.314440791871789)",
+              "seesPeer": true
+            },
+            "harvestsThisLoad": 0,
+            "meanServerTickMillis": 0.622688,
+            "minimumMakerFood": 15,
+            "minimumFarmerFood": 20,
+            "foodAtPurchase": -1,
+            "minimumMakerHealth": 20.0,
+            "minimumFarmerHealth": 20.0
+          },
+          "custody": {
+            "pid": 1220565,
+            "startTicks": "17902275",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-bundle-production-regression-v2",
+            "launchedAtEpoch": 1794100198.829059
+          },
+          "terminal": {
+            "pid": 1220565,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794100206.6091278
+          },
+          "exactProcessGone": true
+        }
+      ]
+    },
+    {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/food-bundle-carrot-server-v2",
+      "nativeClassBindingsChecked": 219,
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/food-bundle-artifact-v2",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "cd88f89bbb1abcdf666f45406cc83bd97da30111f120a3cb517ef9a3b312bf4e"
+        },
+        "fixtureSourceSHA256": "20498599cfca4da73d89967643d664e6d23cded4249a422bdac4a702fad55a8c",
+        "nativeClassBindingsChecked": 219,
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "8529c2402ab224329f62e01b44dfa538963b074ebd48f297119c530734d4ff40",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "cd88f89bbb1abcdf666f45406cc83bd97da30111f120a3cb517ef9a3b312bf4e"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      },
+      "checks": {
+        "balancedExchanges": 1
+      },
+      "phases": [
+        {
+          "phase": "first",
+          "status": "passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "native bundle payment, owned meals and retained reserve passed",
+            "tick": 1618,
+            "kind": "carrot",
+            "quotedQuantity": 2,
+            "foodAtPurchase": 13,
+            "buyer": {
+              "money": 0,
+              "food": 16,
+              "health": 20.0,
+              "sold": 0,
+              "foodItems": 1,
+              "bought": 1
+            },
+            "seller": {
+              "money": 2,
+              "food": 19,
+              "health": 20.0,
+              "sold": 1,
+              "foodItems": 29,
+              "bought": 0
+            }
+          },
+          "custody": {
+            "pid": 1220874,
+            "startTicks": "17904728",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-bundle-carrot-server-v2",
+            "launchedAtEpoch": 1794100223.35567
+          },
+          "terminal": {
+            "pid": 1220874,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794100251.466318
+          },
+          "exactProcessGone": true
+        },
+        {
+          "phase": "restart",
+          "status": "restart-passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "clean restart preserved payment, meals and retained roots",
+            "tick": 1778,
+            "kind": "carrot",
+            "quotedQuantity": 2,
+            "foodAtPurchase": -1,
+            "buyer": {
+              "bought": 0,
+              "foodItems": 1,
+              "sold": 0,
+              "health": 20.0,
+              "food": 16,
+              "money": 0
+            },
+            "seller": {
+              "bought": 0,
+              "foodItems": 29,
+              "sold": 0,
+              "health": 20.0,
+              "food": 19,
+              "money": 2
+            }
+          },
+          "custody": {
+            "pid": 1221162,
+            "startTicks": "17907539",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-bundle-carrot-server-v2",
+            "launchedAtEpoch": 1794100251.4669695
+          },
+          "terminal": {
+            "pid": 1221162,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794100258.9979963
+          },
+          "exactProcessGone": true
+        }
+      ]
+    },
+    {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/food-bundle-beetroot-server-v2",
+      "nativeClassBindingsChecked": 219,
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/food-bundle-artifact-v2",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "cd88f89bbb1abcdf666f45406cc83bd97da30111f120a3cb517ef9a3b312bf4e"
+        },
+        "fixtureSourceSHA256": "20498599cfca4da73d89967643d664e6d23cded4249a422bdac4a702fad55a8c",
+        "nativeClassBindingsChecked": 219,
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "29f758b36cb57548d428810cf853c1759f89225407bfd9677207961ed001718f",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "cd88f89bbb1abcdf666f45406cc83bd97da30111f120a3cb517ef9a3b312bf4e"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      },
+      "checks": {
+        "balancedExchanges": 1
+      },
+      "phases": [
+        {
+          "phase": "first",
+          "status": "passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "native bundle payment, owned meals and retained reserve passed",
+            "tick": 1748,
+            "kind": "beetroot",
+            "quotedQuantity": 5,
+            "foodAtPurchase": 13,
+            "buyer": {
+              "bought": 1,
+              "money": 0,
+              "food": 18,
+              "health": 20.0,
+              "sold": 0,
+              "foodItems": 0
+            },
+            "seller": {
+              "bought": 0,
+              "money": 2,
+              "food": 20,
+              "health": 20.0,
+              "sold": 1,
+              "foodItems": 23
+            }
+          },
+          "custody": {
+            "pid": 1221323,
+            "startTicks": "17908367",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-bundle-beetroot-server-v2",
+            "launchedAtEpoch": 1794100259.7499285
+          },
+          "terminal": {
+            "pid": 1221323,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794100289.3693945
+          },
+          "exactProcessGone": true
+        },
+        {
+          "phase": "restart",
+          "status": "restart-passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "clean restart preserved payment, meals and retained roots",
+            "tick": 1908,
+            "kind": "beetroot",
+            "quotedQuantity": 5,
+            "foodAtPurchase": -1,
+            "buyer": {
+              "money": 0,
+              "bought": 0,
+              "foodItems": 0,
+              "sold": 0,
+              "health": 20.0,
+              "food": 18
+            },
+            "seller": {
+              "money": 2,
+              "bought": 0,
+              "foodItems": 23,
+              "sold": 0,
+              "health": 20.0,
+              "food": 20
+            }
+          },
+          "custody": {
+            "pid": 1221531,
+            "startTicks": "17911329",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-bundle-beetroot-server-v2",
+            "launchedAtEpoch": 1794100289.3699517
+          },
+          "terminal": {
+            "pid": 1221531,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794100296.9040227
+          },
+          "exactProcessGone": true
+        }
+      ]
+    }
+  ]
+}

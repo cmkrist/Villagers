@@ -1,0 +1,270 @@
+{
+  "at": "2026-11-07T06:12:20.654873685Z",
+  "elapsed_ms": 60037,
+  "label": "village-002-60s-1794031940654-2",
+  "source": "rendered client; only client-tracked entities",
+  "world": "VillageTrial",
+  "role": "play",
+  "learning_mode": "adaptive",
+  "native_target_tps": 20.0,
+  "training": {
+    "native_mean_mspt": 4.84075,
+    "wall_measured_intervals": 0,
+    "learning_mode": "adaptive",
+    "elapsed_wall_seconds": 2.68583E-4,
+    "automatic_promotion_disabled": true,
+    "sprinting": false,
+    "start_game_time": 5129,
+    "wall_started_at": "2026-11-07T06:12:12.876719142Z",
+    "start_server_tick": 1062,
+    "run_id": "play-2026-11-07T06-12-12.876719142Z-a2f9510a",
+    "evidence_directory": "/home/niko/.internal/source/Villagers/runs/play/saves/VillageTrial/./villagers/training-evidence/play-2026-11-07T06-12-12.876719142Z-a2f9510a",
+    "at": "2026-11-07T06:12:12.876961815Z",
+    "game_tick_budget": 48000,
+    "achieved_wall_tps": 0.0,
+    "measurement_window_server_ticks": 0,
+    "server_tick": 1062,
+    "learning_statistics": {
+      "mode": "ADAPTIVE",
+      "activeAgents": 11,
+      "decisions": 173,
+      "completedSkills": 133,
+      "safetyInterrupts": 4,
+      "agents": [
+        {
+          "fatigue": 0.21987499999999746,
+          "loneliness": 0.10535714285714319,
+          "hunger": 0.359833333333337,
+          "learningUpdates": 81,
+          "uuid": "d29c199f-5202-4fbc-97f9-92023489d70f"
+        },
+        {
+          "fatigue": 0.21999999999999745,
+          "loneliness": 0.12321428571428626,
+          "hunger": 0.3600000000000037,
+          "learningUpdates": 54,
+          "uuid": "d169dad0-0157-4e1d-bf1c-358845617474"
+        },
+        {
+          "fatigue": 0.10065624999999821,
+          "loneliness": 7.142857142857143E-4,
+          "hunger": 0.3608750000000037,
+          "learningUpdates": 73,
+          "uuid": "5894771d-5fcc-45c5-bb4c-4733e2c992c4"
+        },
+        {
+          "fatigue": 0.22018749999999745,
+          "loneliness": 0.13735714285714085,
+          "hunger": 0.3602500000000037,
+          "learningUpdates": 75,
+          "uuid": "02b0b914-c640-48c3-8fee-df600f34991e"
+        },
+        {
+          "fatigue": 0.22021874999999747,
+          "loneliness": 0.337392857142852,
+          "hunger": 0.36029166666667034,
+          "learningUpdates": 23,
+          "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f"
+        },
+        {
+          "fatigue": 0.09999999999999745,
+          "loneliness": 0.337142857142852,
+          "hunger": 0.3600000000000037,
+          "learningUpdates": 69,
+          "uuid": "c7c31152-34a1-4edd-bd84-e48f50f86088"
+        },
+        {
+          "fatigue": 0.11499999999999892,
+          "loneliness": 0.3372142857142806,
+          "hunger": 0.36008333333333703,
+          "learningUpdates": 56,
+          "uuid": "8d572a22-a431-47a1-b419-b12ab59b4e35"
+        },
+        {
+          "fatigue": 0.22021874999999747,
+          "loneliness": 0.337392857142852,
+          "hunger": 0.36029166666667034,
+          "learningUpdates": 40,
+          "uuid": "ca3c6d6a-385e-4ea3-a37d-e54d948d924f"
+        },
+        {
+          "fatigue": 0.21987499999999746,
+          "loneliness": 0.011428571428571437,
+          "hunger": 0.359833333333337,
+          "learningUpdates": 68,
+          "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03"
+        },
+        {
+          "fatigue": 0.22024999999999745,
+          "loneliness": 0.3374285714285663,
+          "hunger": 0.360333333333337,
+          "learningUpdates": 40,
+          "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9"
+        },
+        {
+          "fatigue": 0.22003124999999746,
+          "loneliness": 0.3371785714285663,
+          "hunger": 0.36004166666667037,
+          "learningUpdates": 23,
+          "uuid": "1e1a7861-7b3a-4be0-8499-c0bcada07d1a"
+        }
+      ]
+    },
+    "game_time": 5129,
+    "elapsed_server_ticks": 0,
+    "late_interval_definition": "Elapsed interval between observed server ticks exceeds 1.5 times the current target interval; distinct from native tick work cost.",
+    "native_target_tps": 20.0,
+    "role": "play",
+    "frozen": false,
+    "detail": "Exact role and independent learner mode recorded; elapsed ticks are additional simulated exposure, not evidence of improved learning.",
+    "event": "run_started",
+    "state": "play",
+    "native_tick_cost_last_100": {
+      "samples": 100,
+      "meanMspt": 4.840750219999999,
+      "p50Mspt": 4.50954,
+      "p95Mspt": 6.286028,
+      "p99Mspt": 8.435507,
+      "maxMspt": 11.364071,
+      "overBudgetTicks": 0
+    },
+    "measurement_window_seconds": 0.0,
+    "wall_late_intervals": 0,
+    "cohort": {
+      "original": 11,
+      "terminal": 0,
+      "alive": 11,
+      "missing": 0
+    },
+    "elapsed_game_ticks": 0,
+    "learning_claim": "No improvement inferred from speed, elapsed ticks, labels or survival alone; compare independent controlled cohorts.",
+    "configured_target_tps": 20
+  },
+  "game_time": 5284,
+  "trial": "natural generated village",
+  "server_tick": 1217,
+  "screen": "",
+  "frame_ns": 1910149,
+  "camera": {
+    "x": -227.29280707019834,
+    "y": 87.0,
+    "z": 774.6267452211276,
+    "yaw": -99.08846,
+    "pitch": 38.301548
+  },
+  "tracked_entities": 150,
+  "tracked_villagers": 11,
+  "villagers": [
+    {
+      "uuid": "1e1a7861-7b3a-4be0-8499-c0bcada07d1a",
+      "name": "Fern-1e1a · explore",
+      "x": -243.64440260750914,
+      "y": 72.0,
+      "z": 767.8853405371209,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "name": "Fern-5ad3 · explore",
+      "x": -248.5274204466478,
+      "y": 74.0,
+      "z": 763.959673742269,
+      "alive": true,
+      "health": 19.0
+    },
+    {
+      "uuid": "5894771d-5fcc-45c5-bb4c-4733e2c992c4",
+      "name": "Moss-5894 · explore",
+      "x": -224.39546435406115,
+      "y": 73.25545598275947,
+      "z": 766.5768560060933,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+      "name": "Juniper-231e · explore",
+      "x": -234.2795013809144,
+      "y": 73.0,
+      "z": 766.6314552898982,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "name": "Nell-e358 · explore",
+      "x": -225.41455078071158,
+      "y": 87.17317708354676,
+      "z": 774.6999999880791,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "02b0b914-c640-48c3-8fee-df600f34991e",
+      "name": "Ember-02b0 · explore",
+      "x": -212.18953450715344,
+      "y": 71.0,
+      "z": 737.189697267575,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "ca3c6d6a-385e-4ea3-a37d-e54d948d924f",
+      "name": "Willow-ca3c · explore",
+      "x": -247.21044921875,
+      "y": 87.0,
+      "z": 746.77001953125,
+      "alive": true,
+      "health": 17.0
+    },
+    {
+      "uuid": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+      "name": "Dara-c7c3 · explore",
+      "x": -232.14680990371562,
+      "y": 72.0,
+      "z": 762.5368652331526,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "d29c199f-5202-4fbc-97f9-92023489d70f",
+      "name": "Ember-d29c · explore",
+      "x": -252.42545572626113,
+      "y": 73.0,
+      "z": 752.9825846357126,
+      "alive": true,
+      "health": 19.0
+    },
+    {
+      "uuid": "8d572a22-a431-47a1-b419-b12ab59b4e35",
+      "name": "Birch-8d57 · explore",
+      "x": -265.5118001301453,
+      "y": 74.0,
+      "z": 746.1019693928392,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "d169dad0-0157-4e1d-bf1c-358845617474",
+      "name": "Alder-d169 · explore",
+      "x": -192.733154296875,
+      "y": 63.0,
+      "z": 753.241455078125,
+      "alive": true,
+      "health": 20.0
+    }
+  ],
+  "tracked_iron_golems": 1,
+  "iron_golems": [
+    {
+      "uuid": "0dc9724f-c186-4784-aff8-5475aa216eb2",
+      "name": "Iron Golem",
+      "x": -234.86634095413078,
+      "y": 72.0,
+      "z": 751.8549837386477,
+      "alive": true,
+      "health": 100.0
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "learning_mode": "adaptive",
+  "elapsed_wall_seconds": 175.028862089,
+  "automatic_promotion_disabled": false,
+  "sprinting": false,
+  "start_game_time": 5139,
+  "wall_started_at": "2026-11-07T05:50:20.245946098Z",
+  "start_server_tick": 1072,
+  "run_id": "adaptive-2026-11-07T05-50-20.245946098Z-6d612077",
+  "evidence_directory": "/home/niko/.internal/source/Villagers/runs/adaptive/saves/VillageTrial/./villagers/training-evidence/adaptive-2026-11-07T05-50-20.245946098Z-6d612077",
+  "at": "2026-11-07T05:53:15.274796447Z",
+  "game_tick_budget": 48000,
+  "achieved_wall_tps": 80.03066038623925,
+  "measurement_window_server_ticks": 200,
+  "server_tick": 14672,
+  "learning_statistics": {
+    "mode": "ADAPTIVE",
+    "activeAgents": 11,
+    "decisions": 1544,
+    "completedSkills": 1287,
+    "safetyInterrupts": 11,
+    "agents": [
+      {
+        "loneliness": 0.4285714285714189,
+        "hunger": 0.9269166666666265,
+        "learningUpdates": 208,
+        "uuid": "d29c199f-5202-4fbc-97f9-92023489d70f",
+        "fatigue": 0.00125
+      },
+      {
+        "loneliness": 0.6092857142856928,
+        "hunger": 0.9270833333332932,
+        "learningUpdates": 187,
+        "uuid": "d169dad0-0157-4e1d-bf1c-358845617474",
+        "fatigue": 0.6453125000000142
+      },
+      {
+        "loneliness": 0.6239642857142623,
+        "hunger": 0.9279583333332931,
+        "learningUpdates": 203,
+        "uuid": "5894771d-5fcc-45c5-bb4c-4733e2c992c4",
+        "fatigue": 0.0015625
+      },
+      {
+        "loneliness": 0.2782142857142859,
+        "hunger": 0.9269166666666265,
+        "learningUpdates": 203,
+        "uuid": "02b0b914-c640-48c3-8fee-df600f34991e",
+        "fatigue": 0.0015625
+      },
+      {
+        "loneliness": 0.8234642857142487,
+        "hunger": 0.9273749999999599,
+        "learningUpdates": 108,
+        "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+        "fatigue": 0.6455312500000142
+      },
+      {
+        "loneliness": 0.3078571428571411,
+        "hunger": 0.9270833333332932,
+        "learningUpdates": 181,
+        "uuid": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+        "fatigue": 0.0015625
+      },
+      {
+        "loneliness": 0.43571428571427556,
+        "hunger": 0.9271666666666265,
+        "learningUpdates": 180,
+        "uuid": "8d572a22-a431-47a1-b419-b12ab59b4e35",
+        "fatigue": 3.125E-4
+      },
+      {
+        "loneliness": 0.8231071428571058,
+        "hunger": 0.9269583333332932,
+        "learningUpdates": 160,
+        "uuid": "ca3c6d6a-385e-4ea3-a37d-e54d948d924f",
+        "fatigue": 0.0
+      },
+      {
+        "loneliness": 0.5907142857142654,
+        "hunger": 0.9269166666666265,
+        "learningUpdates": 201,
+        "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+        "fatigue": 0.0018750000000000001
+      },
+      {
+        "loneliness": 0.6234999999999642,
+        "hunger": 0.9274166666666265,
+        "learningUpdates": 170,
+        "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+        "fatigue": 9.375E-4
+      },
+      {
+        "loneliness": 0.823249999999963,
+        "hunger": 0.9271249999999599,
+        "learningUpdates": 154,
+        "uuid": "1e1a7861-7b3a-4be0-8499-c0bcada07d1a",
+        "fatigue": 0.0015625
+      }
+    ]
+  },
+  "game_time": 18739,
+  "elapsed_server_ticks": 13600,
+  "late_interval_definition": "Elapsed interval between observed server ticks exceeds 1.5 times the current target interval; distinct from native tick work cost.",
+  "native_target_tps": 80.0,
+  "role": "adaptive",
+  "frozen": false,
+  "detail": "Native tick-cost ring and monotonic wall-clock measurements; missing UUIDs are not presumed dead.",
+  "event": "tick_audit",
+  "state": "running",
+  "native_tick_cost_last_100": {
+    "samples": 100,
+    "meanMspt": 2.50066833,
+    "p50Mspt": 2.36222,
+    "p95Mspt": 3.254005,
+    "p99Mspt": 4.176009,
+    "maxMspt": 4.815432,
+    "overBudgetTicks": 0
+  },
+  "measurement_window_seconds": 2.49904223,
+  "wall_late_intervals": 38,
+  "cohort": {
+    "original": 11,
+    "terminal": 0,
+    "alive": 11,
+    "missing": 0
+  },
+  "elapsed_game_ticks": 13600,
+  "learning_claim": "No improvement inferred from speed, elapsed ticks, labels or survival alone; compare independent controlled cohorts.",
+  "configured_target_tps": 80,
+  "native_mean_mspt": 2.500668,
+  "wall_measured_intervals": 13601
+}

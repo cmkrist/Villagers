@@ -1,0 +1,13 @@
+// Native test probes compile against the same mapped classes and dependencies as the mod.
+allprojects {
+    afterEvaluate {
+        tasks.register('writeProbeClasspath') {
+            dependsOn tasks.named('classes')
+            def destination = layout.buildDirectory.file('probe-classpath.txt')
+            outputs.file(destination)
+            // Dependencies or the runtime directory can change without changing Java source.
+            outputs.upToDateWhen { false }
+            doLast { destination.get().asFile.text = sourceSets.main.runtimeClasspath.asPath }
+        }
+    }
+}

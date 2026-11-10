@@ -1,0 +1,17 @@
+{
+  "runtime": "/home/niko/.internal/source/Villagers/runs/mixed-farm-server",
+  "artifactPins": {
+    "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+    "mods/villagers-0.4.1-dev.jar": "5746edef3b0d75ff604c6ff0c2ba40e030b86b8056807a12ff0de4b1ab364c02",
+    "mods/food-economy-probe.jar": "75ece0814830c4738a3af89083fe03f1b6f277d0d83a5d0e4fada4800c933959"
+  },
+  "nativeClassesMatchDetachedCompileClasspath": {
+    "FoodSupply": true,
+    "FarmExpansion": true,
+    "VillagerController": true,
+    "PlantingMaterials": true,
+    "capability/CropLayout": true,
+    "FoodDelivery": true
+  },
+  "scope": "Prepared bare operator-granted plots; ordinary controller pays planting; no grain resupply;72000actual-tick bound; live session30287; source changes after launch cannot affect copied jars."
+}

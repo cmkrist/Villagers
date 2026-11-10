@@ -1,0 +1,110 @@
+{
+  "status": "passed",
+  "restart": true,
+  "gameTime": 75674,
+  "minFood": 17,
+  "endurance": false,
+  "farmerMeals": 3,
+  "dependentMeals": 2,
+  "families": true,
+  "children": [
+    "972edf0c-c490-491f-a725-5d83a3690b30"
+  ],
+  "lifecycle": true,
+  "farmer": {
+    "id": "69c11ff6-6e04-4f02-8e44-d578094bd8df",
+    "health": 24.0,
+    "x": 68.33618888283061,
+    "y": 75.0,
+    "z": -72.50051318197428,
+    "offhand": "1 minecraft:bread",
+    "mainhand": "0 minecraft:air",
+    "offhandStack": {
+      "id": "minecraft:bread",
+      "count": 1
+    },
+    "mainhandStack": {},
+    "bag": [
+      "7 minecraft:bread",
+      "64 minecraft:wheat_seeds",
+      "37 minecraft:wheat_seeds",
+      "0 minecraft:air",
+      "0 minecraft:air"
+    ],
+    "bagStacks": [
+      {
+        "id": "minecraft:bread",
+        "count": 7
+      },
+      {
+        "id": "minecraft:wheat_seeds",
+        "count": 64
+      },
+      {
+        "id": "minecraft:wheat_seeds",
+        "count": 37
+      },
+      {},
+      {}
+    ],
+    "nutrition": {
+      "foodLevel": 20,
+      "saturation": 2.0,
+      "exhaustion": 3.9034324,
+      "timer": 0
+    }
+  },
+  "dependent": {
+    "id": "008d82fa-0cad-4a76-9f8b-cd2c7fa66331",
+    "health": 24.0,
+    "x": 104.8562851511486,
+    "y": 75.0,
+    "z": -76.85605534524224,
+    "offhand": "1 minecraft:bread",
+    "mainhand": "0 minecraft:air",
+    "offhandStack": {
+      "id": "minecraft:bread",
+      "count": 1
+    },
+    "mainhandStack": {},
+    "bag": [
+      "7 minecraft:bread",
+      "64 minecraft:wheat_seeds",
+      "33 minecraft:wheat_seeds",
+      "0 minecraft:air",
+      "0 minecraft:air"
+    ],
+    "bagStacks": [
+      {
+        "id": "minecraft:bread",
+        "count": 7
+      },
+      {
+        "id": "minecraft:wheat_seeds",
+        "count": 64
+      },
+      {
+        "id": "minecraft:wheat_seeds",
+        "count": 33
+      },
+      {},
+      {}
+    ],
+    "nutrition": {
+      "foodLevel": 17,
+      "saturation": 0.0,
+      "exhaustion": 0.31582233,
+      "timer": 0
+    }
+  },
+  "work": {
+    "crafted": 4,
+    "shared": 0,
+    "repeatHarvests": 0,
+    "harvested": 12,
+    "target": ""
+  },
+  "farmerProducedMeal": true,
+  "dependentProducedMeal": true,
+  "fixture": "Two new empty illager founders in the existing authored town; scenario founders and loose items discarded at setup to exclude starting rations. Existing ripe fields and public house tables. Unspawned scratch body with one test seed checks paid harvest, immature rejection and an operator-protected crop. No supplies, damage, body, time or growth setters after setup; normal exhaustion at 80TPS. Production/restart check, not indefinite sustainability or population growth."
+}

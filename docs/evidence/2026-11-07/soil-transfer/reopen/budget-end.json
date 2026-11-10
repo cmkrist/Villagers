@@ -1,0 +1,63 @@
+{
+  "at": "2026-11-07T20:32:28.154252298Z",
+  "elapsed_ms": 19293,
+  "label": "budget-end",
+  "source": "rendered client; only client-tracked entities",
+  "world": "VillageTrial",
+  "role": "play",
+  "learning_mode": "adaptive",
+  "native_target_tps": 20.0,
+  "training": {
+    "game_tick_budget": 48000,
+    "configured_target_tps": 20,
+    "role": "play",
+    "state": "waiting_for_trial",
+    "learning_mode": "adaptive"
+  },
+  "game_time": 100874,
+  "trial": "natural generated village",
+  "server_tick": 401,
+  "screen": "",
+  "frame_ns": 1066785,
+  "camera": {
+    "x": -211.5,
+    "y": 104.0,
+    "z": 796.5,
+    "yaw": 135.0,
+    "pitch": 35.0
+  },
+  "tracked_entities": 142,
+  "tracked_villagers": 2,
+  "villagers": [
+    {
+      "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "name": "Nell-e358 · socialize",
+      "x": -256.82862938316265,
+      "y": 68.0,
+      "z": 779.387396289207,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "name": "Fern-5ad3 · explore (unhappy)",
+      "x": -225.78767903631524,
+      "y": 72.0,
+      "z": 769.7438151040478,
+      "alive": true,
+      "health": 20.0
+    }
+  ],
+  "tracked_iron_golems": 1,
+  "iron_golems": [
+    {
+      "uuid": "0dc9724f-c186-4784-aff8-5475aa216eb2",
+      "name": "Iron Golem",
+      "x": -218.71378580798773,
+      "y": 72.0,
+      "z": 770.4662272148416,
+      "alive": true,
+      "health": 19.0
+    }
+  ]
+}

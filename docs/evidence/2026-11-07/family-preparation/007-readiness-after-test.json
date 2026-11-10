@@ -1,0 +1,139 @@
+{
+  "atUTC": "2026-11-07T09:31:48Z",
+  "originalSixOwnedClients": [
+    {
+      "pid": 601856,
+      "ppid": 1,
+      "uid": 1000,
+      "startTicks": "10936249",
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope\n",
+      "matchesPreviousIdentity": true
+    },
+    {
+      "pid": 601857,
+      "ppid": 601837,
+      "uid": 1000,
+      "startTicks": "10936249",
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope\n",
+      "matchesPreviousIdentity": true
+    },
+    {
+      "pid": 601946,
+      "ppid": 601856,
+      "uid": 1000,
+      "startTicks": "10936303",
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope\n",
+      "matchesPreviousIdentity": true
+    },
+    {
+      "pid": 601990,
+      "ppid": 601857,
+      "uid": 1000,
+      "startTicks": "10936325",
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope\n",
+      "matchesPreviousIdentity": true
+    },
+    {
+      "pid": 602326,
+      "ppid": 601946,
+      "uid": 1000,
+      "startTicks": "10937021",
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/adaptive",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope\n",
+      "matchesPreviousIdentity": true
+    },
+    {
+      "pid": 602372,
+      "ppid": 601990,
+      "uid": 1000,
+      "startTicks": "10937054",
+      "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/frozen",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope\n",
+      "matchesPreviousIdentity": true
+    }
+  ],
+  "completedBuild": {
+    "handle": 66129,
+    "exitCode": 0,
+    "observedChain": [
+      {
+        "pid": 730387,
+        "ppid": 730376,
+        "startTicks": "12267385",
+        "uid": 1000,
+        "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+        "cwd": "/home/niko/.internal/source/Villagers",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope\n",
+        "argv": [
+          "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+          "-Xmx64m",
+          "-Xms64m",
+          "-Dorg.gradle.appname=gradlew",
+          "-jar",
+          "/home/niko/.internal/source/Villagers/gradle/wrapper/gradle-wrapper.jar",
+          "build",
+          "test",
+          "--no-daemon",
+          "--max-workers=2"
+        ],
+        "checkEnvironment": true,
+        "currentAbsent": true
+      },
+      {
+        "pid": 730504,
+        "ppid": 730387,
+        "startTicks": "12267438",
+        "uid": 1000,
+        "exe": "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+        "cwd": "/home/niko/.internal/source/Villagers",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope\n",
+        "argv": [
+          "/home/niko/.internal/minecraft-tools/jdk-25.0.5+8/bin/java",
+          "--add-opens=java.base/java.lang=ALL-UNNAMED",
+          "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED",
+          "--add-opens=java.base/java.util=ALL-UNNAMED",
+          "--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED",
+          "--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED",
+          "--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED",
+          "--add-opens=java.base/java.nio.charset=ALL-UNNAMED",
+          "--add-opens=java.base/java.net=ALL-UNNAMED",
+          "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED",
+          "--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED",
+          "--add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED",
+          "--add-opens=java.base/java.time=ALL-UNNAMED",
+          "--sun-misc-unsafe-memory-access=allow",
+          "--enable-native-access=ALL-UNNAMED",
+          "-Xmx2G",
+          "-Dfile.encoding=UTF-8",
+          "-Duser.country",
+          "-Duser.language=en",
+          "-Duser.variant",
+          "-cp",
+          "/home/cmkrist/.gradle/wrapper/dists/gradle-9.8.1-bin/a2l6ltp3k1vth6lwipzm5p2jp/gradle-9.8.1/lib/gradle-daemon-main-9.8.1.jar",
+          "-javaagent:/home/cmkrist/.gradle/wrapper/dists/gradle-9.8.1-bin/a2l6ltp3k1vth6lwipzm5p2jp/gradle-9.8.1/lib/agents/gradle-instrumentation-agent-9.8.1.jar",
+          "org.gradle.launcher.daemon.bootstrap.GradleDaemon",
+          "9.8.1"
+        ],
+        "checkEnvironment": true,
+        "currentAbsent": true
+      }
+    ],
+    "currentlyActiveJavaWithExactBuildEnvironmentTag": [],
+    "limits": "Short-lived test worker descendants were not sampled individually; no PID inherited or invented."
+  },
+  "activeOwnedSourceWorkers": [],
+  "activeOwnedBuildJobs": [],
+  "ownedAutomatedBuildReleaseTimers": [],
+  "newGamesLaunched": 0,
+  "readiness": "Ready now for LATER explicit up-to15min noNEW-owned-agent Java/Gradle/javap/build/game/release/local-model interval; existing clients continue. No interval, endpoints, barrier, marker, GO or model grant activated by this receipt."
+}

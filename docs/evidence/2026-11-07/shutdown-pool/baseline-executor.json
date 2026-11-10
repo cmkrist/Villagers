@@ -1,0 +1,95 @@
+{
+  "target": "io.github.foundationgames.animatica.animation.AnimatedTexture.EXECUTORS",
+  "method": "Read exact public executor field and allocate one unstarted factory probe; no tasks submitted",
+  "executorClass": "java.util.concurrent.ThreadPoolExecutor",
+  "poolSizeBeforeFactoryProbe": 4,
+  "corePoolSize": 4,
+  "maximumPoolSize": 4,
+  "activeCount": 0,
+  "queuedTasks": 0,
+  "completedTasks": 492,
+  "shutdown": false,
+  "unstartedFactoryThreadName": "pool-4-thread-5",
+  "unstartedFactoryThreadDaemon": false,
+  "unstartedFactoryThreadState": "NEW",
+  "livePoolThreads": [
+    {
+      "name": "pool-4-thread-2",
+      "daemon": false,
+      "state": "WAITING",
+      "stack": [
+        "java.base@25.0.5/jdk.internal.misc.Unsafe.park(Native Method)",
+        "java.base@25.0.5/java.util.concurrent.locks.LockSupport.park(LockSupport.java:369)",
+        "java.base@25.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:520)",
+        "java.base@25.0.5/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:4364)",
+        "java.base@25.0.5/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:4310)",
+        "java.base@25.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1752)",
+        "java.base@25.0.5/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)",
+        "java.base@25.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1016)",
+        "java.base@25.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)",
+        "java.base@25.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)",
+        "java.base@25.0.5/java.lang.Thread.runWith(Thread.java:1487)",
+        "java.base@25.0.5/java.lang.Thread.run(Thread.java:1474)"
+      ]
+    },
+    {
+      "name": "pool-4-thread-4",
+      "daemon": false,
+      "state": "WAITING",
+      "stack": [
+        "java.base@25.0.5/jdk.internal.misc.Unsafe.park(Native Method)",
+        "java.base@25.0.5/java.util.concurrent.locks.LockSupport.park(LockSupport.java:369)",
+        "java.base@25.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:520)",
+        "java.base@25.0.5/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:4364)",
+        "java.base@25.0.5/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:4310)",
+        "java.base@25.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1752)",
+        "java.base@25.0.5/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)",
+        "java.base@25.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1016)",
+        "java.base@25.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)",
+        "java.base@25.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)",
+        "java.base@25.0.5/java.lang.Thread.runWith(Thread.java:1487)",
+        "java.base@25.0.5/java.lang.Thread.run(Thread.java:1474)"
+      ]
+    },
+    {
+      "name": "pool-4-thread-3",
+      "daemon": false,
+      "state": "WAITING",
+      "stack": [
+        "java.base@25.0.5/jdk.internal.misc.Unsafe.park(Native Method)",
+        "java.base@25.0.5/java.util.concurrent.locks.LockSupport.park(LockSupport.java:369)",
+        "java.base@25.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:520)",
+        "java.base@25.0.5/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:4364)",
+        "java.base@25.0.5/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:4310)",
+        "java.base@25.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1752)",
+        "java.base@25.0.5/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)",
+        "java.base@25.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1016)",
+        "java.base@25.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)",
+        "java.base@25.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)",
+        "java.base@25.0.5/java.lang.Thread.runWith(Thread.java:1487)",
+        "java.base@25.0.5/java.lang.Thread.run(Thread.java:1474)"
+      ]
+    },
+    {
+      "name": "pool-4-thread-1",
+      "daemon": false,
+      "state": "WAITING",
+      "stack": [
+        "java.base@25.0.5/jdk.internal.misc.Unsafe.park(Native Method)",
+        "java.base@25.0.5/java.util.concurrent.locks.LockSupport.park(LockSupport.java:369)",
+        "java.base@25.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:520)",
+        "java.base@25.0.5/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:4364)",
+        "java.base@25.0.5/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:4310)",
+        "java.base@25.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1752)",
+        "java.base@25.0.5/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)",
+        "java.base@25.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1016)",
+        "java.base@25.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)",
+        "java.base@25.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)",
+        "java.base@25.0.5/java.lang.Thread.runWith(Thread.java:1487)",
+        "java.base@25.0.5/java.lang.Thread.run(Thread.java:1474)"
+      ]
+    }
+  ],
+  "at": "2026-11-07T09:18:58.791042357Z",
+  "worldLoaded": false
+}

@@ -1,0 +1,136 @@
+{
+  "realInputs": [
+    "2 minecraft:oak_log",
+    "1 minecraft:wheat_seeds"
+  ],
+  "outsideWriteRevocation": {
+    "authorizedAfter": false,
+    "soil": "-233, 72, 746",
+    "authorizedBefore": true,
+    "gameTime": 40160,
+    "nativeSetBlockReturned": false,
+    "blockUnchanged": true
+  },
+  "runs": [
+    {
+      "phase": "station-production",
+      "handle": 95482,
+      "exitCode": 0,
+      "nativeGameTime": 40743,
+      "finalSaveGameTime": 40747,
+      "stationRecipes": 0,
+      "tablesBuilt": 0,
+      "toolRecipes": 0,
+      "hoes": 0,
+      "meanTickMillis": 4.046941,
+      "ownedTerminal": [
+        {
+          "pid": 854964,
+          "startTicks": "13859376",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 855075,
+          "startTicks": "13859437",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 855699,
+          "startTicks": "13859995",
+          "sameIdentityAlive": false
+        }
+      ]
+    },
+    {
+      "phase": "approved",
+      "handle": 98862,
+      "exitCode": 0,
+      "nativeGameTime": 41948,
+      "finalSaveGameTime": 41952,
+      "stationRecipes": 0,
+      "tablesBuilt": 0,
+      "toolRecipes": 0,
+      "hoes": 0,
+      "meanTickMillis": 4.648985,
+      "ownedTerminal": [
+        {
+          "pid": 856587,
+          "startTicks": "13874498",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 856691,
+          "startTicks": "13874560",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 856809,
+          "startTicks": "13874834",
+          "sameIdentityAlive": false
+        }
+      ]
+    },
+    {
+      "phase": "job-range",
+      "handle": 77189,
+      "exitCode": 0,
+      "nativeGameTime": 43553,
+      "finalSaveGameTime": 43557,
+      "stationRecipes": 2,
+      "tablesBuilt": 1,
+      "toolRecipes": 3,
+      "hoes": 1,
+      "meanTickMillis": 4.666153,
+      "ownedTerminal": [
+        {
+          "pid": 858480,
+          "startTicks": "13893250",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 858581,
+          "startTicks": "13893315",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 858698,
+          "startTicks": "13893739",
+          "sameIdentityAlive": false
+        }
+      ]
+    },
+    {
+      "phase": "persistence",
+      "handle": 11639,
+      "exitCode": 0,
+      "nativeGameTime": 43958,
+      "finalSaveGameTime": 43962,
+      "stationRecipes": 0,
+      "tablesBuilt": 0,
+      "toolRecipes": 0,
+      "hoes": 0,
+      "meanTickMillis": 5.419747,
+      "ownedTerminal": [
+        {
+          "pid": 859422,
+          "startTicks": "13908892",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 859523,
+          "startTicks": "13908958",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 859640,
+          "startTicks": "13909273",
+          "sameIdentityAlive": false
+        }
+      ]
+    }
+  ],
+  "sourceWorldFilesUnchanged": 202,
+  "sourceArchiveSHA256": "b5040456a78dd9add56e8e46ae445b67df987448713bad997cf5c764d126c3e3",
+  "sourceAndDeployed040Unchanged": "4da3ac37044f5a3fa6ef77f70a27d91d1333748176aa483ff1d735b132afecb0",
+  "unreleased041dev": "dfba7eaf3854928dc5556185caff45ee5c0ab623586914de076f66bafdb129e2"
+}

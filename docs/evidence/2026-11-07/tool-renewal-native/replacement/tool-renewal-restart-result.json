@@ -1,0 +1,58 @@
+{
+  "status": "restart-passed",
+  "events": [
+    {
+      "phase": "reopened without resident, resource or terrain setters",
+      "tick": 519,
+      "food": 16,
+      "inventory": [
+        "9 minecraft:wheat_seeds",
+        "2 minecraft:bread",
+        "2 minecraft:wheat",
+        "2 minecraft:stick",
+        "1 minecraft:mangrove_log",
+        "0 minecraft:air",
+        "0 minecraft:air",
+        "0 minecraft:air"
+      ],
+      "held": "1 minecraft:wooden_hoe",
+      "hoeDamage": 1,
+      "hoesCrafted": 0,
+      "recipes": 0,
+      "logsGathered": 0,
+      "seedGathered": 0,
+      "seedPlanted": 0,
+      "forestryStatus": "not working",
+      "toolStatus": "not working",
+      "remainingJobs": 0,
+      "meanServerTickMillis": 2.26599
+    },
+    {
+      "phase": "restart exact inventory and no replay passed",
+      "tick": 619,
+      "food": 16,
+      "inventory": [
+        "9 minecraft:wheat_seeds",
+        "2 minecraft:bread",
+        "2 minecraft:wheat",
+        "2 minecraft:stick",
+        "1 minecraft:mangrove_log",
+        "0 minecraft:air",
+        "0 minecraft:air",
+        "0 minecraft:air"
+      ],
+      "held": "1 minecraft:wooden_hoe",
+      "hoeDamage": 1,
+      "hoesCrafted": 0,
+      "recipes": 0,
+      "logsGathered": 0,
+      "seedGathered": 0,
+      "seedPlanted": 0,
+      "forestryStatus": "not working",
+      "toolStatus": "not working",
+      "remainingJobs": 0,
+      "meanServerTickMillis": 0.633027
+    }
+  ],
+  "fixture": "NEW isolated supplied platform,bed,table,water,two mature wheat,eight seeds,two bread,two mangrove logs,hanging propagule,plant soil; one adult and an iron hoe with one use left. Native exact forestry grant.80TPS,normal80base exhaustion/day. No supplies, resident, clock, growth or terrain setters after setup. Tests real wear and replacement, not renewable tree regrowth or survival adequacy."
+}

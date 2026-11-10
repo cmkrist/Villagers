@@ -1,0 +1,16 @@
+{
+  "generator": "NoiseBasedChunkGenerator",
+  "villagers": 8,
+  "biomes": {
+    "-480,-480": "minecraft:plains",
+    "480,-480": "minecraft:forest",
+    "-480,480": "minecraft:frozen_peaks",
+    "480,480": "minecraft:desert"
+  },
+  "structures": {
+    "minecraft:village_desert": 95
+  },
+  "scope": "Native terrain/village generation and reopen; no survival/growth/warfare claim",
+  "status": "passed",
+  "gameTime": 40
+}

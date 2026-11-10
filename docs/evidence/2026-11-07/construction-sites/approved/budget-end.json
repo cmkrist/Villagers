@@ -1,0 +1,90 @@
+{
+  "at": "2026-11-07T13:16:57.634990409Z",
+  "elapsed_ms": 39220,
+  "label": "budget-end",
+  "source": "rendered client; only client-tracked entities",
+  "world": "VillageTrial",
+  "role": "play",
+  "learning_mode": "adaptive",
+  "native_target_tps": 20.0,
+  "training": {
+    "learning_mode": "adaptive",
+    "game_tick_budget": 48000,
+    "configured_target_tps": 20,
+    "role": "play",
+    "state": "waiting_for_trial"
+  },
+  "game_time": 39734,
+  "trial": "natural generated village",
+  "server_tick": 801,
+  "screen": "",
+  "frame_ns": 719143,
+  "camera": {
+    "x": -211.5,
+    "y": 104.0,
+    "z": 796.5,
+    "yaw": 135.0,
+    "pitch": 35.0
+  },
+  "tracked_entities": 141,
+  "tracked_villagers": 5,
+  "villagers": [
+    {
+      "uuid": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+      "name": "Dara-c7c3 · explore",
+      "x": -228.2936197885574,
+      "y": 71.0,
+      "z": 748.3577474003105,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "name": "Nell-e358 · explore",
+      "x": -256.82862938316265,
+      "y": 68.0,
+      "z": 779.387396289207,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "name": "Fern-5ad3 · explore",
+      "x": -231.0,
+      "y": 72.0,
+      "z": 748.4599609375,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "589b708d-b768-4a61-a59e-910db084b079",
+      "name": "Fern-589b · explore",
+      "x": -225.53320312447613,
+      "y": 71.0,
+      "z": 760.458577465819,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+      "name": "Juniper-231e · rest (miserable)",
+      "x": -234.2069023807201,
+      "y": 73.0,
+      "z": 766.6999999880791,
+      "alive": true,
+      "health": 20.0
+    }
+  ],
+  "tracked_iron_golems": 1,
+  "iron_golems": [
+    {
+      "uuid": "0dc9724f-c186-4784-aff8-5475aa216eb2",
+      "name": "Iron Golem",
+      "x": -246.11962890625,
+      "y": 72.0,
+      "z": 752.130615234375,
+      "alive": true,
+      "health": 100.0
+    }
+  ]
+}

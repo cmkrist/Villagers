@@ -1,0 +1,27 @@
+# Build and IDE output
+.gradle/
+build/
+.idea/
+*.iml
+
+# Python bytecode from tools/
+__pycache__/
+*.pyc
+
+# Disposable game directories (worlds, logs, caches). Logs elsewhere, such as
+# cited evidence under docs/, are intentionally tracked.
+run/
+runs/
+
+# Engine-backed unit-test bootstrap logs (evidence logs stay tracked).
+/logs/
+
+# Local agent settings and credentials
+/.agents/
+/.codex/
+/.aws/
+.env
+.env.*
+!.env.example
+*.pem
+*.key

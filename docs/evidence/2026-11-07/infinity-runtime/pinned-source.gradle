@@ -1,0 +1,4 @@
+gradle.projectsEvaluated {
+    rootProject.sourceSets.main.java.setSrcDirs([new File("/home/niko/.internal/source/Villagers/runs/infinity-runtime/source", "src/main/java")])
+    rootProject.sourceSets.main.resources.setSrcDirs([new File("/home/niko/.internal/source/Villagers/runs/infinity-runtime/source", "src/main/resources")])
+}

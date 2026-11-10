@@ -1,0 +1,94 @@
+{
+  "runs": [
+    {
+      "phase": "construction-sites",
+      "handle": 21924,
+      "exitCode": 0,
+      "wheatSeeds": 12,
+      "hoeDamage": 6,
+      "plotsThisLoad": 0,
+      "finalSaveGameTime": 38933,
+      "sourcePinsMatch": true,
+      "sampledOwnedJobsTerminal": [
+        {
+          "pid": 825817,
+          "startTicks": "13574736",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 825966,
+          "startTicks": "13574929",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 826129,
+          "startTicks": "13575827",
+          "sameIdentityAlive": false
+        }
+      ]
+    },
+    {
+      "phase": "approved",
+      "handle": 91129,
+      "exitCode": 0,
+      "wheatSeeds": 11,
+      "hoeDamage": 7,
+      "plotsThisLoad": 1,
+      "finalSaveGameTime": 39738,
+      "sourcePinsMatch": true,
+      "sampledOwnedJobsTerminal": []
+    },
+    {
+      "phase": "persistence",
+      "handle": 34816,
+      "exitCode": 0,
+      "wheatSeeds": 11,
+      "hoeDamage": 7,
+      "plotsThisLoad": 0,
+      "finalSaveGameTime": 40142,
+      "sourcePinsMatch": true,
+      "sampledOwnedJobsTerminal": [
+        {
+          "pid": 829992,
+          "startTicks": "13649611",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 830098,
+          "startTicks": "13649760",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 830266,
+          "startTicks": "13650086",
+          "sameIdentityAlive": false
+        }
+      ]
+    }
+  ],
+  "cleanSiteMetadata": {
+    "schemaVersion": 1,
+    "farms": [],
+    "protections": []
+  },
+  "activeMarkerAbsent": true,
+  "originalWorldFilesUnchanged": 191,
+  "preserved040Artifacts": {
+    "/home/niko/.internal/source/Villagers/build/libs/villagers-0.4.0.jar": "4da3ac37044f5a3fa6ef77f70a27d91d1333748176aa483ff1d735b132afecb0",
+    "/home/cmkrist/Games/VanillaPerfectedCompanion/mods/villagers-0.4.0.jar": "4da3ac37044f5a3fa6ef77f70a27d91d1333748176aa483ff1d735b132afecb0"
+  },
+  "developmentArtifact": {
+    "path": "build/libs/villagers-0.4.1-dev.jar",
+    "sha256": "bccb89428ea6e2687b405dc84788ddcafe94e2193b0f56043effc5ab8a9aebad",
+    "released": false
+  },
+  "outsideWriteRevocation": {
+    "authorizedAfter": false,
+    "soil": "-228, 71, 752",
+    "authorizedBefore": true,
+    "gameTime": 38349,
+    "nativeSetBlockReturned": false,
+    "blockUnchanged": true
+  },
+  "approvedRunCustodyLimit": "Live PID sample missed; no PID inferred. Exit0/save/free lock verified."
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="local.villagers.config.VillagersConfigTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:36:10.982Z" hostname="td001" time="0.011">
+  <properties/>
+  <testcase name="missingFileIsCreatedWithDefaults()" classname="local.villagers.config.VillagersConfigTest" time="0.005"/>
+  <testcase name="invalidFileIsLeftUntouchedAndDefaultsAreUsed()" classname="local.villagers.config.VillagersConfigTest" time="0.001"/>
+  <testcase name="readsHungerSettings()" classname="local.villagers.config.VillagersConfigTest" time="0.0"/>
+  <testcase name="consumingExistingHayRequiresExplicitBooleanOptIn()" classname="local.villagers.config.VillagersConfigTest" time="0.001"/>
+  <testcase name="outOfRangeAndWrongTypesAreReportedAndCorrected()" classname="local.villagers.config.VillagersConfigTest" time="0.001"/>
+  <testcase name="readsValidSettings()" classname="local.villagers.config.VillagersConfigTest" time="0.001"/>
+  <testcase name="recruitmentChanceSupportsOldConfigsAndDisabledOrCertainRolls()" classname="local.villagers.config.VillagersConfigTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

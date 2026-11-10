@@ -1,0 +1,71 @@
+{
+  "birthTick": 36379,
+  "child": "589b708d-b768-4a61-a59e-910db084b079",
+  "ordinaryNotGodChild": true,
+  "generation": 1,
+  "parents": [
+    "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+    "c7c31152-34a1-4edd-bd84-e48f50f86088"
+  ],
+  "charges": {
+    "5ad3aad5-3e4b-4eb6-8158-87731868dc03": {
+      "beforeBread": 6,
+      "afterBread": 3,
+      "spentBread": 3,
+      "breedingUnits": 12,
+      "agreement": {
+        "partner": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+        "agreedAt": 35574,
+        "expiresAt": 36774
+      },
+      "nextBreedingAt": 60379
+    },
+    "c7c31152-34a1-4edd-bd84-e48f50f86088": {
+      "beforeBread": 7,
+      "afterBread": 4,
+      "spentBread": 3,
+      "breedingUnits": 12,
+      "agreement": {
+        "partner": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+        "agreedAt": 35574,
+        "expiresAt": 36774
+      },
+      "nextBreedingAt": 60379
+    }
+  },
+  "geneAlleles": 50,
+  "exactParentAlleles": 48,
+  "possibleMutationDifferences": [
+    {
+      "side": "first",
+      "tendency": "FERTILITY",
+      "locus": 0,
+      "value": 0.7665941709683807
+    },
+    {
+      "side": "second",
+      "tendency": "FERTILITY",
+      "locus": 1,
+      "value": 0.7954286451533296
+    }
+  ],
+  "childConcepts": 27,
+  "exactParentWords": 27,
+  "home": {
+    "dimension": "minecraft:overworld",
+    "x": -242,
+    "y": 72,
+    "z": 759
+  },
+  "ageTicksAtSave": 333,
+  "lineage": {
+    "ancestor": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+    "ancestorName": "Fern-5ad3",
+    "generation": 1,
+    "godChild": false,
+    "secondParent": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+    "secondParentName": "Dara-c7c3"
+  },
+  "newbornLearningUpdatesAtBirth": 0,
+  "newbornLearnedValuesAllZero": true
+}

@@ -1,0 +1,702 @@
+{
+  "status": "passed",
+  "events": [
+    {
+      "phase": "declared finite setup: four marked coins via actual operator handoff, seller spare hoe and six bread, buyer seeds; ordinary controller thereafter",
+      "tick": 60,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 16,
+        "money": 4,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "foodRequests": 0,
+        "held": "0 minecraft:air",
+        "damage": 0
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 16,
+        "money": 0,
+        "bread": 6,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 0,
+      "meanServerTickMillis": 0.629219
+    },
+    {
+      "phase": "actual paid exchange",
+      "receipt": {
+        "item": "minecraft:wooden_hoe",
+        "damage": 0,
+        "sellerGoodsAfter": 0,
+        "gameTime": 68,
+        "sellerMoneyAfter": 2,
+        "buyerGoodsBefore": 0,
+        "seller": "4c4f4341-4c54-5241-0000-00000000005b",
+        "buyerMoneyBefore": 4,
+        "price": 2,
+        "buyerGoodsAfter": 1,
+        "buyerMoneyAfter": 2,
+        "sellerGoodsBefore": 1,
+        "buyer": "4c4f4341-4c54-5241-0000-000000000018",
+        "sellerMoneyBefore": 0
+      }
+    },
+    {
+      "phase": "paid exchange observed",
+      "tick": 68,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 16,
+        "money": 2,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 1,
+        "sold": 0,
+        "foodRequests": 0,
+        "held": "0 minecraft:air",
+        "damage": 0
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 16,
+        "money": 2,
+        "bread": 6,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 1,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 0,
+      "meanServerTickMillis": 0.997769
+    },
+    {
+      "phase": "native harvest using purchased hoe",
+      "receipt": {
+        "gameTime": 168,
+        "position": "6, 81, 5",
+        "crop": "WHEAT",
+        "plantingSource": "owned stock",
+        "nativeDrops": [
+          "1 minecraft:wheat",
+          "4 minecraft:wheat_seeds"
+        ],
+        "inventoryBefore": [
+          "8 minecraft:wheat_seeds",
+          "2 minecraft:emerald",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "inventoryAfter": [
+          "11 minecraft:wheat_seeds",
+          "2 minecraft:emerald",
+          "1 minecraft:wheat",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "overflow": [],
+        "hoeDamageBefore": 0,
+        "hoeDamageAfter": 1,
+        "hoeBroke": false,
+        "cropAfter": "Block{minecraft:wheat}[age\u003d0]"
+      }
+    },
+    {
+      "phase": "native harvest using purchased hoe",
+      "receipt": {
+        "gameTime": 228,
+        "position": "6, 81, 4",
+        "crop": "WHEAT",
+        "plantingSource": "owned stock",
+        "nativeDrops": [
+          "1 minecraft:wheat",
+          "2 minecraft:wheat_seeds"
+        ],
+        "inventoryBefore": [
+          "11 minecraft:wheat_seeds",
+          "2 minecraft:emerald",
+          "1 minecraft:wheat",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "inventoryAfter": [
+          "12 minecraft:wheat_seeds",
+          "2 minecraft:emerald",
+          "2 minecraft:wheat",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "overflow": [],
+        "hoeDamageBefore": 1,
+        "hoeDamageAfter": 2,
+        "hoeBroke": false,
+        "cropAfter": "Block{minecraft:wheat}[age\u003d0]"
+      }
+    },
+    {
+      "phase": "native harvest using purchased hoe",
+      "receipt": {
+        "gameTime": 268,
+        "position": "6, 81, 6",
+        "crop": "WHEAT",
+        "plantingSource": "owned stock",
+        "nativeDrops": [
+          "1 minecraft:wheat",
+          "4 minecraft:wheat_seeds"
+        ],
+        "inventoryBefore": [
+          "12 minecraft:wheat_seeds",
+          "2 minecraft:emerald",
+          "2 minecraft:wheat",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "inventoryAfter": [
+          "15 minecraft:wheat_seeds",
+          "2 minecraft:emerald",
+          "3 minecraft:wheat",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "overflow": [],
+        "hoeDamageBefore": 2,
+        "hoeDamageAfter": 3,
+        "hoeBroke": false,
+        "cropAfter": "Block{minecraft:wheat}[age\u003d0]"
+      }
+    },
+    {
+      "phase": "observe",
+      "tick": 400,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 16,
+        "money": 2,
+        "bread": 1,
+        "wheat": 0,
+        "crafted": 1,
+        "bought": 1,
+        "sold": 0,
+        "foodRequests": 0,
+        "held": "1 minecraft:wooden_hoe",
+        "damage": 3
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 16,
+        "money": 2,
+        "bread": 6,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 1,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 3,
+      "meanServerTickMillis": 0.420968
+    },
+    {
+      "phase": "observe",
+      "tick": 800,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 16,
+        "money": 2,
+        "bread": 1,
+        "wheat": 0,
+        "crafted": 1,
+        "bought": 1,
+        "sold": 0,
+        "foodRequests": 0,
+        "held": "1 minecraft:wooden_hoe",
+        "damage": 3
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 16,
+        "money": 2,
+        "bread": 6,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 1,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 3,
+      "meanServerTickMillis": 0.273382
+    },
+    {
+      "phase": "observe",
+      "tick": 1200,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 20,
+        "money": 2,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 1,
+        "bought": 1,
+        "sold": 0,
+        "foodRequests": 0,
+        "held": "1 minecraft:wooden_hoe",
+        "damage": 3
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 16,
+        "money": 2,
+        "bread": 6,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 1,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 3,
+      "meanServerTickMillis": 0.238729
+    },
+    {
+      "phase": "observe",
+      "tick": 1600,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 20,
+        "money": 2,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 1,
+        "bought": 1,
+        "sold": 0,
+        "foodRequests": 0,
+        "held": "1 minecraft:wooden_hoe",
+        "damage": 3
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 16,
+        "money": 2,
+        "bread": 6,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 1,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 3,
+      "meanServerTickMillis": 0.204063
+    },
+    {
+      "phase": "observe",
+      "tick": 2000,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 20,
+        "money": 2,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 1,
+        "bought": 1,
+        "sold": 0,
+        "foodRequests": 0,
+        "held": "1 minecraft:wooden_hoe",
+        "damage": 3
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 20,
+        "money": 2,
+        "bread": 5,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 1,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 3,
+      "meanServerTickMillis": 0.178856
+    },
+    {
+      "phase": "observe",
+      "tick": 2400,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 20,
+        "money": 2,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 1,
+        "bought": 1,
+        "sold": 0,
+        "foodRequests": 0,
+        "held": "1 minecraft:wooden_hoe",
+        "damage": 3
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 20,
+        "money": 2,
+        "bread": 5,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 1,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 3,
+      "meanServerTickMillis": 0.150096
+    },
+    {
+      "phase": "observe",
+      "tick": 2800,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 18,
+        "money": 2,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 1,
+        "bought": 1,
+        "sold": 0,
+        "foodRequests": 0,
+        "held": "1 minecraft:wooden_hoe",
+        "damage": 3
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 20,
+        "money": 2,
+        "bread": 5,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 1,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 3,
+      "meanServerTickMillis": 0.158499
+    },
+    {
+      "phase": "observe",
+      "tick": 3200,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 15,
+        "money": 2,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 1,
+        "bought": 1,
+        "sold": 0,
+        "foodRequests": 0,
+        "held": "1 minecraft:wooden_hoe",
+        "damage": 3
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 20,
+        "money": 2,
+        "bread": 5,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 1,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 3,
+      "meanServerTickMillis": 0.12208
+    },
+    {
+      "phase": "observe",
+      "tick": 3600,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 13,
+        "money": 2,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 1,
+        "bought": 1,
+        "sold": 0,
+        "foodRequests": 1,
+        "held": "1 minecraft:wooden_hoe",
+        "damage": 3
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 20,
+        "money": 2,
+        "bread": 5,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 1,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 3,
+      "meanServerTickMillis": 0.138823
+    },
+    {
+      "phase": "observe",
+      "tick": 4000,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 11,
+        "money": 2,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 1,
+        "bought": 1,
+        "sold": 0,
+        "foodRequests": 1,
+        "held": "1 minecraft:wooden_hoe",
+        "damage": 3
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 20,
+        "money": 2,
+        "bread": 5,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 1,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 3,
+      "meanServerTickMillis": 0.121606
+    },
+    {
+      "phase": "observe",
+      "tick": 4400,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 9,
+        "money": 2,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 1,
+        "bought": 1,
+        "sold": 0,
+        "foodRequests": 2,
+        "held": "1 minecraft:wooden_hoe",
+        "damage": 3
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 18,
+        "money": 2,
+        "bread": 5,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 1,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 3,
+      "meanServerTickMillis": 0.116141
+    },
+    {
+      "phase": "observe",
+      "tick": 4800,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 7,
+        "money": 2,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 1,
+        "bought": 1,
+        "sold": 0,
+        "foodRequests": 3,
+        "held": "1 minecraft:wooden_hoe",
+        "damage": 3
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 17,
+        "money": 2,
+        "bread": 5,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 1,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 3,
+      "meanServerTickMillis": 0.160212
+    },
+    {
+      "phase": "observe",
+      "tick": 5200,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 5,
+        "money": 2,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 1,
+        "bought": 1,
+        "sold": 0,
+        "foodRequests": 3,
+        "held": "1 minecraft:wooden_hoe",
+        "damage": 3
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 16,
+        "money": 2,
+        "bread": 5,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 1,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 3,
+      "meanServerTickMillis": 0.101584
+    },
+    {
+      "phase": "actual paid exchange",
+      "receipt": {
+        "item": "minecraft:bread",
+        "damage": 0,
+        "sellerGoodsAfter": 3,
+        "gameTime": 5458,
+        "sellerMoneyAfter": 4,
+        "buyerGoodsBefore": 0,
+        "seller": "4c4f4341-4c54-5241-0000-00000000005b",
+        "buyerMoneyBefore": 2,
+        "price": 2,
+        "buyerGoodsAfter": 1,
+        "buyerMoneyAfter": 0,
+        "sellerGoodsBefore": 4,
+        "buyer": "4c4f4341-4c54-5241-0000-000000000018",
+        "sellerMoneyBefore": 2
+      }
+    },
+    {
+      "phase": "paid exchange observed",
+      "tick": 5458,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 3,
+        "money": 0,
+        "bread": 1,
+        "wheat": 0,
+        "crafted": 1,
+        "bought": 2,
+        "sold": 0,
+        "foodRequests": 4,
+        "held": "1 minecraft:wooden_hoe",
+        "damage": 3
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 20,
+        "money": 4,
+        "bread": 3,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 2,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 3,
+      "meanServerTickMillis": 0.103301
+    },
+    {
+      "phase": "ordinary paid tool, production, paid meal and currency conservation passed",
+      "tick": 5468,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 8,
+        "money": 0,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 1,
+        "bought": 2,
+        "sold": 0,
+        "foodRequests": 4,
+        "held": "1 minecraft:wooden_hoe",
+        "damage": 3
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 20,
+        "money": 4,
+        "bread": 3,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 2,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 3,
+      "meanServerTickMillis": 0.107137
+    }
+  ],
+  "fixture": "NEW isolated supplied peaceful platform,beds,table,water,three mature wheat; initially common language,selected greedy/frugal seller and glutton buyer; seller ironhoe,spare woodenhoe,sixbread; buyer eightseeds,no tool or food,receives four marked coins from finite operator hand via real gifts during setup.80TPS,400base exhaustion/day. No post-setup supplies, body/clock/growth/actor-position setters or scripted exchange,recipe,harvest,meal. Finite currency/goods integration, not normal survival or a sustainable economy."
+}

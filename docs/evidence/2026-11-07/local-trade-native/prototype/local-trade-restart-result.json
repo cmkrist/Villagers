@@ -1,0 +1,70 @@
+{
+  "status": "restart-passed",
+  "events": [
+    {
+      "phase": "reopened without supplies or resident/terrain setters",
+      "tick": 5518,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 8,
+        "money": 0,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "foodRequests": 1,
+        "held": "1 minecraft:wooden_hoe",
+        "damage": 3
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 20,
+        "money": 4,
+        "bread": 3,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 0,
+      "meanServerTickMillis": 2.85042
+    },
+    {
+      "phase": "saved real money, meal, tool wear and no replay passed",
+      "tick": 5618,
+      "buyer": {
+        "id": "4c4f4341-4c54-5241-0000-000000000018",
+        "food": 8,
+        "money": 0,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "foodRequests": 1,
+        "held": "1 minecraft:wooden_hoe",
+        "damage": 3
+      },
+      "seller": {
+        "id": "4c4f4341-4c54-5241-0000-00000000005b",
+        "food": 20,
+        "money": 4,
+        "bread": 3,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "foodRequests": 0,
+        "held": "1 minecraft:iron_hoe",
+        "damage": 0
+      },
+      "harvestsThisLoad": 0,
+      "meanServerTickMillis": 0.963341
+    }
+  ],
+  "fixture": "NEW isolated supplied peaceful platform,beds,table,water,three mature wheat; initially common language,selected greedy/frugal seller and glutton buyer; seller ironhoe,spare woodenhoe,sixbread; buyer fouremeralds,eightseeds,no tool or food.80TPS,400base exhaustion/day. No post-setup supplies, body/clock/growth/actor-position setters or scripted exchange,recipe,harvest,meal. Finite currency/goods integration, not normal survival or a sustainable economy."
+}

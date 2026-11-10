@@ -1,0 +1,820 @@
+{
+  "capturedUTC": "2026-11-07T21:31:51.449160+00:00",
+  "kind": "ISOLATED SCHEDULER VALIDATION COPY; not the Lead primary history; no actor, clock, terrain, item or growth setters",
+  "sessionId": 41134,
+  "exitCode": 0,
+  "originalWorldUnchanged": true,
+  "pinnedSourceUnchanged": true,
+  "compiledClassesUnchanged": true,
+  "currentCheckoutDrift": [
+    "src/main/java/local/villagers/ConstructionSites.java",
+    "src/main/java/local/villagers/construction/WorkSiteStore.java",
+    "src/main/java/local/villagers/construction/WorkSites.java"
+  ],
+  "exposure": {
+    "initialGameTime": 106714,
+    "budgetGameTime": 109115,
+    "finalSaveGameTime": 109119,
+    "requestedTicks": 2400
+  },
+  "population": {
+    "original_cohort_loaded_alive": 2,
+    "original_cohort_known_dead_or_converted": 9,
+    "original_cohort_unloaded_or_missing": 0,
+    "local_loaded_villager_count": 2
+  },
+  "preservedDeathRecords": [
+    {
+      "id": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+      "death": {
+        "tick": 98739,
+        "cause": "starve"
+      }
+    },
+    {
+      "id": "d29c199f-5202-4fbc-97f9-92023489d70f",
+      "death": {
+        "tick": 27796,
+        "cause": "starve"
+      }
+    },
+    {
+      "id": "ca3c6d6a-385e-4ea3-a37d-e54d948d924f",
+      "death": {
+        "tick": 31882,
+        "cause": "starve"
+      }
+    },
+    {
+      "id": "5894771d-5fcc-45c5-bb4c-4733e2c992c4",
+      "death": {
+        "tick": 27760,
+        "cause": "starve"
+      }
+    },
+    {
+      "id": "d169dad0-0157-4e1d-bf1c-358845617474",
+      "death": {
+        "tick": 27921,
+        "cause": "starve"
+      }
+    },
+    {
+      "id": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+      "death": {
+        "tick": 66151,
+        "cause": "mob"
+      }
+    },
+    {
+      "id": "589b708d-b768-4a61-a59e-910db084b079",
+      "death": {
+        "tick": 81487,
+        "cause": "starve"
+      }
+    },
+    {
+      "id": "8d572a22-a431-47a1-b419-b12ab59b4e35",
+      "death": {
+        "tick": 29242,
+        "cause": "starve"
+      }
+    },
+    {
+      "id": "1e1a7861-7b3a-4be0-8499-c0bcada07d1a",
+      "death": {
+        "tick": 27617,
+        "cause": "starve"
+      }
+    },
+    {
+      "id": "02b0b914-c640-48c3-8fee-df600f34991e",
+      "death": {
+        "tick": 28860,
+        "cause": "starve"
+      }
+    }
+  ],
+  "actors": [
+    {
+      "id": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "beforeFood": {
+        "foodLevel": 17,
+        "saturation": 0.0,
+        "exhaustion": 1.4995652,
+        "timer": 0
+      },
+      "afterFood": {
+        "foodLevel": 20,
+        "saturation": 6.0,
+        "exhaustion": 1.5128986,
+        "timer": 0
+      },
+      "beforeInventory": [
+        {
+          "item": "minecraft:bread",
+          "count": 1
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "afterInventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "health": 20.0,
+      "farmRecall": {
+        "lastPath": {},
+        "target": "none",
+        "rejected": 0,
+        "knownFarms": [],
+        "status": "no recalled trip",
+        "arrivals": 0,
+        "trips": 0
+      },
+      "foodHelp": {
+        "scans": 0,
+        "journeyActive": false,
+        "requests": 0,
+        "received": 0,
+        "status": "own need or request budget unmet",
+        "target": "none",
+        "pathRejections": 0,
+        "given": 0
+      },
+      "forestryRoute": {
+        "batches": 0,
+        "rejections": 0,
+        "standCandidates": 0,
+        "lastPath": "none",
+        "cursor": 0
+      },
+      "newMemories": [
+        {
+          "index": 859,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 860,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 861,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 862,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 863,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 864,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 865,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 866,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 867,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 868,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 869,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 870,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 870,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Ate owned minecraft:bread for hunger or healing"
+        },
+        {
+          "index": 871,
+          "action": "REST",
+          "context": 4,
+          "reward": 0.2350000000000001,
+          "note": "Observed outcome of REST"
+        },
+        {
+          "index": 871,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed REST at -257, 68, 779"
+        },
+        {
+          "index": 872,
+          "action": "REST",
+          "context": 4,
+          "reward": 0.0737499999999961,
+          "note": "Observed outcome of REST"
+        },
+        {
+          "index": 872,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed REST at -257, 68, 779"
+        },
+        {
+          "index": 873,
+          "action": "REST",
+          "context": 4,
+          "reward": -0.15,
+          "note": "Observed outcome of REST"
+        },
+        {
+          "index": 873,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed REST at -257, 68, 779"
+        }
+      ]
+    },
+    {
+      "id": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "beforeFood": {
+        "foodLevel": 16,
+        "saturation": 0.19999981,
+        "exhaustion": 1.2216513,
+        "timer": 0
+      },
+      "afterFood": {
+        "foodLevel": 15,
+        "saturation": 0.0,
+        "exhaustion": 0.7196624,
+        "timer": 0
+      },
+      "beforeInventory": [
+        {
+          "item": "minecraft:wheat_seeds",
+          "count": 22
+        },
+        {
+          "item": "minecraft:beetroot_seeds",
+          "count": 7
+        },
+        {
+          "item": "minecraft:sand",
+          "count": 1
+        },
+        {
+          "item": "minecraft:wheat",
+          "count": 1
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "afterInventory": [
+        {
+          "item": "minecraft:wheat_seeds",
+          "count": 22
+        },
+        {
+          "item": "minecraft:beetroot_seeds",
+          "count": 7
+        },
+        {
+          "item": "minecraft:sand",
+          "count": 1
+        },
+        {
+          "item": "minecraft:wheat",
+          "count": 1
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "health": 20.0,
+      "farmRecall": {
+        "lastPath": {
+          "fromObservation": true,
+          "permitted": true,
+          "target": "-230, 72, 753",
+          "canReach": true,
+          "gameTime": 108780,
+          "nodes": 20
+        },
+        "target": "-226, 72, 751",
+        "rejected": 0,
+        "knownFarms": [
+          {
+            "id": 15,
+            "kind": "OBSERVED_FARM",
+            "tick": 101494,
+            "place": {
+              "dimension": "minecraft:overworld",
+              "x": -226,
+              "y": 72,
+              "z": 751
+            },
+            "detail": "minecraft:wheat",
+            "knownBy": []
+          },
+          {
+            "id": 16,
+            "kind": "OBSERVED_FARM",
+            "tick": 102814,
+            "place": {
+              "dimension": "minecraft:overworld",
+              "x": -230,
+              "y": 72,
+              "z": 753
+            },
+            "detail": "minecraft:wheat",
+            "knownBy": []
+          }
+        ],
+        "status": "checking remembered farm",
+        "arrivals": 5,
+        "trips": 5
+      },
+      "foodHelp": {
+        "scans": 0,
+        "journeyActive": false,
+        "requests": 0,
+        "received": 0,
+        "status": "own need or request budget unmet",
+        "target": "none",
+        "pathRejections": 0,
+        "given": 0
+      },
+      "forestryRoute": {
+        "batches": 0,
+        "rejections": 0,
+        "standCandidates": 0,
+        "lastPath": "none",
+        "cursor": 0
+      },
+      "newMemories": [
+        {
+          "index": 934,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -232, 72, 756"
+        },
+        {
+          "index": 935,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 935,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -228, 71, 755"
+        },
+        {
+          "index": 936,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 936,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -234, 72, 760"
+        },
+        {
+          "index": 937,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 937,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -239, 72, 763"
+        },
+        {
+          "index": 938,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 938,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -240, 72, 766"
+        },
+        {
+          "index": 938,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Planned trip to remembered farm -230, 72, 753"
+        },
+        {
+          "index": 938,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Arrived at remembered farm -230, 72, 753"
+        },
+        {
+          "index": 939,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 939,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -230, 71, 748"
+        },
+        {
+          "index": 940,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 940,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -233, 72, 754"
+        },
+        {
+          "index": 941,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 941,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -232, 72, 757"
+        },
+        {
+          "index": 942,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 942,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -226, 71, 762"
+        },
+        {
+          "index": 943,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 943,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -229, 72, 765"
+        },
+        {
+          "index": 944,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 944,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -231, 72, 769"
+        },
+        {
+          "index": 945,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 945,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -233, 72, 769"
+        },
+        {
+          "index": 945,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Planned trip to remembered farm -230, 72, 753"
+        },
+        {
+          "index": 945,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Arrived at remembered farm -230, 72, 753"
+        },
+        {
+          "index": 946,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 946,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -226, 71, 758"
+        },
+        {
+          "index": 947,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 947,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -225, 71, 763"
+        },
+        {
+          "index": 948,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 948,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -231, 72, 769"
+        },
+        {
+          "index": 949,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 949,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -232, 72, 770"
+        },
+        {
+          "index": 950,
+          "action": "SOCIALIZE",
+          "context": 4,
+          "reward": -0.15,
+          "note": "Observed outcome of SOCIALIZE"
+        },
+        {
+          "index": 950,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Planned trip to remembered farm -230, 72, 753"
+        },
+        {
+          "index": 950,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Arrived at remembered farm -230, 72, 753"
+        },
+        {
+          "index": 951,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 951,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -227, 71, 748"
+        },
+        {
+          "index": 952,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 952,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -223, 71, 747"
+        },
+        {
+          "index": 953,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 953,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -217, 71, 752"
+        },
+        {
+          "index": 954,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 954,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -217, 71, 748"
+        },
+        {
+          "index": 955,
+          "action": "EXPLORE",
+          "context": 4,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 955,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at -214, 71, 755"
+        }
+      ]
+    }
+  ],
+  "meanServerTickMillis": 3.469343,
+  "ownedTerminal": [
+    {
+      "pid": 1086899,
+      "startTicks": "16551082",
+      "sameIdentityAlive": false
+    },
+    {
+      "pid": 1087014,
+      "startTicks": "16551143",
+      "sameIdentityAlive": false
+    },
+    {
+      "pid": 1087294,
+      "startTicks": "16551691",
+      "sameIdentityAlive": false
+    }
+  ],
+  "scopeLimits": [
+    "Two-adult scheduler integration smoke; no many-agent or tail-latency performance claim.",
+    "No active forestry grant; timed forestry commits were not exercised natively.",
+    "Existing owned bread consumption and farm recall only; renewable food adequacy remains unproven.",
+    "Isolated comparator history; never promote over Lead primary or merge same-UUID minds."
+  ]
+}

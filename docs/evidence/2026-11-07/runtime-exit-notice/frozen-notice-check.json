@@ -1,0 +1,77 @@
+{
+  "at": "2026-11-07T16:48:47.279168+00:00",
+  "notice": "Frozen outer background command exit143",
+  "jobs": [
+    {
+      "pid": 601856,
+      "exists": false
+    },
+    {
+      "pid": 601857,
+      "ppid": 1,
+      "state": "S",
+      "same_identity": true
+    },
+    {
+      "pid": 601946,
+      "exists": false
+    },
+    {
+      "pid": 601990,
+      "ppid": 601857,
+      "state": "S",
+      "same_identity": true
+    },
+    {
+      "pid": 602326,
+      "exists": false
+    },
+    {
+      "pid": 602372,
+      "ppid": 601990,
+      "state": "S",
+      "same_identity": true
+    }
+  ],
+  "heartbeats": [
+    {
+      "role": "adaptive",
+      "at": "2026-11-07T13:10:31.792859406Z",
+      "game_time": 568712,
+      "server_tick": 564645,
+      "native_target_tps": 20.0
+    },
+    {
+      "role": "frozen",
+      "at": "2026-11-07T16:48:43.461621527Z",
+      "game_time": 768116,
+      "server_tick": 764049,
+      "native_target_tps": 20.0
+    }
+  ],
+  "actions": "Read-only status check; no process control, launch, implementation or world edits",
+  "adaptive_shutdown": {
+    "stopped_server_logged": true,
+    "saving_worlds_logged": true,
+    "build_successful": true,
+    "log_time_local": "2026-11-07 08:10:32",
+    "log_time_utc": "2026-11-07 13:10:32",
+    "cause": "not inferred"
+  },
+  "saved_mind_validation": {
+    "adaptive": {
+      "files": 11,
+      "readable_matching_uuid": 11
+    },
+    "frozen": {
+      "files": 11,
+      "readable_matching_uuid": 11
+    }
+  },
+  "frozen_heartbeat_confirmation": {
+    "at": "2026-11-07T16:50:18.462085887Z",
+    "advanced_since_first_check": true,
+    "native_target_tps": 20.0
+  },
+  "current_handoff_preserved": "Read newer Project Lead handoff; left it unchanged. No source/build/runtime control performed."
+}

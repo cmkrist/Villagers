@@ -1,0 +1,33 @@
+{
+  "jobs": [
+    {
+      "pid": 615823,
+      "ppid": 615670,
+      "start_ticks": 11095064,
+      "comm": "java",
+      "uid": 1000,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/play"
+    },
+    {
+      "pid": 615670,
+      "ppid": 615617,
+      "start_ticks": 11094689,
+      "comm": "java",
+      "uid": 1000,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers"
+    },
+    {
+      "pid": 615617,
+      "ppid": 615606,
+      "start_ticks": 11094540,
+      "comm": "java",
+      "uid": 1000,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers"
+    }
+  ],
+  "custody": "This turn launched reload of isolated runs/play; flag/cwd and continuous Java ancestry confirm ownership. No policy exception transfer.",
+  "bounds": "4GiB client,2GiB Gradle,20TPS,60FPS; final save/reload verification then clean close"
+}

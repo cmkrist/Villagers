@@ -1,0 +1,79 @@
+{
+  "capturedUTC": "2026-11-07T23:14:06.379617+00:00",
+  "status": "TERMINAL; observation criterion failed",
+  "custody": {
+    "pid": 1136902,
+    "startTicks": "17022079",
+    "cwd": "/home/niko/.internal/source/Villagers/runs/mixed-farm-server",
+    "launchedAtEpoch": 1794091396.8715823
+  },
+  "sameIdentityConfirmedLive": false,
+  "nativeExitCode": 0,
+  "fixtureStatus": "failed",
+  "failure": "java.lang.AssertionError: Native economy observation budget exhausted",
+  "lastNativeObservation": {
+    "phase": "renewable observation",
+    "tick": 72000,
+    "producer": {
+      "crafted": 3,
+      "target": 15,
+      "bread": 3,
+      "received": 0,
+      "given": 2,
+      "requestCount": 0,
+      "id": "464f4f44-4543-4f4e-0000-000000000007",
+      "food": 20,
+      "mood": "CONTENT",
+      "wheat": 0
+    },
+    "requester": {
+      "crafted": 0,
+      "target": 15,
+      "bread": 0,
+      "received": 2,
+      "given": 0,
+      "requestCount": 2,
+      "id": "464f4f44-4543-4f4e-0000-000000000002",
+      "food": 11,
+      "mood": "CONTENT",
+      "wheat": 0
+    },
+    "foodDeliveries": 0,
+    "foodDeliveryPathRejections": 0,
+    "cropAges": [
+      5,
+      3,
+      3,
+      15,
+      0,
+      0,
+      0,
+      11
+    ],
+    "harvestsByCell": {
+      "4, 81, 6": 2,
+      "8, 81, 9": 1,
+      "7, 81, 4": 1,
+      "5, 81, 2": 1,
+      "8, 81, 3": 1,
+      "8, 81, 2": 1,
+      "4, 81, 8": 1,
+      "4, 81, 7": 1,
+      "4, 81, 9": 2,
+      "7, 81, 2": 1,
+      "7, 81, 3": 1,
+      "4, 81, 2": 1,
+      "10, 81, 2": 1,
+      "11, 81, 2": 1,
+      "5, 81, 5": 1,
+      "5, 81, 3": 1,
+      "5, 81, 7": 1
+    },
+    "nearbyObserverCount": 1,
+    "earnedBreadInRequesterBag": 0,
+    "plotsCultivated": 47,
+    "meanServerTickMillis": 0.210133
+  },
+  "harvestReceiptCount": 19,
+  "basis": "Both saved adults retained alive. Repeat harvest/recipes/sharing observed; earned-bread-to-recipient provenance unproven. Isolated supplied peaceful fixture; no sustainability acceptance."
+}

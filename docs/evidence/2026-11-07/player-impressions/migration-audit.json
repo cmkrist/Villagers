@@ -1,0 +1,1015 @@
+{
+  "schema_version": 1,
+  "captured_start_utc": "2026-11-07T06:17:30.437792+00:00",
+  "captured_end_utc": "2026-11-07T06:17:30.442357+00:00",
+  "status": "passed_retention_checks_after_runtime",
+  "summary": {
+    "minds_compared": 11,
+    "schema2_minds": 11,
+    "exact_identities_names_personalities": 11,
+    "exact_homes": 10,
+    "supported_runtime_home_assignments": 1,
+    "nondecreasing_learning_counters": 11,
+    "nondecreasing_existing_visit_tables": 11,
+    "whole_value_table_resets": 0,
+    "unexplained_value_changes": 0,
+    "bounded_memories": 11,
+    "failed_checks": {}
+  },
+  "legacy_manifest": "legacy-manifest.json",
+  "legacy_manifest_sha256": "ba4fb175700b77996079682942ce6515aaf8193666dcd7cb026451a6ebeb39ae",
+  "audit_snapshot_set_sha256": "b48d0442c0e2d2f0f47026b865169a5f035c5626ebe682551739dde424722f22",
+  "scope": "Read-only comparison of saved legacy schema1 records with independently archived saved schema2 bytes. Source runtime/processes were not accessed or controlled beyond reading its files.",
+  "limits": [
+    "This is a post-runtime retention audit, not an exact instrumentation of the conversion instant.",
+    "Sequential per-file reads are frozen in migrated-minds; the running reload can legitimately change source files afterward.",
+    "First-session exit143 was not a verified clean shutdown; these records prove saved data existed, not that the queued save/quit ran.",
+    "Naturally changing drives, bounded memories and updated action values are not required to equal legacy state.",
+    "Restart continuity is separately evidenced by the root-verified after-reload-status.json; transient social episode counters are runtime state and are not expected to persist."
+  ],
+  "warnings": [],
+  "minds": {
+    "02b0b914-c640-48c3-8fee-df600f34991e": {
+      "source_mind": "runs/play/saves/VillageTrial/villagers/02b0b914-c640-48c3-8fee-df600f34991e/mind.json",
+      "source_sha256": "f29584d6fbd673b590471d10e85814d9c62d660a34872db489763ead83859684",
+      "audit_snapshot": "migrated-minds/02b0b914-c640-48c3-8fee-df600f34991e.json",
+      "legacy_sha256": "35d6699dafe5b2e3de7ca83943a65f74019c9dba125bd4bd514280750d510bc0",
+      "checks": {
+        "schema1_to_schema2": true,
+        "identity_name_personality_exact": true,
+        "home_preserved_or_supported_assignment": true,
+        "policy_dimensions_unchanged": true,
+        "learning_updates_nondecreasing": true,
+        "all_existing_visit_entries_nondecreasing": true,
+        "value_changes_have_matching_new_visits": true,
+        "values_finite_bounded": true,
+        "no_whole_value_table_reset": true,
+        "bounded_event_memory": true,
+        "bounded_player_impressions": true
+      },
+      "identity_fields_exact": {
+        "id": true,
+        "name": true,
+        "personality": true
+      },
+      "home_exact": true,
+      "home_change": null,
+      "learning_updates": {
+        "before": 52,
+        "after": 173,
+        "delta": 121
+      },
+      "policy": {
+        "previously_visited_entries": 2,
+        "decreased_visit_entries": [],
+        "unexplained_value_changes": [],
+        "changed_values": [
+          {
+            "context": 0,
+            "action": 2,
+            "visits_before": 1,
+            "visits_after": 3,
+            "value_before": 0.09910714285714292,
+            "value_after": 0.15746205357142817
+          },
+          {
+            "context": 1,
+            "action": 2,
+            "visits_before": 0,
+            "visits_after": 1,
+            "value_before": 0.0,
+            "value_after": 0.003928571428571429
+          }
+        ],
+        "retained_nonzero_values": [],
+        "nonzero_values_before": 1,
+        "nonzero_values_after": 2,
+        "visits_before_sha256": "da3c91b346690c4394c97b23ba3b355ca3881bb7729d9c69c89ac0588050b6c5",
+        "visits_after_sha256": "5453ba19580fa6028f1cc95c2fd315287b778b1aa308427fe70727c88fd6c076",
+        "values_before_sha256": "4d66aa42b700948d365030d3a8edc0dccc3cab4316ebcfb120da55e64bb8afd1",
+        "values_after_sha256": "942706560b42177692d5c0ff3b99defbeeb391231397e8d51397bcbb1dcfb05d"
+      },
+      "memories": {
+        "before": 48,
+        "after": 48,
+        "exact_required": false,
+        "reason": "Bounded rolling history evolves during simulation; natural eviction is not migration loss"
+      },
+      "needs": {
+        "before": {
+          "hunger": 0.31650000000000267,
+          "fatigue": 0.18737499999999815,
+          "loneliness": 0.0998571428571404
+        },
+        "after": {
+          "hunger": 0.5598333333333336,
+          "fatigue": 0.3698749999999943,
+          "loneliness": 0.040714285714285696
+        },
+        "exact_required_after_runtime": false
+      },
+      "player_impressions": {
+        "count": 0,
+        "player_ids": []
+      }
+    },
+    "1e1a7861-7b3a-4be0-8499-c0bcada07d1a": {
+      "source_mind": "runs/play/saves/VillageTrial/villagers/1e1a7861-7b3a-4be0-8499-c0bcada07d1a/mind.json",
+      "source_sha256": "db7f18e07d55aa1fd66db242072173250c926c180fd423d740cac4beaec4460b",
+      "audit_snapshot": "migrated-minds/1e1a7861-7b3a-4be0-8499-c0bcada07d1a.json",
+      "legacy_sha256": "3335556aed66f574cfb821563f2ae8a6af5c8f2a97416ed73a29e7be35fc6a24",
+      "checks": {
+        "schema1_to_schema2": true,
+        "identity_name_personality_exact": true,
+        "home_preserved_or_supported_assignment": true,
+        "policy_dimensions_unchanged": true,
+        "learning_updates_nondecreasing": true,
+        "all_existing_visit_entries_nondecreasing": true,
+        "value_changes_have_matching_new_visits": true,
+        "values_finite_bounded": true,
+        "no_whole_value_table_reset": true,
+        "bounded_event_memory": true,
+        "bounded_player_impressions": true
+      },
+      "identity_fields_exact": {
+        "id": true,
+        "name": true,
+        "personality": true
+      },
+      "home_exact": true,
+      "home_change": null,
+      "learning_updates": {
+        "before": 17,
+        "after": 73,
+        "delta": 56
+      },
+      "policy": {
+        "previously_visited_entries": 1,
+        "decreased_visit_entries": [],
+        "unexplained_value_changes": [],
+        "changed_values": [
+          {
+            "context": 0,
+            "action": 1,
+            "visits_before": 0,
+            "visits_after": 1,
+            "value_before": 0.0,
+            "value_after": 0.057812500000000044
+          },
+          {
+            "context": 1,
+            "action": 2,
+            "visits_before": 0,
+            "visits_after": 1,
+            "value_before": 0.0,
+            "value_after": -0.04035714285714267
+          }
+        ],
+        "retained_nonzero_values": [],
+        "nonzero_values_before": 0,
+        "nonzero_values_after": 2,
+        "visits_before_sha256": "e84e1a38a1d8107d72077edd2a8b678b63bbaf2dbf0339466cffc4f9999e72d0",
+        "visits_after_sha256": "06833b8a3aa3130f6d3ff52e01387561d6678cc140ef1c3834df56269dea0f73",
+        "values_before_sha256": "9fc068c6f08151742e05d5e7ac9076c8c8d2a159cf58bf13a25cca415f79e626",
+        "values_after_sha256": "3f1b95003a08b3c6c6c385af689052acf0ac120c8bd3373087e18da530eeee0d"
+      },
+      "memories": {
+        "before": 17,
+        "after": 48,
+        "exact_required": false,
+        "reason": "Bounded rolling history evolves during simulation; natural eviction is not migration loss"
+      },
+      "needs": {
+        "before": {
+          "hunger": 0.31670833333333603,
+          "fatigue": 0.18753124999999815,
+          "loneliness": 0.3000357142857116
+        },
+        "after": {
+          "hunger": 0.560041666666667,
+          "fatigue": 0.25003124999999427,
+          "loneliness": 0.5086071428571265
+        },
+        "exact_required_after_runtime": false
+      },
+      "player_impressions": {
+        "count": 1,
+        "player_ids": [
+          "6609fea5-c92a-359b-acb7-1ab63051aa33"
+        ]
+      }
+    },
+    "231e4c00-19df-4be5-a5ba-5ebc6d29e27f": {
+      "source_mind": "runs/play/saves/VillageTrial/villagers/231e4c00-19df-4be5-a5ba-5ebc6d29e27f/mind.json",
+      "source_sha256": "d1430077bd93108e1c9b9449ae569be6eb6e8cc148ff334e7991ae54b3883fb4",
+      "audit_snapshot": "migrated-minds/231e4c00-19df-4be5-a5ba-5ebc6d29e27f.json",
+      "legacy_sha256": "70de202d8b2a2f37c2d7b204cf4e1d5da1e87f01d6d4d9229819c9c7b0cf93da",
+      "checks": {
+        "schema1_to_schema2": true,
+        "identity_name_personality_exact": true,
+        "home_preserved_or_supported_assignment": true,
+        "policy_dimensions_unchanged": true,
+        "learning_updates_nondecreasing": true,
+        "all_existing_visit_entries_nondecreasing": true,
+        "value_changes_have_matching_new_visits": true,
+        "values_finite_bounded": true,
+        "no_whole_value_table_reset": true,
+        "bounded_event_memory": true,
+        "bounded_player_impressions": true
+      },
+      "identity_fields_exact": {
+        "id": true,
+        "name": true,
+        "personality": true
+      },
+      "home_exact": false,
+      "home_change": {
+        "classification": "legitimate_runtime_assignment_supported",
+        "explanation": "Previously unhomed resident acquired a bed that was already present in the generated baseline; retained memory records that coordinate. No original home was overwritten.",
+        "before": null,
+        "after": {
+          "dimension": "minecraft:overworld",
+          "x": -269,
+          "y": 75,
+          "z": 733
+        },
+        "matching_generated_baseline_bed": [
+          {
+            "x": -269,
+            "y": 75,
+            "z": 733
+          }
+        ],
+        "memory_evidence": [
+          {
+            "index": 17,
+            "context": -1,
+            "reward": 0.0,
+            "note": "My bed is at -269, 75, 733"
+          }
+        ],
+        "baseline_file": "runs/play/saves/VillageTrial/villagers/village-evidence/baseline.json",
+        "baseline_file_sha256": "c406544b7db183a073ba7f0487ce1ba06d37e5dedfb95a211278ff3eede42e98"
+      },
+      "learning_updates": {
+        "before": 17,
+        "after": 53,
+        "delta": 36
+      },
+      "policy": {
+        "previously_visited_entries": 1,
+        "decreased_visit_entries": [],
+        "unexplained_value_changes": [],
+        "changed_values": [
+          {
+            "context": 0,
+            "action": 1,
+            "visits_before": 0,
+            "visits_after": 1,
+            "value_before": 0.0,
+            "value_after": -0.039999999999999945
+          }
+        ],
+        "retained_nonzero_values": [],
+        "nonzero_values_before": 0,
+        "nonzero_values_after": 1,
+        "visits_before_sha256": "e84e1a38a1d8107d72077edd2a8b678b63bbaf2dbf0339466cffc4f9999e72d0",
+        "visits_after_sha256": "713659037ac405efd57748e85c17af55d36286c137c5cdb151f244278a7683c1",
+        "values_before_sha256": "9fc068c6f08151742e05d5e7ac9076c8c8d2a159cf58bf13a25cca415f79e626",
+        "values_after_sha256": "2aff39a8a4a3a5527d9b7c6d0e9d6b5bc62e0d1a37234dad3491ef04b171e22a"
+      },
+      "memories": {
+        "before": 17,
+        "after": 48,
+        "exact_required": false,
+        "reason": "Bounded rolling history evolves during simulation; natural eviction is not migration loss"
+      },
+      "needs": {
+        "before": {
+          "hunger": 0.31654166666666933,
+          "fatigue": 0.18740624999999816,
+          "loneliness": 0.29989285714285446
+        },
+        "after": {
+          "hunger": 0.560291666666667,
+          "fatigue": 0.37021874999999427,
+          "loneliness": 0.5088214285714122
+        },
+        "exact_required_after_runtime": false
+      },
+      "player_impressions": {
+        "count": 0,
+        "player_ids": []
+      }
+    },
+    "5894771d-5fcc-45c5-bb4c-4733e2c992c4": {
+      "source_mind": "runs/play/saves/VillageTrial/villagers/5894771d-5fcc-45c5-bb4c-4733e2c992c4/mind.json",
+      "source_sha256": "82f19cdc1dc80419db7775c92e074d455404f2489322e2b965258bae5e4cb4a2",
+      "audit_snapshot": "migrated-minds/5894771d-5fcc-45c5-bb4c-4733e2c992c4.json",
+      "legacy_sha256": "5a770851534251f2a25e0093c52c4c97672d07154ab337e364adb7c81ffc8218",
+      "checks": {
+        "schema1_to_schema2": true,
+        "identity_name_personality_exact": true,
+        "home_preserved_or_supported_assignment": true,
+        "policy_dimensions_unchanged": true,
+        "learning_updates_nondecreasing": true,
+        "all_existing_visit_entries_nondecreasing": true,
+        "value_changes_have_matching_new_visits": true,
+        "values_finite_bounded": true,
+        "no_whole_value_table_reset": true,
+        "bounded_event_memory": true,
+        "bounded_player_impressions": true
+      },
+      "identity_fields_exact": {
+        "id": true,
+        "name": true,
+        "personality": true
+      },
+      "home_exact": true,
+      "home_change": null,
+      "learning_updates": {
+        "before": 52,
+        "after": 170,
+        "delta": 118
+      },
+      "policy": {
+        "previously_visited_entries": 3,
+        "decreased_visit_entries": [],
+        "unexplained_value_changes": [],
+        "changed_values": [
+          {
+            "context": 0,
+            "action": 1,
+            "visits_before": 1,
+            "visits_after": 2,
+            "value_before": 0.05765625000000005,
+            "value_after": 0.0032421875000000905
+          },
+          {
+            "context": 0,
+            "action": 2,
+            "visits_before": 1,
+            "visits_after": 2,
+            "value_before": 0.09839285714285725,
+            "value_after": 0.1397053571428571
+          }
+        ],
+        "retained_nonzero_values": [],
+        "nonzero_values_before": 2,
+        "nonzero_values_after": 2,
+        "visits_before_sha256": "bf61659220d32e63aa0c56d39dc1baf44b856995824f1997aaa845dcc866c25c",
+        "visits_after_sha256": "4d30bed4da08a5ae76735c7c8eef471c310529613f84d6a1a08e6a5b4a78ac38",
+        "values_before_sha256": "eeb8527b8495b8ad4c60a0e5c961b63343f444f0fdda0fe6fa23b4e5688e2774",
+        "values_after_sha256": "d015bbddecfb39136bc9083098386758ba408afa169e3546af7f7d6ac4ef9678"
+      },
+      "memories": {
+        "before": 48,
+        "after": 48,
+        "exact_required": false,
+        "reason": "Bounded rolling history evolves during simulation; natural eviction is not migration loss"
+      },
+      "needs": {
+        "before": {
+          "hunger": 0.31670833333333603,
+          "fatigue": 0.06753124999999892,
+          "loneliness": 0.10003571428571364
+        },
+        "after": {
+          "hunger": 0.5604583333333336,
+          "fatigue": 0.25034374999999504,
+          "loneliness": 0.1717857142857154
+        },
+        "exact_required_after_runtime": false
+      },
+      "player_impressions": {
+        "count": 0,
+        "player_ids": []
+      }
+    },
+    "5ad3aad5-3e4b-4eb6-8158-87731868dc03": {
+      "source_mind": "runs/play/saves/VillageTrial/villagers/5ad3aad5-3e4b-4eb6-8158-87731868dc03/mind.json",
+      "source_sha256": "41cef19071d9cb9e99dbcc4be86f2a1e2f51118b7a2662a39004fa532742de96",
+      "audit_snapshot": "migrated-minds/5ad3aad5-3e4b-4eb6-8158-87731868dc03.json",
+      "legacy_sha256": "735a166fd20158dd4fbcb1d28f8b6fefcdd2cd0dd87012e7f05ccd5f80d692cb",
+      "checks": {
+        "schema1_to_schema2": true,
+        "identity_name_personality_exact": true,
+        "home_preserved_or_supported_assignment": true,
+        "policy_dimensions_unchanged": true,
+        "learning_updates_nondecreasing": true,
+        "all_existing_visit_entries_nondecreasing": true,
+        "value_changes_have_matching_new_visits": true,
+        "values_finite_bounded": true,
+        "no_whole_value_table_reset": true,
+        "bounded_event_memory": true,
+        "bounded_player_impressions": true
+      },
+      "identity_fields_exact": {
+        "id": true,
+        "name": true,
+        "personality": true
+      },
+      "home_exact": true,
+      "home_change": null,
+      "learning_updates": {
+        "before": 54,
+        "after": 154,
+        "delta": 100
+      },
+      "policy": {
+        "previously_visited_entries": 2,
+        "decreased_visit_entries": [],
+        "unexplained_value_changes": [],
+        "changed_values": [
+          {
+            "context": 0,
+            "action": 2,
+            "visits_before": 6,
+            "visits_after": 8,
+            "value_before": -0.02314899553571425,
+            "value_after": 0.0009965471540179238
+          },
+          {
+            "context": 1,
+            "action": 2,
+            "visits_before": 0,
+            "visits_after": 1,
+            "value_before": 0.0,
+            "value_after": 0.0835714285714291
+          }
+        ],
+        "retained_nonzero_values": [],
+        "nonzero_values_before": 1,
+        "nonzero_values_after": 2,
+        "visits_before_sha256": "915c493a2f4de8172da65616ab0c2fbbb61ad648e4c4024940ae271ce5f493cb",
+        "visits_after_sha256": "c9014ef76fb380c0130755e65d91137b461d5f5a963d4ae4681b531f50232c27",
+        "values_before_sha256": "34bd16de544db56e03271e715ddeb1bccf7d308efe7f11b8f35ca502d35d3fed",
+        "values_after_sha256": "fc4b3dfe6771e1504b8ac91ff44154a7e235bc7612ad452a2477e4bcd731f142"
+      },
+      "memories": {
+        "before": 48,
+        "after": 48,
+        "exact_required": false,
+        "reason": "Bounded rolling history evolves during simulation; natural eviction is not migration loss"
+      },
+      "needs": {
+        "before": {
+          "hunger": 0.31650000000000267,
+          "fatigue": 0.18737499999999815,
+          "loneliness": 0.06749999999999988
+        },
+        "after": {
+          "hunger": 0.5598333333333336,
+          "fatigue": 0.3698749999999943,
+          "loneliness": 0.011428571428571437
+        },
+        "exact_required_after_runtime": false
+      },
+      "player_impressions": {
+        "count": 1,
+        "player_ids": [
+          "6609fea5-c92a-359b-acb7-1ab63051aa33"
+        ]
+      }
+    },
+    "8d572a22-a431-47a1-b419-b12ab59b4e35": {
+      "source_mind": "runs/play/saves/VillageTrial/villagers/8d572a22-a431-47a1-b419-b12ab59b4e35/mind.json",
+      "source_sha256": "b074983329c7f87356005d091e8b50dcf32024ac6b14434a015ecc6c114715c6",
+      "audit_snapshot": "migrated-minds/8d572a22-a431-47a1-b419-b12ab59b4e35.json",
+      "legacy_sha256": "0ca764927e5882c40d50c33401d4da80acfdb20d70fbef05b98bcc292e48ac1c",
+      "checks": {
+        "schema1_to_schema2": true,
+        "identity_name_personality_exact": true,
+        "home_preserved_or_supported_assignment": true,
+        "policy_dimensions_unchanged": true,
+        "learning_updates_nondecreasing": true,
+        "all_existing_visit_entries_nondecreasing": true,
+        "value_changes_have_matching_new_visits": true,
+        "values_finite_bounded": true,
+        "no_whole_value_table_reset": true,
+        "bounded_event_memory": true,
+        "bounded_player_impressions": true
+      },
+      "identity_fields_exact": {
+        "id": true,
+        "name": true,
+        "personality": true
+      },
+      "home_exact": true,
+      "home_change": null,
+      "learning_updates": {
+        "before": 38,
+        "after": 128,
+        "delta": 90
+      },
+      "policy": {
+        "previously_visited_entries": 3,
+        "decreased_visit_entries": [],
+        "unexplained_value_changes": [],
+        "changed_values": [
+          {
+            "context": 0,
+            "action": 1,
+            "visits_before": 2,
+            "visits_after": 3,
+            "value_before": 2.3437500000000888e-05,
+            "value_after": -0.039982421874999945
+          },
+          {
+            "context": 0,
+            "action": 2,
+            "visits_before": 2,
+            "visits_after": 3,
+            "value_before": -0.07062499999999966,
+            "value_after": -0.0933258928571424
+          },
+          {
+            "context": 1,
+            "action": 1,
+            "visits_before": 0,
+            "visits_after": 1,
+            "value_before": 0.0,
+            "value_after": 0.057812500000000044
+          }
+        ],
+        "retained_nonzero_values": [],
+        "nonzero_values_before": 2,
+        "nonzero_values_after": 3,
+        "visits_before_sha256": "3cc4a498148a679dda4af69e2b89861a220f0939f109cf22e42321e269011206",
+        "visits_after_sha256": "ee6c000d54b813e7f5df97085428e2039443cf35843314cfa46a1770b4b2c2ac",
+        "values_before_sha256": "df73215d2e51a8301dd4bd48d06f6d39b65c97b8e075f42354c74aa84c58b71a",
+        "values_after_sha256": "9e1d171218936288218e479eb7eb614132e2691af1d21cf72ba6c4d627c75229"
+      },
+      "memories": {
+        "before": 48,
+        "after": 48,
+        "exact_required": false,
+        "reason": "Bounded rolling history evolves during simulation; natural eviction is not migration loss"
+      },
+      "needs": {
+        "before": {
+          "hunger": 0.3167500000000027,
+          "fatigue": 0.08249999999999962,
+          "loneliness": 0.3000714285714259
+        },
+        "after": {
+          "hunger": 0.5605000000000002,
+          "fatigue": 0.14531249999999574,
+          "loneliness": 0.5089999999999836
+        },
+        "exact_required_after_runtime": false
+      },
+      "player_impressions": {
+        "count": 0,
+        "player_ids": []
+      }
+    },
+    "c7c31152-34a1-4edd-bd84-e48f50f86088": {
+      "source_mind": "runs/play/saves/VillageTrial/villagers/c7c31152-34a1-4edd-bd84-e48f50f86088/mind.json",
+      "source_sha256": "6e1cd9f8638fe9adb41896017ead368018b9451425e26faeafa09fa06176d462",
+      "audit_snapshot": "migrated-minds/c7c31152-34a1-4edd-bd84-e48f50f86088.json",
+      "legacy_sha256": "1b53d0b543a48d758e84a78e69d2cdce1e183ae6ba395325acee1592ee783191",
+      "checks": {
+        "schema1_to_schema2": true,
+        "identity_name_personality_exact": true,
+        "home_preserved_or_supported_assignment": true,
+        "policy_dimensions_unchanged": true,
+        "learning_updates_nondecreasing": true,
+        "all_existing_visit_entries_nondecreasing": true,
+        "value_changes_have_matching_new_visits": true,
+        "values_finite_bounded": true,
+        "no_whole_value_table_reset": true,
+        "bounded_event_memory": true,
+        "bounded_player_impressions": true
+      },
+      "identity_fields_exact": {
+        "id": true,
+        "name": true,
+        "personality": true
+      },
+      "home_exact": true,
+      "home_change": null,
+      "learning_updates": {
+        "before": 43,
+        "after": 149,
+        "delta": 106
+      },
+      "policy": {
+        "previously_visited_entries": 1,
+        "decreased_visit_entries": [],
+        "unexplained_value_changes": [],
+        "changed_values": [
+          {
+            "context": 0,
+            "action": 1,
+            "visits_before": 0,
+            "visits_after": 1,
+            "value_before": 0.0,
+            "value_after": 0.05765625000000005
+          },
+          {
+            "context": 0,
+            "action": 2,
+            "visits_before": 0,
+            "visits_after": 4,
+            "value_before": 0.0,
+            "value_after": 0.09954241071428405
+          }
+        ],
+        "retained_nonzero_values": [],
+        "nonzero_values_before": 0,
+        "nonzero_values_after": 2,
+        "visits_before_sha256": "734665ba02920abf91f5f65aac2f7da86b13c3f4e610215a476f9b2dfe4386ab",
+        "visits_after_sha256": "0851085d87087eeb2c995aa7879f5813d1baee45dc7cc2729eed889ebaa5c7b9",
+        "values_before_sha256": "9fc068c6f08151742e05d5e7ac9076c8c8d2a159cf58bf13a25cca415f79e626",
+        "values_after_sha256": "c1d2f96c00fda7b439e4973748366166aeef073f53559867cc22547a7b2c4936"
+      },
+      "memories": {
+        "before": 48,
+        "after": 48,
+        "exact_required": false,
+        "reason": "Bounded rolling history evolves during simulation; natural eviction is not migration loss"
+      },
+      "needs": {
+        "before": {
+          "hunger": 0.31666666666666937,
+          "fatigue": 0.18749999999999814,
+          "loneliness": 0.2999999999999973
+        },
+        "after": {
+          "hunger": 0.5600000000000003,
+          "fatigue": 0.24999999999999425,
+          "loneliness": 0.10857142857142894
+        },
+        "exact_required_after_runtime": false
+      },
+      "player_impressions": {
+        "count": 1,
+        "player_ids": [
+          "6609fea5-c92a-359b-acb7-1ab63051aa33"
+        ]
+      }
+    },
+    "ca3c6d6a-385e-4ea3-a37d-e54d948d924f": {
+      "source_mind": "runs/play/saves/VillageTrial/villagers/ca3c6d6a-385e-4ea3-a37d-e54d948d924f/mind.json",
+      "source_sha256": "cb46f10e1ccd72bdb1d46d0fb7eefc6c778b805efad49736ce9e590caf9fbbfe",
+      "audit_snapshot": "migrated-minds/ca3c6d6a-385e-4ea3-a37d-e54d948d924f.json",
+      "legacy_sha256": "13ade6ee478c8db277a6d54cb9c7fdcba3ca6f1af27f3b0a3fe67e8220ab6da4",
+      "checks": {
+        "schema1_to_schema2": true,
+        "identity_name_personality_exact": true,
+        "home_preserved_or_supported_assignment": true,
+        "policy_dimensions_unchanged": true,
+        "learning_updates_nondecreasing": true,
+        "all_existing_visit_entries_nondecreasing": true,
+        "value_changes_have_matching_new_visits": true,
+        "values_finite_bounded": true,
+        "no_whole_value_table_reset": true,
+        "bounded_event_memory": true,
+        "bounded_player_impressions": true
+      },
+      "identity_fields_exact": {
+        "id": true,
+        "name": true,
+        "personality": true
+      },
+      "home_exact": true,
+      "home_change": null,
+      "learning_updates": {
+        "before": 30,
+        "after": 105,
+        "delta": 75
+      },
+      "policy": {
+        "previously_visited_entries": 1,
+        "decreased_visit_entries": [],
+        "unexplained_value_changes": [],
+        "changed_values": [
+          {
+            "context": 0,
+            "action": 2,
+            "visits_before": 0,
+            "visits_after": 1,
+            "value_before": 0.0,
+            "value_after": -0.04035714285714267
+          }
+        ],
+        "retained_nonzero_values": [],
+        "nonzero_values_before": 0,
+        "nonzero_values_after": 1,
+        "visits_before_sha256": "569f5baae364c5df97537cd26e05201ebaf688c639e117bf5bcb0add0d610aa2",
+        "visits_after_sha256": "230d59c44ef9a13f0686d546f7e256a03ed9b974bf1e4d18f1c9caa9de5ac343",
+        "values_before_sha256": "9fc068c6f08151742e05d5e7ac9076c8c8d2a159cf58bf13a25cca415f79e626",
+        "values_after_sha256": "b71ba2c2259323603af5dbd0d079827f982ef25a516b5a29cd8edbe97b275793"
+      },
+      "memories": {
+        "before": 48,
+        "after": 48,
+        "exact_required": false,
+        "reason": "Bounded rolling history evolves during simulation; natural eviction is not migration loss"
+      },
+      "needs": {
+        "before": {
+          "hunger": 0.31654166666666933,
+          "fatigue": 0.18740624999999816,
+          "loneliness": 0.29989285714285446
+        },
+        "after": {
+          "hunger": 0.560291666666667,
+          "fatigue": 0.37021874999999427,
+          "loneliness": 0.5088214285714122
+        },
+        "exact_required_after_runtime": false
+      },
+      "player_impressions": {
+        "count": 1,
+        "player_ids": [
+          "6609fea5-c92a-359b-acb7-1ab63051aa33"
+        ]
+      }
+    },
+    "d169dad0-0157-4e1d-bf1c-358845617474": {
+      "source_mind": "runs/play/saves/VillageTrial/villagers/d169dad0-0157-4e1d-bf1c-358845617474/mind.json",
+      "source_sha256": "5d92df29de2666360d8b44cccb7ffdbe1e7060c54011eb851a831905f9795797",
+      "audit_snapshot": "migrated-minds/d169dad0-0157-4e1d-bf1c-358845617474.json",
+      "legacy_sha256": "35db664c4335bc188b8d7f5b440213cecb2fc133b3e66a518345b5e2b206a121",
+      "checks": {
+        "schema1_to_schema2": true,
+        "identity_name_personality_exact": true,
+        "home_preserved_or_supported_assignment": true,
+        "policy_dimensions_unchanged": true,
+        "learning_updates_nondecreasing": true,
+        "all_existing_visit_entries_nondecreasing": true,
+        "value_changes_have_matching_new_visits": true,
+        "values_finite_bounded": true,
+        "no_whole_value_table_reset": true,
+        "bounded_event_memory": true,
+        "bounded_player_impressions": true
+      },
+      "identity_fields_exact": {
+        "id": true,
+        "name": true,
+        "personality": true
+      },
+      "home_exact": true,
+      "home_change": null,
+      "learning_updates": {
+        "before": 52,
+        "after": 116,
+        "delta": 64
+      },
+      "policy": {
+        "previously_visited_entries": 3,
+        "decreased_visit_entries": [],
+        "unexplained_value_changes": [],
+        "changed_values": [
+          {
+            "context": 0,
+            "action": 2,
+            "visits_before": 3,
+            "visits_after": 4,
+            "value_before": 0.02995535714285717,
+            "value_after": -0.01789062500000001
+          }
+        ],
+        "retained_nonzero_values": [
+          {
+            "context": 0,
+            "action": 1,
+            "value": -0.039999999999999945,
+            "visits_before": 1,
+            "visits_after": 1
+          }
+        ],
+        "nonzero_values_before": 2,
+        "nonzero_values_after": 2,
+        "visits_before_sha256": "32782f74d7c743977d9ed8e96ef5b6dc0fcc4e10b5a541c3ab20c4dc8a126f9c",
+        "visits_after_sha256": "9f4f947e82a07d3f8aa9cfda205d224297baf5853e2c818a0e8d59dc87207d8c",
+        "values_before_sha256": "be8eef9483dba342ac01f2e6e45f0e4e413476cadebb78dd8e755f33ca5c04ce",
+        "values_after_sha256": "7797d5e1fc64191130943544535467c6510ffbf10064fe180ccd81dedfab92ef"
+      },
+      "memories": {
+        "before": 48,
+        "after": 48,
+        "exact_required": false,
+        "reason": "Bounded rolling history evolves during simulation; natural eviction is not migration loss"
+      },
+      "needs": {
+        "before": {
+          "hunger": 0.31666666666666937,
+          "fatigue": 0.18749999999999814,
+          "loneliness": 0.08607142857142867
+        },
+        "after": {
+          "hunger": 0.5600000000000003,
+          "fatigue": 0.3699999999999943,
+          "loneliness": 0.29464285714285626
+        },
+        "exact_required_after_runtime": false
+      },
+      "player_impressions": {
+        "count": 0,
+        "player_ids": []
+      }
+    },
+    "d29c199f-5202-4fbc-97f9-92023489d70f": {
+      "source_mind": "runs/play/saves/VillageTrial/villagers/d29c199f-5202-4fbc-97f9-92023489d70f/mind.json",
+      "source_sha256": "19a26e91e45a4661f8edac8427ca11486d16d9e4c57731e1371f52aca0302fe5",
+      "audit_snapshot": "migrated-minds/d29c199f-5202-4fbc-97f9-92023489d70f.json",
+      "legacy_sha256": "2221e39369e4ca54e3e501737a49af351bc9a3871fb0fe8da5f94d47bbbee328",
+      "checks": {
+        "schema1_to_schema2": true,
+        "identity_name_personality_exact": true,
+        "home_preserved_or_supported_assignment": true,
+        "policy_dimensions_unchanged": true,
+        "learning_updates_nondecreasing": true,
+        "all_existing_visit_entries_nondecreasing": true,
+        "value_changes_have_matching_new_visits": true,
+        "values_finite_bounded": true,
+        "no_whole_value_table_reset": true,
+        "bounded_event_memory": true,
+        "bounded_player_impressions": true
+      },
+      "identity_fields_exact": {
+        "id": true,
+        "name": true,
+        "personality": true
+      },
+      "home_exact": true,
+      "home_change": null,
+      "learning_updates": {
+        "before": 57,
+        "after": 164,
+        "delta": 107
+      },
+      "policy": {
+        "previously_visited_entries": 2,
+        "decreased_visit_entries": [],
+        "unexplained_value_changes": [],
+        "changed_values": [
+          {
+            "context": 0,
+            "action": 1,
+            "visits_before": 0,
+            "visits_after": 1,
+            "value_before": 0.0,
+            "value_after": -0.039999999999999945
+          }
+        ],
+        "retained_nonzero_values": [
+          {
+            "context": 0,
+            "action": 2,
+            "value": 0.06548214285714296,
+            "visits_before": 3,
+            "visits_after": 3
+          }
+        ],
+        "nonzero_values_before": 1,
+        "nonzero_values_after": 2,
+        "visits_before_sha256": "2867adaeeceae52a2cbb336278dbfe9641b2f309abd4015c91ab5ce9a2ef887d",
+        "visits_after_sha256": "e3dbe3aa34a7d64b61ca89776a28b007c71a52f71271d940442cd7bd21ba3370",
+        "values_before_sha256": "ecf82fdd4e15d5f210bf6d1b685a5d85f1b06ae72e9d005663db35f5fe1b26e4",
+        "values_after_sha256": "457ef0f4a0e1b23835bb9414b6807773e25024158269baab90d1c0ddbb1efcec"
+      },
+      "memories": {
+        "before": 48,
+        "after": 48,
+        "exact_required": false,
+        "reason": "Bounded rolling history evolves during simulation; natural eviction is not migration loss"
+      },
+      "needs": {
+        "before": {
+          "hunger": 0.31650000000000267,
+          "fatigue": 0.18737499999999815,
+          "loneliness": 0.0682142857142856
+        },
+        "after": {
+          "hunger": 0.5602500000000002,
+          "fatigue": 0.3701874999999943,
+          "loneliness": 0.2771428571428574
+        },
+        "exact_required_after_runtime": false
+      },
+      "player_impressions": {
+        "count": 1,
+        "player_ids": [
+          "6609fea5-c92a-359b-acb7-1ab63051aa33"
+        ]
+      }
+    },
+    "e358e923-f9d2-4d5b-a04b-b2531c8f02d9": {
+      "source_mind": "runs/play/saves/VillageTrial/villagers/e358e923-f9d2-4d5b-a04b-b2531c8f02d9/mind.json",
+      "source_sha256": "62b2a1717a51a9e6f09053ebf46672e8294dc35dedc04eb4fddd7ee5daeee1d1",
+      "audit_snapshot": "migrated-minds/e358e923-f9d2-4d5b-a04b-b2531c8f02d9.json",
+      "legacy_sha256": "d10b11e0ff6daaf7a7f1c032d8ce52c8b2d7138001c93cc4257ecee15e5cb1ca",
+      "checks": {
+        "schema1_to_schema2": true,
+        "identity_name_personality_exact": true,
+        "home_preserved_or_supported_assignment": true,
+        "policy_dimensions_unchanged": true,
+        "learning_updates_nondecreasing": true,
+        "all_existing_visit_entries_nondecreasing": true,
+        "value_changes_have_matching_new_visits": true,
+        "values_finite_bounded": true,
+        "no_whole_value_table_reset": true,
+        "bounded_event_memory": true,
+        "bounded_player_impressions": true
+      },
+      "identity_fields_exact": {
+        "id": true,
+        "name": true,
+        "personality": true
+      },
+      "home_exact": true,
+      "home_change": null,
+      "learning_updates": {
+        "before": 32,
+        "after": 107,
+        "delta": 75
+      },
+      "policy": {
+        "previously_visited_entries": 1,
+        "decreased_visit_entries": [],
+        "unexplained_value_changes": [],
+        "changed_values": [
+          {
+            "context": 0,
+            "action": 0,
+            "visits_before": 0,
+            "visits_after": 1,
+            "value_before": 0.0,
+            "value_after": 0.1889166666666687
+          },
+          {
+            "context": 0,
+            "action": 1,
+            "visits_before": 0,
+            "visits_after": 5,
+            "value_before": 0.0,
+            "value_after": 0.014156249999998788
+          },
+          {
+            "context": 0,
+            "action": 2,
+            "visits_before": 0,
+            "visits_after": 2,
+            "value_before": 0.0,
+            "value_after": -0.07062499999999966
+          },
+          {
+            "context": 4,
+            "action": 2,
+            "visits_before": 0,
+            "visits_after": 1,
+            "value_before": 0.0,
+            "value_after": 0.09928571428571434
+          }
+        ],
+        "retained_nonzero_values": [],
+        "nonzero_values_before": 0,
+        "nonzero_values_after": 4,
+        "visits_before_sha256": "f3e865321d14ef5e06159ca8e9afad7b9afadefb58b9dabb1de36476d42768fd",
+        "visits_after_sha256": "81e1e0dcd98bb825b2134523ec4c1c4d3d4a3a1aa96b8fc976299dc009276d99",
+        "values_before_sha256": "9fc068c6f08151742e05d5e7ac9076c8c8d2a159cf58bf13a25cca415f79e626",
+        "values_after_sha256": "0cde536b07747f5b2f0a1827fd74b0ba81a267a852edce91dcaff9c078f2da20"
+      },
+      "memories": {
+        "before": 48,
+        "after": 48,
+        "exact_required": false,
+        "reason": "Bounded rolling history evolves during simulation; natural eviction is not migration loss"
+      },
+      "needs": {
+        "before": {
+          "hunger": 0.316583333333336,
+          "fatigue": 0.18743749999999815,
+          "loneliness": 0.29992857142856877
+        },
+        "after": {
+          "hunger": 0.18208333333333415,
+          "fatigue": 0.1065624999999991,
+          "loneliness": 0.30885714285712645
+        },
+        "exact_required_after_runtime": false
+      },
+      "player_impressions": {
+        "count": 1,
+        "player_ids": [
+          "6609fea5-c92a-359b-acb7-1ab63051aa33"
+        ]
+      }
+    }
+  },
+  "separate_root_verified_reload": {
+    "before_reload_mind": "before-reload-mind.json",
+    "before_reload_sha256": "2721105d1acb63329c9f9e1ca29bcc070ea35597a2598217e32a3cf4c46572e0",
+    "after_reload_status": "after-reload-status.json",
+    "after_reload_sha256": "01469b98b9c693dd0fc8aef0bf85b71619b86aec899c976f4c58fd2dac075096",
+    "villager_uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+    "observer_uuid": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+    "game_time": 9697,
+    "health": 19.0,
+    "outcome": "Root verified exact persisted impression match for same villager/player UUID, with health19; second client then completed a clean exit0. This agent did not access or control client processes."
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "at": "2026-11-07T08:54:54.461458973Z",
+  "elapsed_ms": 15025,
+  "label": "village-001-15s-1794041694460-1",
+  "source": "rendered client; only client-tracked entities",
+  "world": "VillageTrial",
+  "role": "play",
+  "learning_mode": "adaptive",
+  "native_target_tps": 20.0,
+  "training": {
+    "game_tick_budget": 48000,
+    "configured_target_tps": 20,
+    "role": "play",
+    "state": "waiting_for_trial",
+    "learning_mode": "adaptive"
+  },
+  "game_time": 26289,
+  "trial": "natural generated village",
+  "server_tick": 316,
+  "screen": "",
+  "frame_ns": 839573,
+  "camera": {
+    "x": -211.5,
+    "y": 104.0,
+    "z": 796.5,
+    "yaw": 135.0,
+    "pitch": 35.0
+  },
+  "tracked_entities": 137,
+  "tracked_villagers": 11,
+  "villagers": [
+    {
+      "uuid": "02b0b914-c640-48c3-8fee-df600f34991e",
+      "name": "Ember-02b0 · explore (unhappy)",
+      "x": -198.9702148409633,
+      "y": 66.0,
+      "z": 744.9832356799088,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "d169dad0-0157-4e1d-bf1c-358845617474",
+      "name": "Alder-d169 · afraid / escaping (miserable)",
+      "x": -199.03548177093762,
+      "y": 67.0,
+      "z": 747.7236328125,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "ca3c6d6a-385e-4ea3-a37d-e54d948d924f",
+      "name": "Willow-ca3c · explore (miserable)",
+      "x": -274.5537728766441,
+      "y": 71.875,
+      "z": 724.9232732919754,
+      "alive": true,
+      "health": 17.0
+    },
+    {
+      "uuid": "5894771d-5fcc-45c5-bb4c-4733e2c992c4",
+      "name": "Moss-5894 · explore (miserable)",
+      "x": -228.00227864193585,
+      "y": 72.0,
+      "z": 742.5852050770554,
+      "alive": true,
+      "health": 19.0
+    },
+    {
+      "uuid": "1e1a7861-7b3a-4be0-8499-c0bcada07d1a",
+      "name": "Fern-1e1a · explore (miserable)",
+      "x": -275.78915605538174,
+      "y": 75.9738666653792,
+      "z": 752.7898932399186,
+      "alive": true,
+      "health": 17.0
+    },
+    {
+      "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "name": "Nell-e358 · explore",
+      "x": -256.82862938316265,
+      "y": 68.0,
+      "z": 779.387396289207,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "d29c199f-5202-4fbc-97f9-92023489d70f",
+      "name": "Ember-d29c · rest (miserable)",
+      "x": -224.682861328125,
+      "y": 71.0,
+      "z": 763.304931640625,
+      "alive": true,
+      "health": 19.0
+    },
+    {
+      "uuid": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+      "name": "Dara-c7c3 · explore (unhappy)",
+      "x": -245.56046549326857,
+      "y": 72.0,
+      "z": 752.9041341108823,
+      "alive": true,
+      "health": 18.0
+    },
+    {
+      "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "name": "Fern-5ad3 · explore",
+      "x": -235.7775878936518,
+      "y": 72.0,
+      "z": 760.8313802111006,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "8d572a22-a431-47a1-b419-b12ab59b4e35",
+      "name": "Birch-8d57 · explore (miserable)",
+      "x": -255.82088215735712,
+      "y": 73.0,
+      "z": 739.4938964843896,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+      "name": "Juniper-231e · rest (unhappy)",
+      "x": -234.2069023807201,
+      "y": 73.0,
+      "z": 766.6999999880791,
+      "alive": true,
+      "health": 20.0
+    }
+  ],
+  "tracked_iron_golems": 1,
+  "iron_golems": [
+    {
+      "uuid": "0dc9724f-c186-4784-aff8-5475aa216eb2",
+      "name": "Iron Golem",
+      "x": -255.10575194925192,
+      "y": 73.0,
+      "z": 749.1057425119786,
+      "alive": true,
+      "health": 100.0
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.8.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Fabric Loom: 1.17.21
+
+> Task :compileJava FAILED
+/home/niko/.internal/source/Villagers/src/main/java/local/villagers/VillageFamilyProbe.java:147: error: cannot find symbol
+        var bed = Blocks.WHITE_BED.defaultBlockState().setValue(BedBlock.FACING, Direction.NORTH);
+                        ^
+  symbol:   variable WHITE_BED
+  location: class Blocks
+1 error
+
+[Incubating] Problems report is available at: file:///home/niko/.internal/source/Villagers/runs/play/.build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava' (registered by plugin class 'org.gradle.api.plugins.JavaBasePlugin').
+> Compilation failed; see the compiler output below.
+  /home/niko/.internal/source/Villagers/src/main/java/local/villagers/VillageFamilyProbe.java:147: error: cannot find symbol
+          var bed = Blocks.WHITE_BED.defaultBlockState().setValue(BedBlock.FACING, Direction.NORTH);
+                          ^
+    symbol:   variable WHITE_BED
+    location: class Blocks
+  1 error
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 3s
+1 actionable task: 1 executed

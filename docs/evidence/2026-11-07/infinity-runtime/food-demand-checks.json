@@ -1,0 +1,40 @@
+{
+  "capturedUTC": "2026-11-07T21:36:37.682978+00:00",
+  "command": "./tools/test.sh --no-daemon --max-workers=2",
+  "javaTests": {
+    "tests": 324,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "pythonTests": 10,
+  "ownedFoodDemandSourcesUnchangedDuringChecks": true,
+  "focusedSuites": {
+    "local.villagers.economy.FoodDemandTest": {
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "local.villagers.navigation.WorkIntervalTest": {
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "local.villagers.navigation.WorkBudgetTest": {
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "local.villagers.FoodSupplyTest": {
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "scope": "Current shared-checkout build/test result; independently pinned food-demand source bindings. Native scheduler runs use earlier immutable source and do NOT exercise FoodDemand.",
+  "noOwnedBuildOrNativeJobRemaining": true
+}

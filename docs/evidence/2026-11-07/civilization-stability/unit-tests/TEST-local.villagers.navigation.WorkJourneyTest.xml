@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="local.villagers.navigation.WorkJourneyTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:36:11.350Z" hostname="td001" time="0.001">
+  <properties/>
+  <testcase name="successfulReplanningWithoutMovementStillStallsAndBacksOff()" classname="local.villagers.navigation.WorkJourneyTest" time="0.0"/>
+  <testcase name="queueWaitDoesNotPretendTheActorHasWalkedOrStalled()" classname="local.villagers.navigation.WorkJourneyTest" time="0.0"/>
+  <testcase name="queueWaitingIsBoundedAndStaleDispatchCannotResurrectInterruptedWork()" classname="local.villagers.navigation.WorkJourneyTest" time="0.0"/>
+  <testcase name="safetyInterruptionDropsOldJourneyAndClockResetCannotLockOutFutureWork()" classname="local.villagers.navigation.WorkJourneyTest" time="0.0"/>
+  <testcase name="fullTravelDeadlineStartsAtDispatchAndCannotBeExtendedByReplanning()" classname="local.villagers.navigation.WorkJourneyTest" time="0.0"/>
+  <testcase name="movementCannotExtendTotalTripAndArrivalDoesNotCreateAnotherImmediateTrip()" classname="local.villagers.navigation.WorkJourneyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

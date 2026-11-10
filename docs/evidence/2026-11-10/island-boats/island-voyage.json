@@ -1,0 +1,676 @@
+{
+  "elapsed": 2400,
+  "stage": "bounded_observation",
+  "gameTime": 32282,
+  "actors": [
+    {
+      "id": "c5578b5b-8991-428d-9d82-7cb57a956269",
+      "name": "Alder-c557",
+      "position": [
+        -507.1990197711443,
+        62.710764312744146,
+        -383.6005867245852
+      ],
+      "health": 20.0,
+      "food": 7,
+      "inventory": "[3 minecraft:oak_planks, 2 minecraft:stick]",
+      "held": "1 minecraft:wooden_hoe",
+      "boat": {
+        "recipes": 6,
+        "activity": "rowing food supplies home",
+        "landings": 1,
+        "phase": "RETURN",
+        "paddleTicks": 329,
+        "logsGathered": 3,
+        "launches": 1
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:sea:RETURN:-482,63,-376,-483,-376:-507,63,-381,-507,-382:true",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "tree": "BlockPos{x\u003d-477, y\u003d63, z\u003d-350}",
+        "taken": 3,
+        "table": "BlockPos{x\u003d-478, y\u003d63, z\u003d-361}",
+        "blockedTable": "null"
+      }
+    },
+    {
+      "id": "1d165330-2598-410c-827e-cc3b13c7bef9",
+      "name": "Birch-1d16",
+      "position": [
+        -511.69999998807907,
+        63.913819122889066,
+        -343.49992365638997
+      ],
+      "health": 20.0,
+      "food": 7,
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "boat": {
+        "recipes": 0,
+        "activity": "no observed safe water crossing",
+        "landings": 0,
+        "phase": "NONE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "tree": "null",
+        "taken": 0,
+        "table": "null",
+        "blockedTable": "null"
+      }
+    },
+    {
+      "id": "438701f4-3aba-4cda-b583-46051f1e0f53",
+      "name": "Oak-4387",
+      "position": [
+        -507.13043525547545,
+        63.0,
+        -339.4979378104414
+      ],
+      "health": 20.0,
+      "food": 10,
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "boat": {
+        "recipes": 0,
+        "activity": "needs accessible natural boat wood",
+        "landings": 0,
+        "phase": "PREPARE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "tags": [
+        "villagers:sea:PREPARE:-508,63,-342,-508,-343:-496,63,-379,-496,-378:true",
+        "villagers:native_resident_seen",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "tree": "null",
+        "taken": 0,
+        "table": "null",
+        "blockedTable": "null"
+      }
+    },
+    {
+      "id": "96cbd3bc-ebc5-4522-b101-b83ee55c471f",
+      "name": "Birch-96cb",
+      "position": [
+        -510.2458212613593,
+        63.0,
+        -333.2709141588357
+      ],
+      "health": 20.0,
+      "food": 16,
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "boat": {
+        "recipes": 0,
+        "activity": "needs accessible natural boat wood",
+        "landings": 0,
+        "phase": "PREPARE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:sea:PREPARE:-509,63,-330,-509,-329:-490,63,-271,-491,-271:true",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "tree": "null",
+        "taken": 0,
+        "table": "null",
+        "blockedTable": "null"
+      }
+    },
+    {
+      "id": "af2b94ad-f799-4b93-a2c3-e958b2836c84",
+      "name": "Dara-af2b",
+      "position": [
+        -504.75094845697737,
+        63.0,
+        -335.1997095024142
+      ],
+      "health": 20.0,
+      "food": 12,
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "boat": {
+        "recipes": 0,
+        "activity": "needs accessible natural boat wood",
+        "landings": 0,
+        "phase": "PREPARE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed",
+        "villagers:sea:PREPARE:-504,63,-336,-503,-336:-496,63,-379,-496,-378:true"
+      ],
+      "woodJob": {
+        "tree": "null",
+        "taken": 0,
+        "table": "null",
+        "blockedTable": "null"
+      }
+    },
+    {
+      "id": "f572553d-4483-44b5-8ed5-6ffe7e7745b7",
+      "name": "Tansy-f572",
+      "position": [
+        -487.74360596884895,
+        63.0,
+        -298.20260560014356
+      ],
+      "health": 20.0,
+      "food": 10,
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "boat": {
+        "recipes": 0,
+        "activity": "needs accessible natural boat wood",
+        "landings": 0,
+        "phase": "PREPARE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "tags": [
+        "villagers:sea:PREPARE:-484,63,-293,-484,-294:-468,63,-356,-468,-355:true",
+        "villagers:native_resident_seen",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "tree": "null",
+        "taken": 0,
+        "table": "null",
+        "blockedTable": "null"
+      }
+    },
+    {
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "name": "Clover-edc5",
+      "position": [
+        -476.44655090908486,
+        63.0,
+        -361.24982593889524
+      ],
+      "health": 20.0,
+      "food": 11,
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "boat": {
+        "recipes": 0,
+        "activity": "needs accessible natural boat wood",
+        "landings": 0,
+        "phase": "PREPARE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed",
+        "villagers:sea:PREPARE:-482,63,-365,-483,-365:-464,63,-357,-463,-357:true"
+      ],
+      "woodJob": {
+        "tree": "null",
+        "taken": 0,
+        "table": "BlockPos{x\u003d-478, y\u003d63, z\u003d-361}",
+        "blockedTable": "null"
+      }
+    }
+  ],
+  "status": "passed",
+  "initialGameTime": 29882,
+  "initial": [
+    {
+      "id": "c5578b5b-8991-428d-9d82-7cb57a956269",
+      "name": "Alder-c557",
+      "position": [
+        -481.2817166197873,
+        63.0,
+        -375.2534391958088
+      ],
+      "health": 20.0,
+      "food": 10,
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "boat": {
+        "recipes": 0,
+        "activity": "no water trip",
+        "landings": 0,
+        "phase": "NONE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:sea:RETURN:-482,63,-376,-483,-376:-507,63,-381,-507,-382:true",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "tree": "null",
+        "taken": 0,
+        "table": "null",
+        "blockedTable": "null"
+      },
+      "trees": [],
+      "tables": [
+        {
+          "visible": false,
+          "position": "-472, 63, -367"
+        },
+        {
+          "visible": false,
+          "position": "-473, 63, -363"
+        },
+        {
+          "visible": false,
+          "position": "-478, 63, -361"
+        }
+      ],
+      "ripeCrops": [],
+      "launches": [
+        {
+          "reachable": true,
+          "land": "-482, 63, -376",
+          "water": "-483, 62, -376"
+        },
+        {
+          "reachable": true,
+          "land": "-482, 63, -379",
+          "water": "-482, 62, -380"
+        },
+        {
+          "reachable": true,
+          "land": "-482, 63, -379",
+          "water": "-483, 62, -379"
+        }
+      ],
+      "observedCrossing": {
+        "points": 8,
+        "arrival": "-507, 63, -381",
+        "found": true,
+        "launch": "-482, 63, -376"
+      }
+    },
+    {
+      "id": "1d165330-2598-410c-827e-cc3b13c7bef9",
+      "name": "Birch-1d16",
+      "position": [
+        -511.69999998807907,
+        62.09799999791384,
+        -343.49992365638997
+      ],
+      "health": 20.0,
+      "food": 10,
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "boat": {
+        "recipes": 0,
+        "activity": "no water trip",
+        "landings": 0,
+        "phase": "NONE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "tree": "null",
+        "taken": 0,
+        "table": "null",
+        "blockedTable": "null"
+      },
+      "trees": [],
+      "tables": [],
+      "ripeCrops": [],
+      "launches": [
+        {
+          "reachable": false,
+          "land": "-511, 63, -341",
+          "water": "-511, 62, -342"
+        },
+        {
+          "reachable": false,
+          "land": "-509, 63, -342",
+          "water": "-509, 62, -343"
+        },
+        {
+          "reachable": false,
+          "land": "-508, 63, -342",
+          "water": "-508, 62, -343"
+        }
+      ],
+      "observedCrossing": {
+        "found": false
+      }
+    },
+    {
+      "id": "438701f4-3aba-4cda-b583-46051f1e0f53",
+      "name": "Oak-4387",
+      "position": [
+        -511.69999998807907,
+        63.0,
+        -331.666948777867
+      ],
+      "health": 20.0,
+      "food": 12,
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "boat": {
+        "recipes": 0,
+        "activity": "no water trip",
+        "landings": 0,
+        "phase": "NONE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "tags": [
+        "villagers:sea:PREPARE:-508,63,-342,-508,-343:-496,63,-379,-496,-378:true",
+        "villagers:native_resident_seen",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "tree": "null",
+        "taken": 0,
+        "table": "null",
+        "blockedTable": "null"
+      },
+      "trees": [],
+      "tables": [],
+      "ripeCrops": [],
+      "launches": [
+        {
+          "reachable": true,
+          "land": "-509, 63, -330",
+          "water": "-509, 62, -329"
+        },
+        {
+          "reachable": true,
+          "land": "-511, 63, -328",
+          "water": "-510, 62, -328"
+        },
+        {
+          "reachable": true,
+          "land": "-512, 63, -326",
+          "water": "-511, 62, -326"
+        }
+      ],
+      "observedCrossing": {
+        "points": 21,
+        "arrival": "-487, 63, -267",
+        "found": true,
+        "launch": "-509, 63, -330"
+      }
+    },
+    {
+      "id": "96cbd3bc-ebc5-4522-b101-b83ee55c471f",
+      "name": "Birch-96cb",
+      "position": [
+        -505.79814059888184,
+        63.0,
+        -329.750081021236
+      ],
+      "health": 20.0,
+      "food": 16,
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "boat": {
+        "recipes": 0,
+        "activity": "no water trip",
+        "landings": 0,
+        "phase": "NONE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:sea:PREPARE:-509,63,-330,-509,-329:-490,63,-271,-491,-271:true",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "tree": "null",
+        "taken": 0,
+        "table": "null",
+        "blockedTable": "null"
+      },
+      "trees": [],
+      "tables": [],
+      "ripeCrops": [],
+      "launches": [
+        {
+          "reachable": true,
+          "land": "-509, 63, -330",
+          "water": "-509, 62, -329"
+        },
+        {
+          "reachable": true,
+          "land": "-506, 63, -327",
+          "water": "-507, 62, -327"
+        },
+        {
+          "reachable": true,
+          "land": "-506, 63, -326",
+          "water": "-507, 62, -326"
+        }
+      ],
+      "observedCrossing": {
+        "points": 41,
+        "arrival": "-465, 63, -362",
+        "found": true,
+        "launch": "-509, 63, -330"
+      }
+    },
+    {
+      "id": "af2b94ad-f799-4b93-a2c3-e958b2836c84",
+      "name": "Dara-af2b",
+      "position": [
+        -510.2838529906605,
+        63.0,
+        -333.4706010669932
+      ],
+      "health": 20.0,
+      "food": 14,
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "boat": {
+        "recipes": 0,
+        "activity": "no water trip",
+        "landings": 0,
+        "phase": "NONE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed",
+        "villagers:sea:PREPARE:-504,63,-336,-503,-336:-496,63,-379,-496,-378:true"
+      ],
+      "woodJob": {
+        "tree": "null",
+        "taken": 0,
+        "table": "null",
+        "blockedTable": "null"
+      },
+      "trees": [],
+      "tables": [],
+      "ripeCrops": [],
+      "launches": [
+        {
+          "reachable": true,
+          "land": "-509, 63, -330",
+          "water": "-509, 62, -329"
+        },
+        {
+          "reachable": true,
+          "land": "-511, 63, -328",
+          "water": "-510, 62, -328"
+        },
+        {
+          "reachable": true,
+          "land": "-511, 63, -341",
+          "water": "-511, 62, -342"
+        }
+      ],
+      "observedCrossing": {
+        "points": 21,
+        "arrival": "-487, 63, -267",
+        "found": true,
+        "launch": "-509, 63, -330"
+      }
+    },
+    {
+      "id": "f572553d-4483-44b5-8ed5-6ffe7e7745b7",
+      "name": "Tansy-f572",
+      "position": [
+        -480.501527147088,
+        63.0,
+        -291.0431257486747
+      ],
+      "health": 20.0,
+      "food": 12,
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "boat": {
+        "recipes": 0,
+        "activity": "no water trip",
+        "landings": 0,
+        "phase": "NONE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "tags": [
+        "villagers:sea:PREPARE:-484,63,-293,-484,-294:-468,63,-356,-468,-355:true",
+        "villagers:native_resident_seen",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "tree": "null",
+        "taken": 0,
+        "table": "null",
+        "blockedTable": "null"
+      },
+      "trees": [],
+      "tables": [],
+      "ripeCrops": [],
+      "launches": [
+        {
+          "reachable": true,
+          "land": "-481, 63, -293",
+          "water": "-481, 62, -294"
+        },
+        {
+          "reachable": true,
+          "land": "-480, 63, -292",
+          "water": "-479, 62, -292"
+        },
+        {
+          "reachable": true,
+          "land": "-482, 63, -293",
+          "water": "-482, 62, -294"
+        }
+      ],
+      "observedCrossing": {
+        "points": 12,
+        "arrival": "-468, 63, -356",
+        "found": true,
+        "launch": "-481, 63, -293"
+      }
+    },
+    {
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "name": "Clover-edc5",
+      "position": [
+        -477.2536709755784,
+        64.0,
+        -365.40022953505616
+      ],
+      "health": 20.0,
+      "food": 13,
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "boat": {
+        "recipes": 0,
+        "activity": "no water trip",
+        "landings": 0,
+        "phase": "NONE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed",
+        "villagers:sea:PREPARE:-482,63,-365,-483,-365:-464,63,-357,-463,-357:true"
+      ],
+      "woodJob": {
+        "tree": "null",
+        "taken": 0,
+        "table": "null",
+        "blockedTable": "null"
+      },
+      "trees": [
+        "-477, 63, -350"
+      ],
+      "tables": [
+        {
+          "visible": false,
+          "position": "-472, 63, -367"
+        },
+        {
+          "visible": false,
+          "position": "-473, 63, -363"
+        },
+        {
+          "visible": false,
+          "position": "-478, 63, -361"
+        }
+      ],
+      "ripeCrops": [],
+      "launches": [
+        {
+          "reachable": true,
+          "land": "-482, 63, -367",
+          "water": "-483, 62, -367"
+        },
+        {
+          "reachable": true,
+          "land": "-482, 63, -365",
+          "water": "-483, 62, -365"
+        },
+        {
+          "reachable": true,
+          "land": "-483, 63, -369",
+          "water": "-484, 62, -369"
+        }
+      ],
+      "observedCrossing": {
+        "found": false
+      }
+    }
+  ],
+  "scope": "Actual saved island residents in a copy; no actor/resources/inventory/health setters. Primary unchanged. Bounded observation alone is not food-voyage proof."
+}

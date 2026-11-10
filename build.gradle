@@ -1,0 +1,77 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version '1.17.21'
+}
+version = '0.4.1-dev'
+group = 'local.villagers'
+base { archivesName = 'villagers' }
+repositories { mavenCentral() }
+dependencies {
+    minecraft 'com.mojang:minecraft:26.3'
+    implementation 'net.fabricmc:fabric-loader:0.19.5'
+    implementation 'net.fabricmc.fabric-api:fabric-api:0.162.0+26.3'
+    testImplementation platform('org.junit:junit-bom:5.12.2')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+java {
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+    withSourcesJar()
+}
+tasks.withType(JavaCompile).configureEach { options.release = 25 }
+test { useJUnitPlatform() }
+// The version is declared once, above; fabric.mod.json receives it at build time.
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') { expand version: project.version }
+}
+def runtimeRole = System.getenv('VILLAGERS_ROLE') ?: 'adaptive'
+if (!(runtimeRole in ['adaptive', 'frozen', 'play'])) throw new GradleException('VILLAGERS_ROLE must be adaptive, frozen, or play')
+def requestedTps = System.getenv('VILLAGERS_TPS') ?: '20'
+if (!(requestedTps in ['20', '40', '80'])) throw new GradleException('VILLAGERS_TPS must be 20, 40, or 80')
+def runtimeTps = runtimeRole == 'play' ? '20' : requestedTps
+def runtimeDirectory = file(System.getenv('VILLAGERS_RUN_DIR') ?: 'run').canonicalFile
+if (!runtimeDirectory.toPath().startsWith(projectDir.canonicalFile.toPath()) || runtimeDirectory == projectDir.canonicalFile) {
+    throw new GradleException('VILLAGERS_RUN_DIR must be a game directory inside the canonical project on the internal drive')
+}
+// Independent launch configuration, class output and cache allow concurrent clients.
+// The default build keeps build/libs as the canonical release artifact location.
+if (runtimeDirectory != file('run').canonicalFile) layout.buildDirectory.set(new File(runtimeDirectory, '.build'))
+def runtimeUsername = [adaptive: 'ResearchAdaptive', frozen: 'ResearchFrozen', play: 'VillagePlayer'][runtimeRole]
+def titleShutdownProbe = System.getenv('VILLAGERS_TITLE_SHUTDOWN') ?: '0'
+if (!(titleShutdownProbe in ['0', '1']) || titleShutdownProbe == '1' && runtimeRole != 'play') {
+    throw new GradleException('VILLAGERS_TITLE_SHUTDOWN must be 0 or 1 and is only available for play')
+}
+def playTicksText = System.getenv('VILLAGERS_PLAY_TICKS') ?: '0'
+if (!(playTicksText ==~ /[0-9]{1,5}/)) throw new GradleException('VILLAGERS_PLAY_TICKS must be 0 or100..12000')
+def playTicks = playTicksText.toInteger()
+if (playTicks != 0 && (playTicks < 100 || playTicks > 12000 || runtimeRole != 'play' || titleShutdownProbe == '1')) {
+    throw new GradleException('VILLAGERS_PLAY_TICKS must be100..12000 for ordinary play only;0 disables it')
+}
+def playMinHealthText = System.getenv('VILLAGERS_PLAY_MIN_HEALTH') ?: '0'
+def starvationGuard = System.getenv('VILLAGERS_PLAY_STARVATION_GUARD') ?: '0'
+if (!(starvationGuard in ['0','1']) || starvationGuard == '1' && playTicks == 0) {
+    throw new GradleException('VILLAGERS_PLAY_STARVATION_GUARD must be0 or1 and requires a play-tick budget')
+}
+if (!(playMinHealthText ==~ /[0-9]{1,2}/) || playMinHealthText.toInteger() > 20
+        || playMinHealthText != '0' && playTicks == 0) {
+    throw new GradleException('VILLAGERS_PLAY_MIN_HEALTH must be0..20; positive values require a play-tick budget')
+}
+loom {
+    runs {
+        client {
+            runDir runtimeDirectory.absolutePath
+            programArgs '--username', runtimeUsername, '--width', '1280', '--height', '720'
+            vmArg '-Xmx4G'
+            vmArg '-Dvillagers.lab=true'
+            vmArg '-Dvillagers.trial=' + (System.getenv('VILLAGERS_TRIAL') ?: 'village')
+            vmArg '-Dvillagers.learning=' + (runtimeRole == 'frozen' ? 'frozen' : 'adaptive')
+            vmArg '-Dvillagers.training.tps=' + runtimeTps
+            vmArg '-Dvillagers.role=' + runtimeRole
+            if (titleShutdownProbe == '1') vmArg '-Dvillagers.lab.titleShutdown=true'
+            if (playTicks != 0) vmArg '-Dvillagers.lab.maxPlayTicks=' + playTicks
+            if (playMinHealthText != '0') vmArg '-Dvillagers.lab.minHealth=' + playMinHealthText
+            if (starvationGuard == '1') vmArg '-Dvillagers.lab.starvationGuard=true'
+        }
+    }
+}

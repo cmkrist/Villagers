@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "villagers:king_size_bed",
+          "condition": {
+            "type": "minecraft:match_block",
+            "blocks": "villagers:king_size_bed",
+            "state": {
+              "part": "head",
+              "right": "false"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

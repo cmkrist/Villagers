@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "harvest": {
+    "replantsFromHarvest": 1,
+    "swordHits": 0,
+    "cropsHarvested": 3,
+    "replantsFromStock": 2,
+    "doorsClosed": 0,
+    "doorsOpened": 0
+  },
+  "fixture": "Empty inventory, one natural trunk, mature planted crops and (upgrade mode) three exposed stone blocks on a declared dry platform. No post-setup body/inventory/clock/health setters. Actual food preparation, harvesting/replanting, native-map nomination, pickaxe preparation/mining/upgrade and exact kit persistence.",
+  "stoneUpgrade": true,
+  "items": {
+    "sticks": 2,
+    "hoeDamage": 4,
+    "pickaxes": 1,
+    "carrots": 7,
+    "held": "1 minecraft:wooden_pickaxe",
+    "stonePickaxes": 1,
+    "woodenPickaxeDamage": 4,
+    "logs": 0,
+    "planks": 3
+  },
+  "actor": "883565c3-1d06-48e6-b892-01d6a0b2d122",
+  "mining": {
+    "lastReceipt": {
+      "position": "194, 101, 205",
+      "gameTime": 808,
+      "drops": [
+        "1 minecraft:cobblestone"
+      ],
+      "toolBefore": "1 minecraft:wooden_pickaxe",
+      "toolDamageBefore": 2,
+      "toolDamageAfter": 3
+    },
+    "activity": "gathered native stone drops",
+    "blocks": 3
+  },
+  "restart": false,
+  "wood": {
+    "lastPath": "reach\u003dtrue nodes\u003d5 target\u003dBlockPos{x\u003d198, y\u003d104, z\u003d199} end\u003dBlockPos{x\u003d197, y\u003d101, z\u003d200} moved\u003dtrue",
+    "pathQueries": 3,
+    "recipes": 10,
+    "goal": "STONE_PICKAXE",
+    "logs": 4,
+    "activity": "crafting stone_pickaxe supplies"
+  },
+  "gameTime": 978,
+  "swimmer": "15aafc68-bc57-4e93-a9a7-59e5b8e8d2e9",
+  "swimming": {
+    "health": 20.0,
+    "height": 101.9879656426452,
+    "fixture": "Separate managed villager initially submerged in an enclosed pool; ordinary native jump control only.",
+    "air": 300
+  }
+}

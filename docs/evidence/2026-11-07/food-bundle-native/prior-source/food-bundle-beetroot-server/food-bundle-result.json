@@ -1,0 +1,187 @@
+{
+  "status": "passed",
+  "events": [
+    {
+      "phase": "declared supplied seller stock32 and two gifted actual buyer coins; ordinary AI thereafter",
+      "tick": 60,
+      "kind": "beetroot",
+      "quotedQuantity": 5,
+      "foodAtPurchase": -1,
+      "buyer": {
+        "sold": 0,
+        "health": 20.0,
+        "food": 16,
+        "money": 2,
+        "bought": 0,
+        "foodItems": 0
+      },
+      "seller": {
+        "sold": 0,
+        "health": 20.0,
+        "food": 16,
+        "money": 0,
+        "bought": 0,
+        "foodItems": 32
+      }
+    },
+    {
+      "phase": "observe",
+      "tick": 400,
+      "kind": "beetroot",
+      "quotedQuantity": 5,
+      "foodAtPurchase": -1,
+      "buyer": {
+        "sold": 0,
+        "health": 20.0,
+        "food": 16,
+        "money": 2,
+        "bought": 0,
+        "foodItems": 0
+      },
+      "seller": {
+        "sold": 0,
+        "health": 20.0,
+        "food": 20,
+        "money": 0,
+        "bought": 0,
+        "foodItems": 28
+      }
+    },
+    {
+      "phase": "observe",
+      "tick": 800,
+      "kind": "beetroot",
+      "quotedQuantity": 5,
+      "foodAtPurchase": -1,
+      "buyer": {
+        "sold": 0,
+        "health": 20.0,
+        "food": 16,
+        "money": 2,
+        "bought": 0,
+        "foodItems": 0
+      },
+      "seller": {
+        "sold": 0,
+        "health": 20.0,
+        "food": 20,
+        "money": 0,
+        "bought": 0,
+        "foodItems": 28
+      }
+    },
+    {
+      "phase": "observe",
+      "tick": 1200,
+      "kind": "beetroot",
+      "quotedQuantity": 5,
+      "foodAtPurchase": -1,
+      "buyer": {
+        "sold": 0,
+        "health": 20.0,
+        "food": 15,
+        "money": 2,
+        "bought": 0,
+        "foodItems": 0
+      },
+      "seller": {
+        "sold": 0,
+        "health": 20.0,
+        "food": 20,
+        "money": 0,
+        "bought": 0,
+        "foodItems": 28
+      }
+    },
+    {
+      "phase": "observe",
+      "tick": 1600,
+      "kind": "beetroot",
+      "quotedQuantity": 5,
+      "foodAtPurchase": -1,
+      "buyer": {
+        "sold": 0,
+        "health": 20.0,
+        "food": 13,
+        "money": 2,
+        "bought": 0,
+        "foodItems": 0
+      },
+      "seller": {
+        "sold": 0,
+        "health": 20.0,
+        "food": 20,
+        "money": 0,
+        "bought": 0,
+        "foodItems": 28
+      }
+    },
+    {
+      "phase": "actual bundle exchange",
+      "receipt": {
+        "damage": 0,
+        "price": 2,
+        "gameTime": 1608,
+        "buyerMoneyBefore": 2,
+        "sellerGoodsBefore": 28,
+        "buyerGoodsAfter": 5,
+        "seller": "42554e44-4c45-464f-0000-000000000052",
+        "sellerMoneyAfter": 2,
+        "sellerGoodsAfter": 23,
+        "sellerMoneyBefore": 0,
+        "buyer": "42554e44-4c45-464f-0000-000000000004",
+        "item": "minecraft:beetroot",
+        "quantity": 5,
+        "buyerMoneyAfter": 0,
+        "buyerGoodsBefore": 0
+      }
+    },
+    {
+      "phase": "paid bundle received",
+      "tick": 1608,
+      "kind": "beetroot",
+      "quotedQuantity": 5,
+      "foodAtPurchase": 13,
+      "buyer": {
+        "sold": 0,
+        "health": 20.0,
+        "food": 13,
+        "money": 0,
+        "bought": 1,
+        "foodItems": 5
+      },
+      "seller": {
+        "sold": 1,
+        "health": 20.0,
+        "food": 20,
+        "money": 2,
+        "bought": 0,
+        "foodItems": 23
+      }
+    },
+    {
+      "phase": "native bundle payment, owned meals and retained reserve passed",
+      "tick": 1778,
+      "kind": "beetroot",
+      "quotedQuantity": 5,
+      "foodAtPurchase": 13,
+      "buyer": {
+        "sold": 0,
+        "health": 20.0,
+        "food": 18,
+        "money": 0,
+        "bought": 1,
+        "foodItems": 0
+      },
+      "seller": {
+        "sold": 1,
+        "health": 20.0,
+        "food": 20,
+        "money": 2,
+        "bought": 0,
+        "foodItems": 23
+      }
+    }
+  ],
+  "fixture": "NEW isolated supplied peaceful lit chamber,beds,two adults with working hoes,common initial language; greedy/frugal seller starts32marked food items,glutton buyer starts no food and receives2finite marked coins through actual player gifts.80TPS,400base exhaustion/day. No post-setup supplies, actor/body/clock/growth setters or scripted trade/meal. Finite bundle integration, not renewable production or sustained survival."
+}

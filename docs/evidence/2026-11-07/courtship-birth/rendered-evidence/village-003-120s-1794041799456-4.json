@@ -1,0 +1,280 @@
+{
+  "at": "2026-11-07T08:56:39.456845499Z",
+  "elapsed_ms": 120020,
+  "label": "village-003-120s-1794041799456-4",
+  "source": "rendered client; only client-tracked entities",
+  "world": "VillageTrial",
+  "role": "play",
+  "learning_mode": "adaptive",
+  "native_target_tps": 20.0,
+  "training": {
+    "elapsed_wall_seconds": 0.003128796,
+    "role": "play",
+    "wall_late_intervals": 0,
+    "event": "run_restored",
+    "cohort": {
+      "original": 11,
+      "terminal": 0,
+      "alive": 11,
+      "missing": 0
+    },
+    "resumed_elapsed_game_ticks": 0,
+    "detail": "Persistent identity, consumed exposure and terminal state restored; measurements are session-local.",
+    "configured_target_tps": 20,
+    "native_target_tps": 20.0,
+    "elapsed_game_ticks": 0,
+    "game_tick_budget": 48000,
+    "server_tick": 1062,
+    "achieved_wall_tps": 0.0,
+    "evidence_directory": "/home/niko/.internal/source/Villagers/runs/play/saves/VillageTrial/./villagers/training-evidence/play-2026-11-07T07-36-48.042031785Z-1b13d1e4",
+    "elapsed_server_ticks": 0,
+    "game_time": 27035,
+    "measurement_window_seconds": 0.0,
+    "sprinting": false,
+    "frozen": false,
+    "measurement_scope": "wall-clock and server-tick measurements cover this process session only",
+    "start_server_tick": 1062,
+    "state": "play",
+    "measurement_window_server_ticks": 0,
+    "wall_measured_intervals": 0,
+    "wall_started_at": "2026-11-07T08:55:31.716474216Z",
+    "at": "2026-11-07T08:55:31.719568844Z",
+    "late_interval_definition": "Elapsed interval between observed server ticks exceeds 1.5 times the current target interval; distinct from native tick work cost.",
+    "run_id": "play-2026-11-07T07-36-48.042031785Z-1b13d1e4",
+    "start_game_time": 11004,
+    "learning_claim": "No improvement inferred from speed, elapsed ticks, labels or survival alone; compare independent controlled cohorts.",
+    "automatic_promotion_disabled": true,
+    "native_mean_mspt": 3.890484,
+    "native_tick_cost_last_100": {
+      "samples": 100,
+      "meanMspt": 3.89048456,
+      "p50Mspt": 3.633626,
+      "p95Mspt": 5.657495,
+      "p99Mspt": 6.524309,
+      "maxMspt": 8.495898,
+      "overBudgetTicks": 0
+    },
+    "learning_mode": "adaptive",
+    "learning_statistics": {
+      "mode": "ADAPTIVE",
+      "activeAgents": 11,
+      "decisions": 166,
+      "completedSkills": 124,
+      "safetyInterrupts": 14,
+      "agents": [
+        {
+          "ageTicks": 16960,
+          "learningUpdates": 428,
+          "hunger": 1.0,
+          "loneliness": 0.6828571428571113,
+          "fatigue": 0.06999999999999347,
+          "saturation": 0.0,
+          "uuid": "d29c199f-5202-4fbc-97f9-92023489d70f",
+          "generation": 0,
+          "foodLevel": 0
+        },
+        {
+          "ageTicks": 16970,
+          "learningUpdates": 466,
+          "hunger": 1.0,
+          "loneliness": 0.5778571428571103,
+          "fatigue": 0.4303124999999922,
+          "saturation": 0.0,
+          "uuid": "5894771d-5fcc-45c5-bb4c-4733e2c992c4",
+          "generation": 0,
+          "foodLevel": 0
+        },
+        {
+          "ageTicks": 16940,
+          "learningUpdates": 309,
+          "hunger": 1.0,
+          "loneliness": 0.39714285714283637,
+          "fatigue": 0.8993750000000539,
+          "saturation": 0.0,
+          "uuid": "d169dad0-0157-4e1d-bf1c-358845617474",
+          "generation": 0,
+          "foodLevel": 0
+        },
+        {
+          "ageTicks": 16950,
+          "learningUpdates": 398,
+          "hunger": 0.95,
+          "loneliness": 0.22767857142857226,
+          "fatigue": 0.4299999999999922,
+          "saturation": 0.0,
+          "uuid": "02b0b914-c640-48c3-8fee-df600f34991e",
+          "generation": 0,
+          "foodLevel": 1
+        },
+        {
+          "ageTicks": 16970,
+          "learningUpdates": 158,
+          "hunger": 0.15,
+          "loneliness": 1.0,
+          "fatigue": 0.9005312500000541,
+          "saturation": 6.0,
+          "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+          "generation": 0,
+          "foodLevel": 17
+        },
+        {
+          "ageTicks": 16960,
+          "learningUpdates": 428,
+          "hunger": 0.25,
+          "loneliness": 0.10232142857142933,
+          "fatigue": 0.4303124999999922,
+          "saturation": 15.0,
+          "uuid": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+          "generation": 0,
+          "foodLevel": 15
+        },
+        {
+          "ageTicks": 16980,
+          "learningUpdates": 399,
+          "hunger": 0.95,
+          "loneliness": 0.5154285714285223,
+          "fatigue": 0.4306249999999922,
+          "saturation": 0.0,
+          "uuid": "8d572a22-a431-47a1-b419-b12ab59b4e35",
+          "generation": 0,
+          "foodLevel": 1
+        },
+        {
+          "ageTicks": 16970,
+          "learningUpdates": 396,
+          "hunger": 0.85,
+          "loneliness": 0.8901785714285593,
+          "fatigue": 0.6605312500000114,
+          "saturation": 0.0,
+          "uuid": "ca3c6d6a-385e-4ea3-a37d-e54d948d924f",
+          "generation": 0,
+          "foodLevel": 3
+        },
+        {
+          "ageTicks": 16980,
+          "learningUpdates": 403,
+          "hunger": 0.0,
+          "loneliness": 7.142857142857143E-4,
+          "fatigue": 0.23718749999999633,
+          "saturation": 8.0,
+          "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+          "generation": 0,
+          "foodLevel": 20
+        },
+        {
+          "ageTicks": 16980,
+          "learningUpdates": 304,
+          "hunger": 0.0,
+          "loneliness": 0.3817857142857077,
+          "fatigue": 0.18593749999999742,
+          "saturation": 1.0,
+          "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+          "generation": 0,
+          "foodLevel": 20
+        },
+        {
+          "ageTicks": 16960,
+          "learningUpdates": 315,
+          "hunger": 1.0,
+          "loneliness": 1.0,
+          "fatigue": 0.3654999999999934,
+          "saturation": 0.0,
+          "uuid": "1e1a7861-7b3a-4be0-8499-c0bcada07d1a",
+          "generation": 0,
+          "foodLevel": 0
+        }
+      ]
+    }
+  },
+  "game_time": 28389,
+  "trial": "natural generated village",
+  "server_tick": 2416,
+  "screen": "",
+  "frame_ns": 685873,
+  "camera": {
+    "x": -256.8,
+    "y": 79.0,
+    "z": 779.4,
+    "yaw": -180.0,
+    "pitch": 80.0
+  },
+  "tracked_entities": 147,
+  "tracked_villagers": 7,
+  "villagers": [
+    {
+      "uuid": "02b0b914-c640-48c3-8fee-df600f34991e",
+      "name": "Ember-02b0 · explore (miserable)",
+      "x": -194.23046875,
+      "y": 63.0,
+      "z": 751.2509765625,
+      "alive": true,
+      "health": 6.0
+    },
+    {
+      "uuid": "ca3c6d6a-385e-4ea3-a37d-e54d948d924f",
+      "name": "Willow-ca3c · explore (miserable)",
+      "x": -280.76875360985287,
+      "y": 74.0,
+      "z": 739.3268952559447,
+      "alive": true,
+      "health": 17.0
+    },
+    {
+      "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "name": "Nell-e358 · explore",
+      "x": -256.82862938316265,
+      "y": 68.0,
+      "z": 779.387396289207,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+      "name": "Dara-c7c3 · explore",
+      "x": -250.26123046875,
+      "y": 73.0,
+      "z": 759.699951171875,
+      "alive": true,
+      "health": 12.0
+    },
+    {
+      "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "name": "Fern-5ad3 · socialize",
+      "x": -224.5,
+      "y": 72.0,
+      "z": 772.5,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "8d572a22-a431-47a1-b419-b12ab59b4e35",
+      "name": "Birch-8d57 · explore (miserable)",
+      "x": -241.51160119497217,
+      "y": 72.0,
+      "z": 750.6713143849047,
+      "alive": true,
+      "health": 11.0
+    },
+    {
+      "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+      "name": "Juniper-231e · rest (unhappy)",
+      "x": -234.2069023807201,
+      "y": 73.0,
+      "z": 766.6999999880791,
+      "alive": true,
+      "health": 20.0
+    }
+  ],
+  "tracked_iron_golems": 1,
+  "iron_golems": [
+    {
+      "uuid": "0dc9724f-c186-4784-aff8-5475aa216eb2",
+      "name": "Iron Golem",
+      "x": -257.11001699906774,
+      "y": 74.0,
+      "z": 745.9525824626908,
+      "alive": true,
+      "health": 100.0
+    }
+  ]
+}

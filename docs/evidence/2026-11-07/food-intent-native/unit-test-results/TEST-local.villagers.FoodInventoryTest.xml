@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="local.villagers.FoodInventoryTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-11-08T01:31:27.897Z" hostname="td001" time="0.007">
+  <properties/>
+  <testcase name="hungerDoesNotSpendAFarmersLastRootSeed()" classname="local.villagers.FoodInventoryTest" time="0.004"/>
+  <testcase name="injuryAndFullnessUseTheSamePolicyForAnySource()" classname="local.villagers.FoodInventoryTest" time="0.0"/>
+  <testcase name="oneItemGiftUsesActualNutritionRatherThanTheFirstInventorySlot()" classname="local.villagers.FoodInventoryTest" time="0.001"/>
+  <testcase name="aSmallerGiftCanFitWhenTheRecipientCannotAcceptTheLargestMeal()" classname="local.villagers.FoodInventoryTest" time="0.0"/>
+  <testcase name="unsupportedItemsOrMissingFoodComponentsAreNotMealAffordances()" classname="local.villagers.FoodInventoryTest" time="0.0"/>
+  <testcase name="anOwnedFutureRationDoesNotBecomeAnImmediateMealOrDisappear()" classname="local.villagers.FoodInventoryTest" time="0.0"/>
+  <testcase name="actualComponentNutritionControlsTheDecisionInsteadOfVanillaItemAssumptions()" classname="local.villagers.FoodInventoryTest" time="0.0"/>
+  <testcase name="sharingCannotSpendTheLastPlantingRootOrOfferUnsupportedNutrition()" classname="local.villagers.FoodInventoryTest" time="0.001"/>
+  <testcase name="aFittingLaterSlotIsFoundWithoutWastingTheFirstBread()" classname="local.villagers.FoodInventoryTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

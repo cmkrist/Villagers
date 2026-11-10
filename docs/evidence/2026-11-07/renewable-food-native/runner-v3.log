@@ -1,0 +1,8 @@
+Native fixture first: PID 1111819, runtime /home/niko/.internal/source/Villagers/runs/renewable-food-server-v3
+Traceback (most recent call last):
+  File "/home/niko/.internal/source/Villagers/tools/food-economy-server-test.py", line 82, in <module>
+    main()
+    ~~~~^^
+  File "/home/niko/.internal/source/Villagers/tools/food-economy-server-test.py", line 77, in main
+    raise RuntimeError(f'Native food economy fixture failed; see {runtime / ("probe-"+phase+".log")}')
+RuntimeError: Native food economy fixture failed; see /home/niko/.internal/source/Villagers/runs/renewable-food-server-v3/probe-first.log

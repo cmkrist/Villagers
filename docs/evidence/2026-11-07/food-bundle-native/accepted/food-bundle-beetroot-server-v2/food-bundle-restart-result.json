@@ -1,0 +1,52 @@
+{
+  "status": "restart-passed",
+  "events": [
+    {
+      "phase": "reopen without supplies or actor/terrain setters",
+      "tick": 1808,
+      "kind": "beetroot",
+      "quotedQuantity": 5,
+      "foodAtPurchase": -1,
+      "buyer": {
+        "money": 0,
+        "bought": 0,
+        "foodItems": 0,
+        "sold": 0,
+        "health": 20.0,
+        "food": 18
+      },
+      "seller": {
+        "money": 2,
+        "bought": 0,
+        "foodItems": 23,
+        "sold": 0,
+        "health": 20.0,
+        "food": 20
+      }
+    },
+    {
+      "phase": "clean restart preserved payment, meals and retained roots",
+      "tick": 1908,
+      "kind": "beetroot",
+      "quotedQuantity": 5,
+      "foodAtPurchase": -1,
+      "buyer": {
+        "money": 0,
+        "bought": 0,
+        "foodItems": 0,
+        "sold": 0,
+        "health": 20.0,
+        "food": 18
+      },
+      "seller": {
+        "money": 2,
+        "bought": 0,
+        "foodItems": 23,
+        "sold": 0,
+        "health": 20.0,
+        "food": 20
+      }
+    }
+  ],
+  "fixture": "NEW isolated supplied peaceful lit chamber,beds,two adults with working hoes,common initial language; greedy/frugal seller starts32marked food items,glutton buyer starts no food and receives2finite marked coins through actual player gifts.80TPS,400base exhaustion/day. No post-setup supplies, actor/body/clock/growth setters or scripted trade/meal. Finite bundle integration, not renewable production or sustained survival."
+}

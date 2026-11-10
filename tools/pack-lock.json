@@ -1,0 +1,874 @@
+{
+  "schema_version": 1,
+  "name": "Vanilla Perfected 26.3",
+  "version_number": "1.0.0+26.3",
+  "project_id": "1ocGzRHv",
+  "version_id": "IFYAmjXO",
+  "version_url": "https://modrinth.com/modpack/vanilla-perfected/version/IFYAmjXO",
+  "mrpack_filename": "Vanilla Perfected 1.0.0+26.3.mrpack",
+  "mrpack_sha512": "0c75b9c58bf876ca4d4e012494ef00c511bc61cfc490a3f032fa75004db1a87c74fa82d734db8b452df53fa1977f4aa82e773263db3894b98d8820d723643190",
+  "dependencies": {
+    "fabric-loader": "0.19.5",
+    "minecraft": "26.3"
+  },
+  "mods": [
+    {
+      "path": "mods/litematica-fabric-26.3-0.29.1.jar",
+      "hashes": {
+        "sha1": "2c0e37ef450b7fcea61e0fce482f134d1fe5a9c6",
+        "sha512": "45a8d468463afb97b3fc72efa168024ad69e670e77f5455ecf588583434a1787b32795edf5236579c32c828b02873efb39a4808caa08bbbaf1d8b6b090b160c3"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/lambdynamiclights-4.13.0+26.3.jar",
+      "hashes": {
+        "sha512": "67c37ca7d619bd7f2b0dc02217070c20e34fb3bb3363d4e23f5ef9ca90b1b58adb223fab73639a3499d366497316f1eb297d2759f3ffb976467b4759f784619d",
+        "sha1": "18c8ab40f03219bfcf809a83db6e3958ed8bb866"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/Controlling-fabric-26.3-26.3.3.jar",
+      "hashes": {
+        "sha1": "232a2b50b30b9922be9074a82e74f7424d885e33",
+        "sha512": "63f1f0c9371281c272b9afc95d45d758f83d4a42c469f0fa4a95496856ca0d06afc3871e694f213b26be050a7df5d68bd7a7404eea0e86a239a59eb556d5fbd2"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/entity_model_features-3.3.11-26.3-fabric.jar",
+      "hashes": {
+        "sha512": "0c9a074518d01e4947adf7b5a9547c35f806bf936a51c721c4dd4c53517f61a7f4d3a8b66340521cd2aa564eb322826fe0c8003197635500f777a7ae9c6673f7",
+        "sha1": "9c11805cc34153fd89cb9fecf78be2b5a803b373"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/cropsloverain-3.2.1.jar",
+      "hashes": {
+        "sha1": "2c3f5e1a56e638d0e3e5e9917d4efa9ae49a35bb",
+        "sha512": "e898a09072a7cd4cf2c8c2b4dbe14dde4811de68bbbdf3879ddb08cddf8233ed0fc5248a543d665b95107e6a94c64ef27c2a3762bbd84f305d380f84c1dae732"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/DayCount-1.6.0-Fabric-mc26.3.jar",
+      "hashes": {
+        "sha1": "f5bd818156d35bee23ced4ed3bccaf42ca9be358",
+        "sha512": "1c088ab77fff63def044ad19de6627be36b02b1b55544d4860c4f7fe11476d971e8247b438bd61554498ad67956e557a4cbbdcb317c034ab74eed546cdd92fa6"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/entity_texture_features-7.2.5-26.3-fabric.jar",
+      "hashes": {
+        "sha1": "c4d8d0f47a2ab15091f47a1d74336a119ab5f1b1",
+        "sha512": "6b03e523f27f0f001de48eaf771f81fba18cd072f60c0f9530023a7fdbd22aafa0953f3d3f9704930a625c982831e28c228798b82579e79938bb22fb46e59761"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/malilib-fabric-26.3-0.30.2.jar",
+      "hashes": {
+        "sha512": "8f17a5d70cb2f461aeb540f4a99de01c3351f8d3678d902d3d00cfe5d10c039fdc111c1079fe23aacb7936b793ad1cd045a8dc3a9e7926865820c254d92345b8",
+        "sha1": "832a00c0d6417d7f195fbe1b1c643bbd4893e64a"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/libjf-26.3.1.jar",
+      "hashes": {
+        "sha512": "5ec5183fbf8b045b986cf0534dac39dee62934fd86dd1255286f5b6a55f6ee499782d4a4d873fc81cde3ec8337af5f0e36125f3b67fa39744a9b2082dc6d6051",
+        "sha1": "8da055eec23359d5654445d81fec3189888d9d90"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/vehicleupgrade-v26.3.0-mc26.3.x+fabric.jar",
+      "hashes": {
+        "sha1": "2afbb668607fa67e6bfa8921a1cc325c2d204dfa",
+        "sha512": "36802c8052104c09e90ac421a575d895275cbfe6cf19a076a55ba2d5e15e43e7cae539277c53c9b2f239e90ce79b47b2899639493d44d4939f8778ea32400112"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/zoomify-2.17.0+mc26.3-universal.jar",
+      "hashes": {
+        "sha1": "7f18090fea4a2ddae01e032d09629d14fa381d3f",
+        "sha512": "1c5bc8e46a3575847584bb6993034dbe7d8060be32ee676c473d36bd4bbbc4df21d03a8f3b3f8904e42312667e9716050cca2cf7a098c8ebf6985d52eea4d637"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/sodium-fabric-0.9.3-alpha.1+mc26.3.jar",
+      "hashes": {
+        "sha1": "5d88caf6f3e182cd39d0fb0d2e7200c5e613f287",
+        "sha512": "8aa044fea0185855e2ca0971b4e3b3bc1ee4c616e3a7d6ca4d4b979fbb99340678c0bf6acd16be04095bc885b75b4caf95401486e91b65239385e98fab6d3542"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/notenoughanimations-fabric-1.12.6-mc26.3.jar",
+      "hashes": {
+        "sha512": "a27a2cf8caa57a15871cd1a2c2f37fa1b1f4a55b25345306b87989c3b5030e4d4409c6b50330dbb6902a2381b140c401d0da6f5aed8e2700ed7ca8f9f2365f5c",
+        "sha1": "6554509fc89187c5b6d63f586edfc35b8e41158c"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/worldplaytimereborn-1.2.6+26.3-fabric.jar",
+      "hashes": {
+        "sha1": "81a5233b71e9dbe1599094209f17ffa0e85d7611",
+        "sha512": "c7bdd01450ebc398c9a6300b35930fb0752d01f9e0b5500045c26c540d36bc27f72d5e002913bc70ea42934df886a147268ae44a0efc9b3c951b2c53903be55d"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/entityculling-fabric-1.11.3-mc26.3.jar",
+      "hashes": {
+        "sha1": "45f47f7a067f5efd733a32767dc3d1d770678b2a",
+        "sha512": "b6209bb62d72376d3fd284da137ec93a6dd38ebe5fd38ab9190deeade68b5b7f4bf915f4abcb4a807afe18cb9f0b59e11be789d46df6f0e6f64388ed2edc284d"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/easyshulkerboxes-v26.3.1-mc26.3.x+fabric.jar",
+      "hashes": {
+        "sha512": "86cfd440c6e9b12930f722cb73de4cb912342c209c7a3d4681df27b2cf72abbbcc773269ade2ce2192cf2151803b47854d6cf32753b45a17b224d729fd3aec28",
+        "sha1": "51b7728618a7eff13016687d31180b4eb555ac61"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/ParticleEffects-1.6.0+26.3+fabric.jar",
+      "hashes": {
+        "sha1": "3c4b4e119f8534e21e030ac4fee04c6f4e1d95ab",
+        "sha512": "8d295e53404493b500f66b42abcc5007f3b0ecef2428848dfc998ebdd7aa190c74d7304d82cc0235bbc240e9ae74223471742f7a0590f1d19448ddbf07dd2490"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/fabric-language-kotlin-1.14.1+kotlin.2.4.20.jar",
+      "hashes": {
+        "sha512": "91404f87774466ce8604aafea791d8cc97b603bc310dce17c8188f94f7783cca6dc14fc726ce871ca317bfe9033c199d8d858d51284106a00754e952147703b8",
+        "sha1": "62ae40a31b689b52fde399f2143d547a631e942c"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/freecam-fabric-1.5.0-alpha.2+mc26.3.jar",
+      "hashes": {
+        "sha512": "154312b55dbb4d9e825c7c2aeb5ec09c4593492d90ac39b679e4d377c9378a90a640869c33f91c1cd2a3ea41d5d5b3bb7cd83a193dfb822bb32098b94acb8502",
+        "sha1": "bc05706d31f782f40ca6a100a81f21de84fc32d0"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/controlify-3.5.3+mc26.3-universal.jar",
+      "hashes": {
+        "sha1": "9df91163e9a325c83215df29bf743bd0e4aa544f",
+        "sha512": "cd4e64a9621dff200329b249dc63fc4542ce554db16c75c4b04cfa7495bf84e1a4bca0f89a7a9d4d425f6b6f23c8df52ab8ce323ee18ae49c6cf24858697bbf7"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/modmenu-21.0.0.jar",
+      "hashes": {
+        "sha512": "588c0c557963f4778572ee81bfafc190b332c26d5926c5fe7e3e1614dcf8e14f58e3bc80a97694521dd05907e9753a7c8575048ea769e4dbf40a3db74a4e2606",
+        "sha1": "66ec40f1cd0c037ddca2b5fc6b4b976d479c18e8"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/EclipseUI-fabric-1.0.5-fabric-26.3.jar",
+      "hashes": {
+        "sha512": "8ef525fc4d3b652867dab2218e0bc431c506cd86aab03daf73aea2a190340d47458c053d1e81e35e4b885ff255443027d5c321381606d974d285a5cadadb59c0",
+        "sha1": "1a1fb1dba40e50912684e0745e2363e4ca49d104"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/sodium-shadowy-path-blocks-fabric-8.0.0.jar",
+      "hashes": {
+        "sha512": "20525c70a74242ef182e48ed16077f768a0f4d6b4b4ca6fd8cffcd93866c217de7d61af0c7cfe63c7330e0fd7c8ad6bb6c6b1fcc3605a59f9229e20718f4a0ee",
+        "sha1": "9d5d153d39700683ffbf62afd0e965eb86113382"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/Searchables-fabric-26.3-1.0.2.jar",
+      "hashes": {
+        "sha512": "0c2afb2c00ceca7ecef5d4eefe63eda76b5383047c4673b81ee5ed3d19c7bb22eca75289263bf7d892ea87e7e47afc76874a139da73b56d05a130b79c4f8e195",
+        "sha1": "47372e0b6c78ca12651cac46d2cc0e9cdfa4dd7b"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/tcdcommons-5.6.0-beta.2+fn-26.3.jar",
+      "hashes": {
+        "sha1": "73973705825ac487a84843656d37bcaf4709890a",
+        "sha512": "39adb15641f7ac8e6d54bcb2c1ee135e403266f3942f51d030949b612f1f6c5a56052d30f9c30ae33c091471fe4c94d7ae8d8613d61a986417259a9a5029854d"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/fabric-api-0.162.0+26.3.jar",
+      "hashes": {
+        "sha512": "5ab70908952f1d2346d16b122ca31327f4055db59c279a1bc3c3c581ce359bb541cba15730f55b0727be7c7c4debc4a4412a183c228e0d4dea81c734f7b412ce",
+        "sha1": "273cd2dcbd92d1559edcc91c9f23fee47f6ff93f"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/status-effect-bars-1.0.12.jar",
+      "hashes": {
+        "sha512": "fc82971d4e91b3e1c0e2919267f16fb29d0690ca1765bae160628b7e6d8552c4c724143b6172e27b4b9d7c8e70fc64bdf428b60e954fa6adc7ae56a6af5abf0b",
+        "sha1": "f29719c3101ebe009dae76bca5215cf7482f8b9c"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/optigui-2.3.0-beta.10+26.3.jar",
+      "hashes": {
+        "sha1": "e788a22a46fa3cf40078e1b794a37c0684da76ac",
+        "sha512": "47fab036837b3fdd02f845ade865e367ab61c23100343f8273c44f73996e61cdf2af316d453b67b5e730eea623b9e89af380d71fddf869d487035a67d6e68ab3"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/cherishedworlds-fabric-18.0.0+26.3.jar",
+      "hashes": {
+        "sha1": "c9bfa0f1fe36082500b88749fda0e443d92d0c9b",
+        "sha512": "4ef9c2a3f73303854630ba3bbd6ffd857a1e3b2ba5848877bc3438510ef2b9e198ea8ac04c8ddffadd60d50decf8100350be04286c4368a9ae4c1c021e39cb87"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/rightclickharvest-fabric-4.6.2+26.3.x.jar",
+      "hashes": {
+        "sha1": "980234046f202dc3890c499f1c7378714c3ff511",
+        "sha512": "a08edf8b52ba4197df1befcf6288dbd4292fe86b19c7f076c4f7ebfebda29a5f1b23530436b45c113ebe6db53409fa654acac0cdc403948e82fba22bfb8769c9"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/naturally_trimmed-3.6.1+26.3-fabric.jar",
+      "hashes": {
+        "sha512": "fc6aea242d919658a735f8a34c1cbf5e3ffdc8fb86b534ebef8672262b92589bd3a09bc35d6ae70956884a4b53d0c00ece97e892ec554d96ceb76c6337641697",
+        "sha1": "9730ffed152d81e1b23d5ea5dae3c385887694ac"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/BorderlessFullscreen-v2.5.1-mc26.3.jar",
+      "hashes": {
+        "sha1": "89613928490d4e89ffc7731b4da837a299f6f283",
+        "sha512": "2adc29afc12736938a9a620df6f35aa5b9425154e312fcf0dfa4ac0ca3140dc17ce2e75e611555d57148ba5754398cb527f75ac727363482fc163e7124cca96f"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/elytratrims-fabric-4.9.1+26.3.jar",
+      "hashes": {
+        "sha1": "76553c51e0a4268e482d0a97711891f4e2a5bc36",
+        "sha512": "8a885f9fafa0faa5b1192ebd10ef2eae1c0b02b11296ccf9f952c744710f4a8d3f48f4f7716933e268a330a173f95ed634d5deb4054012b1f01b77bc54ae6925"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/MouseTweaks-fabric-mc26.3-2.31.jar",
+      "hashes": {
+        "sha512": "61c011308b5d1d0b2163473cbbc1ad0f1b3ac873b77e3e9ff67ccb437a946fbe5f34077281ebd2b91647324969d319f6499ac4b319cfcb9ea027bac47a52c081",
+        "sha1": "65c0f5588900e7ade476164ec4915bfab52c129a"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/Axiom-6.1.3-for-MC26.3.jar",
+      "hashes": {
+        "sha1": "812809eb6fcfe8be25628767827574f6c2a215aa",
+        "sha512": "dedb02a3ce5ac7e5232adf0fa88c65bbe59374f0233e3f2b42f303638183fbc05d258875276cf16fdcb8e19481e3564ebaf40d33be4df33920f84152d4aa8a63"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/moreculling-fabric-26.3-1.9.0.jar",
+      "hashes": {
+        "sha1": "7308b0b0b6fffb0e076cabf97db7fc889d9ada68",
+        "sha512": "b1975ef43606a3baa1c93a040fbef96abfbf46ae6a1e364c60effd03a42568f945ede0bde329241e87adc6a9c2769dd1d13ad286869c689018035eff677442b2"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/jamlib-fabric-2.3.1+26.3.x.jar",
+      "hashes": {
+        "sha512": "4b739c16dd771ceae4a8a2dbf24ebba47955d69cde994f9b1b2f075c41757c5bad4f90324fd9aa417d6b6490f6f9f0e39225a9d305c7ef49fb72824479ec2e24",
+        "sha1": "e618db246e40fb685b237a613b58c68481f138f3"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/respackopts-26.3.0.jar",
+      "hashes": {
+        "sha1": "57aaafb29cac9fc0f17fed16124fa9e42fb7c65d",
+        "sha512": "22f977be3f462b02423d10e136c193959c391fc429b0ba0207aab245e6b967047aed6405d27708c6dc3144377076ff352898e695d8637d619ff2be3e9fe791b2"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/immersive-hotbar-1.2.2-26.3.jar",
+      "hashes": {
+        "sha1": "f820ea7ed80cc248855371fb512da894ac8747dc",
+        "sha512": "330d232686161510cdd19ee276c494a3843885a44216c513569f8e47226497be76eec910910aa7b051d2cb21fcfe20a8165171383f25512be80a864e337096be"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/ImmediatelyFast-Fabric-1.17.1+26.3.jar",
+      "hashes": {
+        "sha1": "f565bbeb201f2305e81761429d3f1f47e1c3a321",
+        "sha512": "8e139589fd995bce3d485a34d92a07243964212f7ed2e4fc2f6de5b9a74d0f59b03252e7ce40c64e006cf3e21bed5de27b830d33ef048b286e041f6178ad8428"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/scribble-2.1.0-beta1+mc26.3.jar",
+      "hashes": {
+        "sha512": "d27223ab566551a6442949a8340c2a328a39a2ea70ec9ca73e9ed2bac270db2bb1faf2edd56b9375a1fa6640e9f5aa7b3335a5adc9237225dac3832b63a96fa9",
+        "sha1": "5cdaf1553cca785e5941b028a09117d720034d81"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/iris-fabric-1.11.7+mc26.3.jar",
+      "hashes": {
+        "sha1": "fa03640ba1e4ef2f7ae3619c6373a06e46d0ba2c",
+        "sha512": "d8d3312f77fc52a48e4a6cd836fda33669bdebcb4de0b8c0d30adc808b287330a533e0baef355cc1ce6336a26851d9775369a802a4666b7b7a6266af20088f42"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/skinlayers3d-fabric-1.11.3-mc26.3.jar",
+      "hashes": {
+        "sha1": "31ee367d5900d20a77c9c610cdd6dc9361c26865",
+        "sha512": "5217aac8fc55952d5837932fbad3eb2d8a2211a57ff602db9be7a0e2678ea90f11cc5c37d4e44abee835f7831508af770c1ba6334dd2933290fe6699978f4118"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/lithium-fabric-0.26.2+mc26.3.jar",
+      "hashes": {
+        "sha512": "4d7fee66132eedc71feab9390b92c95d7058edbdad0fecfac1d836a2950b97a7ca463afbede61c7ef361ce65e1f927ab9e89dde5bf2e0e0ce486afb5c5dbee40",
+        "sha1": "dd5a4ec2c68d7601d8bce9076f789c55a5f8bef3"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/betterstats-5.6.0-beta.2+fn-26.3.jar",
+      "hashes": {
+        "sha1": "53d859f95b2ef78b8663f45a600c9a5eb07b8c09",
+        "sha512": "7edb8d61555bf5f5bb4aab4316ae30dd0e91816a04e4064f60e81a802f350641d4042a613ab04a9575c28caaca6c474cb72e58bb6f18f0924749a53a9e9537b7"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/BetterAdvancements-Fabric-26.3-0.6.0.78.jar",
+      "hashes": {
+        "sha1": "6f83f06a39d8d131a0a60ccf7de6c25285089d65",
+        "sha512": "c5c207699a9f5e5c80c25d20f9d608b80d8760f7e0fff4c3b6c2687a722fbde722895036c5a2eceed23d00df1ef4c4959d6c99a88d13ed75c08305c1dd692e51"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/placeholder-api-3.2.0+26.3.jar",
+      "hashes": {
+        "sha1": "4c455faa6333dbaef72cedbb91fe4a2a03176741",
+        "sha512": "eb2bb31e51068aad2581b7864ea7b11b1209ba1c2b27551cd5837d9b312b818b73bb47c06374b46b99b73401c62c6b6c115f702c55aed6afd467ad8ad6448de4"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/visuality-0.7.15+26.3.jar",
+      "hashes": {
+        "sha512": "90145cad547d329d5134eabbf45c7f35b1d0ce3ff2bcef8a1b187dc33723121b1a235c0cc259043588835b0cb7b31cba4aa84d738be810f0ea073308bec2eb4a",
+        "sha1": "9c6c1554114150464716b8a82da8a8872ea3db8e"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/reachbehind-v26.3.0-mc26.3.x+fabric.jar",
+      "hashes": {
+        "sha512": "dc57b48f49561080b60fab8f162fc4ff31816031286f82cf5174a3f7524103dd18e9c80996bc8ac24c9a2f180487b3b2f3ebbaedf5cbbdcbd0709d1f9b1e342f",
+        "sha1": "2fdb969c89094aae475c7717ff08bb50a61b27ad"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/bookshelfinspector-fabric-2.4+26.3.jar",
+      "hashes": {
+        "sha512": "728d525f2a0babe85ba6367922b7f0807a5285e9c6a249d6761a181a8095d0dc25ccb1a32c2561355bb895582b9c8fda790c43070d413f6c0c6bcedbaa41073c",
+        "sha1": "7d7557a81651aa5bc15bef49177f89b01ae0e9a1"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/pickupnotifications-fabric-3.0.1+26.3.jar",
+      "hashes": {
+        "sha512": "a03ae07c2d7c992d614d58a2af4187516b95e2cd4ff316fb412d5f9deb1ff9f57804eaf1ceb77781bbd7f801c52515b77687a00e67596e5c6c1678903163e4e1",
+        "sha1": "d82f07c8b3bfa9c5300fa9acb3d4a9818922800b"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/particlerain-4.0.1+26.3-fabric.jar",
+      "hashes": {
+        "sha1": "d945b75d65a3bd1727a5e63d8d4a9d3c5e9ec64b",
+        "sha512": "79764401af2a193d0411a7ab74e56bff94cde21b88b56c6d3ced968fd7473a69fdc754691dfe00277a5f9d757d3773f62ca878b7c4b2e05eac8509cb9909d212"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/deleteworldstotrash-v26.3.0-mc26.3.x+fabric.jar",
+      "hashes": {
+        "sha512": "7af95139dceb3cc7ae9afd4a542c9ee41abd180fcb5ae479dcc9f6b1141260ec17d1892c4dad887dec8034f57fe4e27a8a4f280e410f04672d6c3bda8442e25c",
+        "sha1": "60648b8e91725ac752d1b3818ca2ba5a3e6ad68a"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/elytratrails-1.6.7-26.3.jar",
+      "hashes": {
+        "sha512": "b4bbeeb546d1b27001d1426f6eb33370017714d941ef2c40b6301aa8b1e8fca1779ed64a9d847f502d028a734c2f75dac9a747e915eef01bde1c5b3b02fb2537",
+        "sha1": "eaeb6dbc396c68fd635e012fa6c3fe15f7d9960a"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/ForgeConfigAPIPort-v26.3.1-mc26.3.x-Fabric.jar",
+      "hashes": {
+        "sha1": "a0d802d2cb010a5054c72f1ccf248433b6e0bafb",
+        "sha512": "b9339c21e14beec2eae0ca215317284bcaacef72e1d1dee8b3dfbe2de0eefaa758a172446df85419b6534557c479abe972d7d21f4ec194f2d436f9ed4329cb9f"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/bbe-fabric-1.3.9+mc26.3-mod.jar",
+      "hashes": {
+        "sha512": "dbad4387672fea686a6610ac238d0243fdbce718bed3aafc6006068bf769df2eea8f2c7189f5cb3835008f11eb9c767f1e2eaf436c67bddc17fb8607af26dd88",
+        "sha1": "151330c3ea5a1c93e841ea4cda0788c93b5b986d"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/dungeons-and-taverns-6.0.2.jar",
+      "hashes": {
+        "sha512": "b0ccf52512560a8115b356c5a3e585c71966af10729f2d43641af268258272bb9f9c68c53c49eb79a5d5f645ba9e0dff6e4ae2b654eaf6a6d146977de435c025",
+        "sha1": "172ba3915c8da4c46bdf63a24a8cff2b485b838d"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/Flashback-0.43.6-for-MC26.3.jar",
+      "hashes": {
+        "sha1": "4fd7d2d677332f58b00107b27615379eadc6cfcb",
+        "sha512": "80d194d117352942ebf2bc96914e5f0f550ab857204cda5b362459110ea22a38332825ecebf5ee3fc54d4f01c72279c0a06e45f26e26b62c49015e208167242e"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/glowing-torchflower-fabric-mc26.2-1.4.1.jar",
+      "hashes": {
+        "sha1": "c01a821dcb28898412cece199f2e8637623c703d",
+        "sha512": "c0c71d324dd6fc786a954bcb4a9ae85348aedf4dca8ff50dc26f3adbddcee263d82ca252f5e82c0af7abc811a933e8219993703091495d2fc4da0d866c1c0350"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/screenshotgallery-fabric-2.1.jar",
+      "hashes": {
+        "sha512": "2b5e57f3c57841b9a6e851933aac70bf7f7ba0dc357cf8795b6162b8697f3c1b5da79bc0f9abf81e87ca5a36cdd3324ac868ff338025c7621c74929c7cd834dd",
+        "sha1": "773b786860c45b5cd6b5a7b393d1255494ab3486"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/DetailArmorBarReconstructed-5.3.2-26.3-fabric.jar",
+      "hashes": {
+        "sha1": "eca7889240793fca4479b784e8461b8493239b67",
+        "sha512": "eb5f2927f85ef91391544b8797b6bfd64cc7183bc9676e67709726951492d77e60e160f3932129ecda73a6aa22c1d8388e683f7b56e4747954b81ab22d4df66a"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/chatanimation-fabric-1.3.4+mc26.3.jar",
+      "hashes": {
+        "sha1": "5743ce2bb57f67fd3d6bdd8936a3ee3444b1c143",
+        "sha512": "900b91a3c557ac444df06823e2c57a172ef34bd98218c6e08abf74885d85ff7379821292de5ed531d8161d5764e88dea846688b85441c2053e300ece922742a8"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/continuity-3.0.1+26.3.jar",
+      "hashes": {
+        "sha512": "1ec1e3b2f73c26b19445d664822a8936e9076f4d8855a2ed5fac19786daa8da42da8fdc9526c4a53c227a82819a87ad8e73d5b4fc003f6519c50454c33014f04",
+        "sha1": "63d51781b2c87e3b4b4ca98a133db8c98d3f2afb"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/cloth-config-fabric-26.3.159.jar",
+      "hashes": {
+        "sha512": "8924e19d41845096724fa10f3717bc51964a0edbbbcad0ff1e6c6187a398b08f356e49579a657c2dc44a7f92e3850771f3ca70bf8c1f654de60425163b91dbb1",
+        "sha1": "9a5cce069380a2047250831dcb19f4ef1b15872d"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/modernfix-5.27.20-build.2.jar",
+      "hashes": {
+        "sha512": "b586434056107aac4ef86e9351d66170dac65a45a1e5f8bd48fb931b3012ab2431b16476eb9c256773339e2b4c60f6f3e90a4709180f700b2aea59ff607f4243",
+        "sha1": "b63337e801fbf2cb420a049d69220c56e083f514"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/puzzleslib-v26.3.13-mc26.3.x+fabric.jar",
+      "hashes": {
+        "sha512": "7332eeb8fc04cf0eba750cf9f6a0d22b80382a4e8f022ede96ba98e0eee963d687b54f3983807740c387b1609bb6b14a272bba60652dd17e5578ec70885ec787",
+        "sha1": "aba1acde6bfe6c7dde42612f89cde990d3c4557f"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/packed_packs-fabric-2.3.1+26.3.jar",
+      "hashes": {
+        "sha1": "58ea9fda3282c920796cc4d1f1dd8775fcabd9f5",
+        "sha512": "7da7d7a53e88ce38cb06bc60193d8e657868a6c644e2092045ba6cb1adea8b05dbc0010ce72d45d5601fc22eb8fac877edfb15d398a8f9098debb14654b8df59"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/BetterF3-20.0.0-Fabric-26.3.jar",
+      "hashes": {
+        "sha1": "418b70684cf0e5a48c861216c86ae97949bc39f7",
+        "sha512": "1e78531358f690404efe98b26de1024284078596785420a92ff5dba052003064e87537936c006c3c58470ccdc2ed6ae69a65f26ca534366e90d97470f2973118"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/animatica-0.6.2+26.3.jar",
+      "hashes": {
+        "sha1": "65fbee1197fcd342d88b34c33856da5c04fa7fed",
+        "sha512": "c47259aa00e4a110a9fd31994a733f5568c498fc944a5d7489b2b6f51702e1a7c19f544590f87ba05d3fab286b7f6d9373703591d62b65a200623296e7249a0e"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/ferritecore-9.0.0-fabric.jar",
+      "hashes": {
+        "sha512": "d81fa97e11784c19d42f89c2f433831d007603dd7193cee45fa177e4a6a9c52b384b198586e04a0f7f63cd996fed713322578bde9a8db57e1188854ae5cbe584",
+        "sha1": "eac76ff0f3753422c61b2c44487d0d195d88d4bc"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/sodium-extra-fabric-0.9.4+mc26.3.jar",
+      "hashes": {
+        "sha512": "a2e8d8416a556b7a351460a06407119eaba62f06636377001720bbda9b797dc881b2bb4528fb75a0459fee34475db529858633b6b86b545a72d0f13cf3c2b7bb",
+        "sha1": "ff2056f222b751fe161123e71e55afd5b2f41da4"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/collective-26.3.0-8.42.jar",
+      "hashes": {
+        "sha1": "8bdd75360aea25b00038ff8d6e7844d9c8aa31bf",
+        "sha512": "15c11e3271250b6ec21eed38c61bb044f907c7affdc4e506d97e2b840599cfcb08735521dc558801e0e7820da3079b8e773cc55389210f1d01277054178ac5aa"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/yet_another_config_lib_v3-3.9.7+26.3-fabric.jar",
+      "hashes": {
+        "sha512": "f3957028dd31cae78f08aee3e768f61bd12c4c8423257d357bc3c1a2172047c769d37901f99775c7ffff1e5ee794025dc72738b2869cab06f1c2811841d68b24",
+        "sha1": "e54d86dd4a78f95cd6ec0309d96fae01e661c00d"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/armor-stand-poses-fabric-26.3-1.4.0.jar",
+      "hashes": {
+        "sha1": "0c6898e27d86ff70e0312f21827a79264127faae",
+        "sha512": "d3b21153a4a72195141988ffffcabb5c1c846d01077c657abded75467720a3fcd11191b5faf42d3ce6a6ddc0e2e75b5f4fab771c726ee3e4915d8dd2ba6da5b8"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      }
+    },
+    {
+      "path": "mods/cutthrough-v26.3.0-mc26.3.x+fabric.jar",
+      "hashes": {
+        "sha512": "74b20ba20cca86f6cdec9d99a8495e37afff28f1bcbb47a7e1642bcee58f673e6d8b56f3271325c340dfa37c0ad5e555004fab95b29db6f68dca872bd9d21e8f",
+        "sha1": "2e719fb824fd09711218080f2ad432f4a22275ef"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/simplemenu-26.3.0-2.3.jar",
+      "hashes": {
+        "sha1": "cdb738fd620188be5d12dc54b32e1e97124c5dfd",
+        "sha512": "8fe012c8a019328e0a5e328197d091293ec766b4b6889a9bbc5b83dd067326600c924cc7b14030f903b98b194732c27b69af2f5b7ff2bbe977d4db42860d6633"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/light-overlay-2.13.0+26.3.jar",
+      "hashes": {
+        "sha512": "28222c9f1005f310657842d7e6140efcf5a36968cf219b20a47057d5a9355177da2d8e39d1293c1ccc98c07807a5393e3e4ad5592d670a3a8477b6ed48cd9774",
+        "sha1": "d4c232fb32c912bcc508f84c99599ce508a4e5a6"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    },
+    {
+      "path": "mods/overlaylib-0.12.1+26.3.jar",
+      "hashes": {
+        "sha1": "fcfc27e65d315e75e6cc03793b51e5e5f68d119a",
+        "sha512": "357af657e774fe6d3adbec1bf48ecd6db3363f91332d5e742170b1afed0afeb10e66943ed12162699a204f4756743e2cefe7260bcbfc9fd226943a24eeb4424d"
+      },
+      "env": {
+        "server": "unsupported",
+        "client": "required"
+      }
+    }
+  ]
+}

@@ -1,0 +1,429 @@
+{
+  "elapsed": 4000,
+  "stage": "bounded_observation",
+  "gameTime": 33882,
+  "actors": [
+    {
+      "id": "97d2706c-4143-42bb-bab8-ecd680cafe5a",
+      "name": "Iris-97d2",
+      "position": [
+        362.3391573599413,
+        59.0,
+        133.51348450561613
+      ],
+      "health": 20.0,
+      "food": 18,
+      "inventory": "[3 minecraft:bread]",
+      "foodAccess": {
+        "lastFailure": "none",
+        "activity": "no food access trip",
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {}
+      },
+      "breadCrafted": 3,
+      "crafting": "crafted bread",
+      "memories": [
+        {
+          "index": 155,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Gathered existing hay at 360, 63, 120"
+        },
+        {
+          "index": 155,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Unpacked 1 hay bale into 9 wheat"
+        },
+        {
+          "index": 155,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Crafted 1 bread from 3 wheat at 357, 63, 122"
+        },
+        {
+          "index": 155,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Crafted 1 bread from 3 wheat at 357, 63, 122"
+        },
+        {
+          "index": 155,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Crafted 1 bread from 3 wheat at 357, 63, 122"
+        }
+      ]
+    },
+    {
+      "id": "3c29e5bd-14b7-435c-8737-d49ac9cb7fdb",
+      "name": "Pip-3c29",
+      "position": [
+        362.6714859218139,
+        55.0,
+        136.21814915553543
+      ],
+      "health": 20.0,
+      "food": 18,
+      "inventory": "[27 minecraft:bread]",
+      "foodAccess": {
+        "lastFailure": "none",
+        "activity": "no food access trip",
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {}
+      },
+      "breadCrafted": 0,
+      "crafting": "idle",
+      "memories": []
+    },
+    {
+      "id": "d3ab9ff6-cec6-4def-a199-92b911261b09",
+      "name": "Sage-d3ab",
+      "position": [
+        365.0095522590859,
+        60.0,
+        128.6695132036858
+      ],
+      "health": 20.0,
+      "food": 15,
+      "inventory": "[]",
+      "foodAccess": {
+        "lastFailure": "none",
+        "activity": "no food access trip",
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {}
+      },
+      "breadCrafted": 0,
+      "crafting": "idle",
+      "memories": []
+    },
+    {
+      "id": "5d267809-1bbc-434f-a95a-7fd61c8de269",
+      "name": "Alder-5d26",
+      "position": [
+        371.5,
+        63.0,
+        127.5
+      ],
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[8 minecraft:sand, 6 minecraft:wheat, 3 minecraft:bread]",
+      "foodAccess": {
+        "lastFailure": "native walking step rejected 368, 63, 127 from (369.6024511409608, 63.0, 127.28468878857662) path\u003d2 nodes; end\u003dBlockPos{x\u003d369, y\u003d64, z\u003d128}",
+        "activity": "walking toward village food supplies",
+        "arrivals": 1,
+        "digs": 11,
+        "lastPlan": {
+          "distance": 2,
+          "edge": [],
+          "goals": [
+            "362, 63, 130",
+            "362, 64, 133",
+            "361, 63, 132"
+          ],
+          "cachedCells": 158,
+          "targets": [
+            "362, 63, 132"
+          ],
+          "clear": 99,
+          "closest": "362, 63, 130",
+          "diggable": 10,
+          "found": true
+        }
+      },
+      "breadCrafted": 7,
+      "crafting": "crafted bread",
+      "memories": [
+        {
+          "index": 323,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Ate owned minecraft:bread for hunger or healing"
+        },
+        {
+          "index": 323,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Crafted 1 bread from 3 wheat at 369, 63, 128"
+        },
+        {
+          "index": 323,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Ate owned minecraft:bread for hunger or healing"
+        },
+        {
+          "index": 330,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Gathered existing hay at 362, 63, 123"
+        },
+        {
+          "index": 330,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Unpacked 1 hay bale into 9 wheat"
+        },
+        {
+          "index": 330,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Crafted 1 bread from 3 wheat at 357, 63, 122"
+        },
+        {
+          "index": 330,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Ate owned minecraft:bread for hunger or healing"
+        },
+        {
+          "index": 330,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Crafted 1 bread from 3 wheat at 357, 63, 122"
+        },
+        {
+          "index": 330,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Crafted 1 bread from 3 wheat at 357, 63, 122"
+        },
+        {
+          "index": 333,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Gathered existing hay at 363, 63, 121"
+        },
+        {
+          "index": 333,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Unpacked 1 hay bale into 9 wheat"
+        },
+        {
+          "index": 333,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Crafted 1 bread from 3 wheat at 357, 63, 122"
+        }
+      ]
+    },
+    {
+      "id": "9bcb6ddf-4238-4531-a3a5-a7dea6d532ce",
+      "name": "Fern-9bcb",
+      "position": [
+        356.717912083817,
+        63.0,
+        134.7334519935865
+      ],
+      "health": 20.0,
+      "food": 1,
+      "inventory": "[35 minecraft:sand]",
+      "foodAccess": {
+        "lastFailure": "native walking step rejected 379, 72, 143 from (379.3014474089906, 74.0, 144.30000001192093) path\u003d1 nodes; end\u003dBlockPos{x\u003d379, y\u003d74, z\u003d144}",
+        "activity": "collecting existing village hay",
+        "arrivals": 0,
+        "digs": 36,
+        "lastPlan": {
+          "visited": 495,
+          "steps": 35,
+          "digs": 10,
+          "table": "357, 63, 122",
+          "gameTime": 32489,
+          "store": "355, 64, 132"
+        }
+      },
+      "breadCrafted": 0,
+      "crafting": "idle",
+      "memories": [
+        {
+          "index": 260,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Seeking existing village hay at 361, 63, 135 with a bounded natural passage plan"
+        },
+        {
+          "index": 260,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Seeking existing village hay at 361, 63, 135 with a bounded natural passage plan"
+        },
+        {
+          "index": 261,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Seeking existing village hay at 355, 64, 132 with a bounded natural passage plan"
+        },
+        {
+          "index": 261,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Seeking existing village hay at 355, 64, 132 with a bounded natural passage plan"
+        }
+      ]
+    }
+  ],
+  "status": "passed",
+  "initialGameTime": 29882,
+  "initial": [
+    {
+      "id": "97d2706c-4143-42bb-bab8-ecd680cafe5a",
+      "name": "Iris-97d2",
+      "position": [
+        359.4909187958009,
+        63.375,
+        122.25978887085064
+      ],
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[]",
+      "foodAccess": {
+        "lastFailure": "none",
+        "activity": "no food access trip",
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {}
+      },
+      "breadCrafted": 0,
+      "crafting": "idle",
+      "memories": [
+        {
+          "index": 125,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Ate owned minecraft:bread for hunger or healing"
+        }
+      ]
+    },
+    {
+      "id": "3c29e5bd-14b7-435c-8737-d49ac9cb7fdb",
+      "name": "Pip-3c29",
+      "position": [
+        360.7187718673749,
+        60.0,
+        131.25673652370128
+      ],
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[27 minecraft:bread]",
+      "foodAccess": {
+        "lastFailure": "none",
+        "activity": "no food access trip",
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {}
+      },
+      "breadCrafted": 0,
+      "crafting": "idle",
+      "memories": [
+        {
+          "index": 184,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Gave one actual minecraft:bread to d3ab9ff6-cec6-4def-a199-92b911261b09"
+        },
+        {
+          "index": 188,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Gave one actual minecraft:bread to d3ab9ff6-cec6-4def-a199-92b911261b09"
+        }
+      ]
+    },
+    {
+      "id": "d3ab9ff6-cec6-4def-a199-92b911261b09",
+      "name": "Sage-d3ab",
+      "position": [
+        360.4140318215075,
+        60.0,
+        135.88326312417811
+      ],
+      "health": 20.0,
+      "food": 15,
+      "inventory": "[]",
+      "foodAccess": {
+        "lastFailure": "none",
+        "activity": "no food access trip",
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {}
+      },
+      "breadCrafted": 0,
+      "crafting": "idle",
+      "memories": [
+        {
+          "index": 159,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Received one actual minecraft:bread from 3c29e5bd-14b7-435c-8737-d49ac9cb7fdb"
+        },
+        {
+          "index": 159,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Ate owned minecraft:bread for hunger or healing"
+        },
+        {
+          "index": 164,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Received one actual minecraft:bread from 3c29e5bd-14b7-435c-8737-d49ac9cb7fdb"
+        },
+        {
+          "index": 164,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Ate owned minecraft:bread for hunger or healing"
+        }
+      ]
+    },
+    {
+      "id": "5d267809-1bbc-434f-a95a-7fd61c8de269",
+      "name": "Alder-5d26",
+      "position": [
+        360.8529965456791,
+        76.0,
+        141.73580927711365
+      ],
+      "health": 15.0,
+      "food": 2,
+      "inventory": "[]",
+      "foodAccess": {
+        "lastFailure": "none",
+        "activity": "no food access trip",
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {}
+      },
+      "breadCrafted": 0,
+      "crafting": "idle",
+      "memories": []
+    },
+    {
+      "id": "9bcb6ddf-4238-4531-a3a5-a7dea6d532ce",
+      "name": "Fern-9bcb",
+      "position": [
+        361.5287015530124,
+        97.0,
+        161.4209632417165
+      ],
+      "health": 20.0,
+      "food": 4,
+      "inventory": "[]",
+      "foodAccess": {
+        "lastFailure": "none",
+        "activity": "no food access trip",
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {}
+      },
+      "breadCrafted": 0,
+      "crafting": "idle",
+      "memories": []
+    }
+  ],
+  "scope": "Actual saved survivors in a COPY; only enables existing hay-foraging option. No actor, food, health, resource or inventory setters; normal native controller work. Observation is not success unless both hungry survivors ate."
+}

@@ -1,0 +1,88 @@
+{
+  "at": "2026-11-07T05:32:39.164191876Z",
+  "game_time": 21462,
+  "night": true,
+  "original_cohort_size": 11,
+  "original_alive": 11,
+  "original_known_dead_or_converted": 0,
+  "original_missing": 0,
+  "sleeping": 7,
+  "outside_beds": [
+    {
+      "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+      "name": "Juniper-231e \u00b7 rest",
+      "health": 20.0,
+      "position": [
+        -234.2795013809144,
+        73.0,
+        766.6314552898982
+      ]
+    },
+    {
+      "uuid": "5894771d-5fcc-45c5-bb4c-4733e2c992c4",
+      "name": "Moss-5894 \u00b7 rest",
+      "health": 20.0,
+      "position": [
+        -205.33094813043073,
+        69.0,
+        750.5180582978116
+      ]
+    },
+    {
+      "uuid": "ca3c6d6a-385e-4ea3-a37d-e54d948d924f",
+      "name": "Willow-ca3c \u00b7 afraid / escaping",
+      "health": 2.0,
+      "position": [
+        -261.5,
+        74.0,
+        745.5
+      ]
+    },
+    {
+      "uuid": "d169dad0-0157-4e1d-bf1c-358845617474",
+      "name": "Alder-d169 \u00b7 rest",
+      "health": 20.0,
+      "position": [
+        -204.52998939594443,
+        69.0,
+        751.2855492176683
+      ]
+    }
+  ],
+  "injured": [
+    {
+      "name": "Fern-5ad3 \u00b7 sheltered",
+      "health": 19.0,
+      "max": 20.0
+    },
+    {
+      "name": "Willow-ca3c \u00b7 afraid / escaping",
+      "health": 2.0,
+      "max": 20.0
+    },
+    {
+      "name": "Ember-d29c \u00b7 sheltered",
+      "health": 19.0,
+      "max": 20.0
+    }
+  ],
+  "golems": [
+    {
+      "name": "Iron Golem",
+      "health": 34.0,
+      "max": 100.0
+    }
+  ],
+  "activity": {
+    "doorsOpened": 11,
+    "doorsClosed": 14,
+    "cropsHarvested": 0,
+    "swordHits": 0
+  },
+  "caveats": [
+    "Sleep/shelter movement is authored, not proof of learned survival.",
+    "A manual dusk clock step was used earlier. This is not a controlled multi-day or baseline-comparison result.",
+    "No successful tool handoff, harvest or sword hit recorded.",
+    "Current health data alone does not establish what caused damage."
+  ]
+}

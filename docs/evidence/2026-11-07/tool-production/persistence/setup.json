@@ -1,0 +1,824 @@
+{
+  "createdUTC": "2026-11-07T13:35:41.048205+00:00",
+  "kind": "CONTROLLED COPY; material handoff, not autonomous resource acquisition",
+  "originalRuntime": "/home/niko/.internal/source/Villagers/runs/construction-sites/play",
+  "fixtureRuntime": "/home/niko/.internal/source/Villagers/runs/tool-production/play",
+  "originalWorldFiles": {
+    "data/collective/itemnametranslation.txt": {
+      "sha256": "76107cde8fa84741012ba9f19fc823eebbdfe7c568261d5d72072303ae314927",
+      "size": 12
+    },
+    "data/fabric/registry_entries.dat": {
+      "sha256": "577826398ba90d6f975055690fcc90ce615fc5284988b2ddc5e7fa970f115bca",
+      "size": 288
+    },
+    "data/minecraft/custom_boss_events.dat": {
+      "sha256": "36656630921f70e010eb05f2300473144a420af9dc3bb600ab2797990102a0bc",
+      "size": 49
+    },
+    "data/minecraft/game_rules.dat": {
+      "sha256": "f22c7825a0997167b077dd467f518e98fc4d7a1c64329949f05e206abe4d3ec5",
+      "size": 883
+    },
+    "data/minecraft/random_sequences.dat": {
+      "sha256": "8df8c2d0a16a4aa71ce2c35656f24789ab4ccb3781d85ea385e3d7d056067bbd",
+      "size": 478
+    },
+    "data/minecraft/scheduled_events.dat": {
+      "sha256": "70476d0306cb312e7381ce2fd5eec50bf6c1ea2f352a9ae7d8fd1b650540abd9",
+      "size": 58
+    },
+    "data/minecraft/scoreboard.dat": {
+      "sha256": "4543afc2da4f46a89fabf520867459aa1bcfef94e3963b92cf632ef5fab2c6f2",
+      "size": 230
+    },
+    "data/minecraft/stopwatches.dat": {
+      "sha256": "15ca4b57ca52582a4ca9118e7d1cd8f22cb829482343375b09ee271397b7efcf",
+      "size": 64
+    },
+    "data/minecraft/wandering_trader.dat": {
+      "sha256": "5ddf44c6a53cfa73a444a48e9fef844e18d3fd301b9f1c19afb2c65f81cb9357",
+      "size": 81
+    },
+    "data/minecraft/weather.dat": {
+      "sha256": "aadc03e243a90816223771ffbc7bb38fde0cd204ac696085135e008c34f2122a",
+      "size": 111
+    },
+    "data/minecraft/world_clocks.dat": {
+      "sha256": "46b19135eb5c3dbea31c904019eccd7e4d40e27244a0649b10bef8118ea41964",
+      "size": 107
+    },
+    "data/minecraft/world_gen_settings.dat": {
+      "sha256": "70c339b0d3ab28652452827df9d9459d40077c0e5e835a97d4548d31772c3065",
+      "size": 241
+    },
+    "dimensions/minecraft/overworld/data/minecraft/chunk_tickets.dat": {
+      "sha256": "36656630921f70e010eb05f2300473144a420af9dc3bb600ab2797990102a0bc",
+      "size": 49
+    },
+    "dimensions/minecraft/overworld/data/minecraft/raids.dat": {
+      "sha256": "1d0a0e21536c06a5c45ff8aa654c063bc3e343cd3c2798950f42bfce35334767",
+      "size": 74
+    },
+    "dimensions/minecraft/overworld/data/minecraft/world_border.dat": {
+      "sha256": "64aa688e75359504feb84ae0e0ef97e80e8b8d5b5dd7438f495aeb1012f5eb54",
+      "size": 170
+    },
+    "dimensions/minecraft/overworld/entities/r.-1.-1.mca": {
+      "sha256": "72ec0ff2533a47635d24989fae8462eb71216ce98a8d68977e236731fe9ee669",
+      "size": 20480
+    },
+    "dimensions/minecraft/overworld/entities/r.-1.0.mca": {
+      "sha256": "bdb2188483acde8512efd34728e925ebc89f3a76f0e5a7d2d54b0d2c2348c71f",
+      "size": 81920
+    },
+    "dimensions/minecraft/overworld/entities/r.-1.1.mca": {
+      "sha256": "1549a4b8ea6ff8b0df445c214ccad9d1491e45c203e1f5ab2bb6ba575787f747",
+      "size": 958464
+    },
+    "dimensions/minecraft/overworld/entities/r.-1.2.mca": {
+      "sha256": "bf3cbdca55ebeb782030f89490190a83c1ce07d990d916f7b5d96005ea8a77ad",
+      "size": 28672
+    },
+    "dimensions/minecraft/overworld/entities/r.-2.1.mca": {
+      "sha256": "431e043aa3a09e5deac64fcc12ecd05c08339848d2bc561fa80d4f64d03e78b2",
+      "size": 16384
+    },
+    "dimensions/minecraft/overworld/entities/r.-2.2.mca": {
+      "sha256": "6d73d465e13c95b6517d4d43c98dab882eb4e24be4d561f688f43ac893baab5b",
+      "size": 16384
+    },
+    "dimensions/minecraft/overworld/entities/r.0.-1.mca": {
+      "sha256": "962475e4a78c53a74e86386e6052f8d47e346c0164a14b00fc72ab10ba4d05cc",
+      "size": 20480
+    },
+    "dimensions/minecraft/overworld/entities/r.0.0.mca": {
+      "sha256": "819eae86a4b9df2d3583069c09329aa9bd897f53d31224351bb1743c439bfe0b",
+      "size": 20480
+    },
+    "dimensions/minecraft/overworld/entities/r.0.1.mca": {
+      "sha256": "55e30c7ac34195899d37304db0454151390e94c221339b93a1ae13686d26ec03",
+      "size": 69632
+    },
+    "dimensions/minecraft/overworld/poi/r.-1.1.mca": {
+      "sha256": "a9c9b1b87fc7f8d552d044f32fbbaed604f2acc186be78dad043226fb5474293",
+      "size": 167936
+    },
+    "dimensions/minecraft/overworld/poi/r.-1.2.mca": {
+      "sha256": "5f921799a4d35259f5726de2007cb5af102bfa108887be6316d5fcbc7a427b88",
+      "size": 57344
+    },
+    "dimensions/minecraft/overworld/poi/r.-2.1.mca": {
+      "sha256": "f90db191bd55e5839866d551f8e6fa0398dc941a9f1985553f0c9a5cf4019eac",
+      "size": 28672
+    },
+    "dimensions/minecraft/overworld/poi/r.0.1.mca": {
+      "sha256": "dc45713503be5f1c5eaae815656afe83c32f3647532390196cbf2f4bb05e6e80",
+      "size": 77824
+    },
+    "dimensions/minecraft/overworld/region/r.-1.-1.mca": {
+      "sha256": "90ade6529db95ea8c4e7ffe5935f82d7c59aec9e9a282fd1bf37625c3c0172e0",
+      "size": 1048576
+    },
+    "dimensions/minecraft/overworld/region/r.-1.0.mca": {
+      "sha256": "4130e2c4765403dde1ca3725e6788373a88f28818a3b9a8095f4fdef53e7a888",
+      "size": 4427776
+    },
+    "dimensions/minecraft/overworld/region/r.-1.1.mca": {
+      "sha256": "8072e1424fd33571e9fd55b6f8712ec4ab04ae7f559bae78daf8c63321d01b41",
+      "size": 12869632
+    },
+    "dimensions/minecraft/overworld/region/r.-1.2.mca": {
+      "sha256": "75012e2225311266f8bfe9041749c5de5c9ec5b6045b02505f17452933f14a7a",
+      "size": 3940352
+    },
+    "dimensions/minecraft/overworld/region/r.-2.0.mca": {
+      "sha256": "396d3f3b4bf28a12b981fb8427dc382b1e9e553db03ad09156e8670fc9baf79d",
+      "size": 1081344
+    },
+    "dimensions/minecraft/overworld/region/r.-2.1.mca": {
+      "sha256": "98b4012bcef60d9304e4e0378b60446c3306b57e8adac87124ab1518adf6eec0",
+      "size": 3432448
+    },
+    "dimensions/minecraft/overworld/region/r.-2.2.mca": {
+      "sha256": "ad79695f8463f8307b56b11004e014f670f3d0385f728410216af049dfdf240d",
+      "size": 1073152
+    },
+    "dimensions/minecraft/overworld/region/r.0.-1.mca": {
+      "sha256": "f724e276648067ecc8fab4a935bfdc9f15e82cc805e3fd6d9b0b08b1c81d727c",
+      "size": 1101824
+    },
+    "dimensions/minecraft/overworld/region/r.0.0.mca": {
+      "sha256": "8137a4eec21c308896f0695550584f965db083f40ead82cdf7ffa0d8c4c5e3ef",
+      "size": 2703360
+    },
+    "dimensions/minecraft/overworld/region/r.0.1.mca": {
+      "sha256": "c16fd96bb4a55324a2aae5f048629f1b3904e7225e6a8826f5cce510234aea4f",
+      "size": 5365760
+    },
+    "dimensions/minecraft/overworld/region/r.0.2.mca": {
+      "sha256": "81d1ae657a66461eba55dee98157907082fd3b9b54a6dcffdc313fa2e9b552d4",
+      "size": 1515520
+    },
+    "dimensions/minecraft/the_end/data/minecraft/chunk_tickets.dat": {
+      "sha256": "36656630921f70e010eb05f2300473144a420af9dc3bb600ab2797990102a0bc",
+      "size": 49
+    },
+    "dimensions/minecraft/the_end/data/minecraft/ender_dragon_fight.dat": {
+      "sha256": "eaa21931142c2b045e565be0c2cf1b330fc5b2067f33d47762f27af116ad528a",
+      "size": 161
+    },
+    "dimensions/minecraft/the_end/data/minecraft/raids.dat": {
+      "sha256": "1d0a0e21536c06a5c45ff8aa654c063bc3e343cd3c2798950f42bfce35334767",
+      "size": 74
+    },
+    "dimensions/minecraft/the_end/data/minecraft/world_border.dat": {
+      "sha256": "64aa688e75359504feb84ae0e0ef97e80e8b8d5b5dd7438f495aeb1012f5eb54",
+      "size": 170
+    },
+    "dimensions/minecraft/the_nether/data/minecraft/chunk_tickets.dat": {
+      "sha256": "36656630921f70e010eb05f2300473144a420af9dc3bb600ab2797990102a0bc",
+      "size": 49
+    },
+    "dimensions/minecraft/the_nether/data/minecraft/raids.dat": {
+      "sha256": "1d0a0e21536c06a5c45ff8aa654c063bc3e343cd3c2798950f42bfce35334767",
+      "size": 74
+    },
+    "dimensions/minecraft/the_nether/data/minecraft/world_border.dat": {
+      "sha256": "64aa688e75359504feb84ae0e0ef97e80e8b8d5b5dd7438f495aeb1012f5eb54",
+      "size": 170
+    },
+    "icon.png": {
+      "sha256": "205e138965033aa8e21c01bb483d852cd371ca4f34d345777cf99f2eec91cb90",
+      "size": 8611
+    },
+    "level.dat": {
+      "sha256": "ca8e086ad63092e70bb5f18c64f38c70eb63797223c88347e29177cf70885853",
+      "size": 636
+    },
+    "level.dat_old": {
+      "sha256": "c2d05229acf3da5639a9ae5dd9ace21fdf1ee2115280688c1176a69a9f7a98c3",
+      "size": 637
+    },
+    "players/advancements/6609fea5-c92a-359b-acb7-1ab63051aa33.json": {
+      "sha256": "857f1ae46238fd3b303b8e1d7ea6a14f10f484641a11e490cf24b7b2a99033b2",
+      "size": 325
+    },
+    "players/advancements/94efbd7f-e7c0-3290-941a-38cea9cc0b31.json": {
+      "sha256": "93b9924305967eadd7435d91d249badb28bdd6e4704aac670ce1b43d81f7bd12",
+      "size": 325
+    },
+    "players/data/6609fea5-c92a-359b-acb7-1ab63051aa33.dat": {
+      "sha256": "b29d4432fa09d0fa578baf4fb81aed6a202d780d8a376636f9b575ccd7459812",
+      "size": 788
+    },
+    "players/data/6609fea5-c92a-359b-acb7-1ab63051aa33.dat_old": {
+      "sha256": "b29d4432fa09d0fa578baf4fb81aed6a202d780d8a376636f9b575ccd7459812",
+      "size": 788
+    },
+    "players/data/94efbd7f-e7c0-3290-941a-38cea9cc0b31.dat": {
+      "sha256": "be37175cd0e6dbc0c2537039ebbad0afff312a55a0a853615f3705b2fcb1fcb5",
+      "size": 801
+    },
+    "players/stats/6609fea5-c92a-359b-acb7-1ab63051aa33.json": {
+      "sha256": "f50cd849ad63cfbb6c7d0170e891a35c58d814b2840d09528a5372a87b1e39b5",
+      "size": 308
+    },
+    "players/stats/94efbd7f-e7c0-3290-941a-38cea9cc0b31.json": {
+      "sha256": "dd83f9df4164aee6842ebe9c461f530b4952c6073bcfeb41f31b9095808b87dc",
+      "size": 337
+    },
+    "serverconfig/readme.txt": {
+      "sha256": "b1022ab932f8f0ea0cf78d9f312e95b85a4f96f59ca430e63f9a435e512d1186",
+      "size": 469
+    },
+    "villagers/02b0b914-c640-48c3-8fee-df600f34991e/mind.json": {
+      "sha256": "50296fd0899812b6245190a87e5d569aa5500fa0ead1b64b7c2ee21efffa2711",
+      "size": 16820
+    },
+    "villagers/1e1a7861-7b3a-4be0-8499-c0bcada07d1a/mind.json": {
+      "sha256": "4b2f5ab7bb35afb6a42d87080ff4f0483520915da3436001d339fe025122394e",
+      "size": 17515
+    },
+    "villagers/231e4c00-19df-4be5-a5ba-5ebc6d29e27f/mind.json": {
+      "sha256": "9729dc3dd8e30d522e6918a5b300b8ade18e39673866ae572dd16fb230d32508",
+      "size": 17603
+    },
+    "villagers/5894771d-5fcc-45c5-bb4c-4733e2c992c4/mind.json": {
+      "sha256": "15203154c7408b8883c88bc6f2f2b3369402e72a5c77983b059a496837f3c22c",
+      "size": 17746
+    },
+    "villagers/589b708d-b768-4a61-a59e-910db084b079/mind.json": {
+      "sha256": "821ad71141ec739777cef538a79eaa3f4d7660f77bf112369762cbe362023752",
+      "size": 17101
+    },
+    "villagers/5ad3aad5-3e4b-4eb6-8158-87731868dc03/mind.json": {
+      "sha256": "0053ece778e3f252b74dacf6749c488ec3f7a23679c40ad23c918ba8b68efc3d",
+      "size": 21719
+    },
+    "villagers/8d572a22-a431-47a1-b419-b12ab59b4e35/mind.json": {
+      "sha256": "4c299b53ea6a1ed0f5727ef6ac6910554b93f43746d169b493746c089e653a8c",
+      "size": 16901
+    },
+    "villagers/c7c31152-34a1-4edd-bd84-e48f50f86088/mind.json": {
+      "sha256": "80081f7012652770b245db6491aefc1c50068b155ee79ee82cb1f85272cefb5e",
+      "size": 20208
+    },
+    "villagers/ca3c6d6a-385e-4ea3-a37d-e54d948d924f/mind.json": {
+      "sha256": "6384d1857f341e3fa2ef7619c6b7e9b5f82543a214234fa18adbd3c4796dfc89",
+      "size": 17557
+    },
+    "villagers/construction-evidence/outside-touch-38349.json": {
+      "sha256": "5ec795748817e48fc1ad4de561317ac450b0ab3e4ecdf5d2b5a10cd131923aa4",
+      "size": 167
+    },
+    "villagers/crafting-evidence/craft-1794037626520.json": {
+      "sha256": "798fe515f5e66d9d517724cac3f28d695b26ef29dfd5c42481474cfac3b841d3",
+      "size": 1047
+    },
+    "villagers/crafting-evidence/craft-1794037643016.json": {
+      "sha256": "a21265d3d479736d84e429fcd74049221c397e5e43dd9f2a75e0d506356bbb53",
+      "size": 631
+    },
+    "villagers/d169dad0-0157-4e1d-bf1c-358845617474/mind.json": {
+      "sha256": "6b31b29b142d869018de7cb8f02dd2d77668abf5ff0b0886fa92376398af30e3",
+      "size": 16699
+    },
+    "villagers/d29c199f-5202-4fbc-97f9-92023489d70f/mind.json": {
+      "sha256": "3fc7c0765e69a907b73ae63cc354601243e0c13299221e4d426a15f05d664624",
+      "size": 18098
+    },
+    "villagers/e358e923-f9d2-4d5b-a04b-b2531c8f02d9/mind.json": {
+      "sha256": "ef2b89d485895a6d89f7ab77e322a12fbe4f98e6f6ddd093678992f6b4241374",
+      "size": 21313
+    },
+    "villagers/family-evidence/before-food-17339-117582574433288.json": {
+      "sha256": "a170c28eca76f8e4c406620b9c7ea8be87664f6faa506656be73bd090fbdaede",
+      "size": 271771
+    },
+    "villagers/family-evidence/before-food-17700-117600583457081.json": {
+      "sha256": "cc6fab0fb6fc79ca560e87f5ffa61d2aa7cb29d2e0e0fc769a43230335c48b8b",
+      "size": 272458
+    },
+    "villagers/family-evidence/before-food-18999-117665547531349.json": {
+      "sha256": "c3bca8335f2622c6decb4108da5659069a5b6a36c00c05912ecc4450f8d0dfc2",
+      "size": 273328
+    },
+    "villagers/family-evidence/before-food-19019-117666547554333.json": {
+      "sha256": "f0bdac70d5dbe8cc694f4245d7238b3101c63a6a38114d7423f3126d6f5cae21",
+      "size": 275195
+    },
+    "villagers/family-evidence/before-food-33118-130490565282904.json": {
+      "sha256": "e3f951cfe20b3928871525e5c3e78f081a6ca328db43e3fa6c11091a17987cd6",
+      "size": 476
+    },
+    "villagers/family-evidence/before-food-33118-130490575507825.json": {
+      "sha256": "db62ebeb3c8c96df95c0ac8b81976d4a1b4115e7a0fb466006fba6c66fb6d7c1",
+      "size": 30984
+    },
+    "villagers/family-evidence/birth-transition-36379-130922522804567.json": {
+      "sha256": "ae1549402e67ac3eb89b2003995b46b068a5f4f19c774a128d500686be5ece0b",
+      "size": 138379
+    },
+    "villagers/family-evidence/birth-transition-36733-131139499855849.json": {
+      "sha256": "ba43a1653cfd96cec611581d0be15372006aa63d208b14296cc4c1e813b8e9a0",
+      "size": 81617
+    },
+    "villagers/family-evidence/birth-transition-38952-136202753877172.json": {
+      "sha256": "2f52d321f0fb9b5bfa7fed553a1443ee33b92243ab1dc803a091fb124a1fd57c",
+      "size": 58882
+    },
+    "villagers/family-evidence/birth-transition-39762-136520624168637.json": {
+      "sha256": "ab75c5086e89b95c7cf05138dc6d30723d330bcb34aa1ed352b05c18f24bfe9b",
+      "size": 115615
+    },
+    "villagers/family-evidence/feed-17339-117582577931200.json": {
+      "sha256": "3ace41920a5b46b03a54fc9153aa277b3a878d6cdce1a3bb6358575eebcfd2ea",
+      "size": 272417
+    },
+    "villagers/family-evidence/feed-17700-117600589258105.json": {
+      "sha256": "1c0e98fb0986948b678438931abcc6527a07e2c84a2e3a7bbaa57ceba25b312e",
+      "size": 273116
+    },
+    "villagers/family-evidence/feed-18999-117665550580352.json": {
+      "sha256": "f55798c3f0d163d738b8228fc1fa446ea3f2ed5cb412818d91e03071c3405a65",
+      "size": 275166
+    },
+    "villagers/family-evidence/feed-19019-117666550620186.json": {
+      "sha256": "93eb6c77f093152ef05a623d65fca88dc37b76321ba29bfae4169a3c16f4f8c9",
+      "size": 277032
+    },
+    "villagers/family-evidence/feed-33118-130490572110138.json": {
+      "sha256": "db62ebeb3c8c96df95c0ac8b81976d4a1b4115e7a0fb466006fba6c66fb6d7c1",
+      "size": 30984
+    },
+    "villagers/family-evidence/feed-33118-130490578858624.json": {
+      "sha256": "eaf1df71906a84156a0e923d9b0a4d41e6c4d4228b052c098bc1411a0c43124c",
+      "size": 59382
+    },
+    "villagers/family-evidence/nursery-19479-117689554097860.json": {
+      "sha256": "500486dafd7c7881c069371c8f522ccdf1ba4fbd6a215096968cc7fbd80e30fd",
+      "size": 277061
+    },
+    "villagers/family-evidence/status-16239-117527567119890.json": {
+      "sha256": "a2bf0818f845a5df5b69c0132e424926e362d41cdf27ada81f80cf8c37945f2b",
+      "size": 271914
+    },
+    "villagers/family-evidence/status-16669-117549056581422.json": {
+      "sha256": "caf7646f5940a2ae4e51e60f01ce7a425ee78ce5bd5fdef55c62f6d4649b24bc",
+      "size": 271997
+    },
+    "villagers/family-evidence/status-17329-117582073472072.json": {
+      "sha256": "14090d02e92d02e1113b99a108e977562640658aa5777801994785ce920fd356",
+      "size": 271787
+    },
+    "villagers/family-evidence/status-17689-117600073915155.json": {
+      "sha256": "d12938263479255acf21f4d24a2238b89e3199425d8619029d6a4b8490af5731",
+      "size": 272480
+    },
+    "villagers/family-evidence/status-18100-117620578584579.json": {
+      "sha256": "a61c30903efb523eeee76f654076624edcaa3b47e493f7e0eccd89a8614a81da",
+      "size": 273180
+    },
+    "villagers/family-evidence/status-18320-117631578161289.json": {
+      "sha256": "af6a7e6137392747d05ba3e430601d20fc2e52a26b6bd2e9a7df23cfe70b6bb8",
+      "size": 273333
+    },
+    "villagers/family-evidence/status-18340-117632578650736.json": {
+      "sha256": "5ccad74f1ae1cfa95b954a27a5ac65b6ebb1fb2b4d827bb8cd5598f9858203ff",
+      "size": 273333
+    },
+    "villagers/family-evidence/status-18689-117650044059487.json": {
+      "sha256": "686b6369d1cc5b4250aab84cd4357aa56d3dad5acef38967d533b84b430d37bd",
+      "size": 273298
+    },
+    "villagers/family-evidence/status-18989-117665047108367.json": {
+      "sha256": "64bf4b98083707f9145afa432b49933cc9d67e556913958da070b71227ed4bd2",
+      "size": 273380
+    },
+    "villagers/family-evidence/status-19009-117666047174539.json": {
+      "sha256": "d696d72f88f05225986c6a9b606438a7dd8135e96d8926cb227fe08eab2e879e",
+      "size": 275168
+    },
+    "villagers/family-evidence/status-19229-117677054607805.json": {
+      "sha256": "91c5cdb86d612d66798d175c81f8defc94b8e7dcbb0fed065fe24eec551935f3",
+      "size": 276914
+    },
+    "villagers/family-evidence/status-19479-117689556194877.json": {
+      "sha256": "500486dafd7c7881c069371c8f522ccdf1ba4fbd6a215096968cc7fbd80e30fd",
+      "size": 277061
+    },
+    "villagers/family-evidence/status-19849-117708053025838.json": {
+      "sha256": "558925273497fff18524cf15690792693a2bdf9830fbfb1382bb178ac217c25f",
+      "size": 277171
+    },
+    "villagers/family-evidence/status-20649-117748052992574.json": {
+      "sha256": "5762518143cf678c55550b91d65075942431e49bea745d2155eb9b28ae06e1df",
+      "size": 277144
+    },
+    "villagers/family-evidence/status-21399-117785552767812.json": {
+      "sha256": "7b452b0a5d686a494557654aa0b8a6b6a2b5014bf8c0ccfab336400ad579d3eb",
+      "size": 277934
+    },
+    "villagers/family-evidence/status-22489-117840053240301.json": {
+      "sha256": "664af59b4efa75a988a32890e4dcb1afec4685160a0ab4421b897e77411dd331",
+      "size": 278121
+    },
+    "villagers/family-evidence/status-24179-117924560873822.json": {
+      "sha256": "2930416e3a184d922e9a2e97c86d5f22662f67cdb49bfb42e0f06d81eb628f4b",
+      "size": 279511
+    },
+    "villagers/family-evidence/status-25669-117999062162953.json": {
+      "sha256": "aa7e95a2a3e81e4156304d99dfc768e5480a652e983cdb9ffbd844f6ada23711",
+      "size": 279813
+    },
+    "villagers/family-evidence/status-26359-120521889825185.json": {
+      "sha256": "c76eddc95c421c200e8590397ab022ab30bb3d436ad90def30ffa796b15d33e7",
+      "size": 282280
+    },
+    "villagers/family-evidence/status-27769-120592383921868.json": {
+      "sha256": "0683588183656de92de3e58a6e5fb79f6d0f17e95fb34447905f40d9271e82ab",
+      "size": 258773
+    },
+    "villagers/family-evidence/status-29369-120672385070637.json": {
+      "sha256": "45d347cee2eedad652668c6078735b0cc5d38ede8b6b2e573573789ce28e28b2",
+      "size": 135441
+    },
+    "villagers/family-evidence/status-30686-124514172511195.json": {
+      "sha256": "3e1d23bda28716a1c2d5957dd6c88f285d995aed6c05e30c30590b816ffd679b",
+      "size": 135491
+    },
+    "villagers/family-evidence/status-31795-124649910672339.json": {
+      "sha256": "8fb927398a5cb191a2fdf3f0f2018508156c01e7c36efe96be573db9d1e0fa0e",
+      "size": 135685
+    },
+    "villagers/family-evidence/status-33118-130490581866080.json": {
+      "sha256": "eaf1df71906a84156a0e923d9b0a4d41e6c4d4228b052c098bc1411a0c43124c",
+      "size": 59382
+    },
+    "villagers/family-evidence/status-35469-130608126335066.json": {
+      "sha256": "3068a31145c62df3a668e6a0f781cec9f311a25dece4d52d86347d15253a0931",
+      "size": 115120
+    },
+    "villagers/family-evidence/status-35524-130879793750758.json": {
+      "sha256": "4025949b5763ada612abe0d74a1d803e5cca9196de1ec17080acc2df41409ae7",
+      "size": 476
+    },
+    "villagers/family-evidence/status-36731-131139080614457.json": {
+      "sha256": "b921eeede75aaf29de84606b40124ae5afc5318993cf8fbd8c2481cacbb8e47c",
+      "size": 18840
+    },
+    "villagers/family-evidence/status-37139-133073513998433.json": {
+      "sha256": "16d5086eeb781987ab3f3f8ad56752343275b55768aca20fd7e7cbe129a18c6d",
+      "size": 57592
+    },
+    "villagers/family-evidence/status-38349-135785753797812.json": {
+      "sha256": "1fc67fca45c77303d4d6ba300ae337bdddabe962fcdf48fea75ed85eb077fc4a",
+      "size": 55188
+    },
+    "villagers/family-evidence/watch-only-25988-120503536827493.json": {
+      "sha256": "519d9d423c396a31a2fbdf937d7f815cc69a5193ac8dea8f85c8c28f496623b2",
+      "size": 25293
+    },
+    "villagers/family-evidence/watch-only-29724-124466366710634.json": {
+      "sha256": "c40bd17d5532daa6944342ed1fd29141b978429bcd365027b0ca2f5da085a8d9",
+      "size": 454
+    },
+    "villagers/family-evidence/watch-only-31035-124612187443028.json": {
+      "sha256": "2e3018f8f0213833aa74b34a8b68476ea06276728b38729d9a186598202f4687",
+      "size": 454
+    },
+    "villagers/family-evidence/watch-only-31913-126113808069982.json": {
+      "sha256": "569c5b98d2d43f1849e53d909d018d45e3d852af47d32ced08b25587f9ffc5ab",
+      "size": 29718
+    },
+    "villagers/family-evidence/watch-only-33118-130490561021468.json": {
+      "sha256": "e3f951cfe20b3928871525e5c3e78f081a6ca328db43e3fa6c11091a17987cd6",
+      "size": 476
+    },
+    "villagers/family-evidence/watch-only-35524-130879792740853.json": {
+      "sha256": "4025949b5763ada612abe0d74a1d803e5cca9196de1ec17080acc2df41409ae7",
+      "size": 476
+    },
+    "villagers/family-evidence/watch-only-36731-131139076527984.json": {
+      "sha256": "b921eeede75aaf29de84606b40124ae5afc5318993cf8fbd8c2481cacbb8e47c",
+      "size": 18840
+    },
+    "villagers/family-evidence/watch-only-37139-133073509343444.json": {
+      "sha256": "16d5086eeb781987ab3f3f8ad56752343275b55768aca20fd7e7cbe129a18c6d",
+      "size": 57592
+    },
+    "villagers/family-evidence/watch-only-38349-135785749927647.json": {
+      "sha256": "1fc67fca45c77303d4d6ba300ae337bdddabe962fcdf48fea75ed85eb077fc4a",
+      "size": 55188
+    },
+    "villagers/family-evidence/watch-only-38950-136202692147198.json": {
+      "sha256": "47111669002f2550b7942610f6f431030b537ee30c165e7062428327862ac811",
+      "size": 477
+    },
+    "villagers/family-evidence/watch-only-39753-136520399578767.json": {
+      "sha256": "474eb933540ae9bab817671e6d8e05f5968d2a2d43c572b7bbc15c4ed290402a",
+      "size": 477
+    },
+    "villagers/players/6609fea5-c92a-359b-acb7-1ab63051aa33.json": {
+      "sha256": "c708d4d9a3038f3b6bcd4aa9a58794947ce2f044135d7bb4d04a09cbb8cae350",
+      "size": 1273
+    },
+    "villagers/recoveries.json": {
+      "sha256": "c93b00d76018bbfd0a014267cd8f7ba52df1f9e8821a722b048cdd6636555919",
+      "size": 42
+    },
+    "villagers/social-evidence/gift-1794031951631-b7e656a5.json": {
+      "sha256": "91027903655802937c80a4befea9ea0788fb20921ab92610c1d9f22677232b2f",
+      "size": 2921
+    },
+    "villagers/social-evidence/harm-1794032008152-6660f72e.json": {
+      "sha256": "cbebab29cb2e1121bd95eb3f66213267a85f3af9486e91837e13915d1bf0a0c9",
+      "size": 3209
+    },
+    "villagers/social-evidence/probe-state.json": {
+      "sha256": "694c881b20dfc15d033e82a0ee40d403d8a0589b054b8bb8ff53c59ac66bab20",
+      "size": 135
+    },
+    "villagers/social-evidence/start-1794031935143-eb853e55.json": {
+      "sha256": "5e5e62e652a6c2387c470c1a145edf1a2c13431232614c96421f6a3c61784d6d",
+      "size": 2188
+    },
+    "villagers/social-evidence/start-1794032059145-3868a469.json": {
+      "sha256": "411154724a1902f0d28376b451dc97d30653dea1342964fcf2acf273a240ccfe",
+      "size": 3192
+    },
+    "villagers/social-evidence/start-1794037626516-a7e1015b.json": {
+      "sha256": "fe9e98755c75f5a1c8c3ac5109bd0dc1d664e771215bf4e7ce7b480a0404618e",
+      "size": 3567
+    },
+    "villagers/social-evidence/status-1794031951629-32742448.json": {
+      "sha256": "f604ef39aac76ee1c43c42a213057143a3d48a3b694ea1c54b7aca1cf13d0912",
+      "size": 2526
+    },
+    "villagers/social-evidence/status-1794032008153-ff9c1d8e.json": {
+      "sha256": "7f4f8e96247aa9a6e91845995bfa1d8366f0b391211731fc44f81b91bc93f75d",
+      "size": 3059
+    },
+    "villagers/social-evidence/status-1794032045622-f77e24e4.json": {
+      "sha256": "bb896950ab99037a94c7ea6b0cce88204415ccee088896896cf1618f2f32d675",
+      "size": 3061
+    },
+    "villagers/social-evidence/status-1794032068146-4f4e4585.json": {
+      "sha256": "f7d521f8098459c4b223b0641ba7597ddf66aa7f3d6fea663e2bdfaebf9168ad",
+      "size": 3221
+    },
+    "villagers/social-evidence/status-1794032218287-4f8b93f0.json": {
+      "sha256": "01469b98b9c693dd0fc8aef0bf85b71619b86aec899c976f4c58fd2dac075096",
+      "size": 3213
+    },
+    "villagers/training-checkpoint.json": {
+      "sha256": "b669c3950a429e2be77c0aa1c17ccb3171457a89d6021a2fdfd90438138d9c9c",
+      "size": 216
+    },
+    "villagers/training-evidence/play-2026-11-07T06-12-12.876719142Z-a2f9510a/status.json": {
+      "sha256": "0e0b6b4ce38f2a2e8ff831343325afbad0cb867422e92177d03707092ed42b8b",
+      "size": 4295
+    },
+    "villagers/training-evidence/play-2026-11-07T06-12-12.876719142Z-a2f9510a/ticks.jsonl": {
+      "sha256": "8b255eba49519d8d6db31954ad551f1cb57b1aa358d14c4d771af1dbb23973c9",
+      "size": 6772
+    },
+    "villagers/training-evidence/play-2026-11-07T06-16-39.086004109Z-dec2d1f3/status.json": {
+      "sha256": "a5eae46193823d625712bf93b6ae64479678bed9243ca0d2d7756c8d488da202",
+      "size": 4296
+    },
+    "villagers/training-evidence/play-2026-11-07T06-16-39.086004109Z-dec2d1f3/ticks.jsonl": {
+      "sha256": "6e531e3ca2a6c222c5c85a287f250364bfbef6ff7b9ea280a4f5cafca5f6d829",
+      "size": 6770
+    },
+    "villagers/training-evidence/play-2026-11-07T07-36-48.042031785Z-1b13d1e4/status.json": {
+      "sha256": "5e1b56d7eebd9fc16370a2387723b4fc97eb9837e9b3b8f8fea52e505d0bd7ea",
+      "size": 3512
+    },
+    "villagers/training-evidence/play-2026-11-07T07-36-48.042031785Z-1b13d1e4/ticks.jsonl": {
+      "sha256": "afc43918d08e794d75c34cf1d1fde30fae129e344821781585f877a86e5c871d",
+      "size": 57711
+    },
+    "villagers/village-evidence/after-adoption-1265.json": {
+      "sha256": "d2f2d8d4c7a2e1dd5601e654bbb5a4b6bb307c4d45142ae2125c80d60c712887",
+      "size": 117912
+    },
+    "villagers/village-evidence/baseline.json": {
+      "sha256": "c406544b7db183a073ba7f0487ce1ba06d37e5dedfb95a211278ff3eede42e98",
+      "size": 135988
+    },
+    "villagers/village-evidence/census.jsonl": {
+      "sha256": "4e48151e9130436109497758c94082142169935105139ace8e4ea87383f02ac9",
+      "size": 15821790
+    },
+    "villagers/village-evidence/harvest-probe-1794036994474.json": {
+      "sha256": "cc501f7e377571cc0a69431616949d55ca66da6c16726226b878255042cb84af",
+      "size": 1050
+    },
+    "villagers/village-evidence/latest.json": {
+      "sha256": "ce46bc712f0fa9002fbcb59ad0f4008206c480e458cd4798d310fe1f96dcb96f",
+      "size": 92584
+    },
+    "villagers/village-evidence/lifecycle.jsonl": {
+      "sha256": "f01bb53ef18a60a89d51582013cc796d335236c0d859a494d81bc667eb7ee949",
+      "size": 16226
+    },
+    "villagers/village-evidence/requested-10302.json": {
+      "sha256": "a573744bed842f86f622e82139f624b85335ed004822fba84cddf6f0043d50fc",
+      "size": 122892
+    },
+    "villagers/village-evidence/requested-11433.json": {
+      "sha256": "15e202b6b47187961f3736c5b7e9048e59b92db275c042bc410e08f6500bd97f",
+      "size": 123120
+    },
+    "villagers/village-evidence/requested-12245.json": {
+      "sha256": "b4d4f90f65b8de78498c3a5d27f041eceef5a83d659a0bb7d8760d2cbf1e758b",
+      "size": 123241
+    },
+    "villagers/village-evidence/requested-12730.json": {
+      "sha256": "b7f3c72e6f3b13a90ef8ec7160831f480429e66c4da379ded2bdead98df15d6e",
+      "size": 122823
+    },
+    "villagers/village-evidence/requested-13280.json": {
+      "sha256": "17b9a2db2164d4833d011e5cdef80420e825b5701d22130e036a62353ab9b2c2",
+      "size": 122823
+    },
+    "villagers/village-evidence/requested-15500.json": {
+      "sha256": "3713fe43f673ae2256bac2ebb361e81355b3a0f49cde11320a6583e4e4d6b20b",
+      "size": 123053
+    },
+    "villagers/village-evidence/requested-20649.json": {
+      "sha256": "44ce74d7790be36a70b165bc61da0e725da5f60da02c0f9f68892298eaaa8fdb",
+      "size": 123162
+    },
+    "villagers/village-evidence/requested-24179.json": {
+      "sha256": "3072f54640ad452fce3cfadea175353fb9f6d84697ed56697cc3a7169aeb32b0",
+      "size": 123155
+    },
+    "villagers/village-evidence/requested-26360.json": {
+      "sha256": "1ee4c0fc2074dcc8644bfa616e59fce37d3332fe93037283c7021f2241edf05f",
+      "size": 123221
+    },
+    "villagers/village-evidence/requested-28279.json": {
+      "sha256": "90a0ab54027cc55ccc47de3c6dfcc8cb822482a5ae000fd18dcb3fd9cfaec97c",
+      "size": 102778
+    },
+    "villagers/village-evidence/requested-29370.json": {
+      "sha256": "53a3fa922ac0734ce64ddbf84cc7ea60cd1969e49b54863533ed1aa918967cca",
+      "size": 92607
+    },
+    "villagers/village-evidence/requested-29724.json": {
+      "sha256": "1cd568efcad89dddd0dc2563e0583b18a5253b5771b7eb4979f3d4cc8472bbc5",
+      "size": 91786
+    },
+    "villagers/village-evidence/requested-30686.json": {
+      "sha256": "e3e487fd7a90d9cb7fddaf29e4c6b0f0edeb0fce67b2e79536d2beefaeadbaab",
+      "size": 92612
+    },
+    "villagers/village-evidence/requested-31035.json": {
+      "sha256": "3bd28419ef76307d3e7262ae8c64280ddf88bae3c436043692e28c9bdc923d6b",
+      "size": 91780
+    },
+    "villagers/village-evidence/requested-31795.json": {
+      "sha256": "689d058099213cdd0ad542cfa31a44abca022299f1e392de6916cb6e20ea4eeb",
+      "size": 92586
+    },
+    "villagers/village-evidence/requested-4063.json": {
+      "sha256": "d4877ca4f19a131bc2d825898504c03544dace6a790373d0f8b163c0d1ecf24e",
+      "size": 118164
+    },
+    "villagers/village-evidence/resumed-11003.json": {
+      "sha256": "57151587081a348a3f7193be8a483ca743bde85a2ecb1ad528a089085455a834",
+      "size": 123076
+    },
+    "villagers/village-evidence/resumed-13690.json": {
+      "sha256": "60217b6228b6e7c88242cd40ec38039713bcacae51558d691dbe3daad0558f93",
+      "size": 123041
+    },
+    "villagers/village-evidence/resumed-17225.json": {
+      "sha256": "72785814f90f3d5e756f6f0dc8df5215d47a547a68f4dcaa6e0cb179e58e964f",
+      "size": 123127
+    },
+    "villagers/village-evidence/resumed-27034.json": {
+      "sha256": "416f1efb54cfd4c0e461da3a92060b1aac77532c03d07175afc2168e448855ff",
+      "size": 123071
+    },
+    "villagers/village-evidence/resumed-30770.json": {
+      "sha256": "758c4b973e220a60a47f1186ab70033a1aee033cdce9bdfa21ebbe81af522332",
+      "size": 92608
+    },
+    "villagers/village-evidence/resumed-32955.json": {
+      "sha256": "1761379b1fbad903706cdb5245691ec17adf1825900c7b5f8e1aea06544e1b10",
+      "size": 87516
+    },
+    "villagers/village-evidence/resumed-34160.json": {
+      "sha256": "a2290e88d2235b3ef0b0443f0d9746b5f2b04cd1fac07513a4d36761d99b5b4f",
+      "size": 87758
+    },
+    "villagers/village-evidence/resumed-36569.json": {
+      "sha256": "fd7bbf5626d7f4547d7692aab54091eb1e908de047db943bda074caa7603b22e",
+      "size": 93200
+    },
+    "villagers/village-evidence/resumed-38177.json": {
+      "sha256": "5f8eb02b762177a6a46e5f6b8c81deda3ff1c3663d6c9a18ea34decfc481a870",
+      "size": 93261
+    },
+    "villagers/village-evidence/resumed-5128.json": {
+      "sha256": "1417293569a4188211e3e37477cbbdf0f1a8295a94646cbd1b32f8f6d8e2c2fd",
+      "size": 122807
+    },
+    "villagers/village-evidence/resumed-9312.json": {
+      "sha256": "789dc833c99d9792f7fa5de2dcd4208bdb7d4b0fadab4866a5859f18dd640347",
+      "size": 122746
+    },
+    "villagers/village-evidence/shutdown-11976.json": {
+      "sha256": "ae5d486f4c9f4a750db1b35bd58edf3eb27dd17dcddb31a5c0b95bc2f3506ba8",
+      "size": 121360
+    },
+    "villagers/village-evidence/shutdown-12629.json": {
+      "sha256": "b6b6886340cb55ff9f3cf543e6f12d76667e84b52be1f08745b8b1a32c878d40",
+      "size": 121240
+    },
+    "villagers/village-evidence/shutdown-16164.json": {
+      "sha256": "bfd1192fb3b47f9569e86fbe46142a39cc0e9db631b0faabade4f4a6f73eff9d",
+      "size": 121256
+    },
+    "villagers/village-evidence/shutdown-25973.json": {
+      "sha256": "585717e7134d61ed7b356bb7929b3e2d1de0a4f9762e1eacc084202ad9888e97",
+      "size": 121400
+    },
+    "villagers/village-evidence/shutdown-29714.json": {
+      "sha256": "2a0fdc7f97540b84748fd93e1f26a8e321f10f66a3fb263334d15647c57320f2",
+      "size": 91815
+    },
+    "villagers/village-evidence/shutdown-31020.json": {
+      "sha256": "78208b3fb5fc00c0cd9cc9bf70645bf1726eaebd4408605477dad3c97949dfff",
+      "size": 91783
+    },
+    "villagers/village-evidence/shutdown-31899.json": {
+      "sha256": "fdeba56b63759648997c3b1f1d1f526a9de20e8a36f239e7a3d53a2beab7e434",
+      "size": 91899
+    },
+    "villagers/village-evidence/shutdown-33104.json": {
+      "sha256": "c7db1c5ea57f208f089a7f8d1a1bda018dabfee33fd5122a415ccc4252cecd5b",
+      "size": 86894
+    },
+    "villagers/village-evidence/shutdown-35508.json": {
+      "sha256": "7c3bd5fcc91b0ac2585a1c2ca3d90854a19e5c845d63209f7023936c064ec0ea",
+      "size": 87111
+    },
+    "villagers/village-evidence/shutdown-36713.json": {
+      "sha256": "174d8ddd5e5a55ef4cff0c7a82ba898ddb6bc9cc2e4cface0b77ba8917bf346d",
+      "size": 92523
+    },
+    "villagers/village-evidence/shutdown-37121.json": {
+      "sha256": "0f1dca82b0be1acbc72d6264e96d3a59943a6b0633892b4823e4ac9599aa8d7c",
+      "size": 92442
+    },
+    "villagers/village-evidence/shutdown-38326.json": {
+      "sha256": "f14be8b685d88bfc9213d7bb1c6e18fa77b676faeef6762557cfe151e5eaaa76",
+      "size": 92526
+    },
+    "villagers/village-evidence/shutdown-38933.json": {
+      "sha256": "6d5f34a8469df72f554e54f86bc17dcffc829145f16fe3ba73098d51a2e8bdf6",
+      "size": 92593
+    },
+    "villagers/village-evidence/shutdown-39738.json": {
+      "sha256": "ef3e9e87f6b8ee883c53092e75b65b40840ceb2771318a9c3a184be797a02173",
+      "size": 92593
+    },
+    "villagers/village-evidence/shutdown-40142.json": {
+      "sha256": "ce46bc712f0fa9002fbcb59ad0f4008206c480e458cd4798d310fe1f96dcb96f",
+      "size": 92584
+    },
+    "villagers/village-evidence/shutdown-4067.json": {
+      "sha256": "a521ee415d32076f5fb6b1d07420fca624f096c708cadbf7d8ace5c36d643925",
+      "size": 118187
+    },
+    "villagers/village-evidence/shutdown-8251.json": {
+      "sha256": "7b1573ea90743b4955976dccefb96ad5b03d99bf1638c1a875717cda409bccb5",
+      "size": 122758
+    },
+    "villagers/village-evidence/shutdown-9942.json": {
+      "sha256": "1ac46a9d95f8df57f18c515d94d93a3b97b8137a8bc0511cd4520b4db342e0e2",
+      "size": 122776
+    },
+    "villagers/village-trial.json": {
+      "sha256": "7694ec8b6352cbf2c5fe10225dadb9a7167bba7d3d70f1f0654760aee652eb61",
+      "size": 64288
+    },
+    "villagers/work-sites.json": {
+      "sha256": "6b6f1ed6a7c9aecbdbeb264f172fa5548323069d73e9059f3881e72d7975e494",
+      "size": 47
+    }
+  },
+  "originalWorldSHA256": "9c98a709354b6cd5d581b04cdb1ad112873c7d3597a685be0a87a750c63e51e7",
+  "changedWorldFiles": [],
+  "requestedObservationTicks": 400,
+  "plannedOperatorInputs": [
+    "read-only family watch"
+  ],
+  "actorTerrainUntouchedDuringPreparation": true,
+  "continuationOf": "/home/niko/.internal/source/Villagers/docs/evidence/2026-11-07/tool-production"
+}

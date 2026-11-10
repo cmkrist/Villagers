@@ -1,0 +1,4734 @@
+{
+  "at": "2026-11-07T05:23:56.678335992Z",
+  "label": "periodic",
+  "world": "VillageTrial",
+  "dimension": "minecraft:overworld",
+  "source": "Server ground truth for currently loaded actors; missing UUIDs are not presumed dead",
+  "seed": 846206,
+  "game_time": 11012,
+  "server_tick": 1261,
+  "tick_rate": 20.0,
+  "tick_frozen": false,
+  "mean_server_tick_millis": 3.536371,
+  "difficulty": "NORMAL",
+  "is_raining": false,
+  "is_thundering": false,
+  "night": false,
+  "observer_mode": "creative",
+  "observer_spawning_context": "Creative flight observer permits normal hostile spawning eligibility but retains the normal player-distance exclusion. NPCs receive no invulnerability; no mobs are injected.",
+  "center": {
+    "x": -240,
+    "y": 0,
+    "z": 768
+  },
+  "radius": 96,
+  "requested_chunks": 169,
+  "total_trial_chunks": 169,
+  "pending_chunk_requests": 0,
+  "ready_this_session": true,
+  "nonpersistent_trial_tickets": 169,
+  "game_rules": {
+    "minecraft:locator_bar": "true",
+    "minecraft:global_sound_events": "true",
+    "minecraft:elytra_movement_check": "true",
+    "minecraft:limited_crafting": "false",
+    "minecraft:block_explosion_drop_decay": "true",
+    "minecraft:raids": "true",
+    "minecraft:players_nether_portal_creative_delay": "0",
+    "minecraft:advance_time": "true",
+    "minecraft:water_source_conversion": "true",
+    "minecraft:log_admin_commands": "true",
+    "minecraft:spawn_wardens": "true",
+    "minecraft:max_block_modifications": "32768",
+    "minecraft:keep_inventory": "false",
+    "minecraft:max_command_forks": "65536",
+    "minecraft:fire_damage": "true",
+    "minecraft:natural_health_regeneration": "true",
+    "minecraft:fall_damage": "true",
+    "minecraft:max_entity_cramming": "24",
+    "axiom:do_trample_farmland": "true",
+    "minecraft:fire_spread_radius_around_player": "128",
+    "minecraft:send_command_feedback": "true",
+    "minecraft:reduced_debug_info": "false",
+    "minecraft:spawn_mobs": "true",
+    "minecraft:drowning_damage": "true",
+    "minecraft:max_snow_accumulation_height": "1",
+    "minecraft:universal_anger": "false",
+    "minecraft:projectiles_can_break_blocks": "true",
+    "minecraft:forgive_dead_players": "true",
+    "elytratrails:enable_twirls": "true",
+    "minecraft:block_drops": "true",
+    "minecraft:spawner_blocks_work": "true",
+    "minecraft:spread_vines": "true",
+    "minecraft:tnt_explosion_drop_decay": "false",
+    "minecraft:allow_entering_nether_using_portals": "true",
+    "minecraft:show_advancement_messages": "true",
+    "minecraft:advance_weather": "true",
+    "minecraft:respawn_radius": "10",
+    "minecraft:spectators_generate_chunks": "true",
+    "minecraft:command_blocks_work": "true",
+    "elytratrails:enable_trails": "true",
+    "minecraft:random_tick_speed": "3",
+    "minecraft:mob_explosion_drop_decay": "true",
+    "minecraft:entity_drops": "true",
+    "minecraft:command_block_output": "true",
+    "minecraft:pvp": "true",
+    "minecraft:players_sleeping_percentage": "100",
+    "minecraft:spawn_wandering_traders": "true",
+    "minecraft:spawn_patrols": "true",
+    "minecraft:players_nether_portal_default_delay": "80",
+    "minecraft:tnt_explodes": "true",
+    "minecraft:spawn_phantoms": "true",
+    "minecraft:mob_griefing": "true",
+    "minecraft:freeze_damage": "true",
+    "minecraft:ender_pearls_vanish_on_death": "true",
+    "axiom:do_block_drops": "true",
+    "minecraft:mob_drops": "true",
+    "minecraft:max_command_sequence_length": "65536",
+    "minecraft:show_death_messages": "true",
+    "axiom:player_invulnerability": "false",
+    "axiom:do_block_gravity": "true",
+    "minecraft:lava_source_conversion": "false",
+    "minecraft:player_movement_check": "true",
+    "minecraft:spawn_monsters": "true",
+    "minecraft:immediate_respawn": "false"
+  },
+  "local_loaded_villagers": [
+    {
+      "uuid": "02b0b914-c640-48c3-8fee-df600f34991e",
+      "type": "minecraft:villager",
+      "name": "Ember-02b0 \u00b7 explore",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -235.51252731085975,
+      "y": 72.0,
+      "z": 746.5766868375276,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/02b0b914-c640-48c3-8fee-df600f34991e",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/02b0b914-c640-48c3-8fee-df600f34991e/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -214,
+        "y": 71,
+        "z": 749,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "uuid": "1e1a7861-7b3a-4be0-8499-c0bcada07d1a",
+      "type": "minecraft:villager",
+      "name": "Fern-1e1a \u00b7 explore",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -253.50769388164323,
+      "y": 72.0,
+      "z": 747.8760785321417,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/1e1a7861-7b3a-4be0-8499-c0bcada07d1a",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/1e1a7861-7b3a-4be0-8499-c0bcada07d1a/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -274,
+        "y": 74,
+        "z": 744,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+      "type": "minecraft:villager",
+      "name": "Juniper-231e \u00b7 explore",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -234.2795013809144,
+      "y": 73.0,
+      "z": 766.6314552898982,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/231e4c00-19df-4be5-a5ba-5ebc6d29e27f/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -269,
+        "y": 75,
+        "z": 733,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "uuid": "5894771d-5fcc-45c5-bb4c-4733e2c992c4",
+      "type": "minecraft:villager",
+      "name": "Moss-5894 \u00b7 explore",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -200.28032347757022,
+      "y": 67.0,
+      "z": 747.5039945928356,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/5894771d-5fcc-45c5-bb4c-4733e2c992c4",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/5894771d-5fcc-45c5-bb4c-4733e2c992c4/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -218,
+        "y": 71,
+        "z": 761,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "type": "minecraft:villager",
+      "name": "Fern-5ad3 \u00b7 explore",
+      "alive": true,
+      "health": 19.0,
+      "max_health": 20.0,
+      "x": -217.75356966885755,
+      "y": 72.17675927506424,
+      "z": 796.2674617831038,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/5ad3aad5-3e4b-4eb6-8158-87731868dc03/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:farmer",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -227,
+        "y": 72,
+        "z": 773,
+        "dimension": "minecraft:overworld"
+      },
+      "job_site": {
+        "x": -226,
+        "y": 72,
+        "z": 752,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "uuid": "8d572a22-a431-47a1-b419-b12ab59b4e35",
+      "type": "minecraft:villager",
+      "name": "Birch-8d57 \u00b7 explore",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -245.35983740296513,
+      "y": 68.41999998688698,
+      "z": 719.2875398322267,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/8d572a22-a431-47a1-b419-b12ab59b4e35",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/8d572a22-a431-47a1-b419-b12ab59b4e35/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": true,
+      "sleeping": false,
+      "home": {
+        "x": -257,
+        "y": 73,
+        "z": 736,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "uuid": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+      "type": "minecraft:villager",
+      "name": "Dara-c7c3 \u00b7 explore",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -254.11483897619783,
+      "y": 72.0,
+      "z": 728.3028302106859,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/c7c31152-34a1-4edd-bd84-e48f50f86088",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/c7c31152-34a1-4edd-bd84-e48f50f86088/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:cartographer",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -248,
+        "y": 72,
+        "z": 746,
+        "dimension": "minecraft:overworld"
+      },
+      "job_site": {
+        "x": -251,
+        "y": 75,
+        "z": 736,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "uuid": "ca3c6d6a-385e-4ea3-a37d-e54d948d924f",
+      "type": "minecraft:villager",
+      "name": "Willow-ca3c \u00b7 explore",
+      "alive": true,
+      "health": 17.0,
+      "max_health": 20.0,
+      "x": -248.5508618515865,
+      "y": 82.0,
+      "z": 747.6526491041319,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/ca3c6d6a-385e-4ea3-a37d-e54d948d924f",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/ca3c6d6a-385e-4ea3-a37d-e54d948d924f/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -262,
+        "y": 74,
+        "z": 746,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "uuid": "d169dad0-0157-4e1d-bf1c-358845617474",
+      "type": "minecraft:villager",
+      "name": "Alder-d169 \u00b7 explore",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -189.790252897896,
+      "y": 62.0,
+      "z": 758.4494878679466,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/d169dad0-0157-4e1d-bf1c-358845617474",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/d169dad0-0157-4e1d-bf1c-358845617474/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -212,
+        "y": 71,
+        "z": 765,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "uuid": "d29c199f-5202-4fbc-97f9-92023489d70f",
+      "type": "minecraft:villager",
+      "name": "Ember-d29c \u00b7 rest",
+      "alive": true,
+      "health": 19.0,
+      "max_health": 20.0,
+      "x": -247.60681335477094,
+      "y": 74.0,
+      "z": 764.5057894911369,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/d29c199f-5202-4fbc-97f9-92023489d70f",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/d29c199f-5202-4fbc-97f9-92023489d70f/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -229,
+        "y": 71,
+        "z": 760,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "type": "minecraft:villager",
+      "name": "Nell-e358 \u00b7 explore",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -238.98349720817185,
+      "y": 72.0,
+      "z": 772.9889074962645,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 1,
+        "swordHits": 0,
+        "doorsOpened": 1,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/e358e923-f9d2-4d5b-a04b-b2531c8f02d9/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -236,
+        "y": 72,
+        "z": 766,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ]
+    }
+  ],
+  "local_loaded_iron_golems": [
+    {
+      "uuid": "0dc9724f-c186-4784-aff8-5475aa216eb2",
+      "type": "minecraft:iron_golem",
+      "name": "Iron Golem",
+      "alive": true,
+      "health": 100.0,
+      "max_health": 100.0,
+      "x": -258.59526367785514,
+      "y": 77.0,
+      "z": 767.8767216917224,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": false,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      }
+    }
+  ],
+  "local_loaded_villager_count": 11,
+  "local_loaded_iron_golem_count": 1,
+  "original_cohort": [
+    {
+      "uuid": "02b0b914-c640-48c3-8fee-df600f34991e",
+      "type": "minecraft:villager",
+      "name": "Ember-02b0 \u00b7 explore",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -235.51252731085975,
+      "y": 72.0,
+      "z": 746.5766868375276,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/02b0b914-c640-48c3-8fee-df600f34991e",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/02b0b914-c640-48c3-8fee-df600f34991e/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -214,
+        "y": 71,
+        "z": 749,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "status": "loaded_alive",
+      "baseline": {
+        "uuid": "02b0b914-c640-48c3-8fee-df600f34991e",
+        "type": "minecraft:villager",
+        "name": "Villager",
+        "alive": true,
+        "health": 20.0,
+        "max_health": 20.0,
+        "x": -191.5539624243632,
+        "y": 72.0,
+        "z": 734.2024380434317,
+        "dimension": "minecraft:overworld",
+        "inside_trial": true,
+        "managed": false,
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "offhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "feet": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "legs": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "chest": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "head": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "body": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "saddle": {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        },
+        "equipment_status": "empty hand",
+        "activity": {
+          "doorsOpened": 0,
+          "swordHits": 0,
+          "doorsClosed": 0,
+          "cropsHarvested": 0
+        },
+        "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/02b0b914-c640-48c3-8fee-df600f34991e",
+        "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/02b0b914-c640-48c3-8fee-df600f34991e/mind.json",
+        "mind_file_exists": false,
+        "profession": "minecraft:none",
+        "level": 1,
+        "baby": false,
+        "sleeping": false,
+        "home": {
+          "x": -214,
+          "y": 71,
+          "z": 749,
+          "dimension": "minecraft:overworld"
+        },
+        "inventory": [
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        ],
+        "adopted": true,
+        "adopted_game_time": 1265
+      }
+    },
+    {
+      "uuid": "1e1a7861-7b3a-4be0-8499-c0bcada07d1a",
+      "type": "minecraft:villager",
+      "name": "Fern-1e1a \u00b7 explore",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -253.50769388164323,
+      "y": 72.0,
+      "z": 747.8760785321417,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/1e1a7861-7b3a-4be0-8499-c0bcada07d1a",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/1e1a7861-7b3a-4be0-8499-c0bcada07d1a/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -274,
+        "y": 74,
+        "z": 744,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "status": "loaded_alive",
+      "baseline": {
+        "uuid": "1e1a7861-7b3a-4be0-8499-c0bcada07d1a",
+        "type": "minecraft:villager",
+        "name": "Villager",
+        "alive": true,
+        "health": 20.0,
+        "max_health": 20.0,
+        "x": -243.69627607221602,
+        "y": 72.0,
+        "z": 766.7160505015421,
+        "dimension": "minecraft:overworld",
+        "inside_trial": true,
+        "managed": false,
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "offhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "feet": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "legs": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "chest": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "head": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "body": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "saddle": {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        },
+        "equipment_status": "empty hand",
+        "activity": {
+          "doorsOpened": 0,
+          "swordHits": 0,
+          "doorsClosed": 0,
+          "cropsHarvested": 0
+        },
+        "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/1e1a7861-7b3a-4be0-8499-c0bcada07d1a",
+        "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/1e1a7861-7b3a-4be0-8499-c0bcada07d1a/mind.json",
+        "mind_file_exists": false,
+        "profession": "minecraft:none",
+        "level": 1,
+        "baby": false,
+        "sleeping": false,
+        "home": {
+          "x": -274,
+          "y": 74,
+          "z": 744,
+          "dimension": "minecraft:overworld"
+        },
+        "inventory": [
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        ],
+        "adopted": true,
+        "adopted_game_time": 1265
+      }
+    },
+    {
+      "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+      "type": "minecraft:villager",
+      "name": "Juniper-231e \u00b7 explore",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -234.2795013809144,
+      "y": 73.0,
+      "z": 766.6314552898982,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/231e4c00-19df-4be5-a5ba-5ebc6d29e27f/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -269,
+        "y": 75,
+        "z": 733,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "status": "loaded_alive",
+      "baseline": {
+        "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+        "type": "minecraft:villager",
+        "name": "Villager",
+        "alive": true,
+        "health": 20.0,
+        "max_health": 20.0,
+        "x": -234.2795013809144,
+        "y": 73.0,
+        "z": 766.6314552898982,
+        "dimension": "minecraft:overworld",
+        "inside_trial": true,
+        "managed": false,
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "offhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "feet": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "legs": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "chest": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "head": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "body": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "saddle": {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        },
+        "equipment_status": "empty hand",
+        "activity": {
+          "doorsOpened": 0,
+          "swordHits": 0,
+          "doorsClosed": 0,
+          "cropsHarvested": 0
+        },
+        "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+        "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/231e4c00-19df-4be5-a5ba-5ebc6d29e27f/mind.json",
+        "mind_file_exists": false,
+        "profession": "minecraft:none",
+        "level": 1,
+        "baby": false,
+        "sleeping": false,
+        "inventory": [
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        ],
+        "adopted": true,
+        "adopted_game_time": 1265
+      }
+    },
+    {
+      "uuid": "5894771d-5fcc-45c5-bb4c-4733e2c992c4",
+      "type": "minecraft:villager",
+      "name": "Moss-5894 \u00b7 explore",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -200.28032347757022,
+      "y": 67.0,
+      "z": 747.5039945928356,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/5894771d-5fcc-45c5-bb4c-4733e2c992c4",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/5894771d-5fcc-45c5-bb4c-4733e2c992c4/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -218,
+        "y": 71,
+        "z": 761,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "status": "loaded_alive",
+      "baseline": {
+        "uuid": "5894771d-5fcc-45c5-bb4c-4733e2c992c4",
+        "type": "minecraft:villager",
+        "name": "Villager",
+        "alive": true,
+        "health": 20.0,
+        "max_health": 20.0,
+        "x": -215.27035005435556,
+        "y": 71.0,
+        "z": 754.7299106676732,
+        "dimension": "minecraft:overworld",
+        "inside_trial": true,
+        "managed": false,
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "offhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "feet": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "legs": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "chest": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "head": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "body": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "saddle": {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        },
+        "equipment_status": "empty hand",
+        "activity": {
+          "doorsOpened": 0,
+          "swordHits": 0,
+          "doorsClosed": 0,
+          "cropsHarvested": 0
+        },
+        "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/5894771d-5fcc-45c5-bb4c-4733e2c992c4",
+        "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/5894771d-5fcc-45c5-bb4c-4733e2c992c4/mind.json",
+        "mind_file_exists": false,
+        "profession": "minecraft:none",
+        "level": 1,
+        "baby": false,
+        "sleeping": false,
+        "home": {
+          "x": -218,
+          "y": 71,
+          "z": 761,
+          "dimension": "minecraft:overworld"
+        },
+        "inventory": [
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        ],
+        "adopted": true,
+        "adopted_game_time": 1265
+      }
+    },
+    {
+      "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "type": "minecraft:villager",
+      "name": "Fern-5ad3 \u00b7 explore",
+      "alive": true,
+      "health": 19.0,
+      "max_health": 20.0,
+      "x": -217.75356966885755,
+      "y": 72.17675927506424,
+      "z": 796.2674617831038,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/5ad3aad5-3e4b-4eb6-8158-87731868dc03/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:farmer",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -227,
+        "y": 72,
+        "z": 773,
+        "dimension": "minecraft:overworld"
+      },
+      "job_site": {
+        "x": -226,
+        "y": 72,
+        "z": 752,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "status": "loaded_alive",
+      "baseline": {
+        "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+        "type": "minecraft:villager",
+        "name": "Farmer",
+        "alive": true,
+        "health": 19.0,
+        "max_health": 20.0,
+        "x": -243.01485509986603,
+        "y": 72.0,
+        "z": 766.031902385684,
+        "dimension": "minecraft:overworld",
+        "inside_trial": true,
+        "managed": false,
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "offhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "feet": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "legs": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "chest": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "head": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "body": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "saddle": {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        },
+        "equipment_status": "empty hand",
+        "activity": {
+          "doorsOpened": 0,
+          "swordHits": 0,
+          "doorsClosed": 0,
+          "cropsHarvested": 0
+        },
+        "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+        "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/5ad3aad5-3e4b-4eb6-8158-87731868dc03/mind.json",
+        "mind_file_exists": false,
+        "profession": "minecraft:farmer",
+        "level": 1,
+        "baby": false,
+        "sleeping": false,
+        "home": {
+          "x": -227,
+          "y": 72,
+          "z": 773,
+          "dimension": "minecraft:overworld"
+        },
+        "job_site": {
+          "x": -226,
+          "y": 72,
+          "z": 752,
+          "dimension": "minecraft:overworld"
+        },
+        "inventory": [
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        ],
+        "adopted": true,
+        "adopted_game_time": 1265
+      }
+    },
+    {
+      "uuid": "8d572a22-a431-47a1-b419-b12ab59b4e35",
+      "type": "minecraft:villager",
+      "name": "Birch-8d57 \u00b7 explore",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -245.35983740296513,
+      "y": 68.41999998688698,
+      "z": 719.2875398322267,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/8d572a22-a431-47a1-b419-b12ab59b4e35",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/8d572a22-a431-47a1-b419-b12ab59b4e35/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": true,
+      "sleeping": false,
+      "home": {
+        "x": -257,
+        "y": 73,
+        "z": 736,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "status": "loaded_alive",
+      "baseline": {
+        "uuid": "8d572a22-a431-47a1-b419-b12ab59b4e35",
+        "type": "minecraft:villager",
+        "name": "Villager",
+        "alive": true,
+        "health": 20.0,
+        "max_health": 20.0,
+        "x": -257.53783661265896,
+        "y": 73.5625,
+        "z": 736.7953755185429,
+        "dimension": "minecraft:overworld",
+        "inside_trial": true,
+        "managed": false,
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "offhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "feet": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "legs": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "chest": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "head": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "body": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "saddle": {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        },
+        "equipment_status": "empty hand",
+        "activity": {
+          "doorsOpened": 0,
+          "swordHits": 0,
+          "doorsClosed": 0,
+          "cropsHarvested": 0
+        },
+        "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/8d572a22-a431-47a1-b419-b12ab59b4e35",
+        "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/8d572a22-a431-47a1-b419-b12ab59b4e35/mind.json",
+        "mind_file_exists": false,
+        "profession": "minecraft:none",
+        "level": 1,
+        "baby": true,
+        "sleeping": false,
+        "home": {
+          "x": -257,
+          "y": 73,
+          "z": 736,
+          "dimension": "minecraft:overworld"
+        },
+        "inventory": [
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        ],
+        "adopted": true,
+        "adopted_game_time": 1265
+      }
+    },
+    {
+      "uuid": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+      "type": "minecraft:villager",
+      "name": "Dara-c7c3 \u00b7 explore",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -254.11483897619783,
+      "y": 72.0,
+      "z": 728.3028302106859,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/c7c31152-34a1-4edd-bd84-e48f50f86088",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/c7c31152-34a1-4edd-bd84-e48f50f86088/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:cartographer",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -248,
+        "y": 72,
+        "z": 746,
+        "dimension": "minecraft:overworld"
+      },
+      "job_site": {
+        "x": -251,
+        "y": 75,
+        "z": 736,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "status": "loaded_alive",
+      "baseline": {
+        "uuid": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+        "type": "minecraft:villager",
+        "name": "Cartographer",
+        "alive": true,
+        "health": 20.0,
+        "max_health": 20.0,
+        "x": -260.3540301859668,
+        "y": 73.0,
+        "z": 739.1007492148854,
+        "dimension": "minecraft:overworld",
+        "inside_trial": true,
+        "managed": false,
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "offhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "feet": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "legs": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "chest": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "head": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "body": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "saddle": {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        },
+        "equipment_status": "empty hand",
+        "activity": {
+          "doorsOpened": 0,
+          "swordHits": 0,
+          "doorsClosed": 0,
+          "cropsHarvested": 0
+        },
+        "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/c7c31152-34a1-4edd-bd84-e48f50f86088",
+        "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/c7c31152-34a1-4edd-bd84-e48f50f86088/mind.json",
+        "mind_file_exists": false,
+        "profession": "minecraft:cartographer",
+        "level": 1,
+        "baby": false,
+        "sleeping": false,
+        "home": {
+          "x": -248,
+          "y": 72,
+          "z": 746,
+          "dimension": "minecraft:overworld"
+        },
+        "job_site": {
+          "x": -251,
+          "y": 75,
+          "z": 736,
+          "dimension": "minecraft:overworld"
+        },
+        "inventory": [
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        ],
+        "adopted": true,
+        "adopted_game_time": 1265
+      }
+    },
+    {
+      "uuid": "ca3c6d6a-385e-4ea3-a37d-e54d948d924f",
+      "type": "minecraft:villager",
+      "name": "Willow-ca3c \u00b7 explore",
+      "alive": true,
+      "health": 17.0,
+      "max_health": 20.0,
+      "x": -248.5508618515865,
+      "y": 82.0,
+      "z": 747.6526491041319,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/ca3c6d6a-385e-4ea3-a37d-e54d948d924f",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/ca3c6d6a-385e-4ea3-a37d-e54d948d924f/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -262,
+        "y": 74,
+        "z": 746,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "status": "loaded_alive",
+      "baseline": {
+        "uuid": "ca3c6d6a-385e-4ea3-a37d-e54d948d924f",
+        "type": "minecraft:villager",
+        "name": "Villager",
+        "alive": true,
+        "health": 17.0,
+        "max_health": 20.0,
+        "x": -249.26897114079767,
+        "y": 88.0,
+        "z": 745.506571212117,
+        "dimension": "minecraft:overworld",
+        "inside_trial": true,
+        "managed": false,
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "offhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "feet": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "legs": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "chest": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "head": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "body": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "saddle": {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        },
+        "equipment_status": "empty hand",
+        "activity": {
+          "doorsOpened": 0,
+          "swordHits": 0,
+          "doorsClosed": 0,
+          "cropsHarvested": 0
+        },
+        "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/ca3c6d6a-385e-4ea3-a37d-e54d948d924f",
+        "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/ca3c6d6a-385e-4ea3-a37d-e54d948d924f/mind.json",
+        "mind_file_exists": false,
+        "profession": "minecraft:none",
+        "level": 1,
+        "baby": false,
+        "sleeping": false,
+        "home": {
+          "x": -262,
+          "y": 74,
+          "z": 746,
+          "dimension": "minecraft:overworld"
+        },
+        "inventory": [
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        ],
+        "adopted": true,
+        "adopted_game_time": 1265
+      }
+    },
+    {
+      "uuid": "d169dad0-0157-4e1d-bf1c-358845617474",
+      "type": "minecraft:villager",
+      "name": "Alder-d169 \u00b7 explore",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -189.790252897896,
+      "y": 62.0,
+      "z": 758.4494878679466,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/d169dad0-0157-4e1d-bf1c-358845617474",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/d169dad0-0157-4e1d-bf1c-358845617474/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -212,
+        "y": 71,
+        "z": 765,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "status": "loaded_alive",
+      "baseline": {
+        "uuid": "d169dad0-0157-4e1d-bf1c-358845617474",
+        "type": "minecraft:villager",
+        "name": "Villager",
+        "alive": true,
+        "health": 20.0,
+        "max_health": 20.0,
+        "x": -204.44501534931214,
+        "y": 73.0,
+        "z": 753.6541882075107,
+        "dimension": "minecraft:overworld",
+        "inside_trial": true,
+        "managed": false,
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "offhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "feet": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "legs": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "chest": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "head": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "body": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "saddle": {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        },
+        "equipment_status": "empty hand",
+        "activity": {
+          "doorsOpened": 0,
+          "swordHits": 0,
+          "doorsClosed": 0,
+          "cropsHarvested": 0
+        },
+        "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/d169dad0-0157-4e1d-bf1c-358845617474",
+        "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/d169dad0-0157-4e1d-bf1c-358845617474/mind.json",
+        "mind_file_exists": false,
+        "profession": "minecraft:none",
+        "level": 1,
+        "baby": false,
+        "sleeping": false,
+        "home": {
+          "x": -212,
+          "y": 71,
+          "z": 765,
+          "dimension": "minecraft:overworld"
+        },
+        "inventory": [
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        ],
+        "adopted": true,
+        "adopted_game_time": 1265
+      }
+    },
+    {
+      "uuid": "d29c199f-5202-4fbc-97f9-92023489d70f",
+      "type": "minecraft:villager",
+      "name": "Ember-d29c \u00b7 rest",
+      "alive": true,
+      "health": 19.0,
+      "max_health": 20.0,
+      "x": -247.60681335477094,
+      "y": 74.0,
+      "z": 764.5057894911369,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 0,
+        "swordHits": 0,
+        "doorsOpened": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/d29c199f-5202-4fbc-97f9-92023489d70f",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/d29c199f-5202-4fbc-97f9-92023489d70f/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -229,
+        "y": 71,
+        "z": 760,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "status": "loaded_alive",
+      "baseline": {
+        "uuid": "d29c199f-5202-4fbc-97f9-92023489d70f",
+        "type": "minecraft:villager",
+        "name": "Villager",
+        "alive": true,
+        "health": 19.0,
+        "max_health": 20.0,
+        "x": -239.9481919774233,
+        "y": 73.0,
+        "z": 780.9545349270934,
+        "dimension": "minecraft:overworld",
+        "inside_trial": true,
+        "managed": false,
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "offhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "feet": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "legs": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "chest": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "head": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "body": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "saddle": {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        },
+        "equipment_status": "empty hand",
+        "activity": {
+          "doorsOpened": 0,
+          "swordHits": 0,
+          "doorsClosed": 0,
+          "cropsHarvested": 0
+        },
+        "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/d29c199f-5202-4fbc-97f9-92023489d70f",
+        "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/d29c199f-5202-4fbc-97f9-92023489d70f/mind.json",
+        "mind_file_exists": false,
+        "profession": "minecraft:none",
+        "level": 1,
+        "baby": false,
+        "sleeping": false,
+        "home": {
+          "x": -229,
+          "y": 71,
+          "z": 760,
+          "dimension": "minecraft:overworld"
+        },
+        "inventory": [
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        ],
+        "adopted": true,
+        "adopted_game_time": 1265
+      }
+    },
+    {
+      "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "type": "minecraft:villager",
+      "name": "Nell-e358 \u00b7 explore",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -238.98349720817185,
+      "y": 72.0,
+      "z": 772.9889074962645,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": true,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsClosed": 1,
+        "swordHits": 0,
+        "doorsOpened": 1,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/e358e923-f9d2-4d5b-a04b-b2531c8f02d9/mind.json",
+      "mind_file_exists": true,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -236,
+        "y": 72,
+        "z": 766,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "status": "loaded_alive",
+      "baseline": {
+        "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+        "type": "minecraft:villager",
+        "name": "Villager",
+        "alive": true,
+        "health": 20.0,
+        "max_health": 20.0,
+        "x": -226.18734312808417,
+        "y": 79.0,
+        "z": 773.6420650264977,
+        "dimension": "minecraft:overworld",
+        "inside_trial": true,
+        "managed": false,
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "offhand": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "feet": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "legs": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "chest": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "head": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "body": {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          "saddle": {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        },
+        "equipment_status": "empty hand",
+        "activity": {
+          "doorsOpened": 0,
+          "swordHits": 0,
+          "doorsClosed": 0,
+          "cropsHarvested": 0
+        },
+        "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+        "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/e358e923-f9d2-4d5b-a04b-b2531c8f02d9/mind.json",
+        "mind_file_exists": false,
+        "profession": "minecraft:none",
+        "level": 1,
+        "baby": false,
+        "sleeping": false,
+        "home": {
+          "x": -236,
+          "y": 72,
+          "z": 766,
+          "dimension": "minecraft:overworld"
+        },
+        "inventory": [
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          },
+          {
+            "item": "minecraft:air",
+            "count": 0
+          }
+        ],
+        "adopted": true,
+        "adopted_game_time": 1265
+      }
+    }
+  ],
+  "original_cohort_size": 11,
+  "original_cohort_loaded_alive": 11,
+  "original_cohort_known_dead_or_converted": 0,
+  "original_cohort_unloaded_or_missing": 0,
+  "known_actor_lifecycle": {
+    "02b0b914-c640-48c3-8fee-df600f34991e": {
+      "uuid": "02b0b914-c640-48c3-8fee-df600f34991e",
+      "type": "minecraft:villager",
+      "name": "Villager",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -211.36854471010184,
+      "y": 72.0,
+      "z": 750.2795013809144,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": false,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsOpened": 0,
+        "swordHits": 0,
+        "doorsClosed": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/02b0b914-c640-48c3-8fee-df600f34991e",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/02b0b914-c640-48c3-8fee-df600f34991e/mind.json",
+      "mind_file_exists": false,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "first_seen_game_time": 80,
+      "state": "observed_alive",
+      "last_seen_game_time": 11012
+    },
+    "0dc9724f-c186-4784-aff8-5475aa216eb2": {
+      "uuid": "0dc9724f-c186-4784-aff8-5475aa216eb2",
+      "type": "minecraft:iron_golem",
+      "name": "Iron Golem",
+      "alive": true,
+      "health": 100.0,
+      "max_health": 100.0,
+      "x": -238.56,
+      "y": 72.0,
+      "z": 759.45,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": false,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "first_seen_game_time": 80,
+      "state": "observed_alive",
+      "last_seen_game_time": 11012
+    },
+    "1e1a7861-7b3a-4be0-8499-c0bcada07d1a": {
+      "uuid": "1e1a7861-7b3a-4be0-8499-c0bcada07d1a",
+      "type": "minecraft:villager",
+      "name": "Villager",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -239.63145528989816,
+      "y": 72.0,
+      "z": 757.7204986190856,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": false,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsOpened": 0,
+        "swordHits": 0,
+        "doorsClosed": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/1e1a7861-7b3a-4be0-8499-c0bcada07d1a",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/1e1a7861-7b3a-4be0-8499-c0bcada07d1a/mind.json",
+      "mind_file_exists": false,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "first_seen_game_time": 80,
+      "state": "observed_alive",
+      "last_seen_game_time": 11012
+    },
+    "231e4c00-19df-4be5-a5ba-5ebc6d29e27f": {
+      "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+      "type": "minecraft:villager",
+      "name": "Villager",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -234.2795013809144,
+      "y": 73.0,
+      "z": 766.6314552898982,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": false,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsOpened": 0,
+        "swordHits": 0,
+        "doorsClosed": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/231e4c00-19df-4be5-a5ba-5ebc6d29e27f/mind.json",
+      "mind_file_exists": false,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "first_seen_game_time": 80,
+      "state": "observed_alive",
+      "last_seen_game_time": 11012
+    },
+    "5894771d-5fcc-45c5-bb4c-4733e2c992c4": {
+      "uuid": "5894771d-5fcc-45c5-bb4c-4733e2c992c4",
+      "type": "minecraft:villager",
+      "name": "Villager",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -218.36854471010184,
+      "y": 71.0,
+      "z": 760.2795013809144,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": false,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsOpened": 0,
+        "swordHits": 0,
+        "doorsClosed": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/5894771d-5fcc-45c5-bb4c-4733e2c992c4",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/5894771d-5fcc-45c5-bb4c-4733e2c992c4/mind.json",
+      "mind_file_exists": false,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "first_seen_game_time": 80,
+      "state": "observed_alive",
+      "last_seen_game_time": 11012
+    },
+    "5ad3aad5-3e4b-4eb6-8158-87731868dc03": {
+      "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "type": "minecraft:villager",
+      "name": "Villager",
+      "alive": true,
+      "health": 19.0,
+      "max_health": 20.0,
+      "x": -225.5712233876225,
+      "y": 72.0,
+      "z": 772.3000000119209,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": false,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsOpened": 0,
+        "swordHits": 0,
+        "doorsClosed": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/5ad3aad5-3e4b-4eb6-8158-87731868dc03/mind.json",
+      "mind_file_exists": false,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "home": {
+        "x": -227,
+        "y": 72,
+        "z": 773,
+        "dimension": "minecraft:overworld"
+      },
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "first_seen_game_time": 80,
+      "state": "observed_alive",
+      "last_seen_game_time": 11012
+    },
+    "8d572a22-a431-47a1-b419-b12ab59b4e35": {
+      "uuid": "8d572a22-a431-47a1-b419-b12ab59b4e35",
+      "type": "minecraft:villager",
+      "name": "Villager",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -257.0697962117287,
+      "y": 74.0,
+      "z": 737.3660530855782,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": false,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsOpened": 0,
+        "swordHits": 0,
+        "doorsClosed": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/8d572a22-a431-47a1-b419-b12ab59b4e35",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/8d572a22-a431-47a1-b419-b12ab59b4e35/mind.json",
+      "mind_file_exists": false,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": true,
+      "sleeping": false,
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "first_seen_game_time": 80,
+      "state": "observed_alive",
+      "last_seen_game_time": 11012
+    },
+    "c7c31152-34a1-4edd-bd84-e48f50f86088": {
+      "uuid": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+      "type": "minecraft:villager",
+      "name": "Villager",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -238.36854471010184,
+      "y": 72.0,
+      "z": 753.2795013809144,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": false,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsOpened": 0,
+        "swordHits": 0,
+        "doorsClosed": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/c7c31152-34a1-4edd-bd84-e48f50f86088",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/c7c31152-34a1-4edd-bd84-e48f50f86088/mind.json",
+      "mind_file_exists": false,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "first_seen_game_time": 80,
+      "state": "observed_alive",
+      "last_seen_game_time": 11012
+    },
+    "ca3c6d6a-385e-4ea3-a37d-e54d948d924f": {
+      "uuid": "ca3c6d6a-385e-4ea3-a37d-e54d948d924f",
+      "type": "minecraft:villager",
+      "name": "Villager",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -246.36854471010184,
+      "y": 73.0,
+      "z": 746.2795013809144,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": false,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsOpened": 0,
+        "swordHits": 0,
+        "doorsClosed": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/ca3c6d6a-385e-4ea3-a37d-e54d948d924f",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/ca3c6d6a-385e-4ea3-a37d-e54d948d924f/mind.json",
+      "mind_file_exists": false,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "first_seen_game_time": 80,
+      "state": "observed_alive",
+      "last_seen_game_time": 11012
+    },
+    "d169dad0-0157-4e1d-bf1c-358845617474": {
+      "uuid": "d169dad0-0157-4e1d-bf1c-358845617474",
+      "type": "minecraft:villager",
+      "name": "Villager",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -209.7204986190856,
+      "y": 71.0,
+      "z": 761.3685447101018,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": false,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsOpened": 0,
+        "swordHits": 0,
+        "doorsClosed": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/d169dad0-0157-4e1d-bf1c-358845617474",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/d169dad0-0157-4e1d-bf1c-358845617474/mind.json",
+      "mind_file_exists": false,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "first_seen_game_time": 80,
+      "state": "observed_alive",
+      "last_seen_game_time": 11012
+    },
+    "d29c199f-5202-4fbc-97f9-92023489d70f": {
+      "uuid": "d29c199f-5202-4fbc-97f9-92023489d70f",
+      "type": "minecraft:villager",
+      "name": "Villager",
+      "alive": true,
+      "health": 19.0,
+      "max_health": 20.0,
+      "x": -227.42039519894857,
+      "y": 71.76636799395752,
+      "z": 760.7609524651764,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": false,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsOpened": 0,
+        "swordHits": 0,
+        "doorsClosed": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/d29c199f-5202-4fbc-97f9-92023489d70f",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/d29c199f-5202-4fbc-97f9-92023489d70f/mind.json",
+      "mind_file_exists": false,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "first_seen_game_time": 80,
+      "state": "observed_alive",
+      "last_seen_game_time": 11012
+    },
+    "e358e923-f9d2-4d5b-a04b-b2531c8f02d9": {
+      "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "type": "minecraft:villager",
+      "name": "Villager",
+      "alive": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "x": -232.7204986190856,
+      "y": 72.0,
+      "z": 753.3685447101018,
+      "dimension": "minecraft:overworld",
+      "inside_trial": true,
+      "managed": false,
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "offhand": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "feet": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "legs": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "chest": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "head": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "body": {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        "saddle": {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      },
+      "equipment_status": "empty hand",
+      "activity": {
+        "doorsOpened": 0,
+        "swordHits": 0,
+        "doorsClosed": 0,
+        "cropsHarvested": 0
+      },
+      "disk_home": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "mind_file": "/home/niko/.internal/source/Villagers/run/saves/VillageTrial/./villagers/e358e923-f9d2-4d5b-a04b-b2531c8f02d9/mind.json",
+      "mind_file_exists": false,
+      "profession": "minecraft:none",
+      "level": 1,
+      "baby": false,
+      "sleeping": false,
+      "inventory": [
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        },
+        {
+          "item": "minecraft:air",
+          "count": 0
+        }
+      ],
+      "first_seen_game_time": 80,
+      "state": "observed_alive",
+      "last_seen_game_time": 11012
+    }
+  },
+  "stage": "active"
+}

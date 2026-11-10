@@ -1,0 +1,90 @@
+{
+  "at": "2026-11-07T18:13:06.701952675Z",
+  "elapsed_ms": 15039,
+  "label": "village-001-15s-1794075186701-1",
+  "source": "rendered client; only client-tracked entities",
+  "world": "VillageTrial",
+  "role": "play",
+  "learning_mode": "adaptive",
+  "native_target_tps": 20.0,
+  "training": {
+    "role": "play",
+    "state": "waiting_for_trial",
+    "learning_mode": "adaptive",
+    "game_tick_budget": 48000,
+    "configured_target_tps": 20
+  },
+  "game_time": 57551,
+  "trial": "natural generated village",
+  "server_tick": 314,
+  "screen": "",
+  "frame_ns": 782153,
+  "camera": {
+    "x": -211.5,
+    "y": 104.0,
+    "z": 796.5,
+    "yaw": -25.650003,
+    "pitch": 42.649994
+  },
+  "tracked_entities": 148,
+  "tracked_villagers": 5,
+  "villagers": [
+    {
+      "uuid": "589b708d-b768-4a61-a59e-910db084b079",
+      "name": "Fern-589b · explore",
+      "x": -250.09147135530657,
+      "y": 73.0,
+      "z": 742.1415201832715,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "name": "Nell-e358 · socialize",
+      "x": -256.82862938316265,
+      "y": 68.0,
+      "z": 779.387396289207,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "name": "Fern-5ad3 · socialize",
+      "x": -225.18151217941485,
+      "y": 72.0,
+      "z": 751.6999999880791,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+      "name": "Dara-c7c3 · explore",
+      "x": -271.331298828125,
+      "y": 75.0,
+      "z": 749.4873046875,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+      "name": "Juniper-231e · explore (unhappy)",
+      "x": -291.6803760657584,
+      "y": 67.72028020373718,
+      "z": 728.5165275798417,
+      "alive": true,
+      "health": 20.0
+    }
+  ],
+  "tracked_iron_golems": 1,
+  "iron_golems": [
+    {
+      "uuid": "0dc9724f-c186-4784-aff8-5475aa216eb2",
+      "name": "Iron Golem",
+      "x": -237.633544921875,
+      "y": 72.0,
+      "z": 768.855712890625,
+      "alive": true,
+      "health": 100.0
+    }
+  ]
+}

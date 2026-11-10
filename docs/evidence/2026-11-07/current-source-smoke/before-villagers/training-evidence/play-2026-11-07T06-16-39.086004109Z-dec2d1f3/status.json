@@ -1,0 +1,133 @@
+{
+  "achieved_wall_tps": 0.0,
+  "game_tick_budget": 48000,
+  "at": "2026-11-07T06:17:10.580504117Z",
+  "evidence_directory": "/home/niko/.internal/source/Villagers/runs/play/saves/VillageTrial/./villagers/training-evidence/play-2026-11-07T06-16-39.086004109Z-dec2d1f3",
+  "run_id": "play-2026-11-07T06-16-39.086004109Z-dec2d1f3",
+  "start_server_tick": 1062,
+  "wall_started_at": "2026-11-07T06:16:39.086004109Z",
+  "start_game_time": 9313,
+  "sprinting": false,
+  "automatic_promotion_disabled": true,
+  "elapsed_wall_seconds": 31.494543397,
+  "learning_mode": "adaptive",
+  "wall_measured_intervals": 630,
+  "native_mean_mspt": 4.382554,
+  "configured_target_tps": 20,
+  "learning_claim": "No improvement inferred from speed, elapsed ticks, labels or survival alone; compare independent controlled cohorts.",
+  "elapsed_game_ticks": 629,
+  "cohort": {
+    "original": 11,
+    "missing": 0,
+    "alive": 11,
+    "terminal": 0
+  },
+  "wall_late_intervals": 1,
+  "measurement_window_seconds": 0.0,
+  "native_tick_cost_last_100": {
+    "samples": 100,
+    "meanMspt": 4.38255471,
+    "p50Mspt": 3.802037,
+    "p95Mspt": 6.173797,
+    "p99Mspt": 10.447776,
+    "maxMspt": 19.389466,
+    "overBudgetTicks": 0
+  },
+  "state": "play",
+  "event": "world_shutdown",
+  "detail": "Preserved the existing run outcome.",
+  "frozen": false,
+  "role": "play",
+  "native_target_tps": 20.0,
+  "late_interval_definition": "Elapsed interval between observed server ticks exceeds 1.5 times the current target interval; distinct from native tick work cost.",
+  "elapsed_server_ticks": 629,
+  "game_time": 9942,
+  "learning_statistics": {
+    "mode": "ADAPTIVE",
+    "activeAgents": 11,
+    "decisions": 320,
+    "completedSkills": 280,
+    "safetyInterrupts": 5,
+    "agents": [
+      {
+        "hunger": 0.5602500000000002,
+        "loneliness": 0.2771428571428574,
+        "fatigue": 0.3701874999999943,
+        "uuid": "d29c199f-5202-4fbc-97f9-92023489d70f",
+        "learningUpdates": 164
+      },
+      {
+        "hunger": 0.5600000000000003,
+        "loneliness": 0.29464285714285626,
+        "fatigue": 0.3699999999999943,
+        "uuid": "d169dad0-0157-4e1d-bf1c-358845617474",
+        "learningUpdates": 116
+      },
+      {
+        "hunger": 0.5604583333333336,
+        "loneliness": 0.1717857142857154,
+        "fatigue": 0.25034374999999504,
+        "uuid": "5894771d-5fcc-45c5-bb4c-4733e2c992c4",
+        "learningUpdates": 170
+      },
+      {
+        "hunger": 0.5598333333333336,
+        "loneliness": 0.040714285714285696,
+        "fatigue": 0.3698749999999943,
+        "uuid": "02b0b914-c640-48c3-8fee-df600f34991e",
+        "learningUpdates": 173
+      },
+      {
+        "hunger": 0.560291666666667,
+        "loneliness": 0.5088214285714122,
+        "fatigue": 0.37021874999999427,
+        "uuid": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+        "learningUpdates": 53
+      },
+      {
+        "hunger": 0.5600000000000003,
+        "loneliness": 0.10857142857142894,
+        "fatigue": 0.24999999999999425,
+        "uuid": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+        "learningUpdates": 149
+      },
+      {
+        "hunger": 0.5605000000000002,
+        "loneliness": 0.5089999999999836,
+        "fatigue": 0.14531249999999574,
+        "uuid": "8d572a22-a431-47a1-b419-b12ab59b4e35",
+        "learningUpdates": 128
+      },
+      {
+        "hunger": 0.560291666666667,
+        "loneliness": 0.5088214285714122,
+        "fatigue": 0.37021874999999427,
+        "uuid": "ca3c6d6a-385e-4ea3-a37d-e54d948d924f",
+        "learningUpdates": 105
+      },
+      {
+        "hunger": 0.5598333333333336,
+        "loneliness": 0.011428571428571437,
+        "fatigue": 0.3698749999999943,
+        "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+        "learningUpdates": 154
+      },
+      {
+        "hunger": 0.18208333333333415,
+        "loneliness": 0.30885714285712645,
+        "fatigue": 0.1065624999999991,
+        "uuid": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+        "learningUpdates": 107
+      },
+      {
+        "hunger": 0.560041666666667,
+        "loneliness": 0.5086071428571265,
+        "fatigue": 0.25003124999999427,
+        "uuid": "1e1a7861-7b3a-4be0-8499-c0bcada07d1a",
+        "learningUpdates": 73
+      }
+    ]
+  },
+  "server_tick": 1691,
+  "measurement_window_server_ticks": 629
+}

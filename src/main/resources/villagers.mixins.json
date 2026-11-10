@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "local.villagers.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "VillagerMixin",
+    "CreatureMobMixin",
+    "VillagerAttributesMixin",
+    "ConstructionBlockMixin",
+    "ConstructionLeavesMixin",
+    "PoiTypesAccessor",
+    "AbstractBoatMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

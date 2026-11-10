@@ -1,0 +1,757 @@
+{
+  "same_pair_impression_exact_after_reload": true,
+  "clean_second_session_exit_code": 0,
+  "first_session_exit_code": 143,
+  "first_exit_cause": "unconfirmed",
+  "unit_tests": 44,
+  "events": [
+    {
+      "at": "2026-11-07T06:12:31.630122676Z",
+      "game_time": 5504,
+      "operation": "gift",
+      "villager": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "observer": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+      "before": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.85,
+        "trust": 0.11000000000000001,
+        "fear": 0.13999999999999999,
+        "confidence": 0.08,
+        "lastObservedTick": 5383,
+        "lastExposureTick": 5383,
+        "lastGiftTick": -1,
+        "lastProtectionTick": -1,
+        "evidenceCount": 2,
+        "notes": [
+          {
+            "tick": 5183,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5383,
+            "evidence": "EXPOSURE"
+          }
+        ]
+      },
+      "after": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.88,
+        "trust": 0.29000000000000004,
+        "fear": 0.03999999999999998,
+        "confidence": 0.21000000000000002,
+        "lastObservedTick": 5504,
+        "lastExposureTick": 5383,
+        "lastGiftTick": 5504,
+        "lastProtectionTick": -1,
+        "evidenceCount": 3,
+        "notes": [
+          {
+            "tick": 5183,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5383,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5504,
+            "evidence": "USEFUL_GIFT"
+          }
+        ]
+      },
+      "social_activity": {
+        "reaction": "NEUTRAL",
+        "avoidance_episodes": 0,
+        "active_until": 0,
+        "attention_episodes": 2,
+        "next_episode_at": 5583,
+        "approach_episodes": 0,
+        "rejected_paths": 0
+      },
+      "physical_damage": null,
+      "bread_delta": 1
+    },
+    {
+      "at": "2026-11-07T06:13:28.146816920Z",
+      "game_time": 6634,
+      "operation": "harm",
+      "villager": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "observer": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+      "before": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.88,
+        "trust": 0.29000000000000004,
+        "fear": 0.02999999999999998,
+        "confidence": 0.24000000000000005,
+        "lastObservedTick": 5783,
+        "lastExposureTick": 5783,
+        "lastGiftTick": 5504,
+        "lastProtectionTick": -1,
+        "evidenceCount": 5,
+        "notes": [
+          {
+            "tick": 5183,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5383,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5504,
+            "evidence": "USEFUL_GIFT"
+          },
+          {
+            "tick": 5583,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5783,
+            "evidence": "EXPOSURE"
+          }
+        ]
+      },
+      "after": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.7,
+        "trust": -0.36,
+        "fear": 0.68,
+        "confidence": 0.5900000000000001,
+        "lastObservedTick": 6634,
+        "lastExposureTick": 5783,
+        "lastGiftTick": 5504,
+        "lastProtectionTick": -1,
+        "evidenceCount": 6,
+        "notes": [
+          {
+            "tick": 5183,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5383,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5504,
+            "evidence": "USEFUL_GIFT"
+          },
+          {
+            "tick": 5583,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5783,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 6634,
+            "evidence": "PLAYER_HURT"
+          }
+        ]
+      },
+      "social_activity": {
+        "reaction": "NEUTRAL",
+        "avoidance_episodes": 0,
+        "active_until": 0,
+        "attention_episodes": 4,
+        "next_episode_at": 6734,
+        "approach_episodes": 0,
+        "rejected_paths": 0
+      },
+      "physical_damage": 1.0,
+      "bread_delta": null
+    },
+    {
+      "at": "2026-11-07T06:12:15.143045781Z",
+      "game_time": 5174,
+      "operation": "start",
+      "villager": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "observer": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+      "before": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.85,
+        "trust": 0.1,
+        "fear": 0.15,
+        "confidence": 0.05,
+        "lastObservedTick": -1,
+        "lastExposureTick": -1,
+        "lastGiftTick": -1,
+        "lastProtectionTick": -1,
+        "evidenceCount": 0,
+        "notes": []
+      },
+      "after": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.85,
+        "trust": 0.1,
+        "fear": 0.15,
+        "confidence": 0.05,
+        "lastObservedTick": -1,
+        "lastExposureTick": -1,
+        "lastGiftTick": -1,
+        "lastProtectionTick": -1,
+        "evidenceCount": 0,
+        "notes": []
+      },
+      "social_activity": {
+        "reaction": "NEUTRAL",
+        "avoidance_episodes": 0,
+        "active_until": 0,
+        "attention_episodes": 0,
+        "next_episode_at": 0,
+        "approach_episodes": 0,
+        "rejected_paths": 0
+      },
+      "physical_damage": null,
+      "bread_delta": null
+    },
+    {
+      "at": "2026-11-07T06:14:19.145226692Z",
+      "game_time": 7654,
+      "operation": "start",
+      "villager": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "observer": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+      "before": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.7,
+        "trust": -0.36,
+        "fear": 0.68,
+        "confidence": 0.5900000000000001,
+        "lastObservedTick": 6634,
+        "lastExposureTick": 5783,
+        "lastGiftTick": 5504,
+        "lastProtectionTick": -1,
+        "evidenceCount": 6,
+        "notes": [
+          {
+            "tick": 5183,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5383,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5504,
+            "evidence": "USEFUL_GIFT"
+          },
+          {
+            "tick": 5583,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5783,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 6634,
+            "evidence": "PLAYER_HURT"
+          }
+        ]
+      },
+      "after": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.7,
+        "trust": -0.36,
+        "fear": 0.68,
+        "confidence": 0.5900000000000001,
+        "lastObservedTick": 6634,
+        "lastExposureTick": 5783,
+        "lastGiftTick": 5504,
+        "lastProtectionTick": -1,
+        "evidenceCount": 6,
+        "notes": [
+          {
+            "tick": 5183,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5383,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5504,
+            "evidence": "USEFUL_GIFT"
+          },
+          {
+            "tick": 5583,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5783,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 6634,
+            "evidence": "PLAYER_HURT"
+          }
+        ]
+      },
+      "social_activity": {
+        "reaction": "NEUTRAL",
+        "avoidance_episodes": 0,
+        "active_until": 0,
+        "attention_episodes": 4,
+        "next_episode_at": 6734,
+        "approach_episodes": 0,
+        "rejected_paths": 0
+      },
+      "physical_damage": null,
+      "bread_delta": null
+    },
+    {
+      "at": "2026-11-07T06:12:31.629677618Z",
+      "game_time": 5504,
+      "operation": "status",
+      "villager": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "observer": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+      "before": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.85,
+        "trust": 0.11000000000000001,
+        "fear": 0.13999999999999999,
+        "confidence": 0.08,
+        "lastObservedTick": 5383,
+        "lastExposureTick": 5383,
+        "lastGiftTick": -1,
+        "lastProtectionTick": -1,
+        "evidenceCount": 2,
+        "notes": [
+          {
+            "tick": 5183,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5383,
+            "evidence": "EXPOSURE"
+          }
+        ]
+      },
+      "after": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.85,
+        "trust": 0.11000000000000001,
+        "fear": 0.13999999999999999,
+        "confidence": 0.08,
+        "lastObservedTick": 5383,
+        "lastExposureTick": 5383,
+        "lastGiftTick": -1,
+        "lastProtectionTick": -1,
+        "evidenceCount": 2,
+        "notes": [
+          {
+            "tick": 5183,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5383,
+            "evidence": "EXPOSURE"
+          }
+        ]
+      },
+      "social_activity": {
+        "reaction": "NEUTRAL",
+        "avoidance_episodes": 0,
+        "active_until": 0,
+        "attention_episodes": 2,
+        "next_episode_at": 5583,
+        "approach_episodes": 0,
+        "rejected_paths": 0
+      },
+      "physical_damage": null,
+      "bread_delta": null
+    },
+    {
+      "at": "2026-11-07T06:13:28.153343365Z",
+      "game_time": 6634,
+      "operation": "status",
+      "villager": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "observer": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+      "before": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.7,
+        "trust": -0.36,
+        "fear": 0.68,
+        "confidence": 0.5900000000000001,
+        "lastObservedTick": 6634,
+        "lastExposureTick": 5783,
+        "lastGiftTick": 5504,
+        "lastProtectionTick": -1,
+        "evidenceCount": 6,
+        "notes": [
+          {
+            "tick": 5183,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5383,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5504,
+            "evidence": "USEFUL_GIFT"
+          },
+          {
+            "tick": 5583,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5783,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 6634,
+            "evidence": "PLAYER_HURT"
+          }
+        ]
+      },
+      "after": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.7,
+        "trust": -0.36,
+        "fear": 0.68,
+        "confidence": 0.5900000000000001,
+        "lastObservedTick": 6634,
+        "lastExposureTick": 5783,
+        "lastGiftTick": 5504,
+        "lastProtectionTick": -1,
+        "evidenceCount": 6,
+        "notes": [
+          {
+            "tick": 5183,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5383,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5504,
+            "evidence": "USEFUL_GIFT"
+          },
+          {
+            "tick": 5583,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5783,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 6634,
+            "evidence": "PLAYER_HURT"
+          }
+        ]
+      },
+      "social_activity": {
+        "reaction": "NEUTRAL",
+        "avoidance_episodes": 0,
+        "active_until": 0,
+        "attention_episodes": 4,
+        "next_episode_at": 6734,
+        "approach_episodes": 0,
+        "rejected_paths": 0
+      },
+      "physical_damage": null,
+      "bread_delta": null
+    },
+    {
+      "at": "2026-11-07T06:14:05.622925901Z",
+      "game_time": 7384,
+      "operation": "status",
+      "villager": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "observer": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+      "before": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.7,
+        "trust": -0.36,
+        "fear": 0.68,
+        "confidence": 0.5900000000000001,
+        "lastObservedTick": 6634,
+        "lastExposureTick": 5783,
+        "lastGiftTick": 5504,
+        "lastProtectionTick": -1,
+        "evidenceCount": 6,
+        "notes": [
+          {
+            "tick": 5183,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5383,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5504,
+            "evidence": "USEFUL_GIFT"
+          },
+          {
+            "tick": 5583,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5783,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 6634,
+            "evidence": "PLAYER_HURT"
+          }
+        ]
+      },
+      "after": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.7,
+        "trust": -0.36,
+        "fear": 0.68,
+        "confidence": 0.5900000000000001,
+        "lastObservedTick": 6634,
+        "lastExposureTick": 5783,
+        "lastGiftTick": 5504,
+        "lastProtectionTick": -1,
+        "evidenceCount": 6,
+        "notes": [
+          {
+            "tick": 5183,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5383,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5504,
+            "evidence": "USEFUL_GIFT"
+          },
+          {
+            "tick": 5583,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5783,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 6634,
+            "evidence": "PLAYER_HURT"
+          }
+        ]
+      },
+      "social_activity": {
+        "reaction": "NEUTRAL",
+        "avoidance_episodes": 0,
+        "active_until": 0,
+        "attention_episodes": 4,
+        "next_episode_at": 6734,
+        "approach_episodes": 0,
+        "rejected_paths": 0
+      },
+      "physical_damage": null,
+      "bread_delta": null
+    },
+    {
+      "at": "2026-11-07T06:14:28.146147083Z",
+      "game_time": 7834,
+      "operation": "status",
+      "villager": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "observer": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+      "before": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.7,
+        "trust": -0.355,
+        "fear": 0.675,
+        "confidence": 0.6050000000000001,
+        "lastObservedTick": 7663,
+        "lastExposureTick": 7663,
+        "lastGiftTick": 5504,
+        "lastProtectionTick": -1,
+        "evidenceCount": 7,
+        "notes": [
+          {
+            "tick": 5183,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5383,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5504,
+            "evidence": "USEFUL_GIFT"
+          },
+          {
+            "tick": 5583,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5783,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 6634,
+            "evidence": "PLAYER_HURT"
+          },
+          {
+            "tick": 7663,
+            "evidence": "EXPOSURE"
+          }
+        ]
+      },
+      "after": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.7,
+        "trust": -0.355,
+        "fear": 0.675,
+        "confidence": 0.6050000000000001,
+        "lastObservedTick": 7663,
+        "lastExposureTick": 7663,
+        "lastGiftTick": 5504,
+        "lastProtectionTick": -1,
+        "evidenceCount": 7,
+        "notes": [
+          {
+            "tick": 5183,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5383,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5504,
+            "evidence": "USEFUL_GIFT"
+          },
+          {
+            "tick": 5583,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5783,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 6634,
+            "evidence": "PLAYER_HURT"
+          },
+          {
+            "tick": 7663,
+            "evidence": "EXPOSURE"
+          }
+        ]
+      },
+      "social_activity": {
+        "reaction": "NEUTRAL",
+        "avoidance_episodes": 1,
+        "active_until": 0,
+        "attention_episodes": 4,
+        "next_episode_at": 7863,
+        "approach_episodes": 0,
+        "rejected_paths": 0
+      },
+      "physical_damage": null,
+      "bread_delta": null
+    },
+    {
+      "at": "2026-11-07T06:16:58.286964274Z",
+      "game_time": 9697,
+      "operation": "status",
+      "villager": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+      "observer": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+      "before": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.7,
+        "trust": -0.355,
+        "fear": 0.675,
+        "confidence": 0.6050000000000001,
+        "lastObservedTick": 7663,
+        "lastExposureTick": 7663,
+        "lastGiftTick": 5504,
+        "lastProtectionTick": -1,
+        "evidenceCount": 7,
+        "notes": [
+          {
+            "tick": 5183,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5383,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5504,
+            "evidence": "USEFUL_GIFT"
+          },
+          {
+            "tick": 5583,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5783,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 6634,
+            "evidence": "PLAYER_HURT"
+          },
+          {
+            "tick": 7663,
+            "evidence": "EXPOSURE"
+          }
+        ]
+      },
+      "after": {
+        "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+        "awe": 0.7,
+        "trust": -0.355,
+        "fear": 0.675,
+        "confidence": 0.6050000000000001,
+        "lastObservedTick": 7663,
+        "lastExposureTick": 7663,
+        "lastGiftTick": 5504,
+        "lastProtectionTick": -1,
+        "evidenceCount": 7,
+        "notes": [
+          {
+            "tick": 5183,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5383,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5504,
+            "evidence": "USEFUL_GIFT"
+          },
+          {
+            "tick": 5583,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 5783,
+            "evidence": "EXPOSURE"
+          },
+          {
+            "tick": 6634,
+            "evidence": "PLAYER_HURT"
+          },
+          {
+            "tick": 7663,
+            "evidence": "EXPOSURE"
+          }
+        ]
+      },
+      "social_activity": {
+        "avoidance_episodes": 0,
+        "reaction": "NEUTRAL",
+        "rejected_paths": 0,
+        "approach_episodes": 0,
+        "next_episode_at": 0,
+        "attention_episodes": 0,
+        "active_until": 0
+      },
+      "physical_damage": null,
+      "bread_delta": null
+    }
+  ]
+}

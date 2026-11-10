@@ -1,0 +1,56 @@
+{
+  "capturedUTC": "2026-11-07T21:48:26.735459+00:00",
+  "kind": "NEW isolated supplied chamber; selected generous/frugal producer and glutton requester;80TPS;configured400base exhaustion/day;18operator wheat AFTER unmet request; no hunger/health/clock/age/learning/position setters after initial setup; no natural-survival or farming claim",
+  "firstPhase": "passed",
+  "restartPhase": "passed",
+  "firstGameTime": 2238,
+  "restartGameTime": 2398,
+  "nativeCycle": {
+    "requesterFoodAtRequest": 13,
+    "producerTargetAfterRequest": 20,
+    "fixtureWheatSuppliedByRealGift": 18,
+    "nativeRecipes": 5,
+    "wheatConsumed": 15,
+    "wheatRemaining": 3,
+    "breadRetained": 3,
+    "breadGiven": 1,
+    "breadEatenByProducer": 1,
+    "breadReceivedAndEatenByRequester": 1,
+    "requesterFinalFood": 15,
+    "fulfilledTarget": 15
+  },
+  "restart": {
+    "inventoryAndNutritionPreserved": true,
+    "recipesAfterRestart": 0,
+    "transfersAfterRestart": 0,
+    "noInventedPersistedDemand": true
+  },
+  "nativeJarSHA256": "79efef552177faf25145b11b3207c7c91330f2c75cbdb133bbfcf04ddd88a29a",
+  "testProbeExcludedFromProductionJar": true,
+  "ownedTerminal": [
+    {
+      "pid": 1101609,
+      "startTicks": "16681254",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/food-demand-server-v3",
+      "launchedAtEpoch": 1794087988.6178548,
+      "exitCode": 0,
+      "sameIdentityAlive": false
+    },
+    {
+      "pid": 1102060,
+      "startTicks": "16684745",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/food-demand-server-v3",
+      "launchedAtEpoch": 1794088023.5325403,
+      "exitCode": 0,
+      "sameIdentityAlive": false
+    }
+  ],
+  "pythonRunnerParses": true,
+  "primaryWorldOpenedOrModified": false,
+  "limits": [
+    "New synthetic supplied fixture, with selected founder traits, a chamber/table/beds, accelerated80TPS and400base exhaustion/day.",
+    "No hunger, health, clock, growth, age, learning or body-position setters after fixture setup.",
+    "18wheat explicitly supplied after the actual unmet request; not an autonomous crop-income test.",
+    "No population-capacity or multi-day survival claim; Lead primary and its deaths untouched."
+  ]
+}

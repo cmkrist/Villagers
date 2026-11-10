@@ -1,0 +1,98 @@
+{
+  "status": "restart-passed",
+  "events": [
+    {
+      "phase": "reopened saved fixture WITHOUT supplies, chamber edits or actor setters",
+      "tick": 72483,
+      "producer": {
+        "mood": "CONTENT",
+        "wheat": 0,
+        "crafted": 0,
+        "target": 15,
+        "bread": 2,
+        "received": 0,
+        "given": 0,
+        "requestCount": 0,
+        "id": "464f4f44-4543-4f4e-0000-000000000007",
+        "food": 20
+      },
+      "requester": {
+        "mood": "CONTENT",
+        "wheat": 0,
+        "crafted": 0,
+        "target": 15,
+        "bread": 0,
+        "received": 0,
+        "given": 0,
+        "requestCount": 0,
+        "id": "464f4f44-4543-4f4e-0000-000000000002",
+        "food": 16
+      },
+      "earnedMealObserved": false,
+      "foodDeliveries": 0,
+      "foodDeliveryPathRejections": 0,
+      "cropAges": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "harvestsByCell": {},
+      "nearbyObserverCount": 0,
+      "earnedBreadInRequesterBag": 0,
+      "plotsCultivated": 0,
+      "meanServerTickMillis": 2.033214
+    },
+    {
+      "phase": "restart exact saved inventories/nutrition at entity load; autonomous behavior resumed",
+      "tick": 72583,
+      "producer": {
+        "mood": "CONTENT",
+        "wheat": 1,
+        "crafted": 0,
+        "target": 15,
+        "bread": 2,
+        "received": 0,
+        "given": 0,
+        "requestCount": 0,
+        "id": "464f4f44-4543-4f4e-0000-000000000007",
+        "food": 20
+      },
+      "requester": {
+        "mood": "CONTENT",
+        "wheat": 0,
+        "crafted": 0,
+        "target": 15,
+        "bread": 0,
+        "received": 0,
+        "given": 0,
+        "requestCount": 0,
+        "id": "464f4f44-4543-4f4e-0000-000000000002",
+        "food": 16
+      },
+      "earnedMealObserved": false,
+      "foodDeliveries": 0,
+      "foodDeliveryPathRejections": 0,
+      "cropAges": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "harvestsByCell": {},
+      "nearbyObserverCount": 0,
+      "earnedBreadInRequesterBag": 0,
+      "plotsCultivated": 0,
+      "meanServerTickMillis": 0.593069
+    }
+  ],
+  "fixture": "NEW isolated47bare dirt plots with supplied water/light/beds/table; one finite native farm grant; producer initially holds64wheat and64beet seeds plusoneironhoe; selected founders; normal80exhaustion/day and3random tick speed at80TPS; initial4marked bread each; ordinary controller tills, pays and chooses crops; no grain resupply or post-setup body/clock/growth setters; not primary history or full-threat survival acceptance"
+}

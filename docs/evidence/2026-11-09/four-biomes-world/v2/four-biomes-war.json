@@ -1,0 +1,38 @@
+{
+  "world": "FourBiomesWar",
+  "settlements": [
+    {
+      "name": "Greenhaven",
+      "region": "GRASSLAND",
+      "faction": "VILLAGERS",
+      "x": -96,
+      "z": -96
+    },
+    {
+      "name": "Blackwood",
+      "region": "FOREST",
+      "faction": "ILLAGERS",
+      "x": 96,
+      "z": -96
+    },
+    {
+      "name": "Frostwatch",
+      "region": "SNOWY_MOUNTAINS",
+      "faction": "ILLAGERS",
+      "x": -96,
+      "z": 96
+    },
+    {
+      "name": "Sunwell",
+      "region": "DESERT",
+      "faction": "VILLAGERS",
+      "x": 96,
+      "z": 96
+    }
+  ],
+  "quarterChunks": 32,
+  "startingSupplies": "Authored scenario: buildings, farms, weapons and 24 bread per villager. No reinforcements or death restoration.",
+  "state": "active",
+  "schema": 1,
+  "chunks": 64
+}

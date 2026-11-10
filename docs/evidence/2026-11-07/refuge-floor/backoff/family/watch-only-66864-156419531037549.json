@@ -1,0 +1,1438 @@
+{
+  "kind": "play-only family observation; any food/shelter interventions recorded separately; controller chooses actions and births",
+  "gameTime": 66864,
+  "selectedAdults": [
+    "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+    "5ad3aad5-3e4b-4eb6-8158-87731868dc03"
+  ],
+  "night": true,
+  "actors": [
+    {
+      "uuid": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+      "position": [
+        -226.5,
+        72.5625,
+        773.5
+      ],
+      "health": 20.0,
+      "nativeAge": 0,
+      "baby": false,
+      "sleeping": true,
+      "food": 20,
+      "fatigue": 0.0021875,
+      "mood": "HAPPY",
+      "nextBreedingAt": 60379,
+      "courtship": "none",
+      "courtshipActive": false,
+      "nextFamilySignal": 0,
+      "nextFamilyReply": 0,
+      "familyStatus": "no recent family encounter",
+      "familyFoodGoal": false,
+      "selfFoodGoal": false,
+      "selfFoodDeficit": 10,
+      "stockWheatTarget": 0,
+      "foodStatus": "not working",
+      "plotsCultivatedThisLoad": 0,
+      "expansionTarget": "none",
+      "farmJourneyActive": false,
+      "companyTarget": "none",
+      "companyJourneyActive": false,
+      "companyStatus": "not seeking",
+      "companyScans": 0,
+      "companyPathRejections": 0,
+      "nextCompanyScan": 0,
+      "cropTarget": "none",
+      "edibleCropTarget": "none",
+      "nativeJobSite": "ResourceKey[minecraft:dimension / minecraft:overworld] BlockPos{x\u003d-226, y\u003d72, z\u003d752}",
+      "navigationDone": true,
+      "navigationTarget": "none",
+      "craftingStatus": "idle",
+      "breadCraftedThisLoad": 0,
+      "toolStatus": "not working",
+      "woodRecipesThisLoad": 0,
+      "hoesCraftedThisLoad": 0,
+      "stationStatus": "not working",
+      "stationRecipesThisLoad": 0,
+      "tablesBuiltThisLoad": 0,
+      "restStatus": "not resting",
+      "groundRestsThisLoad": 0,
+      "bedRestsThisLoad": 0,
+      "restPathRejections": 0,
+      "survival": {
+        "homePathPlans": 0,
+        "centeringSuccesses": 0,
+        "refugePathQueries": 0,
+        "lastRefugePlan": {
+          "gameTime": 66864,
+          "position": [
+            -226.5,
+            72.5625,
+            773.5
+          ],
+          "bed": "-227, 72, 773",
+          "distance": 0.0625,
+          "covered": true,
+          "inside": true,
+          "dusk": true,
+          "danger": false,
+          "pathPresent": false,
+          "pathCanReach": false,
+          "pathNodes": 0,
+          "partialAccepted": false,
+          "bounded": false,
+          "homeReachable": true,
+          "homeSafe": true,
+          "blockedUntil": 0,
+          "guardianReachable": false,
+          "chosenIntent": "SHELTER"
+        },
+        "routeStalls": 0,
+        "intent": "SHELTER",
+        "floorRoutes": 0,
+        "centeringFailures": 0,
+        "lastFloorRoute": {},
+        "centeringActive": false,
+        "centeringAttempts": 0,
+        "rejectedPaths": 0,
+        "refugeStandInspections": 0,
+        "partialHomeRoutes": 0,
+        "plans": 1,
+        "recoveryUntil": 0
+      },
+      "forestryStatus": "not working",
+      "logsGatheredThisLoad": 0,
+      "propagulesGatheredThisLoad": 0,
+      "propagulesPlantedThisLoad": 0,
+      "leavesClearedThisLoad": 0,
+      "rootsClearedThisLoad": 0,
+      "foodHelp": {
+        "received": 0,
+        "status": "not seeking food help",
+        "target": "none",
+        "pathRejections": 0,
+        "given": 0,
+        "scans": 0,
+        "journeyActive": false,
+        "requests": 0
+      },
+      "forestryRoute": {
+        "standCandidates": 0,
+        "lastPath": "none",
+        "cursor": 0,
+        "batches": 0,
+        "rejections": 0
+      },
+      "adventureActivity": {
+        "doorsOpened": 0,
+        "doorsClosed": 0,
+        "replantsFromStock": 0,
+        "cropsHarvested": 0,
+        "swordHits": 0,
+        "replantsFromHarvest": 0
+      },
+      "lastHarvest": {},
+      "action": "FLEE",
+      "electiveLearningCredit": false,
+      "inventory": [
+        "12 minecraft:wheat_seeds",
+        "1 minecraft:bread",
+        "1 minecraft:wheat",
+        "4 minecraft:beetroot_seeds",
+        "0 minecraft:air",
+        "0 minecraft:air",
+        "0 minecraft:air",
+        "0 minecraft:air"
+      ],
+      "hasActualBreedingFood": false,
+      "mind": {
+        "schemaVersion": 7,
+        "id": "5ad3aad5-3e4b-4eb6-8158-87731868dc03",
+        "name": "Fern-5ad3",
+        "personality": {
+          "boldness": 0.15464235845090935,
+          "sociability": 0.9583362337523995,
+          "curiosity": 0.24592322277579626
+        },
+        "hunger": 0.0,
+        "fatigue": 0.0021875,
+        "loneliness": 0.8642857142856629,
+        "home": {
+          "dimension": "minecraft:overworld",
+          "x": -227,
+          "y": 72,
+          "z": 773
+        },
+        "learningUpdates": 786,
+        "values": [
+          [
+            0.11875,
+            -0.056784864981964944,
+            -0.15740905994977597,
+            0.0,
+            0.0
+          ],
+          [
+            0.03919677734375003,
+            -0.0699999999999999,
+            -0.060856584821428444,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.028749999999999505,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.024624023437500912,
+            -0.15597924899442847,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "visits": [
+          [
+            2,
+            31,
+            51,
+            557,
+            0
+          ],
+          [
+            6,
+            2,
+            5,
+            109,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            5,
+            15,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "memories": [
+          {
+            "index": 764,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Completed EXPLORE at -229, 71, 757"
+          },
+          {
+            "index": 764,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Planned trip to remembered farm -226, 72, 752"
+          },
+          {
+            "index": 764,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Arrived at remembered farm -226, 72, 752"
+          },
+          {
+            "index": 765,
+            "action": "SOCIALIZE",
+            "context": 0,
+            "reward": -0.16142857142857067,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 766,
+            "action": "EXPLORE",
+            "context": 0,
+            "reward": 0.0,
+            "note": "Observed outcome of EXPLORE"
+          },
+          {
+            "index": 766,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Completed EXPLORE at -228, 71, 747"
+          },
+          {
+            "index": 767,
+            "action": "SOCIALIZE",
+            "context": 0,
+            "reward": -0.16142857142857078,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 767,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Planned trip to remembered farm -226, 72, 752"
+          },
+          {
+            "index": 767,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Arrived at remembered farm -226, 72, 752"
+          },
+          {
+            "index": 768,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.16142857142857067,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 769,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.16142857142857067,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 770,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.16142857142857067,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 771,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.16142857142857067,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 772,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.16142857142857067,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 773,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.16142857142857067,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 773,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Planned trip to remembered farm -226, 72, 752"
+          },
+          {
+            "index": 773,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Arrived at remembered farm -226, 72, 752"
+          },
+          {
+            "index": 774,
+            "action": "REST",
+            "context": 4,
+            "reward": -0.15999999999999978,
+            "note": "Observed outcome of REST"
+          },
+          {
+            "index": 775,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.16142857142857067,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 775,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Planned trip to remembered farm -226, 72, 752"
+          },
+          {
+            "index": 775,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Arrived at remembered farm -226, 72, 752"
+          },
+          {
+            "index": 776,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.16142857142857067,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 777,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.16142857142857067,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 778,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.16142857142857067,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 779,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.16142857142857067,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 779,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Planned trip to remembered farm -226, 72, 752"
+          },
+          {
+            "index": 779,
+            "context": -1,
+            "reward": 0.0,
+            "note": "No permitted route to remembered farm -226, 72, 752"
+          },
+          {
+            "index": 780,
+            "action": "REST",
+            "context": 4,
+            "reward": 0.23125000000000018,
+            "note": "Observed outcome of REST"
+          },
+          {
+            "index": 780,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Completed REST at -227, 72, 773"
+          },
+          {
+            "index": 781,
+            "action": "EXPLORE",
+            "context": 4,
+            "reward": 0.0,
+            "note": "Observed outcome of EXPLORE"
+          },
+          {
+            "index": 781,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Completed EXPLORE at -227, 72, 769"
+          },
+          {
+            "index": 782,
+            "action": "REST",
+            "context": 4,
+            "reward": 0.20812499999999323,
+            "note": "Observed outcome of REST"
+          },
+          {
+            "index": 782,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Completed REST at -227, 72, 773"
+          },
+          {
+            "index": 783,
+            "action": "REST",
+            "context": 4,
+            "reward": -0.15,
+            "note": "Observed outcome of REST"
+          },
+          {
+            "index": 783,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Completed REST at -227, 72, 773"
+          },
+          {
+            "index": 784,
+            "action": "REST",
+            "context": 4,
+            "reward": -0.15,
+            "note": "Observed outcome of REST"
+          },
+          {
+            "index": 784,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Completed REST at -227, 72, 773"
+          },
+          {
+            "index": 784,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Planned trip to remembered farm -226, 72, 752"
+          },
+          {
+            "index": 784,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Arrived at remembered farm -226, 72, 752"
+          },
+          {
+            "index": 785,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.16142857142857067,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 786,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.16142857142857067,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 786,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Safety decision SHELTER at -226, 73, 752"
+          },
+          {
+            "index": 786,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Ate owned minecraft:beetroot for hunger or healing"
+          },
+          {
+            "index": 786,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Safety decision NORMAL at -225, 73, 765"
+          },
+          {
+            "index": 786,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Safety decision SHELTER at -225, 73, 766"
+          },
+          {
+            "index": 786,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Safety decision SHELTER at -227, 72, 773"
+          },
+          {
+            "index": 786,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Ate owned minecraft:beetroot for hunger or healing"
+          },
+          {
+            "index": 786,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Safety decision SHELTER at -227, 72, 773"
+          }
+        ],
+        "impressions": [
+          {
+            "playerId": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+            "awe": 0.91,
+            "trust": 0.47500000000000003,
+            "fear": 0.0,
+            "confidence": 0.4600000000000001,
+            "lastObservedTick": 17549,
+            "lastExposureTick": 17549,
+            "lastGiftTick": 17339,
+            "lastProtectionTick": -1,
+            "evidenceCount": 12,
+            "notes": [
+              {
+                "tick": 14540,
+                "evidence": "EXPOSURE"
+              },
+              {
+                "tick": 14750,
+                "evidence": "EXPOSURE"
+              },
+              {
+                "tick": 15120,
+                "evidence": "EXPOSURE"
+              },
+              {
+                "tick": 15540,
+                "evidence": "EXPOSURE"
+              },
+              {
+                "tick": 15750,
+                "evidence": "EXPOSURE"
+              },
+              {
+                "tick": 17339,
+                "evidence": "USEFUL_GIFT"
+              },
+              {
+                "tick": 17349,
+                "evidence": "EXPOSURE"
+              },
+              {
+                "tick": 17549,
+                "evidence": "EXPOSURE"
+              }
+            ]
+          }
+        ],
+        "episodes": [
+          {
+            "id": 0,
+            "kind": "RECEIVED_ITEM",
+            "tick": 10732,
+            "subject": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+            "detail": "minecraft:iron_hoe",
+            "knownBy": [
+              "6609fea5-c92a-359b-acb7-1ab63051aa33"
+            ]
+          },
+          {
+            "id": 1,
+            "kind": "RECEIVED_ITEM",
+            "tick": 10732,
+            "subject": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+            "detail": "minecraft:wheat_seeds",
+            "knownBy": [
+              "6609fea5-c92a-359b-acb7-1ab63051aa33"
+            ]
+          },
+          {
+            "id": 2,
+            "kind": "RECEIVED_ITEM",
+            "tick": 17339,
+            "subject": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+            "detail": "minecraft:bread",
+            "knownBy": [
+              "6609fea5-c92a-359b-acb7-1ab63051aa33"
+            ]
+          },
+          {
+            "id": 3,
+            "kind": "RECEIVED_ITEM",
+            "tick": 17339,
+            "subject": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+            "detail": "minecraft:bread",
+            "knownBy": [
+              "6609fea5-c92a-359b-acb7-1ab63051aa33"
+            ]
+          },
+          {
+            "id": 4,
+            "kind": "RECEIVED_ITEM",
+            "tick": 18999,
+            "subject": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+            "detail": "minecraft:bread",
+            "knownBy": [
+              "6609fea5-c92a-359b-acb7-1ab63051aa33"
+            ]
+          },
+          {
+            "id": 5,
+            "kind": "RECEIVED_ITEM",
+            "tick": 18999,
+            "subject": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+            "detail": "minecraft:bread",
+            "knownBy": [
+              "6609fea5-c92a-359b-acb7-1ab63051aa33"
+            ]
+          },
+          {
+            "id": 6,
+            "kind": "RECEIVED_ITEM",
+            "tick": 18999,
+            "subject": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+            "detail": "minecraft:bread",
+            "knownBy": [
+              "6609fea5-c92a-359b-acb7-1ab63051aa33"
+            ]
+          },
+          {
+            "id": 7,
+            "kind": "RECEIVED_ITEM",
+            "tick": 18999,
+            "subject": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+            "detail": "minecraft:bread",
+            "knownBy": [
+              "6609fea5-c92a-359b-acb7-1ab63051aa33"
+            ]
+          },
+          {
+            "id": 8,
+            "kind": "RECEIVED_ITEM",
+            "tick": 18999,
+            "subject": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+            "detail": "minecraft:bread",
+            "knownBy": [
+              "6609fea5-c92a-359b-acb7-1ab63051aa33"
+            ]
+          },
+          {
+            "id": 9,
+            "kind": "RECEIVED_ITEM",
+            "tick": 18999,
+            "subject": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+            "detail": "minecraft:bread",
+            "knownBy": [
+              "6609fea5-c92a-359b-acb7-1ab63051aa33"
+            ]
+          },
+          {
+            "id": 10,
+            "kind": "RECEIVED_ITEM",
+            "tick": 33118,
+            "subject": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+            "detail": "minecraft:bread",
+            "knownBy": [
+              "6609fea5-c92a-359b-acb7-1ab63051aa33"
+            ]
+          },
+          {
+            "id": 11,
+            "kind": "RECEIVED_ITEM",
+            "tick": 33118,
+            "subject": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+            "detail": "minecraft:bread",
+            "knownBy": [
+              "6609fea5-c92a-359b-acb7-1ab63051aa33"
+            ]
+          },
+          {
+            "id": 12,
+            "kind": "RECEIVED_ITEM",
+            "tick": 33118,
+            "subject": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+            "detail": "minecraft:bread",
+            "knownBy": [
+              "6609fea5-c92a-359b-acb7-1ab63051aa33"
+            ]
+          },
+          {
+            "id": 13,
+            "kind": "RECEIVED_ITEM",
+            "tick": 33118,
+            "subject": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+            "detail": "minecraft:bread",
+            "knownBy": [
+              "6609fea5-c92a-359b-acb7-1ab63051aa33"
+            ]
+          },
+          {
+            "id": 14,
+            "kind": "HAD_CHILD",
+            "tick": 36379,
+            "subject": "589b708d-b768-4a61-a59e-910db084b079",
+            "detail": "Fern-589b",
+            "knownBy": []
+          }
+        ],
+        "nextEpisodeId": 15,
+        "genome": {
+          "traitGenes": [
+            {
+              "gene": "COURAGE",
+              "first": "NEUTRAL",
+              "second": "SECOND"
+            },
+            {
+              "gene": "GENEROSITY",
+              "first": "NEUTRAL",
+              "second": "FIRST"
+            },
+            {
+              "gene": "SOCIABILITY",
+              "first": "NEUTRAL",
+              "second": "SECOND"
+            },
+            {
+              "gene": "APPETITE",
+              "first": "FIRST",
+              "second": "NEUTRAL"
+            },
+            {
+              "gene": "INDUSTRY",
+              "first": "FIRST",
+              "second": "SECOND"
+            }
+          ],
+          "tendencyGenes": [
+            {
+              "tendency": "BOLDNESS",
+              "first": [
+                0.21219353677707473,
+                0.22127749419035014,
+                0.17010886252608476,
+                0.21780816112946322
+              ],
+              "second": [
+                0.09709118012474396,
+                0.08800722271146855,
+                0.13917585437573393,
+                0.09147655577235549
+              ]
+            },
+            {
+              "tendency": "SOCIABILITY",
+              "first": [
+                0.9931035817544036,
+                0.9881299821316054,
+                0.9790231497030875,
+                0.9638281348613067
+              ],
+              "second": [
+                0.9235688857503954,
+                0.9285424853731936,
+                0.9376493178017116,
+                0.9528443326434923
+              ]
+            },
+            {
+              "tendency": "CURIOSITY",
+              "first": [
+                0.2476393117856518,
+                0.2792945656986847,
+                0.42577844469343273,
+                0.33186895470599476
+              ],
+              "second": [
+                0.24420713376594072,
+                0.2125518798529078,
+                0.06606800085815978,
+                0.1599774908455978
+              ]
+            },
+            {
+              "tendency": "APPETITE",
+              "first": [
+                0.40333279535511213,
+                0.6521062071517301,
+                0.4024852997366568,
+                0.5587415115840788
+              ],
+              "second": [
+                0.2574297219349757,
+                0.008656310138357715,
+                0.258277217553431,
+                0.102021005706009
+              ]
+            },
+            {
+              "tendency": "FERTILITY",
+              "first": [
+                0.9309694710551528,
+                0.8361169938967116,
+                0.7272839550464907,
+                0.7978708342724404
+              ],
+              "second": [
+                0.3853159151758878,
+                0.48016839233432906,
+                0.58900143118455,
+                0.5184145519586002
+              ]
+            }
+          ]
+        },
+        "food": {
+          "foodLevel": 20,
+          "saturation": 0.0,
+          "exhaustion": 0.059155896,
+          "timer": 0
+        },
+        "ageTicks": 56020,
+        "lexicon": {
+          "entries": [
+            {
+              "concept": "HELLO",
+              "word": "mukata",
+              "strength": 0.6
+            },
+            {
+              "concept": "YES",
+              "word": "ratodal",
+              "strength": 0.6
+            },
+            {
+              "concept": "WANT",
+              "word": "ke",
+              "strength": 0.6
+            },
+            {
+              "concept": "BED",
+              "word": "ka",
+              "strength": 0.6
+            },
+            {
+              "concept": "FRIEND",
+              "word": "lud",
+              "strength": 0.6
+            },
+            {
+              "concept": "WALK",
+              "word": "vireka",
+              "strength": 0.6
+            },
+            {
+              "concept": "DANGER",
+              "word": "giguzo",
+              "strength": 0.6
+            },
+            {
+              "concept": "MONSTER",
+              "word": "nigari",
+              "strength": 0.6
+            },
+            {
+              "concept": "HURT",
+              "word": "mol",
+              "strength": 0.6
+            },
+            {
+              "concept": "AFRAID",
+              "word": "dusut",
+              "strength": 0.6
+            },
+            {
+              "concept": "POTATO",
+              "word": "risopu",
+              "strength": 0.6
+            },
+            {
+              "concept": "BEETROOT",
+              "word": "mobav",
+              "strength": 0.6
+            },
+            {
+              "concept": "SEEDS",
+              "word": "parumo",
+              "strength": 0.6
+            },
+            {
+              "concept": "SWORD",
+              "word": "be",
+              "strength": 0.6
+            },
+            {
+              "concept": "HUNGRY",
+              "word": "do",
+              "strength": 0.75
+            },
+            {
+              "concept": "BREAD",
+              "word": "pa",
+              "strength": 0.75
+            },
+            {
+              "concept": "THANKS",
+              "word": "sibate",
+              "strength": 0.75
+            },
+            {
+              "concept": "TIRED",
+              "word": "razele",
+              "strength": 0.75
+            },
+            {
+              "concept": "LONELY",
+              "word": "nabiko",
+              "strength": 0.9
+            },
+            {
+              "concept": "FOOD",
+              "word": "tigave",
+              "strength": 0.75
+            },
+            {
+              "concept": "TRADE",
+              "word": "godemu",
+              "strength": 0.75
+            },
+            {
+              "concept": "EMERALD",
+              "word": "fu",
+              "strength": 1.0
+            },
+            {
+              "concept": "HOE",
+              "word": "pi",
+              "strength": 0.75
+            },
+            {
+              "concept": "CARROT",
+              "word": "pa",
+              "strength": 0.9
+            },
+            {
+              "concept": "HAPPY",
+              "word": "vomo",
+              "strength": 0.9
+            },
+            {
+              "concept": "NO",
+              "word": "ropor",
+              "strength": 1.0
+            },
+            {
+              "concept": "WHEAT",
+              "word": "tozem",
+              "strength": 1.0
+            }
+          ]
+        },
+        "opinions": {
+          "known": [
+            {
+              "other": "5894771d-5fcc-45c5-bb4c-4733e2c992c4",
+              "liking": 0.04,
+              "trust": 0.02,
+              "fear": 0.0,
+              "witnessed": 1,
+              "hearsay": 0,
+              "lastTick": 22542
+            },
+            {
+              "other": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+              "liking": 0.94068761549824,
+              "trust": 0.5448740599146498,
+              "fear": 0.0,
+              "witnessed": 29,
+              "hearsay": 1,
+              "lastTick": 36184
+            },
+            {
+              "other": "589b708d-b768-4a61-a59e-910db084b079",
+              "liking": 0.04,
+              "trust": 0.02,
+              "fear": 0.0,
+              "witnessed": 1,
+              "hearsay": 0,
+              "lastTick": 51192
+            },
+            {
+              "other": "c7c31152-34a1-4edd-bd84-e48f50f86088",
+              "liking": 1.0,
+              "trust": 0.9000000000000005,
+              "fear": 0.0,
+              "witnessed": 49,
+              "hearsay": 0,
+              "lastTick": 53934
+            }
+          ]
+        },
+        "experience": {
+          "boldness": 0.2,
+          "sociability": 0.2,
+          "curiosity": 0.2
+        },
+        "nextBreedingAt": 60379
+      },
+      "nativeHome": "ResourceKey[minecraft:dimension / minecraft:overworld] BlockPos{x\u003d-227, y\u003d72, z\u003d773}",
+      "spareHomePoisWithin16": [
+        "-229, 71, 760",
+        "-218, 71, 761"
+      ]
+    }
+  ],
+  "fixtureBed": "-269, 75, 733",
+  "fixtureBedState": "Block{minecraft:lime_bed}[facing\u003deast,occupied\u003dtrue,part\u003dhead]",
+  "fixtureBedPoiAvailable": false
+}

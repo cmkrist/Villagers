@@ -1,0 +1,1078 @@
+{
+  "capturedUTC": "2026-11-08T01:36:02.349866+00:00",
+  "status": "Prior source reproduces unauthorized paid-request gift; both intermediate late-food failures retained. Final source passes paid commission, explicit charity, productive circulation and all three clean restarts",
+  "finalSourceDrift": false,
+  "finalSourceChangedPaths": [],
+  "javaTests": {
+    "tests": 376,
+    "failures": 0,
+    "errors": 0
+  },
+  "pythonChecks": 10,
+  "sameProbeSourceAcrossPriorAndCurrentPaidFixture": true,
+  "runs": [
+    {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/food-commission-prior-source",
+      "nativeClassBindingsChecked": 219,
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/food-bundle-artifact-v2",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "cd88f89bbb1abcdf666f45406cc83bd97da30111f120a3cb517ef9a3b312bf4e"
+        },
+        "fixtureSourceSHA256": "a2f1641c159a97ca58922b1399b66a11326b3cbb80553e1245f3ede8dda803a0",
+        "nativeClassBindingsChecked": 219,
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "2ebc804908b45d82d92514a8c4b6831ed89208e9f6f4f5d6508dcff1f86e3394",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "cd88f89bbb1abcdf666f45406cc83bd97da30111f120a3cb517ef9a3b312bf4e"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      },
+      "checks": {},
+      "phases": [
+        {
+          "phase": "first",
+          "status": "failed",
+          "failure": "java.lang.AssertionError: paid request alone cannot authorize an otherwise eligible native gift",
+          "lastObservation": {
+            "phase": "paid request heard",
+            "tick": 1478,
+            "foodAtPurchase": -1,
+            "giftBoundaryChecked": false,
+            "buyer": {
+              "food": 13,
+              "health": 20.0,
+              "money": 1,
+              "bread": 0,
+              "wheat": 0,
+              "crafted": 0,
+              "bought": 0,
+              "sold": 0,
+              "giftsReceived": 0,
+              "giftsGiven": 0
+            },
+            "seller": {
+              "food": 16,
+              "health": 20.0,
+              "money": 0,
+              "bread": 3,
+              "wheat": 6,
+              "crafted": 0,
+              "bought": 0,
+              "sold": 0,
+              "giftsReceived": 0,
+              "giftsGiven": 0
+            }
+          },
+          "custody": {
+            "pid": 1223014,
+            "startTicks": "17946170",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-commission-prior-source",
+            "launchedAtEpoch": 1794100637.7755427
+          },
+          "terminal": {
+            "pid": 1223014,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794100664.4583235
+          },
+          "exactProcessGone": true
+        }
+      ]
+    },
+    {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/food-commission-server",
+      "nativeClassBindingsChecked": 220,
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/food-intent-artifact",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "f5e6c56ddfb9993d899c686cfe41009f5e6b2ece1d32a37b0af0ceb0df2f918f"
+        },
+        "fixtureSourceSHA256": "a2f1641c159a97ca58922b1399b66a11326b3cbb80553e1245f3ede8dda803a0",
+        "nativeClassBindingsChecked": 220,
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "3ac36f771cd6feb1c0927b5aebda085457617682509b57d3d725655fd8e10b33",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "f5e6c56ddfb9993d899c686cfe41009f5e6b2ece1d32a37b0af0ceb0df2f918f"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      },
+      "checks": {
+        "balancedExchanges": 1
+      },
+      "phases": [
+        {
+          "phase": "first",
+          "status": "passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "paid commission, denied gift, actual production/payment/meal passed",
+            "tick": 2108,
+            "foodAtPurchase": 10,
+            "giftBoundaryChecked": true,
+            "buyer": {
+              "food": 15,
+              "health": 20.0,
+              "money": 0,
+              "bread": 0,
+              "wheat": 0,
+              "crafted": 0,
+              "bought": 1,
+              "sold": 0,
+              "giftsReceived": 0,
+              "giftsGiven": 0
+            },
+            "seller": {
+              "food": 20,
+              "health": 20.0,
+              "money": 1,
+              "bread": 3,
+              "wheat": 0,
+              "crafted": 2,
+              "bought": 0,
+              "sold": 1,
+              "giftsReceived": 0,
+              "giftsGiven": 0
+            }
+          },
+          "custody": {
+            "pid": 1223922,
+            "startTicks": "17953866",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-commission-server",
+            "launchedAtEpoch": 1794100714.7355897
+          },
+          "terminal": {
+            "pid": 1223922,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794100749.2187889
+          },
+          "exactProcessGone": true
+        },
+        {
+          "phase": "restart",
+          "status": "restart-passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "clean restart retained food, inputs and earned money",
+            "tick": 2268,
+            "foodAtPurchase": -1,
+            "giftBoundaryChecked": false,
+            "buyer": {
+              "food": 15,
+              "health": 20.0,
+              "money": 0,
+              "bread": 0,
+              "wheat": 0,
+              "crafted": 0,
+              "bought": 0,
+              "sold": 0,
+              "giftsReceived": 0,
+              "giftsGiven": 0
+            },
+            "seller": {
+              "food": 20,
+              "health": 20.0,
+              "money": 1,
+              "bread": 3,
+              "wheat": 0,
+              "crafted": 0,
+              "bought": 0,
+              "sold": 0,
+              "giftsReceived": 0,
+              "giftsGiven": 0
+            }
+          },
+          "custody": {
+            "pid": 1224227,
+            "startTicks": "17957314",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-commission-server",
+            "launchedAtEpoch": 1794100749.2193651
+          },
+          "terminal": {
+            "pid": 1224227,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794100757.0575933
+          },
+          "exactProcessGone": true
+        }
+      ]
+    },
+    {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/food-intent-sharing-regression",
+      "nativeClassBindingsChecked": 220,
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/food-intent-artifact",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "f5e6c56ddfb9993d899c686cfe41009f5e6b2ece1d32a37b0af0ceb0df2f918f"
+        },
+        "fixtureSourceSHA256": "868f2b624e3d4896cfefe7aab1d33a0031cd1ef4880e5cd4b3c8fbb2448210b5",
+        "nativeClassBindingsChecked": 220,
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "ddae5012aa53c1876b8f5ddf8b862d30f420380c8a451356f78a7c68e2eb5757",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "f5e6c56ddfb9993d899c686cfe41009f5e6b2ece1d32a37b0af0ceb0df2f918f"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      },
+      "checks": {},
+      "phases": [
+        {
+          "phase": "first",
+          "status": "passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "completed real production/handoff/meal",
+            "tick": 1919,
+            "producer": {
+              "requestCount": 0,
+              "given": 1,
+              "received": 0,
+              "bread": 3,
+              "target": 15,
+              "crafted": 5,
+              "wheat": 3,
+              "mood": "HAPPY",
+              "food": 20,
+              "id": "464f4f44-4543-4f4e-0000-000000000007"
+            },
+            "requester": {
+              "requestCount": 1,
+              "given": 0,
+              "received": 1,
+              "bread": 0,
+              "target": 15,
+              "crafted": 0,
+              "wheat": 0,
+              "mood": "CONTENT",
+              "food": 18,
+              "id": "464f4f44-4543-4f4e-0000-000000000002"
+            },
+            "earnedMealObserved": false,
+            "foodDeliveries": 1,
+            "foodDeliveryPathRejections": 0
+          },
+          "custody": {
+            "pid": 1224600,
+            "startTicks": "17961018",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-intent-sharing-regression",
+            "launchedAtEpoch": 1794100786.2537885
+          },
+          "terminal": {
+            "pid": 1224600,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794100818.0828483
+          },
+          "exactProcessGone": true
+        },
+        {
+          "phase": "restart",
+          "status": "restart-passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "restart exact saved inventories/nutrition at entity load; autonomous behavior resumed",
+            "tick": 2079,
+            "producer": {
+              "wheat": 3,
+              "mood": "HAPPY",
+              "food": 20,
+              "id": "464f4f44-4543-4f4e-0000-000000000007",
+              "requestCount": 0,
+              "given": 0,
+              "received": 0,
+              "bread": 3,
+              "target": 15,
+              "crafted": 0
+            },
+            "requester": {
+              "wheat": 0,
+              "mood": "CONTENT",
+              "food": 18,
+              "id": "464f4f44-4543-4f4e-0000-000000000002",
+              "requestCount": 0,
+              "given": 0,
+              "received": 0,
+              "bread": 0,
+              "target": 15,
+              "crafted": 0
+            },
+            "earnedMealObserved": false,
+            "foodDeliveries": 0,
+            "foodDeliveryPathRejections": 0
+          },
+          "custody": {
+            "pid": 1224805,
+            "startTicks": "17964201",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-intent-sharing-regression",
+            "launchedAtEpoch": 1794100818.083397
+          },
+          "terminal": {
+            "pid": 1224805,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794100826.0209582
+          },
+          "exactProcessGone": true
+        }
+      ]
+    },
+    {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/food-intent-production-regression",
+      "nativeClassBindingsChecked": 220,
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/food-intent-artifact",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "f5e6c56ddfb9993d899c686cfe41009f5e6b2ece1d32a37b0af0ceb0df2f918f"
+        },
+        "fixtureSourceSHA256": "1659dee94d54c7963e15074440e55bc402e5fced96c856a87d641218d7ccb8f8",
+        "nativeClassBindingsChecked": 220,
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "f484296e513d6c7281289f70c94a3cc4f1ca5c53951f9726d93600502aa3e925",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "f5e6c56ddfb9993d899c686cfe41009f5e6b2ece1d32a37b0af0ceb0df2f918f"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      },
+      "checks": {
+        "balancedExchanges": 2,
+        "paidNativeHarvests": 11
+      },
+      "phases": [
+        {
+          "phase": "first",
+          "status": "failed",
+          "failure": "java.lang.AssertionError: actual meal is bought before emergency hunger, with no zero-food interval",
+          "lastObservation": {
+            "phase": "manufactured tool sale or earned food purchase observed",
+            "tick": 9889,
+            "buyer": {
+              "id": "50524f44-4d41-524b-0000-00000000006a",
+              "food": 20,
+              "money": 2,
+              "bread": 3,
+              "wheat": 0,
+              "crafted": 4,
+              "toolDemand": "none",
+              "hoesCrafted": 0,
+              "woodRecipes": 0,
+              "tradePaths": 2,
+              "tradeRejections": 0,
+              "x": 7.925000011920929,
+              "z": 3.3902413833013867,
+              "toolStatus": "missing wood for a hoe",
+              "foodStatus": "not working",
+              "foodDemand": "none",
+              "tradePathStarts": 2,
+              "lastTradePath": {
+                "nodes": 2,
+                "canReach": true,
+                "goal": "8, 81, 5",
+                "peerPosition": "(6.5, 81.0, 4.5)",
+                "actor": "(9.5, 81.0, 5.321721031394613)",
+                "gameTime": 468,
+                "peer": "6, 81, 4"
+              },
+              "foodContactPurchases": 0,
+              "productionRequests": 1,
+              "lastProductionRequest": {
+                "customerMoney": 2,
+                "customerFood": 13,
+                "gameTime": 7479,
+                "customer": "50524f44-4d41-524b-0000-00000000003f",
+                "price": 2,
+                "kind": "FOOD"
+              },
+              "bought": 1,
+              "sold": 1,
+              "foodRequests": 0,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 11,
+              "y": 81.5625,
+              "eye": "(7.925000011920929, 83.18250000476837, 3.3902413833013867)",
+              "seesPeer": true
+            },
+            "seller": {
+              "id": "50524f44-4d41-524b-0000-00000000003f",
+              "food": 0,
+              "money": 0,
+              "bread": 1,
+              "wheat": 0,
+              "crafted": 0,
+              "toolDemand": "none",
+              "hoesCrafted": 1,
+              "woodRecipes": 3,
+              "tradePaths": 12,
+              "tradeRejections": 12,
+              "x": 6.55707461231268,
+              "z": 5.738519209351978,
+              "toolStatus": "made a real wooden hoe",
+              "foodStatus": "remembered farm unreachable",
+              "foodDemand": "none",
+              "tradePathStarts": 0,
+              "lastTradePath": {},
+              "foodContactPurchases": 1,
+              "productionRequests": 1,
+              "lastProductionRequest": {
+                "customerMoney": 2,
+                "customerFood": 19,
+                "gameTime": 478,
+                "customer": "50524f44-4d41-524b-0000-00000000006a",
+                "price": 2,
+                "kind": "HOE"
+              },
+              "bought": 1,
+              "sold": 1,
+              "foodRequests": 2,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 17,
+              "y": 81.0,
+              "eye": "(6.55707461231268, 82.62000000476837, 5.738519209351978)",
+              "seesPeer": true
+            },
+            "harvestsThisLoad": 11,
+            "meanServerTickMillis": 0.095435,
+            "minimumMakerFood": 0,
+            "minimumFarmerFood": 16,
+            "foodAtPurchase": 0,
+            "minimumMakerHealth": 20.0,
+            "minimumFarmerHealth": 20.0
+          },
+          "custody": {
+            "pid": 1224977,
+            "startTicks": "17965075",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-intent-production-regression",
+            "launchedAtEpoch": 1794100826.8232758
+          },
+          "terminal": {
+            "pid": 1224977,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794100958.4180436
+          },
+          "exactProcessGone": true
+        }
+      ]
+    },
+    {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/food-intent-production-regression-v2",
+      "nativeClassBindingsChecked": 222,
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/food-intent-artifact-v2",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "350124e0675828e32e523282eaf3f75cf1df5588054e81d1f94b63c97b2b3747"
+        },
+        "fixtureSourceSHA256": "154cec3b6ef1ba79636d485eeb1070f1a7b81a8e9886c888d1cde0b719ca245b",
+        "nativeClassBindingsChecked": 222,
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "a0e2b5fcc9c43c15712b59c5eb7c1ca63c63b93f9219478eb15b1417c7d5bad9",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "350124e0675828e32e523282eaf3f75cf1df5588054e81d1f94b63c97b2b3747"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      },
+      "checks": {
+        "balancedExchanges": 2,
+        "paidNativeHarvests": 11
+      },
+      "phases": [
+        {
+          "phase": "first",
+          "status": "failed",
+          "failure": "java.lang.AssertionError: actual meal is bought before emergency hunger, with no zero-food interval",
+          "lastObservation": {
+            "phase": "observe",
+            "tick": 9200,
+            "buyer": {
+              "id": "50524f44-4d41-524b-0000-00000000006a",
+              "food": 19,
+              "money": 2,
+              "bread": 3,
+              "wheat": 0,
+              "crafted": 4,
+              "toolDemand": "none",
+              "hoesCrafted": 0,
+              "woodRecipes": 0,
+              "tradePaths": 4,
+              "tradeRejections": 0,
+              "x": 8.356313513424096,
+              "z": 4.751508419411075,
+              "toolStatus": "missing wood for a hoe",
+              "foodStatus": "not working",
+              "foodDemand": "none",
+              "tradePathStarts": 4,
+              "lastTradePath": {
+                "accepted": true,
+                "gameTime": 1118,
+                "actorEye": "(9.276442721637656, 83.18250000476837, 3.5565133549175587)",
+                "actor": "(9.276442721637656, 81.5625, 3.5565133549175587)",
+                "canReach": true,
+                "goal": "8, 81, 5",
+                "peer": "6, 81, 5",
+                "nodes": 3,
+                "peerEye": "(6.486112383306164, 82.62000000476837, 5.324869166784599)",
+                "peerPosition": "(6.486112383306164, 81.0, 5.324869166784599)"
+              },
+              "foodContactPurchases": 0,
+              "productionRequests": 1,
+              "lastProductionRequest": {
+                "customerMoney": 2,
+                "customerFood": 11,
+                "gameTime": 7919,
+                "customer": "50524f44-4d41-524b-0000-00000000003f",
+                "price": 2,
+                "kind": "FOOD"
+              },
+              "bought": 1,
+              "sold": 1,
+              "foodRequests": 0,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 11,
+              "y": 81.5625,
+              "eye": "(8.356313513424096, 83.18250000476837, 4.751508419411075)",
+              "seesPeer": true
+            },
+            "seller": {
+              "id": "50524f44-4d41-524b-0000-00000000003f",
+              "food": 4,
+              "money": 0,
+              "bread": 1,
+              "wheat": 0,
+              "crafted": 0,
+              "toolDemand": "none",
+              "hoesCrafted": 1,
+              "woodRecipes": 3,
+              "tradePaths": 12,
+              "tradeRejections": 12,
+              "x": 6.579581546544594,
+              "z": 5.744372026464273,
+              "toolStatus": "made a real wooden hoe",
+              "foodStatus": "remembered farm unreachable",
+              "foodDemand": "none",
+              "tradePathStarts": 0,
+              "lastTradePath": {
+                "accepted": false,
+                "gameTime": 8599,
+                "actorEye": "(6.5, 82.62000000476837, 6.2852630168719985)",
+                "actor": "(6.5, 81.0, 6.2852630168719985)",
+                "canReach": false,
+                "goal": "12, 81, 5",
+                "peer": "9, 81, 5",
+                "nodes": 2,
+                "peerEye": "(9.5237206982714, 82.62000000476837, 5.204239742810918)",
+                "peerPosition": "(9.5237206982714, 81.0, 5.204239742810918)"
+              },
+              "foodContactPurchases": 1,
+              "productionRequests": 1,
+              "lastProductionRequest": {
+                "customerMoney": 2,
+                "customerFood": 19,
+                "gameTime": 518,
+                "customer": "50524f44-4d41-524b-0000-00000000006a",
+                "price": 2,
+                "kind": "HOE"
+              },
+              "bought": 1,
+              "sold": 1,
+              "foodRequests": 1,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 17,
+              "y": 81.0,
+              "eye": "(6.579581546544594, 82.62000000476837, 5.744372026464273)",
+              "seesPeer": true
+            },
+            "harvestsThisLoad": 11,
+            "meanServerTickMillis": 0.107035,
+            "minimumMakerFood": 4,
+            "minimumFarmerFood": 16,
+            "foodAtPurchase": 4,
+            "minimumMakerHealth": 20.0,
+            "minimumFarmerHealth": 20.0
+          },
+          "custody": {
+            "pid": 1227154,
+            "startTicks": "17999942",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-intent-production-regression-v2",
+            "launchedAtEpoch": 1794101175.5005584
+          },
+          "terminal": {
+            "pid": 1227154,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794101298.4363966
+          },
+          "exactProcessGone": true
+        }
+      ]
+    },
+    {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/food-commission-server-v3",
+      "nativeClassBindingsChecked": 223,
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/food-intent-artifact-v3",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "6e1a083543bd4c01f502e3ed6feaa80dc07357bfd97525e2eff8477f62f8ae71"
+        },
+        "fixtureSourceSHA256": "a2f1641c159a97ca58922b1399b66a11326b3cbb80553e1245f3ede8dda803a0",
+        "nativeClassBindingsChecked": 223,
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "3aebe573ff9e79f880d51a01c9787d6163e2b4bd1fbf3824de926080630130ff",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "6e1a083543bd4c01f502e3ed6feaa80dc07357bfd97525e2eff8477f62f8ae71"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      },
+      "checks": {
+        "balancedExchanges": 1
+      },
+      "phases": [
+        {
+          "phase": "first",
+          "status": "passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "paid commission, denied gift, actual production/payment/meal passed",
+            "tick": 1508,
+            "foodAtPurchase": 13,
+            "giftBoundaryChecked": true,
+            "buyer": {
+              "food": 18,
+              "health": 20.0,
+              "money": 0,
+              "bread": 0,
+              "wheat": 0,
+              "crafted": 0,
+              "bought": 1,
+              "sold": 0,
+              "giftsReceived": 0,
+              "giftsGiven": 0
+            },
+            "seller": {
+              "food": 16,
+              "health": 20.0,
+              "money": 1,
+              "bread": 3,
+              "wheat": 3,
+              "crafted": 1,
+              "bought": 0,
+              "sold": 1,
+              "giftsReceived": 0,
+              "giftsGiven": 0
+            }
+          },
+          "custody": {
+            "pid": 1229843,
+            "startTicks": "18048121",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-commission-server-v3",
+            "launchedAtEpoch": 1794101657.2843974
+          },
+          "terminal": {
+            "pid": 1229843,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794101683.8966548
+          },
+          "exactProcessGone": true
+        },
+        {
+          "phase": "restart",
+          "status": "restart-passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "clean restart retained food, inputs and earned money",
+            "tick": 1668,
+            "foodAtPurchase": -1,
+            "giftBoundaryChecked": false,
+            "buyer": {
+              "food": 18,
+              "health": 20.0,
+              "money": 0,
+              "bread": 0,
+              "wheat": 0,
+              "crafted": 0,
+              "bought": 0,
+              "sold": 0,
+              "giftsReceived": 0,
+              "giftsGiven": 0
+            },
+            "seller": {
+              "food": 16,
+              "health": 20.0,
+              "money": 1,
+              "bread": 3,
+              "wheat": 3,
+              "crafted": 0,
+              "bought": 0,
+              "sold": 0,
+              "giftsReceived": 0,
+              "giftsGiven": 0
+            }
+          },
+          "custody": {
+            "pid": 1230098,
+            "startTicks": "18050782",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-commission-server-v3",
+            "launchedAtEpoch": 1794101683.8971436
+          },
+          "terminal": {
+            "pid": 1230098,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794101691.7872627
+          },
+          "exactProcessGone": true
+        }
+      ]
+    },
+    {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/food-intent-sharing-regression-v3",
+      "nativeClassBindingsChecked": 223,
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/food-intent-artifact-v3",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "6e1a083543bd4c01f502e3ed6feaa80dc07357bfd97525e2eff8477f62f8ae71"
+        },
+        "fixtureSourceSHA256": "868f2b624e3d4896cfefe7aab1d33a0031cd1ef4880e5cd4b3c8fbb2448210b5",
+        "nativeClassBindingsChecked": 223,
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "5055904f4fa492d48329012398baa04756435fe4059c905a55948395a20aeddf",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "6e1a083543bd4c01f502e3ed6feaa80dc07357bfd97525e2eff8477f62f8ae71"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      },
+      "checks": {},
+      "phases": [
+        {
+          "phase": "first",
+          "status": "passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "completed real production/handoff/meal",
+            "tick": 1919,
+            "producer": {
+              "received": 0,
+              "given": 1,
+              "requestCount": 0,
+              "id": "464f4f44-4543-4f4e-0000-000000000007",
+              "food": 20,
+              "mood": "HAPPY",
+              "wheat": 3,
+              "crafted": 5,
+              "target": 15,
+              "bread": 3
+            },
+            "requester": {
+              "received": 1,
+              "given": 0,
+              "requestCount": 1,
+              "id": "464f4f44-4543-4f4e-0000-000000000002",
+              "food": 18,
+              "mood": "CONTENT",
+              "wheat": 0,
+              "crafted": 0,
+              "target": 15,
+              "bread": 0
+            },
+            "earnedMealObserved": false,
+            "foodDeliveries": 1,
+            "foodDeliveryPathRejections": 0
+          },
+          "custody": {
+            "pid": 1230263,
+            "startTicks": "18051658",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-intent-sharing-regression-v3",
+            "launchedAtEpoch": 1794101692.6611102
+          },
+          "terminal": {
+            "pid": 1230263,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794101724.9553254
+          },
+          "exactProcessGone": true
+        },
+        {
+          "phase": "restart",
+          "status": "restart-passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "restart exact saved inventories/nutrition at entity load; autonomous behavior resumed",
+            "tick": 2079,
+            "producer": {
+              "wheat": 3,
+              "mood": "HAPPY",
+              "food": 20,
+              "id": "464f4f44-4543-4f4e-0000-000000000007",
+              "requestCount": 0,
+              "given": 0,
+              "received": 0,
+              "bread": 3,
+              "target": 15,
+              "crafted": 0
+            },
+            "requester": {
+              "wheat": 0,
+              "mood": "CONTENT",
+              "food": 18,
+              "id": "464f4f44-4543-4f4e-0000-000000000002",
+              "requestCount": 0,
+              "given": 0,
+              "received": 0,
+              "bread": 0,
+              "target": 15,
+              "crafted": 0
+            },
+            "earnedMealObserved": false,
+            "foodDeliveries": 0,
+            "foodDeliveryPathRejections": 0
+          },
+          "custody": {
+            "pid": 1230532,
+            "startTicks": "18054888",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-intent-sharing-regression-v3",
+            "launchedAtEpoch": 1794101724.9558911
+          },
+          "terminal": {
+            "pid": 1230532,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794101733.293243
+          },
+          "exactProcessGone": true
+        }
+      ]
+    },
+    {
+      "runtime": "/home/niko/.internal/source/Villagers/runs/food-intent-production-regression-v3",
+      "nativeClassBindingsChecked": 223,
+      "pins": {
+        "frozenArtifactRuntime": "/home/niko/.internal/source/Villagers/runs/food-intent-artifact-v3",
+        "sourcePins": {
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "6e1a083543bd4c01f502e3ed6feaa80dc07357bfd97525e2eff8477f62f8ae71"
+        },
+        "fixtureSourceSHA256": "2d765de36979b192e0303246ee6d04f35bb1ff0c2fe452ff85546c929a1faef0",
+        "nativeClassBindingsChecked": 223,
+        "nativePins": {
+          "mods/tool-renewal-probe.jar": "e45a6ee3792f1d0a725628d71b6acd2e659959a14ffac7afe7fcb3727e0233af",
+          "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+          "mods/villagers-0.4.1-dev.jar": "6e1a083543bd4c01f502e3ed6feaa80dc07357bfd97525e2eff8477f62f8ae71"
+        },
+        "scope": "Declared supplied native fixture. No primary worlds, current shared source writes, recipe forcing or post-setup resident/terrain setters."
+      },
+      "checks": {
+        "balancedExchanges": 2,
+        "paidNativeHarvests": 11
+      },
+      "phases": [
+        {
+          "phase": "first",
+          "status": "passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "request, paid native manufacture, sale, native farming, earned bread sale, returned currency and meal passed",
+            "tick": 7829,
+            "buyer": {
+              "id": "50524f44-4d41-524b-0000-00000000006a",
+              "food": 20,
+              "money": 2,
+              "bread": 3,
+              "wheat": 0,
+              "crafted": 4,
+              "toolDemand": "none",
+              "hoesCrafted": 0,
+              "woodRecipes": 0,
+              "tradePaths": 4,
+              "tradeRejections": 0,
+              "x": 9.046261192384902,
+              "z": 5.430891396509913,
+              "toolStatus": "missing wood for a hoe",
+              "foodStatus": "stored real food",
+              "foodDemand": "none",
+              "tradePathStarts": 4,
+              "lastTradePath": {
+                "peerPosition": "(6.5, 81.0, 5.321721031394613)",
+                "peerEye": "(6.5, 82.62000000476837, 5.321721031394613)",
+                "nodes": 3,
+                "peer": "6, 81, 5",
+                "goal": "8, 81, 5",
+                "canReach": true,
+                "actor": "(9.5, 81.0, 4.5)",
+                "actorEye": "(9.5, 82.62000000476837, 4.5)",
+                "gameTime": 7818,
+                "accepted": true
+              },
+              "foodContactPurchases": 0,
+              "paidFoodDeliveries": 1,
+              "productionRequests": 1,
+              "lastProductionRequest": {
+                "kind": "FOOD",
+                "price": 2,
+                "customer": "50524f44-4d41-524b-0000-00000000003f",
+                "gameTime": 7479,
+                "customerFood": 13,
+                "customerMoney": 2
+              },
+              "bought": 1,
+              "sold": 1,
+              "foodRequests": 0,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 11,
+              "y": 81.0,
+              "eye": "(9.046261192384902, 82.62000000476837, 5.430891396509913)",
+              "seesPeer": true
+            },
+            "seller": {
+              "id": "50524f44-4d41-524b-0000-00000000003f",
+              "food": 17,
+              "money": 0,
+              "bread": 0,
+              "wheat": 0,
+              "crafted": 0,
+              "toolDemand": "none",
+              "hoesCrafted": 1,
+              "woodRecipes": 3,
+              "tradePaths": 0,
+              "tradeRejections": 0,
+              "x": 6.5,
+              "z": 5.321721031394613,
+              "toolStatus": "made a real wooden hoe",
+              "foodStatus": "food route blocked",
+              "foodDemand": "none",
+              "tradePathStarts": 0,
+              "lastTradePath": {},
+              "foodContactPurchases": 0,
+              "paidFoodDeliveries": 0,
+              "productionRequests": 1,
+              "lastProductionRequest": {
+                "kind": "HOE",
+                "price": 2,
+                "customer": "50524f44-4d41-524b-0000-00000000006a",
+                "gameTime": 518,
+                "customerFood": 19,
+                "customerMoney": 2
+              },
+              "bought": 1,
+              "sold": 1,
+              "foodRequests": 1,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 17,
+              "y": 81.0,
+              "eye": "(6.5, 82.62000000476837, 5.321721031394613)",
+              "seesPeer": true
+            },
+            "harvestsThisLoad": 11,
+            "meanServerTickMillis": 0.141957,
+            "minimumMakerFood": 12,
+            "minimumFarmerFood": 16,
+            "foodAtPurchase": 12,
+            "minimumMakerHealth": 20.0,
+            "minimumFarmerHealth": 20.0
+          },
+          "custody": {
+            "pid": 1229142,
+            "startTicks": "18036688",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-intent-production-regression-v3",
+            "launchedAtEpoch": 1794101542.9532683
+          },
+          "terminal": {
+            "pid": 1229142,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794101648.749098
+          },
+          "exactProcessGone": true
+        },
+        {
+          "phase": "restart",
+          "status": "restart-passed",
+          "failure": null,
+          "lastObservation": {
+            "phase": "saved real money, meal, tool wear and no replay passed",
+            "tick": 7989,
+            "buyer": {
+              "id": "50524f44-4d41-524b-0000-00000000006a",
+              "food": 20,
+              "money": 2,
+              "bread": 3,
+              "wheat": 0,
+              "crafted": 0,
+              "toolDemand": "none",
+              "hoesCrafted": 0,
+              "woodRecipes": 0,
+              "tradePaths": 0,
+              "tradeRejections": 0,
+              "x": 8.969603443732975,
+              "z": 5.451415921424816,
+              "toolStatus": "not working",
+              "foodStatus": "not working",
+              "foodDemand": "none",
+              "tradePathStarts": 0,
+              "lastTradePath": {},
+              "foodContactPurchases": 0,
+              "paidFoodDeliveries": 0,
+              "productionRequests": 0,
+              "lastProductionRequest": {},
+              "bought": 0,
+              "sold": 0,
+              "foodRequests": 0,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 11,
+              "y": 81.0,
+              "eye": "(8.969603443732975, 82.62000000476837, 5.451415921424816)",
+              "seesPeer": true
+            },
+            "seller": {
+              "id": "50524f44-4d41-524b-0000-00000000003f",
+              "food": 17,
+              "money": 0,
+              "bread": 0,
+              "wheat": 0,
+              "crafted": 0,
+              "toolDemand": "none",
+              "hoesCrafted": 0,
+              "woodRecipes": 0,
+              "tradePaths": 0,
+              "tradeRejections": 0,
+              "x": 6.515783885943614,
+              "z": 3.6814275500451736,
+              "toolStatus": "not working",
+              "foodStatus": "remembered farm unreachable",
+              "foodDemand": "none",
+              "tradePathStarts": 0,
+              "lastTradePath": {},
+              "foodContactPurchases": 0,
+              "paidFoodDeliveries": 0,
+              "productionRequests": 0,
+              "lastProductionRequest": {},
+              "bought": 0,
+              "sold": 0,
+              "foodRequests": 0,
+              "held": "1 minecraft:wooden_hoe",
+              "damage": 17,
+              "y": 81.0,
+              "eye": "(6.515783885943614, 82.62000000476837, 3.6814275500451736)",
+              "seesPeer": true
+            },
+            "harvestsThisLoad": 0,
+            "meanServerTickMillis": 0.558497,
+            "minimumMakerFood": 17,
+            "minimumFarmerFood": 20,
+            "foodAtPurchase": -1,
+            "minimumMakerHealth": 20.0,
+            "minimumFarmerHealth": 20.0
+          },
+          "custody": {
+            "pid": 1229683,
+            "startTicks": "18047267",
+            "cwd": "/home/niko/.internal/source/Villagers/runs/food-intent-production-regression-v3",
+            "launchedAtEpoch": 1794101648.7499151
+          },
+          "terminal": {
+            "pid": 1229683,
+            "exitCode": 0,
+            "finishedAtEpoch": 1794101656.531476
+          },
+          "exactProcessGone": true
+        }
+      ]
+    }
+  ]
+}

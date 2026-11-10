@@ -1,0 +1,18 @@
+/home/niko/.internal/source/Villagers/runs/renewable-food-server/FoodEconomyServerProbe.java:38: error: cannot find symbol
+import net.minecraft.world.level.block.FarmBlock;
+                                      ^
+  symbol:   class FarmBlock
+  location: package net.minecraft.world.level.block
+/home/niko/.internal/source/Villagers/runs/renewable-food-server/FoodEconomyServerProbe.java:112: error: cannot find symbol
+            level.setBlock(p.below(),Blocks.FARMLAND.defaultBlockState().setValue(FarmBlock.MOISTURE,7),3);
+                                                                                  ^
+  symbol:   variable FarmBlock
+  location: class FoodEconomyServerProbe
+2 errors
+Traceback (most recent call last):
+  File "/home/niko/.internal/source/Villagers/tools/food-economy-server-test.py", line 81, in <module>
+    main()
+    ~~~~^^
+  File "/home/niko/.internal/source/Villagers/tools/food-economy-server-test.py", line 55, in main
+    raise RuntimeError(f'Probe compilation failed; retained unstarted fixture at {runtime}')
+RuntimeError: Probe compilation failed; retained unstarted fixture at /home/niko/.internal/source/Villagers/runs/renewable-food-server

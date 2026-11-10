@@ -1,0 +1,67 @@
+{
+  "observed_at": "2026-11-07T04:49:18.031334323Z",
+  "client_elapsed_seconds": 2317.171,
+  "initial_population": 8,
+  "confirmed_deaths": [
+    {
+      "local_time": "23:23:21",
+      "name": "Moss-5eb8 \u00b7 afraid / fleeing",
+      "message": "Moss-5eb8 \u00b7 afraid / fleeing was slain by Zombie"
+    },
+    {
+      "local_time": "23:29:18",
+      "name": "Pip-4b46 \u00b7 afraid / fleeing",
+      "message": "Pip-4b46 \u00b7 afraid / fleeing was slain by Zombie"
+    },
+    {
+      "local_time": "23:29:50",
+      "name": "Juniper-4247 \u00b7 afraid / fleeing",
+      "message": "Juniper-4247 \u00b7 afraid / fleeing was slain by Zombie"
+    },
+    {
+      "local_time": "23:41:46",
+      "name": "Pip-dda5 \u00b7 afraid / fleeing",
+      "message": "Pip-dda5 \u00b7 afraid / fleeing was speared by Zombie"
+    },
+    {
+      "local_time": "23:45:46",
+      "name": "Hazel-f8cb \u00b7 afraid / fleeing",
+      "message": "Hazel-f8cb \u00b7 afraid / fleeing was slain by Zombie"
+    }
+  ],
+  "current_tracked_villagers": [
+    {
+      "uuid": "5e5d3b72-5939-48be-b93c-5e8033aa3b1a",
+      "name": "Fern-5e5d \u00b7 rest",
+      "x": 4.5,
+      "y": -59.4375,
+      "z": -9.5,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "4b512372-136a-4af0-b378-e945d1f2b217",
+      "name": "Rowan-4b51 \u00b7 rest",
+      "x": -7.5,
+      "y": -59.4375,
+      "z": -9.5,
+      "alive": true,
+      "health": 14.0
+    },
+    {
+      "uuid": "df4a3ea3-eff5-428d-a483-296986324cbf",
+      "name": "Sage-df4a \u00b7 rest",
+      "x": 10.5,
+      "y": -59.4277795732487,
+      "z": -9.5,
+      "alive": true,
+      "health": 20.0
+    }
+  ],
+  "limitations": [
+    "Client tracking is not a global census, but five distinct original identities have explicit server death records.",
+    "Game day6 is user-reported; manual time changes occurred, so elapsed wall time is the reliable timeline.",
+    "This trial has no matched vanilla or frozen-learning control and does not estimate comparative performance.",
+    "Fear/flee is an authored interrupt, not evidence of a learned survival strategy."
+  ]
+}

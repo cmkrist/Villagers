@@ -1,0 +1,68 @@
+{
+  "startingFatigue": 1.0,
+  "newSimulationInputs": [],
+  "runs": [
+    {
+      "phase": "rest-recovery",
+      "handle": 8238,
+      "exitCode": 0,
+      "nativeGameTime": 45163,
+      "finalSaveGameTime": 45169,
+      "fatigue": 0.43343750000000153,
+      "groundRests": 5,
+      "homePlans": 30,
+      "restPathRejections": 2,
+      "partialHomeRoutes": 0,
+      "position": [
+        -234.2069023807201,
+        73.0,
+        766.6999999880791
+      ],
+      "meanTickMillis": 4.566835,
+      "sampledOwnedTerminal": [
+        {
+          "pid": 865756,
+          "startTicks": "14026938",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 865893,
+          "startTicks": "14027006",
+          "sameIdentityAlive": false
+        },
+        {
+          "pid": 866152,
+          "startTicks": "14027647",
+          "sameIdentityAlive": false
+        }
+      ]
+    },
+    {
+      "phase": "persistence",
+      "handle": 87520,
+      "exitCode": 0,
+      "nativeGameTime": 45570,
+      "finalSaveGameTime": 45576,
+      "fatigue": 0.3250000000000013,
+      "groundRests": 1,
+      "homePlans": 10,
+      "restPathRejections": 1,
+      "partialHomeRoutes": 0,
+      "position": [
+        -234.2069023807201,
+        73.0,
+        766.6999999880791
+      ],
+      "meanTickMillis": 5.026459,
+      "sampledOwnedTerminal": []
+    }
+  ],
+  "reopenFirstFatigue": 0.4337500000000015,
+  "reopenGameTime": 45207,
+  "partialReturnAndHomeArrivalUnproven": true,
+  "lateReopenCustodySample": "No PID inferred; exit0,normal save,free runtime lock,no tagged client establish terminal state.",
+  "sourceWorldFilesUnchanged": 221,
+  "sourceArchiveSHA256": "fcf22ec563c158b3ea2132ddc14d6951f44ad45d43cc8de0e07fe175449efdc8",
+  "sourceAndDeployed040Unchanged": "4da3ac37044f5a3fa6ef77f70a27d91d1333748176aa483ff1d735b132afecb0",
+  "unreleased041dev": "69dace27ba48d59a5c1efd6973d867797c36bcccbe0e87a71ec390f4e6754f9a"
+}

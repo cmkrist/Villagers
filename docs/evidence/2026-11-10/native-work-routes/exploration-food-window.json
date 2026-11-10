@@ -1,0 +1,550 @@
+{
+  "status": "passed",
+  "stage": "native_food_window_complete",
+  "elapsed": 4000,
+  "initialGameTime": 51813,
+  "gameTime": 55813,
+  "actors": [
+    {
+      "id": "438701f4-3aba-4cda-b583-46051f1e0f53",
+      "name": "Oak-4387",
+      "food": 18,
+      "health": 20.0,
+      "position": [
+        -488.5109846968431,
+        63.0,
+        -352.43746527057425
+      ],
+      "inventory": "[9 minecraft:wheat]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "recipes": 0,
+        "goal": "HOE",
+        "logs": 0,
+        "activity": "looking for preparation wood",
+        "lastPath": "none",
+        "pathQueries": 0
+      },
+      "boating": {
+        "recipes": 0,
+        "activity": "boat preparation timed out",
+        "landings": 0,
+        "phase": "NONE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "harvest": {
+        "replantsFromHarvest": 0,
+        "swordHits": 0,
+        "cropsHarvested": 0,
+        "replantsFromStock": 0,
+        "doorsClosed": 0,
+        "doorsOpened": 0
+      },
+      "foodAccess": {
+        "lastFailure": "none",
+        "activity": "gathered real hay after reaching the store",
+        "arrivals": 1,
+        "digs": 0,
+        "lastPlan": {
+          "visited": 15,
+          "steps": 14,
+          "digs": 0,
+          "table": "-478, 63, -361",
+          "gameTime": 53125,
+          "store": "-488, 63, -352"
+        }
+      },
+      "sleeping": false,
+      "crafting": "going to crafting table",
+      "breadCrafted": 2,
+      "family": {
+        "seekingFood": false,
+        "fatigue": 0.2431249999999962,
+        "status": "no recent family encounter",
+        "mood": "UNHAPPY",
+        "nurseries": []
+      },
+      "harvestReceipt": {}
+    },
+    {
+      "id": "5432d3df-f37a-4371-9465-aa1568bb4b02",
+      "name": "Nell-5432",
+      "food": 15,
+      "health": 20.0,
+      "position": [
+        -493.27478218758654,
+        64.0,
+        -333.5647351695794
+      ],
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "recipes": 0,
+        "goal": "HOE",
+        "logs": 0,
+        "activity": "needs accessible natural wood",
+        "lastPath": "none",
+        "pathQueries": 0
+      },
+      "boating": {
+        "recipes": 0,
+        "activity": "looking for boat wood",
+        "landings": 0,
+        "phase": "PREPARE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "harvest": {
+        "replantsFromHarvest": 0,
+        "swordHits": 0,
+        "cropsHarvested": 0,
+        "replantsFromStock": 0,
+        "doorsClosed": 0,
+        "doorsOpened": 0
+      },
+      "foodAccess": {
+        "lastFailure": "none",
+        "activity": "no food access trip",
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {}
+      },
+      "sleeping": false,
+      "crafting": "idle",
+      "breadCrafted": 0,
+      "family": {
+        "seekingFood": true,
+        "fatigue": 0.2098124999999969,
+        "status": "saving food for a child",
+        "mood": "CONTENT",
+        "nurseries": []
+      },
+      "harvestReceipt": {}
+    },
+    {
+      "id": "af2b94ad-f799-4b93-a2c3-e958b2836c84",
+      "name": "Dara-af2b",
+      "food": 16,
+      "health": 20.0,
+      "position": [
+        -513.5036251912837,
+        63.0,
+        -348.30445339314343
+      ],
+      "inventory": "[]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "recipes": 0,
+        "goal": "TABLE",
+        "logs": 0,
+        "activity": "looking for preparation wood",
+        "lastPath": "none",
+        "pathQueries": 0
+      },
+      "boating": {
+        "recipes": 0,
+        "activity": "needs accessible natural boat wood",
+        "landings": 0,
+        "phase": "PREPARE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "harvest": {
+        "replantsFromHarvest": 0,
+        "swordHits": 0,
+        "cropsHarvested": 0,
+        "replantsFromStock": 0,
+        "doorsClosed": 1,
+        "doorsOpened": 1
+      },
+      "foodAccess": {
+        "lastFailure": "none",
+        "activity": "no food access trip",
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {}
+      },
+      "sleeping": false,
+      "crafting": "crafted bread",
+      "breadCrafted": 1,
+      "family": {
+        "seekingFood": false,
+        "fatigue": 0.4382046875000356,
+        "status": "no recent family encounter",
+        "mood": "UNHAPPY",
+        "nurseries": []
+      },
+      "harvestReceipt": {}
+    },
+    {
+      "id": "96cbd3bc-ebc5-4522-b101-b83ee55c471f",
+      "name": "Birch-96cb",
+      "food": 16,
+      "health": 20.0,
+      "position": [
+        -481.3554282372021,
+        63.0,
+        -291.4749556586325
+      ],
+      "inventory": "[1 minecraft:bread, 3 minecraft:oak_planks, 2 minecraft:stick]",
+      "held": "1 minecraft:wooden_hoe",
+      "wood": {
+        "recipes": 0,
+        "goal": "NONE",
+        "logs": 0,
+        "activity": "no preparation job",
+        "lastPath": "none",
+        "pathQueries": 0
+      },
+      "boating": {
+        "recipes": 8,
+        "activity": "waiting for a safe loaded return crossing",
+        "landings": 1,
+        "phase": "RETURN",
+        "paddleTicks": 680,
+        "logsGathered": 4,
+        "launches": 1
+      },
+      "harvest": {
+        "replantsFromHarvest": 0,
+        "swordHits": 0,
+        "cropsHarvested": 0,
+        "replantsFromStock": 0,
+        "doorsClosed": 0,
+        "doorsOpened": 0
+      },
+      "foodAccess": {
+        "lastFailure": "none",
+        "activity": "no food access trip",
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {}
+      },
+      "sleeping": false,
+      "crafting": "idle",
+      "breadCrafted": 0,
+      "family": {
+        "seekingFood": false,
+        "fatigue": 0.06156250000000005,
+        "status": "no recent family encounter",
+        "mood": "UNHAPPY",
+        "nurseries": []
+      },
+      "harvestReceipt": {}
+    },
+    {
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "name": "Clover-edc5",
+      "food": 19,
+      "health": 20.0,
+      "position": [
+        -474.2071724503928,
+        63.0,
+        -360.35611309635067
+      ],
+      "inventory": "[3 minecraft:bread, 1 minecraft:wooden_pickaxe, 3 minecraft:wheat]",
+      "held": "1 minecraft:wooden_hoe",
+      "wood": {
+        "recipes": 0,
+        "goal": "NONE",
+        "logs": 0,
+        "activity": "no preparation job",
+        "lastPath": "none",
+        "pathQueries": 0
+      },
+      "boating": {
+        "recipes": 0,
+        "activity": "no water trip",
+        "landings": 0,
+        "phase": "NONE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "harvest": {
+        "replantsFromHarvest": 0,
+        "swordHits": 0,
+        "cropsHarvested": 0,
+        "replantsFromStock": 0,
+        "doorsClosed": 0,
+        "doorsOpened": 0
+      },
+      "foodAccess": {
+        "lastFailure": "none",
+        "activity": "no food access trip",
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {}
+      },
+      "sleeping": false,
+      "crafting": "idle",
+      "breadCrafted": 0,
+      "family": {
+        "seekingFood": false,
+        "fatigue": 0.24249999999999622,
+        "status": "needs a spare sheltered bed",
+        "mood": "CONTENT",
+        "nurseries": []
+      },
+      "harvestReceipt": {}
+    },
+    {
+      "id": "1d165330-2598-410c-827e-cc3b13c7bef9",
+      "name": "Birch-1d16",
+      "food": 16,
+      "health": 20.0,
+      "position": [
+        -474.8334596708457,
+        63.0,
+        -360.6246767599679
+      ],
+      "inventory": "[1 minecraft:beetroot_seeds, 3 minecraft:bread, 3 minecraft:wheat]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "recipes": 0,
+        "goal": "NONE",
+        "logs": 0,
+        "activity": "no preparation job",
+        "lastPath": "none",
+        "pathQueries": 0
+      },
+      "boating": {
+        "recipes": 0,
+        "activity": "no water trip",
+        "landings": 0,
+        "phase": "NONE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "harvest": {
+        "replantsFromHarvest": 0,
+        "swordHits": 0,
+        "cropsHarvested": 0,
+        "replantsFromStock": 0,
+        "doorsClosed": 0,
+        "doorsOpened": 0
+      },
+      "foodAccess": {
+        "lastFailure": "none",
+        "activity": "no food access trip",
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {}
+      },
+      "sleeping": false,
+      "crafting": "idle",
+      "breadCrafted": 0,
+      "family": {
+        "seekingFood": false,
+        "fatigue": 0.5896875000000324,
+        "status": "needs a spare sheltered bed",
+        "mood": "CONTENT",
+        "nurseries": []
+      },
+      "harvestReceipt": {}
+    },
+    {
+      "id": "c5578b5b-8991-428d-9d82-7cb57a956269",
+      "name": "Alder-c557",
+      "food": 16,
+      "health": 20.0,
+      "position": [
+        -475.66981906930033,
+        63.0,
+        -361.21063093392496
+      ],
+      "inventory": "[3 minecraft:bread]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "recipes": 0,
+        "goal": "NONE",
+        "logs": 0,
+        "activity": "no preparation job",
+        "lastPath": "none",
+        "pathQueries": 0
+      },
+      "boating": {
+        "recipes": 0,
+        "activity": "no water trip",
+        "landings": 0,
+        "phase": "NONE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "harvest": {
+        "replantsFromHarvest": 0,
+        "swordHits": 0,
+        "cropsHarvested": 0,
+        "replantsFromStock": 0,
+        "doorsClosed": 3,
+        "doorsOpened": 3
+      },
+      "foodAccess": {
+        "lastFailure": "none",
+        "activity": "no food access trip",
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {}
+      },
+      "sleeping": false,
+      "crafting": "idle",
+      "breadCrafted": 0,
+      "family": {
+        "seekingFood": false,
+        "fatigue": 0.24249999999999622,
+        "status": "needs a spare sheltered bed",
+        "mood": "CONTENT",
+        "nurseries": []
+      },
+      "harvestReceipt": {}
+    },
+    {
+      "id": "f572553d-4483-44b5-8ed5-6ffe7e7745b7",
+      "name": "Tansy-f572",
+      "food": 20,
+      "health": 20.0,
+      "position": [
+        -474.65382523732853,
+        63.0,
+        -361.36175381121444
+      ],
+      "inventory": "[1 minecraft:carrot, 5 minecraft:wheat, 4 minecraft:wheat_seeds, 3 minecraft:bread]",
+      "held": "0 minecraft:air",
+      "wood": {
+        "recipes": 0,
+        "goal": "NONE",
+        "logs": 0,
+        "activity": "no preparation job",
+        "lastPath": "none",
+        "pathQueries": 0
+      },
+      "boating": {
+        "recipes": 0,
+        "activity": "boat preparation timed out",
+        "landings": 0,
+        "phase": "NONE",
+        "paddleTicks": 0,
+        "logsGathered": 0,
+        "launches": 0
+      },
+      "harvest": {
+        "replantsFromHarvest": 0,
+        "swordHits": 0,
+        "cropsHarvested": 0,
+        "replantsFromStock": 0,
+        "doorsClosed": 0,
+        "doorsOpened": 0
+      },
+      "foodAccess": {
+        "lastFailure": "none",
+        "activity": "no food access trip",
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {}
+      },
+      "sleeping": false,
+      "crafting": "crafted bread",
+      "breadCrafted": 5,
+      "family": {
+        "seekingFood": false,
+        "fatigue": 0.24249999999999622,
+        "status": "needs a spare sheltered bed",
+        "mood": "CONTENT",
+        "nurseries": []
+      },
+      "harvestReceipt": {}
+    }
+  ],
+  "farm": {
+    "mature": 0,
+    "rawBrightness": 15,
+    "planted": 26,
+    "totalAge": 69
+  },
+  "harvestReceipts": 0,
+  "repeatYields": 0,
+  "newManagedActors": [],
+  "targetTps": 80.0,
+  "copyBorderSize": 8192.0,
+  "adventure": [
+    {
+      "status": "no adventure objective",
+      "id": "438701f4-3aba-4cda-b583-46051f1e0f53",
+      "mining": {
+        "activity": "not quarrying",
+        "blocks": 0,
+        "lastReceipt": {}
+      }
+    },
+    {
+      "status": "no adventure objective",
+      "id": "5432d3df-f37a-4371-9465-aa1568bb4b02",
+      "mining": {
+        "activity": "not quarrying",
+        "blocks": 0,
+        "lastReceipt": {}
+      }
+    },
+    {
+      "status": "no adventure objective",
+      "id": "af2b94ad-f799-4b93-a2c3-e958b2836c84",
+      "mining": {
+        "activity": "not quarrying",
+        "blocks": 0,
+        "lastReceipt": {}
+      }
+    },
+    {
+      "status": "no adventure objective",
+      "id": "96cbd3bc-ebc5-4522-b101-b83ee55c471f",
+      "mining": {
+        "activity": "not quarrying",
+        "blocks": 0,
+        "lastReceipt": {}
+      }
+    },
+    {
+      "status": "needs observed exposed natural stone",
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "mining": {
+        "activity": "needs observed exposed natural stone",
+        "blocks": 0,
+        "lastReceipt": {}
+      }
+    },
+    {
+      "status": "no adventure objective",
+      "id": "1d165330-2598-410c-827e-cc3b13c7bef9",
+      "mining": {
+        "activity": "not quarrying",
+        "blocks": 0,
+        "lastReceipt": {}
+      }
+    },
+    {
+      "status": "no adventure objective",
+      "id": "c5578b5b-8991-428d-9d82-7cb57a956269",
+      "mining": {
+        "activity": "not quarrying",
+        "blocks": 0,
+        "lastReceipt": {}
+      }
+    },
+    {
+      "status": "no adventure objective",
+      "id": "f572553d-4483-44b5-8ed5-6ffe7e7745b7",
+      "mining": {
+        "activity": "not quarrying",
+        "blocks": 0,
+        "lastReceipt": {}
+      }
+    }
+  ],
+  "scope": "Actual copied island residents and native crops; normal clock, random growth and controller work only. No actor, food, crop, inventory or resource setters. A first harvest alone is not sustained food or birth proof."
+}

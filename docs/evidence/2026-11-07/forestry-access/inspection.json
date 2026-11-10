@@ -1,0 +1,842 @@
+{
+  "kind": "READ ONLY native forestry stand inspection; no path creation or setters",
+  "gameTime": 52395,
+  "actor": "231e4c00-19df-4be5-a5ba-5ebc6d29e27f",
+  "job": {
+    "id": "891a2b06-ccd6-4889-9b38-5d85398d87e2",
+    "owner": "6609fea5-c92a-359b-acb7-1ab63051aa33",
+    "seed": {
+      "dimension": "minecraft:overworld",
+      "x": -269,
+      "y": 74,
+      "z": 721
+    },
+    "logs": [
+      {
+        "dimension": "minecraft:overworld",
+        "x": -271,
+        "y": 74,
+        "z": 722
+      },
+      {
+        "dimension": "minecraft:overworld",
+        "x": -271,
+        "y": 75,
+        "z": 722
+      }
+    ],
+    "plant": {
+      "dimension": "minecraft:overworld",
+      "x": -269,
+      "y": 72,
+      "z": 723
+    },
+    "soil": "minecraft:mud",
+    "seedTaken": true,
+    "remaining": [
+      {
+        "dimension": "minecraft:overworld",
+        "x": -271,
+        "y": 74,
+        "z": 722
+      },
+      {
+        "dimension": "minecraft:overworld",
+        "x": -271,
+        "y": 75,
+        "z": 722
+      }
+    ],
+    "clearance": [
+      {
+        "dimension": "minecraft:overworld",
+        "x": -270,
+        "y": 73,
+        "z": 723
+      },
+      {
+        "dimension": "minecraft:overworld",
+        "x": -269,
+        "y": 74,
+        "z": 723
+      },
+      {
+        "dimension": "minecraft:overworld",
+        "x": -270,
+        "y": 74,
+        "z": 723
+      }
+    ],
+    "uncleared": []
+  },
+  "home": {
+    "dimension": "minecraft:overworld",
+    "x": -269,
+    "y": 75,
+    "z": 733
+  },
+  "position": [
+    -269.86322940251114,
+    67.875,
+    717.5111037218364
+  ],
+  "pose": "STANDING",
+  "eyeOffset": 1.6200000047683716,
+  "height": 1.95,
+  "width": 0.6,
+  "food": 3,
+  "onGround": true,
+  "inWater": false,
+  "targets": [
+    {
+      "accepted": [],
+      "referencePlantStand": {
+        "feet": "-269, 72, 723",
+        "failure": "sight blocked",
+        "feetState": "Block{minecraft:air}",
+        "headState": "Block{minecraft:air}",
+        "supportState": "Block{minecraft:mud}",
+        "eye": [
+          -268.5,
+          73.62000000476837,
+          723.5
+        ],
+        "reachSquared": 5.774399991607666,
+        "hitType": "BLOCK",
+        "hitBlock": "-270, 74, 722",
+        "hitState": "Block{minecraft:mangrove_roots}[waterlogged\u003dfalse]"
+      },
+      "examples": {
+        "head blocked": [
+          {
+            "feet": "-273, 71, 720",
+            "failure": "head blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:mangrove_leaves}[distance\u003d3,persistent\u003dfalse,waterlogged\u003dfalse]",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -272.5,
+              72.62000000476837,
+              720.5
+            ],
+            "reachSquared": 11.534399982070923
+          },
+          {
+            "feet": "-271, 72, 720",
+            "failure": "head blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:mangrove_roots}[waterlogged\u003dfalse]",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -270.5,
+              73.62000000476837,
+              720.5
+            ],
+            "reachSquared": 4.774399991607666,
+            "hitType": "BLOCK",
+            "hitBlock": "-271, 73, 720",
+            "hitState": "Block{minecraft:mangrove_roots}[waterlogged\u003dfalse]"
+          },
+          {
+            "feet": "-270, 72, 720",
+            "failure": "head blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:mangrove_leaves}[distance\u003d4,persistent\u003dfalse,waterlogged\u003dfalse]",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -269.5,
+              73.62000000476837,
+              720.5
+            ],
+            "reachSquared": 5.774399991607666,
+            "hitType": "BLOCK",
+            "hitBlock": "-270, 73, 720",
+            "hitState": "Block{minecraft:mangrove_leaves}[distance\u003d4,persistent\u003dfalse,waterlogged\u003dfalse]"
+          }
+        ],
+        "feet blocked": [
+          {
+            "feet": "-272, 71, 720",
+            "failure": "feet blocked",
+            "feetState": "Block{minecraft:vine}[east\u003dfalse,north\u003dfalse,south\u003dfalse,up\u003dfalse,west\u003dtrue]",
+            "headState": "Block{minecraft:vine}[east\u003dfalse,north\u003dfalse,south\u003dfalse,up\u003dtrue,west\u003dtrue]",
+            "supportState": "Block{minecraft:vine}[east\u003dfalse,north\u003dfalse,south\u003dfalse,up\u003dfalse,west\u003dtrue]",
+            "eye": [
+              -271.5,
+              72.62000000476837,
+              720.5
+            ],
+            "reachSquared": 8.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-272, 73, 720",
+            "hitState": "Block{minecraft:mangrove_leaves}[distance\u003d3,persistent\u003dfalse,waterlogged\u003dfalse]"
+          },
+          {
+            "feet": "-269, 71, 720",
+            "failure": "feet blocked",
+            "feetState": "Block{minecraft:vine}[east\u003dfalse,north\u003dfalse,south\u003dfalse,up\u003dfalse,west\u003dtrue]",
+            "headState": "Block{minecraft:vine}[east\u003dfalse,north\u003dfalse,south\u003dfalse,up\u003dfalse,west\u003dtrue]",
+            "supportState": "Block{minecraft:sand}",
+            "eye": [
+              -268.5,
+              72.62000000476837,
+              720.5
+            ],
+            "reachSquared": 11.534399982070923
+          },
+          {
+            "feet": "-273, 72, 720",
+            "failure": "feet blocked",
+            "feetState": "Block{minecraft:mangrove_leaves}[distance\u003d3,persistent\u003dfalse,waterlogged\u003dfalse]",
+            "headState": "Block{minecraft:mangrove_leaves}[distance\u003d2,persistent\u003dfalse,waterlogged\u003dfalse]",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -272.5,
+              73.62000000476837,
+              720.5
+            ],
+            "reachSquared": 8.774399991607666,
+            "hitType": "BLOCK",
+            "hitBlock": "-273, 73, 720",
+            "hitState": "Block{minecraft:mangrove_leaves}[distance\u003d2,persistent\u003dfalse,waterlogged\u003dfalse]"
+          }
+        ],
+        "support not sturdy": [
+          {
+            "feet": "-271, 71, 720",
+            "failure": "support not sturdy",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -270.5,
+              72.62000000476837,
+              720.5
+            ],
+            "reachSquared": 7.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-271, 73, 720",
+            "hitState": "Block{minecraft:mangrove_roots}[waterlogged\u003dfalse]"
+          },
+          {
+            "feet": "-270, 71, 720",
+            "failure": "support not sturdy",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -269.5,
+              72.62000000476837,
+              720.5
+            ],
+            "reachSquared": 8.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-270, 73, 720",
+            "hitState": "Block{minecraft:mangrove_leaves}[distance\u003d4,persistent\u003dfalse,waterlogged\u003dfalse]"
+          },
+          {
+            "feet": "-273, 71, 721",
+            "failure": "support not sturdy",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -272.5,
+              72.62000000476837,
+              721.5
+            ],
+            "reachSquared": 8.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-273, 73, 721",
+            "hitState": "Block{minecraft:mangrove_leaves}[distance\u003d3,persistent\u003dfalse,waterlogged\u003dfalse]"
+          }
+        ],
+        "sight blocked": [
+          {
+            "feet": "-270, 71, 721",
+            "failure": "sight blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:mud}",
+            "eye": [
+              -269.5,
+              72.62000000476837,
+              721.5
+            ],
+            "reachSquared": 5.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-270, 73, 721",
+            "hitState": "Block{minecraft:mangrove_leaves}[distance\u003d3,persistent\u003dfalse,waterlogged\u003dfalse]"
+          },
+          {
+            "feet": "-269, 71, 721",
+            "failure": "sight blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:sand}",
+            "eye": [
+              -268.5,
+              72.62000000476837,
+              721.5
+            ],
+            "reachSquared": 8.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-270, 73, 721",
+            "hitState": "Block{minecraft:mangrove_leaves}[distance\u003d3,persistent\u003dfalse,waterlogged\u003dfalse]"
+          },
+          {
+            "feet": "-272, 71, 722",
+            "failure": "sight blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:mud}",
+            "eye": [
+              -271.5,
+              72.62000000476837,
+              722.5
+            ],
+            "reachSquared": 4.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-272, 73, 722",
+            "hitState": "Block{minecraft:mangrove_leaves}[distance\u003d4,persistent\u003dfalse,waterlogged\u003dfalse]"
+          }
+        ],
+        "out of reach": [
+          {
+            "feet": "-273, 71, 724",
+            "failure": "out of reach",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:sand}",
+            "eye": [
+              -272.5,
+              72.62000000476837,
+              724.5
+            ],
+            "reachSquared": 11.534399982070923
+          }
+        ]
+      },
+      "counts": {
+        "head blocked": 18,
+        "feet blocked": 52,
+        "support not sturdy": 16,
+        "sight blocked": 13,
+        "out of reach": 1
+      },
+      "target": "-271, 74, 722"
+    },
+    {
+      "accepted": [],
+      "referencePlantStand": {
+        "feet": "-269, 72, 723",
+        "failure": "sight blocked",
+        "feetState": "Block{minecraft:air}",
+        "headState": "Block{minecraft:air}",
+        "supportState": "Block{minecraft:mud}",
+        "eye": [
+          -268.5,
+          73.62000000476837,
+          723.5
+        ],
+        "reachSquared": 8.534399982070923,
+        "hitType": "BLOCK",
+        "hitBlock": "-270, 74, 722",
+        "hitState": "Block{minecraft:mangrove_roots}[waterlogged\u003dfalse]"
+      },
+      "examples": {
+        "feet blocked": [
+          {
+            "feet": "-273, 72, 720",
+            "failure": "feet blocked",
+            "feetState": "Block{minecraft:mangrove_leaves}[distance\u003d3,persistent\u003dfalse,waterlogged\u003dfalse]",
+            "headState": "Block{minecraft:mangrove_leaves}[distance\u003d2,persistent\u003dfalse,waterlogged\u003dfalse]",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -272.5,
+              73.62000000476837,
+              720.5
+            ],
+            "reachSquared": 11.534399982070923
+          },
+          {
+            "feet": "-272, 72, 720",
+            "failure": "feet blocked",
+            "feetState": "Block{minecraft:vine}[east\u003dfalse,north\u003dfalse,south\u003dfalse,up\u003dtrue,west\u003dtrue]",
+            "headState": "Block{minecraft:mangrove_leaves}[distance\u003d3,persistent\u003dfalse,waterlogged\u003dfalse]",
+            "supportState": "Block{minecraft:vine}[east\u003dfalse,north\u003dfalse,south\u003dfalse,up\u003dfalse,west\u003dtrue]",
+            "eye": [
+              -271.5,
+              73.62000000476837,
+              720.5
+            ],
+            "reachSquared": 8.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-272, 73, 720",
+            "hitState": "Block{minecraft:mangrove_leaves}[distance\u003d3,persistent\u003dfalse,waterlogged\u003dfalse]"
+          },
+          {
+            "feet": "-269, 72, 720",
+            "failure": "feet blocked",
+            "feetState": "Block{minecraft:vine}[east\u003dfalse,north\u003dfalse,south\u003dfalse,up\u003dfalse,west\u003dtrue]",
+            "headState": "Block{minecraft:vine}[east\u003dfalse,north\u003dfalse,south\u003dfalse,up\u003dfalse,west\u003dtrue]",
+            "supportState": "Block{minecraft:vine}[east\u003dfalse,north\u003dfalse,south\u003dfalse,up\u003dfalse,west\u003dtrue]",
+            "eye": [
+              -268.5,
+              73.62000000476837,
+              720.5
+            ],
+            "reachSquared": 11.534399982070923
+          }
+        ],
+        "head blocked": [
+          {
+            "feet": "-271, 72, 720",
+            "failure": "head blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:mangrove_roots}[waterlogged\u003dfalse]",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -270.5,
+              73.62000000476837,
+              720.5
+            ],
+            "reachSquared": 7.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-271, 73, 720",
+            "hitState": "Block{minecraft:mangrove_roots}[waterlogged\u003dfalse]"
+          },
+          {
+            "feet": "-270, 72, 720",
+            "failure": "head blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:mangrove_leaves}[distance\u003d4,persistent\u003dfalse,waterlogged\u003dfalse]",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -269.5,
+              73.62000000476837,
+              720.5
+            ],
+            "reachSquared": 8.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-270, 73, 720",
+            "hitState": "Block{minecraft:mangrove_leaves}[distance\u003d4,persistent\u003dfalse,waterlogged\u003dfalse]"
+          },
+          {
+            "feet": "-273, 72, 721",
+            "failure": "head blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:mangrove_leaves}[distance\u003d3,persistent\u003dfalse,waterlogged\u003dfalse]",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -272.5,
+              73.62000000476837,
+              721.5
+            ],
+            "reachSquared": 8.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-273, 73, 721",
+            "hitState": "Block{minecraft:mangrove_leaves}[distance\u003d3,persistent\u003dfalse,waterlogged\u003dfalse]"
+          }
+        ],
+        "support not sturdy": [
+          {
+            "feet": "-269, 72, 721",
+            "failure": "support not sturdy",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -268.5,
+              73.62000000476837,
+              721.5
+            ],
+            "reachSquared": 8.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-270, 74, 721",
+            "hitState": "Block{minecraft:mangrove_leaves}[distance\u003d2,persistent\u003dfalse,waterlogged\u003dfalse]"
+          },
+          {
+            "feet": "-269, 73, 721",
+            "failure": "support not sturdy",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -268.5,
+              74.62000000476837,
+              721.5
+            ],
+            "reachSquared": 5.774399991607666,
+            "hitType": "BLOCK",
+            "hitBlock": "-270, 74, 721",
+            "hitState": "Block{minecraft:mangrove_leaves}[distance\u003d2,persistent\u003dfalse,waterlogged\u003dfalse]"
+          },
+          {
+            "feet": "-272, 72, 723",
+            "failure": "support not sturdy",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -271.5,
+              73.62000000476837,
+              723.5
+            ],
+            "reachSquared": 5.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-272, 74, 723",
+            "hitState": "Block{minecraft:mangrove_leaves}[distance\u003d3,persistent\u003dfalse,waterlogged\u003dfalse]"
+          }
+        ],
+        "sight blocked": [
+          {
+            "feet": "-270, 72, 723",
+            "failure": "sight blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:mud}",
+            "eye": [
+              -269.5,
+              73.62000000476837,
+              723.5
+            ],
+            "reachSquared": 5.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-270, 74, 722",
+            "hitState": "Block{minecraft:mangrove_roots}[waterlogged\u003dfalse]"
+          },
+          {
+            "feet": "-269, 72, 723",
+            "failure": "sight blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:mud}",
+            "eye": [
+              -268.5,
+              73.62000000476837,
+              723.5
+            ],
+            "reachSquared": 8.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-270, 74, 722",
+            "hitState": "Block{minecraft:mangrove_roots}[waterlogged\u003dfalse]"
+          },
+          {
+            "feet": "-272, 72, 724",
+            "failure": "sight blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:mud}",
+            "eye": [
+              -271.5,
+              73.62000000476837,
+              724.5
+            ],
+            "reachSquared": 8.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-272, 74, 723",
+            "hitState": "Block{minecraft:mangrove_leaves}[distance\u003d3,persistent\u003dfalse,waterlogged\u003dfalse]"
+          }
+        ],
+        "out of reach": [
+          {
+            "feet": "-269, 72, 724",
+            "failure": "out of reach",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:mud}",
+            "eye": [
+              -268.5,
+              73.62000000476837,
+              724.5
+            ],
+            "reachSquared": 11.534399982070923
+          }
+        ]
+      },
+      "counts": {
+        "feet blocked": 65,
+        "head blocked": 18,
+        "support not sturdy": 12,
+        "sight blocked": 4,
+        "out of reach": 1
+      },
+      "target": "-271, 75, 722"
+    },
+    {
+      "accepted": [
+        "-271, 71, 722",
+        "-270, 71, 722",
+        "-268, 72, 722",
+        "-271, 71, 723",
+        "-270, 72, 723",
+        "-269, 72, 723",
+        "-268, 72, 723",
+        "-267, 72, 723",
+        "-270, 72, 724",
+        "-269, 72, 724"
+      ],
+      "referencePlantStand": {
+        "feet": "-269, 72, 723",
+        "failure": "accepted",
+        "feetState": "Block{minecraft:air}",
+        "headState": "Block{minecraft:air}",
+        "supportState": "Block{minecraft:mud}",
+        "eye": [
+          -268.5,
+          73.62000000476837,
+          723.5
+        ],
+        "reachSquared": 1.2544000106811524,
+        "hitType": "MISS"
+      },
+      "examples": {
+        "feet blocked": [
+          {
+            "feet": "-271, 69, 721",
+            "failure": "feet blocked",
+            "feetState": "Block{minecraft:mud}",
+            "headState": "Block{minecraft:short_grass}",
+            "supportState": "Block{minecraft:mud}",
+            "eye": [
+              -270.5,
+              70.62000000476837,
+              721.5
+            ],
+            "reachSquared": 11.534399982070923
+          },
+          {
+            "feet": "-270, 69, 721",
+            "failure": "feet blocked",
+            "feetState": "Block{minecraft:sand}",
+            "headState": "Block{minecraft:mud}",
+            "supportState": "Block{minecraft:sandstone}",
+            "eye": [
+              -269.5,
+              70.62000000476837,
+              721.5
+            ],
+            "reachSquared": 8.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-270, 70, 721",
+            "hitState": "Block{minecraft:mud}"
+          },
+          {
+            "feet": "-269, 69, 721",
+            "failure": "feet blocked",
+            "feetState": "Block{minecraft:sand}",
+            "headState": "Block{minecraft:sand}",
+            "supportState": "Block{minecraft:sandstone}",
+            "eye": [
+              -268.5,
+              70.62000000476837,
+              721.5
+            ],
+            "reachSquared": 7.534399982070923,
+            "hitType": "BLOCK",
+            "hitBlock": "-269, 70, 721",
+            "hitState": "Block{minecraft:sand}"
+          }
+        ],
+        "support not sturdy": [
+          {
+            "feet": "-271, 71, 721",
+            "failure": "support not sturdy",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:short_grass}",
+            "eye": [
+              -270.5,
+              72.62000000476837,
+              721.5
+            ],
+            "reachSquared": 8.01440000114441,
+            "hitType": "MISS"
+          },
+          {
+            "feet": "-269, 72, 721",
+            "failure": "support not sturdy",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -268.5,
+              73.62000000476837,
+              721.5
+            ],
+            "reachSquared": 5.254400010681152,
+            "hitType": "BLOCK",
+            "hitBlock": "-269, 73, 722",
+            "hitState": "Block{minecraft:mangrove_roots}[waterlogged\u003dfalse]"
+          },
+          {
+            "feet": "-268, 72, 721",
+            "failure": "support not sturdy",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -267.5,
+              73.62000000476837,
+              721.5
+            ],
+            "reachSquared": 6.254400010681152,
+            "hitType": "BLOCK",
+            "hitBlock": "-269, 73, 722",
+            "hitState": "Block{minecraft:mangrove_roots}[waterlogged\u003dfalse]"
+          }
+        ],
+        "sight blocked": [
+          {
+            "feet": "-270, 71, 721",
+            "failure": "sight blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:mud}",
+            "eye": [
+              -269.5,
+              72.62000000476837,
+              721.5
+            ],
+            "reachSquared": 5.014400001144409,
+            "hitType": "BLOCK",
+            "hitBlock": "-269, 72, 722",
+            "hitState": "Block{minecraft:mangrove_roots}[waterlogged\u003dfalse]"
+          },
+          {
+            "feet": "-269, 71, 721",
+            "failure": "sight blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:sand}",
+            "eye": [
+              -268.5,
+              72.62000000476837,
+              721.5
+            ],
+            "reachSquared": 4.014400001144409,
+            "hitType": "BLOCK",
+            "hitBlock": "-269, 72, 722",
+            "hitState": "Block{minecraft:mangrove_roots}[waterlogged\u003dfalse]"
+          },
+          {
+            "feet": "-268, 71, 721",
+            "failure": "sight blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:sand}",
+            "eye": [
+              -267.5,
+              72.62000000476837,
+              721.5
+            ],
+            "reachSquared": 5.014400001144409,
+            "hitType": "BLOCK",
+            "hitBlock": "-269, 72, 722",
+            "hitState": "Block{minecraft:mangrove_roots}[waterlogged\u003dfalse]"
+          }
+        ],
+        "head blocked": [
+          {
+            "feet": "-271, 72, 721",
+            "failure": "head blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:mangrove_roots}[waterlogged\u003dfalse]",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -270.5,
+              73.62000000476837,
+              721.5
+            ],
+            "reachSquared": 9.254400010681152
+          },
+          {
+            "feet": "-270, 72, 721",
+            "failure": "head blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:mangrove_leaves}[distance\u003d3,persistent\u003dfalse,waterlogged\u003dfalse]",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -269.5,
+              73.62000000476837,
+              721.5
+            ],
+            "reachSquared": 6.254400010681152,
+            "hitType": "BLOCK",
+            "hitBlock": "-270, 73, 721",
+            "hitState": "Block{minecraft:mangrove_leaves}[distance\u003d3,persistent\u003dfalse,waterlogged\u003dfalse]"
+          },
+          {
+            "feet": "-271, 72, 722",
+            "failure": "head blocked",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:mangrove_roots}[waterlogged\u003dfalse]",
+            "supportState": "Block{minecraft:air}",
+            "eye": [
+              -270.5,
+              73.62000000476837,
+              722.5
+            ],
+            "reachSquared": 6.254400010681152,
+            "hitType": "BLOCK",
+            "hitBlock": "-271, 73, 722",
+            "hitState": "Block{minecraft:mangrove_roots}[waterlogged\u003dfalse]"
+          }
+        ],
+        "accepted": [
+          {
+            "feet": "-271, 71, 722",
+            "failure": "accepted",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:mud}",
+            "eye": [
+              -270.5,
+              72.62000000476837,
+              722.5
+            ],
+            "reachSquared": 5.014400001144409,
+            "hitType": "MISS"
+          },
+          {
+            "feet": "-270, 71, 722",
+            "failure": "accepted",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:mud}",
+            "eye": [
+              -269.5,
+              72.62000000476837,
+              722.5
+            ],
+            "reachSquared": 2.014400001144409,
+            "hitType": "MISS"
+          },
+          {
+            "feet": "-268, 72, 722",
+            "failure": "accepted",
+            "feetState": "Block{minecraft:air}",
+            "headState": "Block{minecraft:air}",
+            "supportState": "Block{minecraft:sand}",
+            "eye": [
+              -267.5,
+              73.62000000476837,
+              722.5
+            ],
+            "reachSquared": 3.2544000106811524,
+            "hitType": "MISS"
+          }
+        ]
+      },
+      "counts": {
+        "feet blocked": 79,
+        "support not sturdy": 4,
+        "sight blocked": 3,
+        "head blocked": 4,
+        "accepted": 10
+      },
+      "target": "-269, 72, 723"
+    }
+  ]
+}

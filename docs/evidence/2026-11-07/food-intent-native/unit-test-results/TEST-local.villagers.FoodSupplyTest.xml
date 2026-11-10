@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="local.villagers.FoodSupplyTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-11-08T01:31:27.904Z" hostname="td001" time="0.005">
+  <properties/>
+  <testcase name="goalReconstructionAndCompletionDoNotModifyFamilyConsentOrStock()" classname="local.villagers.FoodSupplyTest" time="0.001"/>
+  <testcase name="capacityInvestmentNeverTreatsRawGrainOrReservedRootsAsAnEdibleReserve()" classname="local.villagers.FoodSupplyTest" time="0.0"/>
+  <testcase name="retainedPlantingRootsDoNotFundAReserve()" classname="local.villagers.FoodSupplyTest" time="0.001"/>
+  <testcase name="rawInputsCoverMissingNutritionOnlyAndHaveAFiniteBatchCap()" classname="local.villagers.FoodSupplyTest" time="0.0"/>
+  <testcase name="paidDemandUsesTheSameProductionReserveWithoutAuthorizingCharityOrPersistingAnOrder()" classname="local.villagers.FoodSupplyTest" time="0.0"/>
+  <testcase name="heardUnmetDemandCreatesOneBoundedSurplusGoalWithoutInventingFoodOrFamilyIntent()" classname="local.villagers.FoodSupplyTest" time="0.001"/>
+  <testcase name="satisfyingSurplusProductionConsumesRealRecipeInputsAndStopsAtItsTarget()" classname="local.villagers.FoodSupplyTest" time="0.0"/>
+  <testcase name="approvedFutureFoodWorkCanStartBeforePersonalReserveRunsOut()" classname="local.villagers.FoodSupplyTest" time="0.0"/>
+  <testcase name="demandNeverOverridesUnsafeBodyOrPlantingReservesAndExpiresWithoutTakingInventory()" classname="local.villagers.FoodSupplyTest" time="0.001"/>
+  <testcase name="capacityInvestmentYieldsToOwnNeedAndUnavailableBody()" classname="local.villagers.FoodSupplyTest" time="0.0"/>
+  <testcase name="foodWorkExcludesChildrenDeadExhaustedOrUnsafeBodiesButAllowsHungryInjuredAdults()" classname="local.villagers.FoodSupplyTest" time="0.0"/>
+  <testcase name="aParentInNativeAndPersistedBirthCooldownStillPreparesItsOwnFood()" classname="local.villagers.FoodSupplyTest" time="0.001"/>
+  <testcase name="urgentHungerStopsOptionalWoodWorkWithoutDisablingFoodPreparation()" classname="local.villagers.FoodSupplyTest" time="0.0"/>
+  <testcase name="nutritionComesFromActualEdibleComponentsNotRawWheatOrItemCounts()" classname="local.villagers.FoodSupplyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

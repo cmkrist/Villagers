@@ -1,0 +1,98 @@
+{
+  "at": "2026-11-10T00:25:27.651423867Z",
+  "elapsed_ms": 15016,
+  "label": "war-001-15s-1794270327650-1",
+  "source": "rendered client; only client-tracked entities",
+  "world": "FourBiomesWar",
+  "role": "play",
+  "learning_mode": "adaptive",
+  "native_target_tps": 20.0,
+  "training": {
+    "role": "play",
+    "state": "waiting_for_trial",
+    "learning_mode": "adaptive",
+    "game_tick_budget": 48000,
+    "configured_target_tps": 20
+  },
+  "game_time": 1317,
+  "trial": "authored four-biome war scenario",
+  "server_tick": 313,
+  "screen": "",
+  "frame_ns": 680380,
+  "camera": {
+    "x": -99.12153898767262,
+    "y": 105.17838302591286,
+    "z": 98.88464181743402,
+    "yaw": 248.55031,
+    "pitch": -9.150039
+  },
+  "tracked_entities": 18,
+  "tracked_villagers": 7,
+  "villagers": [
+    {
+      "uuid": "0a55979e-e79e-4793-b76a-d32466feb2fa",
+      "name": "Dara-0a55 · marching toward Frostwatch",
+      "x": -95.655517578125,
+      "y": 106.0,
+      "z": 96.02099609375,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "adb4d33d-2a6b-403b-8d53-4e826701a85a",
+      "name": "Pip-adb4 · marching toward Frostwatch",
+      "x": -96.364990234375,
+      "y": 105.0,
+      "z": 96.341796875,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "e3a16f27-d6be-498c-8e4c-1dfc2a6bf492",
+      "name": "Linden-e3a1 · marching toward Frostwatch",
+      "x": -96.25439453125,
+      "y": 105.0,
+      "z": 95.173583984375,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "580073aa-f96f-4953-9aa9-968703f1488f",
+      "name": "Nell-5800 · marching toward Frostwatch",
+      "x": -0.7980957043619128,
+      "y": 74.17431640401628,
+      "z": 98.59887695347425,
+      "alive": true,
+      "health": 15.500003
+    },
+    {
+      "uuid": "c5f9ab22-bc18-4a4b-9138-6c9f4e7647d2",
+      "name": "Nell-c5f9 · fighting Hazel-0058",
+      "x": -59.28700634695536,
+      "y": 104.92159999847412,
+      "z": 109.61297070840487,
+      "alive": true,
+      "health": 20.0
+    },
+    {
+      "uuid": "c6d4cdea-1a58-4f05-9529-8bb1deced5f6",
+      "name": "Dara-c6d4 · fighting Hazel-0058",
+      "x": -59.16015625,
+      "y": 104.0,
+      "z": 109.7744140625,
+      "alive": true,
+      "health": 16.0
+    },
+    {
+      "uuid": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "name": "Nell-8b4a · fighting Hazel-0058",
+      "x": -57.533203124992724,
+      "y": 104.17431640401628,
+      "z": 110.06266276103997,
+      "alive": true,
+      "health": 17.0
+    }
+  ],
+  "tracked_iron_golems": 0,
+  "iron_golems": []
+}

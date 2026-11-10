@@ -1,0 +1,238 @@
+{
+  "status": "passed",
+  "events": [
+    {
+      "phase": "declared initial fixture; all subsequent work uses ordinary controller",
+      "tick": 60,
+      "food": 16,
+      "inventory": [
+        "8 minecraft:wheat_seeds",
+        "2 minecraft:bread",
+        "0 minecraft:air",
+        "0 minecraft:air",
+        "0 minecraft:air",
+        "0 minecraft:air",
+        "0 minecraft:air",
+        "0 minecraft:air"
+      ],
+      "held": "1 minecraft:iron_hoe",
+      "hoeDamage": 249,
+      "hoesCrafted": 0,
+      "recipes": 0,
+      "logsGathered": 0,
+      "seedGathered": 0,
+      "seedPlanted": 0,
+      "forestryStatus": "not working",
+      "toolStatus": "not working",
+      "remainingJobs": 1,
+      "meanServerTickMillis": 0.70444
+    },
+    {
+      "receipt": {
+        "gameTime": 69,
+        "position": "5, 81, 4",
+        "crop": "WHEAT",
+        "plantingSource": "owned stock",
+        "nativeDrops": [
+          "1 minecraft:wheat",
+          "1 minecraft:wheat_seeds"
+        ],
+        "inventoryBefore": [
+          "8 minecraft:wheat_seeds",
+          "2 minecraft:bread",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "inventoryAfter": [
+          "8 minecraft:wheat_seeds",
+          "2 minecraft:bread",
+          "1 minecraft:wheat",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "overflow": [],
+        "hoeDamageBefore": 249,
+        "hoeDamageAfter": 0,
+        "hoeBroke": true,
+        "cropAfter": "Block{minecraft:wheat}[age\u003d0]"
+      },
+      "phase": "native harvest receipt"
+    },
+    {
+      "phase": "harvest observed",
+      "tick": 69,
+      "food": 16,
+      "inventory": [
+        "8 minecraft:wheat_seeds",
+        "2 minecraft:bread",
+        "1 minecraft:wheat",
+        "0 minecraft:air",
+        "0 minecraft:air",
+        "0 minecraft:air",
+        "0 minecraft:air",
+        "0 minecraft:air"
+      ],
+      "held": "0 minecraft:air",
+      "hoeDamage": 0,
+      "hoesCrafted": 0,
+      "recipes": 0,
+      "logsGathered": 0,
+      "seedGathered": 0,
+      "seedPlanted": 0,
+      "forestryStatus": "not working",
+      "toolStatus": "not working",
+      "remainingJobs": 1,
+      "meanServerTickMillis": 1.143164
+    },
+    {
+      "phase": "observe",
+      "tick": 200,
+      "food": 16,
+      "inventory": [
+        "8 minecraft:wheat_seeds",
+        "2 minecraft:bread",
+        "1 minecraft:wheat",
+        "1 minecraft:mangrove_propagule",
+        "1 minecraft:mangrove_log",
+        "0 minecraft:air",
+        "0 minecraft:air",
+        "0 minecraft:air"
+      ],
+      "held": "0 minecraft:air",
+      "hoeDamage": 0,
+      "hoesCrafted": 0,
+      "recipes": 0,
+      "logsGathered": 1,
+      "seedGathered": 1,
+      "seedPlanted": 0,
+      "forestryStatus": "working approved log",
+      "toolStatus": "missing wood for a hoe",
+      "remainingJobs": 1,
+      "meanServerTickMillis": 0.607849
+    },
+    {
+      "receipt": {
+        "gameTime": 299,
+        "position": "5, 81, 6",
+        "crop": "WHEAT",
+        "plantingSource": "owned stock",
+        "nativeDrops": [
+          "1 minecraft:wheat",
+          "2 minecraft:wheat_seeds"
+        ],
+        "inventoryBefore": [
+          "8 minecraft:wheat_seeds",
+          "2 minecraft:bread",
+          "1 minecraft:wheat",
+          "1 minecraft:mangrove_propagule",
+          "0 minecraft:air",
+          "2 minecraft:stick",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "inventoryAfter": [
+          "9 minecraft:wheat_seeds",
+          "2 minecraft:bread",
+          "2 minecraft:wheat",
+          "1 minecraft:mangrove_propagule",
+          "0 minecraft:air",
+          "2 minecraft:stick",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "overflow": [],
+        "hoeDamageBefore": 0,
+        "hoeDamageAfter": 1,
+        "hoeBroke": false,
+        "cropAfter": "Block{minecraft:wheat}[age\u003d0]"
+      },
+      "phase": "native harvest receipt"
+    },
+    {
+      "phase": "harvest observed",
+      "tick": 299,
+      "food": 16,
+      "inventory": [
+        "9 minecraft:wheat_seeds",
+        "2 minecraft:bread",
+        "2 minecraft:wheat",
+        "1 minecraft:mangrove_propagule",
+        "0 minecraft:air",
+        "2 minecraft:stick",
+        "0 minecraft:air",
+        "0 minecraft:air"
+      ],
+      "held": "1 minecraft:wooden_hoe",
+      "hoeDamage": 1,
+      "hoesCrafted": 1,
+      "recipes": 3,
+      "logsGathered": 1,
+      "seedGathered": 1,
+      "seedPlanted": 0,
+      "forestryStatus": "working approved log",
+      "toolStatus": "made a real wooden hoe",
+      "remainingJobs": 1,
+      "meanServerTickMillis": 0.513535
+    },
+    {
+      "phase": "observe",
+      "tick": 400,
+      "food": 16,
+      "inventory": [
+        "9 minecraft:wheat_seeds",
+        "2 minecraft:bread",
+        "2 minecraft:wheat",
+        "1 minecraft:mangrove_propagule",
+        "1 minecraft:wooden_hoe",
+        "2 minecraft:stick",
+        "0 minecraft:air",
+        "0 minecraft:air"
+      ],
+      "held": "0 minecraft:air",
+      "hoeDamage": 0,
+      "hoesCrafted": 1,
+      "recipes": 3,
+      "logsGathered": 1,
+      "seedGathered": 1,
+      "seedPlanted": 0,
+      "forestryStatus": "working approved log",
+      "toolStatus": "made a real wooden hoe",
+      "remainingJobs": 1,
+      "meanServerTickMillis": 0.320855
+    },
+    {
+      "phase": "actual wear, forestry, tool replacement and resumed harvest passed",
+      "tick": 459,
+      "food": 16,
+      "inventory": [
+        "9 minecraft:wheat_seeds",
+        "2 minecraft:bread",
+        "2 minecraft:wheat",
+        "0 minecraft:air",
+        "0 minecraft:air",
+        "2 minecraft:stick",
+        "1 minecraft:mangrove_log",
+        "0 minecraft:air"
+      ],
+      "held": "1 minecraft:wooden_hoe",
+      "hoeDamage": 1,
+      "hoesCrafted": 1,
+      "recipes": 3,
+      "logsGathered": 2,
+      "seedGathered": 1,
+      "seedPlanted": 1,
+      "forestryStatus": "not working",
+      "toolStatus": "made a real wooden hoe",
+      "remainingJobs": 0,
+      "meanServerTickMillis": 0.476579
+    }
+  ],
+  "fixture": "NEW isolated supplied platform,bed,table,water,two mature wheat,eight seeds,two bread,two mangrove logs,hanging propagule,plant soil; one adult and an iron hoe with one use left. Native exact forestry grant.80TPS,normal80base exhaustion/day. No supplies, resident, clock, growth or terrain setters after setup. Tests real wear and replacement, not renewable tree regrowth or survival adequacy."
+}

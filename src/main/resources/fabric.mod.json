@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "villagers",
+  "version": "${version}",
+  "name": "Villagers: Learning Lives",
+  "description": "Persistent, drive-based villagers with bounded online learning.",
+  "environment": "*",
+  "entrypoints": { "main": ["local.villagers.Villagers"], "client": ["local.villagers.LabClient"] },
+  "mixins": ["villagers.mixins.json"],
+  "depends": { "fabricloader": ">=0.19.5", "minecraft": "26.3", "java": ">=25", "fabric-api": ">=0.162.0" }
+}

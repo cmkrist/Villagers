@@ -1,0 +1,34 @@
+[
+  {
+    "jar": "/home/niko/.internal/source/Villagers/runs/play/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-7e9a32a5b8/26.3/minecraft-merged-7e9a32a5b8-26.3.jar",
+    "class": "net/minecraft/server/level/ServerLevel.class",
+    "classBytesSHA256": "778fc69f5ecef8453db36491860b3e4743deaa9037a606a72998e1cb4be7109c",
+    "methods": [
+      {
+        "name": "isPositionEntityTicking",
+        "descriptor": "(Lnet/minecraft/core/BlockPos;)Z",
+        "flags": 1,
+        "public": true
+      },
+      {
+        "name": "areEntitiesActuallyLoadedAndTicking",
+        "descriptor": "(Lnet/minecraft/world/level/ChunkPos;)Z",
+        "flags": 1,
+        "public": true
+      }
+    ]
+  },
+  {
+    "jar": "/home/niko/.internal/source/Villagers/runs/play/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-7e9a32a5b8/26.3/minecraft-merged-7e9a32a5b8-26.3.jar",
+    "class": "net/minecraft/server/MinecraftServer.class",
+    "classBytesSHA256": "529641194cff53d8bcb162a20582a87bcbefb0de4ecb050bbe1db71417025f1c",
+    "methods": [
+      {
+        "name": "getAllLevels",
+        "descriptor": "()Ljava/lang/Iterable;",
+        "flags": 1,
+        "public": true
+      }
+    ]
+  }
+]

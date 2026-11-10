@@ -1,0 +1,22 @@
+{
+  "actor": "e358e923-f9d2-4d5b-a04b-b2531c8f02d9",
+  "name": "Nell-e358",
+  "fixture": "operator wheat3 and one labelled crafting table; explicit daytime/observer relocation",
+  "wheat_before_craft": 3,
+  "wheat_after_craft": 0,
+  "bread_crafted": 1,
+  "food_before": 16,
+  "food_after": 20,
+  "table_retained": true,
+  "claim": "native recipe/inventory crafting and eating after labelled intervention; no natural-supply self-sufficiency claim",
+  "crop_observation": {
+    "-230, 72, 751": "Block{minecraft:wheat}[age=0]",
+    "-228, 72, 751": "Block{minecraft:beetroots}[age=2]",
+    "-226, 72, 751": "Block{minecraft:wheat}[age=0]",
+    "-230, 72, 752": "Block{minecraft:beetroots}[age=2]",
+    "-230, 72, 753": "Block{minecraft:wheat}[age=0]",
+    "-228, 72, 753": "Block{minecraft:wheat}[age=0]",
+    "-226, 72, 753": "Block{minecraft:wheat}[age=3]"
+  },
+  "pending": "positive native replant immediately matched to a specific harvest, starvation/god-child checks, sustainable food and families"
+}

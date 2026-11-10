@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="local.villagers.navigation.WorkBudgetTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:36:11.341Z" hostname="td001" time="0.008">
+  <properties/>
+  <testcase name="abandonedAndUnloadedWorkersCannotHoldTheQueueForever()" classname="local.villagers.navigation.WorkBudgetTest" time="0.001"/>
+  <testcase name="diagnosticsNeverOvertakeOrQueueAndClockRewindClearsOldReservations()" classname="local.villagers.navigation.WorkBudgetTest" time="0.0"/>
+  <testcase name="queuedTripsGetTheirFirstPathWithoutFalselyFailingForLackOfMovement()" classname="local.villagers.navigation.WorkBudgetTest" time="0.007"/>
+  <testcase name="earlierTickingActorCannotRepeatedlyOvertakeWaitingNeighbour()" classname="local.villagers.navigation.WorkBudgetTest" time="0.0"/>
+  <testcase name="staggeredVillageGetsServiceDespiteFixedEntityTickOrder()" classname="local.villagers.navigation.WorkBudgetTest" time="0.0"/>
+  <testcase name="queueIsBoundedAndRepeatedRequestsKeepTheirPosition()" classname="local.villagers.navigation.WorkBudgetTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

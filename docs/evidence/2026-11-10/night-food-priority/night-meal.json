@@ -1,0 +1,34 @@
+{
+  "before": {
+    "crafting": "idle",
+    "sleeping": true,
+    "food": 0,
+    "inventory": "[1 minecraft:hay_block, 3 minecraft:oak_planks, 2 minecraft:stick]",
+    "health": 7.0,
+    "id": "c5578b5b-8991-428d-9d82-7cb57a956269",
+    "position": [
+      -478.5,
+      64.5625,
+      -373.5
+    ],
+    "breadCrafted": 0
+  },
+  "stage": "ate_owned_grain_at_night",
+  "after": {
+    "crafting": "crafted bread",
+    "sleeping": false,
+    "food": 10,
+    "inventory": "[3 minecraft:wheat, 3 minecraft:oak_planks, 2 minecraft:stick]",
+    "health": 7.0,
+    "id": "c5578b5b-8991-428d-9d82-7cb57a956269",
+    "position": [
+      -471.47559756297835,
+      63.0,
+      -367.5144747088336
+    ],
+    "breadCrafted": 2
+  },
+  "status": "passed",
+  "scope": "Actual saved starving body, hay, station, night clock and injury in a COPY. No supplies or actor/health/food/time setters. Native wake, movement, recipes and eating.",
+  "elapsed": 100
+}

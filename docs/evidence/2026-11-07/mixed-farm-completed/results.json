@@ -1,0 +1,132 @@
+{
+  "status": "bounded peaceful renewable food loop passed",
+  "originalReportPreserved": true,
+  "originalReportSHA256": "f42bcbe20e39c0c565c6f9316a3156cc7e2ed014c45ac0444f2b958286c84765",
+  "sustainedWorldTick": 96001,
+  "additionalObservedTicks": 24000,
+  "paidHarvestReplantsTotal": 32,
+  "wheatHarvests": 14,
+  "beetHarvests": 18,
+  "repeatHarvestCells": 6,
+  "actualContinuationTransfers": [
+    {
+      "giverBefore": 3,
+      "named": false,
+      "nutrition": 5,
+      "receiverBefore": 0,
+      "receiverAfter": 1,
+      "item": "minecraft:bread",
+      "giverAfter": 2,
+      "to": "464f4f44-4543-4f4e-0000-000000000002",
+      "from": "464f4f44-4543-4f4e-0000-000000000007",
+      "gameTime": 72054
+    },
+    {
+      "giverBefore": 3,
+      "named": false,
+      "nutrition": 5,
+      "receiverBefore": 0,
+      "receiverAfter": 1,
+      "item": "minecraft:bread",
+      "giverAfter": 2,
+      "to": "464f4f44-4543-4f4e-0000-000000000002",
+      "from": "464f4f44-4543-4f4e-0000-000000000007",
+      "gameTime": 95493
+    }
+  ],
+  "final": {
+    "phase": "native regrowth, repeat harvest, paid bread production, sharing and meal passed",
+    "tick": 96001,
+    "producer": {
+      "bread": 2,
+      "received": 0,
+      "given": 2,
+      "requestCount": 0,
+      "id": "464f4f44-4543-4f4e-0000-000000000007",
+      "food": 20,
+      "mood": "CONTENT",
+      "wheat": 2,
+      "crafted": 1,
+      "target": 15
+    },
+    "requester": {
+      "bread": 0,
+      "received": 2,
+      "given": 0,
+      "requestCount": 1,
+      "id": "464f4f44-4543-4f4e-0000-000000000002",
+      "food": 9,
+      "mood": "CONTENT",
+      "wheat": 0,
+      "crafted": 0,
+      "target": 15
+    },
+    "earnedMealObserved": true,
+    "foodDeliveries": 0,
+    "foodDeliveryPathRejections": 0,
+    "cropAges": [
+      7,
+      2,
+      6,
+      11,
+      0,
+      2,
+      3,
+      6
+    ],
+    "harvestsByCell": {
+      "4, 81, 6": 2,
+      "8, 81, 9": 2,
+      "7, 81, 4": 1,
+      "5, 81, 2": 3,
+      "8, 81, 3": 1,
+      "8, 81, 2": 1,
+      "4, 81, 8": 1,
+      "4, 81, 7": 1,
+      "4, 81, 9": 2,
+      "7, 81, 2": 1,
+      "7, 81, 3": 1,
+      "4, 81, 2": 2,
+      "10, 81, 2": 1,
+      "11, 81, 2": 1,
+      "5, 81, 5": 1,
+      "5, 81, 3": 1,
+      "5, 81, 7": 1,
+      "5, 81, 8": 2,
+      "5, 81, 9": 1,
+      "7, 81, 8": 1,
+      "7, 81, 7": 1,
+      "10, 81, 9": 1,
+      "8, 81, 5": 1,
+      "8, 81, 7": 1,
+      "8, 81, 8": 1
+    },
+    "nearbyObserverCount": 1,
+    "earnedBreadInRequesterBag": 0,
+    "plotsCultivated": 0,
+    "meanServerTickMillis": 0.273542
+  },
+  "checks": {
+    "java": 340,
+    "python": 10,
+    "failures": 0,
+    "worldLockRejection": "verified before destination creation",
+    "combinedJavaAfterSocialSlice": 345
+  },
+  "limitations": [
+    "Selected generous/frugal producer and glutton requester; supplied beds, table, water and lighting",
+    "47 operator-approved plots;64 wheat seeds,64 beet seeds,one iron hoe,four marked bread per adult at original setup",
+    "Peaceful fixture,80TPS,normal80base exhaustion/day and3random tick speed; stationary test observer restored after restart",
+    "No post-setup grain/food resupply, growth/time/body setters or actor replacements",
+    "Sustained probe pinned before final prior-crafting/baseline guard refinements; final short continuation separately verifies current food probe",
+    "No claim of indefinite survival, natural-village acceptance, delivery travel, trade prices or complete local economy",
+    "Manual sustained-load restart inherited probe description says six initial rations; authoritative original fixture and continuation provenance establish four. Restart supplied zero food."
+  ],
+  "restart": {
+    "status": "passed",
+    "method": "Read-only ENTITY_LOAD checks: exact saved body bread/wheat and saved mind nutrition, before autonomous ticks. Ordinary gameplay then resumes.",
+    "currentCombinedSocialJar": "3078d412162cc239dff33393f55c93e176c477016e8c7a3afd9b4e53664f72db",
+    "sustainedCheckpointVerified": 96001,
+    "priorFailedChecks": "Retained final/ and sustained-restart/: comparing after160ticks falsely demanded frozen inventories while legitimate work resumed; not persistence failures."
+  }
+}

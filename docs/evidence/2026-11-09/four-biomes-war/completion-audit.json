@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "requirements": {
+    "1_world_geometry_and_biomes": [
+      "src/test/java/local/villagers/war/WarMapTest.java",
+      "docs/evidence/2026-11-09/four-biomes-world/v2/war-world-result.json",
+      "runs/four-biomes-play/saves/FourBiomesWar/four-biomes-war.json"
+    ],
+    "2_expanded_mob_ai": [
+      "src/main/java/local/villagers/CreatureAgents.java",
+      "docs/evidence/2026-11-09/four-biomes-war/v2/war-battle-before-restart.json",
+      "docs/evidence/2026-11-09/four-biomes-war/v2/war-battle-result.json",
+      "runs/four-biomes-play/saves/FourBiomesWar/creature-minds"
+    ],
+    "3_four_settlements": [
+      "docs/evidence/2026-11-09/four-biomes-world/v2/war-world-before-restart.json",
+      "runs/four-biomes-play/saves/FourBiomesWar/four-biomes-war.json"
+    ],
+    "4_reciprocal_war": [
+      "docs/evidence/2026-11-09/four-biomes-war/v2/war-battle-before-restart.json",
+      "docs/evidence/2026-11-09/four-biomes-war/v2/war-battle-result.json",
+      "runs/four-biomes-play/saves/FourBiomesWar/war-campaign.json"
+    ]
+  },
+  "playableWorld": "/home/cmkrist/Documents/Villagers/runs/four-biomes-play/saves/FourBiomesWar",
+  "launch": "./tools/play-war.sh",
+  "tests": {
+    "java": 410,
+    "python": 10,
+    "failures": 0
+  },
+  "creatureMindSchema": 9,
+  "nativeChecks": "Initial populated world and restart; bilateral marches/hits; enemy kill; native paid trade; four added species learning and restart; full-pack visible create/reopen at20TPS",
+  "limits": [
+    "Finite supplies and permanent casualties",
+    "Bounded acceptance, not indefinite survival or faction balance",
+    "New creature controller does not reproduce every vanilla spellcasting/profession routine",
+    "Border bounds the playable map; engine padding chunks can exist outside it"
+  ]
+}

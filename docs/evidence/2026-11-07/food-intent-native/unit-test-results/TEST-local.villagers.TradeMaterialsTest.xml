@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="local.villagers.TradeMaterialsTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-11-08T01:31:27.927Z" hostname="td001" time="0.002">
+  <properties/>
+  <testcase name="distinctRealCoinComponentsSurviveThePayment()" classname="local.villagers.TradeMaterialsTest" time="0.0"/>
+  <testcase name="twoDifferentlyMarkedCoinsNeedRealReceivingSpace()" classname="local.villagers.TradeMaterialsTest" time="0.001"/>
+  <testcase name="aStaleBundleCannotSpendMoneyAndTinyStacksNeedCompleteRealCapacity()" classname="local.villagers.TradeMaterialsTest" time="0.0"/>
+  <testcase name="realMoneyAndOneActualComponentBearingToolMoveBothWays()" classname="local.villagers.TradeMaterialsTest" time="0.0"/>
+  <testcase name="eitherFullReceiptOrInsufficientMoneyLeavesBothBagsUntouched()" classname="local.villagers.TradeMaterialsTest" time="0.0"/>
+  <testcase name="componentDifferencesCannotFillAMissingBundleAndPartialCapacityNeverPays()" classname="local.villagers.TradeMaterialsTest" time="0.001"/>
+  <testcase name="actualSpentSlotsCanReceiveTheOtherHalfOfAnExchange()" classname="local.villagers.TradeMaterialsTest" time="0.0"/>
+  <testcase name="aPlanCannotChangeOwnersOrReplayEvenIfPriorBalancesReturn()" classname="local.villagers.TradeMaterialsTest" time="0.0"/>
+  <testcase name="eitherStaleInventoryRejectsBeforeTakingAnything()" classname="local.villagers.TradeMaterialsTest" time="0.0"/>
+  <testcase name="aBundleUsesExactMatchingStockAcrossSlotsWithoutLosingComponents()" classname="local.villagers.TradeMaterialsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

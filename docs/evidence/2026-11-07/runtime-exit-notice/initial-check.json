@@ -1,0 +1,101 @@
+{
+  "at": "2026-11-07T07:02:13.583284+00:00",
+  "notification": "adaptive launcher background command reported143; not independently observed game exit",
+  "jobs": [
+    {
+      "pid": 601856,
+      "ppid": 1,
+      "state": "S",
+      "start_ticks": 10936249,
+      "user_cpu_ticks": 213,
+      "system_cpu_ticks": 26,
+      "uid": 1000,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "exact_recorded_identity": true
+    },
+    {
+      "pid": 601857,
+      "ppid": 601837,
+      "state": "S",
+      "start_ticks": 10936249,
+      "user_cpu_ticks": 222,
+      "system_cpu_ticks": 28,
+      "uid": 1000,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "exact_recorded_identity": true
+    },
+    {
+      "pid": 601946,
+      "ppid": 601856,
+      "state": "S",
+      "start_ticks": 10936303,
+      "user_cpu_ticks": 3478,
+      "system_cpu_ticks": 257,
+      "uid": 1000,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "exact_recorded_identity": true
+    },
+    {
+      "pid": 601990,
+      "ppid": 601857,
+      "state": "S",
+      "start_ticks": 10936325,
+      "user_cpu_ticks": 3211,
+      "system_cpu_ticks": 236,
+      "uid": 1000,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "exact_recorded_identity": true
+    },
+    {
+      "pid": 602326,
+      "ppid": 601946,
+      "state": "S",
+      "start_ticks": 10937021,
+      "user_cpu_ticks": 178919,
+      "system_cpu_ticks": 5514,
+      "uid": 1000,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/adaptive",
+      "exact_recorded_identity": true
+    },
+    {
+      "pid": 602372,
+      "ppid": 601990,
+      "state": "S",
+      "start_ticks": 10937054,
+      "user_cpu_ticks": 174430,
+      "system_cpu_ticks": 3214,
+      "uid": 1000,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers/runs/frozen",
+      "exact_recorded_identity": true
+    }
+  ],
+  "heartbeats": [
+    {
+      "role": "adaptive",
+      "source": "runs/adaptive/evidence/adaptive-2026-11-07T05-49-19.326719309Z-93c0ebd5/latest.json",
+      "at": "2026-11-07T07:02:11.989874714Z",
+      "game_time": 127276,
+      "server_tick": 123209,
+      "native_target_tps": 20.0,
+      "tracked_villagers": 6,
+      "file_mtime_utc": "2026-11-07T07:02:11.988655+00:00"
+    },
+    {
+      "role": "frozen",
+      "source": "runs/frozen/evidence/frozen-2026-11-07T05-49-19.410240764Z-7e0fed43/latest.json",
+      "at": "2026-11-07T07:02:11.014103738Z",
+      "game_time": 127254,
+      "server_tick": 123187,
+      "native_target_tps": 20.0,
+      "tracked_villagers": 7,
+      "file_mtime_utc": "2026-11-07T07:02:11.012680+00:00"
+    }
+  ],
+  "actions": "Read-only verification; no stop, restart, replacement, client command or world edit"
+}

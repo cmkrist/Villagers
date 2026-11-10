@@ -1,0 +1,815 @@
+{
+  "schema": 1,
+  "casualties": {
+    "23504758-dbc8-4ad3-90b8-50f8677ec6d0": {
+      "tick": 694,
+      "cause": "mob",
+      "faction": "ILLAGERS",
+      "killer": "580073aa-f96f-4953-9aa9-968703f1488f",
+      "killerFaction": "VILLAGERS"
+    },
+    "c7699f9f-0977-4320-935d-c4ffb9cc7833": {
+      "tick": 757,
+      "cause": "mob",
+      "faction": "ILLAGERS",
+      "killer": "0a55979e-e79e-4793-b76a-d32466feb2fa",
+      "killerFaction": "VILLAGERS"
+    },
+    "85be9da4-3572-4fad-bf42-3e4eaa34b1ae": {
+      "tick": 827,
+      "cause": "mob",
+      "faction": "ILLAGERS",
+      "killer": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "killerFaction": "VILLAGERS"
+    },
+    "a15d5f40-532e-48a4-a149-8598f9891e81": {
+      "tick": 897,
+      "cause": "mob",
+      "faction": "ILLAGERS",
+      "killer": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "killerFaction": "VILLAGERS"
+    },
+    "4fcbb604-3b62-46be-aa8d-e7b5910132ef": {
+      "tick": 1067,
+      "cause": "mob",
+      "faction": "ILLAGERS",
+      "killer": "e3a16f27-d6be-498c-8e4c-1dfc2a6bf492",
+      "killerFaction": "VILLAGERS"
+    },
+    "d8e18f67-cb2a-4325-b06b-d58607658f98": {
+      "tick": 1112,
+      "cause": "mob",
+      "faction": "VILLAGERS",
+      "killer": "d92f1db2-8aac-4691-bc4d-8ef21b47dfe1",
+      "killerFaction": "ILLAGERS"
+    },
+    "d92f1db2-8aac-4691-bc4d-8ef21b47dfe1": {
+      "tick": 1167,
+      "cause": "mob",
+      "faction": "ILLAGERS",
+      "killer": "e3a16f27-d6be-498c-8e4c-1dfc2a6bf492",
+      "killerFaction": "VILLAGERS"
+    },
+    "00585698-ff01-4717-8c37-cc7f3da50a9d": {
+      "tick": 1389,
+      "cause": "mob",
+      "faction": "ILLAGERS",
+      "killer": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "killerFaction": "VILLAGERS"
+    },
+    "c5f9ab22-bc18-4a4b-9138-6c9f4e7647d2": {
+      "tick": 1467,
+      "cause": "mob",
+      "faction": "VILLAGERS",
+      "killer": "1dd216f2-0af8-43e6-b30d-87d75cc79b5c",
+      "killerFaction": "ILLAGERS"
+    },
+    "3741eeba-2907-4fed-a50a-0c8d911887f4": {
+      "tick": 1606,
+      "cause": "arrow",
+      "faction": "VILLAGERS",
+      "killer": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "killerFaction": "ILLAGERS"
+    },
+    "ca4195b6-92c3-4a7a-88ce-2b27e8907e71": {
+      "tick": 1762,
+      "cause": "arrow",
+      "faction": "VILLAGERS",
+      "killer": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "killerFaction": "ILLAGERS"
+    },
+    "daf3ac16-ed3d-4219-976f-ef42c1b1a4b3": {
+      "tick": 1834,
+      "cause": "arrow",
+      "faction": "VILLAGERS",
+      "killer": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "killerFaction": "ILLAGERS"
+    },
+    "580073aa-f96f-4953-9aa9-968703f1488f": {
+      "tick": 2108,
+      "cause": "mob",
+      "faction": "VILLAGERS",
+      "killer": "1dd216f2-0af8-43e6-b30d-87d75cc79b5c",
+      "killerFaction": "ILLAGERS"
+    },
+    "1dd216f2-0af8-43e6-b30d-87d75cc79b5c": {
+      "tick": 2290,
+      "cause": "mob",
+      "faction": "ILLAGERS",
+      "killer": "c6d4cdea-1a58-4f05-9529-8bb1deced5f6",
+      "killerFaction": "VILLAGERS"
+    },
+    "3b0a130f-46fa-4152-a344-89e87ed5b3d6": {
+      "tick": 2401,
+      "cause": "arrow",
+      "faction": "VILLAGERS",
+      "killer": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "killerFaction": "ILLAGERS"
+    },
+    "8064cec3-101a-4d8e-a2fc-093cd24c9f90": {
+      "tick": 3120,
+      "cause": "mob",
+      "faction": "ILLAGERS",
+      "killer": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "killerFaction": "VILLAGERS"
+    }
+  },
+  "hits": {
+    "ILLAGERS": 82.0,
+    "VILLAGERS": 93.0
+  },
+  "damage": {
+    "ILLAGERS": 368.0,
+    "VILLAGERS": 293.0
+  },
+  "marches": {
+    "VILLAGERS": 8.0,
+    "ILLAGERS": 8.0
+  },
+  "recentEvents": [
+    {
+      "tick": 1319,
+      "kind": "hit",
+      "actor": "daf3ac16-ed3d-4219-976f-ef42c1b1a4b3",
+      "subject": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1328,
+      "kind": "hit",
+      "actor": "ca4195b6-92c3-4a7a-88ce-2b27e8907e71",
+      "subject": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1330,
+      "kind": "hit",
+      "actor": "c5f9ab22-bc18-4a4b-9138-6c9f4e7647d2",
+      "subject": "00585698-ff01-4717-8c37-cc7f3da50a9d",
+      "detail": "mob:6.0"
+    },
+    {
+      "tick": 1339,
+      "kind": "hit",
+      "actor": "daf3ac16-ed3d-4219-976f-ef42c1b1a4b3",
+      "subject": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1339,
+      "kind": "hit",
+      "actor": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "subject": "ca4195b6-92c3-4a7a-88ce-2b27e8907e71",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 1339,
+      "kind": "hit",
+      "actor": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "subject": "daf3ac16-ed3d-4219-976f-ef42c1b1a4b3",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 1350,
+      "kind": "hit",
+      "actor": "c5f9ab22-bc18-4a4b-9138-6c9f4e7647d2",
+      "subject": "00585698-ff01-4717-8c37-cc7f3da50a9d",
+      "detail": "mob:6.0"
+    },
+    {
+      "tick": 1358,
+      "kind": "hit",
+      "actor": "ca4195b6-92c3-4a7a-88ce-2b27e8907e71",
+      "subject": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1369,
+      "kind": "hit",
+      "actor": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "subject": "00585698-ff01-4717-8c37-cc7f3da50a9d",
+      "detail": "mob:6.0"
+    },
+    {
+      "tick": 1378,
+      "kind": "hit",
+      "actor": "ca4195b6-92c3-4a7a-88ce-2b27e8907e71",
+      "subject": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1378,
+      "kind": "hit",
+      "actor": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "subject": "ca4195b6-92c3-4a7a-88ce-2b27e8907e71",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 1384,
+      "kind": "hit",
+      "actor": "76d9a23f-5a0f-44ad-9193-d3dd65628a0c",
+      "subject": "daf3ac16-ed3d-4219-976f-ef42c1b1a4b3",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 1389,
+      "kind": "death",
+      "actor": "00585698-ff01-4717-8c37-cc7f3da50a9d",
+      "subject": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "detail": "mob"
+    },
+    {
+      "tick": 1389,
+      "kind": "hit",
+      "actor": "ab3083d1-7e4b-4b74-9149-3e97fe625c18",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1403,
+      "kind": "hit",
+      "actor": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "subject": "ab3083d1-7e4b-4b74-9149-3e97fe625c18",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 1407,
+      "kind": "hit",
+      "actor": "1dd216f2-0af8-43e6-b30d-87d75cc79b5c",
+      "subject": "c6d4cdea-1a58-4f05-9529-8bb1deced5f6",
+      "detail": "mob:13.0"
+    },
+    {
+      "tick": 1410,
+      "kind": "hit",
+      "actor": "968ac799-7efa-465f-91be-3e78c16d2414",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1418,
+      "kind": "hit",
+      "actor": "ca4195b6-92c3-4a7a-88ce-2b27e8907e71",
+      "subject": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1418,
+      "kind": "hit",
+      "actor": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "subject": "ca4195b6-92c3-4a7a-88ce-2b27e8907e71",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 1423,
+      "kind": "hit",
+      "actor": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "subject": "daf3ac16-ed3d-4219-976f-ef42c1b1a4b3",
+      "detail": "arrow:3.0"
+    },
+    {
+      "tick": 1427,
+      "kind": "hit",
+      "actor": "1dd216f2-0af8-43e6-b30d-87d75cc79b5c",
+      "subject": "c5f9ab22-bc18-4a4b-9138-6c9f4e7647d2",
+      "detail": "mob:13.0"
+    },
+    {
+      "tick": 1429,
+      "kind": "hit",
+      "actor": "ab3083d1-7e4b-4b74-9149-3e97fe625c18",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1444,
+      "kind": "hit",
+      "actor": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "subject": "968ac799-7efa-465f-91be-3e78c16d2414",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 1447,
+      "kind": "hit",
+      "actor": "1dd216f2-0af8-43e6-b30d-87d75cc79b5c",
+      "subject": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "detail": "mob:13.0"
+    },
+    {
+      "tick": 1449,
+      "kind": "hit",
+      "actor": "ab3083d1-7e4b-4b74-9149-3e97fe625c18",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1450,
+      "kind": "hit",
+      "actor": "c5f9ab22-bc18-4a4b-9138-6c9f4e7647d2",
+      "subject": "1dd216f2-0af8-43e6-b30d-87d75cc79b5c",
+      "detail": "mob:6.0"
+    },
+    {
+      "tick": 1458,
+      "kind": "hit",
+      "actor": "ca4195b6-92c3-4a7a-88ce-2b27e8907e71",
+      "subject": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1458,
+      "kind": "hit",
+      "actor": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "subject": "ca4195b6-92c3-4a7a-88ce-2b27e8907e71",
+      "detail": "arrow:3.0"
+    },
+    {
+      "tick": 1461,
+      "kind": "hit",
+      "actor": "76d9a23f-5a0f-44ad-9193-d3dd65628a0c",
+      "subject": "3741eeba-2907-4fed-a50a-0c8d911887f4",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 1467,
+      "kind": "death",
+      "actor": "c5f9ab22-bc18-4a4b-9138-6c9f4e7647d2",
+      "subject": "1dd216f2-0af8-43e6-b30d-87d75cc79b5c",
+      "detail": "mob"
+    },
+    {
+      "tick": 1469,
+      "kind": "hit",
+      "actor": "ab3083d1-7e4b-4b74-9149-3e97fe625c18",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1484,
+      "kind": "hit",
+      "actor": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "subject": "ab3083d1-7e4b-4b74-9149-3e97fe625c18",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 1490,
+      "kind": "hit",
+      "actor": "968ac799-7efa-465f-91be-3e78c16d2414",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1494,
+      "kind": "hit",
+      "actor": "3741eeba-2907-4fed-a50a-0c8d911887f4",
+      "subject": "76d9a23f-5a0f-44ad-9193-d3dd65628a0c",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1497,
+      "kind": "hit",
+      "actor": "76d9a23f-5a0f-44ad-9193-d3dd65628a0c",
+      "subject": "3741eeba-2907-4fed-a50a-0c8d911887f4",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 1510,
+      "kind": "hit",
+      "actor": "968ac799-7efa-465f-91be-3e78c16d2414",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1523,
+      "kind": "hit",
+      "actor": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "subject": "968ac799-7efa-465f-91be-3e78c16d2414",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 1529,
+      "kind": "hit",
+      "actor": "ab3083d1-7e4b-4b74-9149-3e97fe625c18",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1537,
+      "kind": "hit",
+      "actor": "76d9a23f-5a0f-44ad-9193-d3dd65628a0c",
+      "subject": "3741eeba-2907-4fed-a50a-0c8d911887f4",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 1549,
+      "kind": "hit",
+      "actor": "ab3083d1-7e4b-4b74-9149-3e97fe625c18",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1564,
+      "kind": "hit",
+      "actor": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "subject": "968ac799-7efa-465f-91be-3e78c16d2414",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 1569,
+      "kind": "hit",
+      "actor": "ab3083d1-7e4b-4b74-9149-3e97fe625c18",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1582,
+      "kind": "hit",
+      "actor": "76d9a23f-5a0f-44ad-9193-d3dd65628a0c",
+      "subject": "3741eeba-2907-4fed-a50a-0c8d911887f4",
+      "detail": "arrow:3.0"
+    },
+    {
+      "tick": 1589,
+      "kind": "hit",
+      "actor": "ab3083d1-7e4b-4b74-9149-3e97fe625c18",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1604,
+      "kind": "hit",
+      "actor": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "subject": "968ac799-7efa-465f-91be-3e78c16d2414",
+      "detail": "arrow:3.0"
+    },
+    {
+      "tick": 1606,
+      "kind": "death",
+      "actor": "3741eeba-2907-4fed-a50a-0c8d911887f4",
+      "subject": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "detail": "arrow"
+    },
+    {
+      "tick": 1624,
+      "kind": "hit",
+      "actor": "ab3083d1-7e4b-4b74-9149-3e97fe625c18",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1626,
+      "kind": "hit",
+      "actor": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "subject": "ab3083d1-7e4b-4b74-9149-3e97fe625c18",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 1652,
+      "kind": "hit",
+      "actor": "968ac799-7efa-465f-91be-3e78c16d2414",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1653,
+      "kind": "hit",
+      "actor": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "subject": "ca4195b6-92c3-4a7a-88ce-2b27e8907e71",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 1667,
+      "kind": "hit",
+      "actor": "76d9a23f-5a0f-44ad-9193-d3dd65628a0c",
+      "subject": "daf3ac16-ed3d-4219-976f-ef42c1b1a4b3",
+      "detail": "arrow:3.0"
+    },
+    {
+      "tick": 1672,
+      "kind": "hit",
+      "actor": "968ac799-7efa-465f-91be-3e78c16d2414",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1692,
+      "kind": "hit",
+      "actor": "968ac799-7efa-465f-91be-3e78c16d2414",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1697,
+      "kind": "hit",
+      "actor": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "subject": "a9a630db-7193-4e3e-a50b-731e93b1e6c5",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 1721,
+      "kind": "hit",
+      "actor": "8d2c2c42-8e52-49c9-90a0-3389c4d0ad26",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1723,
+      "kind": "hit",
+      "actor": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "subject": "ca4195b6-92c3-4a7a-88ce-2b27e8907e71",
+      "detail": "arrow:3.0"
+    },
+    {
+      "tick": 1737,
+      "kind": "hit",
+      "actor": "76d9a23f-5a0f-44ad-9193-d3dd65628a0c",
+      "subject": "daf3ac16-ed3d-4219-976f-ef42c1b1a4b3",
+      "detail": "arrow:3.0"
+    },
+    {
+      "tick": 1741,
+      "kind": "hit",
+      "actor": "8d2c2c42-8e52-49c9-90a0-3389c4d0ad26",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1753,
+      "kind": "hit",
+      "actor": "a9a630db-7193-4e3e-a50b-731e93b1e6c5",
+      "subject": "b5af9921-c509-4d68-8134-5bb3bc59888f",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 1762,
+      "kind": "death",
+      "actor": "ca4195b6-92c3-4a7a-88ce-2b27e8907e71",
+      "subject": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "detail": "arrow"
+    },
+    {
+      "tick": 1776,
+      "kind": "hit",
+      "actor": "76d9a23f-5a0f-44ad-9193-d3dd65628a0c",
+      "subject": "daf3ac16-ed3d-4219-976f-ef42c1b1a4b3",
+      "detail": "arrow:3.0"
+    },
+    {
+      "tick": 1802,
+      "kind": "hit",
+      "actor": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "subject": "daf3ac16-ed3d-4219-976f-ef42c1b1a4b3",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 1834,
+      "kind": "death",
+      "actor": "daf3ac16-ed3d-4219-976f-ef42c1b1a4b3",
+      "subject": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "detail": "arrow"
+    },
+    {
+      "tick": 2059,
+      "kind": "hit",
+      "actor": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "subject": "3b0a130f-46fa-4152-a344-89e87ed5b3d6",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 2068,
+      "kind": "hit",
+      "actor": "1dd216f2-0af8-43e6-b30d-87d75cc79b5c",
+      "subject": "580073aa-f96f-4953-9aa9-968703f1488f",
+      "detail": "mob:13.0"
+    },
+    {
+      "tick": 2070,
+      "kind": "hit",
+      "actor": "580073aa-f96f-4953-9aa9-968703f1488f",
+      "subject": "1dd216f2-0af8-43e6-b30d-87d75cc79b5c",
+      "detail": "mob:6.0"
+    },
+    {
+      "tick": 2075,
+      "kind": "hit",
+      "actor": "3b0a130f-46fa-4152-a344-89e87ed5b3d6",
+      "subject": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 2095,
+      "kind": "hit",
+      "actor": "3b0a130f-46fa-4152-a344-89e87ed5b3d6",
+      "subject": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 2096,
+      "kind": "hit",
+      "actor": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "subject": "3b0a130f-46fa-4152-a344-89e87ed5b3d6",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 2108,
+      "kind": "death",
+      "actor": "580073aa-f96f-4953-9aa9-968703f1488f",
+      "subject": "1dd216f2-0af8-43e6-b30d-87d75cc79b5c",
+      "detail": "mob"
+    },
+    {
+      "tick": 2135,
+      "kind": "hit",
+      "actor": "3b0a130f-46fa-4152-a344-89e87ed5b3d6",
+      "subject": "76d9a23f-5a0f-44ad-9193-d3dd65628a0c",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 2136,
+      "kind": "hit",
+      "actor": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "subject": "3b0a130f-46fa-4152-a344-89e87ed5b3d6",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 2177,
+      "kind": "hit",
+      "actor": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "subject": "3b0a130f-46fa-4152-a344-89e87ed5b3d6",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 2215,
+      "kind": "hit",
+      "actor": "3b0a130f-46fa-4152-a344-89e87ed5b3d6",
+      "subject": "76d9a23f-5a0f-44ad-9193-d3dd65628a0c",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 2217,
+      "kind": "hit",
+      "actor": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "subject": "3b0a130f-46fa-4152-a344-89e87ed5b3d6",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 2225,
+      "kind": "hit",
+      "actor": "c6d4cdea-1a58-4f05-9529-8bb1deced5f6",
+      "subject": "1dd216f2-0af8-43e6-b30d-87d75cc79b5c",
+      "detail": "mob:6.0"
+    },
+    {
+      "tick": 2251,
+      "kind": "hit",
+      "actor": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "subject": "1dd216f2-0af8-43e6-b30d-87d75cc79b5c",
+      "detail": "mob:6.0"
+    },
+    {
+      "tick": 2252,
+      "kind": "hit",
+      "actor": "1dd216f2-0af8-43e6-b30d-87d75cc79b5c",
+      "subject": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "detail": "mob:13.0"
+    },
+    {
+      "tick": 2258,
+      "kind": "hit",
+      "actor": "3b0a130f-46fa-4152-a344-89e87ed5b3d6",
+      "subject": "76d9a23f-5a0f-44ad-9193-d3dd65628a0c",
+      "detail": "mob:1.0"
+    },
+    {
+      "tick": 2270,
+      "kind": "hit",
+      "actor": "c6d4cdea-1a58-4f05-9529-8bb1deced5f6",
+      "subject": "1dd216f2-0af8-43e6-b30d-87d75cc79b5c",
+      "detail": "mob:6.0"
+    },
+    {
+      "tick": 2290,
+      "kind": "death",
+      "actor": "1dd216f2-0af8-43e6-b30d-87d75cc79b5c",
+      "subject": "c6d4cdea-1a58-4f05-9529-8bb1deced5f6",
+      "detail": "mob"
+    },
+    {
+      "tick": 2318,
+      "kind": "hit",
+      "actor": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "subject": "3b0a130f-46fa-4152-a344-89e87ed5b3d6",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 2360,
+      "kind": "hit",
+      "actor": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "subject": "3b0a130f-46fa-4152-a344-89e87ed5b3d6",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 2401,
+      "kind": "death",
+      "actor": "3b0a130f-46fa-4152-a344-89e87ed5b3d6",
+      "subject": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "detail": "arrow"
+    },
+    {
+      "tick": 2941,
+      "kind": "hit",
+      "actor": "76d9a23f-5a0f-44ad-9193-d3dd65628a0c",
+      "subject": "c6d4cdea-1a58-4f05-9529-8bb1deced5f6",
+      "detail": "arrow:3.0"
+    },
+    {
+      "tick": 2947,
+      "kind": "hit",
+      "actor": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "subject": "c6d4cdea-1a58-4f05-9529-8bb1deced5f6",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 2960,
+      "kind": "hit",
+      "actor": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "subject": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "detail": "mob:6.0"
+    },
+    {
+      "tick": 2980,
+      "kind": "hit",
+      "actor": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "subject": "76d9a23f-5a0f-44ad-9193-d3dd65628a0c",
+      "detail": "mob:6.0"
+    },
+    {
+      "tick": 3000,
+      "kind": "hit",
+      "actor": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "subject": "0a59d53a-6854-407d-ac09-00709b9cdf92",
+      "detail": "mob:6.0"
+    },
+    {
+      "tick": 3014,
+      "kind": "hit",
+      "actor": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "subject": "c6d4cdea-1a58-4f05-9529-8bb1deced5f6",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 3040,
+      "kind": "hit",
+      "actor": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "subject": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "detail": "mob:6.0"
+    },
+    {
+      "tick": 3054,
+      "kind": "hit",
+      "actor": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "subject": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "detail": "arrow:4.0"
+    },
+    {
+      "tick": 3061,
+      "kind": "hit",
+      "actor": "c6d4cdea-1a58-4f05-9529-8bb1deced5f6",
+      "subject": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "detail": "mob:6.0"
+    },
+    {
+      "tick": 3080,
+      "kind": "hit",
+      "actor": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "subject": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "detail": "mob:6.0"
+    },
+    {
+      "tick": 3100,
+      "kind": "hit",
+      "actor": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "subject": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "detail": "mob:6.0"
+    },
+    {
+      "tick": 3120,
+      "kind": "death",
+      "actor": "8064cec3-101a-4d8e-a2fc-093cd24c9f90",
+      "subject": "8b4a2ad7-d744-490d-9df6-c01443c823e6",
+      "detail": "mob"
+    }
+  ],
+  "gameTime": 5039,
+  "aliveLoaded": {
+    "VILLAGERS": 9,
+    "ILLAGERS": 7,
+    "NEUTRAL": 8
+  },
+  "adultTownPopulations": {
+    "Greenhaven": 7,
+    "Blackwood": 7,
+    "Frostwatch": 0,
+    "Sunwell": 2
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "status": "restart-passed",
+  "events": [
+    {
+      "phase": "reopened saved fixture WITHOUT supplies, chamber edits or actor setters",
+      "tick": 2298,
+      "producer": {
+        "mood": "HAPPY",
+        "food": 20,
+        "id": "464f4f44-4543-4f4e-0000-000000000007",
+        "requestCount": 0,
+        "given": 0,
+        "received": 0,
+        "bread": 3,
+        "target": 15,
+        "crafted": 0,
+        "wheat": 3
+      },
+      "requester": {
+        "mood": "CONTENT",
+        "food": 15,
+        "id": "464f4f44-4543-4f4e-0000-000000000002",
+        "requestCount": 0,
+        "given": 0,
+        "received": 0,
+        "bread": 0,
+        "target": 15,
+        "crafted": 0,
+        "wheat": 0
+      }
+    },
+    {
+      "phase": "restart persistence and no-replay passed",
+      "tick": 2398,
+      "producer": {
+        "mood": "HAPPY",
+        "food": 20,
+        "id": "464f4f44-4543-4f4e-0000-000000000007",
+        "requestCount": 0,
+        "given": 0,
+        "received": 0,
+        "bread": 3,
+        "target": 15,
+        "crafted": 0,
+        "wheat": 3
+      },
+      "requester": {
+        "mood": "CONTENT",
+        "food": 15,
+        "id": "464f4f44-4543-4f4e-0000-000000000002",
+        "requestCount": 0,
+        "given": 0,
+        "received": 0,
+        "bread": 0,
+        "target": 15,
+        "crafted": 0,
+        "wheat": 0
+      }
+    }
+  ],
+  "fixture": "NEW isolated supplied chamber; selected generous/frugal producer and glutton requester;80TPS;configured400base exhaustion/day;18operator wheat AFTER unmet request; no hunger/health/clock/age/learning/position setters after initial setup; no natural-survival or farming claim"
+}

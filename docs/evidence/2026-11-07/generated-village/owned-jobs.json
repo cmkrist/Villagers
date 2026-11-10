@@ -1,0 +1,39 @@
+{
+  "jobs": [
+    {
+      "pid": 592501,
+      "ppid": 592489,
+      "uid": 1000,
+      "comm": "java",
+      "start_ticks": 10777905,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "owner_thread_id": "9797f55f-a15b-4a2d-b4b0-23ede83c0a99"
+    },
+    {
+      "pid": 592549,
+      "ppid": 592501,
+      "uid": 1000,
+      "comm": "java",
+      "start_ticks": 10777932,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers",
+      "owner_thread_id": "9797f55f-a15b-4a2d-b4b0-23ede83c0a99"
+    },
+    {
+      "pid": 592735,
+      "ppid": 592549,
+      "uid": 1000,
+      "comm": "java",
+      "start_ticks": 10778187,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-t3code.slice/app-t3code-agents.slice/app-t3code-agents-dd88e04474af.slice/t3code-codex-29574329.scope",
+      "cwd": "/home/niko/.internal/source/Villagers/run",
+      "owner_thread_id": "9797f55f-a15b-4a2d-b4b0-23ede83c0a99"
+    }
+  ],
+  "authority": "custody only; no inherited hash exception, exclusive clearance or service action",
+  "heapCapsGiB": {
+    "gradle": 2,
+    "client": 4
+  }
+}

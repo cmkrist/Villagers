@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "events": [
+    {
+      "phase": "stocked setup and exact finite command grants",
+      "tick": 60,
+      "plotsThisLoad": 0,
+      "food": 16,
+      "bread": 6,
+      "wheatSeeds": 8,
+      "beetSeeds": 8,
+      "hoeWear": 0,
+      "selfFoodGoal": false,
+      "A": "Block{minecraft:air}",
+      "B": "Block{minecraft:air}"
+    },
+    {
+      "phase": "protected: no costs or terrain changes",
+      "tick": 200,
+      "plotsThisLoad": 0,
+      "food": 16,
+      "bread": 6,
+      "wheatSeeds": 8,
+      "beetSeeds": 8,
+      "hoeWear": 0,
+      "selfFoodGoal": false,
+      "A": "Block{minecraft:air}",
+      "B": "Block{minecraft:air}"
+    },
+    {
+      "phase": "ordinary stocked controller completed paid mixed planting",
+      "tick": 429,
+      "plotsThisLoad": 2,
+      "food": 16,
+      "bread": 6,
+      "wheatSeeds": 7,
+      "beetSeeds": 7,
+      "hoeWear": 2,
+      "selfFoodGoal": false,
+      "A": "Block{minecraft:beetroots}[age\u003d0]",
+      "B": "Block{minecraft:wheat}[age\u003d0]"
+    }
+  ],
+  "fixture": "NEW isolated supplied platform,one existing age-zero wheat,two bare dirt cells,water/bed; one adult with6bread,8seeds each,onehoe; explicit operator protect/farm/remove commands; ordinary controller plants;80TPS,normal80exhaustion/day; no post-setup supplies or body/clock/growth setters; no primary world or survival adequacy claim"
+}

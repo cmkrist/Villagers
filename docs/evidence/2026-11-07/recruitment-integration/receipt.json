@@ -1,0 +1,31 @@
+{
+  "recordedUTC": "2026-11-07T12:07:52.622098+00:00",
+  "ownerThread": "9d5b9bc5-09e6-4ff5-99c1-a09d3982e712",
+  "artifactSHA256": "4da3ac37044f5a3fa6ef77f70a27d91d1333748176aa483ff1d735b132afecb0",
+  "currentUnitTests": 219,
+  "reportedDedicatedChecks": 21,
+  "server": {
+    "pid": 802933,
+    "ppid": 894,
+    "startTicks": 13174911,
+    "uid": 1000,
+    "exe": "/home/cmkrist/Games/VanillaPerfectedCompanion/ai/toolchain/zulu25.38.109-ca-jdk25.0.5.0.3-linux_x64/bin/java",
+    "cwd": "/home/cmkrist/Games/VanillaPerfectedCompanion",
+    "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/minecraft-buddy-server.service\n",
+    "unit": "minecraft-buddy-server.service",
+    "custody": "User-owned persistent service; restarted by recruitment owner under explicit installation request. No exclusive lead custody or continuing mutation authorization inferred.",
+    "reportedRestartPolicy": "on-failure/5seconds; stop timeout60seconds",
+    "bootId": "db2705d1-9f7e-4022-ad88-066e4d5b514e",
+    "pidNamespace": "pid:[4026531836]"
+  },
+  "noSourceTestRestartForThisReceipt": true,
+  "leadTransientJobs": 0,
+  "recruitmentOwnerReportedTransientJobs": 0,
+  "noInheritedException": true,
+  "dedicatedCheckCountsFromLogs": {
+    "probe-first.log": 15,
+    "probe-restart.log": 6
+  },
+  "currentMainJavaMatchesSourcesJar": true,
+  "currentMainJavaFiles": 86
+}

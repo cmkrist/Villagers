@@ -1,0 +1,91 @@
+{
+  "atUTC": "2026-11-07T09:12:33Z",
+  "command": "tools/test.sh --no-daemon --max-workers=2",
+  "exitCode": 0,
+  "java": {
+    "tests": 173,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "pythonTests": 10,
+  "pythonPassed": true,
+  "liveAcceptance": false,
+  "hayGatheringDefault": false,
+  "configsOrWorldsModified": false,
+  "existingClients": [
+    {
+      "pid": 516527,
+      "alive": true,
+      "sameUid": true,
+      "sameStartTicks": true,
+      "sameExe": true,
+      "sameCwd": true,
+      "sameCgroup": true
+    },
+    {
+      "pid": 601856,
+      "alive": true,
+      "sameUid": true,
+      "sameStartTicks": true,
+      "sameExe": true,
+      "sameCwd": true,
+      "sameCgroup": true
+    },
+    {
+      "pid": 601857,
+      "alive": true,
+      "sameUid": true,
+      "sameStartTicks": true,
+      "sameExe": true,
+      "sameCwd": true,
+      "sameCgroup": true
+    },
+    {
+      "pid": 601946,
+      "alive": true,
+      "sameUid": true,
+      "sameStartTicks": true,
+      "sameExe": true,
+      "sameCwd": true,
+      "sameCgroup": true
+    },
+    {
+      "pid": 601990,
+      "alive": true,
+      "sameUid": true,
+      "sameStartTicks": true,
+      "sameExe": true,
+      "sameCwd": true,
+      "sameCgroup": true
+    },
+    {
+      "pid": 602326,
+      "alive": true,
+      "sameUid": true,
+      "sameStartTicks": true,
+      "sameExe": true,
+      "sameCwd": true,
+      "sameCgroup": true
+    },
+    {
+      "pid": 602372,
+      "alive": true,
+      "sameUid": true,
+      "sameStartTicks": true,
+      "sameExe": true,
+      "sameCwd": true,
+      "sameCgroup": true
+    },
+    {
+      "pid": 707822,
+      "alive": true,
+      "sameUid": true,
+      "sameStartTicks": true,
+      "sameExe": true,
+      "sameCwd": true,
+      "sameCgroup": true
+    }
+  ],
+  "buildTupleLimitation": "Both short builds completed before process sampling; no live build PID claimed or inherited. Handles 22134 and 78041 exited0."
+}

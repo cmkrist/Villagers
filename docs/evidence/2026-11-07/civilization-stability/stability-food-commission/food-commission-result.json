@@ -1,0 +1,279 @@
+{
+  "status": "passed",
+  "events": [
+    {
+      "phase": "finite setup; generous seller has three bread/six wheat; buyer one actual marked coin and no charitable request budget",
+      "tick": 60,
+      "foodAtPurchase": -1,
+      "giftBoundaryChecked": false,
+      "buyer": {
+        "food": 16,
+        "health": 20.0,
+        "money": 1,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      },
+      "seller": {
+        "food": 16,
+        "health": 20.0,
+        "money": 0,
+        "bread": 3,
+        "wheat": 6,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      }
+    },
+    {
+      "phase": "observe",
+      "tick": 400,
+      "foodAtPurchase": -1,
+      "giftBoundaryChecked": false,
+      "buyer": {
+        "food": 16,
+        "health": 20.0,
+        "money": 1,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      },
+      "seller": {
+        "food": 16,
+        "health": 20.0,
+        "money": 0,
+        "bread": 3,
+        "wheat": 6,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      }
+    },
+    {
+      "phase": "observe",
+      "tick": 800,
+      "foodAtPurchase": -1,
+      "giftBoundaryChecked": false,
+      "buyer": {
+        "food": 16,
+        "health": 20.0,
+        "money": 1,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      },
+      "seller": {
+        "food": 16,
+        "health": 20.0,
+        "money": 0,
+        "bread": 3,
+        "wheat": 6,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      }
+    },
+    {
+      "phase": "observe",
+      "tick": 1200,
+      "foodAtPurchase": -1,
+      "giftBoundaryChecked": false,
+      "buyer": {
+        "food": 15,
+        "health": 20.0,
+        "money": 1,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      },
+      "seller": {
+        "food": 16,
+        "health": 20.0,
+        "money": 0,
+        "bread": 3,
+        "wheat": 6,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      }
+    },
+    {
+      "phase": "actual paid production request",
+      "request": {
+        "distanceSquared": 20.318845064745172,
+        "kind": "FOOD",
+        "ready": false,
+        "price": 1,
+        "customerFood": 13,
+        "customer": "434f4d4d-4953-5349-0000-000000000009",
+        "gameTime": 1478,
+        "customerMoney": 1
+      }
+    },
+    {
+      "phase": "paid request heard",
+      "tick": 1478,
+      "foodAtPurchase": -1,
+      "giftBoundaryChecked": false,
+      "buyer": {
+        "food": 13,
+        "health": 20.0,
+        "money": 1,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      },
+      "seller": {
+        "food": 16,
+        "health": 20.0,
+        "money": 0,
+        "bread": 3,
+        "wheat": 6,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      }
+    },
+    {
+      "phase": "eligible gift path denied for actual paid request",
+      "tick": 1495,
+      "foodAtPurchase": -1,
+      "giftBoundaryChecked": true,
+      "buyer": {
+        "food": 13,
+        "health": 20.0,
+        "money": 1,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      },
+      "seller": {
+        "food": 16,
+        "health": 20.0,
+        "money": 0,
+        "bread": 4,
+        "wheat": 3,
+        "crafted": 1,
+        "bought": 0,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      }
+    },
+    {
+      "phase": "actual paid exchange",
+      "receipt": {
+        "sellerMoneyAfter": 1,
+        "sellerGoodsAfter": 3,
+        "sellerMoneyBefore": 0,
+        "buyer": "434f4d4d-4953-5349-0000-000000000009",
+        "item": "minecraft:bread",
+        "quantity": 1,
+        "buyerMoneyAfter": 0,
+        "buyerGoodsBefore": 0,
+        "damage": 0,
+        "price": 1,
+        "gameTime": 1498,
+        "buyerMoneyBefore": 1,
+        "sellerGoodsBefore": 4,
+        "buyerGoodsAfter": 1,
+        "seller": "434f4d4d-4953-5349-0000-00000000004a"
+      }
+    },
+    {
+      "phase": "produced bread bought",
+      "tick": 1498,
+      "foodAtPurchase": 13,
+      "giftBoundaryChecked": true,
+      "buyer": {
+        "food": 13,
+        "health": 20.0,
+        "money": 0,
+        "bread": 1,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 1,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      },
+      "seller": {
+        "food": 16,
+        "health": 20.0,
+        "money": 1,
+        "bread": 3,
+        "wheat": 3,
+        "crafted": 1,
+        "bought": 0,
+        "sold": 1,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      }
+    },
+    {
+      "phase": "paid commission, denied gift, actual production/payment/meal passed",
+      "tick": 1508,
+      "foodAtPurchase": 13,
+      "giftBoundaryChecked": true,
+      "buyer": {
+        "food": 18,
+        "health": 20.0,
+        "money": 0,
+        "bread": 0,
+        "wheat": 0,
+        "crafted": 0,
+        "bought": 1,
+        "sold": 0,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      },
+      "seller": {
+        "food": 16,
+        "health": 20.0,
+        "money": 1,
+        "bread": 3,
+        "wheat": 3,
+        "crafted": 1,
+        "bought": 0,
+        "sold": 1,
+        "giftsReceived": 0,
+        "giftsGiven": 0
+      }
+    }
+  ],
+  "fixture": "NEW isolated supplied peaceful lit chamber,beds,table,two adults with working hoes/common initial language; generous/frugal non-greedy seller starts three bread/six wheat; glutton buyer starts no food and receives one marked coin by real operator gift. Initial buyer charitable-request budget set beyond test window to isolate paid intent.80TPS,400base exhaustion/day. No post-setup supplies,body/health/clock/growth/position/budget setters or scripted successful trade/production/meal. One explicit native gift-denial attempt checks the paid-request boundary. Finite consent/income test, not renewable or sustainable survival."
+}

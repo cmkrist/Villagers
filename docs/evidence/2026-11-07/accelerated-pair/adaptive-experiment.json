@@ -1,0 +1,1179 @@
+{
+  "schema_version": 1,
+  "prepared_at_utc": "2026-11-07T05:47:59.633032+00:00",
+  "runtime": "/home/niko/.internal/source/Villagers/runs/adaptive",
+  "role": "adaptive",
+  "requested_tps": 80,
+  "learning": "adaptive",
+  "source_snapshot": "/home/niko/.internal/source/Villagers/run/archives/VillageTrial-natural-before-tools-20261107T051607Z",
+  "source_world_sha256": "cf4100d33f19544f05382135a4244dc189ff3056a0747d3ab8a544cae5853db4",
+  "source_world_files": {
+    "data/collective/itemnametranslation.txt": {
+      "sha256": "76107cde8fa84741012ba9f19fc823eebbdfe7c568261d5d72072303ae314927",
+      "size": 12
+    },
+    "data/fabric/registry_entries.dat": {
+      "sha256": "577826398ba90d6f975055690fcc90ce615fc5284988b2ddc5e7fa970f115bca",
+      "size": 288
+    },
+    "data/minecraft/custom_boss_events.dat": {
+      "sha256": "36656630921f70e010eb05f2300473144a420af9dc3bb600ab2797990102a0bc",
+      "size": 49
+    },
+    "data/minecraft/game_rules.dat": {
+      "sha256": "f22c7825a0997167b077dd467f518e98fc4d7a1c64329949f05e206abe4d3ec5",
+      "size": 883
+    },
+    "data/minecraft/random_sequences.dat": {
+      "sha256": "13d842bb1566942a3c3a6d43be13d371f52723d41bc04f334ba8c9073548a9ad",
+      "size": 302
+    },
+    "data/minecraft/scheduled_events.dat": {
+      "sha256": "70476d0306cb312e7381ce2fd5eec50bf6c1ea2f352a9ae7d8fd1b650540abd9",
+      "size": 58
+    },
+    "data/minecraft/scoreboard.dat": {
+      "sha256": "5ebbf1cbc577de42bff5440e3d9d6a86d314c6bca2be67f07e4d4f04e39076b2",
+      "size": 219
+    },
+    "data/minecraft/stopwatches.dat": {
+      "sha256": "15ca4b57ca52582a4ca9118e7d1cd8f22cb829482343375b09ee271397b7efcf",
+      "size": 64
+    },
+    "data/minecraft/wandering_trader.dat": {
+      "sha256": "2b9cacef75eebfc3e243275d21c6a0fad8f21d4c4be6008ff0866fb0868b4feb",
+      "size": 66
+    },
+    "data/minecraft/weather.dat": {
+      "sha256": "c21930e4e5c0d7d1bc9a5da1265934aefb8f6cfb62a20f42e5f72cd4924c2a87",
+      "size": 110
+    },
+    "data/minecraft/world_clocks.dat": {
+      "sha256": "7a98af64c5e26ac3623cac1df771fe3157a3fa3bf21de2bf196329e029b5c983",
+      "size": 104
+    },
+    "data/minecraft/world_gen_settings.dat": {
+      "sha256": "70c339b0d3ab28652452827df9d9459d40077c0e5e835a97d4548d31772c3065",
+      "size": 241
+    },
+    "dimensions/minecraft/overworld/data/minecraft/chunk_tickets.dat": {
+      "sha256": "36656630921f70e010eb05f2300473144a420af9dc3bb600ab2797990102a0bc",
+      "size": 49
+    },
+    "dimensions/minecraft/overworld/data/minecraft/raids.dat": {
+      "sha256": "684ea29ee164c4919b04ce68ee3ee814a07030b4dca46374e243c8a7b72712f7",
+      "size": 74
+    },
+    "dimensions/minecraft/overworld/data/minecraft/world_border.dat": {
+      "sha256": "64aa688e75359504feb84ae0e0ef97e80e8b8d5b5dd7438f495aeb1012f5eb54",
+      "size": 170
+    },
+    "dimensions/minecraft/overworld/entities/r.-1.-1.mca": {
+      "sha256": "72ec0ff2533a47635d24989fae8462eb71216ce98a8d68977e236731fe9ee669",
+      "size": 20480
+    },
+    "dimensions/minecraft/overworld/entities/r.-1.0.mca": {
+      "sha256": "e553070058fa7632c4589ff84108e1cd87497c511d8f2f38cc83c02b2b217b67",
+      "size": 40960
+    },
+    "dimensions/minecraft/overworld/entities/r.-1.1.mca": {
+      "sha256": "2f90ca3004e43f91f4331b439b5b5ebacdf9007ffe6e0ec9ab649d4caae8567a",
+      "size": 933888
+    },
+    "dimensions/minecraft/overworld/entities/r.-1.2.mca": {
+      "sha256": "7bdabbd5096f2a3f7eed755734be70fa1710133d92a37def4a4097312b28808f",
+      "size": 24576
+    },
+    "dimensions/minecraft/overworld/entities/r.0.-1.mca": {
+      "sha256": "962475e4a78c53a74e86386e6052f8d47e346c0164a14b00fc72ab10ba4d05cc",
+      "size": 20480
+    },
+    "dimensions/minecraft/overworld/entities/r.0.0.mca": {
+      "sha256": "819eae86a4b9df2d3583069c09329aa9bd897f53d31224351bb1743c439bfe0b",
+      "size": 20480
+    },
+    "dimensions/minecraft/overworld/entities/r.0.1.mca": {
+      "sha256": "29833338df6f70099c8a3d1badea1e969abf44da425f887dc801963266cad738",
+      "size": 65536
+    },
+    "dimensions/minecraft/overworld/poi/r.-1.1.mca": {
+      "sha256": "9ee629407e17219ffd9678a001c2239271a404315acc8a5b93db684361cf99df",
+      "size": 163840
+    },
+    "dimensions/minecraft/overworld/poi/r.-1.2.mca": {
+      "sha256": "1219ee79c0bb95eb1e4aded95517a641b10128292bf7272d0d4783bc9bc4991a",
+      "size": 53248
+    },
+    "dimensions/minecraft/overworld/poi/r.-2.1.mca": {
+      "sha256": "b7be6d0a778b74b8980d3ee858a055366e6cfd10754dec8fc178f30543e590c0",
+      "size": 16384
+    },
+    "dimensions/minecraft/overworld/poi/r.0.1.mca": {
+      "sha256": "53e25c0eaa693de04d03b75ae6821cda47e35472495fe093e9d1257e516f0cd8",
+      "size": 73728
+    },
+    "dimensions/minecraft/overworld/region/r.-1.-1.mca": {
+      "sha256": "90ade6529db95ea8c4e7ffe5935f82d7c59aec9e9a282fd1bf37625c3c0172e0",
+      "size": 1048576
+    },
+    "dimensions/minecraft/overworld/region/r.-1.0.mca": {
+      "sha256": "642081894c6946be0840c2cafb1615c17e4755eb72ccce43d254e8f71a1149d6",
+      "size": 3702784
+    },
+    "dimensions/minecraft/overworld/region/r.-1.1.mca": {
+      "sha256": "b157973a08c89d040ec71b3731ed167bf13ae2651186a64b14fb886b79a34eac",
+      "size": 12869632
+    },
+    "dimensions/minecraft/overworld/region/r.-1.2.mca": {
+      "sha256": "023743f9d7a7dbc5d21308adf68d7917f18c74212799aa2629c6925a64717ed7",
+      "size": 3514368
+    },
+    "dimensions/minecraft/overworld/region/r.-2.0.mca": {
+      "sha256": "c01b4604e221a7f6be456b3b66edf04d0356b1a629f4cb5bb501551e0540eb3a",
+      "size": 647168
+    },
+    "dimensions/minecraft/overworld/region/r.-2.1.mca": {
+      "sha256": "7b21d79d58813ca8924eec21ef67d8fac76ec6ac61ee837a6e660e3054294e1b",
+      "size": 1794048
+    },
+    "dimensions/minecraft/overworld/region/r.-2.2.mca": {
+      "sha256": "34acbdd143417d48f272d8771d6efdb9caa37ff79d70603576c2ebefc47c429d",
+      "size": 745472
+    },
+    "dimensions/minecraft/overworld/region/r.0.-1.mca": {
+      "sha256": "f724e276648067ecc8fab4a935bfdc9f15e82cc805e3fd6d9b0b08b1c81d727c",
+      "size": 1101824
+    },
+    "dimensions/minecraft/overworld/region/r.0.0.mca": {
+      "sha256": "8a454e3a95855b19ac3bb7a7b1ce9d80edf4951e9525b510874c9cc7322986bb",
+      "size": 2392064
+    },
+    "dimensions/minecraft/overworld/region/r.0.1.mca": {
+      "sha256": "4eded3148ac0243f76b5251afdc905008bc35c0c49498b376cd5681e542716d6",
+      "size": 4911104
+    },
+    "dimensions/minecraft/overworld/region/r.0.2.mca": {
+      "sha256": "5d1744720cdf6019f531b337f368d71e332e59910c3ee69d83a87d5df477a60f",
+      "size": 1388544
+    },
+    "dimensions/minecraft/the_end/data/minecraft/chunk_tickets.dat": {
+      "sha256": "36656630921f70e010eb05f2300473144a420af9dc3bb600ab2797990102a0bc",
+      "size": 49
+    },
+    "dimensions/minecraft/the_end/data/minecraft/ender_dragon_fight.dat": {
+      "sha256": "eaa21931142c2b045e565be0c2cf1b330fc5b2067f33d47762f27af116ad528a",
+      "size": 161
+    },
+    "dimensions/minecraft/the_end/data/minecraft/raids.dat": {
+      "sha256": "684ea29ee164c4919b04ce68ee3ee814a07030b4dca46374e243c8a7b72712f7",
+      "size": 74
+    },
+    "dimensions/minecraft/the_end/data/minecraft/world_border.dat": {
+      "sha256": "64aa688e75359504feb84ae0e0ef97e80e8b8d5b5dd7438f495aeb1012f5eb54",
+      "size": 170
+    },
+    "dimensions/minecraft/the_nether/data/minecraft/chunk_tickets.dat": {
+      "sha256": "36656630921f70e010eb05f2300473144a420af9dc3bb600ab2797990102a0bc",
+      "size": 49
+    },
+    "dimensions/minecraft/the_nether/data/minecraft/raids.dat": {
+      "sha256": "684ea29ee164c4919b04ce68ee3ee814a07030b4dca46374e243c8a7b72712f7",
+      "size": 74
+    },
+    "dimensions/minecraft/the_nether/data/minecraft/world_border.dat": {
+      "sha256": "64aa688e75359504feb84ae0e0ef97e80e8b8d5b5dd7438f495aeb1012f5eb54",
+      "size": 170
+    },
+    "icon.png": {
+      "sha256": "205e138965033aa8e21c01bb483d852cd371ca4f34d345777cf99f2eec91cb90",
+      "size": 8611
+    },
+    "level.dat": {
+      "sha256": "ebb2fc0769132719adbf9a6705432e8023d479f6e679a94178b5c42e00af10e2",
+      "size": 383
+    },
+    "level.dat_old": {
+      "sha256": "be8f8320ebefd69e69abb87810ab3b7b920bb94df38d48fb0f10e31c159bf54f",
+      "size": 381
+    },
+    "players/advancements/94efbd7f-e7c0-3290-941a-38cea9cc0b31.json": {
+      "sha256": "93b9924305967eadd7435d91d249badb28bdd6e4704aac670ce1b43d81f7bd12",
+      "size": 325
+    },
+    "players/data/94efbd7f-e7c0-3290-941a-38cea9cc0b31.dat": {
+      "sha256": "be37175cd0e6dbc0c2537039ebbad0afff312a55a0a853615f3705b2fcb1fcb5",
+      "size": 801
+    },
+    "players/stats/94efbd7f-e7c0-3290-941a-38cea9cc0b31.json": {
+      "sha256": "dd83f9df4164aee6842ebe9c461f530b4952c6073bcfeb41f31b9095808b87dc",
+      "size": 337
+    },
+    "serverconfig/readme.txt": {
+      "sha256": "b1022ab932f8f0ea0cf78d9f312e95b85a4f96f59ca430e63f9a435e512d1186",
+      "size": 469
+    },
+    "villagers/02b0b914-c640-48c3-8fee-df600f34991e/mind.json": {
+      "sha256": "35d6699dafe5b2e3de7ca83943a65f74019c9dba125bd4bd514280750d510bc0",
+      "size": 10976
+    },
+    "villagers/1e1a7861-7b3a-4be0-8499-c0bcada07d1a/mind.json": {
+      "sha256": "3335556aed66f574cfb821563f2ae8a6af5c8f2a97416ed73a29e7be35fc6a24",
+      "size": 6921
+    },
+    "villagers/231e4c00-19df-4be5-a5ba-5ebc6d29e27f/mind.json": {
+      "sha256": "70de202d8b2a2f37c2d7b204cf4e1d5da1e87f01d6d4d9229819c9c7b0cf93da",
+      "size": 6827
+    },
+    "villagers/5894771d-5fcc-45c5-bb4c-4733e2c992c4/mind.json": {
+      "sha256": "5a770851534251f2a25e0093c52c4c97672d07154ab337e364adb7c81ffc8218",
+      "size": 10995
+    },
+    "villagers/5ad3aad5-3e4b-4eb6-8158-87731868dc03/mind.json": {
+      "sha256": "735a166fd20158dd4fbcb1d28f8b6fefcdd2cd0dd87012e7f05ccd5f80d692cb",
+      "size": 10997
+    },
+    "villagers/8d572a22-a431-47a1-b419-b12ab59b4e35/mind.json": {
+      "sha256": "0ca764927e5882c40d50c33401d4da80acfdb20d70fbef05b98bcc292e48ac1c",
+      "size": 11070
+    },
+    "villagers/c7c31152-34a1-4edd-bd84-e48f50f86088/mind.json": {
+      "sha256": "1b53d0b543a48d758e84a78e69d2cdce1e183ae6ba395325acee1592ee783191",
+      "size": 10938
+    },
+    "villagers/ca3c6d6a-385e-4ea3-a37d-e54d948d924f/mind.json": {
+      "sha256": "13ade6ee478c8db277a6d54cb9c7fdcba3ca6f1af27f3b0a3fe67e8220ab6da4",
+      "size": 11007
+    },
+    "villagers/d169dad0-0157-4e1d-bf1c-358845617474/mind.json": {
+      "sha256": "35db664c4335bc188b8d7f5b440213cecb2fc133b3e66a518345b5e2b206a121",
+      "size": 10986
+    },
+    "villagers/d29c199f-5202-4fbc-97f9-92023489d70f/mind.json": {
+      "sha256": "2221e39369e4ca54e3e501737a49af351bc9a3871fb0fe8da5f94d47bbbee328",
+      "size": 10955
+    },
+    "villagers/e358e923-f9d2-4d5b-a04b-b2531c8f02d9/mind.json": {
+      "sha256": "d10b11e0ff6daaf7a7f1c032d8ce52c8b2d7138001c93cc4257ecee15e5cb1ca",
+      "size": 10970
+    },
+    "villagers/village-evidence/after-adoption-1265.json": {
+      "sha256": "d2f2d8d4c7a2e1dd5601e654bbb5a4b6bb307c4d45142ae2125c80d60c712887",
+      "size": 117912
+    },
+    "villagers/village-evidence/baseline.json": {
+      "sha256": "c406544b7db183a073ba7f0487ce1ba06d37e5dedfb95a211278ff3eede42e98",
+      "size": 135988
+    },
+    "villagers/village-evidence/census.jsonl": {
+      "sha256": "d384a60c65c6cfbacf3011c689f23ce09a0c5a861073b06d7e6652b1733ac215",
+      "size": 1354812
+    },
+    "villagers/village-evidence/latest.json": {
+      "sha256": "a521ee415d32076f5fb6b1d07420fca624f096c708cadbf7d8ace5c36d643925",
+      "size": 118187
+    },
+    "villagers/village-evidence/lifecycle.jsonl": {
+      "sha256": "73bb0fac75459ddf1b48c9a595aed2c69d65dc8cb2612150fcbca38e4d1f8a49",
+      "size": 4489
+    },
+    "villagers/village-evidence/requested-4063.json": {
+      "sha256": "d4877ca4f19a131bc2d825898504c03544dace6a790373d0f8b163c0d1ecf24e",
+      "size": 118164
+    },
+    "villagers/village-evidence/shutdown-4067.json": {
+      "sha256": "a521ee415d32076f5fb6b1d07420fca624f096c708cadbf7d8ace5c36d643925",
+      "size": 118187
+    },
+    "villagers/village-trial.json": {
+      "sha256": "482ab62331e979a43994a2cdf4d2316cf3f93645ce4d3042fd0466de473030b2",
+      "size": 57181
+    }
+  },
+  "initial_settings_sha256": "8a0cad79f7b119489385ad25d55dc89771d9cb82f223a0bb1008a12f189839fe",
+  "initial_settings_files": {
+    "config/BBEConfig.json": {
+      "sha256": "fd4691742698b38c274878bdef474bf21a1fdbf206a50b2901b82468aed9d28a",
+      "size": 1684
+    },
+    "config/GlowingTorchflower/main.conf": {
+      "sha256": "39bfc57c931f8c2b9b4e6dad1a57c10f222a759f1bfa8fe6aee0e05385aa9ddc",
+      "size": 675
+    },
+    "config/MouseTweaks.cfg": {
+      "sha256": "4069ce1a439d8c37453c1b1e9f2037e0942674c7e48723a39b37eab245792ad4",
+      "size": 135
+    },
+    "config/animatica.properties": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "config/axiom/.axiom.json.backup": {
+      "sha256": "2f08fe4b179063b8544f6937695e1f8de4c1fad91278715d40336a023542de7e",
+      "size": 9491
+    },
+    "config/axiom/axiom.json": {
+      "sha256": "2f08fe4b179063b8544f6937695e1f8de4c1fad91278715d40336a023542de7e",
+      "size": 9491
+    },
+    "config/axiom/imgui.ini": {
+      "sha256": "6e0df464fc094392e22cd3c9898eaa9a0a0508a54fdcc9fff8c640d107e94caa",
+      "size": 1966
+    },
+    "config/betteradvancements.json": {
+      "sha256": "c81c89e9534c83ecef3206b6c7d311c7695a396c23080b15abeedeabbd7064d5",
+      "size": 684
+    },
+    "config/betterf3.json": {
+      "sha256": "335f63e63eae2156676657f02404761af19c738e0c94c8fcc92fa5150bbdb65a",
+      "size": 2870
+    },
+    "config/bookshelfinspector-config.yml": {
+      "sha256": "0ad423f5a63cae8659a105149bfed3d8046c46fbf8694435c896b6a25066156a",
+      "size": 89
+    },
+    "config/chatanimation.json": {
+      "sha256": "b0fa9ec5d41f666fa2c770bb2bde4753cbeeef76909f4765d6ebbf5683c4ae58",
+      "size": 185
+    },
+    "config/cherishedworlds-client.toml": {
+      "sha256": "cd01ddc1ed74a29b7b82051ea685fbd8c5a24da49fde684e2a6fe8740dc699b3",
+      "size": 151
+    },
+    "config/collective.json5": {
+      "sha256": "92809d098b5efeca95c37ec4fef9184bd169160d18efecf81f395c4030c0f83f",
+      "size": 2471
+    },
+    "config/continuity.json": {
+      "sha256": "28eaff624c99a24e49882e5f56496a9e0f55e9a25e583e9313b0360494810b65",
+      "size": 61
+    },
+    "config/controlify/controlify.json": {
+      "sha256": "59e2fa57cf1d579bd5cf3c8fac48ec0ca623412970ff2250011526e09e2c06fd",
+      "size": 563
+    },
+    "config/controlify/profile-1.json": {
+      "sha256": "f3051cdad72a13e4e191fe133f768c588e07a8637e11954b9541f12f0c54a81a",
+      "size": 2184
+    },
+    "config/controlify/profile-1.lock": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "config/cropsloverain.toml": {
+      "sha256": "a1933b6fd80e7a9c7551bdb9c3174420a7da95627786d4e351a3053382516c06",
+      "size": 542
+    },
+    "config/cutthrough-client.toml": {
+      "sha256": "0f1e7df65dc4fcff84594a708ebed689598dd05dec4cfca38e9f807ca817c5c0",
+      "size": 247
+    },
+    "config/daycount.json5": {
+      "sha256": "6ea85eff595e8fc52903675df6c1dbee95a5e482a4dac94c403f312067819537",
+      "size": 1155
+    },
+    "config/detailarmorbar.json": {
+      "sha256": "1e40eb7e2ff5de1b96cd6b2b6c4969c9f91c1dfd1bd41190332b7e7b96e6a02c",
+      "size": 1422
+    },
+    "config/elytratrails.json": {
+      "sha256": "3477cc46f351e0c4b63abc1f6f5abaaff3245caebab485e92fee559c46cfb6dd",
+      "size": 4183
+    },
+    "config/entity_model_features.json": {
+      "sha256": "e0f8ab833d6b4625b6a0566ef2c1b6010368f05003508fc30f96aa5275690cd4",
+      "size": 1340
+    },
+    "config/entity_texture_features.json": {
+      "sha256": "bd66edf9d1a72cd717bbe9b17b41ffd16963b089493e5ddae3d3ad69153105ba",
+      "size": 1452
+    },
+    "config/entityculling.json": {
+      "sha256": "4a6d510b7e0157027b1cf2022184567fd5387aa09d08db108cb0369ba371ddbe",
+      "size": 2248
+    },
+    "config/etf_warnings.json": {
+      "sha256": "a5ba22e63061c1fb67f0f895f17681351eaeccc225faef966c29ee630593275e",
+      "size": 28
+    },
+    "config/ferritecore.mixin.properties": {
+      "sha256": "fc4d7a195210fb6d32cdfc5a255b6d555ab0225da1a929b61d17dd6b5648c2ba",
+      "size": 803
+    },
+    "config/flashback/imgui.ini": {
+      "sha256": "f78b8334bf9399cb6942bcb7c69b4638ac34d18bcea90df8f005760f3e2b5d47",
+      "size": 635
+    },
+    "config/forgeconfigapiport.toml": {
+      "sha256": "647ad92f7bdc5e0ccef37d6e7386b08f2a19715b77742202f2f9048fb14e0dec",
+      "size": 517
+    },
+    "config/freecam.json": {
+      "sha256": "8547168691d91a05e8fffd9600e57ecf968670bbe25403e510b93ec6b9ebf92b",
+      "size": 800
+    },
+    "config/fullscreenfix.properties": {
+      "sha256": "e4541bfd706e53a19770c86b719018ae40c27b12c5776adfa5adebaf61031072",
+      "size": 178
+    },
+    "config/fullscreenfix_error_2026-11-06_19-16-11.properties": {
+      "sha256": "e4541bfd706e53a19770c86b719018ae40c27b12c5776adfa5adebaf61031072",
+      "size": 178
+    },
+    "config/fullscreenfix_error_2026-11-06_22-31-33.log": {
+      "sha256": "7e0b7ef1a0b9cf3383638458f38d663734213f6b39f39d54cc7162fdd5276077",
+      "size": 113
+    },
+    "config/fullscreenfix_error_2026-11-06_22-31-33.properties": {
+      "sha256": "e4541bfd706e53a19770c86b719018ae40c27b12c5776adfa5adebaf61031072",
+      "size": 178
+    },
+    "config/immediatelyfast.json": {
+      "sha256": "351554b5d847acfb0dcdd05a93b5b93f27035178bcbde4d5193b4dc5a5a2f11b",
+      "size": 951
+    },
+    "config/immersive-hotbar.json5": {
+      "sha256": "1f18013423202c33e3d883a588b4ebf9fa0f01416a4096e0691187b497c0819d",
+      "size": 1646
+    },
+    "config/iris-excluded.json": {
+      "sha256": "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb",
+      "size": 31
+    },
+    "config/iris.properties": {
+      "sha256": "4c52f013e97d47c4b4b77d14e3b7f5d537e2f57404395655c716c05ea4790bb1",
+      "size": 306
+    },
+    "config/iteminteractions-client.toml": {
+      "sha256": "1f7171329656416a83012c25dd5852229b1d22586fd6db14825424fbb71ebd08",
+      "size": 2726
+    },
+    "config/iteminteractions-server.toml": {
+      "sha256": "6378bc385b12a9e73b35c0390f47758120e89982d644fc36b20c3ae526e32c27",
+      "size": 473
+    },
+    "config/jamlib/known_suspicious_jars.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "config/lambdynlights.toml": {
+      "sha256": "02e79b706dc9f1c1123da3ca971f3feaaeac783334d2a68acd65f4ce2c77ea01",
+      "size": 5270
+    },
+    "config/libjf-config-core-v2.json5": {
+      "sha256": "c1894c52b296fb7ee7aad6701ccddd5419d21405a3e6d40a5e5b2f8afe2e85b4",
+      "size": 87
+    },
+    "config/libjf-translate-v1.json5": {
+      "sha256": "d0fec97b89fee5e93df256afb8776ad332506303c811cf1b0022a033e9d691f2",
+      "size": 144
+    },
+    "config/libjf-web-v1.json5": {
+      "sha256": "8d27c069a7eda5645111dffb2d61d480b18ea8c51a286fc8468d5b23a26403b9",
+      "size": 518
+    },
+    "config/light-overlay.json5": {
+      "sha256": "232ba537af2092bec2f160f51d0b0611964d071d68cb23fd9676d26a09506841",
+      "size": 564
+    },
+    "config/litematica/litematica_I Will Survive.json": {
+      "sha256": "12174fd2e7b7105aa4aa98a486df7baa470fd770ff30a731cf314c4fd571701a",
+      "size": 95
+    },
+    "config/litematica/litematica_I Will Survive_dim_minecraft_overworld.json": {
+      "sha256": "fb064c90f2ba47349e1d28f6a6ada38626adf808ebe548667b064696bd43a12b",
+      "size": 817
+    },
+    "config/litematica/litematica_New World.json": {
+      "sha256": "bc4385394aef16f20d2970ad4e319e648201680c2aa46f9bff3e24c2b53d8d04",
+      "size": 91
+    },
+    "config/litematica/litematica_New World_dim_minecraft_overworld.json": {
+      "sha256": "fb064c90f2ba47349e1d28f6a6ada38626adf808ebe548667b064696bd43a12b",
+      "size": 817
+    },
+    "config/litematica/litematica_Testing.json": {
+      "sha256": "bc4385394aef16f20d2970ad4e319e648201680c2aa46f9bff3e24c2b53d8d04",
+      "size": 91
+    },
+    "config/litematica/litematica_Testing_dim_minecraft_overworld.json": {
+      "sha256": "fb064c90f2ba47349e1d28f6a6ada38626adf808ebe548667b064696bd43a12b",
+      "size": 817
+    },
+    "config/litematica/litematica_VillageTrial.json": {
+      "sha256": "12174fd2e7b7105aa4aa98a486df7baa470fd770ff30a731cf314c4fd571701a",
+      "size": 95
+    },
+    "config/litematica/litematica_VillageTrial_dim_minecraft_overworld.json": {
+      "sha256": "fb064c90f2ba47349e1d28f6a6ada38626adf808ebe548667b064696bd43a12b",
+      "size": 817
+    },
+    "config/litematica/litematica_VillagerLab.json": {
+      "sha256": "12174fd2e7b7105aa4aa98a486df7baa470fd770ff30a731cf314c4fd571701a",
+      "size": 95
+    },
+    "config/litematica/litematica_VillagerLab_dim_minecraft_overworld.json": {
+      "sha256": "fb064c90f2ba47349e1d28f6a6ada38626adf808ebe548667b064696bd43a12b",
+      "size": 817
+    },
+    "config/litematica.json": {
+      "sha256": "f1197d743a6f79c6e09e06b424548c09a348b97505e8e821d566d830959c68dd",
+      "size": 13068
+    },
+    "config/lithium.properties": {
+      "sha256": "6cf6f83720071fd1657c8e79b357caf68d40f410ae123e5f922483eb1d1d25be",
+      "size": 267
+    },
+    "config/malilib.json": {
+      "sha256": "adee40d01584c220005fe1a71a3c2ba0d0f1a8dd6302059b6a6051a247e41197",
+      "size": 1144
+    },
+    "config/modernfix-mixins.properties": {
+      "sha256": "e8a2e182b954b59da48fe5e7cea4497d271304f9bbabb494520e4a8ca767c4d6",
+      "size": 4317
+    },
+    "config/modmenu.json": {
+      "sha256": "e8f1becee4d20e11702910e0d3eedbe35175922c6ba1a98b52efeb8c9ab3a11d",
+      "size": 842
+    },
+    "config/moreculling.toml": {
+      "sha256": "976a76d9aeb5c7e9c2a2293dfd1b38a850c20948ffaf813221868089e2fa0953",
+      "size": 495
+    },
+    "config/naturally_trimmed.json5": {
+      "sha256": "022dedc7154b938e33e3465bc6eba811581b69dccba4d367d04967adb5e2ef8d",
+      "size": 2130
+    },
+    "config/notenoughanimations.json": {
+      "sha256": "45121987f8bbbb948bd5096ffb02b1361c762b3e34836b3f9097a9a4ef7222d4",
+      "size": 3357
+    },
+    "config/packed_packs/__version.json": {
+      "sha256": "53d0bd0d7dcc4f7d177829026f9f473fd8a5b5cd328c483a883de9a70ba33f1f",
+      "size": 18
+    },
+    "config/packed_packs/config.json": {
+      "sha256": "3ebeb458cc744296ae1defc8bd9b40bcae105756a836bb38069183a4216b8d6d",
+      "size": 636
+    },
+    "config/packed_packs/config.meta.json": {
+      "sha256": "5f2f84e2db28e1c3d7d36c2bb8fea85fefbd609344b1a9e24f878ebb8e7e8a67",
+      "size": 144
+    },
+    "config/packed_packs/preferences.properties": {
+      "sha256": "b1e07cdf7ce3747b33ff8e43a0a3d31bd86467fb05610d00d722b2f650eed338",
+      "size": 184
+    },
+    "config/packed_packs/profiles/resourcepacks/Default Config.profile.json": {
+      "sha256": "71df07c80a32f947ff23a3089931a1bf24ac134fc5be4ea2a94e94caabd39bc0",
+      "size": 1589
+    },
+    "config/particle_effects.json5": {
+      "sha256": "d8e4194f91f8f374d89cd84d06a68dd4e3bef91a655d18330acc99842157df21",
+      "size": 25
+    },
+    "config/particlerain/config.json": {
+      "sha256": "10f75ef386c1ecb715cb6e1bf98c4804f834b5d266af95ee112b9a4866ad4631",
+      "size": 984
+    },
+    "config/particlerain/particles.json": {
+      "sha256": "42fa5c1346e752c7d13e593a5bc052db97daaa0cca3f148410b94ab16208c6d3",
+      "size": 444
+    },
+    "config/pickupnotifications.toml": {
+      "sha256": "cd93808badd8b249a3e719d3931790eb3459dcb755c5f832ee5d9973f66755a5",
+      "size": 1239
+    },
+    "config/pickupnotifier-client.toml": {
+      "sha256": "878c0031b8433cf27416e34526b481dddcdb819629bc7564f088994317d1cb22",
+      "size": 4598
+    },
+    "config/pickupnotifier-server.toml": {
+      "sha256": "366e4ecc436776ae1031107b235a524a040e75c276de3531d7298351fdd0c8c5",
+      "size": 233
+    },
+    "config/reachbehind-client.toml": {
+      "sha256": "45dfe9d3ba0405e772ddd6c5633f1af93b501004b0a020d9746bbb74fa8805ec",
+      "size": 901
+    },
+    "config/reachbehind-common.toml": {
+      "sha256": "f1ef3a3fb5bbdab9f7095546142766054454498d60611eb2011e956f273ee1c9",
+      "size": 557
+    },
+    "config/respackopts/_respackopts.conf": {
+      "sha256": "8e42c76481421e2b3f3c83481e3920319b78b69c6c987e02e4c52bc7ea4e1be4",
+      "size": 456
+    },
+    "config/rightclickharvest.json5": {
+      "sha256": "34965033fb8f5c4ce293b54e4ac541a7912d83f068f0ddcc2b02afbed3b0289a",
+      "size": 662
+    },
+    "config/screenshotgallery.json": {
+      "sha256": "40110fb0f0b4acbd8a37956b3f94903b58d3a12d8d70ee5314225ec00fb6c9b5",
+      "size": 168
+    },
+    "config/scribble.client.json": {
+      "sha256": "017e416a97f3197103c91fbf04742089810f3162dd7afcc8215579a44a4cb186",
+      "size": 249
+    },
+    "config/simplemenu/background/background.png": {
+      "sha256": "61db6a57c1b16aba12f18fd63b03f57ed1af40f584b8da1d5af21a6ec3da3935",
+      "size": 8130
+    },
+    "config/simplemenu/icon/icon_16x16.png": {
+      "sha256": "e52d23c313dcb9d60b1061c635205213cb8d072061b7f17a92d2e7a7e40753e1",
+      "size": 768
+    },
+    "config/simplemenu/icon/icon_32x32.png": {
+      "sha256": "fc19da09e10cbb309ce359a21aa8748568b664e65c2b358a7efeb87529761ba5",
+      "size": 2075
+    },
+    "config/simplemenu/logo/edition.png": {
+      "sha256": "1a849a3bd7a33b4803fddce02ab255884fcc4e45314ce846a1cf96ab166e3082",
+      "size": 12793
+    },
+    "config/simplemenu/logo/logo.png": {
+      "sha256": "9b9d0e609acafcd55c471e333d0805e95447e850c61d88aacd7e07f0cd8b2efa",
+      "size": 40444
+    },
+    "config/simplemenu.json5": {
+      "sha256": "8e05ea3a063a2233aa74cc6fc673e9835b9daca47e82417497a7248fc82bed92",
+      "size": 2472
+    },
+    "config/skinlayers.json": {
+      "sha256": "45162f45aa2db525a0edc483959f35b6d958ba2e54066a4f87e7f3c3f0f99166",
+      "size": 497
+    },
+    "config/sodium-extra-options.json": {
+      "sha256": "012631ae0bbe28d656aa4ab348d3c8437332c97058a3b1886f10b7c6da01912a",
+      "size": 2004
+    },
+    "config/sodium-extra.properties": {
+      "sha256": "a2f1b47c1eaa119ab34727f1d43c2506cb3d7f17ba8fb4efb49e20c8e0b58e70",
+      "size": 360
+    },
+    "config/sodium-fingerprint.json": {
+      "sha256": "cf64950119b07ae310931501b24db226363293069504d3c8f8b3b8198a9300dd",
+      "size": 427
+    },
+    "config/sodium-mixins.properties": {
+      "sha256": "b627c4456e6fa0bc4b5f85e2f1cd949faedae3cb9afdaf2a5f52e6f3b6ae1f01",
+      "size": 258
+    },
+    "config/sodium-options.json": {
+      "sha256": "a254b8f531a8cef6ade6f1b860e80ee4cfbf5fb5905d0963c24b121c4f6518a2",
+      "size": 743
+    },
+    "config/sodium-shadowy-path-blocks-options.json": {
+      "sha256": "25baba4e198fbefd6656a38dcf0cdc3e7ccef211221b4f5218d22a778d1853fa",
+      "size": 107
+    },
+    "config/status-effect-bars.json": {
+      "sha256": "9d6b9cee844e073d40de18fdfb268c267978a3cb0e64f1d1f17f79e6bf688a70",
+      "size": 666
+    },
+    "config/transition.json": {
+      "sha256": "60420a41571a4658b91babfa2b47d6fefb7c1766eeea969f51ff98ab34c2431c",
+      "size": 97
+    },
+    "config/trender.json": {
+      "sha256": "0a282f3623f7f9443a1d10b5768865f69e58b74e000dcfb4f40399626b7a6124",
+      "size": 47
+    },
+    "config/vehicleupgrade-client.toml": {
+      "sha256": "4dc7c93f6d338bf9a86636624030339f983639b7e5eb0d52f44cb8a03387cd8e",
+      "size": 1054
+    },
+    "config/vehicleupgrade-common.toml": {
+      "sha256": "eaae2d9b343088853a9b767042812d06f291420e459e2d431b584e9dbe7a1bdd",
+      "size": 675
+    },
+    "config/vehicleupgrade-server.toml": {
+      "sha256": "a313b994959644aba429e1325351f4157dccc8feffc0747f26c7cfc31a8b740c",
+      "size": 3439
+    },
+    "config/visuality.json": {
+      "sha256": "20a77bb7b6410bac200817c8f5e83f6d93dbcf425136181a8444f3706f691481",
+      "size": 1046
+    },
+    "config/worldplaytimereborn/config.json": {
+      "sha256": "eda554bbef08c7e00253968c8ad6ddbc04194d6c1f23aa1a9cea806c6ce2fee8",
+      "size": 307
+    },
+    "config/yacl.json5": {
+      "sha256": "121b93764159be6fb7dab523b29a844e2bb78400ce8c48f52135a097e9b0006e",
+      "size": 250
+    },
+    "config/zoomify.json": {
+      "sha256": "536b47361a7630806b205cf28e0370abc9707b6d1a3e14444d9326135ed759e0",
+      "size": 708
+    },
+    "resourcepacks/Enchantment Outlines.zip.rpo": {
+      "sha256": "465bad25b4069522ab153959024c8baf79bc4c255f9e614fcd5a356cee66c8c5",
+      "size": 270
+    },
+    "resourcepacks/Fresh Buckets.zip.rpo": {
+      "sha256": "c69f871746e824ae7f042a9dc7a4d11b2b3b970767aeb75d576e3e1947a4cce3",
+      "size": 179
+    },
+    "resourcepacks/Re-covered.zip.rpo": {
+      "sha256": "338fc65c7568c9eff3741489379d9f9b51a4c952fec21e7707e4dc0312adf5f9",
+      "size": 564
+    },
+    "resourcepacks/Recolourful Containers 3.1.1 (1.19.4+).zip.rpo": {
+      "sha256": "7e0da522f321df2aebbc7153e68add4e9d8001027dfa4c87a06ea25a629a3b2f",
+      "size": 519
+    },
+    "resourcepacks/Recolourful Containers 3.1.4 (1.19.4+).zip.rpo": {
+      "sha256": "5b844c7a9c0e91fc6c8df3ffd9d58f161da682d0255ff5bd383597dc808139ff",
+      "size": 518
+    },
+    "resourcepacks/\u00a74Drodi's Illagers [v5.3.2].zip.rpo": {
+      "sha256": "ba6a68d734f41eaa8ba93ead89386a165e0a4439c0fabcba4a136a9c60ebc8c0",
+      "size": 198
+    },
+    "options.txt": {
+      "sha256": "10ba4d5c85e23dbae65665fee9a4bc8b55f5fe1fbcfc9c4c03f73a8c4c6ab6ad",
+      "size": 8295
+    }
+  },
+  "vm_properties": {
+    "villagers.role": "adaptive",
+    "villagers.learning": "adaptive",
+    "villagers.training.tps": "80",
+    "villagers.trial": "village"
+  },
+  "world_name": "VillageTrial",
+  "mutable_data_shared": false,
+  "asset_cache": "/home/niko/.internal/source/Villagers/runs/.assets",
+  "shared_assets": {
+    "mods/litematica-fabric-26.3-0.29.1.jar": {
+      "sha256": "0138223fb9b8f971f5c3dc4a79021b33b73e0f145ed6f4c76df3732583e676da",
+      "size": 1972556
+    },
+    "mods/lambdynamiclights-4.13.0+26.3.jar": {
+      "sha256": "b7550288423affed86370acd80d064876d7e256f5489461b7ff7941627552ab2",
+      "size": 1345715
+    },
+    "mods/Controlling-fabric-26.3-26.3.3.jar": {
+      "sha256": "d28a8a95c4f9a560f96ed7eb88bcb4fa54ae43e1e7e187aaffab758716d0999b",
+      "size": 86861
+    },
+    "mods/entity_model_features-3.3.11-26.3-fabric.jar": {
+      "sha256": "a73ce8463f8ae342cd9428e0b9298bb2d265083d732703cfc12f8f2ef335e3c1",
+      "size": 664472
+    },
+    "mods/cropsloverain-3.2.1.jar": {
+      "sha256": "614873d4a80c3a79296518719f9ab2a2449eb634b5f8ac0e33d1a9533651c4f1",
+      "size": 34251
+    },
+    "mods/DayCount-1.6.0-Fabric-mc26.3.jar": {
+      "sha256": "f8b318ce9743af59a10d6d8136d5d619c56adeaf17500f4fb8714da401e4d46f",
+      "size": 1103942
+    },
+    "mods/entity_texture_features-7.2.5-26.3-fabric.jar": {
+      "sha256": "22c72cb53e97779b1fea82741fa7932e2b43e44dc3b7c21c772affe46568a56d",
+      "size": 792734
+    },
+    "mods/malilib-fabric-26.3-0.30.2.jar": {
+      "sha256": "abd59f642abd891586bfec2cd1937771ded925081ebe3870d152ca96356b5119",
+      "size": 2081094
+    },
+    "mods/libjf-26.3.1.jar": {
+      "sha256": "1b236e7f12ec4cf78e1c7db6406638492abab99f106f7af18d38a245e40e07e2",
+      "size": 1720205
+    },
+    "mods/vehicleupgrade-v26.3.0-mc26.3.x+fabric.jar": {
+      "sha256": "07cc14e8cd6419ed89534c0968e7c592149b072a4a5a2997a54fb132af6ef87a",
+      "size": 124473
+    },
+    "mods/zoomify-2.17.0+mc26.3-universal.jar": {
+      "sha256": "134edcc2992d2f6c3793746101dec1aba3ef02f046024fd280afb09094593027",
+      "size": 579146
+    },
+    "mods/sodium-fabric-0.9.3-alpha.1+mc26.3.jar": {
+      "sha256": "a8f1e82847d3640c20dded44b08829c5987a055de83c99d62c33cd7bd06a1c54",
+      "size": 1911459
+    },
+    "mods/notenoughanimations-fabric-1.12.6-mc26.3.jar": {
+      "sha256": "81539e3bb8d222ae3ed3046677ffe466dd6898ec2b75b78f8eb26cb1a43be0c8",
+      "size": 1863579
+    },
+    "mods/worldplaytimereborn-1.2.6+26.3-fabric.jar": {
+      "sha256": "6caae44ce7cfa90a0809202eaf57bfb5490bea27536676848fbf0b0ea1c635d3",
+      "size": 55688
+    },
+    "mods/entityculling-fabric-1.11.3-mc26.3.jar": {
+      "sha256": "d2f80514ee3382b1fa7afda4df762df50743226e3cd320b829ee507357aeafbc",
+      "size": 1508547
+    },
+    "mods/easyshulkerboxes-v26.3.1-mc26.3.x+fabric.jar": {
+      "sha256": "4a0764418e4bd8e3d48a56171c47d6ad9975fc57d22bd17ac486619a79319b7c",
+      "size": 636703
+    },
+    "mods/ParticleEffects-1.6.0+26.3+fabric.jar": {
+      "sha256": "7d155ddea5bf0ef21f5122379f74dbb86ba6298b80a8c223907f22921b0d4c1c",
+      "size": 314827
+    },
+    "mods/fabric-language-kotlin-1.14.1+kotlin.2.4.20.jar": {
+      "sha256": "620c2709be2a262b837cf976f6f85f6eda80a56af2ba4242e0bdc83a60fee7a5",
+      "size": 8142858
+    },
+    "mods/freecam-fabric-1.5.0-alpha.2+mc26.3.jar": {
+      "sha256": "78bc05ca1716d7413eec8e5261c7152bbccd78b63ce572ee5a0f3a7db5ffdd41",
+      "size": 2006056
+    },
+    "mods/controlify-3.5.3+mc26.3-universal.jar": {
+      "sha256": "bc759f557d122079bb9078741065935bf3aa9bfd5e60b414e242633c0dded86a",
+      "size": 6410187
+    },
+    "mods/modmenu-21.0.0.jar": {
+      "sha256": "837812c6c98d66141db7b5dcae668f27fb78d557e8f4c0c89912985fc26a5e6f",
+      "size": 856779
+    },
+    "mods/EclipseUI-fabric-1.0.5-fabric-26.3.jar": {
+      "sha256": "5bc8df21f1f8e15bd7f32f7b306fade4f15f4ae28514156cf7aaa90f1148462d",
+      "size": 1515518
+    },
+    "mods/sodium-shadowy-path-blocks-fabric-8.0.0.jar": {
+      "sha256": "5033e2873cf718a2667903c0b8dfcd6895776b5d12e7a3cfd228f4d5193a74d6",
+      "size": 70232
+    },
+    "mods/Searchables-fabric-26.3-1.0.2.jar": {
+      "sha256": "00f9d7f18e7edeb19b843266209d8aaceb591492ad594b8769360cc48297ea4e",
+      "size": 79608
+    },
+    "mods/tcdcommons-5.6.0-beta.2+fn-26.3.jar": {
+      "sha256": "c5a10954cfd5f625610a88204c3d0026325dc99254c6d7123ae94b80de3d3142",
+      "size": 508304
+    },
+    "mods/status-effect-bars-1.0.12.jar": {
+      "sha256": "8cb64d13fb73ae1dff415734b980bca0f858311ffa010c8a21522113a9dddee5",
+      "size": 44942
+    },
+    "mods/optigui-2.3.0-beta.10+26.3.jar": {
+      "sha256": "b17d3f5d5c7659f06b9818dbc21af8295798fe29221f609b1c979407050e00ab",
+      "size": 610432
+    },
+    "mods/cherishedworlds-fabric-18.0.0+26.3.jar": {
+      "sha256": "51c6a2949ae4a89dce2c773847b76f888dc464f3ca7a630d4f2c72121c0037be",
+      "size": 590701
+    },
+    "mods/rightclickharvest-fabric-4.6.2+26.3.x.jar": {
+      "sha256": "27d20ed4c41e4eb0fae82b6d7164ba739b8330b028da078ffbc580052538e4bb",
+      "size": 280022
+    },
+    "mods/naturally_trimmed-3.6.1+26.3-fabric.jar": {
+      "sha256": "206efdade95ef9b516df9a09087703abf89ad152efdc4f4bf381111cc30e472f",
+      "size": 133051
+    },
+    "mods/BorderlessFullscreen-v2.5.1-mc26.3.jar": {
+      "sha256": "3af98dd8602bb34b9df4b59a5bd8e037d2620da5d498a10746ec275eb3c98bf8",
+      "size": 191440
+    },
+    "mods/elytratrims-fabric-4.9.1+26.3.jar": {
+      "sha256": "da636ff80ba668d4d9c0f48799b78684ba29c9ef959498d5bf3f8818b181de2e",
+      "size": 1053799
+    },
+    "mods/MouseTweaks-fabric-mc26.3-2.31.jar": {
+      "sha256": "7fa35df568c870c45fd144dc9a54139459ded823615dda32bc09d9025831e655",
+      "size": 74569
+    },
+    "mods/Axiom-6.1.3-for-MC26.3.jar": {
+      "sha256": "5ecd357e3ea4df311887b62a9cdd395e476004ad7badd5f66a6ecb11223db1af",
+      "size": 46790230
+    },
+    "mods/moreculling-fabric-26.3-1.9.0.jar": {
+      "sha256": "4739cf1bba326d538247b565a0200f926b2c56bf0e1106495335eec4d8528b0c",
+      "size": 294320
+    },
+    "mods/jamlib-fabric-2.3.1+26.3.x.jar": {
+      "sha256": "008da4bad204ae00d89a6de81e72e04b85f74d1c57132097f2f8b70d871ffd94",
+      "size": 265050
+    },
+    "mods/respackopts-26.3.0.jar": {
+      "sha256": "9051b9cbe22ddc2d474bb206d6c2f96d21ca9c5d47efe69b1c60c981d016333f",
+      "size": 944457
+    },
+    "mods/immersive-hotbar-1.2.2-26.3.jar": {
+      "sha256": "f748ccefbc2076d0b093525ce5b7e209f9a4a026978c19d77a401b13d7981bba",
+      "size": 128475
+    },
+    "mods/ImmediatelyFast-Fabric-1.17.1+26.3.jar": {
+      "sha256": "4b346661cd0811d98a6df8c9faeb8fafd9326ab88248430e8bec845ef1ff6dca",
+      "size": 99586
+    },
+    "mods/scribble-2.1.0-beta1+mc26.3.jar": {
+      "sha256": "a3f7ae5dbda22e33a74035233aa91447ab3b2a38e5dcb95c6fa3c4a71f714821",
+      "size": 318425
+    },
+    "mods/iris-fabric-1.11.7+mc26.3.jar": {
+      "sha256": "83ab4d3013dd56ac05ae503a2f596968911001c4ef3d82c59c5c79e64c34dd98",
+      "size": 2850938
+    },
+    "mods/skinlayers3d-fabric-1.11.3-mc26.3.jar": {
+      "sha256": "50764a93bd75a70a7fdc899d4910f34f7982ab63497e63d17a27cdd512fedecb",
+      "size": 1890220
+    },
+    "mods/lithium-fabric-0.26.2+mc26.3.jar": {
+      "sha256": "0be5b17ef9f6e9244cd07b24b227553a73aec0cf93158cf28099f3094c167f1b",
+      "size": 914543
+    },
+    "mods/betterstats-5.6.0-beta.2+fn-26.3.jar": {
+      "sha256": "919185efe827d8bfbf897901688e899cadee61ef6dd567e83d8e6c47fbe0ddac",
+      "size": 410777
+    },
+    "mods/BetterAdvancements-Fabric-26.3-0.6.0.78.jar": {
+      "sha256": "7db7bbe826e0e1b008facc1a0068f0fc34154be05a24adbdeae1add51054ff3a",
+      "size": 105885
+    },
+    "mods/placeholder-api-3.2.0+26.3.jar": {
+      "sha256": "d9a5351b42a8d79cfc2e7f2a471472f9e4dff3b13874c8d420dbb93600b91a85",
+      "size": 254959
+    },
+    "mods/visuality-0.7.15+26.3.jar": {
+      "sha256": "9810f96dc433719eb0c6e02229930308e708b5698c12c596e44c7d563b789f63",
+      "size": 81970
+    },
+    "mods/reachbehind-v26.3.0-mc26.3.x+fabric.jar": {
+      "sha256": "0bccfc16f7ffceac47a0cffe6444d86030f18b581151b798e5e356e5686ef5f5",
+      "size": 48998
+    },
+    "mods/bookshelfinspector-fabric-2.4+26.3.jar": {
+      "sha256": "27fad92c3c6757033c7303b1366bc8c4bc630ef29466ae6dab432838310e6af3",
+      "size": 408636
+    },
+    "mods/pickupnotifications-fabric-3.0.1+26.3.jar": {
+      "sha256": "a7f428b23461033faa122f2da3146d37bb79c45150a3e80225c0a066074f181a",
+      "size": 873793
+    },
+    "mods/particlerain-4.0.1+26.3-fabric.jar": {
+      "sha256": "d5f2d6579121d4a9a33aed099d306b17a874381aa9cb5376ff41580f16102e48",
+      "size": 626863
+    },
+    "mods/deleteworldstotrash-v26.3.0-mc26.3.x+fabric.jar": {
+      "sha256": "c5588c5cfbd3cd028448dd6d5b06223db5f8a8ac661e1709d618686260e8cdf8",
+      "size": 33678
+    },
+    "mods/elytratrails-1.6.7-26.3.jar": {
+      "sha256": "d6983cd90d7901f8e4909d2d93b6c5efa94e06cbf94b5c6e5dd88bddc3346b3f",
+      "size": 389392
+    },
+    "mods/ForgeConfigAPIPort-v26.3.1-mc26.3.x-Fabric.jar": {
+      "sha256": "95cc2bd7a943f910a54baf2f65acde301dcfb3d8aeff2c989c04c416d5a4a1cd",
+      "size": 609574
+    },
+    "mods/bbe-fabric-1.3.9+mc26.3-mod.jar": {
+      "sha256": "03e0a5e60b6ea16d740f5b1f1f61e6226240a99eaf0993cac2d0d0427d00ea6d",
+      "size": 207630
+    },
+    "mods/dungeons-and-taverns-6.0.2.jar": {
+      "sha256": "c73b1d762c48c6d20331c776e3c3e448454efe4cc833eaef5258eae08b44ea8e",
+      "size": 42195203
+    },
+    "mods/Flashback-0.43.6-for-MC26.3.jar": {
+      "sha256": "2d2ff6b397831472f63dedf6b2053c384bf9233540811b4895a803719ae4370b",
+      "size": 201008177
+    },
+    "mods/glowing-torchflower-fabric-mc26.2-1.4.1.jar": {
+      "sha256": "5444e1346c29a561e92ddc61878831fab2d00b2bdaf0ea33a2c37e0fd1625eb8",
+      "size": 862368
+    },
+    "mods/screenshotgallery-fabric-2.1.jar": {
+      "sha256": "16ead004471f993492ca7505e581566c994158d172a8de73ce4dc71014bf18d0",
+      "size": 123407
+    },
+    "mods/DetailArmorBarReconstructed-5.3.2-26.3-fabric.jar": {
+      "sha256": "9ba97a9ec3b7c0aafacb8fd0f90a12faad58dabc2eeaec0ecb703b901282074d",
+      "size": 130087
+    },
+    "mods/chatanimation-fabric-1.3.4+mc26.3.jar": {
+      "sha256": "d70c9d2d4a51cf9dcc57daeb48059ace0aa527708b1bebd5cb828e732ac803d3",
+      "size": 432262
+    },
+    "mods/continuity-3.0.1+26.3.jar": {
+      "sha256": "429fb0946118e86cce8ace8b57d07e1971088fb3f8115439bb0f2f12df14f511",
+      "size": 1002033
+    },
+    "mods/cloth-config-fabric-26.3.159.jar": {
+      "sha256": "1716b9964f90d2b885f9bd3887f8824b71b55c32a4123a5853486e722f7c2e4b",
+      "size": 1135009
+    },
+    "mods/modernfix-5.27.20-build.2.jar": {
+      "sha256": "f340fff04132ae9b60eae494d2de4cd177d436da8c0e525d6bd8f5b15ed141b5",
+      "size": 1168784
+    },
+    "mods/puzzleslib-v26.3.13-mc26.3.x+fabric.jar": {
+      "sha256": "11e5586f2aca7735714ff4a8357c4c1fca141fb8392a3aff38c8fd76dcb5eaf5",
+      "size": 1092416
+    },
+    "mods/packed_packs-fabric-2.3.1+26.3.jar": {
+      "sha256": "7a5e953b9ce6a1131699f1500830e72060d96be4bd873ff5c554579750371b9b",
+      "size": 994655
+    },
+    "mods/BetterF3-20.0.0-Fabric-26.3.jar": {
+      "sha256": "e3ae4820dbbed0cd33e2b89dbb16b8a9f40fa576b39bc83f797658f4468738a5",
+      "size": 719577
+    },
+    "mods/animatica-0.6.2+26.3.jar": {
+      "sha256": "c7df115a20895fe121009937bf0a1d3b8704ea6a5bfc38160f7e50552592d53c",
+      "size": 116384
+    },
+    "mods/ferritecore-9.0.0-fabric.jar": {
+      "sha256": "213966c72ed967acc7392beb28a866fba301ff56b9976c2e7801c2db7de6bf22",
+      "size": 72677
+    },
+    "mods/sodium-extra-fabric-0.9.4+mc26.3.jar": {
+      "sha256": "fb0a24fa4d46f3669b827e73b7f33be8b48821fdca3dea3d283022330bf6a874",
+      "size": 465553
+    },
+    "mods/collective-26.3.0-8.42.jar": {
+      "sha256": "cbb64a5bc772f715045074b116b66279eccc1b3f05cb0f452442dd51d8aff10d",
+      "size": 1084536
+    },
+    "mods/yet_another_config_lib_v3-3.9.7+26.3-fabric.jar": {
+      "sha256": "c52d41d444522d9abba994cd4c4ee2e71a065d7c31010f92a9959b80ccb4b0f5",
+      "size": 1125377
+    },
+    "mods/armor-stand-poses-fabric-26.3-1.4.0.jar": {
+      "sha256": "9bc6a2372e2098d22a54032f1d1c47bd12837bd139085b635a88d50665d940cd",
+      "size": 96305
+    },
+    "mods/cutthrough-v26.3.0-mc26.3.x+fabric.jar": {
+      "sha256": "5631d14d96c924cb61dd6bf10633a9d450a53ffda06ecdf545b3e7b96a3b5909",
+      "size": 26139
+    },
+    "mods/simplemenu-26.3.0-2.3.jar": {
+      "sha256": "08377e87d72cacfda095681260d4e56d0fcbe91d6e3000de3ef68552c006bc5c",
+      "size": 84139
+    },
+    "mods/light-overlay-2.13.0+26.3.jar": {
+      "sha256": "455a4f1c62a90339adafe3620c675b2a485d894ca096e993495530361d6d56a6",
+      "size": 71017
+    },
+    "mods/overlaylib-0.12.1+26.3.jar": {
+      "sha256": "80c27d46304b20e184538bfa3e52122841376570bb9660a7d4fe2604e3a519a3",
+      "size": 152032
+    },
+    "resourcepacks/AL's Armor Stands Revamped.zip": {
+      "sha256": "55f5e3d077d2ab82c9044ba915594a7d2fb4c55d7d81e23933f0e3750eafdeab",
+      "size": 398472
+    },
+    "resourcepacks/AL's Creepers Revamped 2.0.zip": {
+      "sha256": "b0d278cc9a9ff0462dc30fcacff05029751d25c93e3b257956a426ad364d2994",
+      "size": 226817
+    },
+    "resourcepacks/AL's Dungeons Boss Bars 1.0.2.zip": {
+      "sha256": "05477a16727aab3f4386f29a5c1feb15c1ea9447f75af3431af4faf74724a97f",
+      "size": 255540
+    },
+    "resourcepacks/AL's Enderman Revamped 2.0.zip": {
+      "sha256": "ded6337604ef6896972850d9aced9ec3c563f147e38cd47471cb925e94a2c7c6",
+      "size": 1320944
+    },
+    "resourcepacks/AL's Scorpions & Crabs 1.2.zip": {
+      "sha256": "d98ec0d2ad6e4b7c57849d4e0272d7d3f14360fe68ead9e7f3fb180faa46fd77",
+      "size": 253146
+    },
+    "resourcepacks/Ben's Bundles 1.4.zip": {
+      "sha256": "03772479ba367165e0cc82f2c0ebf66b88c4e90f33463d77b6f398be56385f7a",
+      "size": 64463
+    },
+    "resourcepacks/Clearer Slot Highlight.zip": {
+      "sha256": "1aecf7a57797a1552035f0d6236ae80ba456d7572ca0cb9717fe0026fe323ee2",
+      "size": 4193
+    },
+    "resourcepacks/Dani's Oxidizing Copper Tools.zip": {
+      "sha256": "28c0b9e4ca0218c1fccf86b9114509e65a763238401ba85ca4ea2408a897ca4b",
+      "size": 41588
+    },
+    "resourcepacks/Eggs N Eyes 1.0.7.zip": {
+      "sha256": "2f860098e0401acda0ec12a3d29e90702862aa2fa7946668c69cc3174dae007a",
+      "size": 52859
+    },
+    "resourcepacks/Enchantment Outlines.zip": {
+      "sha256": "020daab40dc0525bf3dc68ad2f15e3c8324a3cce7e472b4969cdddc052e905fc",
+      "size": 1220387
+    },
+    "resourcepacks/Fresh Buckets.zip": {
+      "sha256": "05ec2b5ed2e732d64b97b4b3fd5a6b5b384a120e87cd2db081a6a6432f7bcdb9",
+      "size": 513311
+    },
+    "resourcepacks/Leggings Fix 1.21.2-1.21.x.zip": {
+      "sha256": "8f964e90608c6de1161f7abe5fc1b51acb616baab0dfee9ff6b7641101ed1efa",
+      "size": 7612
+    },
+    "resourcepacks/Pop-out Clock (1.21.5+).zip": {
+      "sha256": "4e011501d69c01a590765ad3c972a78de7bbe984ee1fe71582a05f7761318d3e",
+      "size": 93356
+    },
+    "resourcepacks/Re-covered.zip": {
+      "sha256": "72743fe3b51dcfbea087ae6a791cb20f3e23231f4fd215ac255308ff7939e1e0",
+      "size": 175321
+    },
+    "resourcepacks/Recolourful Containers 3.1.4 (1.19.4+).zip": {
+      "sha256": "2a9a32f68bdaf825374f58e8b7cdc6bb1c7e378540ef558c7c5ccbcd0d4811d1",
+      "size": 2011177
+    },
+    "resourcepacks/Renewed Bookshelf v1.0.2 - 26.3.zip": {
+      "sha256": "4448f4b582df51718fd3c6e29c55e71c04a2ee474375871e9abd628d859c7ae8",
+      "size": 13267
+    },
+    "resourcepacks/Roman Numerals for Enchant Icons (gray).zip": {
+      "sha256": "f729388b0944d33ffa85d6a025f5318b74d227d5c5e623ef9a45c153172b7c5a",
+      "size": 1028310
+    },
+    "resourcepacks/Simple Grass Flowers v1.9.6.zip": {
+      "sha256": "a787523636834fa0f1c38d1fe764f1d5ae6103901a5aa8daea261e4558917ff6",
+      "size": 195291
+    },
+    "resourcepacks/Theone's Eating Animation Pack v1.0.zip": {
+      "sha256": "d917e9c62ad6f4c64fa6d0b4d5351c818501210ae5d3a244a26c33e1f8d15017",
+      "size": 133949
+    },
+    "resourcepacks/Vanilla Perfected Panorama.zip": {
+      "sha256": "16ea1d1ac03e9cec63fde5724321ba79127804ffaafbd24df984c4867e051b3a",
+      "size": 8831949
+    },
+    "resourcepacks/Vanilla Tweaks VP.zip": {
+      "sha256": "da0cd6e5cd9189f84b4a3d1f35b694b1975e47fa896af154cea672dbb8f7a9d3",
+      "size": 707937
+    },
+    "resourcepacks/Weskerson's Torches.zip": {
+      "sha256": "bf456591dbdb10343ab9da952246d1502ada8313d65403d1f4693d08219fc195",
+      "size": 1335196
+    },
+    "resourcepacks/enchant-icons-26.1-26.1.2-v1.3.zip": {
+      "sha256": "1889b56cb54ec4391c6666d114f110dbf2b1788149d5056ad7d709e0f5750570",
+      "size": 182067
+    },
+    "resourcepacks/qrafty's-capitalized-font-4.1.zip": {
+      "sha256": "345935e846779f5f364c088583e515d5e1b1da44e8b59e82b0e9ab808f329ec8",
+      "size": 236492
+    },
+    "resourcepacks/visual_armor_trims_4.3.zip": {
+      "sha256": "20642aff4ec2961ff38e1613074477240fc954c2ad9a8b9b05b57388fc9b9726",
+      "size": 2880565
+    },
+    "resourcepacks/\u00a73Fresh \u00a7bFlower Pots Rotated.zip": {
+      "sha256": "b0dbe68866edd816239aea41fa4489ee733ad3e92b3eba06f95bc6b8c0ddd20a",
+      "size": 98751
+    },
+    "resourcepacks/\u00a73Fresh \u00a7bFlower Pots.zip": {
+      "sha256": "ec3a1bafdeb0e1ee680cc278ef488b667358f32b88600d2fa59fb256c36394c5",
+      "size": 43374
+    },
+    "resourcepacks/\u00a74Drodi's Blazes [V1.4.1].zip": {
+      "sha256": "528f09d3f9a22b76cef3bc652f57a63a17a1658bdd4e39b155f4f7f5e9da8495",
+      "size": 212780
+    },
+    "resourcepacks/\u00a74Drodi's Illagers [v5.3.2].zip": {
+      "sha256": "bec737e3f107e1ee556a9047c3a94d1fcb170b4ec44ae857c46e02c84daad1a7",
+      "size": 320487
+    },
+    "resourcepacks/\u00a7lC418 \u00a7rSongs Only.zip": {
+      "sha256": "3f66622826aeac58b61b1ed6fe6866d6a378ca5c1a910908d47f299d0e96ef42",
+      "size": 200594
+    }
+  },
+  "notes": "Common saved starting world; process session.lock is omitted and recreated independently. No worlds, configurations, evidence or minds are symlinked. TPS is requested, not proof of achieved throughput."
+}

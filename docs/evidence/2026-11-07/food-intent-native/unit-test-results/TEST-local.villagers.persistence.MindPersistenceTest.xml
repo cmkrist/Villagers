@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="local.villagers.persistence.MindPersistenceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-08T01:31:28.393Z" hostname="td001" time="0.01">
+  <properties/>
+  <testcase name="queuedSnapshotIsNewerThanDiskAndIsUsedWithoutWaiting()" classname="local.villagers.persistence.MindPersistenceTest" time="0.001"/>
+  <testcase name="closeWritesWhatIsStillQueued()" classname="local.villagers.persistence.MindPersistenceTest" time="0.001"/>
+  <testcase name="tryAcquireEventuallyReturnsTheDiskStateWithoutBlocking()" classname="local.villagers.persistence.MindPersistenceTest" time="0.006"/>
+  <testcase name="flushWritesQueuedSnapshotsAndEmptiesQueue()" classname="local.villagers.persistence.MindPersistenceTest" time="0.001"/>
+  <testcase name="protectedMindsAreDroppedInsteadOfRetriedForever()" classname="local.villagers.persistence.MindPersistenceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

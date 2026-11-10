@@ -1,0 +1,54 @@
+{
+  "stage": "native_hand_harvest",
+  "actor": "7aed70c6-0109-4c94-ae0c-287a71fd3881",
+  "ticks": 39,
+  "fixture": "Declared mature crops and empty-bag villager; no tree, wood, tools or produce supplied. Native loot and paid replant; no post-setup setters.",
+  "receipt": {
+    "gameTime": 39,
+    "position": "206, 101, 200",
+    "crop": "CARROT",
+    "plantingSource": "native harvest",
+    "nativeDrops": [
+      "1 minecraft:carrot",
+      "4 minecraft:carrot"
+    ],
+    "inventoryBefore": [
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air"
+    ],
+    "inventoryAfter": [
+      "4 minecraft:carrot",
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air"
+    ],
+    "overflow": [],
+    "hoeDamageBefore": 0,
+    "hoeDamageAfter": 0,
+    "hoeBroke": false,
+    "usedHoe": false,
+    "cropAfter": "Block{minecraft:carrots}[age\u003d0]"
+  },
+  "status": "passed",
+  "items": {
+    "stonePickaxes": 0,
+    "held": "0 minecraft:air",
+    "carrots": 4,
+    "pickaxes": 0,
+    "hoeDamage": -1,
+    "sticks": 0,
+    "planks": 0,
+    "logs": 0,
+    "woodenPickaxeDamage": -1
+  }
+}
