@@ -1,0 +1,155 @@
+{
+  "scope": "Copied rehearsal chain only; primary remains196344. Actual furnace crafted/placed before a later distant-resident food guard failed. No iron ingots or sustainable-food proof.",
+  "progressElapsed": 11840,
+  "hero": {
+    "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+    "name": "Clover-edc5",
+    "position": [
+      -463.5479985056321,
+      60.0,
+      -375.2901995668847
+    ],
+    "production": {
+      "breadCrafted": 0,
+      "actions": {
+        "swordHits": 0,
+        "replantsFromHarvest": 0,
+        "doorsOpened": 1,
+        "doorsClosed": 0,
+        "replantsFromStock": 0,
+        "cropsHarvested": 0
+      },
+      "lastPlant": {},
+      "lastHarvest": {},
+      "planted": 0
+    },
+    "health": 20.0,
+    "food": 20,
+    "inventory": "[1 minecraft:wooden_pickaxe, 17 minecraft:dirt, 1 minecraft:bread, 1 minecraft:wheat_seeds, 8 minecraft:carrot, 1 minecraft:wooden_hoe]",
+    "adventure": {
+      "mining": {
+        "blocks": 0,
+        "activity": "needs observed exposed natural stone",
+        "lastReceipt": {}
+      },
+      "activity": "walking into a supported quarry work bay",
+      "quarry": {
+        "centerings": 0,
+        "dug": 0,
+        "lastApproach": {},
+        "step": 16,
+        "lastReceipt": {},
+        "origin": "-464, 63, -379",
+        "inspection": {
+          "survey": {
+            "lastRoute": {},
+            "target": "",
+            "visited": 0
+          },
+          "reviewAt": 0,
+          "reconsidered": 0,
+          "visited": 1,
+          "route": "no native route; via stair -464, 60, -376",
+          "repairs": 0,
+          "lastRepair": {},
+          "target": "-464, 58, -374"
+        },
+        "lastStop": {},
+        "activity": "walking into a supported quarry work bay",
+        "stand": ""
+      },
+      "stone": 0,
+      "stonePickaxe": true,
+      "nominated": true
+    },
+    "woodPreparation": {
+      "lastPath": "none",
+      "recipes": 0,
+      "stepsPlaced": 0,
+      "goal": "NONE",
+      "lastStep": {},
+      "pathQueries": 0,
+      "logs": 0,
+      "activity": "no preparation job"
+    },
+    "ironPreparation": {
+      "ironTaken": 0,
+      "activity": "walking into a supported quarry work bay",
+      "passage": {
+        "part": 0,
+        "depth": 0,
+        "root": "",
+        "activity": "no prospecting passage"
+      },
+      "furnace": "-470, 63, -368",
+      "crafted": 1,
+      "lastReceipt": {
+        "action": "placed owned furnace",
+        "position": "-470, 63, -368",
+        "gameTime": 216347
+      },
+      "loadedOre": 0
+    },
+    "ironIngots": 0,
+    "inventoryRoom": {
+      "lastReceipt": {},
+      "actions": 0
+    },
+    "body": {
+      "passenger": false,
+      "sleeping": false,
+      "courtship": "NONE",
+      "fatigue": 0.059687500000000046,
+      "activity": "Clover-edc5 \u00b7 walking into a supported quarry work bay"
+    },
+    "held": "1 minecraft:stone_pickaxe",
+    "boat": {
+      "paddleTicks": 0,
+      "launches": 0,
+      "logsGathered": 0,
+      "recipes": 0,
+      "lastReturn": {},
+      "footReturns": 0,
+      "landings": 0,
+      "phase": "NONE",
+      "activity": "no water trip",
+      "purpose": "NONE"
+    },
+    "tags": [
+      "villagers:quarry_failed:-130292129443777:173329",
+      "villagers:quarry_failed:-131941396856769:175438",
+      "villagers:managed",
+      "villagers:quarry_failed:-127543350390721:171750",
+      "villagers:quarry_failed:-130567007231937:192849",
+      "villagers:stone_shore:-126168960860097",
+      "villagers:owned_furnace:-128917739864001:0:0",
+      "villagers:quarry:-127268472467393:SOUTH:16",
+      "villagers:stone_shore:-129742373699521",
+      "villagers:native_resident_seen",
+      "villagers:stone_shore:-128917739769793",
+      "villagers:workbench:-470,63,-372,minecraft:overworld",
+      "villagers:stone_shore:-130567007150017",
+      "villagers:adventurer",
+      "villagers:stone_shore:-131391641075649"
+    ],
+    "woodJob": {
+      "tree": "null",
+      "blockedTable": "null",
+      "table": "BlockPos{x=-470, y=63, z=-372}",
+      "taken": 0
+    }
+  },
+  "savedFurnaceBlock": {
+    "Name": "minecraft:furnace",
+    "Properties": {}
+  },
+  "finalReport": {
+    "status": "failed",
+    "failure": "java.lang.AssertionError: copy resident health stop: d3494b6e-3a98-4a9c-8823-388f5d620f4f"
+  },
+  "beforeHumanoids": 179,
+  "afterHumanoids": 179,
+  "missingOriginalIds": [],
+  "newHumanoidIds": [],
+  "minimumSavedManagedHealth": 7.0
+}

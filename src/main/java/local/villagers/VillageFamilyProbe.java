@@ -201,6 +201,14 @@ final class VillageFamilyProbe {
             actors.add(actor);
         }
         result.put("actors", actors);
+        // Include already-loaded creature minds in the same read-only report
+        // and guarded-exit snapshot. Their session receipts disappear after
+        // shutdown, so saved body audits alone cannot establish paid gifts or
+        // family attempts during the actual client run.
+        var creatures=new ArrayList<Map<String,Object>>();
+        for(var entity:level.getAllEntities())if(entity instanceof net.minecraft.world.entity.Mob mob
+            &&CreatureAgents.managed(mob)&&CreatureAgents.loadedState(mob)!=null)creatures.add(CreatureAgents.status(mob));
+        result.put("creatures",creatures);
         if (fixture.bed != null) {
             result.put("fixtureBed", fixture.bed.toShortString());
             boolean loaded = level.isLoaded(fixture.bed);
@@ -253,6 +261,7 @@ final class VillageFamilyProbe {
         result.put("hoesCraftedThisLoad", s.hoesCrafted);
         result.put("stationStatus", s.stationStatus); result.put("stationRecipesThisLoad", s.stationRecipesCrafted);
         result.put("tablesBuiltThisLoad", s.tablesBuilt);
+        result.put("villageBedding",VillageBedding.status(s));
         result.put("restStatus", s.restStatus); result.put("groundRestsThisLoad", s.groundRests);
         result.put("bedRestsThisLoad", s.bedRests); result.put("restPathRejections", s.restPathRejections);
         result.put("survival", VillageSurvival.status(v.getUUID()));
@@ -262,10 +271,18 @@ final class VillageFamilyProbe {
         result.put("rootsClearedThisLoad",s.rootsCleared);
         result.put("foodHelp",Map.of("status",s.foodHelpStatus,"target",s.foodHelpPeer==null ? "none" : s.foodHelpPeer.toString(),
                 "journeyActive",s.foodHelpJourney.active(),"scans",s.foodHelpScans,"requests",s.foodHelpRequests,"pathRejections",s.foodHelpPathRejections,
-                "given",s.foodSharedGiven,"received",s.foodSharedReceived));
+                "given",s.foodSharedGiven,"received",s.foodSharedReceived,
+                "lastGiven",s.lastFoodGiven,"lastReceived",s.lastFoodReceived));
         result.put("forestryRoute",Map.of("batches",s.forestryPathBatches,"rejections",s.forestryPathRejections,
                 "standCandidates",s.forestryStandCandidates,"cursor",s.forestryPathCursor,"lastPath",s.forestryLastPath));
         result.put("adventureActivity", AdventureActions.activityStatus(v.getUUID()));
+        result.put("quarry",AdventureQuarry.status(s));
+        result.put("mining",AdventureMining.status(s));
+        result.put("woodPreparation",WoodBootstrap.status(s));
+        result.put("inventoryRoom",Map.of("actions",s.inventoryRoomActions,"lastReceipt",s.inventoryRoomReceipt));
+        result.put("stonePickaxePrepared",AdventurePreparation.stonePickaxe(v));
+        result.put("ironArmor",AdventureArmor.status(v,s));result.put("ironPreparation",AdventureIron.status(s));result.put("ironIngots",v.getInventory().countItem(Items.IRON_INGOT));
+        result.put("villageSupplies",AdventureSupplies.status(s));result.put("ironPickaxePrepared",AdventurePreparation.ironPickaxe(v));
         result.put("nativeActivity",v.level().environmentAttributes().getValue(v.isBaby()
                 ? net.minecraft.world.attribute.EnvironmentAttributes.BABY_VILLAGER_ACTIVITY
                 : net.minecraft.world.attribute.EnvironmentAttributes.VILLAGER_ACTIVITY,v.position()).toString());

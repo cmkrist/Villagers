@@ -1,0 +1,103 @@
+{
+  "milestone": "Bounded practical food questions, source qualification and permitted investigation",
+  "fullGoalStatus": "active; persistent courtship/work agreements, receptive grammar, word formation, childhood teaching and cultural evaluation remain required",
+  "java": {
+    "tests": 636,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "python": {
+    "tests": 19,
+    "passed": true
+  },
+  "automatedCommand": "./tools/test.sh --console=plain",
+  "runtime": "/home/cmkrist/Documents/Villagers/runs/language-questions-v4",
+  "native": {
+    "status": "passed",
+    "ticks": 308,
+    "firstQuestionPeer": "00000000-0000-02c8-0000-000000000001",
+    "witness": "00000000-0000-02c8-0000-000000000001",
+    "provider": "00000000-0000-02c7-0000-000000000021",
+    "questions": 1,
+    "sourceQuestions": 1,
+    "qualifiedLeads": 1,
+    "investigations": 1,
+    "verifications": 1,
+    "receipt": {
+      "item": "minecraft:bread",
+      "receiverAfter": 1,
+      "receiverBefore": 0,
+      "nutrition": 5,
+      "named": false,
+      "giverBefore": 2,
+      "gameTime": 308,
+      "from": "00000000-0000-02c7-0000-000000000021",
+      "to": "00000000-0000-02c9-0000-000000000001",
+      "giverAfter": 1
+    },
+    "fixture": "NEW peaceful stone platform. Declared prior acquaintance: seeker/witness/provider initially share aliases fern=provider and oak=witness; acquisition was tested separately, not claimed here. Seeker starts food8, full health and empty bag. Witness starts full with an empty bag and NoAI to keep its location fixed; control is also stationary. Farther generous provider starts full, with two actual bread in its bag and one additional public held bread. Ordinary production controller, language, food-help, navigation and delivery run for seeker/provider; fixture calls no action adapters. Exhaustion0 is a controlled condition. No post-setup teleport, health, inventory, grammar, belief or reference setters. No existing society opened; no natural emergence or survival-scale claim."
+  },
+  "restart": {
+    "status": "restart-passed",
+    "originalsVerifiedAtLoad": 4
+  },
+  "allOriginalFixtureBodiesAlive": true,
+  "originalBodies": [
+    "00000000-0000-02c9-0000-000000000001",
+    "00000000-0000-02c8-0000-000000000001",
+    "00000000-0000-02c7-0000-000000000021",
+    "00000000-0000-02ca-0000-000000000001"
+  ],
+  "terminals": {
+    "first": {
+      "exitCode": 0,
+      "finishedAtEpoch": 1794431511.8993993
+    },
+    "restart": {
+      "exitCode": 0,
+      "finishedAtEpoch": 1794431518.8245544
+    }
+  },
+  "artifactPins": {
+    "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+    "mods/villagers-0.4.1-dev.jar": "fd61358619c07d93aaa096636743f009a0942c12039eb16865f15a7479a16ff7",
+    "mods/language-probe.jar": "2f5ebd8da9f7d7dc3e7e808a5ec580fd8b6f9cbcc98a7c5027f8a4cacda95891"
+  },
+  "sourceArchiveSha256": "ffaf54b3757bfdaecb982ae233f5c3d1f63dfbf585b4d7b4b7b5d5e320f2e59b",
+  "productionJarSha256": "fd61358619c07d93aaa096636743f009a0942c12039eb16865f15a7479a16ff7",
+  "matchesCurrentBuildAtCapture": true,
+  "goalSourcesMatchExecutedSnapshot": {
+    "src/main/java/local/villagers/FoodHelp.java": true,
+    "src/main/java/local/villagers/FoodQuestions.java": true,
+    "src/main/java/local/villagers/FoodInventory.java": true,
+    "src/main/java/local/villagers/Speech.java": true,
+    "src/main/java/local/villagers/Session.java": true,
+    "src/main/java/local/villagers/VillagerController.java": true,
+    "src/main/java/local/villagers/language/Concept.java": true,
+    "src/main/java/local/villagers/language/Clause.java": true,
+    "src/main/java/local/villagers/language/Dialogue.java": true,
+    "src/main/java/local/villagers/language/Sentence.java": true,
+    "src/main/java/local/villagers/language/Lexicon.java": true,
+    "src/main/java/local/villagers/language/PracticalQuestions.java": true,
+    "src/main/java/local/villagers/mind/AgentMind.java": true,
+    "src/main/java/local/villagers/mind/Beliefs.java": true,
+    "src/test/java/local/villagers/language/PracticalQuestionsTest.java": true,
+    "src/test/java/local/villagers/mind/BeliefsTest.java": true,
+    "src/test/java/local/villagers/mind/LanguagePersistenceTest.java": true,
+    "src/test/java/local/villagers/FoodInventoryTest.java": true,
+    "tools/tests/java/local/villagers/QuestionServerProbe.java": true
+  },
+  "priorSuccessfulRuntimeAttempts": [
+    "language-questions-v1",
+    "language-questions-v2",
+    "language-questions-v3"
+  ],
+  "limitations": [
+    "Controlled peaceful platform, prior acquaintances, stationary witness/control and exhaustion0 are declared conditions",
+    "Production controller runs for seeker/provider; no post-setup fixture action-adapter calls or inventory/body/memory setters",
+    "Native evidence covers WHO FOOD plus SOURCE and direct-witness investigation; WHERE FOOD and multi-hop source chains are unit-tested, not demonstrated as autonomous native policies",
+    "Source identity/recency and confidence are fallible bounded heuristics, not calibrated truth or a global social-network cycle detector",
+    "No visual-client UX, natural emergence, survival scaling or existing-society advancement claimed"
+  ]
+}

@@ -1,0 +1,4487 @@
+{
+  "status": "passed",
+  "ticks": 840,
+  "initiallyUnknown": true,
+  "introductions": 4,
+  "placeNamings": 3,
+  "namedPersonStatement": {
+    "intended": [
+      {
+        "subject": "PERSON",
+        "verb": "HAVE",
+        "object": "FOOD",
+        "negated": false,
+        "past": false,
+        "subjectReference": {
+          "word": "ember",
+          "target": {
+            "kind": "PERSON",
+            "person": "00000000-0000-0259-0000-000000000001"
+          }
+        }
+      }
+    ],
+    "sounds": [
+      "ember",
+      "nimur",
+      "sasur"
+    ]
+  },
+  "namedPlaceStatement": {
+    "intended": [
+      {
+        "subject": "PLACE",
+        "verb": "IS",
+        "object": "BED",
+        "negated": false,
+        "past": false,
+        "subjectReference": {
+          "word": "zige",
+          "target": {
+            "kind": "PLACE",
+            "place": {
+              "dimension": "minecraft:overworld",
+              "x": 5,
+              "y": 81,
+              "z": 7
+            }
+          }
+        }
+      }
+    ],
+    "sounds": [
+      "zige",
+      "daku",
+      "bemo"
+    ]
+  },
+  "unexposedControlStayedUnknown": true,
+  "trace": [
+    {
+      "listenerNames": {
+        "entries": [
+          {
+            "word": "ember",
+            "target": {
+              "kind": "PERSON",
+              "person": "00000000-0000-0259-0000-000000000001"
+            },
+            "observations": 1,
+            "lastSeen": 40
+          },
+          {
+            "word": "zige",
+            "target": {
+              "kind": "PLACE",
+              "place": {
+                "dimension": "minecraft:overworld",
+                "x": 5,
+                "y": 81,
+                "z": 7
+              }
+            },
+            "observations": 1,
+            "lastSeen": 40
+          },
+          {
+            "word": "clover",
+            "target": {
+              "kind": "PERSON",
+              "person": "00000000-0000-0259-0000-000000000003"
+            },
+            "observations": 3,
+            "lastSeen": 41
+          }
+        ]
+      },
+      "placeClaim": false,
+      "placeNamings": 1,
+      "tick": 100,
+      "introductions": 1,
+      "personClaim": false
+    },
+    {
+      "listenerNames": {
+        "entries": [
+          {
+            "word": "ember",
+            "target": {
+              "kind": "PERSON",
+              "person": "00000000-0000-0259-0000-000000000001"
+            },
+            "observations": 1,
+            "lastSeen": 40
+          },
+          {
+            "word": "zige",
+            "target": {
+              "kind": "PLACE",
+              "place": {
+                "dimension": "minecraft:overworld",
+                "x": 5,
+                "y": 81,
+                "z": 7
+              }
+            },
+            "observations": 1,
+            "lastSeen": 40
+          },
+          {
+            "word": "clover",
+            "target": {
+              "kind": "PERSON",
+              "person": "00000000-0000-0259-0000-000000000003"
+            },
+            "observations": 3,
+            "lastSeen": 41
+          }
+        ]
+      },
+      "placeClaim": false,
+      "placeNamings": 1,
+      "tick": 200,
+      "introductions": 1,
+      "personClaim": false
+    },
+    {
+      "listenerNames": {
+        "entries": [
+          {
+            "word": "clover",
+            "target": {
+              "kind": "PERSON",
+              "person": "00000000-0000-0259-0000-000000000003"
+            },
+            "observations": 3,
+            "lastSeen": 41
+          },
+          {
+            "word": "ember",
+            "target": {
+              "kind": "PERSON",
+              "person": "00000000-0000-0259-0000-000000000001"
+            },
+            "observations": 2,
+            "lastSeen": 240
+          },
+          {
+            "word": "zige",
+            "target": {
+              "kind": "PLACE",
+              "place": {
+                "dimension": "minecraft:overworld",
+                "x": 5,
+                "y": 81,
+                "z": 7
+              }
+            },
+            "observations": 2,
+            "lastSeen": 240
+          }
+        ]
+      },
+      "placeClaim": false,
+      "placeNamings": 2,
+      "tick": 300,
+      "introductions": 2,
+      "personClaim": false
+    },
+    {
+      "listenerNames": {
+        "entries": [
+          {
+            "word": "clover",
+            "target": {
+              "kind": "PERSON",
+              "person": "00000000-0000-0259-0000-000000000003"
+            },
+            "observations": 3,
+            "lastSeen": 41
+          },
+          {
+            "word": "ember",
+            "target": {
+              "kind": "PERSON",
+              "person": "00000000-0000-0259-0000-000000000001"
+            },
+            "observations": 2,
+            "lastSeen": 240
+          },
+          {
+            "word": "zige",
+            "target": {
+              "kind": "PLACE",
+              "place": {
+                "dimension": "minecraft:overworld",
+                "x": 5,
+                "y": 81,
+                "z": 7
+              }
+            },
+            "observations": 2,
+            "lastSeen": 240
+          }
+        ]
+      },
+      "placeClaim": false,
+      "placeNamings": 2,
+      "tick": 400,
+      "introductions": 2,
+      "personClaim": false
+    },
+    {
+      "listenerNames": {
+        "entries": [
+          {
+            "word": "clover",
+            "target": {
+              "kind": "PERSON",
+              "person": "00000000-0000-0259-0000-000000000003"
+            },
+            "observations": 3,
+            "lastSeen": 41
+          },
+          {
+            "word": "ember",
+            "target": {
+              "kind": "PERSON",
+              "person": "00000000-0000-0259-0000-000000000001"
+            },
+            "observations": 2,
+            "lastSeen": 240
+          },
+          {
+            "word": "zige",
+            "target": {
+              "kind": "PLACE",
+              "place": {
+                "dimension": "minecraft:overworld",
+                "x": 5,
+                "y": 81,
+                "z": 7
+              }
+            },
+            "observations": 2,
+            "lastSeen": 240
+          }
+        ]
+      },
+      "placeClaim": false,
+      "placeNamings": 2,
+      "tick": 500,
+      "introductions": 2,
+      "personClaim": false
+    },
+    {
+      "listenerNames": {
+        "entries": [
+          {
+            "word": "clover",
+            "target": {
+              "kind": "PERSON",
+              "person": "00000000-0000-0259-0000-000000000003"
+            },
+            "observations": 3,
+            "lastSeen": 41
+          },
+          {
+            "word": "zige",
+            "target": {
+              "kind": "PLACE",
+              "place": {
+                "dimension": "minecraft:overworld",
+                "x": 5,
+                "y": 81,
+                "z": 7
+              }
+            },
+            "observations": 2,
+            "lastSeen": 240
+          },
+          {
+            "word": "ember",
+            "target": {
+              "kind": "PERSON",
+              "person": "00000000-0000-0259-0000-000000000001"
+            },
+            "observations": 3,
+            "lastSeen": 520
+          }
+        ]
+      },
+      "placeClaim": false,
+      "placeNamings": 2,
+      "tick": 600,
+      "introductions": 3,
+      "personClaim": false
+    },
+    {
+      "listenerNames": {
+        "entries": [
+          {
+            "word": "clover",
+            "target": {
+              "kind": "PERSON",
+              "person": "00000000-0000-0259-0000-000000000003"
+            },
+            "observations": 3,
+            "lastSeen": 41
+          },
+          {
+            "word": "zige",
+            "target": {
+              "kind": "PLACE",
+              "place": {
+                "dimension": "minecraft:overworld",
+                "x": 5,
+                "y": 81,
+                "z": 7
+              }
+            },
+            "observations": 2,
+            "lastSeen": 240
+          },
+          {
+            "word": "ember",
+            "target": {
+              "kind": "PERSON",
+              "person": "00000000-0000-0259-0000-000000000001"
+            },
+            "observations": 3,
+            "lastSeen": 520
+          }
+        ]
+      },
+      "placeClaim": false,
+      "placeNamings": 2,
+      "tick": 700,
+      "introductions": 3,
+      "personClaim": false
+    },
+    {
+      "listenerNames": {
+        "entries": [
+          {
+            "word": "clover",
+            "target": {
+              "kind": "PERSON",
+              "person": "00000000-0000-0259-0000-000000000003"
+            },
+            "observations": 3,
+            "lastSeen": 41
+          },
+          {
+            "word": "zige",
+            "target": {
+              "kind": "PLACE",
+              "place": {
+                "dimension": "minecraft:overworld",
+                "x": 5,
+                "y": 81,
+                "z": 7
+              }
+            },
+            "observations": 2,
+            "lastSeen": 240
+          },
+          {
+            "word": "ember",
+            "target": {
+              "kind": "PERSON",
+              "person": "00000000-0000-0259-0000-000000000001"
+            },
+            "observations": 4,
+            "lastSeen": 720
+          }
+        ]
+      },
+      "placeClaim": false,
+      "placeNamings": 2,
+      "tick": 800,
+      "introductions": 4,
+      "personClaim": false
+    }
+  ],
+  "minds": {
+    "00000000-0000-0259-0000-000000000001": {
+      "schemaVersion": 12,
+      "id": "00000000-0000-0259-0000-000000000001",
+      "name": "Ember-0000",
+      "personality": {
+        "boldness": 0.3199537126450095,
+        "sociability": 0.3602035807523436,
+        "curiosity": 0.5091455825950154
+      },
+      "hunger": 0.2,
+      "fatigue": 0.12496874999999948,
+      "loneliness": 0.22853571428571462,
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": 5,
+        "y": 81,
+        "z": 6
+      },
+      "learningUpdates": 7,
+      "values": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "visits": [
+        [
+          0,
+          0,
+          0,
+          7,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "memories": [
+        {
+          "index": 1,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 2,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 2,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at 2, 81, 11"
+        },
+        {
+          "index": 3,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 3,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at 6, 81, 11"
+        },
+        {
+          "index": 4,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 4,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at 8, 81, 13"
+        },
+        {
+          "index": 5,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 6,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 7,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        }
+      ],
+      "impressions": [],
+      "episodes": [
+        {
+          "id": 0,
+          "kind": "CLAIMED_BED",
+          "tick": 40,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": 5,
+            "y": 81,
+            "z": 6
+          },
+          "knownBy": []
+        }
+      ],
+      "nextEpisodeId": 1,
+      "genome": {
+        "traitGenes": [
+          {
+            "gene": "COURAGE",
+            "first": "NEUTRAL",
+            "second": "FIRST"
+          },
+          {
+            "gene": "GENEROSITY",
+            "first": "NEUTRAL",
+            "second": "SECOND"
+          },
+          {
+            "gene": "SOCIABILITY",
+            "first": "FIRST",
+            "second": "SECOND"
+          },
+          {
+            "gene": "APPETITE",
+            "first": "SECOND",
+            "second": "NEUTRAL"
+          },
+          {
+            "gene": "INDUSTRY",
+            "first": "NEUTRAL",
+            "second": "SECOND"
+          }
+        ],
+        "tendencyGenes": [
+          {
+            "tendency": "BOLDNESS",
+            "first": [
+              0.3964798619718262,
+              0.5474527771101938,
+              0.5530160182334509,
+              0.5205451007988899
+            ],
+            "second": [
+              0.24342756331819276,
+              0.09245464817982524,
+              0.086891407056568,
+              0.11936232449112905
+            ]
+          },
+          {
+            "tendency": "SOCIABILITY",
+            "first": [
+              0.4227157136771602,
+              0.6190929178495312,
+              0.39068526952914273,
+              0.5410309642980944
+            ],
+            "second": [
+              0.297691447827527,
+              0.1013142436551559,
+              0.32972189197554447,
+              0.1793761972065928
+            ]
+          },
+          {
+            "tendency": "CURIOSITY",
+            "first": [
+              0.9498677877720751,
+              0.7602985678982472,
+              0.7393769382719577,
+              0.8568635245037504
+            ],
+            "second": [
+              0.06842337741795568,
+              0.2579925972917836,
+              0.2789142269180731,
+              0.16142764068628052
+            ]
+          },
+          {
+            "tendency": "APPETITE",
+            "first": [
+              0.4653601059825701,
+              0.3968588920624639,
+              0.5403646193530421,
+              0.44854679373203277
+            ],
+            "second": [
+              0.22757943095550343,
+              0.29608064487560964,
+              0.1525749175850314,
+              0.2443927432060408
+            ]
+          },
+          {
+            "tendency": "FERTILITY",
+            "first": [
+              0.8448772460025319,
+              0.734782834092976,
+              0.8773300489762131,
+              0.7625997621756877
+            ],
+            "second": [
+              0.5465570952664373,
+              0.6566515071759932,
+              0.514104292292756,
+              0.6288345790932814
+            ]
+          }
+        ]
+      },
+      "food": {
+        "foodLevel": 16,
+        "saturation": 5.0,
+        "exhaustion": 2.5406632,
+        "timer": 0
+      },
+      "ageTicks": 799,
+      "lexicon": {
+        "entries": [
+          {
+            "concept": "HELLO",
+            "word": "vuzefam",
+            "strength": 1.0
+          },
+          {
+            "concept": "YES",
+            "word": "na",
+            "strength": 1.0
+          },
+          {
+            "concept": "NO",
+            "word": "kivut",
+            "strength": 1.0
+          },
+          {
+            "concept": "THANKS",
+            "word": "taso",
+            "strength": 1.0
+          },
+          {
+            "concept": "WANT",
+            "word": "ketik",
+            "strength": 1.0
+          },
+          {
+            "concept": "TRADE",
+            "word": "za",
+            "strength": 1.0
+          },
+          {
+            "concept": "FOOD",
+            "word": "sasur",
+            "strength": 1.0
+          },
+          {
+            "concept": "BED",
+            "word": "bemo",
+            "strength": 1.0
+          },
+          {
+            "concept": "FRIEND",
+            "word": "pozake",
+            "strength": 1.0
+          },
+          {
+            "concept": "WALK",
+            "word": "lub",
+            "strength": 1.0
+          },
+          {
+            "concept": "DANGER",
+            "word": "ser",
+            "strength": 1.0
+          },
+          {
+            "concept": "MONSTER",
+            "word": "vesuk",
+            "strength": 1.0
+          },
+          {
+            "concept": "HURT",
+            "word": "mi",
+            "strength": 1.0
+          },
+          {
+            "concept": "HUNGRY",
+            "word": "fu",
+            "strength": 1.0
+          },
+          {
+            "concept": "TIRED",
+            "word": "ba",
+            "strength": 1.0
+          },
+          {
+            "concept": "LONELY",
+            "word": "pi",
+            "strength": 1.0
+          },
+          {
+            "concept": "HAPPY",
+            "word": "rusigis",
+            "strength": 1.0
+          },
+          {
+            "concept": "AFRAID",
+            "word": "ru",
+            "strength": 1.0
+          },
+          {
+            "concept": "EMERALD",
+            "word": "zid",
+            "strength": 1.0
+          },
+          {
+            "concept": "BREAD",
+            "word": "vig",
+            "strength": 1.0
+          },
+          {
+            "concept": "WHEAT",
+            "word": "livise",
+            "strength": 1.0
+          },
+          {
+            "concept": "CARROT",
+            "word": "kava",
+            "strength": 1.0
+          },
+          {
+            "concept": "POTATO",
+            "word": "didu",
+            "strength": 1.0
+          },
+          {
+            "concept": "BEETROOT",
+            "word": "tega",
+            "strength": 1.0
+          },
+          {
+            "concept": "SEEDS",
+            "word": "dadobu",
+            "strength": 1.0
+          },
+          {
+            "concept": "HOE",
+            "word": "pilu",
+            "strength": 1.0
+          },
+          {
+            "concept": "SWORD",
+            "word": "ki",
+            "strength": 1.0
+          },
+          {
+            "concept": "WOOD",
+            "word": "sabo",
+            "strength": 1.0
+          },
+          {
+            "concept": "I",
+            "word": "sug",
+            "strength": 1.0
+          },
+          {
+            "concept": "YOU",
+            "word": "lo",
+            "strength": 1.0
+          },
+          {
+            "concept": "IS",
+            "word": "daku",
+            "strength": 1.0
+          },
+          {
+            "concept": "SEE",
+            "word": "lis",
+            "strength": 1.0
+          },
+          {
+            "concept": "SAY",
+            "word": "tun",
+            "strength": 1.0
+          },
+          {
+            "concept": "GIVE",
+            "word": "zute",
+            "strength": 1.0
+          },
+          {
+            "concept": "NOT",
+            "word": "kebuf",
+            "strength": 1.0
+          },
+          {
+            "concept": "PAST",
+            "word": "dunaf",
+            "strength": 1.0
+          },
+          {
+            "concept": "HAVE",
+            "word": "nimur",
+            "strength": 1.0
+          },
+          {
+            "concept": "LIKE",
+            "word": "muzu",
+            "strength": 1.0
+          },
+          {
+            "concept": "ASK",
+            "word": "vuke",
+            "strength": 1.0
+          },
+          {
+            "concept": "PROMISE",
+            "word": "zag",
+            "strength": 1.0
+          },
+          {
+            "concept": "MEET",
+            "word": "zoki",
+            "strength": 1.0
+          },
+          {
+            "concept": "AGAIN",
+            "word": "nunome",
+            "strength": 1.0
+          },
+          {
+            "concept": "PERSON",
+            "word": "fen",
+            "strength": 1.0
+          },
+          {
+            "concept": "PLACE",
+            "word": "ta",
+            "strength": 1.0
+          },
+          {
+            "concept": "NAMED",
+            "word": "sero",
+            "strength": 1.0
+          },
+          {
+            "concept": "HERE",
+            "word": "dubof",
+            "strength": 1.0
+          }
+        ],
+        "evidence": [],
+        "developing": false,
+        "grammar": {
+          "evidence": [
+            6,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "speakingOrder": "SVO",
+          "constructions": []
+        },
+        "referents": {
+          "entries": [
+            {
+              "word": "ember",
+              "target": {
+                "kind": "PERSON",
+                "person": "00000000-0000-0259-0000-000000000001"
+              },
+              "observations": 3,
+              "lastSeen": 40
+            },
+            {
+              "word": "zige",
+              "target": {
+                "kind": "PLACE",
+                "place": {
+                  "dimension": "minecraft:overworld",
+                  "x": 5,
+                  "y": 81,
+                  "z": 7
+                }
+              },
+              "observations": 3,
+              "lastSeen": 840
+            }
+          ]
+        }
+      },
+      "opinions": {
+        "known": []
+      },
+      "experience": {
+        "boldness": 0.006,
+        "sociability": 0.0,
+        "curiosity": 0.012
+      },
+      "nextBreedingAt": 0,
+      "originBiome": "minecraft:plains",
+      "beliefs": {
+        "entries": [
+          {
+            "claim": {
+              "subject": "00000000-0000-0259-0000-000000000003",
+              "verb": "IS",
+              "object": "TIRED",
+              "negated": false,
+              "past": false
+            },
+            "source": "00000000-0000-0259-0000-000000000003",
+            "evidence": "HEARD",
+            "confidence": 0.4,
+            "tick": 41,
+            "expires": 2441
+          },
+          {
+            "claim": {
+              "subject": "00000000-0000-0259-0000-000000000003",
+              "verb": "IS",
+              "object": "WALK",
+              "negated": false,
+              "past": false
+            },
+            "source": "00000000-0000-0259-0000-000000000003",
+            "evidence": "HEARD",
+            "confidence": 0.4,
+            "tick": 747,
+            "expires": 3147
+          },
+          {
+            "claim": {
+              "subject": "00000000-0000-0259-0000-000000000002",
+              "verb": "IS",
+              "object": "WALK",
+              "negated": false,
+              "past": false
+            },
+            "source": "00000000-0000-0259-0000-000000000002",
+            "evidence": "HEARD",
+            "confidence": 0.4,
+            "tick": 818,
+            "expires": 3218
+          },
+          {
+            "claim": {
+              "subject": "00000000-0000-0259-0000-000000000001",
+              "verb": "HAVE",
+              "object": "FOOD",
+              "negated": false,
+              "past": false
+            },
+            "source": "00000000-0000-0259-0000-000000000002",
+            "evidence": "HEARD",
+            "confidence": 0.4,
+            "tick": 840,
+            "expires": 1440
+          },
+          {
+            "claim": {
+              "verb": "IS",
+              "object": "BED",
+              "negated": false,
+              "past": false,
+              "subjectPlace": {
+                "dimension": "minecraft:overworld",
+                "x": 5,
+                "y": 81,
+                "z": 7
+              }
+            },
+            "source": "00000000-0000-0259-0000-000000000002",
+            "evidence": "HEARD",
+            "confidence": 0.4,
+            "tick": 840,
+            "expires": 3240
+          }
+        ]
+      }
+    },
+    "00000000-0000-0259-0000-000000000002": {
+      "schemaVersion": 12,
+      "id": "00000000-0000-0259-0000-000000000002",
+      "name": "Willow-0000",
+      "personality": {
+        "boldness": 0.09241093333833883,
+        "sociability": 0.5670787570462624,
+        "curiosity": 0.21333966681655459
+      },
+      "hunger": 0.2,
+      "fatigue": 0.005625000000000001,
+      "loneliness": 0.22850000000000034,
+      "learningUpdates": 6,
+      "values": [
+        [
+          0.0,
+          0.058406249999999826,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "visits": [
+        [
+          0,
+          1,
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "memories": [
+        {
+          "index": 1,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 2,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 3,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 4,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 4,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at 2, 81, 3"
+        },
+        {
+          "index": 5,
+          "action": "REST",
+          "context": 0,
+          "reward": 0.2336249999999993,
+          "note": "Observed outcome of REST"
+        },
+        {
+          "index": 5,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed REST at 2, 81, 3"
+        },
+        {
+          "index": 6,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        }
+      ],
+      "impressions": [],
+      "episodes": [],
+      "nextEpisodeId": 0,
+      "genome": {
+        "traitGenes": [
+          {
+            "gene": "COURAGE",
+            "first": "NEUTRAL",
+            "second": "FIRST"
+          },
+          {
+            "gene": "GENEROSITY",
+            "first": "FIRST",
+            "second": "NEUTRAL"
+          },
+          {
+            "gene": "SOCIABILITY",
+            "first": "NEUTRAL",
+            "second": "NEUTRAL"
+          },
+          {
+            "gene": "APPETITE",
+            "first": "NEUTRAL",
+            "second": "NEUTRAL"
+          },
+          {
+            "gene": "INDUSTRY",
+            "first": "NEUTRAL",
+            "second": "SECOND"
+          }
+        ],
+        "tendencyGenes": [
+          {
+            "tendency": "BOLDNESS",
+            "first": [
+              0.1032191730616178,
+              0.13791560339975842,
+              0.14609888241671215,
+              0.10568976240118243
+            ],
+            "second": [
+              0.08160269361505985,
+              0.04690626327691924,
+              0.03872298425996552,
+              0.07913210427549523
+            ]
+          },
+          {
+            "tendency": "SOCIABILITY",
+            "first": [
+              0.8287014376565209,
+              0.9621980029992725,
+              0.796189978183489,
+              0.9871915359699031
+            ],
+            "second": [
+              0.3054560764360039,
+              0.1719595110932523,
+              0.33796753590903583,
+              0.1469659781226218
+            ]
+          },
+          {
+            "tendency": "CURIOSITY",
+            "first": [
+              0.41184403506069256,
+              0.24495970452115032,
+              0.37650543724395336,
+              0.2966271062032956
+            ],
+            "second": [
+              0.014835298572416583,
+              0.18171962911195885,
+              0.050173896389155814,
+              0.1300522274298136
+            ]
+          },
+          {
+            "tendency": "APPETITE",
+            "first": [
+              0.8404602465739657,
+              0.7210590284761766,
+              0.7345371128482421,
+              0.7642052482119187
+            ],
+            "second": [
+              0.4454522738280102,
+              0.5648534919257993,
+              0.5513754075537338,
+              0.5217072721900572
+            ]
+          },
+          {
+            "tendency": "FERTILITY",
+            "first": [
+              0.45821605713034097,
+              0.44048909948472015,
+              0.8542811930460157,
+              0.769113297333267
+            ],
+            "second": [
+              0.417042446312884,
+              0.43476940395850483,
+              0.020977310397209237,
+              0.10614520610995787
+            ]
+          }
+        ]
+      },
+      "food": {
+        "foodLevel": 16,
+        "saturation": 5.0,
+        "exhaustion": 2.7740774,
+        "timer": 0
+      },
+      "ageTicks": 798,
+      "lexicon": {
+        "entries": [
+          {
+            "concept": "HELLO",
+            "word": "vuzefam",
+            "strength": 1.0
+          },
+          {
+            "concept": "YES",
+            "word": "na",
+            "strength": 1.0
+          },
+          {
+            "concept": "NO",
+            "word": "kivut",
+            "strength": 1.0
+          },
+          {
+            "concept": "THANKS",
+            "word": "taso",
+            "strength": 1.0
+          },
+          {
+            "concept": "WANT",
+            "word": "ketik",
+            "strength": 1.0
+          },
+          {
+            "concept": "TRADE",
+            "word": "za",
+            "strength": 1.0
+          },
+          {
+            "concept": "FOOD",
+            "word": "sasur",
+            "strength": 1.0
+          },
+          {
+            "concept": "BED",
+            "word": "bemo",
+            "strength": 1.0
+          },
+          {
+            "concept": "FRIEND",
+            "word": "pozake",
+            "strength": 1.0
+          },
+          {
+            "concept": "WALK",
+            "word": "lub",
+            "strength": 1.0
+          },
+          {
+            "concept": "DANGER",
+            "word": "ser",
+            "strength": 1.0
+          },
+          {
+            "concept": "MONSTER",
+            "word": "vesuk",
+            "strength": 1.0
+          },
+          {
+            "concept": "HURT",
+            "word": "mi",
+            "strength": 1.0
+          },
+          {
+            "concept": "HUNGRY",
+            "word": "fu",
+            "strength": 1.0
+          },
+          {
+            "concept": "TIRED",
+            "word": "ba",
+            "strength": 1.0
+          },
+          {
+            "concept": "LONELY",
+            "word": "pi",
+            "strength": 1.0
+          },
+          {
+            "concept": "HAPPY",
+            "word": "rusigis",
+            "strength": 1.0
+          },
+          {
+            "concept": "AFRAID",
+            "word": "ru",
+            "strength": 1.0
+          },
+          {
+            "concept": "EMERALD",
+            "word": "zid",
+            "strength": 1.0
+          },
+          {
+            "concept": "BREAD",
+            "word": "vig",
+            "strength": 1.0
+          },
+          {
+            "concept": "WHEAT",
+            "word": "livise",
+            "strength": 1.0
+          },
+          {
+            "concept": "CARROT",
+            "word": "kava",
+            "strength": 1.0
+          },
+          {
+            "concept": "POTATO",
+            "word": "didu",
+            "strength": 1.0
+          },
+          {
+            "concept": "BEETROOT",
+            "word": "tega",
+            "strength": 1.0
+          },
+          {
+            "concept": "SEEDS",
+            "word": "dadobu",
+            "strength": 1.0
+          },
+          {
+            "concept": "HOE",
+            "word": "pilu",
+            "strength": 1.0
+          },
+          {
+            "concept": "SWORD",
+            "word": "ki",
+            "strength": 1.0
+          },
+          {
+            "concept": "WOOD",
+            "word": "sabo",
+            "strength": 1.0
+          },
+          {
+            "concept": "I",
+            "word": "sug",
+            "strength": 1.0
+          },
+          {
+            "concept": "YOU",
+            "word": "lo",
+            "strength": 1.0
+          },
+          {
+            "concept": "IS",
+            "word": "daku",
+            "strength": 1.0
+          },
+          {
+            "concept": "SEE",
+            "word": "lis",
+            "strength": 1.0
+          },
+          {
+            "concept": "SAY",
+            "word": "tun",
+            "strength": 1.0
+          },
+          {
+            "concept": "GIVE",
+            "word": "zute",
+            "strength": 1.0
+          },
+          {
+            "concept": "NOT",
+            "word": "kebuf",
+            "strength": 1.0
+          },
+          {
+            "concept": "PAST",
+            "word": "dunaf",
+            "strength": 1.0
+          },
+          {
+            "concept": "HAVE",
+            "word": "nimur",
+            "strength": 1.0
+          },
+          {
+            "concept": "LIKE",
+            "word": "muzu",
+            "strength": 1.0
+          },
+          {
+            "concept": "ASK",
+            "word": "vuke",
+            "strength": 1.0
+          },
+          {
+            "concept": "PROMISE",
+            "word": "zag",
+            "strength": 1.0
+          },
+          {
+            "concept": "MEET",
+            "word": "zoki",
+            "strength": 1.0
+          },
+          {
+            "concept": "AGAIN",
+            "word": "nunome",
+            "strength": 1.0
+          },
+          {
+            "concept": "PERSON",
+            "word": "fen",
+            "strength": 1.0
+          },
+          {
+            "concept": "PLACE",
+            "word": "ta",
+            "strength": 1.0
+          },
+          {
+            "concept": "NAMED",
+            "word": "sero",
+            "strength": 1.0
+          },
+          {
+            "concept": "HERE",
+            "word": "dubof",
+            "strength": 1.0
+          }
+        ],
+        "evidence": [
+          {
+            "word": "sug",
+            "heard": 2,
+            "meanings": [
+              {
+                "concept": "I",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "word": "lub",
+            "heard": 2,
+            "meanings": [
+              {
+                "concept": "BREAD",
+                "count": 2
+              },
+              {
+                "concept": "SEE",
+                "count": 2
+              }
+            ]
+          }
+        ],
+        "developing": false,
+        "grammar": {
+          "evidence": [
+            6,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "speakingOrder": "SVO",
+          "constructions": []
+        },
+        "referents": {
+          "entries": [
+            {
+              "word": "willow",
+              "target": {
+                "kind": "PERSON",
+                "person": "00000000-0000-0259-0000-000000000002"
+              },
+              "observations": 3,
+              "lastSeen": 40
+            },
+            {
+              "word": "zige",
+              "target": {
+                "kind": "PLACE",
+                "place": {
+                  "dimension": "minecraft:overworld",
+                  "x": 5,
+                  "y": 81,
+                  "z": 7
+                }
+              },
+              "observations": 3,
+              "lastSeen": 40
+            },
+            {
+              "word": "ember",
+              "target": {
+                "kind": "PERSON",
+                "person": "00000000-0000-0259-0000-000000000001"
+              },
+              "observations": 4,
+              "lastSeen": 720
+            }
+          ]
+        }
+      },
+      "opinions": {
+        "known": []
+      },
+      "experience": {
+        "boldness": 0.002,
+        "sociability": 0.0,
+        "curiosity": 0.004
+      },
+      "nextBreedingAt": 0,
+      "originBiome": "minecraft:plains",
+      "beliefs": {
+        "entries": [
+          {
+            "claim": {
+              "subject": "00000000-0000-0259-0000-000000000003",
+              "verb": "IS",
+              "object": "TIRED",
+              "negated": false,
+              "past": false
+            },
+            "source": "00000000-0000-0259-0000-000000000003",
+            "evidence": "HEARD",
+            "confidence": 0.4,
+            "tick": 41,
+            "expires": 2441
+          },
+          {
+            "claim": {
+              "subject": "00000000-0000-0259-0000-000000000001",
+              "verb": "IS",
+              "object": "WALK",
+              "negated": false,
+              "past": false
+            },
+            "source": "00000000-0000-0259-0000-000000000001",
+            "evidence": "HEARD",
+            "confidence": 0.4,
+            "tick": 659,
+            "expires": 3059
+          },
+          {
+            "claim": {
+              "subject": "00000000-0000-0259-0000-000000000001",
+              "verb": "NAMED",
+              "object": "YOU",
+              "objectPerson": "00000000-0000-0259-0000-000000000001",
+              "negated": false,
+              "past": false
+            },
+            "source": "00000000-0000-0259-0000-000000000001",
+            "evidence": "HEARD",
+            "confidence": 0.4,
+            "tick": 720,
+            "expires": 3120
+          },
+          {
+            "claim": {
+              "subject": "00000000-0000-0259-0000-000000000003",
+              "verb": "IS",
+              "object": "WALK",
+              "negated": false,
+              "past": false
+            },
+            "source": "00000000-0000-0259-0000-000000000003",
+            "evidence": "HEARD",
+            "confidence": 0.4,
+            "tick": 747,
+            "expires": 3147
+          },
+          {
+            "claim": {
+              "subject": "00000000-0000-0259-0000-000000000001",
+              "verb": "HAVE",
+              "object": "FOOD",
+              "negated": false,
+              "past": false
+            },
+            "source": "00000000-0000-0259-0000-000000000002",
+            "evidence": "OBSERVED",
+            "confidence": 1.0,
+            "tick": 840,
+            "expires": 3240
+          },
+          {
+            "claim": {
+              "verb": "IS",
+              "object": "BED",
+              "negated": false,
+              "past": false,
+              "subjectPlace": {
+                "dimension": "minecraft:overworld",
+                "x": 5,
+                "y": 81,
+                "z": 7
+              }
+            },
+            "source": "00000000-0000-0259-0000-000000000002",
+            "evidence": "OBSERVED",
+            "confidence": 1.0,
+            "tick": 840,
+            "expires": 3240
+          }
+        ]
+      }
+    },
+    "00000000-0000-0259-0000-000000000003": {
+      "schemaVersion": 12,
+      "id": "00000000-0000-0259-0000-000000000003",
+      "name": "Clover-0000",
+      "personality": {
+        "boldness": 0.5015918498397883,
+        "sociability": 0.49812035501418206,
+        "curiosity": 0.6452749770430953
+      },
+      "hunger": 0.2,
+      "fatigue": 0.022187500000000013,
+      "loneliness": 0.22846428571428606,
+      "learningUpdates": 10,
+      "values": [
+        [
+          0.0,
+          0.050015625,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "visits": [
+        [
+          0,
+          1,
+          0,
+          9,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "memories": [
+        {
+          "index": 1,
+          "action": "REST",
+          "context": 0,
+          "reward": 0.2000625,
+          "note": "Observed outcome of REST"
+        },
+        {
+          "index": 1,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed REST at 6, 81, 5"
+        },
+        {
+          "index": 2,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 3,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 4,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 4,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at 10, 81, 2"
+        },
+        {
+          "index": 5,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 6,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 6,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at 5, 81, 3"
+        },
+        {
+          "index": 7,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 7,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at 6, 81, 4"
+        },
+        {
+          "index": 8,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 8,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at 5, 81, 5"
+        },
+        {
+          "index": 9,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 9,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at 5, 81, 11"
+        },
+        {
+          "index": 10,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 10,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at 9, 81, 6"
+        }
+      ],
+      "impressions": [],
+      "episodes": [],
+      "nextEpisodeId": 0,
+      "genome": {
+        "traitGenes": [
+          {
+            "gene": "COURAGE",
+            "first": "NEUTRAL",
+            "second": "NEUTRAL"
+          },
+          {
+            "gene": "GENEROSITY",
+            "first": "NEUTRAL",
+            "second": "NEUTRAL"
+          },
+          {
+            "gene": "SOCIABILITY",
+            "first": "SECOND",
+            "second": "NEUTRAL"
+          },
+          {
+            "gene": "APPETITE",
+            "first": "SECOND",
+            "second": "NEUTRAL"
+          },
+          {
+            "gene": "INDUSTRY",
+            "first": "NEUTRAL",
+            "second": "SECOND"
+          }
+        ],
+        "tendencyGenes": [
+          {
+            "tendency": "BOLDNESS",
+            "first": [
+              0.9973774216109024,
+              0.6380538283555538,
+              0.7176589060163903,
+              0.830764405462806
+            ],
+            "second": [
+              0.005806278068674231,
+              0.36512987132402286,
+              0.2855247936631864,
+              0.17241929421677055
+            ]
+          },
+          {
+            "tendency": "SOCIABILITY",
+            "first": [
+              0.5156003999944428,
+              0.5512361987399439,
+              0.9831996491830806,
+              0.7167022281728327
+            ],
+            "second": [
+              0.48064031003392127,
+              0.4450045112884202,
+              0.013041060845283503,
+              0.27953848185553143
+            ]
+          },
+          {
+            "tendency": "CURIOSITY",
+            "first": [
+              0.9868949615580971,
+              0.9236504475213885,
+              0.666768351109066,
+              0.6709582543939004
+            ],
+            "second": [
+              0.30365499252809364,
+              0.3668995065648022,
+              0.6237816029771247,
+              0.6195916996922902
+            ]
+          },
+          {
+            "tendency": "APPETITE",
+            "first": [
+              0.8909315658050899,
+              0.6739535858616912,
+              0.9785220067552116,
+              0.7165558091943339
+            ],
+            "second": [
+              0.1879539261398594,
+              0.40493190608325813,
+              0.10036348518973764,
+              0.3623296827506154
+            ]
+          },
+          {
+            "tendency": "FERTILITY",
+            "first": [
+              0.8334484366788042,
+              0.9515142685486049,
+              0.7087384122303766,
+              0.7036203929429199
+            ],
+            "second": [
+              0.3256342170177477,
+              0.207568385147947,
+              0.4503442414661753,
+              0.455462260753632
+            ]
+          }
+        ]
+      },
+      "food": {
+        "foodLevel": 16,
+        "saturation": 5.0,
+        "exhaustion": 2.6881003,
+        "timer": 0
+      },
+      "ageTicks": 797,
+      "lexicon": {
+        "entries": [
+          {
+            "concept": "HELLO",
+            "word": "vuzefam",
+            "strength": 1.0
+          },
+          {
+            "concept": "YES",
+            "word": "na",
+            "strength": 1.0
+          },
+          {
+            "concept": "NO",
+            "word": "kivut",
+            "strength": 1.0
+          },
+          {
+            "concept": "THANKS",
+            "word": "taso",
+            "strength": 1.0
+          },
+          {
+            "concept": "WANT",
+            "word": "ketik",
+            "strength": 1.0
+          },
+          {
+            "concept": "TRADE",
+            "word": "za",
+            "strength": 1.0
+          },
+          {
+            "concept": "FOOD",
+            "word": "sasur",
+            "strength": 1.0
+          },
+          {
+            "concept": "BED",
+            "word": "bemo",
+            "strength": 1.0
+          },
+          {
+            "concept": "FRIEND",
+            "word": "pozake",
+            "strength": 1.0
+          },
+          {
+            "concept": "WALK",
+            "word": "lub",
+            "strength": 1.0
+          },
+          {
+            "concept": "DANGER",
+            "word": "ser",
+            "strength": 1.0
+          },
+          {
+            "concept": "MONSTER",
+            "word": "vesuk",
+            "strength": 1.0
+          },
+          {
+            "concept": "HURT",
+            "word": "mi",
+            "strength": 1.0
+          },
+          {
+            "concept": "HUNGRY",
+            "word": "fu",
+            "strength": 1.0
+          },
+          {
+            "concept": "TIRED",
+            "word": "ba",
+            "strength": 1.0
+          },
+          {
+            "concept": "LONELY",
+            "word": "pi",
+            "strength": 1.0
+          },
+          {
+            "concept": "HAPPY",
+            "word": "rusigis",
+            "strength": 1.0
+          },
+          {
+            "concept": "AFRAID",
+            "word": "ru",
+            "strength": 1.0
+          },
+          {
+            "concept": "EMERALD",
+            "word": "zid",
+            "strength": 1.0
+          },
+          {
+            "concept": "BREAD",
+            "word": "vig",
+            "strength": 1.0
+          },
+          {
+            "concept": "WHEAT",
+            "word": "livise",
+            "strength": 1.0
+          },
+          {
+            "concept": "CARROT",
+            "word": "kava",
+            "strength": 1.0
+          },
+          {
+            "concept": "POTATO",
+            "word": "didu",
+            "strength": 1.0
+          },
+          {
+            "concept": "BEETROOT",
+            "word": "tega",
+            "strength": 1.0
+          },
+          {
+            "concept": "SEEDS",
+            "word": "dadobu",
+            "strength": 1.0
+          },
+          {
+            "concept": "HOE",
+            "word": "pilu",
+            "strength": 1.0
+          },
+          {
+            "concept": "SWORD",
+            "word": "ki",
+            "strength": 1.0
+          },
+          {
+            "concept": "WOOD",
+            "word": "sabo",
+            "strength": 1.0
+          },
+          {
+            "concept": "YOU",
+            "word": "lo",
+            "strength": 1.0
+          },
+          {
+            "concept": "IS",
+            "word": "daku",
+            "strength": 1.0
+          },
+          {
+            "concept": "SEE",
+            "word": "lis",
+            "strength": 1.0
+          },
+          {
+            "concept": "SAY",
+            "word": "tun",
+            "strength": 1.0
+          },
+          {
+            "concept": "GIVE",
+            "word": "zute",
+            "strength": 1.0
+          },
+          {
+            "concept": "NOT",
+            "word": "kebuf",
+            "strength": 1.0
+          },
+          {
+            "concept": "PAST",
+            "word": "dunaf",
+            "strength": 1.0
+          },
+          {
+            "concept": "HAVE",
+            "word": "nimur",
+            "strength": 1.0
+          },
+          {
+            "concept": "LIKE",
+            "word": "muzu",
+            "strength": 1.0
+          },
+          {
+            "concept": "ASK",
+            "word": "vuke",
+            "strength": 1.0
+          },
+          {
+            "concept": "PROMISE",
+            "word": "zag",
+            "strength": 1.0
+          },
+          {
+            "concept": "MEET",
+            "word": "zoki",
+            "strength": 1.0
+          },
+          {
+            "concept": "AGAIN",
+            "word": "nunome",
+            "strength": 1.0
+          },
+          {
+            "concept": "PERSON",
+            "word": "fen",
+            "strength": 1.0
+          },
+          {
+            "concept": "PLACE",
+            "word": "ta",
+            "strength": 1.0
+          },
+          {
+            "concept": "NAMED",
+            "word": "sero",
+            "strength": 1.0
+          },
+          {
+            "concept": "HERE",
+            "word": "dubof",
+            "strength": 1.0
+          },
+          {
+            "concept": "I",
+            "word": "sug",
+            "strength": 1.0
+          }
+        ],
+        "evidence": [
+          {
+            "word": "sug",
+            "heard": 3,
+            "meanings": [
+              {
+                "concept": "I",
+                "count": 3
+              }
+            ]
+          },
+          {
+            "word": "lub",
+            "heard": 3,
+            "meanings": [
+              {
+                "concept": "BREAD",
+                "count": 3
+              },
+              {
+                "concept": "SEE",
+                "count": 3
+              }
+            ]
+          }
+        ],
+        "developing": false,
+        "grammar": {
+          "evidence": [
+            6,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "speakingOrder": "SVO",
+          "constructions": []
+        },
+        "referents": {
+          "entries": [
+            {
+              "word": "clover",
+              "target": {
+                "kind": "PERSON",
+                "person": "00000000-0000-0259-0000-000000000003"
+              },
+              "observations": 3,
+              "lastSeen": 41
+            },
+            {
+              "word": "ember",
+              "target": {
+                "kind": "PERSON",
+                "person": "00000000-0000-0259-0000-000000000001"
+              },
+              "observations": 4,
+              "lastSeen": 720
+            },
+            {
+              "word": "zige",
+              "target": {
+                "kind": "PLACE",
+                "place": {
+                  "dimension": "minecraft:overworld",
+                  "x": 5,
+                  "y": 81,
+                  "z": 7
+                }
+              },
+              "observations": 3,
+              "lastSeen": 840
+            }
+          ]
+        }
+      },
+      "opinions": {
+        "known": []
+      },
+      "experience": {
+        "boldness": 0.012,
+        "sociability": 0.0,
+        "curiosity": 0.024
+      },
+      "nextBreedingAt": 0,
+      "originBiome": "minecraft:plains",
+      "beliefs": {
+        "entries": [
+          {
+            "claim": {
+              "subject": "00000000-0000-0259-0000-000000000001",
+              "verb": "IS",
+              "object": "WALK",
+              "negated": false,
+              "past": false
+            },
+            "source": "00000000-0000-0259-0000-000000000001",
+            "evidence": "HEARD",
+            "confidence": 0.4,
+            "tick": 659,
+            "expires": 3059
+          },
+          {
+            "claim": {
+              "subject": "00000000-0000-0259-0000-000000000001",
+              "verb": "NAMED",
+              "object": "YOU",
+              "objectPerson": "00000000-0000-0259-0000-000000000001",
+              "negated": false,
+              "past": false
+            },
+            "source": "00000000-0000-0259-0000-000000000001",
+            "evidence": "HEARD",
+            "confidence": 0.4,
+            "tick": 720,
+            "expires": 3120
+          },
+          {
+            "claim": {
+              "subject": "00000000-0000-0259-0000-000000000002",
+              "verb": "IS",
+              "object": "WALK",
+              "negated": false,
+              "past": false
+            },
+            "source": "00000000-0000-0259-0000-000000000002",
+            "evidence": "HEARD",
+            "confidence": 0.4,
+            "tick": 818,
+            "expires": 3218
+          },
+          {
+            "claim": {
+              "subject": "00000000-0000-0259-0000-000000000001",
+              "verb": "HAVE",
+              "object": "FOOD",
+              "negated": false,
+              "past": false
+            },
+            "source": "00000000-0000-0259-0000-000000000002",
+            "evidence": "HEARD",
+            "confidence": 0.4,
+            "tick": 840,
+            "expires": 1440
+          },
+          {
+            "claim": {
+              "verb": "IS",
+              "object": "BED",
+              "negated": false,
+              "past": false,
+              "subjectPlace": {
+                "dimension": "minecraft:overworld",
+                "x": 5,
+                "y": 81,
+                "z": 7
+              }
+            },
+            "source": "00000000-0000-0259-0000-000000000002",
+            "evidence": "HEARD",
+            "confidence": 0.4,
+            "tick": 840,
+            "expires": 3240
+          }
+        ]
+      }
+    },
+    "00000000-0000-0259-0000-000000000004": {
+      "schemaVersion": 12,
+      "id": "00000000-0000-0259-0000-000000000004",
+      "name": "Sage-0000",
+      "personality": {
+        "boldness": 0.27404907053311767,
+        "sociability": 0.704995546209262,
+        "curiosity": 0.3494690463634733
+      },
+      "hunger": 0.2,
+      "fatigue": 0.12487499999999947,
+      "loneliness": 0.22842857142857176,
+      "learningUpdates": 5,
+      "values": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "visits": [
+        [
+          0,
+          0,
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "memories": [
+        {
+          "index": 1,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 2,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 3,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 4,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 5,
+          "action": "EXPLORE",
+          "context": 0,
+          "reward": 0.0,
+          "note": "Observed outcome of EXPLORE"
+        },
+        {
+          "index": 5,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed EXPLORE at 12, 81, 5"
+        }
+      ],
+      "impressions": [],
+      "episodes": [],
+      "nextEpisodeId": 0,
+      "genome": {
+        "traitGenes": [
+          {
+            "gene": "COURAGE",
+            "first": "NEUTRAL",
+            "second": "FIRST"
+          },
+          {
+            "gene": "GENEROSITY",
+            "first": "NEUTRAL",
+            "second": "SECOND"
+          },
+          {
+            "gene": "SOCIABILITY",
+            "first": "FIRST",
+            "second": "NEUTRAL"
+          },
+          {
+            "gene": "APPETITE",
+            "first": "SECOND",
+            "second": "NEUTRAL"
+          },
+          {
+            "gene": "INDUSTRY",
+            "first": "FIRST",
+            "second": "SECOND"
+          }
+        ],
+        "tendencyGenes": [
+          {
+            "tendency": "BOLDNESS",
+            "first": [
+              0.5070676881159113,
+              0.49442340473070945,
+              0.40167425895900954,
+              0.2858787338566691
+            ],
+            "second": [
+              0.04103045295032401,
+              0.05367473633552586,
+              0.1464238821072258,
+              0.2622194072095662
+            ]
+          },
+          {
+            "tendency": "SOCIABILITY",
+            "first": [
+              0.7108022240857512,
+              0.9259467269273987,
+              0.9591813002166298,
+              0.7522012616346001
+            ],
+            "second": [
+              0.6991888683327727,
+              0.4840443654911253,
+              0.4508097922018941,
+              0.6577898307839238
+            ]
+          },
+          {
+            "tendency": "CURIOSITY",
+            "first": [
+              0.606292669737053,
+              0.4644153238684906,
+              0.6955021256333717,
+              0.4537393877070735
+            ],
+            "second": [
+              0.09264542298989359,
+              0.23452276885845605,
+              0.0034359670935749653,
+              0.24519870501987312
+            ]
+          },
+          {
+            "tendency": "APPETITE",
+            "first": [
+              0.6000296299616441,
+              0.8254633905884988,
+              0.4989754836695358,
+              0.49641074120107853
+            ],
+            "second": [
+              0.32804501349877524,
+              0.10261125287192052,
+              0.42909915979088353,
+              0.4316639022593408
+            ]
+          },
+          {
+            "tendency": "FERTILITY",
+            "first": [
+              0.6587850710392855,
+              0.6710021550296081,
+              0.7031153760857833,
+              0.5914199346275208
+            ],
+            "second": [
+              0.11352848320026215,
+              0.10131139920993953,
+              0.06919817815376422,
+              0.1808936196120268
+            ]
+          }
+        ]
+      },
+      "food": {
+        "foodLevel": 16,
+        "saturation": 5.0,
+        "exhaustion": 2.6247098,
+        "timer": 0
+      },
+      "ageTicks": 796,
+      "lexicon": {
+        "entries": [
+          {
+            "concept": "HELLO",
+            "word": "vuzefam",
+            "strength": 1.0
+          },
+          {
+            "concept": "YES",
+            "word": "na",
+            "strength": 1.0
+          },
+          {
+            "concept": "NO",
+            "word": "kivut",
+            "strength": 1.0
+          },
+          {
+            "concept": "THANKS",
+            "word": "taso",
+            "strength": 1.0
+          },
+          {
+            "concept": "WANT",
+            "word": "ketik",
+            "strength": 1.0
+          },
+          {
+            "concept": "TRADE",
+            "word": "za",
+            "strength": 1.0
+          },
+          {
+            "concept": "FOOD",
+            "word": "sasur",
+            "strength": 1.0
+          },
+          {
+            "concept": "BED",
+            "word": "bemo",
+            "strength": 1.0
+          },
+          {
+            "concept": "FRIEND",
+            "word": "pozake",
+            "strength": 1.0
+          },
+          {
+            "concept": "WALK",
+            "word": "lub",
+            "strength": 1.0
+          },
+          {
+            "concept": "DANGER",
+            "word": "ser",
+            "strength": 1.0
+          },
+          {
+            "concept": "MONSTER",
+            "word": "vesuk",
+            "strength": 1.0
+          },
+          {
+            "concept": "HURT",
+            "word": "mi",
+            "strength": 1.0
+          },
+          {
+            "concept": "HUNGRY",
+            "word": "fu",
+            "strength": 1.0
+          },
+          {
+            "concept": "TIRED",
+            "word": "ba",
+            "strength": 1.0
+          },
+          {
+            "concept": "LONELY",
+            "word": "pi",
+            "strength": 1.0
+          },
+          {
+            "concept": "HAPPY",
+            "word": "rusigis",
+            "strength": 1.0
+          },
+          {
+            "concept": "AFRAID",
+            "word": "ru",
+            "strength": 1.0
+          },
+          {
+            "concept": "EMERALD",
+            "word": "zid",
+            "strength": 1.0
+          },
+          {
+            "concept": "BREAD",
+            "word": "vig",
+            "strength": 1.0
+          },
+          {
+            "concept": "WHEAT",
+            "word": "livise",
+            "strength": 1.0
+          },
+          {
+            "concept": "CARROT",
+            "word": "kava",
+            "strength": 1.0
+          },
+          {
+            "concept": "POTATO",
+            "word": "didu",
+            "strength": 1.0
+          },
+          {
+            "concept": "BEETROOT",
+            "word": "tega",
+            "strength": 1.0
+          },
+          {
+            "concept": "SEEDS",
+            "word": "dadobu",
+            "strength": 1.0
+          },
+          {
+            "concept": "HOE",
+            "word": "pilu",
+            "strength": 1.0
+          },
+          {
+            "concept": "SWORD",
+            "word": "ki",
+            "strength": 1.0
+          },
+          {
+            "concept": "WOOD",
+            "word": "sabo",
+            "strength": 1.0
+          },
+          {
+            "concept": "I",
+            "word": "sug",
+            "strength": 1.0
+          },
+          {
+            "concept": "YOU",
+            "word": "lo",
+            "strength": 1.0
+          },
+          {
+            "concept": "IS",
+            "word": "daku",
+            "strength": 1.0
+          },
+          {
+            "concept": "SEE",
+            "word": "lis",
+            "strength": 1.0
+          },
+          {
+            "concept": "SAY",
+            "word": "tun",
+            "strength": 1.0
+          },
+          {
+            "concept": "GIVE",
+            "word": "zute",
+            "strength": 1.0
+          },
+          {
+            "concept": "NOT",
+            "word": "kebuf",
+            "strength": 1.0
+          },
+          {
+            "concept": "PAST",
+            "word": "dunaf",
+            "strength": 1.0
+          },
+          {
+            "concept": "HAVE",
+            "word": "nimur",
+            "strength": 1.0
+          },
+          {
+            "concept": "LIKE",
+            "word": "muzu",
+            "strength": 1.0
+          },
+          {
+            "concept": "ASK",
+            "word": "vuke",
+            "strength": 1.0
+          },
+          {
+            "concept": "PROMISE",
+            "word": "zag",
+            "strength": 1.0
+          },
+          {
+            "concept": "MEET",
+            "word": "zoki",
+            "strength": 1.0
+          },
+          {
+            "concept": "AGAIN",
+            "word": "nunome",
+            "strength": 1.0
+          },
+          {
+            "concept": "PERSON",
+            "word": "fen",
+            "strength": 1.0
+          },
+          {
+            "concept": "PLACE",
+            "word": "ta",
+            "strength": 1.0
+          },
+          {
+            "concept": "NAMED",
+            "word": "sero",
+            "strength": 1.0
+          },
+          {
+            "concept": "HERE",
+            "word": "dubof",
+            "strength": 1.0
+          }
+        ],
+        "evidence": [],
+        "developing": false,
+        "grammar": {
+          "evidence": [
+            6,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "speakingOrder": "SVO",
+          "constructions": []
+        },
+        "referents": {
+          "entries": [
+            {
+              "word": "sage",
+              "target": {
+                "kind": "PERSON",
+                "person": "00000000-0000-0259-0000-000000000004"
+              },
+              "observations": 3,
+              "lastSeen": 41
+            }
+          ]
+        }
+      },
+      "opinions": {
+        "known": []
+      },
+      "experience": {
+        "boldness": 0.002,
+        "sociability": 0.0,
+        "curiosity": 0.004
+      },
+      "nextBreedingAt": 0,
+      "originBiome": "minecraft:plains",
+      "beliefs": {
+        "entries": []
+      }
+    }
+  },
+  "fixture": "NEW peaceful walled platform with a separate closed control chamber. Four provisioned adults with distinct public name stems, six actual bread each; subject holds one additional actual bread. One existing fixture bed is named by pointing. Controlled introduction/naming opportunities every20ticks obey200tick naming budgets; reported claims obey dialogue budget. No post-setup inventory, body, health, reference-memory, grammar or world setters. Name bindings arise through actual Speech introductions/shared attention, not copied speaker metadata. No source society was opened; no natural emergence, visual UX or survival scaling claim."
+}

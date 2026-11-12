@@ -1,0 +1,1530 @@
+{
+  "requestedNativeTps": 20,
+  "nativeRateVerifiedInObservation": true,
+  "lastObservedNativeTps": 20.0,
+  "observedNativeRates": [
+    20.0
+  ],
+  "exitCode": 0,
+  "wallTimeGuard": false,
+  "oldSaveUnchanged": true,
+  "beforeHumanoids": 192,
+  "afterHumanoids": 192,
+  "missingOriginalIds": [],
+  "newHumanoidIds": [],
+  "managedVillagers": 56,
+  "minManagedHealth": 1.0,
+  "beforeLivingHumanoids": 192,
+  "afterLivingHumanoids": 192,
+  "newlyDeadOrMissingIds": [],
+  "nonlivingAfterIds": [],
+  "combatGuard": "stop after first actual combat hit; normal damage retained",
+  "combatStop": {},
+  "reviewedCombat": {},
+  "stonePickaxeMilestoneRequested": false,
+  "sourceUnchangedDuringRun": true,
+  "nativeIllagerEnrollmentRequested": true,
+  "frozenCareStartupFailure": null,
+  "frozenCareStartupRequested": true,
+  "frozenCareStartup": {
+    "schema": 1,
+    "stage": "resumed",
+    "gameTime": 304508,
+    "expectedGameTime": 304508,
+    "resident": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+    "worker": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+    "bodyBefore": "cb79c23c-9623-45ac-9776-90c0f0a7813e:(-613.6656344598083, 64.0, -612.4454949418018):24.0:false:false:[0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air]:1 minecraft:crossbow:0 minecraft:air",
+    "bodyAfter": "cb79c23c-9623-45ac-9776-90c0f0a7813e:(-613.6656344598083, 64.0, -612.4454949418018):24.0:false:false:[0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air]:1 minecraft:crossbow:0 minecraft:air",
+    "adoption": {
+      "bodyBefore": "cb79c23c-9623-45ac-9776-90c0f0a7813e:(-613.6656344598083, 64.0, -612.4454949418018):24.0:false:false:[0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air]:1 minecraft:crossbow:0 minecraft:air",
+      "id": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "spawnedAdults": 0,
+      "schema": 1,
+      "reference": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+      "selection": "Closest eligible local neighbour with real resource access; contents remain unknown until contact",
+      "bodyAfter": "cb79c23c-9623-45ac-9776-90c0f0a7813e:(-613.6656344598083, 64.0, -612.4454949418018):24.0:false:false:[0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air]:1 minecraft:crossbow:0 minecraft:air",
+      "suppliedItems": 0,
+      "candidates": [
+        {
+          "position": "(-613.6656344598083, 64.0, -612.4454949418018)",
+          "supplyPathNodes": 8,
+          "id": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+          "distanceSquared": 276.681249251354
+        }
+      ],
+      "joinedAt": 304508,
+      "enrolledExisting": 1,
+      "camp": "-175646985019319",
+      "role": "additional existing worker"
+    },
+    "frozenFrames": 28,
+    "error": ""
+  },
+  "nativeWorkerReference": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+  "lastHealthRecovery": true,
+  "requestedSimulationDistance": null,
+  "observedSimulationDistance": 12,
+  "ironIngotsMilestoneRequested": false,
+  "ironPickaxeMilestoneRequested": false,
+  "stoneTierPickaxeOwned": true,
+  "ironIngotsOwned": 0,
+  "ironTierPickaxeOwned": true,
+  "startGameTime": 304508,
+  "endGameTime": 308509,
+  "actualElapsedTicks": 4001,
+  "importantBodies": [
+    {
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "type": "minecraft:villager",
+      "position": [
+        -466.5,
+        64.5625,
+        -376.5
+      ],
+      "health": 20.0,
+      "tags": [
+        "villagers:mine_floor:-129467495710666",
+        "villagers:mine_floor:-128642862002122",
+        "villagers:mine_floor:-128367984082890",
+        "villagers:mine_floor:-128917739904970",
+        "villagers:mine_floor:-128917739921353",
+        "villagers:mine_floor:-127268472479689",
+        "villagers:quarry_failed:-127268472467393:202145",
+        "villagers:mine_floor:-128093106188234",
+        "villagers:mine_floor:-127268472463305",
+        "villagers:mine_floor:-128367984095178",
+        "villagers:mine_floor:-128917739909066",
+        "villagers:stored_furnace_fuel:-126993594548161",
+        "villagers:mine_floor:-127818228281289",
+        "villagers:mine_floor:-128642862010313",
+        "villagers:mine_floor:-128642862010314",
+        "villagers:mine_floor:-128917739913162",
+        "villagers:mine_floor:-128093106192330",
+        "villagers:owned_furnace:-126993594548161:3:3",
+        "villagers:mine_floor:-129467495706570",
+        "villagers:stone_shore:-129742373699521",
+        "villagers:mine_floor:-127268472459204",
+        "villagers:mine_stair:-127818228285384:-131666518978497:EAST:0:0:level:select",
+        "villagers:mine_floor:-128367984091082",
+        "villagers:mine_floor:-128917739917257",
+        "villagers:mine_floor:-127268472475593",
+        "villagers:adventurer",
+        "villagers:mine_floor:-129742373617610",
+        "villagers:mine_floor:-129467495731145",
+        "villagers:workbench:-463,63,-379,minecraft:overworld",
+        "villagers:mine_floor:-127543350382537",
+        "villagers:mine_floor:-128642862014409",
+        "villagers:mine_floor:-129467495727049",
+        "villagers:mine_floor:-129192617824201",
+        "villagers:mine_floor:-129467495722952",
+        "villagers:quarry:-131666518978497:EAST:16",
+        "villagers:native_resident_seen",
+        "villagers:mine_floor:-127818228285385",
+        "villagers:mine_floor:-131116763164612",
+        "villagers:mine_floor:-129467495714762",
+        "villagers:mine_floor:-130292129443781",
+        "villagers:mine_floor:-127268472467401",
+        "villagers:mine_floor:-127543350378441",
+        "villagers:mine_floor:-128093106204617",
+        "villagers:mine_floor:-129467495718858",
+        "villagers:mine_floor:-127818228293577",
+        "villagers:mine_floor:-129742373621706",
+        "villagers:mine_floor:-130841885257669",
+        "villagers:mine_floor:-127268472483785",
+        "villagers:mine_floor:-128642862018505",
+        "villagers:stone_shore:-128917739769793",
+        "villagers:mine_floor:-128917739925449",
+        "villagers:mine_floor:-128093106196426",
+        "villagers:mine_floor:-128093106196425",
+        "villagers:mine_floor:-129192617816009",
+        "villagers:mine_floor:-129192617820106",
+        "villagers:mine_floor:-128093106200521",
+        "villagers:stone_shore:-126168960860097",
+        "villagers:mine_floor:-127543350386633",
+        "villagers:mine_floor:-127818228289481",
+        "villagers:mine_floor:-129742373629895",
+        "villagers:mine_floor:-129192617803722",
+        "villagers:mine_floor:-129742373613514",
+        "villagers:mine_floor:-129467495735241",
+        "villagers:stone_shore:-131391641075649",
+        "villagers:mine_floor:-128367984103369",
+        "villagers:mine_floor:-127543350390729",
+        "villagers:mine_floor:-127818228297673",
+        "villagers:mine_floor:-130017251536838",
+        "villagers:mine_floor:-128642861989834",
+        "villagers:mine_floor:-128642861993930",
+        "villagers:mine_floor:-127268472463299",
+        "villagers:stone_shore:-130567007150017",
+        "villagers:mine_floor:-128642861998026",
+        "villagers:mine_floor:-128093106184138",
+        "villagers:mine_floor:-130567007350725",
+        "villagers:mine_floor:-128367984111561",
+        "villagers:mine_floor:-128367984099274",
+        "villagers:managed",
+        "villagers:quarry_failed:-130567007231937:192849",
+        "villagers:mine_floor:-129192617828297",
+        "villagers:mine_floor:-127268472451014",
+        "villagers:mine_floor:-127268472442824",
+        "villagers:mine_floor:-128367984107465",
+        "villagers:mine_floor:-128917739900874",
+        "villagers:mine_floor:-127818228277193",
+        "villagers:mine_floor:-127268472467394",
+        "villagers:mine_floor:-128367984086986",
+        "villagers:mine_floor:-127268472471497",
+        "villagers:mine_floor:-128917739896778",
+        "villagers:mine_floor:-128642862006218",
+        "villagers:mine_lateral:7",
+        "villagers:mine_floor:-127268472455109",
+        "villagers:mine_floor:-128093106180042",
+        "villagers:mine_floor:-127268472446919",
+        "villagers:mine_floor:-129192617811914",
+        "villagers:mine_floor:-127543350370249",
+        "villagers:mine_floor:-129192617799626",
+        "villagers:mine_entry:-131666518978497",
+        "villagers:mine_floor:-128367984103370",
+        "villagers:mine_floor:-129192617807818",
+        "villagers:mine_floor:-129192617832393"
+      ],
+      "noAI": false,
+      "invulnerable": false,
+      "age": 0,
+      "attributes": [
+        {
+          "base": 1.0,
+          "id": "minecraft:attack_damage"
+        },
+        {
+          "modifiers": [
+            {
+              "amount": -0.05755709282684849,
+              "operation": "add_multiplied_base",
+              "id": "minecraft:random_spawn_bonus"
+            }
+          ],
+          "base": 16.0,
+          "id": "minecraft:follow_range"
+        },
+        {
+          "base": 4.0,
+          "id": "minecraft:attack_speed"
+        },
+        {
+          "base": 0.5,
+          "id": "minecraft:movement_speed"
+        }
+      ],
+      "effects": [],
+      "vehicle": null,
+      "inventory": [
+        {
+          "id": "minecraft:stone_pickaxe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 70
+          }
+        },
+        {
+          "id": "minecraft:wooden_hoe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 18
+          }
+        },
+        {
+          "id": "minecraft:dirt",
+          "count": 29
+        },
+        {
+          "id": "minecraft:bread",
+          "count": 3
+        },
+        {
+          "id": "minecraft:carrot",
+          "count": 3
+        },
+        {
+          "id": "minecraft:stick",
+          "count": 4
+        },
+        {
+          "id": "minecraft:raw_iron",
+          "count": 1
+        }
+      ],
+      "equipment": {
+        "mainhand": {
+          "id": "minecraft:iron_pickaxe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 48
+          }
+        },
+        "offhand": {
+          "id": "minecraft:wooden_pickaxe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 4
+          }
+        }
+      },
+      "meetingPoint": {
+        "value": {
+          "pos": [
+            -493,
+            64,
+            -329
+          ],
+          "dimension": "minecraft:overworld"
+        }
+      },
+      "dimensionFolder": "dimensions/minecraft/overworld/entities",
+      "name": "Clover-edc5",
+      "food": {
+        "foodLevel": 20,
+        "saturation": 0.0,
+        "exhaustion": 3.2627413,
+        "timer": 0
+      },
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -467,
+        "y": 64,
+        "z": -377
+      }
+    },
+    {
+      "id": "764e71da-6e8c-4016-b4cb-b9aee031c564",
+      "type": "minecraft:villager",
+      "position": [
+        -596.5000001522084,
+        64.0,
+        -633.1687351243991
+      ],
+      "health": 17.0,
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed"
+      ],
+      "noAI": false,
+      "invulnerable": false,
+      "age": 0,
+      "attributes": [
+        {
+          "base": 0.5,
+          "id": "minecraft:movement_speed"
+        },
+        {
+          "modifiers": [
+            {
+              "amount": -0.014594320843274349,
+              "operation": "add_multiplied_base",
+              "id": "minecraft:random_spawn_bonus"
+            }
+          ],
+          "base": 16.0,
+          "id": "minecraft:follow_range"
+        }
+      ],
+      "effects": [],
+      "vehicle": null,
+      "inventory": [],
+      "equipment": {},
+      "meetingPoint": null,
+      "dimensionFolder": "dimensions/minecraft/overworld/entities",
+      "name": "Birch-764e",
+      "food": {
+        "foodLevel": 0,
+        "saturation": 0.0,
+        "exhaustion": 1.0468038,
+        "timer": 40
+      },
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -629,
+        "y": 74,
+        "z": -631
+      }
+    },
+    {
+      "id": "88893f4d-fbba-4245-b563-089e8c0a5b52",
+      "type": "minecraft:villager",
+      "position": [
+        -596.4999975087727,
+        64.0,
+        -633.9101508420496
+      ],
+      "health": 8.0,
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed"
+      ],
+      "noAI": false,
+      "invulnerable": false,
+      "age": 0,
+      "attributes": [
+        {
+          "base": 0.5,
+          "id": "minecraft:movement_speed"
+        },
+        {
+          "modifiers": [
+            {
+              "amount": -0.011821831824307828,
+              "operation": "add_multiplied_base",
+              "id": "minecraft:random_spawn_bonus"
+            }
+          ],
+          "base": 16.0,
+          "id": "minecraft:follow_range"
+        }
+      ],
+      "effects": [],
+      "vehicle": null,
+      "inventory": [],
+      "equipment": {},
+      "meetingPoint": null,
+      "dimensionFolder": "dimensions/minecraft/overworld/entities",
+      "name": "Rowan-8889",
+      "food": {
+        "foodLevel": 0,
+        "saturation": 0.0,
+        "exhaustion": 3.6971772,
+        "timer": 10
+      },
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -629,
+        "y": 74,
+        "z": -629
+      }
+    },
+    {
+      "id": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+      "type": "minecraft:villager",
+      "position": [
+        -597.3948405300232,
+        64.0,
+        -613.6050576813916
+      ],
+      "health": 1.0,
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed"
+      ],
+      "noAI": false,
+      "invulnerable": false,
+      "age": 0,
+      "attributes": [
+        {
+          "base": 0.5,
+          "id": "minecraft:movement_speed"
+        },
+        {
+          "modifiers": [
+            {
+              "amount": -0.011821831824307828,
+              "operation": "add_multiplied_base",
+              "id": "minecraft:random_spawn_bonus"
+            }
+          ],
+          "base": 16.0,
+          "id": "minecraft:follow_range"
+        }
+      ],
+      "effects": [],
+      "vehicle": null,
+      "inventory": [
+        {
+          "id": "minecraft:potato",
+          "count": 1
+        }
+      ],
+      "equipment": {},
+      "meetingPoint": null,
+      "dimensionFolder": "dimensions/minecraft/overworld/entities",
+      "name": "Pip-4c3c",
+      "food": {
+        "foodLevel": 7,
+        "saturation": 5.0,
+        "exhaustion": 3.602021,
+        "timer": 0
+      },
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -626,
+        "y": 74,
+        "z": -623
+      }
+    },
+    {
+      "id": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "type": "minecraft:pillager",
+      "position": [
+        -598.815665084673,
+        65.0,
+        -623.4796333650917
+      ],
+      "health": 24.0,
+      "tags": [
+        "villagers:camp_table:-168775037390784",
+        "villagers:camp_food_store:-169049915363264",
+        "villagers:native_illager_worker",
+        "villagers:illager_bed:-181144543252416",
+        "villagers:camp_table:-166026258395073",
+        "villagers:camp_table:-166026258337729",
+        "villagers:native_illager_camp:-175646985019319",
+        "villagers:creature_managed",
+        "villagers:camp_hay:-161903089782720",
+        "villagers:camp_hay:-175646985093056",
+        "villagers:camp_table:-168775037456320",
+        "villagers:given_root_pair:573a309c-f0fc-4dd1-94cd-8246d352467c:minecraft:potato",
+        "villagers:given_root_pair:64324351-28f6-4bc1-a8f8-949f3300763b:minecraft:potato",
+        "villagers:given_root_pair:4c3c0db4-75ea-42f5-8f91-b1c4814944d7:minecraft:potato",
+        "villagers:camp_table:-173722839769024"
+      ],
+      "noAI": false,
+      "invulnerable": false,
+      "age": 0,
+      "attributes": [
+        {
+          "base": 0.3499999940395355,
+          "id": "minecraft:movement_speed"
+        },
+        {
+          "modifiers": [
+            {
+              "amount": 0.05742649675025172,
+              "operation": "add_multiplied_base",
+              "id": "minecraft:random_spawn_bonus"
+            }
+          ],
+          "base": 32.0,
+          "id": "minecraft:follow_range"
+        }
+      ],
+      "effects": [],
+      "vehicle": null,
+      "inventory": [],
+      "equipment": {
+        "mainhand": {
+          "id": "minecraft:crossbow",
+          "count": 1
+        }
+      },
+      "meetingPoint": null,
+      "dimensionFolder": "dimensions/minecraft/overworld/entities"
+    },
+    {
+      "id": "64324351-28f6-4bc1-a8f8-949f3300763b",
+      "type": "minecraft:villager",
+      "position": [
+        -631.0564031390636,
+        65.0,
+        -607.6999999880791
+      ],
+      "health": 2.0,
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed"
+      ],
+      "noAI": false,
+      "invulnerable": false,
+      "age": 0,
+      "attributes": [
+        {
+          "base": 0.5,
+          "id": "minecraft:movement_speed"
+        },
+        {
+          "modifiers": [
+            {
+              "amount": -0.03777783753053198,
+              "operation": "add_multiplied_base",
+              "id": "minecraft:random_spawn_bonus"
+            }
+          ],
+          "base": 16.0,
+          "id": "minecraft:follow_range"
+        }
+      ],
+      "effects": [],
+      "vehicle": null,
+      "inventory": [
+        {
+          "id": "minecraft:potato",
+          "count": 1
+        }
+      ],
+      "equipment": {},
+      "meetingPoint": null,
+      "dimensionFolder": "dimensions/minecraft/overworld/entities",
+      "name": "Oak-6432",
+      "food": {
+        "foodLevel": 6,
+        "saturation": 4.0,
+        "exhaustion": 0.5058155,
+        "timer": 0
+      },
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -629,
+        "y": 74,
+        "z": -611
+      }
+    },
+    {
+      "id": "573a309c-f0fc-4dd1-94cd-8246d352467c",
+      "type": "minecraft:villager",
+      "position": [
+        -632.292785811916,
+        65.0,
+        -607.4378406446465
+      ],
+      "health": 1.0,
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed"
+      ],
+      "noAI": false,
+      "invulnerable": false,
+      "age": 0,
+      "attributes": [
+        {
+          "base": 0.5,
+          "id": "minecraft:movement_speed"
+        },
+        {
+          "modifiers": [
+            {
+              "amount": -0.05114538216980887,
+              "operation": "add_multiplied_base",
+              "id": "minecraft:random_spawn_bonus"
+            }
+          ],
+          "base": 16.0,
+          "id": "minecraft:follow_range"
+        }
+      ],
+      "effects": [],
+      "vehicle": null,
+      "inventory": [
+        {
+          "id": "minecraft:potato",
+          "count": 1
+        }
+      ],
+      "equipment": {},
+      "meetingPoint": {
+        "value": {
+          "pos": [
+            -198,
+            76,
+            905
+          ],
+          "dimension": "minecraft:overworld"
+        }
+      },
+      "dimensionFolder": "dimensions/minecraft/overworld/entities",
+      "name": "Dara-573a",
+      "food": {
+        "foodLevel": 7,
+        "saturation": 5.0,
+        "exhaustion": 3.5534332,
+        "timer": 0
+      },
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -635,
+        "y": 64,
+        "z": -602
+      }
+    }
+  ],
+  "courier": {
+    "learningUpdates": 0,
+    "fatigue": 0.22493749999999735,
+    "activity": "gathering existing camp hay",
+    "family": {
+      "nursery": "-660, 64, -629",
+      "activity": "not considering a family",
+      "juvenile": false,
+      "blocked": "",
+      "lastBirth": {},
+      "generation": 0,
+      "ageTicks": 3998,
+      "attempts": 0,
+      "breedingEnabled": true,
+      "nextBedSearch": 309316,
+      "availableNurseries": []
+    },
+    "memories": [
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -598, 64, -614"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -633, 65, -608"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -681, 64, -624"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -597, 64, -634"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -597, 64, -634"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -633, 65, -608"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -598, 64, -614"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -632, 65, -608"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -681, 64, -624"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -597, 64, -634"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -597, 64, -634"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -589, 64, -588"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -633, 65, -608"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -598, 64, -614"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Handed 1 owned food items to a requesting captive 67f32c45-c10a-4f05-a74d-d1d31fdeac0e"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -632, 65, -608"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -681, 64, -624"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -681, 64, -623"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -597, 64, -634"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -597, 64, -634"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -633, 65, -608"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -598, 64, -614"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -632, 65, -608"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -681, 64, -624"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -633, 64, -607"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -597, 64, -634"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -597, 64, -634"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -589, 64, -588"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -589, 64, -588"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -633, 65, -608"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -598, 64, -614"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -632, 65, -608"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -681, 64, -624"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -597, 64, -634"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -597, 64, -634"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -633, 65, -608"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -598, 64, -614"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -632, 65, -608"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -681, 64, -624"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a camp food request from 4c3c0db4-75ea-42f5-8f91-b1c4814944d7"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Understood a spoken hurt-and-food request from 4c3c0db4-75ea-42f5-8f91-b1c4814944d7"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -597, 64, -634"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -597, 64, -634"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -589, 64, -588"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a loud camp call at -633, 65, -608"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Heard a camp food request from 88893f4d-fbba-4245-b563-089e8c0a5b52"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Understood a spoken hurt-and-food request from 88893f4d-fbba-4245-b563-089e8c0a5b52"
+      },
+      {
+        "index": 0,
+        "context": -1,
+        "reward": 0.0,
+        "note": "Understood a spoken hurt-and-food request from 764e71da-6e8c-4016-b4cb-b9aee031c564"
+      }
+    ],
+    "id": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+    "food": 18,
+    "foodWork": {
+      "crafted": 6,
+      "repeatHarvests": 0,
+      "hayReturn": {
+        "end": "-595, 63, -627",
+        "moved": true,
+        "landmark": "-590, 64, -633",
+        "gameTime": 308466,
+        "from": "(-602.7486687771155, 63.0, -622.5044964157269)",
+        "nodes": 10
+      },
+      "shared": 0,
+      "blocked": [
+        {
+          "until": 308666,
+          "position": "-640, 64, -624"
+        }
+      ],
+      "target": "-598, 64, -624",
+      "harvested": 0
+    },
+    "species": "minecraft:pillager",
+    "name": "Fern-cb79",
+    "health": 24.0,
+    "waterSafety": {
+      "nativeFloatTicks": 0,
+      "position": "(-598.815665084673, 65.0, -623.4796333650917)",
+      "water": false,
+      "air": 300,
+      "shore": {}
+    },
+    "campWork": {
+      "lastReceipt": {
+        "sourceBefore": 4,
+        "moved": 4,
+        "item": "minecraft:potato",
+        "gameTime": 305536,
+        "sourceAfter": 0,
+        "container": "-616, 64, -633"
+      },
+      "target": "",
+      "access": {
+        "lastReceipt": {},
+        "step": 0,
+        "blocks": 0,
+        "bed": "",
+        "lastFailure": {},
+        "activity": "no observed small masonry entrance to a free bunk"
+      },
+      "activity": "looking for real camp supplies",
+      "beds": 0,
+      "recipes": 0,
+      "route": "native storage path started",
+      "transfers": 2,
+      "inspections": 3,
+      "reusedBeds": {
+        "collected": 0,
+        "activity": "no reusable free upper bunk nearby",
+        "routeRejections": 0,
+        "lastReceipt": {}
+      },
+      "storageRoute": {
+        "moved": true,
+        "gameTime": 305516,
+        "from": "(-623.5474566553997, 64.0, -631.2394759338295)",
+        "nodes": 7,
+        "failures": 0,
+        "store": "-616, 64, -633"
+      },
+      "bedSite": "",
+      "bedApproach": {},
+      "fallenBeds": 0,
+      "fallenAudit": {},
+      "fallenRoute": {}
+    },
+    "bodyRoutes": {
+      "lastReceipt": {
+        "bodies": [
+          "07f6215c-4046-4fe9-b724-bb93106a5e2f"
+        ],
+        "gameTime": 308426,
+        "action": "native route search avoids the actual neighboring living bodies",
+        "from": "(-607.4204243858118, 63.0, -619.5581203706469)"
+      },
+      "waypoints": [
+        {
+          "node": "-610, 65, -612",
+          "position": "(-609.5000059816532, 65.0, -611.1017726395719)",
+          "floor": 65.0,
+          "grounded": true,
+          "gameTime": 308369
+        },
+        {
+          "node": "-610, 64, -613",
+          "position": "(-609.5000059816532, 64.92159999847412, -612.4832400370104)",
+          "floor": 64.0,
+          "grounded": false,
+          "gameTime": 308377
+        },
+        {
+          "node": "-610, 64, -614",
+          "position": "(-609.5000059816532, 64.0, -613.1907179906013)",
+          "floor": 64.0,
+          "grounded": true,
+          "gameTime": 308383
+        },
+        {
+          "node": "-610, 64, -614",
+          "position": "(-609.5000059816532, 64.0, -613.7022726000054)",
+          "floor": 64.0,
+          "grounded": true,
+          "gameTime": 308386
+        },
+        {
+          "node": "-610, 64, -615",
+          "position": "(-609.5000059816532, 64.0, -614.2192751743279)",
+          "floor": 64.0,
+          "grounded": true,
+          "gameTime": 308389
+        },
+        {
+          "node": "-610, 63, -616",
+          "position": "(-609.5000059816532, 63.92159999847412, -615.6005688810837)",
+          "floor": 63.0,
+          "grounded": false,
+          "gameTime": 308397
+        },
+        {
+          "node": "-610, 63, -617",
+          "position": "(-609.5000059816532, 63.0, -616.1418195917058)",
+          "floor": 63.0,
+          "grounded": true,
+          "gameTime": 308402
+        },
+        {
+          "node": "-609, 63, -618",
+          "position": "(-608.8599474169747, 63.0, -617.1054760650011)",
+          "floor": 63.0,
+          "grounded": true,
+          "gameTime": 308409
+        },
+        {
+          "node": "-609, 63, -619",
+          "position": "(-608.5615505867534, 63.0, -618.0742600383794)",
+          "floor": 63.0,
+          "grounded": true,
+          "gameTime": 308415
+        },
+        {
+          "node": "-608, 63, -620",
+          "position": "(-607.8908168961098, 63.0, -619.0532722822744)",
+          "floor": 63.0,
+          "grounded": true,
+          "gameTime": 308422
+        },
+        {
+          "node": "-608, 63, -620",
+          "position": "(-607.4204243858118, 63.0, -619.5581203706469)",
+          "floor": 63.0,
+          "grounded": true,
+          "gameTime": 308426
+        },
+        {
+          "node": "-607, 63, -621",
+          "position": "(-606.9386571723766, 63.0, -620.0530175215457)",
+          "floor": 63.0,
+          "grounded": true,
+          "gameTime": 308430
+        },
+        {
+          "node": "-607, 63, -622",
+          "position": "(-606.5594709639562, 63.0, -621.1747537698476)",
+          "floor": 63.0,
+          "grounded": true,
+          "gameTime": 308437
+        },
+        {
+          "node": "-607, 63, -623",
+          "position": "(-606.5004275009983, 63.0, -622.2055950490242)",
+          "floor": 63.0,
+          "grounded": true,
+          "gameTime": 308443
+        },
+        {
+          "node": "-606, 63, -623",
+          "position": "(-605.8455395400835, 63.0, -622.5075436603364)",
+          "floor": 63.0,
+          "grounded": true,
+          "gameTime": 308448
+        },
+        {
+          "node": "-605, 63, -623",
+          "position": "(-604.8203997338767, 63.0, -622.5143427451055)",
+          "floor": 63.0,
+          "grounded": true,
+          "gameTime": 308454
+        },
+        {
+          "node": "-604, 63, -623",
+          "position": "(-603.7847324633095, 63.0, -622.5075856726082)",
+          "floor": 63.0,
+          "grounded": true,
+          "gameTime": 308460
+        },
+        {
+          "node": "-603, 63, -623",
+          "position": "(-602.9213516941751, 63.0, -622.5047519764847)",
+          "floor": 63.0,
+          "grounded": true,
+          "gameTime": 308465
+        },
+        {
+          "node": "-603, 63, -623",
+          "position": "(-602.7486687771155, 63.0, -622.5044964157269)",
+          "floor": 63.0,
+          "grounded": true,
+          "gameTime": 308466
+        },
+        {
+          "node": "-602, 63, -623",
+          "position": "(-601.8852437246744, 63.0, -622.5027525926151)",
+          "floor": 63.0,
+          "grounded": true,
+          "gameTime": 308471
+        },
+        {
+          "node": "-601, 63, -623",
+          "position": "(-600.8491254854597, 63.0, -622.5015574696121)",
+          "floor": 63.0,
+          "grounded": true,
+          "gameTime": 308477
+        },
+        {
+          "node": "-601, 63, -624",
+          "position": "(-600.5123778242407, 63.0, -623.1500890387094)",
+          "floor": 63.0,
+          "grounded": true,
+          "gameTime": 308482
+        },
+        {
+          "node": "-600, 64, -624",
+          "position": "(-599.9400792130252, 64.0, -623.698395432318)",
+          "floor": 64.0,
+          "grounded": true,
+          "gameTime": 308494
+        },
+        {
+          "node": "-599, 65, -624",
+          "position": "(-598.9300162605779, 65.0, -623.4903928127114)",
+          "floor": 65.0,
+          "grounded": true,
+          "gameTime": 308508
+        }
+      ],
+      "searches": 84,
+      "failedSteps": [],
+      "blockedNodes": 4258
+    },
+    "campFarms": {
+      "lastReceipt": {},
+      "grass": 0,
+      "logs": 0,
+      "activity": "no camp farming",
+      "recipes": 0,
+      "planted": 0,
+      "target": "",
+      "crops": []
+    },
+    "campMeals": {
+      "waiting": 4,
+      "hatch": {
+        "lastReceipt": {
+          "duration": 60,
+          "gameTime": 306076,
+          "nativeWorldDrops": true,
+          "position": "-598, 64, -615",
+          "tool": "1 minecraft:crossbow",
+          "upperFenceRetained": true
+        },
+        "target": "",
+        "opened": 1
+      },
+      "lastReceipt": {
+        "usedEmergencyReserve": true,
+        "ownedItemAfter": 0,
+        "handReach": 2.443379431869044,
+        "donorSource": "bag",
+        "contact": "(-588.1514131759716, 64.5, -587.0216882675383)",
+        "giverBefore": 1,
+        "gameTime": 308096,
+        "giverAfter": 0,
+        "to": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+        "ownedItemBefore": 1,
+        "distance": 2.6353931,
+        "item": "minecraft:bread",
+        "count": 1,
+        "receiverBefore": 0,
+        "receiverAfter": 1,
+        "from": "cb79c23c-9623-45ac-9776-90c0f0a7813e"
+      },
+      "rejectedPaths": 1,
+      "delivered": 10,
+      "requests": 12,
+      "activity": "handed over a real camp meal",
+      "calls": {
+        "bodyRoutes": {
+          "lastReceipt": {
+            "bodies": [
+              "07f6215c-4046-4fe9-b724-bb93106a5e2f"
+            ],
+            "gameTime": 308426,
+            "action": "native route search avoids the actual neighboring living bodies",
+            "from": "(-607.4204243858118, 63.0, -619.5581203706469)"
+          },
+          "waypoints": [
+            {
+              "node": "-610, 65, -612",
+              "position": "(-609.5000059816532, 65.0, -611.1017726395719)",
+              "floor": 65.0,
+              "grounded": true,
+              "gameTime": 308369
+            },
+            {
+              "node": "-610, 64, -613",
+              "position": "(-609.5000059816532, 64.92159999847412, -612.4832400370104)",
+              "floor": 64.0,
+              "grounded": false,
+              "gameTime": 308377
+            },
+            {
+              "node": "-610, 64, -614",
+              "position": "(-609.5000059816532, 64.0, -613.1907179906013)",
+              "floor": 64.0,
+              "grounded": true,
+              "gameTime": 308383
+            },
+            {
+              "node": "-610, 64, -614",
+              "position": "(-609.5000059816532, 64.0, -613.7022726000054)",
+              "floor": 64.0,
+              "grounded": true,
+              "gameTime": 308386
+            },
+            {
+              "node": "-610, 64, -615",
+              "position": "(-609.5000059816532, 64.0, -614.2192751743279)",
+              "floor": 64.0,
+              "grounded": true,
+              "gameTime": 308389
+            },
+            {
+              "node": "-610, 63, -616",
+              "position": "(-609.5000059816532, 63.92159999847412, -615.6005688810837)",
+              "floor": 63.0,
+              "grounded": false,
+              "gameTime": 308397
+            },
+            {
+              "node": "-610, 63, -617",
+              "position": "(-609.5000059816532, 63.0, -616.1418195917058)",
+              "floor": 63.0,
+              "grounded": true,
+              "gameTime": 308402
+            },
+            {
+              "node": "-609, 63, -618",
+              "position": "(-608.8599474169747, 63.0, -617.1054760650011)",
+              "floor": 63.0,
+              "grounded": true,
+              "gameTime": 308409
+            },
+            {
+              "node": "-609, 63, -619",
+              "position": "(-608.5615505867534, 63.0, -618.0742600383794)",
+              "floor": 63.0,
+              "grounded": true,
+              "gameTime": 308415
+            },
+            {
+              "node": "-608, 63, -620",
+              "position": "(-607.8908168961098, 63.0, -619.0532722822744)",
+              "floor": 63.0,
+              "grounded": true,
+              "gameTime": 308422
+            },
+            {
+              "node": "-608, 63, -620",
+              "position": "(-607.4204243858118, 63.0, -619.5581203706469)",
+              "floor": 63.0,
+              "grounded": true,
+              "gameTime": 308426
+            },
+            {
+              "node": "-607, 63, -621",
+              "position": "(-606.9386571723766, 63.0, -620.0530175215457)",
+              "floor": 63.0,
+              "grounded": true,
+              "gameTime": 308430
+            },
+            {
+              "node": "-607, 63, -622",
+              "position": "(-606.5594709639562, 63.0, -621.1747537698476)",
+              "floor": 63.0,
+              "grounded": true,
+              "gameTime": 308437
+            },
+            {
+              "node": "-607, 63, -623",
+              "position": "(-606.5004275009983, 63.0, -622.2055950490242)",
+              "floor": 63.0,
+              "grounded": true,
+              "gameTime": 308443
+            },
+            {
+              "node": "-606, 63, -623",
+              "position": "(-605.8455395400835, 63.0, -622.5075436603364)",
+              "floor": 63.0,
+              "grounded": true,
+              "gameTime": 308448
+            },
+            {
+              "node": "-605, 63, -623",
+              "position": "(-604.8203997338767, 63.0, -622.5143427451055)",
+              "floor": 63.0,
+              "grounded": true,
+              "gameTime": 308454
+            },
+            {
+              "node": "-604, 63, -623",
+              "position": "(-603.7847324633095, 63.0, -622.5075856726082)",
+              "floor": 63.0,
+              "grounded": true,
+              "gameTime": 308460
+            },
+            {
+              "node": "-603, 63, -623",
+              "position": "(-602.9213516941751, 63.0, -622.5047519764847)",
+              "floor": 63.0,
+              "grounded": true,
+              "gameTime": 308465
+            },
+            {
+              "node": "-603, 63, -623",
+              "position": "(-602.7486687771155, 63.0, -622.5044964157269)",
+              "floor": 63.0,
+              "grounded": true,
+              "gameTime": 308466
+            },
+            {
+              "node": "-602, 63, -623",
+              "position": "(-601.8852437246744, 63.0, -622.5027525926151)",
+              "floor": 63.0,
+              "grounded": true,
+              "gameTime": 308471
+            },
+            {
+              "node": "-601, 63, -623",
+              "position": "(-600.8491254854597, 63.0, -622.5015574696121)",
+              "floor": 63.0,
+              "grounded": true,
+              "gameTime": 308477
+            },
+            {
+              "node": "-601, 63, -624",
+              "position": "(-600.5123778242407, 63.0, -623.1500890387094)",
+              "floor": 63.0,
+              "grounded": true,
+              "gameTime": 308482
+            },
+            {
+              "node": "-600, 64, -624",
+              "position": "(-599.9400792130252, 64.0, -623.698395432318)",
+              "floor": 64.0,
+              "grounded": true,
+              "gameTime": 308494
+            },
+            {
+              "node": "-599, 65, -624",
+              "position": "(-598.9300162605779, 65.0, -623.4903928127114)",
+              "floor": 65.0,
+              "grounded": true,
+              "gameTime": 308508
+            }
+          ],
+          "searches": 84,
+          "failedSteps": [],
+          "blockedNodes": 4258
+        },
+        "tripUntil": 308816,
+        "waiting": 6,
+        "walkingStep": {
+          "onGround": true,
+          "nextIndex": 34,
+          "gameTime": 307856,
+          "nextNode": "-601, 63, -590",
+          "position": "(-600.9731140219488, 63.0, -589.5686353512676)",
+          "wanted": [
+            -600.5,
+            63.0,
+            -589.5
+          ]
+        },
+        "target": "-589, 64, -588",
+        "entrance": {
+          "lastReceipt": {},
+          "outer": "",
+          "removed": 0,
+          "activity": "no camp entrance work",
+          "step": 0
+        },
+        "deferred": 0,
+        "lastHeard": {
+          "sound": "minecraft:entity.villager.no",
+          "speaker": "573a309c-f0fc-4dd1-94cd-8246d352467c",
+          "gameTime": 308473,
+          "volume": 10.0,
+          "position": "-633, 65, -608",
+          "heardRange": 120.0,
+          "nativeRange": 160.0,
+          "distance": 34.539352
+        },
+        "heard": 247
+      },
+      "patrol": {
+        "lastRoute": {},
+        "target": "",
+        "visited": 0,
+        "until": 0,
+        "cages": 0
+      },
+      "lastApproach": {
+        "nativeCrowdWalk": false,
+        "actor": "(-599.261721347903, 63.0, -589.4939723389541)",
+        "stands": 21,
+        "nodes": 12,
+        "gameTime": 307866,
+        "rendezvous": "recipient",
+        "recipient": "(-588.1529808591151, 64.0, -587.1835622225362)",
+        "recipientId": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+        "end": "-591, 63, -588"
+      },
+      "nativeSprinting": false,
+      "sprintDistance": 392.091156875683,
+      "supplyRun": {
+        "speed": 1.1,
+        "nodes": 7,
+        "from": "(-623.5474566553997, 64.0, -631.2394759338295)",
+        "food": 16,
+        "gameTime": 305516
+      },
+      "injuredRequests": [
+        "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+        "573a309c-f0fc-4dd1-94cd-8246d352467c",
+        "764e71da-6e8c-4016-b4cb-b9aee031c564",
+        "88893f4d-fbba-4245-b563-089e8c0a5b52"
+      ],
+      "pursuing": ""
+    },
+    "campDoors": {
+      "opened": 0,
+      "pending": 0,
+      "closed": 0,
+      "lastReceipt": {}
+    },
+    "company": {
+      "contacts": 0,
+      "target": ""
+    },
+    "mainhand": "1 minecraft:crossbow",
+    "offhand": "0 minecraft:air",
+    "inventory": [
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air"
+    ]
+  }
+}

@@ -10,6 +10,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FoodRequestTest {
     private final Lexicon shared = Lexicon.invent(new Random(43));
+    @Test void injuryPriorityRequiresTheActuallySpokenHurtWordToBeUnderstood(){
+        var words=Utterance.of(shared,List.of(Concept.WANT,Concept.FOOD,Concept.HUNGRY,Concept.HURT),true);
+        assertTrue(FoodRequest.understands(words,shared,Concept.WANT,Concept.FOOD,Concept.HUNGRY,Concept.HURT));
+        var partial=new Lexicon(List.of(new Lexicon.Entry(Concept.WANT,shared.wordFor(Concept.WANT),1),
+            new Lexicon.Entry(Concept.FOOD,shared.wordFor(Concept.FOOD),1),new Lexicon.Entry(Concept.HUNGRY,shared.wordFor(Concept.HUNGRY),1)));
+        assertFalse(FoodRequest.understands(words,partial,Concept.WANT,Concept.FOOD,Concept.HUNGRY,Concept.HURT));
+        assertFalse(FoodRequest.understands(words,shared,Concept.WANT,Concept.FOOD,Concept.HURT));
+    }
     @Test void recoveryNeedCanJustifyARequestBelowOrdinaryHungerThreshold(){
         assertTrue(FoodRequest.dueForCare(100,0,15,1,20,false));
         assertFalse(FoodRequest.dueForCare(100,0,15,20,20,false));

@@ -49,6 +49,22 @@ class FoodInventoryTest {
         assertEquals(3, inventory.countItem(Items.BEETROOT));
     }
 
+    @Test void aStarvingCriticalFarmerMayEatItsOwnLastPlantingRoot(){
+        var bag=new SimpleContainer(ration(Items.POTATO,1,1));
+        assertEquals(0,FoodInventory.survivalMealSlot(bag,true,0,1,20));
+        assertEquals(1,bag.countItem(Items.POTATO));
+        assertEquals(-1,FoodInventory.survivalMealSlot(bag,true,1,1,20));
+        assertEquals(-1,FoodInventory.survivalMealSlot(bag,true,0,6,20));
+        assertEquals(-1,FoodInventory.survivalMealSlot(bag,true,0,0,20));
+        assertEquals(-1,FoodInventory.anySlot(bag,true));
+        assertEquals(-1,FoodInventory.sharingSlot(bag,true));
+    }
+    @Test void evenACriticalFarmerUsesAnOrdinaryMealBeforeItsPlantingRoot(){
+        var bag=new SimpleContainer(ration(Items.CARROT,1,3),ration(Items.BREAD,1,5));
+        assertEquals(1,FoodInventory.survivalMealSlot(bag,true,0,1,20));
+        assertEquals(1,bag.countItem(Items.CARROT));assertEquals(1,bag.countItem(Items.BREAD));
+    }
+
     @Test void hungerDoesNotSpendAFarmersLastRootSeed() {
         var inventory = new SimpleContainer(ration(Items.CARROT, 1, 3), ration(Items.POTATO, 1, 1));
         assertEquals(-1, FoodInventory.anySlot(inventory, true));
@@ -107,5 +123,24 @@ class FoodInventoryTest {
         inv.setItem(1,ration(Items.BREAD,1,0));
         assertEquals(-1,FoodInventory.sharingSlot(inv,true));
         assertEquals(1,inv.countItem(Items.CARROT));
+    }
+    @Test void reservedPlantingFoodStillExistsEvenWhenTheOwnerCannotShareIt(){
+        var inventory=new SimpleContainer(ration(Items.CARROT,1,3));
+        assertEquals(-1,FoodInventory.anySlot(inventory,true));
+        assertTrue(FoodInventory.containsFood(inventory));
+        assertEquals(1,inventory.countItem(Items.CARROT));
+        inventory.removeItem(0,1);assertFalse(FoodInventory.containsFood(inventory));
+    }
+    @Test void emergencyGiftSpendsOneOwnedRootOnlyWithASafeDonorAndVisibleCriticalInjury(){
+        var bag=new SimpleContainer(8);bag.setItem(0,new ItemStack(Items.POTATO));
+        assertEquals(-1,FoodInventory.sharingSlot(bag,true));
+        assertEquals(0,FoodInventory.emergencyRootGiftSlot(bag,true,14,10,20,1,20));
+        assertEquals(-1,FoodInventory.emergencyRootGiftSlot(bag,true,13,10,20,1,20));
+        assertEquals(-1,FoodInventory.emergencyRootGiftSlot(bag,true,14,9,20,1,20));
+        assertEquals(-1,FoodInventory.emergencyRootGiftSlot(bag,true,14,10,20,6,20));
+        assertEquals(-1,FoodInventory.emergencyRootGiftSlot(bag,true,14,10,20,0,20));
+        assertEquals(-1,FoodInventory.emergencyRootGiftSlot(bag,true,14,Float.NaN,20,1,20));
+        assertEquals(1,bag.countItem(Items.POTATO),"Selection cannot supply, remove or consume the root");
+        assertEquals(-1,FoodInventory.mealSlot(bag,true,0,1,20),"Ordinary root protection remains");
     }
 }

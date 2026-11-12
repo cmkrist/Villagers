@@ -22,7 +22,7 @@ import java.util.function.Function;
 public record VillagersConfig(int memoryWitnessRadius, int baseExhaustionPerDay, boolean godChildren,
                               int hearingRadius, int speechCooldownSeconds,
                               int tradeProposalsPerVillagerPerDay, int tradeProposalsPerVillagePerDay,
-                              boolean breeding, int outsideVillageChunkRadius, int maxResidentChunks, boolean hayForaging, int traderRecruitmentChancePercent) {
+                              boolean breeding, int outsideVillageChunkRadius, int maxResidentChunks, boolean hayForaging, int traderRecruitmentChancePercent, boolean nativeCellEscape, boolean nativeAdventureQuarry, boolean nativeCampPassages, boolean nativeCampMeals, boolean nativeCampFarming) {
     public static final int DEFAULT_WITNESS_RADIUS = 16;
     public static final int MIN_WITNESS_RADIUS = 1;
     public static final int MAX_WITNESS_RADIUS = 64;
@@ -51,6 +51,12 @@ public record VillagersConfig(int memoryWitnessRadius, int baseExhaustionPerDay,
         BREEDING("breeding", true, VillagersConfig::breeding),
         /** Explicit opt-in: consume visible exposed existing hay as a finite grain supply. */
         HAY_FORAGING("hayForaging", false, VillagersConfig::hayForaging),
+        /** Experimental: dismantle native barracks cell doors when hungry. Captors may attack outside. */
+        NATIVE_CELL_ESCAPE("nativeCellEscape", false, VillagersConfig::nativeCellEscape),
+        NATIVE_ADVENTURE_QUARRY("nativeAdventureQuarry", false, VillagersConfig::nativeAdventureQuarry),
+        NATIVE_CAMP_PASSAGES("nativeCampPassages", false, VillagersConfig::nativeCampPassages),
+        NATIVE_CAMP_MEALS("nativeCampMeals", false, VillagersConfig::nativeCampMeals),
+        NATIVE_CAMP_FARMING("nativeCampFarming", false, VillagersConfig::nativeCampFarming),
         /** Chunk radius kept loaded around each adopted villager outside its village (0 = its own chunk only). */
         OUTSIDE_VILLAGE_CHUNK_RADIUS("outsideVillageChunkRadius", 1, 0, 4, VillagersConfig::outsideVillageChunkRadius),
         /** Hard cap on chunks this mod keeps loaded; 0 disables chunk residency. */
@@ -96,7 +102,7 @@ public record VillagersConfig(int memoryWitnessRadius, int baseExhaustionPerDay,
                 b.apply(Setting.GOD_CHILDREN), i.apply(Setting.HEARING_RADIUS), i.apply(Setting.SPEECH_COOLDOWN_SECONDS),
                 i.apply(Setting.TRADE_PROPOSALS_PER_VILLAGER_PER_DAY), i.apply(Setting.TRADE_PROPOSALS_PER_VILLAGE_PER_DAY),
                 b.apply(Setting.BREEDING), i.apply(Setting.OUTSIDE_VILLAGE_CHUNK_RADIUS), i.apply(Setting.MAX_RESIDENT_CHUNKS),
-                b.apply(Setting.HAY_FORAGING), i.apply(Setting.TRADER_RECRUITMENT_CHANCE));
+                b.apply(Setting.HAY_FORAGING), i.apply(Setting.TRADER_RECRUITMENT_CHANCE), b.apply(Setting.NATIVE_CELL_ESCAPE), b.apply(Setting.NATIVE_ADVENTURE_QUARRY), b.apply(Setting.NATIVE_CAMP_PASSAGES), b.apply(Setting.NATIVE_CAMP_MEALS), b.apply(Setting.NATIVE_CAMP_FARMING));
     }
 
     /** The loaded settings plus human-readable problems to log, if any. */

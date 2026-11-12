@@ -19,6 +19,7 @@ final class BoatRoutes {
         }
     }
     record Route(Dock launch, Dock arrival, List<Vec3> points) {}
+    private record WaterStep(BlockPos pos,int cost) {}
     static boolean dry(ServerLevel level, BlockPos p) {
         return level.isLoaded(p) && level.isLoaded(p.above()) && level.isLoaded(p.below())
             && level.getBlockState(p).isAir() && level.getBlockState(p.above()).isAir()
@@ -62,48 +63,73 @@ final class BoatRoutes {
             }
         }
         var owned = level.getEntitiesOfClass(net.minecraft.world.entity.vehicle.boat.AbstractBoat.class,
-            v.getBoundingBox().inflate(16), b -> b.isAlive() && !b.isVehicle() && BoatTravel.owned(b, v));
+            v.getBoundingBox().inflate(48), b -> b.isAlive() && !b.isVehicle() && BoatTravel.owned(b, v)
+                &&(v.distanceToSqr(b)<=16*16||v.hasLineOfSight(b))).stream()
+            .sorted(Comparator.comparingDouble(v::distanceToSqr)).limit(4).toList();
+        // A parked owned boat can lie just beyond the local bank scan. Walk to
+        // its observed shore instead of repeatedly crafting another boat from
+        // an already depleted village edge. Route admission below still needs
+        // a complete dry path and a valid native water crossing.
+        for(var boat:owned)for(var land:BlockPos.betweenClosed(boat.blockPosition().offset(-3,0,-3),boat.blockPosition().offset(3,2,3))){
+            if(!dry(level,land))continue;
+            for(var d:Direction.Plane.HORIZONTAL){
+                var dock=new Dock(land.immutable(),land.relative(d).below());
+                if(dockValid(level,dock)&&BoatTravel.horizontal(boat.position(),dock.point())<=4&&!docks.contains(dock))docks.add(dock);
+            }
+        }
         docks.sort(Comparator.comparingDouble(d -> owned.isEmpty() ? d.land().distSqr(origin)
             : owned.stream().mapToDouble(b -> BoatTravel.horizontal(b.position(), d.point())).min().orElseThrow() * 100 + d.land().distSqr(origin)));
         return docks;
     }
     static Route find(ServerLevel level, Villager v, BlockPos destination) {
+        return find(level,v,destination,p->true);
+    }
+    static Route find(ServerLevel level,Villager v,BlockPos destination,java.util.function.Predicate<BlockPos> arrivalAllowed){
         int queries = 0;
         for (Dock launch : launches(level, v)) {
             if (++queries > 3) break;
-            var path = v.getNavigation().createPath(launch.land(), 0);
+            var path = v.getNavigation().createPath(launch.land(), 0,64);
             if (path == null || !path.canReach() || path.getNodeCount() > 64) continue;
-            boolean wet = false;
-            for (int i = 0; i < path.getNodeCount(); i++)
-                if (!level.getFluidState(path.getNodePos(i)).isEmpty()) { wet = true; break; }
-            if (wet) continue;
-            Route route = across(level, v, launch, destination);
+            if(!BoatTravel.dryPath(level,path))continue;
+            Route route = across(level, v, launch, destination,arrivalAllowed);
             if (route != null) return route;
         }
         return null;
     }
     /** At most8192 water cells in a96-block radius, four-connected to preserve corner clearance. */
     static Route across(ServerLevel level, Villager v, Dock launch, BlockPos destination) {
+        return across(level,v,launch,destination,p->true);
+    }
+    private static Route across(ServerLevel level,Villager v,Dock launch,BlockPos destination,java.util.function.Predicate<BlockPos> arrivalAllowed){
         if (!dockValid(level, launch)) return null;
-        var queue = new ArrayDeque<BlockPos>(); var previous = new HashMap<BlockPos, BlockPos>();
-        queue.add(launch.water()); previous.put(launch.water(), launch.water());
+        // A known return bank needs a directed search. A breadth-first ocean
+        // flood can spend all8192 cells beside the launch before reaching home.
+        Queue<WaterStep> queue=destination==null?new ArrayDeque<>():new PriorityQueue<>(Comparator
+            .comparingInt((WaterStep step)->step.cost()+Math.abs(step.pos().getX()-destination.getX())+Math.abs(step.pos().getZ()-destination.getZ()))
+            .thenComparingInt(WaterStep::cost));
+        var previous = new HashMap<BlockPos, BlockPos>();var costs=new HashMap<BlockPos,Integer>();
+        queue.add(new WaterStep(launch.water(),0)); previous.put(launch.water(), launch.water());costs.put(launch.water(),0);
         Dock best = null; BlockPos end = null; double bestScore = Double.MAX_VALUE;
-        while (!queue.isEmpty() && previous.size() < 8192) {
-            var p = queue.removeFirst();
+        search: while (!queue.isEmpty() && previous.size() < 8192) {
+            var step=queue.remove();var p=step.pos();if(step.cost()!=costs.get(p))continue;
             for (Direction d : Direction.Plane.HORIZONTAL) {
                 var land = p.relative(d).above(); var dock = new Dock(land, p);
                 double distance = land.distSqr(launch.land());
-                if (distance >= 144 && dockValid(level, dock)
+                if (distance >= 144 && dockValid(level, dock)&&arrivalAllowed.test(land)
                         && (destination != null || visible(level, v, Vec3.atBottomCenterOf(land).add(0, 1, 0)))) {
                     double score = destination == null ? -Math.min(distance, 4096) : land.distSqr(destination);
-                    if (score < bestScore && (destination == null || score <= 144)) { best = dock; end = p; bestScore = score; }
+                    if (score < bestScore && (destination == null || score <= 144)) {
+                        best = dock; end = p; bestScore = score;
+                        if(destination!=null&&score==0)break search;
+                    }
                 }
                 var next = p.relative(d);
-                if (previous.containsKey(next) || next.distSqr(launch.water()) > 96 * 96 || !surface(level, next)) continue;
+                int cost=step.cost()+1;
+                if (cost>=costs.getOrDefault(next,Integer.MAX_VALUE) || next.distSqr(launch.water()) > 96 * 96 || !surface(level, next)) continue;
                 // A docking cell can be inset from a bank; ordinary route cells must fit at their centers.
                 var point = waterPoint(level, next);
                 if (point == null || !segmentClear(level, p.equals(launch.water()) ? launch.point() : waterPoint(level, p), point)) continue;
-                previous.put(next, p); queue.addLast(next);
+                previous.put(next, p);costs.put(next,cost);queue.add(new WaterStep(next,cost));
             }
         }
         if (best == null) return null;
@@ -133,7 +159,7 @@ final class BoatRoutes {
         }
         return null;
     }
-    private static boolean segmentClear(ServerLevel level, Vec3 a, Vec3 b) {
+    static boolean segmentClear(ServerLevel level, Vec3 a, Vec3 b) {
         if (a == null || b == null) return false;
         for (int i = 1; i <= 4; i++) if (!hullClear(level, a.lerp(b, i / 4.0))) return false;
         return true;

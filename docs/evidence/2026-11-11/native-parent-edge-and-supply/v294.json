@@ -1,0 +1,114 @@
+{
+  "runtime": "runs/native-recovery-sized-handoffs-v294",
+  "kind": "copied-world only",
+  "population": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "terminal": {
+    "pid": 2242100,
+    "exitCode": 0
+  },
+  "observation": {
+    "status": "failed",
+    "stage": "health_stop",
+    "elapsed": 1194,
+    "gameTime": 318706,
+    "actor": "4ed39acd-b764-4c41-b799-5ac9d5feefe7",
+    "health": 1.0
+  },
+  "adventurer": {
+    "elapsed": 1160,
+    "gameTime": 318672,
+    "actors": [
+      {
+        "navigation": {
+          "velocity": "(0.0, -0.0784000015258789, 0.0)",
+          "wanted": [
+            -474.5,
+            56.0,
+            -379.5
+          ],
+          "position": "(-474.27502940780784, 56.0, -379.5296019733395)",
+          "onGround": true,
+          "path": {}
+        },
+        "food": 20,
+        "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+        "armor": {
+          "equipped": 0,
+          "nextPiece": "CHEST",
+          "ready": false,
+          "ironTarget": 8,
+          "lastReceipt": {},
+          "crafted": 0
+        },
+        "inventory": [
+          "1 minecraft:stone_pickaxe",
+          "1 minecraft:wooden_hoe",
+          "30 minecraft:dirt",
+          "3 minecraft:bread",
+          "2 minecraft:carrot",
+          "4 minecraft:stick",
+          "1 minecraft:raw_iron",
+          "0 minecraft:air"
+        ],
+        "iron": {
+          "activity": "walking down one retained mine step",
+          "furnace": "-463, 63, -376",
+          "crafted": 0,
+          "ironTaken": 3,
+          "passage": {
+            "mode": "level",
+            "faceBlock": "Block{minecraft:andesite}",
+            "activity": "walking down one retained mine step",
+            "part": 3,
+            "retainedFloors": 97,
+            "root": "-475, 56, -380",
+            "depth": 0,
+            "turns": 1,
+            "reselect": false,
+            "face": "-475, 56, -379",
+            "retainedEntries": 1,
+            "exhaustedEntries": 0,
+            "stepsWithoutDepth": 20,
+            "waterSeals": {
+              "placed": 0,
+              "active": false,
+              "activity": "no water sealing job",
+              "lastReceipt": {}
+            },
+            "foundations": 0,
+            "lastFoundation": {},
+            "exhausted": false,
+            "failedScans": 0,
+            "entry": "-480, 63, -379",
+            "frontier": "",
+            "backtracks": 0,
+            "lastRoute": {},
+            "frontierSearch": {
+              "activity": "not checking junctions",
+              "candidates": 0,
+              "queries": 0
+            }
+          },
+          "plannedSite": "",
+          "lastApproach": {},
+          "lastReceipt": {},
+          "loadedOre": 3,
+          "fuelStored": true
+        },
+        "ageTicks": 255209,
+        "health": 20.0,
+        "mainhand": "1 minecraft:iron_pickaxe",
+        "position": "(-474.27502940780784, 56.0, -379.5296019733395)"
+      }
+    ]
+  }
+}

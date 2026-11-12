@@ -29,7 +29,7 @@ final class FoodHelp {
                 && FoodInventory.anySlot(v.getInventory(),AdventureActions.canHarvest(v))<0;
         boolean available=Villagers.LEARNING_MODE!=LearningMode.FROZEN&&v.isAlive()&&!v.isSleeping()
             &&!v.isTrading()&&!v.isOnFire()&&!v.isInWater()&&v.getAirSupply()>=200
-            &&!level.isDarkOutside()&&s.mind.fatigue()<.75;
+            &&(!level.isDarkOutside()||care)&&s.mind.fatigue()<.75;
         if((critical||care)&&available&&s.foodHelpPeer!=null&&now<s.nextFoodHelpScan&&now<s.nextFoodRequest
                 &&level.getEntity(s.foodHelpPeer) instanceof Villager waiting&&eligible(level,v,s,waiting)){
             v.getNavigation().stop();return s.foodHelpStatus="waiting for a nearby food reply";
@@ -48,7 +48,8 @@ final class FoodHelp {
                     peer -> peer!=v && peer.isAlive() && Villagers.isManaged(peer) && !peer.isBaby()
                             && !peer.isSleeping() && !peer.isTrading()).stream().limit(FoodRequest.MAX_PEERS)
                     .filter(peer -> eligible(level,v,s,peer))
-                    .sorted(Comparator.comparingDouble(v::distanceToSqr)).toList();
+                    .sorted(Comparator.comparingDouble((Villager peer) -> -s.mind.beliefs().foodLead(peer.getUUID(),now))
+                            .thenComparingDouble(v::distanceToSqr)).toList();
             var selected=s.foodHelpPartners.next(candidates.stream().map(Villager::getUUID).toList());
             other=candidates.stream().filter(peer -> peer.getUUID().equals(selected)).findFirst().orElse(null);
             s.foodHelpPeer=other==null ? null : other.getUUID();
@@ -65,6 +66,26 @@ final class FoodHelp {
             // request must not consume the ordinary400tick journey backoff.
             s.nextFoodHelpPath=now+10;s.nextFoodHelpScan=now+(asked?80:10);
             return s.foodHelpStatus=asked?"asked neighbour for food":"food request awaiting neighbour readiness";
+        }
+        if(arrived&&!care&&s.mind.foodLevel()>4){
+            var result=FoodQuestions.ask(level,v,s,other,now);
+            if(result==FoodQuestions.Result.WAIT){
+                v.getNavigation().stop();s.action=null;s.before=null;
+                return s.foodHelpStatus="asking how a food lead is known";
+            }
+            if(result==FoodQuestions.Result.LEAD){
+                var lead=FoodQuestions.lead(s,now);
+                // Spoken identities cannot reveal an unseen person's current position or bypass home/route checks.
+                if(lead!=null&&level.getEntity(lead) instanceof Villager provider&&eligible(level,v,s,provider)){
+                    if(!provider.getUUID().equals(s.foodHelpPeer)){
+                        s.foodHelpPeer=provider.getUUID();s.foodLeadInvestigations++;
+                        s.foodHelpJourney.interrupt(now);s.nextFoodHelpPath=now;
+                        s.mind.remember("Investigating spoken food lead at visible neighbour "+lead);
+                    }
+                    other=provider;
+                    arrived=FoodRequest.audible(v.distanceToSqr(other),Villagers.config().hearingRadius(),v.hasLineOfSight(other)&&other.hasLineOfSight(v));
+                }else FoodQuestions.unavailable(s);
+            }
         }
         var step=s.foodHelpJourney.advance(other.getUUID().toString(),now,arrived,v.getX(),v.getY(),v.getZ());
         if (step==WorkJourney.Step.WAIT) return null;

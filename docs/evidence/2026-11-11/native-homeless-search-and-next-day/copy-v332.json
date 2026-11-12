@@ -1,0 +1,181 @@
+{
+  "native-illager-habitats.json": {
+    "status": "passed",
+    "criticalVillagers": [],
+    "elapsed": 4240,
+    "stage": "bounded_observation",
+    "gameTime": 330989,
+    "targetTps": 80.0,
+    "founders": [
+      "460ab4b6-1522-4504-9673-25fd503e0610"
+    ],
+    "scope": "Existing native illager founders; normal resource work and paid breeding only. No body, food, health, inventory, crop or resource setters; copied world only."
+  },
+  "population-preservation.json": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "native-care-startup.json": {
+    "schema": 1,
+    "stage": "resumed",
+    "gameTime": 326749,
+    "expectedGameTime": 326749,
+    "resident": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+    "worker": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+    "bodyBefore": "cb79c23c-9623-45ac-9776-90c0f0a7813e:(-657.6999999880791, 64.0, -626.4517814946744):24.0:false:false:[3 minecraft:string, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air]:1 minecraft:crossbow:0 minecraft:air",
+    "bodyAfter": "cb79c23c-9623-45ac-9776-90c0f0a7813e:(-657.6999999880791, 64.0, -626.4517814946744):24.0:false:false:[3 minecraft:string, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air]:1 minecraft:crossbow:0 minecraft:air",
+    "adoption": {
+      "enrolledExisting": 0,
+      "alreadyManaged": true,
+      "id": "cb79c23c-9623-45ac-9776-90c0f0a7813e"
+    },
+    "frozenFrames": 3,
+    "error": ""
+  },
+  "terminal.json": {
+    "pid": 2346955,
+    "exitCode": 0
+  },
+  "native-adventurer-progress.json": {
+    "elapsed": 4240,
+    "gameTime": 330989,
+    "actors": [
+      {
+        "navigation": {
+          "velocity": "(0.0, -0.0784000015258789, 0.0)",
+          "wanted": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": "(-466.5, 64.5625, -376.5)",
+          "onGround": true,
+          "path": {}
+        },
+        "food": 20,
+        "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+        "armor": {
+          "equipped": 0,
+          "nextPiece": "CHEST",
+          "ready": false,
+          "ironTarget": 8,
+          "lastReceipt": {},
+          "crafted": 0
+        },
+        "inventory": [
+          "1 minecraft:stone_pickaxe",
+          "1 minecraft:iron_pickaxe",
+          "44 minecraft:dirt",
+          "2 minecraft:bread",
+          "1 minecraft:carrot",
+          "4 minecraft:stick",
+          "1 minecraft:raw_iron",
+          "1 minecraft:wheat_seeds"
+        ],
+        "iron": {
+          "activity": "not preparing iron",
+          "furnace": "",
+          "crafted": 0,
+          "ironTaken": 0,
+          "passage": {
+            "mode": "descending",
+            "faceBlock": "",
+            "activity": "no prospecting passage",
+            "part": 0,
+            "retainedFloors": 114,
+            "root": "",
+            "depth": 0,
+            "turns": 0,
+            "reselect": false,
+            "face": "",
+            "retainedEntries": 3,
+            "exhaustedEntries": 1,
+            "stepsWithoutDepth": 0,
+            "waterSeals": {
+              "placed": 0,
+              "active": false,
+              "activity": "no water sealing job",
+              "lastReceipt": {}
+            },
+            "foundations": 0,
+            "lastFoundation": {},
+            "exhausted": false,
+            "failedScans": 0,
+            "entry": "",
+            "frontier": "",
+            "backtracks": 0,
+            "lastRoute": {},
+            "frontierSearch": {
+              "activity": "not checking junctions",
+              "candidates": 0,
+              "queries": 0
+            }
+          },
+          "plannedSite": "",
+          "lastApproach": {},
+          "lastReceipt": {},
+          "loadedOre": 0,
+          "fuelStored": false
+        },
+        "ageTicks": 267511,
+        "health": 20.0,
+        "mainhand": "1 minecraft:wooden_hoe",
+        "position": "(-466.5, 64.5625, -376.5)",
+        "quarry": {
+          "dug": 0,
+          "centerings": 0,
+          "stand": "",
+          "activity": "no quarry job",
+          "lastStop": {},
+          "inspection": {
+            "visited": 0,
+            "lastRepair": {},
+            "reconsidered": 0,
+            "returning": false,
+            "repairs": 0,
+            "lastRetirement": {},
+            "survey": {
+              "lastRoute": {},
+              "visited": 0,
+              "target": ""
+            },
+            "target": "",
+            "reviewAt": 0,
+            "route": "none"
+          },
+          "origin": "-475, 63, -347",
+          "lastReceipt": {},
+          "step": 9,
+          "lastApproach": {}
+        },
+        "bedding": {
+          "transfers": 0,
+          "placed": 0,
+          "activity": "no village bedding work",
+          "sheepWool": {
+            "collected": 0,
+            "sheared": 0,
+            "craftedShears": 0,
+            "target": "",
+            "lastReceipt": {}
+          },
+          "store": "",
+          "lastReceipt": {},
+          "recipes": 0,
+          "site": ""
+        },
+        "family": {
+          "foodGoal": false,
+          "status": "no recent family encounter",
+          "courtship": ""
+        }
+      }
+    ]
+  }
+}

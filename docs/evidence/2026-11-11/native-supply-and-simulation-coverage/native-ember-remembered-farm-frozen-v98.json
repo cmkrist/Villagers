@@ -1,0 +1,41 @@
+{
+  "runtime": "runs/native-ember-remembered-farm-frozen-v98",
+  "terminal.json": {
+    "pid": 1817638,
+    "exitCode": 0
+  },
+  "population-preservation.json": {
+    "beforeHumanoids": 187,
+    "afterHumanoids": 187,
+    "missingOriginalIds": [],
+    "newHumanoidIds": []
+  },
+  "farmRoutes": {
+    "name": "Ember-8a41",
+    "health": 4.0,
+    "food": 0,
+    "position": [
+      -433.9549271155909,
+      64.0,
+      -781.5458204820026
+    ],
+    "rememberedFarmRoutes": [
+      {
+        "position": "-441, 64, -755",
+        "workRoute": {
+          "reaches": true,
+          "end": "-441, 64, -755",
+          "nodes": 32,
+          "found": true
+        },
+        "ordinaryRoute": {
+          "reaches": false,
+          "end": "-440, 64, -756",
+          "nodes": 31,
+          "found": true
+        },
+        "block": "Block{minecraft:beetroots}[age=0]"
+      }
+    ]
+  }
+}

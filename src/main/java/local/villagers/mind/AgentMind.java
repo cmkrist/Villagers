@@ -24,7 +24,7 @@ import java.util.random.RandomGenerator;
 
 /** Small contextual action-value learner. World interaction and outcome attribution belong to the controller. */
 public final class AgentMind {
-    public static final int SCHEMA_VERSION = 9;
+    public static final int SCHEMA_VERSION = 18;
     public static final int MAX_FARMS = 8;
     /** Exhaustion per day of loaded life on top of activity; walking costs players nothing, so a body needs a baseline. */
     public static final double DEFAULT_BASE_EXHAUSTION_PER_DAY = 80;
@@ -54,7 +54,12 @@ public final class AgentMind {
     private Lexicon lexicon = Lexicon.empty();
     private String originBiome;
     private Opinions opinions = Opinions.empty();
+    private Beliefs beliefs = Beliefs.empty();
+    private local.villagers.work.WorkOrders workOrders = local.villagers.work.WorkOrders.empty();
+    private local.villagers.relations.Partnerships partnerships = local.villagers.relations.Partnerships.empty();
     private Experience experience = Experience.none();
+    private local.villagers.language.Voice voice=local.villagers.language.Voice.empty();
+    private local.villagers.learning.Lessons lessons=local.villagers.learning.Lessons.empty();
     private Mood mood = Mood.neutral();
     private double fatigue = 0.1;
     private double loneliness = 0.2;
@@ -74,13 +79,13 @@ public final class AgentMind {
                         long learningUpdates, double[][] values, int[][] visits, List<Memory> memories,
                         List<PlayerImpression> impressions, List<Episode> episodes, long nextEpisodeId,
                         Genome genome, Metabolism.State food, long ageTicks, Lineage lineage, Death death,
-                        Lexicon lexicon, Opinions opinions, Experience experience, long nextBreedingAt, String originBiome) {
+                        Lexicon lexicon, Opinions opinions, Experience experience, long nextBreedingAt, String originBiome, Beliefs beliefs, local.villagers.relations.Partnerships partnerships, local.villagers.work.WorkOrders workOrders,local.villagers.learning.Lessons lessons,local.villagers.language.Voice voice) {
         /** Source compatibility for schema-one callers; schema-one JSON also omits impressions and episodes. */
         public Snapshot(int schemaVersion, UUID id, String name, Personality personality,
                         double hunger, double fatigue, double loneliness, Home home,
                         long learningUpdates, double[][] values, int[][] visits, List<Memory> memories) {
             this(schemaVersion, id, name, personality, hunger, fatigue, loneliness, home,
-                    learningUpdates, values, visits, memories, List.of(), List.of(), 0, null, null, 0, null, null, null, null, null, 0, null);
+                    learningUpdates, values, visits, memories, List.of(), List.of(), 0, null, null, 0, null, null, null, null, null, 0, null, null, null, null, null, null);
         }
         public Snapshot {
             if (originBiome != null) local.villagers.language.BiomeDialect.validate(originBiome);
@@ -95,7 +100,12 @@ public final class AgentMind {
             // biome's dialect when next observed. Sparse developing lexicons retain their learning state.
             lexicon = lexicon == null ? Lexicon.empty() : lexicon;
             opinions = opinions == null ? Opinions.empty() : opinions;
+            beliefs = beliefs == null ? Beliefs.empty() : beliefs;
+            workOrders = workOrders == null ? local.villagers.work.WorkOrders.empty() : workOrders;
+            partnerships = partnerships == null ? local.villagers.relations.Partnerships.empty() : partnerships;
             experience = experience == null ? Experience.none() : experience;
+            lessons=lessons==null?local.villagers.learning.Lessons.empty():lessons;
+            voice=voice==null?local.villagers.language.Voice.empty():voice;
         }
         @Override public double[][] values() { return copy(values); }
         @Override public int[][] visits() { return copy(visits); }
@@ -190,7 +200,11 @@ public final class AgentMind {
         lexicon = state.lexicon();
         originBiome = state.originBiome();
         opinions = state.opinions();
+        beliefs = state.beliefs();
+        workOrders(state.workOrders());
+        partnerships(state.partnerships());
         experience = state.experience();
+        lessons(state.lessons());voice=state.voice();
         fatigue = Observation.normalized(state.fatigue());
         loneliness = Observation.normalized(state.loneliness());
         home = state.home() == null ? null : new Home(state.home().dimension(), state.home().x(), state.home().y(), state.home().z());
@@ -319,6 +333,28 @@ public final class AgentMind {
 
     /** Opinions of other villagers. */
     public Opinions opinions() { return opinions; }
+    public local.villagers.relations.Partnerships partnerships(){return partnerships;}
+    public void partnerships(local.villagers.relations.Partnerships next){
+        Objects.requireNonNull(next);
+        if(next.history().stream().anyMatch(b->b.peer().equals(id)))throw new IllegalArgumentException("Self partnership");
+        partnerships=next;
+    }
+    public local.villagers.work.WorkOrders workOrders(){return workOrders;}
+    public void workOrders(local.villagers.work.WorkOrders next){
+        Objects.requireNonNull(next);
+        for(var order:next.history()){
+            order.terms().peer(id);
+            if(order.production()!=null&&!order.terms().worker().equals(id))throw new IllegalArgumentException("Copied private production evidence");
+            if(order.settlement()!=null&&(!order.settlement().proves(order.terms(),id)||order.terms().worker().equals(id)&&order.production()==null))throw new IllegalArgumentException("Unproved settlement");
+        }
+        workOrders=next;
+    }
+    public local.villagers.language.Voice voice(){return voice;}
+    public void voice(local.villagers.language.Voice next){voice=Objects.requireNonNull(next);}
+    public local.villagers.learning.Lessons lessons(){return lessons;}
+    public void lessons(local.villagers.learning.Lessons next){Objects.requireNonNull(next);if(next.entries().stream().anyMatch(e->e.peer().equals(id)))throw new IllegalArgumentException("Self lesson record");lessons=next;}
+    public Beliefs beliefs() { return beliefs; }
+    public void beliefs(Beliefs next) { beliefs = Objects.requireNonNull(next); }
     public Opinion opinionOf(UUID villager) { return opinions.of(villager); }
     public void witness(UUID villager, Opinion.Event event, long tick) {
         if (villager.equals(id)) return;
@@ -327,7 +363,7 @@ public final class AgentMind {
             case PROTECTED -> experience(Experience.Event.RESCUED);
             case CHATTED -> experience(Experience.Event.CHATTED);
             case REFUSED -> experience(Experience.Event.REFUSED);
-            case SHARED_FOOD -> { }
+            case SHARED_FOOD, KEPT_PROMISE -> { }
         }
     }
 
@@ -494,14 +530,23 @@ public final class AgentMind {
             case FLEE -> false;
             // Like a player, a villager with a full food bar cannot eat.
             case FORAGE -> observation.foodAvailable() && observation.hunger() > 0;
-            case REST -> true; // Resting in place remains possible without an assigned bed.
+            case REST -> !emergencyFoodSearch(observation);
             case SOCIALIZE -> !observation.night() && observation.health() > 0.3 && observation.hunger() < 0.9;
             // A hungry agent without known food must still be able to search for it.
             // Cowards stay in when hurt; the brave also wander at night while healthy, at their own risk.
-            case EXPLORE -> has(Trait.BRAVE)
+            case EXPLORE -> emergencyFoodSearch(observation) || (has(Trait.BRAVE)
                     ? observation.health() > 0.3 && (!observation.night() || observation.health() > 0.6)
-                    : !observation.night() && observation.health() > (has(Trait.COWARD) ? 0.6 : 0.3);
+                    : !observation.night() && observation.health() > (has(Trait.COWARD) ? 0.6 : 0.3));
         };
+    }
+
+    private static boolean emergencyFoodSearch(Observation observation){
+        // Rest cannot restore a starving body. Keep safe food search possible
+        // when injury would otherwise leave rest as the sole allowed action.
+        // The danger override above still requires immediate flight.
+        return observation.health()>0&&!observation.foodAvailable()
+            &&(!observation.homeAvailable()&&observation.hunger()>=.7
+                ||observation.hunger()>=.95&&observation.health()<=.3);
     }
 
     public Action choose(Observation observation, RandomGenerator random) {
@@ -578,6 +623,6 @@ public final class AgentMind {
     public Snapshot snapshot() {
         return new Snapshot(SCHEMA_VERSION, id, name, personality, hunger(), fatigue, loneliness, home,
                 learningUpdates, values, visits, memories(), impressions(), episodes(), nextEpisodeId, genome,
-                food.state(), ageTicks, lineage, death, lexicon, opinions, experience, nextBreedingAt, originBiome);
+                food.state(), ageTicks, lineage, death, lexicon, opinions, experience, nextBreedingAt, originBiome, beliefs, partnerships, workOrders,lessons,voice);
     }
 }

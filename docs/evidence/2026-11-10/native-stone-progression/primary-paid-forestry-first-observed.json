@@ -1,0 +1,1535 @@
+{
+  "scope": "Actual primary observation; run still in progress, not final body audit",
+  "sourceStatus": "runs/native-four-regions-play/saves/NativeFourRegions/villagers/family-evidence/status-175836-75431830393071.json",
+  "gameTime": 175836,
+  "actor": {
+    "uuid": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+    "position": [
+      -464.8313520736051,
+      63.0,
+      -359.4184882243748
+    ],
+    "health": 20.0,
+    "nativeAge": 0,
+    "baby": false,
+    "sleeping": false,
+    "food": 20,
+    "fatigue": 0.24674999999999617,
+    "mood": "CONTENT",
+    "nextBreedingAt": 0,
+    "courtship": {
+      "partner": "f572553d-4483-44b5-8ed5-6ffe7e7745b7",
+      "agreedAt": 175358,
+      "expiresAt": 176558
+    },
+    "courtshipActive": true,
+    "nextFamilySignal": 176558,
+    "nextFamilyReply": 0,
+    "familyStatus": "agreed to meet a family partner",
+    "familyFoodGoal": false,
+    "selfFoodGoal": false,
+    "selfFoodDeficit": 0,
+    "stockWheatTarget": 0,
+    "foodStatus": "not working",
+    "plotsCultivatedThisLoad": 3,
+    "expansionTarget": "none",
+    "farmJourneyActive": false,
+    "farmRecall": {
+      "target": "none",
+      "rejected": 0,
+      "knownFarms": [
+        {
+          "id": 0,
+          "kind": "OBSERVED_FARM",
+          "tick": 124613,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -486,
+            "y": 64,
+            "z": -324
+          },
+          "detail": "minecraft:wheat",
+          "knownBy": []
+        },
+        {
+          "id": 1,
+          "kind": "OBSERVED_FARM",
+          "tick": 125283,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -489,
+            "y": 64,
+            "z": -321
+          },
+          "detail": "minecraft:carrots",
+          "knownBy": []
+        },
+        {
+          "id": 2,
+          "kind": "OBSERVED_FARM",
+          "tick": 129212,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -485,
+            "y": 63,
+            "z": -329
+          },
+          "detail": "minecraft:wheat",
+          "knownBy": []
+        }
+      ],
+      "status": "checking remembered farm",
+      "arrivals": 1,
+      "trips": 1,
+      "lastPath": {
+        "permitted": true,
+        "target": "-485, 63, -329",
+        "canReach": true,
+        "gameTime": 170140,
+        "nodes": 33,
+        "fromObservation": true
+      }
+    },
+    "companyTarget": "none",
+    "companyJourneyActive": false,
+    "companyStatus": "agreement already active",
+    "companyScans": 10,
+    "companyPathRejections": 0,
+    "nextCompanyScan": 174229,
+    "cropTarget": "none",
+    "edibleCropTarget": "none",
+    "nativeJobSite": "ResourceKey[minecraft:dimension / minecraft:overworld] BlockPos{x=-478, y=64, z=-368}",
+    "navigationDone": true,
+    "navigationTarget": "none",
+    "craftingStatus": "needs crafting table",
+    "breadCraftedThisLoad": 0,
+    "toolStatus": "not working",
+    "woodRecipesThisLoad": 0,
+    "hoesCraftedThisLoad": 0,
+    "stationStatus": "no approved clear table site",
+    "stationRecipesThisLoad": 0,
+    "tablesBuiltThisLoad": 0,
+    "restStatus": "not resting",
+    "groundRestsThisLoad": 0,
+    "bedRestsThisLoad": 0,
+    "restPathRejections": 0,
+    "survival": {
+      "refugeStandInspections": 0,
+      "partialHomeRoutes": 0,
+      "plans": 46,
+      "recoveryUntil": 0,
+      "homePathPlans": 0,
+      "centeringSuccesses": 0,
+      "refugePathQueries": 0,
+      "lastRefugePlan": {
+        "gameTime": 167972,
+        "position": [
+          -466.5,
+          64.5625,
+          -376.5
+        ],
+        "bed": "-467, 64, -377",
+        "distance": 0.0625,
+        "covered": true,
+        "inside": true,
+        "dusk": true,
+        "danger": false,
+        "nativeActivity": "rest",
+        "clockTime": 167972,
+        "skyDarken": 4,
+        "raining": true,
+        "pathPresent": false,
+        "pathCanReach": false,
+        "pathNodes": 0,
+        "partialAccepted": false,
+        "bounded": false,
+        "homeReachable": true,
+        "homeSafe": true,
+        "blockedUntil": 0,
+        "guardianReachable": false,
+        "chosenIntent": "SHELTER"
+      },
+      "routeStalls": 0,
+      "intent": "NORMAL",
+      "floorRoutes": 0,
+      "centeringFailures": 0,
+      "lastFloorRoute": {},
+      "centeringActive": false,
+      "centeringAttempts": 0,
+      "rejectedPaths": 0
+    },
+    "forestryStatus": "not working",
+    "logsGatheredThisLoad": 0,
+    "propagulesGatheredThisLoad": 0,
+    "propagulesPlantedThisLoad": 0,
+    "leavesClearedThisLoad": 0,
+    "rootsClearedThisLoad": 0,
+    "foodHelp": {
+      "journeyActive": false,
+      "requests": 0,
+      "received": 0,
+      "status": "own need or request budget unmet",
+      "target": "none",
+      "pathRejections": 0,
+      "given": 0,
+      "scans": 0
+    },
+    "forestryRoute": {
+      "rejections": 0,
+      "standCandidates": 0,
+      "lastPath": "none",
+      "cursor": 0,
+      "batches": 0
+    },
+    "adventureActivity": {
+      "doorsOpened": 1,
+      "doorsClosed": 0,
+      "replantsFromStock": 8,
+      "cropsHarvested": 8,
+      "swordHits": 0,
+      "replantsFromHarvest": 0
+    },
+    "quarry": {
+      "lastApproach": {
+        "target": "-482, 62, -372",
+        "accepted": true,
+        "safe": true,
+        "end": "-481, 63, -371",
+        "gameTime": 175428,
+        "nodes": 16,
+        "actor": "(-465.49925162625607, 63.0, -370.5112633417165)"
+      },
+      "step": 0,
+      "lastReceipt": {
+        "position": "-475, 61, -381",
+        "gameTime": 173319,
+        "step": 3,
+        "drops": [
+          "1 minecraft:dirt"
+        ]
+      },
+      "origin": "",
+      "inspection": {
+        "target": "",
+        "lastRepair": {},
+        "reviewAt": 195750,
+        "visited": 0,
+        "route": "none",
+        "repairs": 0,
+        "reconsidered": 0
+      },
+      "lastStop": {
+        "target": "-482, 62, -372",
+        "idleTicks": 100,
+        "step": 0,
+        "gameTime": 175438,
+        "actor": "-467, 63, -372",
+        "block": "Block{minecraft:farmland}[moisture=0]",
+        "reason": "target is not natural soil"
+      },
+      "activity": "stopped quarry at a non-soil block, boundary or stalled route",
+      "stand": "",
+      "centerings": 0,
+      "dug": 4
+    },
+    "mining": {
+      "blocks": 0,
+      "activity": "needs observed exposed natural stone",
+      "lastReceipt": {}
+    },
+    "woodPreparation": {
+      "recipes": 0,
+      "stepsPlaced": 1,
+      "goal": "STONE_PICKAXE",
+      "lastStep": {
+        "reach": 1.8225247692916693,
+        "dirtBefore": 4,
+        "contact": "(-476.500004215896, 63.0, -349.5005154043275)",
+        "tree": "-477, 68, -350",
+        "gameTime": 171170,
+        "dirtAfter": 3,
+        "position": "-477, 63, -350"
+      },
+      "pathQueries": 1,
+      "logs": 1,
+      "activity": "gathered preparation wood",
+      "lastPath": "reach=true nodes=2 target=BlockPos{x=-477, y=68, z=-350} end=BlockPos{x=-477, y=64, z=-350} moved=true"
+    },
+    "inventoryRoom": {
+      "lastReceipt": {
+        "worldCount": 5,
+        "action": "put down secondary crop stock",
+        "bagBefore": 5,
+        "itemEntity": "0bf8667d-72da-4bb6-8ded-274617a158a2",
+        "gameTime": 171350,
+        "item": "minecraft:beetroot_seeds",
+        "bagAfter": 0
+      },
+      "actions": 1
+    },
+    "stonePickaxePrepared": false,
+    "nativeActivity": "work",
+    "lastHarvest": {
+      "gameTime": 170630,
+      "position": "-489, 64, -324",
+      "crop": "CARROT",
+      "plantingSource": "owned stock",
+      "nativeDrops": [
+        "1 minecraft:carrot",
+        "3 minecraft:carrot"
+      ],
+      "inventoryBefore": [
+        "1 minecraft:wooden_pickaxe",
+        "1 minecraft:crafting_table",
+        "4 minecraft:dirt",
+        "3 minecraft:wheat",
+        "5 minecraft:wheat_seeds",
+        "10 minecraft:carrot",
+        "2 minecraft:beetroot",
+        "6 minecraft:beetroot_seeds"
+      ],
+      "inventoryAfter": [
+        "1 minecraft:wooden_pickaxe",
+        "1 minecraft:crafting_table",
+        "4 minecraft:dirt",
+        "3 minecraft:wheat",
+        "5 minecraft:wheat_seeds",
+        "13 minecraft:carrot",
+        "2 minecraft:beetroot",
+        "6 minecraft:beetroot_seeds"
+      ],
+      "overflow": [],
+      "hoeDamageBefore": 38,
+      "hoeDamageAfter": 39,
+      "hoeBroke": false,
+      "usedHoe": true,
+      "cropAfter": "Block{minecraft:carrots}[age=0]"
+    },
+    "soilWork": {
+      "pathQueries": 0,
+      "lastPath": {},
+      "lastReceipt": {},
+      "gathered": 0,
+      "job": "none",
+      "pathRejections": 0,
+      "status": "not working",
+      "delivered": 0,
+      "tripActive": false
+    },
+    "action": "SOCIALIZE",
+    "electiveLearningCredit": false,
+    "inventory": [
+      "1 minecraft:wooden_pickaxe",
+      "1 minecraft:crafting_table",
+      "7 minecraft:dirt",
+      "3 minecraft:wheat",
+      "4 minecraft:wheat_seeds",
+      "13 minecraft:carrot",
+      "2 minecraft:beetroot",
+      "1 minecraft:oak_log"
+    ],
+    "hasActualBreedingFood": true,
+    "mind": {
+      "schemaVersion": 9,
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "name": "Clover-edc5",
+      "personality": {
+        "boldness": 0.17772372290389538,
+        "sociability": 0.41146150219306343,
+        "curiosity": 0.4847705782400493
+      },
+      "hunger": 0.0,
+      "fatigue": 0.24674999999999617,
+      "loneliness": 0.8,
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -467,
+        "y": 64,
+        "z": -377
+      },
+      "learningUpdates": 111,
+      "values": [
+        [
+          0.025,
+          -0.039999999999999945,
+          -0.0906150163922986,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.125,
+          -0.09249999999999986,
+          -0.1495323847386606,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "visits": [
+        [
+          1,
+          1,
+          8,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          3,
+          26,
+          66,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "memories": [
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Planned a stone expedition by boat to -464, 63, -360"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Ate owned minecraft:bread for hunger or healing"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Planned a stone expedition by boat to -464, 63, -360"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Reconsidering an old quarry worksite after a full day; current terrain and route must be surveyed again"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Reconsidering an old quarry worksite after a full day; current terrain and route must be surveyed again"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Reconsidering an old quarry worksite after a full day; current terrain and route must be surveyed again"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Reconsidering an old quarry worksite after a full day; current terrain and route must be surveyed again"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Reconsidering an old quarry worksite after a full day; current terrain and route must be surveyed again"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Reconsidering an old quarry worksite after a full day; current terrain and route must be surveyed again"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Reconsidering an old quarry worksite after a full day; current terrain and route must be surveyed again"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Selected observed natural soil for a bounded four-step quarry at -465, 63, -383"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Safety decision SHELTER at -465, 63, -383"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Safety decision NORMAL at -471, 63, -377"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Safety decision SHELTER at -471, 64, -376"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Safety decision SHELTER at -467, 64, -377"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Ate owned minecraft:bread for hunger or healing"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Planned a food expedition by boat to -482, 63, -330"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Crossed water and landed at -482, 63, -330"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Harvested real WHEAT at -485, 63, -329; replanted from owned stock"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Harvested real CARROT at -486, 63, -328; replanted from owned stock"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Harvested real CARROT at -484, 63, -327; replanted from owned stock"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Planned trip to remembered farm -485, 63, -329"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Arrived at remembered farm -485, 63, -329"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Harvested real WHEAT at -485, 64, -325; replanted from owned stock"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Harvested real CARROT at -486, 64, -325; replanted from owned stock"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Harvested real BEETROOT at -485, 64, -324; replanted from owned stock"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Harvested real BEETROOT at -488, 64, -325; replanted from owned stock"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Expanded farm: planted Block{minecraft:wheat} at -486, 63, -329 using one real planting item and hoe wear"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Harvested real CARROT at -489, 64, -324; replanted from owned stock"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Expanded farm: planted Block{minecraft:beetroots} at -485, 63, -328 using one real planting item and hoe wear"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Placed one owned dirt block as a forestry step at -477, 63, -350"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Put down secondary crop stock to make room for work; retained my primary wheat planting reserve"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Gathered actual natural wood for stone_pickaxe at -477, 68, -350"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Dug actual quarry soil at -465, 62, -384 and retained its native drops"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Planned a stone expedition by boat to -479, 63, -380"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Crossed water and landed at -479, 63, -380"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Selected observed natural soil for a bounded four-step quarry at -475, 63, -379"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Dug actual quarry soil at -475, 62, -380 and retained its native drops"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Dug actual quarry soil at -475, 62, -381 and retained its native drops"
+        },
+        {
+          "index": 107,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Dug actual quarry soil at -475, 61, -381 and retained its native drops"
+        },
+        {
+          "index": 108,
+          "action": "SOCIALIZE",
+          "context": 4,
+          "reward": -0.15,
+          "note": "Observed outcome of SOCIALIZE"
+        },
+        {
+          "index": 109,
+          "action": "SOCIALIZE",
+          "context": 4,
+          "reward": -0.15,
+          "note": "Observed outcome of SOCIALIZE"
+        },
+        {
+          "index": 110,
+          "action": "SOCIALIZE",
+          "context": 4,
+          "reward": -0.15,
+          "note": "Observed outcome of SOCIALIZE"
+        },
+        {
+          "index": 111,
+          "action": "SOCIALIZE",
+          "context": 4,
+          "reward": -0.15,
+          "note": "Observed outcome of SOCIALIZE"
+        },
+        {
+          "index": 111,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Selected observed natural soil for a bounded four-step quarry at -481, 63, -372"
+        },
+        {
+          "index": 111,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Heard and accepted a family invitation from Tansy-f572"
+        },
+        {
+          "index": 111,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Expanded farm: planted Block{minecraft:wheat} at -464, 63, -359 using one real planting item and hoe wear"
+        },
+        {
+          "index": 111,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Completed SOCIALIZE at -465, 63, -360"
+        }
+      ],
+      "impressions": [],
+      "episodes": [
+        {
+          "id": 0,
+          "kind": "OBSERVED_FARM",
+          "tick": 124613,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -486,
+            "y": 64,
+            "z": -324
+          },
+          "detail": "minecraft:wheat",
+          "knownBy": []
+        },
+        {
+          "id": 1,
+          "kind": "OBSERVED_FARM",
+          "tick": 125283,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -489,
+            "y": 64,
+            "z": -321
+          },
+          "detail": "minecraft:carrots",
+          "knownBy": []
+        },
+        {
+          "id": 2,
+          "kind": "OBSERVED_FARM",
+          "tick": 129212,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -485,
+            "y": 63,
+            "z": -329
+          },
+          "detail": "minecraft:wheat",
+          "knownBy": []
+        }
+      ],
+      "nextEpisodeId": 3,
+      "genome": {
+        "traitGenes": [
+          {
+            "gene": "COURAGE",
+            "first": "SECOND",
+            "second": "NEUTRAL"
+          },
+          {
+            "gene": "GENEROSITY",
+            "first": "NEUTRAL",
+            "second": "SECOND"
+          },
+          {
+            "gene": "SOCIABILITY",
+            "first": "NEUTRAL",
+            "second": "SECOND"
+          },
+          {
+            "gene": "APPETITE",
+            "first": "NEUTRAL",
+            "second": "SECOND"
+          },
+          {
+            "gene": "INDUSTRY",
+            "first": "NEUTRAL",
+            "second": "SECOND"
+          }
+        ],
+        "tendencyGenes": [
+          {
+            "tendency": "BOLDNESS",
+            "first": [
+              0.22708157903186232,
+              0.22708908952561546,
+              0.2297267439934741,
+              0.2201518824144511
+            ],
+            "second": [
+              0.12836586677592843,
+              0.1283583562821753,
+              0.12572070181431666,
+              0.13529556339333965
+            ]
+          },
+          {
+            "tendency": "SOCIABILITY",
+            "first": [
+              0.8121303087080459,
+              0.5955198292326334,
+              0.7644674522176198,
+              0.6606125138899355
+            ],
+            "second": [
+              0.010792695678080944,
+              0.22740317515349354,
+              0.05845555216850712,
+              0.16231049049619134
+            ]
+          },
+          {
+            "tendency": "CURIOSITY",
+            "first": [
+              0.7738748733572779,
+              0.6283790821532184,
+              0.7302815908040446,
+              0.5537543651325152
+            ],
+            "second": [
+              0.19566628312282075,
+              0.3411620743268803,
+              0.239259565676054,
+              0.4157867913475834
+            ]
+          },
+          {
+            "tendency": "APPETITE",
+            "first": [
+              0.6267651538084085,
+              0.5152431925645176,
+              0.4014404728909988,
+              0.529572521730208
+            ],
+            "second": [
+              0.021949508634865278,
+              0.1334714698787561,
+              0.24727418955227487,
+              0.1191421407130657
+            ]
+          },
+          {
+            "tendency": "FERTILITY",
+            "first": [
+              0.937622663661718,
+              0.7796636320408191,
+              0.7268177379618959,
+              0.7294217012124055
+            ],
+            "second": [
+              0.4533415273584234,
+              0.6113005589793222,
+              0.6641464530582455,
+              0.6615424898077359
+            ]
+          }
+        ]
+      },
+      "food": {
+        "foodLevel": 20,
+        "saturation": 0.0,
+        "exhaustion": 2.7016785,
+        "timer": 0
+      },
+      "ageTicks": 144222,
+      "lexicon": {
+        "entries": [
+          {
+            "concept": "YES",
+            "word": "na",
+            "strength": 1.0
+          },
+          {
+            "concept": "NO",
+            "word": "kivut",
+            "strength": 1.0
+          },
+          {
+            "concept": "THANKS",
+            "word": "taso",
+            "strength": 1.0
+          },
+          {
+            "concept": "TRADE",
+            "word": "za",
+            "strength": 1.0
+          },
+          {
+            "concept": "BED",
+            "word": "bemo",
+            "strength": 1.0
+          },
+          {
+            "concept": "FRIEND",
+            "word": "pozake",
+            "strength": 1.0
+          },
+          {
+            "concept": "WALK",
+            "word": "lub",
+            "strength": 1.0
+          },
+          {
+            "concept": "DANGER",
+            "word": "ser",
+            "strength": 1.0
+          },
+          {
+            "concept": "MONSTER",
+            "word": "vesuk",
+            "strength": 1.0
+          },
+          {
+            "concept": "HURT",
+            "word": "mi",
+            "strength": 1.0
+          },
+          {
+            "concept": "HUNGRY",
+            "word": "fu",
+            "strength": 1.0
+          },
+          {
+            "concept": "TIRED",
+            "word": "ba",
+            "strength": 1.0
+          },
+          {
+            "concept": "LONELY",
+            "word": "pi",
+            "strength": 1.0
+          },
+          {
+            "concept": "HAPPY",
+            "word": "rusigis",
+            "strength": 1.0
+          },
+          {
+            "concept": "AFRAID",
+            "word": "ru",
+            "strength": 1.0
+          },
+          {
+            "concept": "EMERALD",
+            "word": "zid",
+            "strength": 1.0
+          },
+          {
+            "concept": "BREAD",
+            "word": "vig",
+            "strength": 1.0
+          },
+          {
+            "concept": "WHEAT",
+            "word": "livise",
+            "strength": 1.0
+          },
+          {
+            "concept": "CARROT",
+            "word": "kava",
+            "strength": 1.0
+          },
+          {
+            "concept": "POTATO",
+            "word": "didu",
+            "strength": 1.0
+          },
+          {
+            "concept": "BEETROOT",
+            "word": "tega",
+            "strength": 1.0
+          },
+          {
+            "concept": "SEEDS",
+            "word": "dadobu",
+            "strength": 1.0
+          },
+          {
+            "concept": "SWORD",
+            "word": "ki",
+            "strength": 1.0
+          },
+          {
+            "concept": "WOOD",
+            "word": "sabo",
+            "strength": 1.0
+          },
+          {
+            "concept": "WANT",
+            "word": "ketik",
+            "strength": 1.0
+          },
+          {
+            "concept": "FOOD",
+            "word": "sasur",
+            "strength": 1.0
+          },
+          {
+            "concept": "HELLO",
+            "word": "vuzefam",
+            "strength": 1.0
+          },
+          {
+            "concept": "HOE",
+            "word": "pilu",
+            "strength": 1.0
+          },
+          {
+            "concept": "HOE",
+            "word": "pi",
+            "strength": 0.15
+          },
+          {
+            "concept": "HOE",
+            "word": "lub",
+            "strength": 0.15
+          }
+        ],
+        "evidence": [
+          {
+            "word": "sasur",
+            "heard": 5,
+            "meanings": [
+              {
+                "concept": "FOOD",
+                "count": 5
+              }
+            ]
+          },
+          {
+            "word": "vuzefam",
+            "heard": 7,
+            "meanings": [
+              {
+                "concept": "HELLO",
+                "count": 7
+              }
+            ]
+          },
+          {
+            "word": "ketik",
+            "heard": 2,
+            "meanings": [
+              {
+                "concept": "WANT",
+                "count": 1
+              },
+              {
+                "concept": "HOE",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "word": "bemo",
+            "heard": 1,
+            "meanings": [
+              {
+                "concept": "HOE",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "word": "pi",
+            "heard": 3,
+            "meanings": [
+              {
+                "concept": "HOE",
+                "count": 3
+              }
+            ]
+          },
+          {
+            "word": "ba",
+            "heard": 1,
+            "meanings": [
+              {
+                "concept": "HOE",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "word": "lub",
+            "heard": 3,
+            "meanings": [
+              {
+                "concept": "HOE",
+                "count": 3
+              }
+            ]
+          }
+        ],
+        "developing": false
+      },
+      "opinions": {
+        "known": [
+          {
+            "other": "c5578b5b-8991-428d-9d82-7cb57a956269",
+            "liking": 0.04,
+            "trust": 0.02,
+            "fear": 0.0,
+            "witnessed": 1,
+            "hearsay": 0,
+            "lastTick": 51386
+          },
+          {
+            "other": "1d165330-2598-410c-827e-cc3b13c7bef9",
+            "liking": 1.0,
+            "trust": 1.0,
+            "fear": 0.0,
+            "witnessed": 179,
+            "hearsay": 0,
+            "lastTick": 77301
+          },
+          {
+            "other": "96cbd3bc-ebc5-4522-b101-b83ee55c471f",
+            "liking": 0.12,
+            "trust": 0.06,
+            "fear": 0.0,
+            "witnessed": 3,
+            "hearsay": 0,
+            "lastTick": 127702
+          },
+          {
+            "other": "f572553d-4483-44b5-8ed5-6ffe7e7745b7",
+            "liking": 0.12,
+            "trust": 0.06,
+            "fear": 0.0,
+            "witnessed": 3,
+            "hearsay": 0,
+            "lastTick": 175828
+          }
+        ]
+      },
+      "experience": {
+        "boldness": 0.1240000000000001,
+        "sociability": 0.2,
+        "curiosity": 0.2
+      },
+      "nextBreedingAt": 0,
+      "originBiome": "minecraft:plains"
+    },
+    "nativeHome": "ResourceKey[minecraft:dimension / minecraft:overworld] BlockPos{x=-467, y=64, z=-377}",
+    "spareHomePoisWithin16": []
+  }
+}

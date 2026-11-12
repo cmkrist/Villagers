@@ -1,0 +1,36 @@
+--- a/src/main/java/local/villagers/FarmExpansion.java
++++ b/src/main/java/local/villagers/FarmExpansion.java
+@@ -107,6 +107,12 @@
+     private static boolean ground(ServerLevel level, Villager v, Session s, BlockPos soil) {
+         if (!(ConstructionSites.allowsFarm(level, soil)||NativeVillageFarms.allowed(level,v,s,soil)) || !level.isLoaded(soil) || !level.isLoaded(soil.above(2))
+                 || !VillageSurvival.withinHomeRange(level, s.mind, Vec3.atCenterOf(soil.above()))) return false;
++        // Active quarry stairs and paid mine exits are retained supports, not
++        // new agricultural plots. Check nearby nominated workers' actual
++        // saved work footprints before either tilling or spending a seed.
++        if(NativeRegionsScenario.nativeRegions(level)&&level.getEntitiesOfClass(Villager.class,new AABB(soil).inflate(32),
++                miner->miner.isAlive()&&Villagers.isManaged(miner)&&AdventurePreparation.nominated(miner))
++            .stream().anyMatch(miner->AdventureQuarry.accessSupport(miner,soil)||MineStair.exitFloor(miner,soil)))return false;
+         var state = level.getBlockState(soil);
+         if ((!state.is(Blocks.DIRT) && !state.is(Blocks.GRASS_BLOCK)) || level.getBlockEntity(soil) != null
+                 || !level.getBlockState(soil.above()).isAir() || !level.getBlockState(soil.above(2)).isAir()
+--- a/src/main/java/local/villagers/AdventureQuarry.java
++++ b/src/main/java/local/villagers/AdventureQuarry.java
+@@ -266,11 +266,14 @@
+     /** Finish a native path's last fraction of a cell through ordinary MoveControl.
+      * Navigation's waypoint tolerance can leave a foot on the soil being removed. */
+     private static boolean centerApproach(ServerLevel level,Villager v,Session s,BlockPos target,long now){
+-        var q=s.quarry;if(q.stand==null||!v.getNavigation().isDone()||!v.onGround()
+-            ||!q.stand.equals(v.blockPosition())||Math.abs(v.getY()-q.stand.getY())>.01)return false;
++        var q=s.quarry;if(q.stand==null||!v.onGround()
++            ||Math.abs(v.getY()-q.stand.getY())>.01)return false;
+         var point=Vec3.atBottomCenterOf(q.stand);
+-        if(!local.villagers.navigation.FloorCenteringPolicy.local(v.getX(),v.getY(),v.getZ(),point.x,point.y,point.z,v.getBbWidth())
+-            ||v.position().distanceToSqr(point)<.0025||ForestryWork.standFailure(level,v,s,target,q.stand)!=null)return false;
++        // Native waypoint tolerance can stop in the adjacent cell, including
++        // atop the block being removed. Finish only the short same-floor,
++        // fully collision-clear departure to our already validated stand.
++        double distance=v.position().distanceToSqr(point);
++        if(distance>1.5625||distance<.0025||ForestryWork.standFailure(level,v,s,target,q.stand)!=null)return false;
+         var body=v.getBoundingBox().move(point.subtract(v.position()));
+         if(body.intersects(new AABB(target).expandTowards(0,2,0))||!level.noCollision(v,v.getBoundingBox().minmax(body)))return false;
+         // This controller thinks every ten native ticks. MoveControl consumes each

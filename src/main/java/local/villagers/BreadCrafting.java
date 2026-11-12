@@ -31,13 +31,20 @@ final class BreadCrafting {
         s.blockedCraftTable=null;s.blockedCraftUntil=0;
     }
     static BlockPos rememberedTable(ServerLevel level,Villager v,Session s) {
+        var p=rememberedMealTable(level,v);
+        return p!=null&&candidateHomeRange(level,s,p)?p:null;
+    }
+    /** Recall an earned station for a bounded meal mission after a save/reload.
+     * This does not admit ordinary work outside home: FoodAccess must still
+     * survey and execute a physically safe route to this specific station. */
+    static BlockPos rememberedMealTable(ServerLevel level,Villager v) {
         for(String tag:v.entityTags())if(tag.startsWith(WORKBENCH_MEMORY)) {
             try {
                 var parts=tag.substring(WORKBENCH_MEMORY.length()).split(",",4);
                 if(parts.length!=4||!parts[3].equals(level.dimension().identifier().toString()))return null;
                 var p=new BlockPos(Integer.parseInt(parts[0]),Integer.parseInt(parts[1]),Integer.parseInt(parts[2]));
                 if(level.isLoaded(p)&&level.getBlockState(p).is(Blocks.CRAFTING_TABLE)
-                        &&candidateHomeRange(level,s,p))return p;
+                        &&p.distSqr(v.blockPosition())<=64*64)return p;
             } catch(RuntimeException invalid){return null;}
         }
         return null;
@@ -94,7 +101,8 @@ final class BreadCrafting {
         session.nextCraftScan = now + 100;
         BlockPos origin = villager.blockPosition(), best = session.craftingTable;
         double nearest = best==null?Double.MAX_VALUE:villager.position().distanceToSqr(Vec3.atCenterOf(best));
-        for (BlockPos candidate : BlockPos.betweenClosed(origin.offset(-16, -3, -16), origin.offset(16, 3, 16))) {
+        int radius=NativeRegionsScenario.nativeRegions(level)?32:16;
+        for (BlockPos candidate : BlockPos.betweenClosed(origin.offset(-radius, -3, -radius), origin.offset(radius, 3, radius))) {
             if (!level.isLoaded(candidate) || !level.getBlockState(candidate).is(Blocks.CRAFTING_TABLE)
                     || !candidateHomeRange(level, session, candidate)
                     || candidate.equals(session.blockedCraftTable) && now < session.blockedCraftUntil) continue;
@@ -120,11 +128,16 @@ final class BreadCrafting {
     }
 
     /** Up to75 nearby stand candidates and3 actual paths per admitted planning batch. */
-    static void approach(ServerLevel level, Villager v, Session s, BlockPos table, long now) {
+    static boolean approach(ServerLevel level, Villager v, Session s, BlockPos table, long now) {
+        var current=v.getNavigation().getPath();
+        if(now<s.craftApproachUntil&&s.craftingStand!=null&&current!=null&&!current.isDone()
+            &&current.getTarget().equals(s.craftingStand)&&WorkNavigation.staysHome(level,v,s,current))return true;
+        // Waiting for the shared planning queue is not a failed physical
+        // trip. Start/sample its stall timer only on admitted attempts.
+        if (now < s.nextThink || !WorkNavigation.admit(level, now, v)) return false;
         if (s.craftingProgress.stalled(table.toShortString(), now, v.getX(), v.getY(), v.getZ())) {
-            block(s, table, now); v.getNavigation().stop(); return;
+            block(s, table, now); v.getNavigation().stop(); return false;
         }
-        if (now < s.nextThink || !WorkNavigation.admit(level, now, v)) return;
         s.nextThink = now + 40;
         List<BlockPos> stands = new ArrayList<>();
         for (BlockPos pos : BlockPos.betweenClosed(table.offset(-2, -1, -2), table.offset(2, 1, 2))) {
@@ -137,17 +150,47 @@ final class BreadCrafting {
                     && visible(level, v, eye, table)) stands.add(pos.immutable());
         }
         stands.sort(Comparator.comparingDouble(p -> v.position().distanceToSqr(new Vec3(p.getX() + .5, p.getY(), p.getZ() + .5))));
+        var retries=new ArrayList<BlockPos>();
         for (BlockPos stand : stands.stream().limit(3).toList()) {
-            var path = WorkNavigation.pathTo(level,v,s,stand,0);
-            if (WorkNavigation.staysHome(level, v, s, path)) { v.getNavigation().moveTo(path, .65); return; }
+            var path = mealPath(level,v,s,stand,64,2);
+            if (WorkNavigation.staysHome(level, v, s, path)&&(!NativeRegionsScenario.nativeRegions(level)||BoatTravel.dryPath(level,path))) {
+                boolean moved=v.getNavigation().moveTo(path,.65);
+                if(moved){s.craftingStand=stand;s.craftApproachUntil=now+600;}return moved;
+            }
+            if(NativeRegionsScenario.nativeRegions(level))retries.add(stand);
         }
-        block(s, table, now);
+        // Hillside villages can require a long stair detour to a nearby table.
+        // Retry the same observed stands with a bounded native search; do not
+        // let a short incomplete route make the owner abandon usable grain.
+        if(!retries.isEmpty())try{
+            v.getNavigation().setMaxVisitedNodesMultiplier(32);
+            for(var stand:retries){
+                var path=mealPath(level,v,s,stand,128,1);
+                if(WorkNavigation.staysHome(level,v,s,path)&&BoatTravel.dryPath(level,path)&&v.getNavigation().moveTo(path,.65)){
+                    s.craftingStand=stand;s.craftApproachUntil=now+600;return true;
+                }
+            }
+        }finally{
+            v.getNavigation().resetMaxVisitedNodesMultiplier();
+        }
+        block(s, table, now);return false;
+    }
+
+    private static net.minecraft.world.level.pathfinder.Path mealPath(ServerLevel level,Villager v,Session s,BlockPos stand,int range,int fall){
+        if(!NativeRegionsScenario.nativeRegions(level))return WorkNavigation.pathTo(level,v,s,stand,0);
+        // A wet shortest route followed by rejection never discovers a dry
+        // detour. Exclude the same wet cells during the native search, while
+        // retaining any existing route predicate and all final safety checks.
+        return NativePathLimits.search(v,fall,()->NativePathLimits.alsoAvoiding(v,
+            p->!level.isLoaded(p)||!level.getFluidState(p).isEmpty()||!level.getFluidState(p.below()).isEmpty(),
+            ()->v.getNavigation().createPath(stand,0,range)));
     }
 
     private static void block(Session s, BlockPos table, long now) {
         s.blockedCraftTable = table; s.blockedCraftUntil = now + 200;
         s.craftingTable = null; s.nextCraftScan = now; s.craftingProgress.reset();
         s.craftingStatus = "crafting table unreachable";
+        s.craftingStand=null;s.craftApproachUntil=0;
     }
 
     static boolean canWorkAt(ServerLevel level, Villager villager, Session session, BlockPos table) {
@@ -178,6 +221,7 @@ final class BreadCrafting {
             session.craftingStatus = "bread output blocked"; return false;
         }
         session.breadCrafted += output.getCount();
+        WorkLife.produced(level,villager,session,local.villagers.work.WorkOrders.Task.BREAD,table);
         session.craftingStatus = "crafted bread";
         session.mind.remember("Crafted " + output.getCount() + " bread from 3 wheat at " + table.toShortString());
         Villagers.persist(session);

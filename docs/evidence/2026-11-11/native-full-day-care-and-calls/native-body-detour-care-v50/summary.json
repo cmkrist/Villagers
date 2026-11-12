@@ -1,0 +1,1987 @@
+{
+  "elapsed": 7640,
+  "criticalVillagers": [
+    "48fd2e6d-6bf2-4694-9192-4b1e4ba295bf"
+  ],
+  "status": "failed",
+  "scope": "Existing native illager founders; normal resource work and paid breeding only. No body, food, health, inventory, crop or resource setters; copied world only.",
+  "founders": [
+    "0e6136f0-9f73-44de-a539-62c30a83f878",
+    "d485788b-10c9-4407-8e58-571b21ae01d2"
+  ],
+  "targetTps": 80.0,
+  "gameTime": 285605,
+  "stage": "health_stop",
+  "actors": [
+    {
+      "fatigue": 0.1866562499999923,
+      "activity": "investigating a loud native camp call",
+      "family": {
+        "activity": "not considering a family",
+        "juvenile": false,
+        "blocked": "",
+        "lastBirth": {},
+        "generation": 0,
+        "ageTicks": 31632,
+        "attempts": 0,
+        "nursery": "-664, 64, -632",
+        "breedingEnabled": true,
+        "nextBedSearch": 286368,
+        "availableNurseries": []
+      },
+      "id": "0e6136f0-9f73-44de-a539-62c30a83f878",
+      "food": 20,
+      "species": "minecraft:pillager",
+      "name": "Fern-0e61",
+      "learningUpdates": 12,
+      "health": 24.0,
+      "campWork": {
+        "target": "",
+        "access": {
+          "step": 6,
+          "blocks": 6,
+          "bed": "-664, 65, -632",
+          "lastFailure": {},
+          "activity": "no bunkhouse access work",
+          "lastReceipt": {}
+        },
+        "activity": "no safe camp supply survey route",
+        "beds": 1,
+        "recipes": 0,
+        "route": "native storage path started",
+        "transfers": 2,
+        "inspections": 4,
+        "reusedBeds": {
+          "activity": "no reusable free upper bunk nearby",
+          "routeRejections": 0,
+          "lastReceipt": {},
+          "collected": 0
+        },
+        "lastReceipt": {
+          "item": "minecraft:bread",
+          "gameTime": 284248,
+          "sourceAfter": 0,
+          "container": "-604, 63, -621",
+          "sourceBefore": 1,
+          "moved": 1
+        },
+        "bedSite": "",
+        "bedApproach": {},
+        "fallenBeds": 0,
+        "fallenAudit": {},
+        "fallenRoute": {}
+      },
+      "campMeals": {
+        "delivered": 9,
+        "requests": 6,
+        "activity": "investigating a loud native camp call",
+        "calls": {
+          "lastHeard": {
+            "sound": "minecraft:entity.villager.no",
+            "speaker": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+            "gameTime": 285243,
+            "volume": 6.0,
+            "position": "-589, 64, -588",
+            "heardRange": 72.0,
+            "nativeRange": 96.0,
+            "distance": 50.210476
+          },
+          "heard": 33,
+          "waiting": 1,
+          "detour": {
+            "steps": 0,
+            "completed": 0,
+            "lastReceipt": {},
+            "started": 0
+          },
+          "target": "-589, 64, -588"
+        },
+        "patrol": {
+          "visited": 1,
+          "until": 279168,
+          "cages": 1,
+          "lastRoute": {
+            "patrolCeiling": 67,
+            "end": "-599, 63, -634",
+            "gameTime": 278298,
+            "nodes": 65,
+            "actor": "(-614.1985359396994, 65.02442408821369, -628.4981553562255)",
+            "moved": false,
+            "target": "-669, 65, -585"
+          },
+          "target": ""
+        },
+        "lastApproach": {
+          "end": "",
+          "gameTime": 285398,
+          "nodes": 0,
+          "actor": "(-609.4999980026479, 65.16610926093821, -612.2837040120689)",
+          "stands": 21,
+          "recipient": "(-588.1529808591151, 64.0, -587.1835622225362)"
+        },
+        "waiting": 4,
+        "hatch": {
+          "lastReceipt": {
+            "duration": 60,
+            "gameTime": 284108,
+            "nativeWorldDrops": true,
+            "position": "-596, 64, -614",
+            "tool": "1 minecraft:crossbow",
+            "upperFenceRetained": true
+          },
+          "target": "",
+          "opened": 4
+        },
+        "lastReceipt": {
+          "giverBefore": 2,
+          "receiverBefore": 0,
+          "receiverAfter": 1,
+          "contact": "(-597.6941021526025, 64.5, -613.1540914690145)",
+          "item": "minecraft:bread",
+          "giverAfter": 1,
+          "to": "e3de735e-23c0-421b-a93d-34e386a06ff2",
+          "from": "0e6136f0-9f73-44de-a539-62c30a83f878",
+          "distance": 2.8870792,
+          "gameTime": 284558
+        },
+        "rejectedPaths": 5
+      },
+      "campDoors": {
+        "pending": 0,
+        "closed": 0,
+        "lastReceipt": {},
+        "opened": 0
+      },
+      "mainhand": "1 minecraft:crossbow",
+      "offhand": "1 minecraft:bread",
+      "inventory": [
+        "2 minecraft:bread",
+        "6 minecraft:wheat",
+        "0 minecraft:air",
+        "0 minecraft:air",
+        "0 minecraft:air"
+      ],
+      "position": "-602, 63, -594",
+      "observedTicks": 7633,
+      "nativeMovement": {
+        "nextNode": 26,
+        "nodes": 41,
+        "velocity": "(0.010678568163685835, -0.0784000015258789, 0.0911056811455015)",
+        "pathTarget": "-590, 63, -590",
+        "pathDone": false,
+        "onGround": true,
+        "feet": "(-601.5021098233951, 63.0, -593.6881213580676)",
+        "rotation": 359.08386,
+        "wanted": [
+          -601.5,
+          63.0,
+          -592.5
+        ],
+        "nextNodes": [
+          "-602, 63, -593",
+          "-602, 63, -592",
+          "-602, 63, -591"
+        ]
+      }
+    },
+    {
+      "fatigue": 0.3298499999999987,
+      "activity": "bringing requested food to a camp captive",
+      "family": {
+        "activity": "not considering a family",
+        "juvenile": false,
+        "blocked": "",
+        "lastBirth": {},
+        "generation": 0,
+        "ageTicks": 31627,
+        "attempts": 0,
+        "nursery": "-664, 65, -630",
+        "breedingEnabled": true,
+        "nextBedSearch": 286371,
+        "availableNurseries": [
+          "-660, 64, -628"
+        ]
+      },
+      "id": "d485788b-10c9-4407-8e58-571b21ae01d2",
+      "food": 20,
+      "species": "minecraft:pillager",
+      "name": "Juniper-d485",
+      "learningUpdates": 8,
+      "health": 24.0,
+      "campWork": {
+        "target": "",
+        "access": {
+          "step": 6,
+          "blocks": 6,
+          "bed": "-664, 65, -630",
+          "lastFailure": {},
+          "activity": "no bunkhouse access work",
+          "lastReceipt": {}
+        },
+        "activity": "no safe camp supply survey route",
+        "beds": 0,
+        "recipes": 0,
+        "route": "none",
+        "transfers": 0,
+        "inspections": 1,
+        "reusedBeds": {
+          "activity": "no reusable free upper bunk nearby",
+          "routeRejections": 2,
+          "lastReceipt": {},
+          "collected": 0
+        },
+        "lastReceipt": {
+          "gameTime": 283831,
+          "contents": [
+            "4 minecraft:beetroot",
+            "3 minecraft:beetroot",
+            "2 minecraft:iron_ingot",
+            "1 minecraft:egg",
+            "2 minecraft:egg",
+            "1 minecraft:iron_ingot"
+          ],
+          "inspected": "-604, 63, -635"
+        },
+        "bedSite": "",
+        "bedApproach": {},
+        "fallenBeds": 0,
+        "fallenAudit": {},
+        "fallenRoute": {}
+      },
+      "campMeals": {
+        "delivered": 4,
+        "requests": 4,
+        "activity": "bringing requested food to a camp captive",
+        "calls": {
+          "lastHeard": {
+            "sound": "minecraft:entity.villager.no",
+            "speaker": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+            "gameTime": 285243,
+            "volume": 6.0,
+            "position": "-589, 64, -588",
+            "heardRange": 72.0,
+            "nativeRange": 96.0,
+            "distance": 33.173473
+          },
+          "heard": 23,
+          "waiting": 0,
+          "detour": {
+            "steps": 0,
+            "completed": 0,
+            "lastReceipt": {},
+            "started": 0
+          },
+          "target": ""
+        },
+        "patrol": {
+          "visited": 18,
+          "until": 280911,
+          "cages": 3,
+          "lastRoute": {
+            "patrolCeiling": 66,
+            "end": "-669, 66, -582",
+            "gameTime": 280241,
+            "nodes": 19,
+            "actor": "(-658.5181509387512, 64.0, -598.2498933725063)",
+            "moved": true,
+            "target": "-691, 64, -579"
+          },
+          "target": "-691, 64, -579"
+        },
+        "lastApproach": {
+          "end": "-599, 63, -633",
+          "gameTime": 285571,
+          "nodes": 26,
+          "actor": "(-609.4999998864645, 63.0, -616.1577661443948)",
+          "stands": 22,
+          "recipient": "(-596.8166506798281, 64.0, -634.3624563474484)"
+        },
+        "waiting": 4,
+        "hatch": {
+          "lastReceipt": {
+            "duration": 60,
+            "gameTime": 283621,
+            "nativeWorldDrops": true,
+            "position": "-597, 64, -633",
+            "tool": "1 minecraft:crossbow",
+            "upperFenceRetained": true
+          },
+          "target": "",
+          "opened": 1
+        },
+        "lastReceipt": {
+          "giverBefore": 2,
+          "receiverBefore": 0,
+          "receiverAfter": 1,
+          "contact": "(-597.6941021526025, 64.5, -613.1540914690145)",
+          "item": "minecraft:bread",
+          "giverAfter": 1,
+          "to": "e3de735e-23c0-421b-a93d-34e386a06ff2",
+          "from": "d485788b-10c9-4407-8e58-571b21ae01d2",
+          "distance": 2.081258,
+          "gameTime": 284951
+        },
+        "rejectedPaths": 11
+      },
+      "campDoors": {
+        "pending": 0,
+        "closed": 0,
+        "lastReceipt": {},
+        "opened": 0
+      },
+      "mainhand": "1 minecraft:crossbow",
+      "offhand": "1 minecraft:bread",
+      "inventory": [
+        "0 minecraft:air",
+        "2 minecraft:bread",
+        "0 minecraft:air",
+        "0 minecraft:air",
+        "0 minecraft:air"
+      ],
+      "position": "-607, 63, -622",
+      "observedTicks": 7636,
+      "nativeMovement": {
+        "nextNode": 5,
+        "nodes": 26,
+        "velocity": "(0.02071641639652763, -0.0784000015258789, -0.09157272967914362)",
+        "pathTarget": "-599, 63, -633",
+        "pathDone": false,
+        "onGround": true,
+        "feet": "(-606.5900339182191, 63.0, -621.0178748644845)",
+        "rotation": 191.14081,
+        "wanted": [
+          -606.5,
+          63.0,
+          -621.5
+        ],
+        "nextNodes": [
+          "-607, 63, -622",
+          "-607, 63, -623",
+          "-606, 63, -623"
+        ]
+      }
+    }
+  ],
+  "residents": [
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 17,
+      "health": 20.0,
+      "name": "Alder-5d26",
+      "id": "5d267809-1bbc-434f-a95a-7fd61c8de269",
+      "position": "371, 63, 128",
+      "body": {
+        "activity": "Alder-5d26 \u00b7 sheltered",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 2,
+        "home": "Home[dimension=minecraft:overworld, x=371, y=63, z=128]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 20,
+      "health": 20.0,
+      "name": "Clover-edc5",
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "position": "-467, 64, -377",
+      "body": {
+        "activity": "Clover-edc5 \u00b7 sheltered",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 3,
+        "home": "Home[dimension=minecraft:overworld, x=-467, y=64, z=-377]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 20,
+      "health": 20.0,
+      "name": "Alder-c557",
+      "id": "c5578b5b-8991-428d-9d82-7cb57a956269",
+      "position": "-479, 64, -374",
+      "body": {
+        "activity": "Alder-c557 \u00b7 sheltered",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 1,
+        "home": "Home[dimension=minecraft:overworld, x=-479, y=64, z=-374]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 16,
+      "health": 20.0,
+      "name": "Fern-9bcb",
+      "id": "9bcb6ddf-4238-4531-a3a5-a7dea6d532ce",
+      "position": "356, 67, 150",
+      "body": {
+        "activity": "Fern-9bcb \u00b7 rest",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 2,
+        "home": "Home[dimension=minecraft:overworld, x=353, y=97, z=158]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 20,
+      "health": 20.0,
+      "name": "Pip-3c29",
+      "id": "3c29e5bd-14b7-435c-8737-d49ac9cb7fdb",
+      "position": "367, 63, 119",
+      "body": {
+        "activity": "Pip-3c29 \u00b7 sheltered",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 1,
+        "home": "Home[dimension=minecraft:overworld, x=367, y=63, z=119]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 20,
+      "health": 20.0,
+      "name": "Iris-97d2",
+      "id": "97d2706c-4143-42bb-bab8-ecd680cafe5a",
+      "position": "355, 63, 122",
+      "body": {
+        "activity": "Iris-97d2 \u00b7 sheltered",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 0,
+        "home": "Home[dimension=minecraft:overworld, x=355, y=63, z=122]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 17,
+      "health": 20.0,
+      "name": "Sage-d3ab",
+      "id": "d3ab9ff6-cec6-4def-a199-92b911261b09",
+      "position": "355, 63, 127",
+      "body": {
+        "activity": "Sage-d3ab \u00b7 sheltered",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 2,
+        "home": "Home[dimension=minecraft:overworld, x=355, y=63, z=127]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 0,
+      "health": 4.0,
+      "name": "Rowan-48fd",
+      "id": "48fd2e6d-6bf2-4694-9192-4b1e4ba295bf",
+      "position": "629, 95, 331",
+      "body": {
+        "activity": "Rowan-48fd \u00b7 walking toward village food supplies (miserable)",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": -1,
+        "home": "Home[dimension=minecraft:overworld, x=645, y=72, z=331]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 18,
+      "health": 20.0,
+      "name": "Juniper-c9be",
+      "id": "c9be37e3-bde8-4899-a365-5107233a0807",
+      "position": "646, 99, 296",
+      "body": {
+        "activity": "Juniper-c9be \u00b7 sheltered (unhappy)",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 0,
+        "home": "Home[dimension=minecraft:overworld, x=646, y=99, z=296]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 20,
+      "health": 20.0,
+      "name": "Hazel-3126",
+      "id": "31260997-4324-4b3b-98e2-c544eb0a9f33",
+      "position": "655, 98, 295",
+      "body": {
+        "activity": "Hazel-3126 \u00b7 sheltered",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": -1,
+        "home": "Home[dimension=minecraft:overworld, x=655, y=98, z=295]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 8,
+      "health": 20.0,
+      "name": "Tansy-99ed",
+      "id": "99ed2ddb-9f4d-4968-851e-11fe3b6667e9",
+      "position": "624, 96, 291",
+      "body": {
+        "activity": "Tansy-99ed \u00b7 sheltered (unhappy)",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": -1,
+        "home": "Home[dimension=minecraft:overworld, x=624, y=96, z=291]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 18,
+      "health": 20.0,
+      "name": "Clover-88db",
+      "id": "88dbfce2-e4f6-4a28-9b76-f3a43a689a75",
+      "position": "625, 100, 307",
+      "body": {
+        "activity": "Clover-88db \u00b7 sheltered",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 1,
+        "home": "Home[dimension=minecraft:overworld, x=625, y=100, z=307]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 19,
+      "health": 20.0,
+      "name": "Willow-965a",
+      "id": "965a16a4-47eb-4f0f-9670-4333eb02389f",
+      "position": "605, 91, 301",
+      "body": {
+        "activity": "Willow-965a \u00b7 seeking golem protection",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": -1,
+        "home": "null",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 7,
+      "health": 20.0,
+      "name": "Dara-c750",
+      "id": "c7502bbf-79e6-4dca-8f58-e2debae7b0b1",
+      "position": "635, 98, 325",
+      "body": {
+        "activity": "Dara-c750 \u00b7 sheltered (unhappy)",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": -1,
+        "home": "Home[dimension=minecraft:overworld, x=635, y=98, z=325]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 19,
+      "health": 20.0,
+      "name": "Nell-878b",
+      "id": "878bdd32-e485-485a-b9ed-79c0b987a0ab",
+      "position": "607, 91, 304",
+      "body": {
+        "activity": "Nell-878b \u00b7 seeking golem protection",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 2,
+        "home": "null",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 20,
+      "health": 20.0,
+      "name": "Oak-6432",
+      "id": "64324351-28f6-4bc1-a8f8-949f3300763b",
+      "position": "-633, 65, -609",
+      "body": {
+        "activity": "Oak-6432 \u00b7 rest",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": -1,
+        "home": "Home[dimension=minecraft:overworld, x=-629, y=74, z=-611]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 7,
+      "health": 20.0,
+      "name": "Dara-f13a",
+      "id": "f13adb74-0ccc-4105-af94-63bc300bc5c3",
+      "position": "-633, 64, -602",
+      "body": {
+        "activity": "Dara-f13a \u00b7 sheltered (unhappy)",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": -1,
+        "home": "Home[dimension=minecraft:overworld, x=-633, y=64, z=-602]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 2
+      },
+      "food": 5,
+      "health": 20.0,
+      "name": "Dara-573a",
+      "id": "573a309c-f0fc-4dd1-94cd-8246d352467c",
+      "position": "-633, 65, -608",
+      "body": {
+        "activity": "Dara-573a \u00b7 walking to a native home food store (miserable)",
+        "gateWait": {
+          "stand": "",
+          "until": 285604,
+          "door": ""
+        },
+        "ownedMeal": -1,
+        "home": "Home[dimension=minecraft:overworld, x=-635, y=64, z=-602]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "walking to a native home food store",
+        "lastReceipt": {},
+        "target": "-629, 69, -607"
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 8,
+      "health": 20.0,
+      "name": "Willow-4ed3",
+      "id": "4ed39acd-b764-4c41-b799-5ac9d5feefe7",
+      "position": "-632, 64, -607",
+      "body": {
+        "activity": "Willow-4ed3 \u00b7 walking to a native home food store",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": -1,
+        "home": "Home[dimension=minecraft:overworld, x=-626, y=74, z=-619]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": true,
+        "transfers": 0,
+        "activity": "walking to a native home food store",
+        "lastReceipt": {},
+        "target": "-635, 70, -603"
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {
+          "giverBefore": 2,
+          "receiverBefore": 0,
+          "receiverAfter": 1,
+          "contact": "(-588.1529808591151, 64.5, -587.1835622225362)",
+          "item": "minecraft:bread",
+          "giverAfter": 1,
+          "to": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+          "from": "0e6136f0-9f73-44de-a539-62c30a83f878",
+          "distance": 2.6030364,
+          "gameTime": 280638
+        },
+        "requests": 13
+      },
+      "food": 5,
+      "health": 15.0,
+      "name": "Birch-67f3",
+      "id": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+      "position": "-589, 64, -588",
+      "body": {
+        "activity": "Birch-67f3 \u00b7 waiting for a safe cell-gate route (miserable)",
+        "gateWait": {
+          "stand": "",
+          "until": 290313,
+          "door": ""
+        },
+        "ownedMeal": -1,
+        "home": "Home[dimension=minecraft:overworld, x=-629, y=64, z=-602]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": true,
+        "transfers": 0,
+        "activity": "walking to a native home food store",
+        "lastReceipt": {},
+        "target": "-593, 63, -595"
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {
+          "giverBefore": 2,
+          "receiverBefore": 0,
+          "receiverAfter": 1,
+          "contact": "(-588.5693537871911, 64.5, -587.862897295102)",
+          "item": "minecraft:bread",
+          "giverAfter": 1,
+          "to": "d10cee59-b8c5-41fa-863a-1e455d73749b",
+          "from": "0e6136f0-9f73-44de-a539-62c30a83f878",
+          "distance": 2.1835146,
+          "gameTime": 283018
+        },
+        "requests": 10
+      },
+      "food": 11,
+      "health": 20.0,
+      "name": "Clover-d10c",
+      "id": "d10cee59-b8c5-41fa-863a-1e455d73749b",
+      "position": "-589, 64, -588",
+      "body": {
+        "activity": "Clover-d10c \u00b7 rest (unhappy)",
+        "gateWait": {
+          "stand": "",
+          "until": 283618,
+          "door": ""
+        },
+        "ownedMeal": -1,
+        "home": "Home[dimension=minecraft:overworld, x=-631, y=64, z=-602]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": true,
+        "transfers": 0,
+        "activity": "walking to a native home food store",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {
+          "giverBefore": 2,
+          "receiverBefore": 0,
+          "receiverAfter": 1,
+          "contact": "(-597.6941021526025, 64.5, -613.1540914690145)",
+          "item": "minecraft:bread",
+          "giverAfter": 1,
+          "to": "e3de735e-23c0-421b-a93d-34e386a06ff2",
+          "from": "d485788b-10c9-4407-8e58-571b21ae01d2",
+          "distance": 2.081258,
+          "gameTime": 284951
+        },
+        "requests": 17
+      },
+      "food": 16,
+      "health": 20.0,
+      "name": "Juniper-e3de",
+      "id": "e3de735e-23c0-421b-a93d-34e386a06ff2",
+      "position": "-598, 64, -614",
+      "body": {
+        "activity": "Juniper-e3de \u00b7 rest (unhappy)",
+        "gateWait": {
+          "stand": "",
+          "until": 285551,
+          "door": ""
+        },
+        "ownedMeal": -1,
+        "home": "Home[dimension=minecraft:overworld, x=-626, y=74, z=-621]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": true,
+        "transfers": 0,
+        "activity": "walking to a native home food store",
+        "lastReceipt": {},
+        "target": "-599, 64, -621"
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {
+          "giverBefore": 2,
+          "receiverBefore": 0,
+          "receiverAfter": 1,
+          "contact": "(-597.0892956695011, 64.5, -613.8261620125726)",
+          "item": "minecraft:bread",
+          "giverAfter": 1,
+          "to": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+          "from": "0e6136f0-9f73-44de-a539-62c30a83f878",
+          "distance": 2.7882004,
+          "gameTime": 284118
+        },
+        "requests": 12
+      },
+      "food": 11,
+      "health": 20.0,
+      "name": "Pip-4c3c",
+      "id": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+      "position": "-598, 64, -614",
+      "body": {
+        "activity": "Pip-4c3c \u00b7 walking to a native home food store (unhappy)",
+        "gateWait": {
+          "stand": "",
+          "until": 284718,
+          "door": ""
+        },
+        "ownedMeal": -1,
+        "home": "Home[dimension=minecraft:overworld, x=-626, y=74, z=-623]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": true,
+        "transfers": 0,
+        "activity": "walking to a native home food store",
+        "lastReceipt": {},
+        "target": "-604, 63, -621"
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {
+          "giverBefore": 2,
+          "receiverBefore": 0,
+          "receiverAfter": 1,
+          "contact": "(-596.0877322243722, 64.5, -633.6066666273194)",
+          "item": "minecraft:bread",
+          "giverAfter": 1,
+          "to": "764e71da-6e8c-4016-b4cb-b9aee031c564",
+          "from": "d485788b-10c9-4407-8e58-571b21ae01d2",
+          "distance": 2.5051892,
+          "gameTime": 283631
+        },
+        "requests": 7
+      },
+      "food": 16,
+      "health": 20.0,
+      "name": "Birch-764e",
+      "id": "764e71da-6e8c-4016-b4cb-b9aee031c564",
+      "position": "-597, 64, -634",
+      "body": {
+        "activity": "Birch-764e \u00b7 rest",
+        "gateWait": {
+          "stand": "",
+          "until": 284231,
+          "door": ""
+        },
+        "ownedMeal": -1,
+        "home": "Home[dimension=minecraft:overworld, x=-629, y=74, z=-631]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": true,
+        "transfers": 0,
+        "activity": "walking to a native home food store",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {
+          "giverBefore": 4,
+          "receiverBefore": 0,
+          "receiverAfter": 1,
+          "contact": "(-597.0566506893648, 64.5, -634.6024563569852)",
+          "item": "minecraft:bread",
+          "giverAfter": 3,
+          "to": "88893f4d-fbba-4245-b563-089e8c0a5b52",
+          "from": "d485788b-10c9-4407-8e58-571b21ae01d2",
+          "distance": 2.8000348,
+          "gameTime": 282751
+        },
+        "requests": 7
+      },
+      "food": 11,
+      "health": 20.0,
+      "name": "Rowan-8889",
+      "id": "88893f4d-fbba-4245-b563-089e8c0a5b52",
+      "position": "-597, 64, -635",
+      "body": {
+        "activity": "Rowan-8889 \u00b7 rest (unhappy)",
+        "gateWait": {
+          "stand": "",
+          "until": 283351,
+          "door": ""
+        },
+        "ownedMeal": -1,
+        "home": "Home[dimension=minecraft:overworld, x=-629, y=74, z=-629]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": true,
+        "transfers": 0,
+        "activity": "walking to a native home food store",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 20,
+      "health": 20.0,
+      "name": "Birch-1d16",
+      "id": "1d165330-2598-410c-827e-cc3b13c7bef9",
+      "position": "-502, 64, -386",
+      "body": {
+        "activity": "Birch-1d16 \u00b7 sheltered",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 0,
+        "home": "Home[dimension=minecraft:overworld, x=-502, y=64, z=-386]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 16,
+      "health": 20.0,
+      "name": "Birch-c19f",
+      "id": "c19f89d2-5b6a-419f-8cb1-6a8568ca6d6b",
+      "position": "619, 94, 292",
+      "body": {
+        "activity": "Birch-c19f \u00b7 sheltered",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 1,
+        "home": "Home[dimension=minecraft:overworld, x=619, y=94, z=292]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 20,
+      "health": 20.0,
+      "name": "Linden-8ea7",
+      "id": "8ea7e1a5-6ea5-43b7-a3dd-fd713a991f38",
+      "position": "-682, 65, -626",
+      "body": {
+        "activity": "Linden-8ea7 \u00b7 rest",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": -1,
+        "home": "Home[dimension=minecraft:overworld, x=-664, y=65, z=-628]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 17,
+      "health": 20.0,
+      "name": "Tansy-e028",
+      "id": "e028b7be-3415-4f44-8c0e-d73e81ea7fd4",
+      "position": "-681, 64, -629",
+      "body": {
+        "activity": "Tansy-e028 \u00b7 explore (unhappy)",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 0,
+        "home": "Home[dimension=minecraft:overworld, x=-664, y=64, z=-628]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 16,
+      "health": 20.0,
+      "name": "Moss-fad4",
+      "id": "fad46718-2403-42a5-9067-b66e72485ec0",
+      "position": "-680, 64, -623",
+      "body": {
+        "activity": "Moss-fad4 \u00b7 rest",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 0,
+        "home": "Home[dimension=minecraft:overworld, x=-664, y=64, z=-626]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 17,
+      "health": 20.0,
+      "name": "Ember-c73f",
+      "id": "c73f2812-0861-417f-8180-38f671532381",
+      "position": "-681, 64, -623",
+      "body": {
+        "activity": "Ember-c73f \u00b7 rest",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 0,
+        "home": "Home[dimension=minecraft:overworld, x=-664, y=65, z=-626]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 20,
+      "health": 20.0,
+      "name": "Oak-4387",
+      "id": "438701f4-3aba-4cda-b583-46051f1e0f53",
+      "position": "-508, 64, -338",
+      "body": {
+        "activity": "Oak-4387 \u00b7 sheltered",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 2,
+        "home": "Home[dimension=minecraft:overworld, x=-508, y=64, z=-338]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 20,
+      "health": 20.0,
+      "name": "Dara-af2b",
+      "id": "af2b94ad-f799-4b93-a2c3-e958b2836c84",
+      "position": "-516, 64, -350",
+      "body": {
+        "activity": "Dara-af2b \u00b7 sheltered",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 1,
+        "home": "Home[dimension=minecraft:overworld, x=-516, y=64, z=-350]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 19,
+      "health": 20.0,
+      "name": "Tansy-f572",
+      "id": "f572553d-4483-44b5-8ed5-6ffe7e7745b7",
+      "position": "-483, 64, -288",
+      "body": {
+        "activity": "Tansy-f572 \u00b7 sheltered",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 2,
+        "home": "Home[dimension=minecraft:overworld, x=-483, y=64, z=-288]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 20,
+      "health": 20.0,
+      "name": "Nell-5432",
+      "id": "5432d3df-f37a-4371-9465-aa1568bb4b02",
+      "position": "-524, 64, -323",
+      "body": {
+        "activity": "Nell-5432 \u00b7 sheltered",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 1,
+        "home": "Home[dimension=minecraft:overworld, x=-524, y=64, z=-323]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 18,
+      "health": 20.0,
+      "name": "Birch-96cb",
+      "id": "96cbd3bc-ebc5-4522-b101-b83ee55c471f",
+      "position": "-516, 64, -325",
+      "body": {
+        "activity": "Birch-96cb \u00b7 sheltered",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": 3,
+        "home": "Home[dimension=minecraft:overworld, x=-516, y=64, z=-325]",
+        "sleeping": true,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    },
+    {
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      },
+      "food": 18,
+      "health": 20.0,
+      "name": "Fern-d349",
+      "id": "d3494b6e-3a98-4a9c-8823-388f5d620f4f",
+      "position": "605, 91, 303",
+      "body": {
+        "activity": "Fern-d349 \u00b7 seeking golem protection",
+        "gateWait": {
+          "stand": "",
+          "until": 0,
+          "door": ""
+        },
+        "ownedMeal": -1,
+        "home": "null",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false
+      },
+      "stores": {
+        "escape": {
+          "brokenDoors": 0,
+          "workTicks": 0,
+          "lastReceipt": {},
+          "activity": "no cell escape",
+          "brokenFenceBlocks": 0,
+          "target": ""
+        },
+        "routeBlocked": false,
+        "transfers": 0,
+        "activity": "not seeking stored food",
+        "lastReceipt": {},
+        "target": ""
+      }
+    }
+  ]
+}

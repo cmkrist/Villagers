@@ -1,0 +1,97 @@
+{
+  "exitCode": 0,
+  "wallTimeGuard": false,
+  "oldSaveUnchanged": true,
+  "beforeHumanoids": 179,
+  "afterHumanoids": 179,
+  "missingOriginalIds": [],
+  "newHumanoidIds": [],
+  "managedVillagers": 33,
+  "minManagedHealth": 20.0,
+  "adventurer": {
+    "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+    "type": "minecraft:villager",
+    "position": [
+      -475.4917311326141,
+      63.0,
+      -329.52523970420197
+    ],
+    "health": 20.0,
+    "tags": [
+      "villagers:sea:ASHORE:-469,63,-366,-468,-366:-476,63,-330,-476,-329:false:STONE",
+      "villagers:native_resident_seen",
+      "villagers:managed",
+      "villagers:adventurer"
+    ],
+    "noAI": false,
+    "invulnerable": false,
+    "age": 0,
+    "attributes": [
+      {
+        "base": 0.5,
+        "id": "minecraft:movement_speed"
+      },
+      {
+        "base": 1.0,
+        "id": "minecraft:attack_damage"
+      },
+      {
+        "modifiers": [
+          {
+            "amount": -0.05755709282684849,
+            "operation": "add_multiplied_base",
+            "id": "minecraft:random_spawn_bonus"
+          }
+        ],
+        "base": 16.0,
+        "id": "minecraft:follow_range"
+      },
+      {
+        "base": 4.0,
+        "id": "minecraft:attack_speed"
+      }
+    ],
+    "effects": [],
+    "vehicle": null,
+    "inventory": [
+      {
+        "id": "minecraft:bread",
+        "count": 3
+      },
+      {
+        "id": "minecraft:wooden_pickaxe",
+        "count": 1
+      }
+    ],
+    "equipment": {
+      "mainhand": {
+        "id": "minecraft:wooden_hoe",
+        "count": 1
+      }
+    },
+    "meetingPoint": {
+      "value": {
+        "pos": [
+          -493,
+          64,
+          -329
+        ],
+        "dimension": "minecraft:overworld"
+      }
+    },
+    "dimensionFolder": "dimensions/minecraft/overworld/entities",
+    "name": "Clover-edc5",
+    "food": {
+      "foodLevel": 20,
+      "saturation": 1.0,
+      "exhaustion": 2.202287,
+      "timer": 0
+    },
+    "home": {
+      "dimension": "minecraft:overworld",
+      "x": -467,
+      "y": 64,
+      "z": -377
+    }
+  }
+}

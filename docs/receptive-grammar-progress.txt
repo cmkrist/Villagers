@@ -1,0 +1,165 @@
+RECEPTIVE GRAMMAR FOUNDATION — FULL LANGUAGE GOAL REMAINS ACTIVE
+2026-11-11
+
+Scope
+
+This implements the receptive-grammar portion of priority 5 in
+remaining-language-goal.txt. It does not complete word formation, deliberate
+childhood teaching, or controlled cultural/grammar-innovation evaluation. Those
+remain required under the ACTIVE full goal. Comprehension here is a bounded
+symbolic model; unrestricted invention of meaning or grammar is not claimed.
+
+Comprehension and production are different state
+
+Grammar now retains the existing native speaking order/production evidence and
+productive constructions separately from receptive dialect profiles. A villager
+can understand a foreign full order and an omitted-copula construction while
+continuing to speak its own full native order. Foreign hearing no longer changes
+an established native order merely by outnumbering native observations.
+
+A profile groups actually heard phonetic word-token cues and learned role
+patterns. It contains no speaker UUID, biome identifier, private vocabulary map,
+intended clause or intended word order. Cues use the listener's own meanings for
+those sounds. Public co-occurrence can link multiple speakers' conventions without
+requiring private knowledge of their cultural faction. Biomes still establish
+founding vocabularies/production in the existing way; a decoder never receives
+the speaker's biome to choose the right interpretation.
+
+Learning requires a uniquely aligned, independently public event and known
+word meanings. Three observations are needed before a new receptive pattern is
+used. Unknown/private events cannot teach it. Full orders remain permutations
+of subject/verb/object; noncanonical patterns retain the bounded existing
+construction rules, including IS-only copula omission and limited repetition.
+There is no semantic oracle supplying absent WANT, unfamiliar negation or hidden
+referent identity.
+
+Reception is limited to eight dialect profiles, 24 cues per profile and eight
+patterns per profile, with evidence counts bounded at 1000. Low-evidence profiles
+can be forgotten; ambiguous cue overlap does not silently merge languages. This
+is a finite candidate search, not recursive unrestricted parsing or an LLM. No
+population-scale performance result is claimed from the small native fixture.
+
+Selecting an interpretation
+
+The decoder considers learned readings associated with the heard cue words and
+the listener's existing native patterns. It validates grammatical roles and
+reference bindings, then compares valid candidates using lexical cue support.
+A unique best meaning can be used; equally supported conflicting meanings remain
+unresolved. Strongly shared vocabulary with reversed subject/object orders can
+therefore become ambiguous instead of being resolved by hidden speaker intent.
+An unfamiliar construction can still be confidently misunderstood before useful
+contradictory evidence exists, as in the earlier fallible translation model.
+Evidence confidence is a heuristic of syntax familiarity, not calibrated truth.
+
+Native output is generated from native production evidence, independently of
+foreign receptive exposure. Actually producing a public form can reinforce one's
+own convention. Same-language surface variants may still be accommodated when
+the words are preferred local words and the role sequence fits the existing
+native order. This preserves bounded local innovation/spread, such as dropping
+IS, without converting foreign comprehension into automatic cultural replacement.
+An actually new first grounded full order can seed a previously uninitialized
+learner; it does not overwrite an already established order.
+
+Integration
+
+Sentence decoding, player glossaries, public-event language learning and visible
+naming introductions use the new readings. A learned foreign naming order can
+bind a name only when the speaker/place is actually visible and the naming words
+are understood. Profiles cannot provide an unfamiliar name, coordinates or a
+private relationship. Tense, negation, lexical ambiguity and repeated-reference
+consistency checks remain enforced.
+
+Children do not inherit parents' adult receptive profiles. Their existing weak
+production exposure and sparse vocabulary remain separate. Bootstrap now preserves
+partial receptive data and avoids giving an uninitialized developing child an
+adult founding grammar. Adult bootstrap seeds only missing production evidence
+while retaining existing receptive/production records. Deliberate teaching and
+new word-formation mechanisms are still outstanding, not implicitly completed by
+these preservation changes.
+
+Persistence and compatibility
+
+Mind schema 16 and player glossary schema 5 save the new profiles. Old mind-schema
+15 and glossary-schema 4 data starts with empty receptive profiles rather than
+inventing foreign comprehension. Native words, prior production, references,
+commitments, work records, identities and histories remain intact. Existing
+legacy productive constructions are retained. Incomplete one-observation learning
+survives disk reload. Unknown future schemas retain existing protection.
+Frozen controls can interpret with their saved profiles while actual hearing
+leaves learned language unchanged.
+
+Verification
+
+Automated checks cover two foreign grammars distinguished by actual word cues,
+native production retention, generalization to a different verb/object, full and
+compressed foreign forms, insufficient exposure, indistinguishable-order
+ambiguity, unfamiliar names, receptive naming with public referents, bounded
+profile memory/evidence, non-inheritance, partial-child bootstrap, exact disk
+reload and both schema migrations. Existing same-language innovation checks still
+require learned patterns to generate previously unused combinations. Earlier
+single-pool tests now assert comprehension without native-order replacement;
+identical lexical cues cannot claim role certainty that the signal does not supply.
+
+Pinned evidence and source/artifact comparisons:
+  docs/evidence/2026-11-11/receptive-grammar/verification.json
+
+The isolated NEW native fixture has five original stationary NoAI adults and a
+wall-separated comparison chamber. The learner/control have native plains SVO
+and declared prior meanings for seven foreign words, but no foreign grammar.
+Those vocabulary acquisitions are not claimed here. A reported actual founding
+snowy/frozen/peaks dialect with distinct needed cues is selected. One healthy
+foreign speaker visibly holds real bread; a separate same-biome speaker has one
+initial native injury and a seeded compact OS convention; a native peer also
+visibly holds bread. The compact convention is seeded, not claimed as discovered.
+
+Public utterance opportunities respect each speaker's 200-tick dialogue budget.
+Three full OVS examples, three compact OS examples and three native SVO examples
+are sufficient in the final fixture. The learner understands all three, retains
+native SVO and full native production, and then independently understands an
+unseen foreign WANT FOOD clause. The production food-request handler responds
+with a conserved actual bread handoff. The wall control, with the same lexical
+priors but no event exposure, remains unable to resolve the request's roles.
+No parser receives speaker identity, origin or intent to make that choice.
+
+All five original bodies survive. Native restart checks their exact saved
+language, beliefs and commitment/work fields before new decisions. A frozen
+phase verifies that known foreign reception still works without learning from
+new exposure. No post-setup actor position, health, vocabulary, grammar or inventory
+setters are used; the initial injury is native damage and the later handoff is
+production code. No existing society is opened or advanced. Stationary actors,
+lexical priors, seeded compression and controlled opportunities are declared
+conditions; natural bilingual emergence, full vocabulary mastery, child teaching,
+visual UX and population scaling are not claimed.
+
+The earlier language-life native scenario is also rerun against this decoder to
+check grounded repair, real gifting, actual company, same-language construction
+learning/generalization, restart and frozen compatibility. Source/artifact pins
+identify exactly which executed builds support the final checks.
+
+Reproduce with fresh lowercase runtime names:
+  source tools/java-env.sh
+  villagers_select_java
+  ./tools/test.sh
+  ./gradlew -I tools/probe-classpath.gradle writeProbeClasspath
+  python3 tools/reception-server-test.py --runtime-name language-reception-FRESH
+  python3 tools/language-life-server-test.py --runtime-name language-life-reception-FRESH
+
+The reception runner binds localhost:25624, refuses retained directories, requires
+the prepared server's accepted EULA, and archives source/JARs plus owned-process
+custody/results. It runs first, restart and frozen phases. Only new isolated
+fixture worlds are used.
+
+Next priority
+
+Bounded word formation/acquisition and deliberate childhood teaching must now
+connect useful new expressions to observed life and communicative outcomes.
+Controlled cultural transmission/grammar-innovation evaluation remains required.
+The full remaining-language goal stays ACTIVE.
+
+Final evidence: 682 Java tests and 19 Python tests passed. The pinned final
+language-reception-v2 fixture passed at 440 simulation ticks after three examples
+of each form, retained native SVO, and caused one conserved real bread handoff.
+All five originals survived exact restart/frozen checks. The final artifact also
+passed all three phases of language-life-reception-v2, preserving grounded repair,
+gifting, company and same-language construction generalization. Goal-relevant
+sources match both executed snapshots; both native runs match the current JAR.

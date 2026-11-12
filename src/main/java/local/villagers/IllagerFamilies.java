@@ -40,21 +40,28 @@ final class IllagerFamilies {
         }
         return null;
     }
+    static boolean ownsBed(Mob mob,BlockPos pos){return pos.equals(bed(mob));}
+    static void removedOwnBed(Mob mob,BlockPos pos,CreatureAgents.State state){
+        if(ownsBed(mob,pos)){mob.removeTag(BED+pos.asLong());state.mind.home(null);}
+    }
     static boolean needsHousing(ServerLevel level,Mob mob){
         return bed(mob)==null||level.getPoiManager().findAll(t->t.is(PoiTypes.HOME),p->nursery(level,mob,p),mob.blockPosition(),48,
             net.minecraft.world.entity.ai.village.poi.PoiManager.Occupancy.HAS_SPACE).findAny().isEmpty();
     }
-    private static boolean nursery(ServerLevel level, Mob mob, BlockPos pos) {
+    private static boolean homeBed(ServerLevel level, Mob mob, BlockPos pos) {
         var town = WarCombat.home(mob);
         int radius=NativeIllagers.member(mob)?NativeIllagers.radius(mob):34;
         if (town == null || !level.isLoaded(pos) || Math.abs(pos.getX() - town.x()) > radius
-            || Math.abs(pos.getZ() - town.z()) > radius || ConstructionSites.isProtected(level, pos)) return false;
+            || Math.abs(pos.getZ() - town.z()) > radius || ConstructionSites.isProtected(level, pos)||!TraderRecruitment.allowedBed(level,pos)) return false;
         var state = level.getBlockState(pos);
         if (!(state.getBlock() instanceof BedBlock) || state.getValue(BedBlock.PART) != BedPart.HEAD
             || !level.getBlockState(pos.above()).isAir()) return false;
-        if(NativeIllagers.member(mob))return !level.canSeeSky(pos.above())&&level.getBlockState(pos.above(2)).isAir();
+        if(NativeIllagers.member(mob))return NativeIllagers.insideCamp(level,mob,pos)&&!level.canSeeSky(pos.above());
         for (int dy = 2; dy <= 6; dy++) if (!level.getBlockState(pos.above(dy)).getCollisionShape(level, pos.above(dy)).isEmpty()) return true;
         return false;
+    }
+    private static boolean nursery(ServerLevel level,Mob mob,BlockPos pos){
+        return homeBed(level,mob,pos)&&(!NativeIllagers.member(mob)||level.getBlockState(pos.above(2)).isAir());
     }
     static void releaseBed(ServerLevel level, Mob mob) {
         BlockPos claimed = bed(mob);
@@ -75,12 +82,19 @@ final class IllagerFamilies {
         if (!Villagers.config().breeding() || level.getGameTime() < state.nextBedSearch) return;
         state.nextBedSearch = level.getGameTime() + 1200;
         var claimed = bed(mob);
-        if (claimed != null && nursery(level, mob, claimed)
-            &&(!NativeIllagers.member(mob)||NativeIllagers.safePath(level,mob,mob.getNavigation().createPath(claimed,1,64)))) return;
+        if (claimed != null && homeBed(level, mob, claimed)
+            &&(!NativeIllagers.member(mob)||mob.blockPosition().distSqr(claimed)>48*48
+                ||CampBeds.approachPath(level,mob,claimed,claimed.relative(level.getBlockState(claimed).getValue(BedBlock.FACING).getOpposite()))!=null)) {
+            if(NativeIllagers.member(mob))state.mind.home(new Home(level.dimension().identifier().toString(),claimed.getX(),claimed.getY(),claimed.getZ()));
+            return;
+        }
         releaseBed(level, mob);
-        level.getPoiManager().take(t -> t.is(PoiTypes.HOME), (t, p) -> nursery(level, mob, p)
-                &&(!NativeIllagers.member(mob)||NativeIllagers.safePath(level,mob,mob.getNavigation().createPath(p,1,64))), mob.blockPosition(), 64)
-            .ifPresent(p -> mob.addTag(BED + p.asLong()));
+        level.getPoiManager().take(t -> t.is(PoiTypes.HOME), (t, p) -> homeBed(level, mob, p)
+                &&(!NativeIllagers.member(mob)||CampBeds.approachPath(level,mob,p,p.relative(level.getBlockState(p).getValue(BedBlock.FACING).getOpposite()))!=null), mob.blockPosition(), 64)
+            .ifPresent(p -> {
+                mob.addTag(BED + p.asLong());
+                if(NativeIllagers.member(mob))state.mind.home(new Home(level.dimension().identifier().toString(),p.getX(),p.getY(),p.getZ()));
+            });
     }
     private static List<ItemStack> stock(Mob mob) {
         var out = new ArrayList<ItemStack>();

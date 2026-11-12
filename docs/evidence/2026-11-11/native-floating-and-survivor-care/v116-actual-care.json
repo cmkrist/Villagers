@@ -1,0 +1,145 @@
+{
+  "gameTime": 287173,
+  "survivingHumanoids": 186,
+  "managedVillagers": 56,
+  "minManagedHealth": 7,
+  "managedAtZeroFood": [],
+  "injured": [
+    {
+      "id": "240e2b57-7cf5-46a4-a9a4-bdd1357cfbc7",
+      "name": "Iris-240e",
+      "health": 18.0,
+      "food": {
+        "foodLevel": 16,
+        "saturation": 0.0,
+        "exhaustion": 0.4651862,
+        "timer": 0
+      },
+      "position": [
+        -412.69999998807907,
+        63.0,
+        -824.9274527021159
+      ]
+    },
+    {
+      "id": "110491fa-f5bd-4ded-a182-d784a2c91074",
+      "name": "Willow-1104",
+      "health": 19.0,
+      "food": {
+        "foodLevel": 16,
+        "saturation": 1.0,
+        "exhaustion": 3.3267972,
+        "timer": 0
+      },
+      "position": [
+        -411.62780033548324,
+        63.0,
+        -825.0672616523848
+      ]
+    },
+    {
+      "id": "e3de735e-23c0-421b-a93d-34e386a06ff2",
+      "name": "Juniper-e3de",
+      "health": 16.0,
+      "food": {
+        "foodLevel": 5,
+        "saturation": 1.0,
+        "exhaustion": 3.7185495,
+        "timer": 0
+      },
+      "position": [
+        -597.6941021526025,
+        64.0,
+        -613.1540914690145
+      ]
+    },
+    {
+      "id": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+      "name": "Birch-67f3",
+      "health": 7.0,
+      "food": {
+        "foodLevel": 18,
+        "saturation": 13.599999,
+        "exhaustion": 1.4341431,
+        "timer": 60
+      },
+      "position": [
+        -588.1529808591151,
+        64.0,
+        -587.1835622225362
+      ]
+    },
+    {
+      "id": "d10cee59-b8c5-41fa-863a-1e455d73749b",
+      "name": "Clover-d10c",
+      "health": 9.0,
+      "food": {
+        "foodLevel": 15,
+        "saturation": 11.0,
+        "exhaustion": 2.5111935,
+        "timer": 0
+      },
+      "position": [
+        -588.5693537871911,
+        64.0,
+        -587.862897295102
+      ]
+    }
+  ],
+  "urgentDara": {
+    "id": "f13adb74-0ccc-4105-af94-63bc300bc5c3",
+    "name": "Dara-f13a",
+    "health": 20.0,
+    "food": {
+      "foodLevel": 2,
+      "saturation": 0.0,
+      "exhaustion": 2.8495822,
+      "timer": 0
+    },
+    "position": [
+      -633.7207527698456,
+      64.5625,
+      -601.3000000119209
+    ]
+  },
+  "creatureCare": [
+    {
+      "name": "Pip-460a",
+      "health": 24.0,
+      "food": 17,
+      "inventory": [
+        "1 minecraft:beetroot",
+        "6 minecraft:wheat",
+        "1 minecraft:bread",
+        "0 minecraft:air",
+        "0 minecraft:air"
+      ],
+      "offhand": "1 minecraft:bread",
+      "deliveries": 2,
+      "lastReceipt": {
+        "receiverAfter": 1,
+        "ownedItemBefore": 2,
+        "giverBefore": 2,
+        "receiverBefore": 0,
+        "gameTime": 287035,
+        "contact": "(-588.1529808591151, 64.5, -587.1835622225362)",
+        "ownedItemAfter": 1,
+        "to": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+        "from": "460ab4b6-1522-4504-9673-25fd503e0610",
+        "distance": 2.6000729,
+        "usedEmergencyReserve": false,
+        "handReach": 2.4052412787356725,
+        "item": "minecraft:beetroot",
+        "giverAfter": 1,
+        "donorSource": "bag"
+      },
+      "waterSafety": {
+        "position": "(-610.4412818399109, 63.0, -597.6999999880791)",
+        "water": false,
+        "air": 300,
+        "shore": {},
+        "nativeFloatTicks": 0
+      }
+    }
+  ]
+}

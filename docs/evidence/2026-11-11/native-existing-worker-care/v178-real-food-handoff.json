@@ -1,0 +1,186 @@
+{
+  "primaryUnadvanced": "v167 gameTime293379",
+  "copyElapsed": 800,
+  "worker": {
+    "id": "40b3d4ca-683e-4f45-a8e4-0b38edf65b31",
+    "name": "Juniper-40b3",
+    "health": 24.0,
+    "food": 19,
+    "position": "-641, 65, -650",
+    "inventory": [
+      "1 minecraft:carrot",
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air"
+    ],
+    "campWork": {
+      "activity": "collecting real camp supplies",
+      "access": {
+        "blocks": 0,
+        "step": 0,
+        "lastReceipt": {},
+        "activity": "no bunkhouse access work",
+        "lastFailure": {},
+        "bed": ""
+      },
+      "target": "-691, 63, -624",
+      "lastReceipt": {
+        "container": "-691, 63, -624",
+        "sourceAfter": 0,
+        "gameTime": 293721,
+        "item": "minecraft:carrot",
+        "moved": 1,
+        "sourceBefore": 1
+      },
+      "reusedBeds": {
+        "activity": "no bunk job",
+        "collected": 0,
+        "lastReceipt": {},
+        "routeRejections": 0
+      },
+      "inspections": 3,
+      "transfers": 3,
+      "route": "native storage path started",
+      "recipes": 0,
+      "beds": 0,
+      "bedSite": "",
+      "bedApproach": {},
+      "fallenBeds": 0,
+      "fallenAudit": {},
+      "fallenRoute": {}
+    },
+    "campMeals": {
+      "calls": {
+        "bodyRoutes": {
+          "lastReceipt": {
+            "action": "native route search avoids the actual neighboring living bodies",
+            "gameTime": 294061,
+            "bodies": [
+              "0dbada3c-77f4-4652-a9d0-0ba5d04cd254",
+              "8999ecce-c4ed-4118-bd1d-e69b9a5a09b6",
+              "3c567509-f9b4-406e-b0f8-692c28557c5d",
+              "f6d0cf3b-ed04-4db1-abf0-6ffd4c671c58"
+            ],
+            "from": "(-655.6189217287665, 65.0, -647.3029800151525)"
+          },
+          "blockedNodes": 641,
+          "searches": 12
+        },
+        "waiting": 5,
+        "deferred": 0,
+        "lastHeard": {
+          "gameTime": 294098,
+          "speaker": "e3de735e-23c0-421b-a93d-34e386a06ff2",
+          "sound": "minecraft:entity.villager.no",
+          "distance": 65.476,
+          "nativeRange": 192.0,
+          "heardRange": 144.0,
+          "position": "-598, 64, -614",
+          "volume": 12.0
+        },
+        "target": "-598, 64, -614",
+        "heard": 20,
+        "entrance": {
+          "activity": "no camp entrance work",
+          "removed": 0,
+          "outer": "",
+          "lastReceipt": {},
+          "step": 0
+        },
+        "tripUntil": 294931
+      },
+      "activity": "following the verified native route toward the heard camp voice",
+      "requests": 3,
+      "delivered": 1,
+      "rejectedPaths": 0,
+      "lastReceipt": {
+        "contact": "(-680.2633307760431, 64.5, -622.2475000023842)",
+        "usedEmergencyReserve": true,
+        "item": "minecraft:apple",
+        "to": "c73f2812-0861-417f-8180-38f671532381",
+        "gatesClosed": true,
+        "leverRestored": true,
+        "giverAfter": 0,
+        "receiverAfter": 1,
+        "distance": 3.0586786,
+        "gameTime": 293671,
+        "handReach": 2.9891306587106365,
+        "lever": "-682, 65, -622",
+        "receiverBefore": 0,
+        "giverBefore": 1,
+        "donorSource": "bag",
+        "from": "40b3d4ca-683e-4f45-a8e4-0b38edf65b31",
+        "ownedItemBefore": 1,
+        "ownedItemAfter": 0
+      },
+      "hatch": {
+        "opened": 0,
+        "target": "",
+        "lastReceipt": {}
+      },
+      "waiting": 3,
+      "lastApproach": {
+        "gameTime": 293621,
+        "recipientId": "c73f2812-0861-417f-8180-38f671532381",
+        "recipient": "(-680.5033307855798, 64.0, -622.4875000119209)",
+        "end": "-683, 63, -621",
+        "stands": 23,
+        "actor": "(-689.3508310144761, 63.0, -625.5018030403228)",
+        "nodes": 8
+      },
+      "patrol": {
+        "visited": 0,
+        "target": "",
+        "lastRoute": {},
+        "cages": 0,
+        "until": 0
+      },
+      "injuredRequests": [
+        "c73f2812-0861-417f-8180-38f671532381"
+      ],
+      "pursuing": ""
+    }
+  },
+  "captives": [
+    {
+      "id": "c73f2812-0861-417f-8180-38f671532381",
+      "name": "Ember-c73f",
+      "health": 12.0,
+      "food": 4,
+      "campMeals": {
+        "lastReceived": {
+          "contact": "(-680.2633307760431, 64.5, -622.2475000023842)",
+          "usedEmergencyReserve": true,
+          "item": "minecraft:apple",
+          "to": "c73f2812-0861-417f-8180-38f671532381",
+          "gatesClosed": true,
+          "leverRestored": true,
+          "giverAfter": 0,
+          "receiverAfter": 1,
+          "distance": 3.0586786,
+          "gameTime": 293671,
+          "handReach": 2.9891306587106365,
+          "lever": "-682, 65, -622",
+          "receiverBefore": 0,
+          "giverBefore": 1,
+          "donorSource": "bag",
+          "from": "40b3d4ca-683e-4f45-a8e4-0b38edf65b31",
+          "ownedItemBefore": 1,
+          "ownedItemAfter": 0
+        },
+        "requests": 3
+      }
+    },
+    {
+      "id": "e3de735e-23c0-421b-a93d-34e386a06ff2",
+      "name": "Juniper-e3de",
+      "health": 5.0,
+      "food": 0,
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      }
+    }
+  ]
+}

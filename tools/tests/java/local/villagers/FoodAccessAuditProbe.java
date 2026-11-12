@@ -77,7 +77,7 @@ public final class FoodAccessAuditProbe implements ModInitializer {
                         var row=new LinkedHashMap<String,Object>();row.put("from",s.mind.name());row.put("purpose","hay-passage-plan");
                         row.put("found",route!=null);
                         row.put("expandedDiagnosticBudget",expanded);
-                        if(option!=null){row.put("store",option.store().toShortString());row.put("table",option.table().toShortString());}
+                        if(option!=null){row.put("store",option.store().toShortString());row.put("table",option.table()==null?"":option.table().toShortString());row.put("edible",option.edible());}
                         row.put("search",s.foodAccess.lastPlan);
                         var nativePath=v.getNavigation().createPath(new BlockPos(362,63,135),1);
                         var terrain=new ArrayList<Map<String,Object>>();

@@ -9,6 +9,7 @@ import local.villagers.family.BreedingPolicy;
 import local.villagers.family.Courtship;
 import local.villagers.language.Utterance;
 import local.villagers.language.Lexicon;
+import local.villagers.language.Concept;
 import local.villagers.genetics.Tendency;
 import local.villagers.mind.AgentMind;
 import local.villagers.mind.Episode;
@@ -60,6 +61,7 @@ final class VillageFamilies {
     static void signal(ServerLevel level, Villager sender, Session s, long now) {
         // Preparation is the actor's own goal, before contact. Reacquire it after food is
         // eaten/shared or a session reloads; no private partner inventory is consulted.
+        if(Villagers.LEARNING_MODE==local.villagers.learning.LearningMode.FROZEN)return;
         boolean preparing = readyToPrepare(level, sender, s, now);
         if (!updateFoodIntent(s, preparing, sender.getInventory(),
                 preparing && AdventureActions.canHarvest(sender))) return;
@@ -72,26 +74,25 @@ final class VillageFamilies {
         NEXT_SIGNAL.put(level, now + 20);
         double radius = Math.min(16, Villagers.config().hearingRadius());
         var hearers = level.getEntitiesOfClass(Villager.class, sender.getBoundingBox().inflate(radius),
-                v -> v != sender && Villagers.isManaged(v) && v.isAlive() && v.distanceToSqr(sender) <= radius * radius
+                v -> v != sender && s.mind.partnerships().committedTo(v.getUUID()) && Villagers.isManaged(v) && v.isAlive() && v.distanceToSqr(sender) <= radius * radius
                         && v.hasLineOfSight(sender)).stream().limit(Courtship.MAX_HEARERS).toList();
         if (hearers.isEmpty()) return;
         Utterance words = Speech.familySignal(level, sender, s, false);
         if (words == null) return;
         s.nextFamilySignal = now + Courtship.LIFETIME;
-        Courtship.Offer offer = Courtship.Offer.at(sender.getUUID(), now, s.mind.lineage() == null ? java.util.Set.of() : s.mind.lineage().parents());
+        Courtship.Offer offer = Courtship.Offer.at(sender.getUUID(), now);
         for (Villager listener : hearers) {
             Session receiver = Villagers.existingSession(listener.getUUID());
-            if (receiver == null || now < receiver.nextFamilyReply || s.mind.opinionOf(listener.getUUID()).regard() < 0
+            if (receiver == null || !PartnershipLife.mutual(s,receiver) || now < receiver.nextFamilyReply || s.mind.opinionOf(listener.getUUID()).regard() < 0
                     || !Courtship.mayAccept(offer, listener.getUUID(), receiver.courtship, now,
                     true, true, readyToSignal(level, listener, receiver, now),
                     receiver.mind.opinionOf(sender.getUUID()).regard(),
-                    Courtship.related(offer, listener.getUUID(), receiver.mind.lineage() == null ? java.util.Set.of() : receiver.mind.lineage().parents()),
-                    understands(words, receiver.mind.lexicon()))) continue;
+                    false, understands(words, receiver.mind.lexicon(),false))) continue;
             // An actual locally audible reply is required, not access to the listener's private mind.
             Utterance reply = Speech.familySignal(level, listener, receiver, true);
             if (reply == null) continue;
             receiver.nextFamilyReply = now + 600;
-            if (!understands(reply, s.mind.lexicon())) continue;
+            if (!understands(reply, s.mind.lexicon(),true)) continue;
             s.courtship = new Courtship.Agreement(listener.getUUID(), now, offer.expiresAt());
             receiver.courtship = new Courtship.Agreement(sender.getUUID(), now, offer.expiresAt());
             s.familyStatus = receiver.familyStatus = "agreed to meet a family partner";
@@ -117,7 +118,7 @@ final class VillageFamilies {
         return (s.courtship == null || !s.courtship.active(now)) && readyToSignal(level, v, s, now);
     }
 
-    private static boolean readyToPrepare(ServerLevel level, Villager v, Session s, long now) {
+    static boolean readyToPrepare(ServerLevel level, Villager v, Session s, long now) {
         return Villagers.config().breeding() && !level.isDarkOutside() && adult(v)
                 && willing(v, s, 0, now);
     }
@@ -133,9 +134,9 @@ final class VillageFamilies {
         return funded;
     }
 
-    private static boolean understands(Utterance utterance, Lexicon listener) {
-        return utterance.words().size() == 3 && utterance.words().stream()
-                .allMatch(w -> w.word().equals(listener.wordFor(w.concept())));
+    private static boolean understands(Utterance utterance, Lexicon listener,boolean reply) {
+        return utterance!=null&&local.villagers.language.RelationshipDialogue.act(local.villagers.language.Sentence.interpret(utterance.sounds(),listener))
+                ==(reply?local.villagers.language.RelationshipDialogue.Act.PROMISE_CHILD:local.villagers.language.RelationshipDialogue.Act.PROPOSE_CHILD);
     }
 
     static void consider(ServerLevel level, Villager a, Session first, Villager b) {
@@ -260,7 +261,7 @@ final class VillageFamilies {
                 parent.blockPosition(), radius, PoiManager.Occupancy.HAS_SPACE)
             .filter(p -> !level.getBlockState(p).is(KingSizeBeds.BLOCK) && shelteredBed(level, p) && TraderRecruitment.allowedBed(level, p)).limit(8).toList();
     }
-    private static boolean shelteredBed(ServerLevel level, BlockPos pos) { return shelteredBed(level, pos, false); }
+    static boolean shelteredBed(ServerLevel level, BlockPos pos) { return shelteredBed(level, pos, false); }
     private static boolean shelteredBed(ServerLevel level, BlockPos pos, boolean allowOccupied) {
         var state = level.getBlockState(pos);
         if (!(state.getBlock() instanceof BedBlock) || state.getValue(BedBlock.PART) != BedPart.HEAD
@@ -444,7 +445,7 @@ final class VillageFamilies {
                 && TraderRecruitment.allowedBed(level, visit.bed) && TraderRecruitment.allowedBed(level, right);
     }
 
-    private static boolean consented(Session first, Session second, long now) {
-        return Courtship.mutual(first.mind.id(), first.courtship, second.mind.id(), second.courtship, now);
+    static boolean consented(Session first, Session second, long now) {
+        return PartnershipLife.mutual(first,second)&&first.mind.partnerships().active().agreedAt()<=now&&Courtship.mutual(first.mind.id(), first.courtship, second.mind.id(), second.courtship, now);
     }
 }

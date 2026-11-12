@@ -15,6 +15,16 @@ import net.minecraft.world.level.storage.LevelResource;
 
 /** Native terrain and structures with four fixed biome regions. Never authors houses, mobs or supplies. */
 public final class NativeRegionsScenario {
+    static boolean enrollResident(ServerLevel level,net.minecraft.world.entity.npc.villager.Villager v){
+        if(!nativeRegions(level)||!v.isAlive()||!level.getWorldBorder().isWithinBounds(v.blockPosition())||v.entityTags().contains("villagers:native_resident_seen"))return false;
+        boolean adopted=!Villagers.isManaged(v);
+        if(adopted){
+            Villagers.adopt(level,v);
+            Villagers.session(v,level).mind.remember("Joined native-region learning with my existing body and possessions");
+            Villagers.LOG.info("Adopted native-region resident {} at {}; no body or supplies replaced",v.getUUID(),v.blockPosition());
+        }
+        v.addTag("villagers:native_resident_seen");return adopted;
+    }
     public static boolean nativeRegions(ServerLevel level) {
         return level.getChunkSource().getGenerator() instanceof NoiseBasedChunkGenerator
             && level.getChunkSource().getGenerator().getBiomeSource() instanceof QuadrantBiomes;
@@ -35,13 +45,7 @@ public final class NativeRegionsScenario {
                     continue;
                 }
                 if (!VillageTrial.isReady(server)) continue;
-                if (v.entityTags().contains("villagers:native_resident_seen")) continue;
-                if (!Villagers.isManaged(v)) {
-                    Villagers.adopt(level, v);
-                    Villagers.session(v, level).mind.remember("Joined native-region learning with my existing body and possessions");
-                    Villagers.LOG.info("Adopted native-region resident {} at {}; no body or supplies replaced", v.getUUID(), v.blockPosition());
-                }
-                v.addTag("villagers:native_resident_seen");
+                enrollResident(level,v);
             }
             if (VillageTrial.isReady(server)) AdventurePreparation.nominate(level);
         });

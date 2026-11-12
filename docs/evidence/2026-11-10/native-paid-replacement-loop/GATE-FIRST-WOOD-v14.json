@@ -1,0 +1,80 @@
+{
+  "scope": "Copied native world only; main save unchanged. No primary progression, births or victory proved.",
+  "runtime": "runs/native-gate-first-boat-wood-v14",
+  "terminal": {
+    "pid": 1398306,
+    "exitCode": 0
+  },
+  "ticks": 12000,
+  "gameTime": 229347,
+  "minimumActiveHealth": 20.0,
+  "hero": {
+    "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+    "name": "Clover-edc5",
+    "health": 20.0,
+    "food": 18,
+    "inventory": "[1 minecraft:stone_pickaxe, 3 minecraft:cobblestone, 33 minecraft:dirt, 1 minecraft:bread, 2 minecraft:wheat, 3 minecraft:carrot, 4 minecraft:oak_planks]",
+    "held": "1 minecraft:wooden_hoe",
+    "offhand": "1 minecraft:wooden_pickaxe",
+    "woodPreparation": {
+      "goal": "REPLACEMENT_PICKAXE",
+      "activity": "preparation recipe or bag capacity blocked",
+      "lastPath": "reach=true nodes=15 target=BlockPos{x=-503, y=63, z=-327} end=BlockPos{x=-503, y=63, z=-329} moved=true",
+      "pathQueries": 9,
+      "recipes": 1,
+      "gates": {
+        "opened": 3,
+        "closed": 2,
+        "gate": "",
+        "lastReceipt": {
+          "reach": 2.0187438766067864,
+          "gameTime": 227119,
+          "action": "opened actual village fence gate",
+          "tree": "-503, 63, -327",
+          "contact": "(-503.625, 63.19819321751417, -327.6545336796731)",
+          "gate": "-504, 63, -328"
+        }
+      },
+      "survey": {
+        "canopy": {
+          "blocks": 12,
+          "lastReceipt": {
+            "drops": [],
+            "reach": 2.5818257444238695,
+            "gameTime": 227659,
+            "tree": "-503, 63, -327",
+            "position": "-504, 64, -328",
+            "toolBefore": "1 minecraft:wooden_hoe",
+            "toolDamageBefore": 23,
+            "toolDamageAfter": 24
+          },
+          "target": ""
+        },
+        "lastRoute": {
+          "end": "-493, 63, -328",
+          "rememberedBell": "-493, 64, -329",
+          "nodes": 8,
+          "actor": "(-488.564380358689, 63.9375, -320.5668607832306)",
+          "gameTime": 226369
+        },
+        "target": ""
+      },
+      "lastStep": {},
+      "stepsPlaced": 0,
+      "logs": 1
+    },
+    "inventoryRoom": {
+      "lastReceipt": {
+        "worldCount": 4,
+        "action": "put down quarry byproduct",
+        "bagBefore": 4,
+        "itemEntity": "027a10f7-d6b6-4b8b-884a-a9650e486191",
+        "gameTime": 227909,
+        "item": "minecraft:clay_ball",
+        "bagAfter": 0
+      },
+      "actions": 2
+    },
+    "ironPickaxe": false
+  }
+}

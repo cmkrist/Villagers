@@ -13,6 +13,18 @@ import net.minecraft.world.entity.npc.villager.Villager;
 /** Ordinary friendship visits. No remote peer inventory, needs, or private memories enter target selection. */
 final class SocialCompany {
     private SocialCompany() {}
+    /** The receiver honors an understood short promise instead of choosing a new elective walk mid-visit. */
+    static String honorAgreement(ServerLevel level,Villager v,Session s,long now) {
+        if(s.socialAgreementPeer==null)return null;
+        if(now>=s.socialAgreementUntil || !available(v,s,level)) {s.socialAgreementPeer=null;return null;}
+        if(s.socialVisit.active())return null;
+        if(!(level.getEntity(s.socialAgreementPeer) instanceof Villager other) || !visible(level,v,s,other)
+                || v.distanceToSqr(other)>9)return null;
+        Session peer=Villagers.existingSession(other.getUUID());
+        if(peer==null || !v.getUUID().equals(peer.socialAgreementPeer) || now>=peer.socialAgreementUntil)return null;
+        v.getNavigation().stop();v.getLookControl().setLookAt(other,30,30);
+        return "keeping a promise of company to " + peer.mind.name();
+    }
     static boolean initiate(ServerLevel level, Villager v, Session s, Observation own, long now) {
         if (!available(v,s,level) || !CompanionVisit.wantsVisit(own, s.mind.expressedPersonality().sociability(), s.mind.has(Trait.GOSSIP), s.mind.has(Trait.LONER))) return false;
         return select(level, v, s, now);
@@ -33,7 +45,7 @@ final class SocialCompany {
             if (!visible(level,v,s,other)) continue;
             var opinion = s.mind.opinionOf(other.getUUID());
             candidates.add(new CompanionVisit.Candidate(other.getUUID(), opinion.regard(), Math.sqrt(v.distanceToSqr(other)),
-                    opinion.witnessed() == 0 && opinion.hearsay() == 0));
+                    opinion.witnessed() == 0 && opinion.hearsay() == 0,s.mind.partnerships().committedTo(other.getUUID())));
             if (candidates.size() == CompanionVisit.MAX_PEERS) break;
         }
         return s.socialVisit.select(candidates, s.mind.expressedPersonality().curiosity(), now) != null;
@@ -66,7 +78,11 @@ final class SocialCompany {
         if (near) {
             v.getNavigation().stop();
             if (!willing) { visit.reject(now);return; }
+            boolean agreed = other.getUUID().equals(s.socialAgreementPeer) && now < s.socialAgreementUntil
+                    && v.getUUID().equals(peer.socialAgreementPeer) && now < peer.socialAgreementUntil;
+            if (!agreed && !Speech.inviteCompany(level,v,s,other,peer,willing)) { visit.reject(now); return; }
             if (visit.contact(now,true)) {
+                Speech.fulfilledCompany(s,peer,now);
                 s.mind.socialize();peer.mind.socialize();
                 s.mind.remember("Visited " + peer.mind.name() + " for company");
                 peer.mind.remember("Welcomed " + s.mind.name() + " for company");

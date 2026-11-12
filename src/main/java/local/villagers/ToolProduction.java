@@ -99,6 +99,7 @@ final class ToolProduction {
         if(customer && FoodSupply.deficit(v.getInventory(),AdventureActions.canHarvest(v))>0)s.toolReserveWork++;
         if (plan.step() == WoodCrafting.Step.HOE) {
             s.hoesCrafted++;
+            WorkLife.produced(level,v,s,local.villagers.work.WorkOrders.Task.WOODEN_HOE,table);
             if(!customer)AdventureActions.prepareHoeForWork(level, v);
         }
         v.swingForAttack(InteractionHand.MAIN_HAND);

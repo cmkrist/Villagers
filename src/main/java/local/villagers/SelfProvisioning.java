@@ -7,17 +7,27 @@ import net.minecraft.world.entity.npc.villager.Villager;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.phys.Vec3;
 
-/** Prepare a real hoe for a physically observed field, or a table for already possessed grain. */
+/** Prepare a real hoe for a physically observed field, or a table for owned or locally observed grain. */
 final class SelfProvisioning {
     static String work(ServerLevel level, Villager v, Session s, long now) {
         if (!WoodBootstrap.safe(level,v,s) || s.boatTrip != null || s.courtship != null
                 || FoodSupply.deficit(v.getInventory(),AdventureActions.canHarvest(v)) == 0) return null;
-        if (BreadCrafting.wheatCount(v.getInventory()) >= 3 && BreadCrafting.table(level,v,s) == null)
+        // Hay is only treated as a meal when a table exists. Requiring owned
+        // wheat here left an empty-handed resident beside visible hay unable
+        // to begin either job. This is the ordinary local visible hay scan;
+        // wood gathering, recipes and placement still pay their real costs.
+        boolean grain=BreadCrafting.wheatCount(v.getInventory())>=3||HayForaging.hasHay(v.getInventory())
+            ||Villagers.config().hayForaging()&&HayForaging.target(level,v,s)!=null;
+        if (grain && BreadCrafting.table(level,v,s) == null)
             return WoodBootstrap.work(level,v,s,WoodBootstrap.Goal.TABLE,now);
+        // Prepared farmers use the ordinary food work below in the controller.
+        // Repeatedly surveying their field here consumed every navigation grant
+        // before wood gathering or quarrying could use the actor's turn.
+        if(AdventureActions.hasHoe(v))return null;
         if (s.preparationCrop != null && (!level.isLoaded(s.preparationCrop)
                 || !(level.getBlockState(s.preparationCrop).getBlock() instanceof CropBlock)
                 || !level.getBlockState(s.preparationCrop.below()).is(Blocks.FARMLAND))) s.preparationCrop = null;
-        if (s.preparationCrop == null || now>=s.nextPreparationScan) {
+        if (s.preparationCrop == null) {
             if (now < s.nextPreparationScan || !WorkNavigation.admit(level,now,v)) return null;
             s.nextPreparationScan = now + 100;
             var origin = v.blockPosition(); BlockPos best = null; double score = Double.MAX_VALUE;
@@ -37,7 +47,9 @@ final class SelfProvisioning {
         }
         var crop=level.getBlockState(s.preparationCrop);
         boolean ripe=crop.getBlock() instanceof CropBlock c&&c.isMaxAge(crop);
-        if(!AdventureActions.hasHoe(v)&&FoodSupply.mayDoOptionalWork(s.mind.foodLevel())
+        // Existing ripe crops can be harvested by hand. Prepare a hoe while
+        // waiting for growth, rather than delaying a real meal for scarce wood.
+        if(!ripe&&!AdventureActions.hasHoe(v)&&FoodSupply.mayDoOptionalWork(s.mind.foodLevel())
                 &&AdventureActions.PERMISSIONS.allows(Capability.CRAFT_WOODEN_HOE)){
             var preparing=WoodBootstrap.work(level,v,s,WoodBootstrap.Goal.HOE,now);
             if(preparing!=null)return preparing;

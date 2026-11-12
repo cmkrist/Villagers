@@ -1,0 +1,168 @@
+--- a/src/main/java/local/villagers/mind/AgentMind.java
++++ b/src/main/java/local/villagers/mind/AgentMind.java
+@@ -499,14 +499,19 @@
+             case FLEE -> false;
+             // Like a player, a villager with a full food bar cannot eat.
+             case FORAGE -> observation.foodAvailable() && observation.hunger() > 0;
+-            case REST -> true; // Resting in place remains possible without an assigned bed.
++            case REST -> !emergencyFoodSearch(observation);
+             case SOCIALIZE -> !observation.night() && observation.health() > 0.3 && observation.hunger() < 0.9;
+             // A hungry agent without known food must still be able to search for it.
+             // Cowards stay in when hurt; the brave also wander at night while healthy, at their own risk.
+-            case EXPLORE -> has(Trait.BRAVE)
++            case EXPLORE -> emergencyFoodSearch(observation) || (has(Trait.BRAVE)
+                     ? observation.health() > 0.3 && (!observation.night() || observation.health() > 0.6)
+-                    : !observation.night() && observation.health() > (has(Trait.COWARD) ? 0.6 : 0.3);
++                    : !observation.night() && observation.health() > (has(Trait.COWARD) ? 0.6 : 0.3));
+         };
++    }
++
++    private static boolean emergencyFoodSearch(Observation observation){
++        // Start the search with enough reserve to travel, before hunger injures the body.
++        return observation.hunger()>=.7&&observation.health()>0&&!observation.foodAvailable();
+     }
+ 
+     public Action choose(Observation observation, RandomGenerator random) {
+--- a/src/main/java/local/villagers/VillagerController.java
++++ b/src/main/java/local/villagers/VillagerController.java
+@@ -759,8 +759,11 @@
+         if (now < s.nextMeal || v.isTrading() || !AdventureActions.PERMISSIONS.allows(
+                 local.villagers.capability.CapabilityPermissions.Capability.CONSUME_FOOD)) return;
+         int slot = mealSlot(v, s);
++        boolean emergencyRoot=slot<0;
++        if(emergencyRoot)slot=FoodInventory.emergencyPlantingSlot(v.getInventory(),AdventureActions.canHarvest(v),
++            s.mind.foodLevel(),v.getHealth(),v.getMaxHealth());
+         if (slot < 0) return;
+-        if (safeForTrip && FoodDelivery.reserveMeal(level,v,s,now,slot)) return;
++        if (!emergencyRoot && safeForTrip && FoodDelivery.reserveMeal(level,v,s,now,slot)) return;
+         FoodProperties meal = v.getInventory().getItem(slot).get(DataComponents.FOOD);
+         if (meal == null || !MealPolicy.shouldEat(s.mind.foodLevel(), meal.nutrition(), v.getHealth(), v.getMaxHealth())) return;
+         if (s.action != null && s.succeeded && s.before != null) finishAttempt(level, v, s);
+@@ -770,6 +773,7 @@
+         ItemStack actual = v.getInventory().removeItem(slot, 1);
+         if (actual.isEmpty()) return;
+         nourish(level, v, s, actual);
++        if(emergencyRoot)s.mind.remember("Used my last owned planting root to avoid starvation");
+         s.mind.remember("Ate owned " + BuiltInRegistries.ITEM.getKey(actual.getItem()) + " for hunger or healing");
+     }
+ 
+@@ -997,6 +1001,25 @@
+     }
+ 
+     private static void explore(Villager v, Session s, ServerLevel level) {
++        boolean emergency=s.mind.foodLevel()<=6;
++        if(emergency){
++            var target=s.target;
++            if(target==null){
++                var pos=DefaultRandomPos.getPos(v,7,3);
++                if(pos==null||!VillageSurvival.withinHomeRange(level,s.mind,pos))return;
++                target=BlockPos.containing(pos);
++            }
++            var destination=target;
++            var path=NativePathLimits.search(v,1,()->NativePathLimits.alsoAvoiding(v,
++                p->!level.isLoaded(p)||!level.getFluidState(p).isEmpty()||!level.getFluidState(p.below()).isEmpty(),
++                ()->v.getNavigation().createPath(destination,0,32)));
++            if(!WorkNavigation.staysHome(level,v,s,path)||!BoatTravel.dryPath(level,path)){
++                v.getNavigation().stop();s.target=null;return;
++            }
++            if(v.getNavigation().moveTo(path,.5))s.target=target;
++            if(v.blockPosition().distSqr(target)<4)s.succeeded=true;
++            return;
++        }
+         if (s.target == null) {
+             Vec3 pos = DefaultRandomPos.getPos(v, 7, 3);
+             if (pos != null && VillageSurvival.withinHomeRange(level, s.mind, pos)) {
+--- a/src/main/java/local/villagers/FoodInventory.java
++++ b/src/main/java/local/villagers/FoodInventory.java
+@@ -6,7 +6,7 @@
+ import net.minecraft.world.item.ItemStack;
+ import net.minecraft.world.item.Items;
+ 
+-/** Read-only inventory affordances; selecting a ration never consumes stock or the last planting root. */
++/** Read-only inventory affordances; ordinary ration selection preserves planting roots; emergency self-consumption is explicit. */
+ final class FoodInventory {
+     private FoodInventory() {}
+ 
+@@ -51,6 +51,20 @@
+         return best;
+     }
+ 
++    /** A critically starving owner may spend its own root, never a gift or trade reserve. */
++    static int emergencyPlantingSlot(Container inventory,boolean farmer,int food,float health,float maxHealth){
++        if(!farmer||food!=0||!Float.isFinite(health)||!Float.isFinite(maxHealth)
++            ||health<=0||maxHealth<=0||health>maxHealth*.3f||anySlot(inventory,farmer)>=0)return -1;
++        int best=-1,nutrition=0;
++        for(int slot=0;slot<inventory.getContainerSize();slot++){
++            var item=inventory.getItem(slot);
++            if(item.getCount()!=1||!(item.is(Items.CARROT)||item.is(Items.POTATO))||!fits(item,food,health,maxHealth))continue;
++            int value=item.get(DataComponents.FOOD).nutrition();
++            if(value>nutrition){best=slot;nutrition=value;}
++        }
++        return best;
++    }
++
+     static int mealSlot(Container inventory, boolean farmer, int food, float health, float maxHealth) {
+         for (int i = 0; i < inventory.getContainerSize(); i++) {
+             ItemStack item = inventory.getItem(i);
+--- a/src/test/java/local/villagers/mind/AgentMindTest.java
++++ b/src/test/java/local/villagers/mind/AgentMindTest.java
+@@ -8,10 +8,32 @@
+ class AgentMindTest {
+     private static final UUID ID = UUID.fromString("12345678-1234-1234-1234-123456789abc");
+ 
++    @Test void criticalFoodReservesStartSearchingBeforeInjury(){
++        var mind=new AgentMind(ID);var random=new Random(42);
++        for(boolean night:new boolean[]{false,true})for(double health:new double[]{.05,.3,.9,1}){
++            var starving=new Observation(1,1,.5,health,false,night,false,false);
++            assertFalse(mind.allowed(Action.REST,starving));
++            assertTrue(mind.allowed(Action.EXPLORE,starving));
++            for(int i=0;i<50;i++)assertEquals(Action.EXPLORE,mind.choose(starving,random));
++            var danger=new Observation(1,1,.5,.05,true,night,false,false);
++            assertEquals(Action.FLEE,mind.choose(danger,random));
++        }
++        assertTrue(mind.allowed(Action.REST,new Observation(.6,.8,.5,.2,false,true,false,false)),
++            "Ordinary injured rest remains available outside the starvation emergency");
++    }
++
++    @Test void foodSearchBeginsWithTravelReserveAndYieldsToKnownMeals(){
++        var mind=new AgentMind(ID);
++        var low=new Observation(.7,.2,.5,.9,false,true,false,false);
++        assertFalse(mind.allowed(Action.REST,low));assertTrue(mind.allowed(Action.EXPLORE,low));
++        assertTrue(mind.allowed(Action.REST,new Observation(Math.nextDown(.7),.2,.5,.9,false,true,false,false)));
++        assertTrue(mind.allowed(Action.REST,new Observation(.7,.2,.5,.9,false,true,true,false)));
++    }
++
+     @Test void masksRemainValidDuringExplorationAndDangerOverridesEverything() {
+         AgentMind mind = new AgentMind(ID);
+         Random random = new Random(18);
+-        Observation noFoodAtNight = new Observation(0.8, 0.7, 0.9, 0.2, false, true, false, false);
++        Observation noFoodAtNight = new Observation(0.6, 0.7, 0.9, 0.2, false, true, false, false);
+         Observation danger = new Observation(1, 1, 1, 0.01, true, true, true, true);
+         for (int i = 0; i < 2_000; i++) {
+             assertEquals(Action.REST, mind.choose(noFoodAtNight, random));
+--- a/src/test/java/local/villagers/FoodInventoryTest.java
++++ b/src/test/java/local/villagers/FoodInventoryTest.java
+@@ -108,4 +108,23 @@
+         assertEquals(-1,FoodInventory.sharingSlot(inv,true));
+         assertEquals(1,inv.countItem(Items.CARROT));
+     }
++    @Test void aCriticallyStarvingOwnerCanUseItsRealPlantingRootWithoutMakingItShareable(){
++        var bag=new SimpleContainer(ration(Items.POTATO,1,1));
++        assertEquals(-1,FoodInventory.mealSlot(bag,true,0,6,20));
++        assertEquals(0,FoodInventory.emergencyPlantingSlot(bag,true,0,6,20));
++        assertEquals(-1,FoodInventory.sharingSlot(bag,true));
++        assertEquals(1,bag.countItem(Items.POTATO),"Selection is read-only; native eating must consume the actual item");
++        assertEquals(-1,FoodInventory.emergencyPlantingSlot(bag,true,1,6,20));
++        assertEquals(-1,FoodInventory.emergencyPlantingSlot(bag,true,0,Math.nextUp(6f),20));
++        assertEquals(-1,FoodInventory.emergencyPlantingSlot(bag,true,0,0,20));
++        assertEquals(-1,FoodInventory.emergencyPlantingSlot(bag,true,0,Float.NaN,20));
++    }
++    @Test void anOrdinaryMealTakesPrecedenceOverSpendingAPlantingRoot(){
++        var bag=new SimpleContainer(ration(Items.POTATO,1,1),ration(Items.BREAD,1,5));
++        assertEquals(1,FoodInventory.mealSlot(bag,true,0,1,20));
++        assertEquals(-1,FoodInventory.emergencyPlantingSlot(bag,true,0,1,20));
++        bag.setItem(1,ration(Items.CARROT,1,3));
++        assertEquals(1,FoodInventory.emergencyPlantingSlot(bag,true,0,1,20));
++        assertEquals(1,bag.countItem(Items.POTATO));assertEquals(1,bag.countItem(Items.CARROT));
++    }
+ }

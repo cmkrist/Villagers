@@ -1,0 +1,440 @@
+{
+  "runtime": "runs/native-fern-cleared-step-cycle-v11",
+  "status": "passed",
+  "stage": "food_cycle_window_complete",
+  "elapsed": 24000,
+  "initialGameTime": 361524,
+  "gameTime": 385524,
+  "initial": {
+    "health": 20.0,
+    "food": 16,
+    "inventory": "[]",
+    "position": [
+      646.6314552898982,
+      73.0,
+      332.27950138091444
+    ]
+  },
+  "actor": {
+    "id": "d3494b6e-3a98-4a9c-8823-388f5d620f4f",
+    "name": "Fern-d349",
+    "position": [
+      626.3582170376174,
+      100.0,
+      303.5120570275803
+    ],
+    "health": 20.0,
+    "food": 20,
+    "inventory": "[33 minecraft:sand, 9 minecraft:wheat]",
+    "activity": "Fern-d349 \u00b7 walking to observed ripe crops",
+    "home": "null",
+    "running": false,
+    "restScheduled": false,
+    "threats": [],
+    "crafting": "going to crafting table",
+    "breadCrafted": 3,
+    "foodAccess": {
+      "activity": "following the cleared next step toward a real meal",
+      "digs": 50,
+      "arrivals": 1,
+      "lastPlan": {
+        "table": "644, 99, 296",
+        "digs": 17,
+        "gameTime": 376189,
+        "visited": 8718,
+        "store": "644, 99, 296",
+        "edible": false,
+        "steps": 25
+      },
+      "lastFailure": "none",
+      "settlingWaits": 1,
+      "recentWork": [
+        {
+          "position": "649, 94, 300",
+          "gameTime": 377169,
+          "drops": [],
+          "block": "Block{minecraft:sandstone}",
+          "jobDigs": 10,
+          "contact": "(649.4238672034734, 94.56137804523834, 300.0)"
+        },
+        {
+          "position": "648, 96, 300",
+          "gameTime": 377219,
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "block": "Block{minecraft:sand}",
+          "jobDigs": 11,
+          "contact": "(649.0, 96.05043462115022, 300.4403825497211)"
+        },
+        {
+          "position": "648, 96, 300",
+          "gameTime": 377249,
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "block": "Block{minecraft:sand}",
+          "jobDigs": 12,
+          "contact": "(649.0, 96.05043462115022, 300.4403825497211)"
+        },
+        {
+          "position": "648, 95, 300",
+          "gameTime": 377279,
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "block": "Block{minecraft:sand}",
+          "jobDigs": 13,
+          "contact": "(649.0, 95.56130437261135, 300.4403825497211)"
+        },
+        {
+          "position": "647, 98, 300",
+          "gameTime": 377329,
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "block": "Block{minecraft:sand}",
+          "jobDigs": 14,
+          "contact": "(648.0, 98.49716837308833, 300.4999884504842)"
+        },
+        {
+          "position": "647, 97, 300",
+          "gameTime": 377359,
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "block": "Block{minecraft:sand}",
+          "jobDigs": 15,
+          "contact": "(648.0, 97.12164509221917, 300.49670312640615)"
+        },
+        {
+          "position": "647, 96, 300",
+          "gameTime": 377389,
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "block": "Block{minecraft:sand}",
+          "jobDigs": 16,
+          "contact": "(648.0, 96.55159385339074, 300.49670312640615)"
+        },
+        {
+          "position": "646, 97, 300",
+          "gameTime": 377449,
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "block": "Block{minecraft:sand}",
+          "jobDigs": 17,
+          "contact": "(647.0, 97.54987597681361, 300.4983117409403)"
+        }
+      ]
+    },
+    "foodHelp": "own need or request budget unmet",
+    "foodRequests": 0,
+    "table": "BlockPos{x=644, y=99, z=296}",
+    "blockedTable": "BlockPos{x=644, y=99, z=296}",
+    "canWorkAt": false
+  },
+  "firstCraftObservation": {
+    "elapsed": 16360,
+    "actor": {
+      "id": "d3494b6e-3a98-4a9c-8823-388f5d620f4f",
+      "name": "Fern-d349",
+      "position": [
+        646.7254196593049,
+        99.0,
+        295.50197873659033
+      ],
+      "health": 20.0,
+      "food": 10,
+      "inventory": "[33 minecraft:sand, 6 minecraft:wheat]",
+      "activity": "Fern-d349 \u00b7 rest",
+      "home": "null",
+      "running": false,
+      "restScheduled": true,
+      "threats": [],
+      "crafting": "crafted bread",
+      "breadCrafted": 1,
+      "foodAccess": {
+        "activity": "following the cleared next step toward a real meal",
+        "digs": 50,
+        "arrivals": 1,
+        "lastPlan": {
+          "table": "644, 99, 296",
+          "digs": 17,
+          "gameTime": 376189,
+          "visited": 8718,
+          "store": "644, 99, 296",
+          "edible": false,
+          "steps": 25
+        },
+        "lastFailure": "none",
+        "settlingWaits": 1,
+        "recentWork": [
+          {
+            "position": "649, 94, 300",
+            "gameTime": 377169,
+            "drops": [],
+            "block": "Block{minecraft:sandstone}",
+            "jobDigs": 10,
+            "contact": "(649.4238672034734, 94.56137804523834, 300.0)"
+          },
+          {
+            "position": "648, 96, 300",
+            "gameTime": 377219,
+            "drops": [
+              "1 minecraft:sand"
+            ],
+            "block": "Block{minecraft:sand}",
+            "jobDigs": 11,
+            "contact": "(649.0, 96.05043462115022, 300.4403825497211)"
+          },
+          {
+            "position": "648, 96, 300",
+            "gameTime": 377249,
+            "drops": [
+              "1 minecraft:sand"
+            ],
+            "block": "Block{minecraft:sand}",
+            "jobDigs": 12,
+            "contact": "(649.0, 96.05043462115022, 300.4403825497211)"
+          },
+          {
+            "position": "648, 95, 300",
+            "gameTime": 377279,
+            "drops": [
+              "1 minecraft:sand"
+            ],
+            "block": "Block{minecraft:sand}",
+            "jobDigs": 13,
+            "contact": "(649.0, 95.56130437261135, 300.4403825497211)"
+          },
+          {
+            "position": "647, 98, 300",
+            "gameTime": 377329,
+            "drops": [
+              "1 minecraft:sand"
+            ],
+            "block": "Block{minecraft:sand}",
+            "jobDigs": 14,
+            "contact": "(648.0, 98.49716837308833, 300.4999884504842)"
+          },
+          {
+            "position": "647, 97, 300",
+            "gameTime": 377359,
+            "drops": [
+              "1 minecraft:sand"
+            ],
+            "block": "Block{minecraft:sand}",
+            "jobDigs": 15,
+            "contact": "(648.0, 97.12164509221917, 300.49670312640615)"
+          },
+          {
+            "position": "647, 96, 300",
+            "gameTime": 377389,
+            "drops": [
+              "1 minecraft:sand"
+            ],
+            "block": "Block{minecraft:sand}",
+            "jobDigs": 16,
+            "contact": "(648.0, 96.55159385339074, 300.49670312640615)"
+          },
+          {
+            "position": "646, 97, 300",
+            "gameTime": 377449,
+            "drops": [
+              "1 minecraft:sand"
+            ],
+            "block": "Block{minecraft:sand}",
+            "jobDigs": 17,
+            "contact": "(647.0, 97.54987597681361, 300.4983117409403)"
+          }
+        ]
+      },
+      "foodHelp": "body unavailable for food request",
+      "foodRequests": 0,
+      "table": "BlockPos{x=644, y=99, z=296}",
+      "blockedTable": "null",
+      "canWorkAt": true
+    }
+  },
+  "residentHealth": [
+    {
+      "food": 20,
+      "id": "f572553d-4483-44b5-8ed5-6ffe7e7745b7",
+      "health": 20.0
+    },
+    {
+      "food": 20,
+      "id": "438701f4-3aba-4cda-b583-46051f1e0f53",
+      "health": 20.0
+    },
+    {
+      "food": 19,
+      "id": "5432d3df-f37a-4371-9465-aa1568bb4b02",
+      "health": 20.0
+    },
+    {
+      "food": 20,
+      "id": "af2b94ad-f799-4b93-a2c3-e958b2836c84",
+      "health": 20.0
+    },
+    {
+      "food": 20,
+      "id": "96cbd3bc-ebc5-4522-b101-b83ee55c471f",
+      "health": 20.0
+    },
+    {
+      "food": 17,
+      "id": "1d165330-2598-410c-827e-cc3b13c7bef9",
+      "health": 20.0
+    },
+    {
+      "food": 20,
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "health": 20.0
+    },
+    {
+      "food": 20,
+      "id": "c5578b5b-8991-428d-9d82-7cb57a956269",
+      "health": 20.0
+    },
+    {
+      "food": 2,
+      "id": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+      "health": 20.0
+    },
+    {
+      "food": 2,
+      "id": "d10cee59-b8c5-41fa-863a-1e455d73749b",
+      "health": 20.0
+    },
+    {
+      "food": 2,
+      "id": "e3de735e-23c0-421b-a93d-34e386a06ff2",
+      "health": 20.0
+    },
+    {
+      "food": 2,
+      "id": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+      "health": 20.0
+    },
+    {
+      "food": 2,
+      "id": "f13adb74-0ccc-4105-af94-63bc300bc5c3",
+      "health": 20.0
+    },
+    {
+      "food": 1,
+      "id": "573a309c-f0fc-4dd1-94cd-8246d352467c",
+      "health": 20.0
+    },
+    {
+      "food": 1,
+      "id": "64324351-28f6-4bc1-a8f8-949f3300763b",
+      "health": 20.0
+    },
+    {
+      "food": 1,
+      "id": "4ed39acd-b764-4c41-b799-5ac9d5feefe7",
+      "health": 20.0
+    },
+    {
+      "food": 1,
+      "id": "fad46718-2403-42a5-9067-b66e72485ec0",
+      "health": 20.0
+    },
+    {
+      "food": 2,
+      "id": "c73f2812-0861-417f-8180-38f671532381",
+      "health": 20.0
+    },
+    {
+      "food": 19,
+      "id": "97d2706c-4143-42bb-bab8-ecd680cafe5a",
+      "health": 20.0
+    },
+    {
+      "food": 20,
+      "id": "d3ab9ff6-cec6-4def-a199-92b911261b09",
+      "health": 20.0
+    },
+    {
+      "food": 18,
+      "id": "5d267809-1bbc-434f-a95a-7fd61c8de269",
+      "health": 20.0
+    },
+    {
+      "food": 17,
+      "id": "3c29e5bd-14b7-435c-8737-d49ac9cb7fdb",
+      "health": 20.0
+    },
+    {
+      "food": 10,
+      "id": "9bcb6ddf-4238-4531-a3a5-a7dea6d532ce",
+      "health": 20.0
+    },
+    {
+      "food": 11,
+      "id": "c19f89d2-5b6a-419f-8cb1-6a8568ca6d6b",
+      "health": 20.0
+    },
+    {
+      "food": 20,
+      "id": "99ed2ddb-9f4d-4968-851e-11fe3b6667e9",
+      "health": 20.0
+    },
+    {
+      "food": 16,
+      "id": "965a16a4-47eb-4f0f-9670-4333eb02389f",
+      "health": 20.0
+    },
+    {
+      "food": 19,
+      "id": "878bdd32-e485-485a-b9ed-79c0b987a0ab",
+      "health": 20.0
+    },
+    {
+      "food": 20,
+      "id": "88dbfce2-e4f6-4a28-9b76-f3a43a689a75",
+      "health": 20.0
+    },
+    {
+      "food": 20,
+      "id": "c9be37e3-bde8-4899-a365-5107233a0807",
+      "health": 20.0
+    },
+    {
+      "food": 2,
+      "id": "c7502bbf-79e6-4dca-8f58-e2debae7b0b1",
+      "health": 20.0
+    },
+    {
+      "food": 16,
+      "id": "31260997-4324-4b3b-98e2-c544eb0a9f33",
+      "health": 20.0
+    },
+    {
+      "food": 20,
+      "id": "d3494b6e-3a98-4a9c-8823-388f5d620f4f",
+      "health": 20.0
+    },
+    {
+      "food": 3,
+      "id": "48fd2e6d-6bf2-4694-9192-4b1e4ba295bf",
+      "health": 19.0
+    }
+  ],
+  "savedBodies": 179,
+  "savedManaged": 33,
+  "minSavedHealth": 19.0,
+  "missingSourceIds": [],
+  "newIds": [],
+  "terminal": {
+    "pid": 1356356,
+    "exitCode": 0
+  },
+  "productionJar": {
+    "villagers-0.4.1-dev.jar": "e6281d4744b2704c98dfeea37285ff142c87c59bda3aa991dabc120819d7839f"
+  }
+}

@@ -1,0 +1,1124 @@
+{
+  "runtime": "runs/native-primary-recurring-supplies-v97",
+  "terminal.json": {
+    "pid": 1816582,
+    "exitCode": 0,
+    "wallTimeGuard": false,
+    "milestoneRequested": false,
+    "ended": 1794387350.4734073,
+    "evidence": "/home/cmkrist/Documents/Villagers/runs/native-four-regions-play/evidence/play-2026-11-11T08-54-50.090369183Z-2fb83f3d"
+  },
+  "result.json": {
+    "requestedNativeTps": 80,
+    "nativeRateVerifiedInObservation": true,
+    "lastObservedNativeTps": 80.0,
+    "observedNativeRates": [
+      20.0,
+      80.0
+    ],
+    "exitCode": 0,
+    "wallTimeGuard": false,
+    "oldSaveUnchanged": true,
+    "beforeHumanoids": 187,
+    "afterHumanoids": 187,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "managedVillagers": 56,
+    "minManagedHealth": 20.0,
+    "adventurer": {
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "position": [
+        -466.5,
+        64.5625,
+        -376.5
+      ],
+      "health": 20.0,
+      "inventory": [
+        {
+          "id": "minecraft:stone_pickaxe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 70
+          }
+        },
+        {
+          "id": "minecraft:wooden_hoe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 17
+          }
+        },
+        {
+          "id": "minecraft:dirt",
+          "count": 30
+        },
+        {
+          "id": "minecraft:bread",
+          "count": 2
+        },
+        {
+          "id": "minecraft:wheat",
+          "count": 2
+        },
+        {
+          "id": "minecraft:carrot",
+          "count": 5
+        },
+        {
+          "id": "minecraft:stick",
+          "count": 4
+        },
+        {
+          "id": "minecraft:raw_iron",
+          "count": 1
+        }
+      ],
+      "equipment": {
+        "mainhand": {
+          "id": "minecraft:iron_pickaxe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 24
+          }
+        },
+        "offhand": {
+          "id": "minecraft:wooden_pickaxe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 4
+          }
+        }
+      },
+      "food": {
+        "foodLevel": 20,
+        "saturation": 2.6000001,
+        "exhaustion": 3.8126645,
+        "timer": 0
+      }
+    },
+    "stonePickaxeMilestoneRequested": false,
+    "sourceUnchangedDuringRun": true,
+    "nativeIllagerEnrollmentRequested": false,
+    "ironIngotsMilestoneRequested": false,
+    "ironPickaxeMilestoneRequested": false,
+    "stoneTierPickaxeOwned": true,
+    "ironIngotsOwned": 0,
+    "ironTierPickaxeOwned": true
+  },
+  "primaryReceipts": {
+    "gameTime": 278971,
+    "creatures": [
+      {
+        "food": 20,
+        "foodWork": {
+          "shared": 0,
+          "blocked": [
+            {
+              "until": 275554,
+              "position": "-629, 65, -583"
+            },
+            {
+              "until": 275514,
+              "position": "-640, 64, -623"
+            },
+            {
+              "until": 275474,
+              "position": "-664, 64, -620"
+            }
+          ],
+          "target": "",
+          "harvested": 0,
+          "crafted": 0,
+          "repeatHarvests": 0,
+          "hayReturn": {
+            "end": "",
+            "moved": false,
+            "landmark": "-629, 65, -583",
+            "gameTime": 275154,
+            "from": "(-669.960324139468, 63.0, -630.977206433912)",
+            "nodes": 0
+          }
+        },
+        "species": "minecraft:pillager",
+        "name": "Juniper-e9b7",
+        "learningUpdates": 4,
+        "fatigue": 0.09918749999999926,
+        "activity": "visiting camp housing to hear local food requests",
+        "family": {
+          "lastBirth": {},
+          "generation": 0,
+          "ageTicks": 20968,
+          "attempts": 0,
+          "nursery": "",
+          "activity": "not ready for a child",
+          "juvenile": false,
+          "blocked": "",
+          "breedingEnabled": true,
+          "nextBedSearch": 276234,
+          "availableNurseries": [
+            "-685, 63, -638",
+            "-660, 64, -629",
+            "-664, 64, -630"
+          ]
+        },
+        "memories": [
+          {
+            "index": 0,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Unpacked owned camp hay into nine wheat"
+          },
+          {
+            "index": 0,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Crafted real bread from three wheat"
+          },
+          {
+            "index": 0,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Crafted real bread from three wheat"
+          },
+          {
+            "index": 1,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.15571428571428533,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 2,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.15571428571428533,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 3,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.15571428571428533,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 3,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a camp food request from 573a309c-f0fc-4dd1-94cd-8246d352467c"
+          },
+          {
+            "index": 3,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a camp food request from 64324351-28f6-4bc1-a8f8-949f3300763b"
+          },
+          {
+            "index": 3,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a camp food request from 4ed39acd-b764-4c41-b799-5ac9d5feefe7"
+          },
+          {
+            "index": 3,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a camp food request from f13adb74-0ccc-4105-af94-63bc300bc5c3"
+          },
+          {
+            "index": 4,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.15571428571428533,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -682, 65, -627"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Handed one owned meal to a requesting captive 64324351-28f6-4bc1-a8f8-949f3300763b"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Handed one owned meal to a requesting captive 4ed39acd-b764-4c41-b799-5ac9d5feefe7"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Handed one owned meal to a requesting captive 4ed39acd-b764-4c41-b799-5ac9d5feefe7"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Handed one owned meal to a requesting captive 4ed39acd-b764-4c41-b799-5ac9d5feefe7"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -681, 64, -624"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Handed one owned meal to a requesting captive f13adb74-0ccc-4105-af94-63bc300bc5c3"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -680, 64, -629"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -681, 64, -629"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -682, 65, -626"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Crafted real bread from three wheat"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Ate owned food"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Gathered native camp hay at -640, 64, -623"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Unpacked owned camp hay into nine wheat"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -680, 64, -623"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Crafted real bread from three wheat"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -681, 64, -623"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -680, 64, -629"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -681, 64, -629"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -598, 64, -614"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -681, 64, -624"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -680, 64, -624"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a camp food request from 8ea7e1a5-6ea5-43b7-a3dd-fd713a991f38"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -598, 64, -614"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a camp food request from e028b7be-3415-4f44-8c0e-d73e81ea7fd4"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Handed one owned meal to a requesting captive 8ea7e1a5-6ea5-43b7-a3dd-fd713a991f38"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Crafted real bread from three wheat"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Handed one owned meal to a requesting captive e028b7be-3415-4f44-8c0e-d73e81ea7fd4"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Crafted real bread from three wheat"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Handed one owned meal to a requesting captive 8ea7e1a5-6ea5-43b7-a3dd-fd713a991f38"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Took 1 owned camp supplies from -676, 63, -641"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -597, 64, -635"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -597, 64, -635"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -597, 64, -635"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -597, 64, -634"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -597, 64, -635"
+          },
+          {
+            "index": 4,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -597, 64, -634"
+          }
+        ],
+        "id": "e9b7b192-009b-4158-bc2d-1a63456a6f91",
+        "health": 24.0,
+        "campWork": {
+          "beds": 0,
+          "recipes": 0,
+          "route": "native storage path started",
+          "transfers": 1,
+          "inspections": 1,
+          "reusedBeds": {
+            "routeRejections": 0,
+            "lastReceipt": {},
+            "collected": 0,
+            "activity": "no reusable free upper bunk nearby"
+          },
+          "lastReceipt": {
+            "sourceBefore": 1,
+            "moved": 1,
+            "item": "minecraft:bread",
+            "gameTime": 275224,
+            "sourceAfter": 0,
+            "container": "-676, 63, -641"
+          },
+          "target": "-676, 63, -641",
+          "access": {
+            "bed": "",
+            "lastFailure": {},
+            "activity": "no observed small masonry entrance to a free bunk",
+            "lastReceipt": {},
+            "step": 0,
+            "blocks": 0
+          },
+          "activity": "collecting real camp supplies",
+          "bedSite": "",
+          "bedApproach": {},
+          "fallenBeds": 0,
+          "fallenAudit": {},
+          "fallenRoute": {}
+        },
+        "bodyRoutes": {
+          "blockedNodes": 571,
+          "lastReceipt": {
+            "from": "(-649.7433600415259, 63.0, -662.2693080845158)",
+            "bodies": [
+              "7b0f5281-4082-4e2a-9f49-debe06196240",
+              "0e6136f0-9f73-44de-a539-62c30a83f878",
+              "d485788b-10c9-4407-8e58-571b21ae01d2"
+            ],
+            "gameTime": 275534,
+            "action": "native route search avoids the actual neighboring living bodies"
+          },
+          "searches": 13
+        },
+        "campMeals": {
+          "patrol": {
+            "until": 276434,
+            "cages": 1,
+            "lastRoute": {
+              "actor": "(-649.7433600415259, 63.0, -662.2693080845158)",
+              "moved": true,
+              "target": "-638, 63, -675",
+              "patrolCeiling": 66,
+              "end": "-640, 63, -673",
+              "gameTime": 275534,
+              "nodes": 19
+            },
+            "target": "-638, 63, -675",
+            "visited": 2
+          },
+          "lastApproach": {},
+          "waiting": 0,
+          "hatch": {
+            "lastReceipt": {},
+            "target": "",
+            "opened": 0
+          },
+          "lastReceipt": {},
+          "rejectedPaths": 0,
+          "delivered": 0,
+          "requests": 0,
+          "activity": "no camp meal request",
+          "calls": {
+            "heard": 6,
+            "waiting": 2,
+            "target": "",
+            "bodyRoutes": {
+              "blockedNodes": 571,
+              "lastReceipt": {
+                "from": "(-649.7433600415259, 63.0, -662.2693080845158)",
+                "bodies": [
+                  "7b0f5281-4082-4e2a-9f49-debe06196240",
+                  "0e6136f0-9f73-44de-a539-62c30a83f878",
+                  "d485788b-10c9-4407-8e58-571b21ae01d2"
+                ],
+                "gameTime": 275534,
+                "action": "native route search avoids the actual neighboring living bodies"
+              },
+              "searches": 13
+            },
+            "lastHeard": {
+              "volume": 6.0,
+              "position": "-597, 64, -634",
+              "heardRange": 72.0,
+              "nativeRange": 96.0,
+              "distance": 60.675194,
+              "sound": "minecraft:entity.villager.no",
+              "speaker": "764e71da-6e8c-4016-b4cb-b9aee031c564",
+              "gameTime": 278636
+            }
+          }
+        },
+        "campDoors": {
+          "closed": 0,
+          "lastReceipt": {},
+          "opened": 0,
+          "pending": 0
+        },
+        "company": {
+          "target": "",
+          "contacts": 0
+        },
+        "mainhand": "1 minecraft:crossbow",
+        "offhand": "1 minecraft:bread",
+        "inventory": [
+          "2 minecraft:bread",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ]
+      },
+      {
+        "food": 20,
+        "foodWork": {
+          "shared": 0,
+          "blocked": [],
+          "target": "",
+          "harvested": 0,
+          "crafted": 3,
+          "repeatHarvests": 0,
+          "hayReturn": {
+            "end": "-685, 63, -591",
+            "moved": true,
+            "landmark": "-681, 64, -590",
+            "gameTime": 278406,
+            "from": "(-685.5391942349543, 63.0, -590.6836437944845)",
+            "nodes": 2
+          }
+        },
+        "species": "minecraft:pillager",
+        "name": "Pip-460a",
+        "learningUpdates": 3,
+        "fatigue": 0.037500000000000026,
+        "activity": "visiting camp housing to hear local food requests",
+        "family": {
+          "lastBirth": {},
+          "generation": 0,
+          "ageTicks": 24348,
+          "attempts": 0,
+          "nursery": "-664, 64, -632",
+          "activity": "not ready for a child",
+          "juvenile": false,
+          "blocked": "",
+          "breedingEnabled": true,
+          "nextBedSearch": 279826,
+          "availableNurseries": []
+        },
+        "memories": [
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a camp food request from f13adb74-0ccc-4105-af94-63bc300bc5c3"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a camp food request from 573a309c-f0fc-4dd1-94cd-8246d352467c"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a camp food request from 64324351-28f6-4bc1-a8f8-949f3300763b"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a camp food request from 4ed39acd-b764-4c41-b799-5ac9d5feefe7"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -682, 65, -627"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -681, 64, -624"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Handed one owned meal to a requesting captive 573a309c-f0fc-4dd1-94cd-8246d352467c"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -680, 64, -629"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -681, 64, -629"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -682, 65, -626"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -680, 64, -623"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -681, 64, -623"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -680, 64, -629"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -681, 64, -629"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a camp food request from 8ea7e1a5-6ea5-43b7-a3dd-fd713a991f38"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a camp food request from e028b7be-3415-4f44-8c0e-d73e81ea7fd4"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a camp food request from c73f2812-0861-417f-8180-38f671532381"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a camp food request from fad46718-2403-42a5-9067-b66e72485ec0"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Handed one owned meal to a requesting captive c73f2812-0861-417f-8180-38f671532381"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Handed one owned meal to a requesting captive fad46718-2403-42a5-9067-b66e72485ec0"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Handed one owned meal to a requesting captive fad46718-2403-42a5-9067-b66e72485ec0"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Crafted real bread from three wheat"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Handed one owned meal to a requesting captive fad46718-2403-42a5-9067-b66e72485ec0"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -681, 64, -624"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a camp food request from e028b7be-3415-4f44-8c0e-d73e81ea7fd4"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -680, 64, -624"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a camp food request from 8ea7e1a5-6ea5-43b7-a3dd-fd713a991f38"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Crafted real bread from three wheat"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Handed one owned meal to a requesting captive e028b7be-3415-4f44-8c0e-d73e81ea7fd4"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Opened a real camp wall block at -666, 65, -632 to reach an available bunk"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Opened a real camp wall block at -666, 66, -632 to reach an available bunk"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Opened a real camp wall block at -666, 64, -632 to reach an available bunk"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -597, 64, -635"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -598, 64, -614"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Opened a real camp wall block at -665, 65, -632 to reach an available bunk"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -598, 64, -614"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Heard a loud camp call at -597, 64, -635"
+          },
+          {
+            "index": 1,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Opened a real camp wall block at -665, 64, -632 to reach an available bunk"
+          },
+          {
+            "index": 2,
+            "action": "SOCIALIZE",
+            "context": 4,
+            "reward": -0.15571428571428533,
+            "note": "Observed outcome of SOCIALIZE"
+          },
+          {
+            "index": 3,
+            "action": "REST",
+            "context": 4,
+            "reward": 0.5054999999999757,
+            "note": "Observed outcome of REST"
+          },
+          {
+            "index": 3,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Placed an actual crafted camp bed at -685, 63, -638"
+          },
+          {
+            "index": 3,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Took 1 owned camp supplies from -676, 63, -641"
+          },
+          {
+            "index": 3,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Ate owned food"
+          },
+          {
+            "index": 3,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Gathered native camp hay at -681, 64, -590"
+          },
+          {
+            "index": 3,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Unpacked owned camp hay into nine wheat"
+          },
+          {
+            "index": 3,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Crafted real bread from three wheat"
+          },
+          {
+            "index": 3,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Crafted real bread from three wheat"
+          },
+          {
+            "index": 3,
+            "context": -1,
+            "reward": 0.0,
+            "note": "Crafted real bread from three wheat"
+          }
+        ],
+        "id": "460ab4b6-1522-4504-9673-25fd503e0610",
+        "health": 24.0,
+        "campWork": {
+          "beds": 2,
+          "recipes": 0,
+          "route": "no safe complete storage path",
+          "transfers": 1,
+          "inspections": 1,
+          "reusedBeds": {
+            "routeRejections": 0,
+            "lastReceipt": {},
+            "collected": 0,
+            "activity": "no bunk job"
+          },
+          "lastReceipt": {
+            "sourceBefore": 1,
+            "moved": 1,
+            "item": "minecraft:bread",
+            "gameTime": 275556,
+            "sourceAfter": 0,
+            "container": "-676, 63, -641"
+          },
+          "target": "",
+          "access": {
+            "bed": "",
+            "lastFailure": {},
+            "activity": "no bunkhouse access work",
+            "lastReceipt": {},
+            "step": 0,
+            "blocks": 0
+          },
+          "activity": "looking for real camp supplies",
+          "bedSite": "",
+          "bedApproach": {
+            "end": "-684, 63, -639",
+            "accepted": true,
+            "site": "-685, 63, -639",
+            "gameTime": 275226,
+            "nodes": 4,
+            "actor": "(-680.2854487127377, 63.0, -640.485687600799)"
+          },
+          "fallenBeds": 0,
+          "fallenAudit": {},
+          "fallenRoute": {}
+        },
+        "bodyRoutes": {
+          "blockedNodes": 1439,
+          "lastReceipt": {
+            "from": "(-671.1641825468542, 63.0, -577.4999995083183)",
+            "bodies": [
+              "256cae8e-87e4-4dc4-bdaf-a42ac651c378",
+              "04fcea3d-6e02-4dd7-a0b5-0151c8a5642f"
+            ],
+            "gameTime": 278726,
+            "action": "native route search avoids the actual neighboring living bodies"
+          },
+          "searches": 105
+        },
+        "campMeals": {
+          "patrol": {
+            "until": 279626,
+            "cages": 4,
+            "lastRoute": {
+              "actor": "(-690.4739539683596, 64.0, -553.7143208925149)",
+              "moved": true,
+              "target": "-685, 64, -574",
+              "patrolCeiling": 66,
+              "end": "-686, 63, -572",
+              "gameTime": 278956,
+              "nodes": 19
+            },
+            "target": "-685, 64, -574",
+            "visited": 13
+          },
+          "lastApproach": {},
+          "waiting": 0,
+          "hatch": {
+            "lastReceipt": {},
+            "target": "",
+            "opened": 0
+          },
+          "lastReceipt": {},
+          "rejectedPaths": 0,
+          "delivered": 0,
+          "requests": 0,
+          "activity": "no camp meal request",
+          "calls": {
+            "heard": 0,
+            "waiting": 0,
+            "target": "",
+            "bodyRoutes": {
+              "blockedNodes": 1439,
+              "lastReceipt": {
+                "from": "(-671.1641825468542, 63.0, -577.4999995083183)",
+                "bodies": [
+                  "256cae8e-87e4-4dc4-bdaf-a42ac651c378",
+                  "04fcea3d-6e02-4dd7-a0b5-0151c8a5642f"
+                ],
+                "gameTime": 278726,
+                "action": "native route search avoids the actual neighboring living bodies"
+              },
+              "searches": 105
+            },
+            "lastHeard": {}
+          }
+        },
+        "campDoors": {
+          "closed": 0,
+          "lastReceipt": {},
+          "opened": 0,
+          "pending": 0
+        },
+        "company": {
+          "target": "",
+          "contacts": 0
+        },
+        "mainhand": "1 minecraft:crossbow",
+        "offhand": "1 minecraft:bread",
+        "inventory": [
+          "0 minecraft:air",
+          "4 minecraft:bread",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ]
+      }
+    ],
+    "hero": {
+      "uuid": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "health": 20.0,
+      "food": 20,
+      "mining": {
+        "activity": "needs observed exposed natural stone",
+        "lastReceipt": {
+          "gameTime": 275964,
+          "contact": "(-464.0, 56.97230284434054, -380.4991160158708)",
+          "position": "-464, 56, -381",
+          "toolDamageAfter": 24,
+          "accessRepaired": false,
+          "toolDamageBefore": 23,
+          "reach": 0.943223220986877,
+          "drops": [
+            "1 minecraft:cobblestone"
+          ],
+          "toolBefore": "1 minecraft:iron_pickaxe"
+        },
+        "blocks": 10
+      },
+      "ironPreparation": {
+        "crafted": 0,
+        "furnace": "-463, 63, -376",
+        "activity": "needs a safe observed mining face",
+        "loadedOre": 3,
+        "lastReceipt": {},
+        "lastApproach": {},
+        "plannedSite": "",
+        "passage": {
+          "faceBlock": "Block{minecraft:stone}",
+          "mode": "level",
+          "face": "-464, 56, -381",
+          "reselect": false,
+          "turns": 0,
+          "depth": 3,
+          "root": "-468, 56, -381",
+          "retainedFloors": 75,
+          "part": 3,
+          "activity": "walking down one retained mine step",
+          "retainedEntries": 1,
+          "waterSeals": {
+            "placed": 0,
+            "lastReceipt": {},
+            "activity": "no water sealing job",
+            "active": false
+          },
+          "foundations": 0,
+          "lastFoundation": {},
+          "exhausted": false,
+          "failedScans": 0,
+          "entry": "-480, 63, -379",
+          "frontier": "",
+          "backtracks": 0,
+          "lastRoute": {
+            "safe": true,
+            "target": "-480, 63, -379",
+            "end": "-480, 63, -379",
+            "gameTime": 276204,
+            "nodes": 17,
+            "actor": "(-464.6856799278143, 56.0, -380.497903755523)"
+          },
+          "frontierSearch": {
+            "activity": "not checking junctions",
+            "queries": 0,
+            "candidates": 0
+          }
+        },
+        "ironTaken": 3,
+        "fuelStored": true
+      },
+      "ironArmor": {
+        "equipped": 0,
+        "crafted": 0,
+        "lastReceipt": {},
+        "ironTarget": 8,
+        "ready": false,
+        "nextPiece": "CHEST"
+      }
+    }
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "scope": "Copied native-world continuation; only8grassland residents actively simulated. Not primary equipment, growth or victory.",
+  "runtime": "runs/native-wood-next-work-period-v17",
+  "terminal": {
+    "pid": 1410266,
+    "exitCode": 0
+  },
+  "elapsed": 12000,
+  "gameTime": 243347,
+  "missingOriginalIds": [],
+  "newIds": [],
+  "savedHumanoids": 179,
+  "managedVillagers": 33,
+  "minSavedManagedHealth": 20.0,
+  "woodPreparation": {
+    "lastStep": {},
+    "survey": {
+      "lastRoute": {},
+      "canopy": {
+        "blocks": 0,
+        "target": "",
+        "lastReceipt": {}
+      },
+      "target": ""
+    },
+    "gates": {
+      "closed": 0,
+      "opened": 0,
+      "lastReceipt": {},
+      "gate": ""
+    },
+    "recipes": 2,
+    "pathQueries": 0,
+    "lastPath": "none",
+    "activity": "crafting replacement_pickaxe supplies",
+    "goal": "NONE",
+    "logs": 0,
+    "stepsPlaced": 0,
+    "craftFailure": "none"
+  },
+  "savedHero": {
+    "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+    "type": "minecraft:villager",
+    "position": [
+      -470.7127272789595,
+      55.0,
+      -377.4487577728417
+    ],
+    "health": 20.0,
+    "tags": [
+      "villagers:mine_floor:-129467495710666",
+      "villagers:mine_floor:-128642862002122",
+      "villagers:mine_floor:-128367984082890",
+      "villagers:mine_floor:-128917739904970",
+      "villagers:mine_floor:-129192617816009",
+      "villagers:mine_floor:-129192617820106",
+      "villagers:quarry_failed:-127268472467393:202145",
+      "villagers:mine_floor:-128093106188234",
+      "villagers:stone_shore:-126168960860097",
+      "villagers:mine_floor:-128367984095178",
+      "villagers:mine_floor:-129742373629895",
+      "villagers:mine_floor:-128917739909066",
+      "villagers:mine_floor:-129192617803722",
+      "villagers:mine_floor:-128642862010314",
+      "villagers:mine_floor:-129742373613514",
+      "villagers:mine_floor:-128917739913162",
+      "villagers:stone_shore:-131391641075649",
+      "villagers:mine_floor:-128093106192330",
+      "villagers:mine_floor:-130017251536838",
+      "villagers:mine_floor:-129467495706570",
+      "villagers:mine_stair:-129192617811913:-131666518978497:EAST:0:0:level:select",
+      "villagers:stone_shore:-129742373699521",
+      "villagers:mine_floor:-127268472459204",
+      "villagers:mine_floor:-128642861989834",
+      "villagers:mine_floor:-128642861993930",
+      "villagers:mine_floor:-128367984091082",
+      "villagers:mine_floor:-127268472463299",
+      "villagers:stone_shore:-130567007150017",
+      "villagers:mine_floor:-128642861998026",
+      "villagers:adventurer",
+      "villagers:mine_floor:-129742373617610",
+      "villagers:workbench:-463,63,-379,minecraft:overworld",
+      "villagers:mine_floor:-128093106184138",
+      "villagers:mine_floor:-130567007350725",
+      "villagers:mine_floor:-128367984099274",
+      "villagers:managed",
+      "villagers:quarry_failed:-130567007231937:192849",
+      "villagers:mine_floor:-127268472451014",
+      "villagers:mine_floor:-129467495722952",
+      "villagers:mine_floor:-127268472442824",
+      "villagers:quarry:-131666518978497:EAST:16",
+      "villagers:native_resident_seen",
+      "villagers:mine_floor:-131116763164612",
+      "villagers:mine_floor:-129467495714762",
+      "villagers:mine_floor:-130292129443781",
+      "villagers:mine_floor:-128917739900874",
+      "villagers:mine_floor:-127268472467394",
+      "villagers:mine_floor:-128367984086986",
+      "villagers:mine_floor:-128917739896778",
+      "villagers:mine_floor:-128642862006218",
+      "villagers:mine_floor:-129467495718858",
+      "villagers:mine_floor:-127268472455109",
+      "villagers:mine_floor:-129742373621706",
+      "villagers:mine_floor:-130841885257669",
+      "villagers:mine_floor:-128093106180042",
+      "villagers:mine_floor:-127268472446919",
+      "villagers:mine_floor:-129192617811914",
+      "villagers:mine_floor:-129192617799626",
+      "villagers:mine_floor:-128367984103370",
+      "villagers:stone_shore:-128917739769793",
+      "villagers:mine_floor:-128093106196426",
+      "villagers:mine_floor:-129192617807818",
+      "villagers:owned_furnace:-126993594548161:0:0"
+    ],
+    "noAI": false,
+    "invulnerable": false,
+    "age": 0,
+    "attributes": [
+      {
+        "base": 0.5,
+        "id": "minecraft:movement_speed"
+      },
+      {
+        "modifiers": [
+          {
+            "amount": -0.05755709282684849,
+            "operation": "add_multiplied_base",
+            "id": "minecraft:random_spawn_bonus"
+          }
+        ],
+        "base": 16.0,
+        "id": "minecraft:follow_range"
+      },
+      {
+        "base": 1.0,
+        "id": "minecraft:attack_damage"
+      },
+      {
+        "base": 4.0,
+        "id": "minecraft:attack_speed"
+      }
+    ],
+    "effects": [],
+    "vehicle": null,
+    "inventory": [
+      {
+        "id": "minecraft:stone_pickaxe",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 123
+        }
+      },
+      {
+        "id": "minecraft:wooden_hoe",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 30
+        }
+      },
+      {
+        "id": "minecraft:dirt",
+        "count": 33
+      },
+      {
+        "id": "minecraft:bread",
+        "count": 2
+      },
+      {
+        "id": "minecraft:wheat",
+        "count": 1
+      },
+      {
+        "id": "minecraft:carrot",
+        "count": 5
+      },
+      {
+        "id": "minecraft:oak_planks",
+        "count": 2
+      },
+      {
+        "id": "minecraft:stick",
+        "count": 2
+      }
+    ],
+    "equipment": {
+      "mainhand": {
+        "id": "minecraft:stone_pickaxe",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 15
+        }
+      },
+      "offhand": {
+        "id": "minecraft:wooden_pickaxe",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 4
+        }
+      }
+    },
+    "meetingPoint": {
+      "value": {
+        "pos": [
+          -493,
+          64,
+          -329
+        ],
+        "dimension": "minecraft:overworld"
+      }
+    },
+    "dimensionFolder": "dimensions/minecraft/overworld/entities",
+    "name": "Clover-edc5",
+    "food": {
+      "foodLevel": 20,
+      "saturation": 0.60000014,
+      "exhaustion": 2.8741848,
+      "timer": 0
+    },
+    "home": {
+      "dimension": "minecraft:overworld",
+      "x": -467,
+      "y": 64,
+      "z": -377
+    }
+  }
+}

@@ -62,6 +62,47 @@ class VillagersConfigTest {
         assertEquals(20, VillagersConfig.load(file).config().traderRecruitmentChancePercent());
     }
 
+    @Test void existingSavesDoNotAutomaticallyOpenCaptiveCells() throws Exception {
+        Path file=Files.writeString(root.resolve("cells.json"),"{}");
+        assertFalse(VillagersConfig.defaults().nativeCellEscape());
+        assertFalse(VillagersConfig.load(file).config().nativeCellEscape());
+        Files.writeString(file,"{\"nativeCellEscape\":true}");
+        assertTrue(VillagersConfig.load(file).config().nativeCellEscape());
+        Files.writeString(file,"{\"nativeCellEscape\":\"true\"}");
+        var invalid=VillagersConfig.load(file);
+        assertFalse(invalid.config().nativeCellEscape());
+        assertEquals(1,invalid.problems().size());
+    }
+    @Test void aQuarryNeedsItsOwnExplicitOptIn() throws Exception {
+        Path file=Files.writeString(root.resolve("quarry.json"),"{\"hayForaging\":true,\"nativeCellEscape\":true}");
+        assertFalse(VillagersConfig.defaults().nativeAdventureQuarry());
+        assertFalse(VillagersConfig.load(file).config().nativeAdventureQuarry());
+        Files.writeString(file,"{\"nativeAdventureQuarry\":true}");
+        assertTrue(VillagersConfig.load(file).config().nativeAdventureQuarry());
+    }
+    @Test void nativeCampRemodellingDoesNotFollowOtherTerrainFlags() throws Exception {
+        Path file=Files.writeString(root.resolve("camp.json"),"{\"hayForaging\":true,\"nativeCellEscape\":true,\"nativeAdventureQuarry\":true}");
+        assertFalse(VillagersConfig.defaults().nativeCampPassages());
+        assertFalse(VillagersConfig.load(file).config().nativeCampPassages());
+        Files.writeString(file,"{\"nativeCampPassages\":true}");assertTrue(VillagersConfig.load(file).config().nativeCampPassages());
+        Files.writeString(file,"{\"nativeCampPassages\":\"true\"}");
+        var invalid=VillagersConfig.load(file);assertFalse(invalid.config().nativeCampPassages());assertEquals(1,invalid.problems().size());
+    }
+    @Test void campMealDeliveryHasAnIndependentOptIn() throws Exception {
+        Path file=Files.writeString(root.resolve("camp-meals.json"),"{\"nativeCampPassages\":true}");
+        assertFalse(VillagersConfig.defaults().nativeCampMeals());assertFalse(VillagersConfig.load(file).config().nativeCampMeals());
+        Files.writeString(file,"{\"nativeCampMeals\":true}");assertTrue(VillagersConfig.load(file).config().nativeCampMeals());
+        Files.writeString(file,"{\"nativeCampMeals\":\"true\"}");
+        var invalid=VillagersConfig.load(file);assertFalse(invalid.config().nativeCampMeals());assertEquals(1,invalid.problems().size());
+    }
+
+    @Test void campFarmingHasAnIndependentStrictOptIn() throws Exception {
+        Path file=Files.writeString(root.resolve("camp-farming.json"),"{\"nativeCampMeals\":true}");
+        assertFalse(VillagersConfig.defaults().nativeCampFarming());assertFalse(VillagersConfig.load(file).config().nativeCampFarming());
+        Files.writeString(file,"{\"nativeCampFarming\":true}");assertTrue(VillagersConfig.load(file).config().nativeCampFarming());
+        Files.writeString(file,"{\"nativeCampFarming\":\"true\"}");assertFalse(VillagersConfig.load(file).config().nativeCampFarming());
+        assertEquals(1,VillagersConfig.load(file).problems().size());
+    }
     @Test void invalidFileIsLeftUntouchedAndDefaultsAreUsed() throws Exception {
         String broken = "{ memoryWitnessRadius: oops";
         Path file = Files.writeString(root.resolve("villagers.json"), broken);

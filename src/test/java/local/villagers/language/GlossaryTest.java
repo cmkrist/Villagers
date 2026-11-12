@@ -40,14 +40,14 @@ class GlossaryTest {
         assertEquals(Concept.BREAD, glossary.translate("tepi"));
     }
 
-    @Test void groundedSpeechTeachesAndGossipDoesNot() {
+    @Test void onlyObservableContextTeachesRegardlessOfTheSpeakerGroundingFlag() {
         Lexicon lexicon = Lexicon.invent(new Random(1));
         Utterance grounded = Utterance.of(lexicon, List.of(Concept.HUNGRY), true);
         Utterance gossip = Utterance.of(lexicon, List.of(Concept.HUNGRY), false);
         Glossary fromGossip = Glossary.empty(PLAYER), fromSituation = Glossary.empty(PLAYER);
         for (int i = 0; i < 5; i++) {
             fromGossip = gossip.teach(fromGossip, Set.of());
-            fromSituation = grounded.teach(fromSituation, Set.of(i % 2 == 0 ? Concept.WALK : Concept.FOOD));
+            fromSituation = grounded.teach(fromSituation, Set.of(Concept.HUNGRY, i % 2 == 0 ? Concept.WALK : Concept.FOOD));
         }
         String word = lexicon.wordFor(Concept.HUNGRY);
         assertNull(fromGossip.translate(word));

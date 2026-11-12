@@ -1,0 +1,80 @@
+{
+  "base": "/tmp/villagers-source-snapshot-v306",
+  "baseJarSHA256": "62b7ec1baea819eb9c6eff40483ac63d35e116eae933816de5e4359d1127573b",
+  "jarSHA256": "8334e2fc89e475929ec6e4394d5bb50ed9ad5dfa35c9a275c4949034b4d3bd8f",
+  "changedFiles": {
+    "src/main/java/local/villagers/NativeFoodStorage.java": "1c1798fd42557beb6d9a491bfa482d28a100784e7593b3cadb7d2973502cae21",
+    "src/main/java/local/villagers/AdventureQuarry.java": "dcf06bffc5a43efb6460a1f58a03b56eec08dd70de38849673a4211bd623bdd0"
+  },
+  "javaTests": {
+    "tests": 633,
+    "failures": 0,
+    "errors": 0
+  },
+  "buildLog": "/tmp/villagers-worker-v306-quarry-stand-build.log",
+  "sourceGameTime": 321513,
+  "currentRuntime": "runs/worker-v306-quarry-stand-care-20261111",
+  "status": "Stopped1242ticks onBirch before quarry stand issue occurred; no proof of quarry fix.",
+  "emptyStoreTrial": {
+    "runtime": "runs/worker-v306-empty-store-care-20261111",
+    "jarSHA256": "4ef817ca94dd0691c54da5d2727833e075c631f682ce285e6cc131f137509763",
+    "stop": {
+      "position": "(-680.5000162394795, 64.0, -623.3102973172428)",
+      "air": 300,
+      "elapsed": 6367,
+      "health": 1.0,
+      "stage": "health_stop",
+      "gameTime": 327880,
+      "status": "failed",
+      "actor": "8ea7e1a5-6ea5-43b7-a3dd-fd713a991f38"
+    },
+    "population": {
+      "beforeHumanoids": 192,
+      "afterHumanoids": 192,
+      "missingOriginalIds": [],
+      "newHumanoidIds": [],
+      "beforeLivingHumanoids": 192,
+      "afterLivingHumanoids": 192,
+      "newlyDeadOrMissingIds": [],
+      "nonlivingAfterIds": []
+    },
+    "outcome": "Iris physically collected2bread and at6360was18HP/16food; actor-local no-meal inspection recorded at323789 with revisit329789. Run still stopped6367on another captive. Different food allocation than v306; no global improvement claim."
+  },
+  "forensics": {
+    "scope": "Read-only stopped-copy region NBT, never container opening or knowledge supplied to actors.",
+    "chest": [
+      -439,
+      64,
+      -827
+    ],
+    "before": [
+      "2bread",
+      "2leatherleggings"
+    ],
+    "v306After": [
+      "2leatherleggings"
+    ],
+    "newConsumer": "Willow1104 acquired2bread; baseline had0such transfer memories, afterv306had2. Ember4historicalmemories unchanged."
+  },
+  "quarryCause": "Baseline target(-475,60,-344), actor(-474.505,61,-343.658), selected stand(-475,61,-345), centered helper rejected adjacent actual cell; stopped after1210idle. New helper permits only<=1.25m same-floor validated sweep to an already selected stand with normal MoveControl.",
+  "stop": {
+    "health": 1.0,
+    "stage": "health_stop",
+    "gameTime": 322755,
+    "status": "failed",
+    "actor": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+    "position": "(-588.3496574417138, 64.0, -587.0964712984036)",
+    "air": 300,
+    "elapsed": 1242
+  },
+  "population": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  }
+}

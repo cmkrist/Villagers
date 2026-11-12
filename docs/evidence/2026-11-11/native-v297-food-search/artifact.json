@@ -1,0 +1,41 @@
+{
+  "base": "/tmp/villagers-source-snapshot-v297",
+  "purpose": "Combine the exact verifiedv297 supply source with the previously verified emergency-search behavior only. No mind-schema or language migration.",
+  "changedFiles": {
+    "src/main/java/local/villagers/mind/AgentMind.java": "c138ff1b26e62faa050af1922a3be9b98bcd49ba4a40598d9ce77232604ad874",
+    "src/main/java/local/villagers/VillagerController.java": "e8f7058dc38d7b403a59a188df9f3d82a59c9f727878c58cb8e73002fdaeb779",
+    "src/test/java/local/villagers/mind/AgentMindTest.java": "3942988b0813c5f7f87c111830d430e0767ed15e79877a8fe28547ddf66a256d"
+  },
+  "jarSHA256": "ec29522705a80caa4f2861f2444e415e95785629b84b1e2ed92daa56a65c9499",
+  "javaTests": {
+    "tests": 629,
+    "failures": 0,
+    "errors": 0
+  },
+  "buildLog": "/tmp/villagers-worker-v297-food-search-build.log",
+  "baseJarSHA256": "0f9dd3b7d5eed6b5341162f4d9d423ffd89fee48264b0ac4fdef1b3c46fd4bb6",
+  "baselineContinuation": "runs/worker-v297-continuation-20261111",
+  "baselineStop": {
+    "health": 1.0,
+    "elapsed": 2039,
+    "air": 300,
+    "position": "(-438.50481416555346, 64.0, -823.2893869211524)",
+    "actor": "240e2b57-7cf5-46a4-a9a4-bdd1357cfbc7",
+    "status": "failed",
+    "gameTime": 327551,
+    "stage": "health_stop"
+  },
+  "frozenInspection": "runs/worker-v297-iris-frozen-20261111",
+  "currentRuntime": "runs/worker-v297-food-search-care-20261111",
+  "status": "Late injured-only search did move Iris, but prelethal FAIL2038ticks; all192preserved. Superseded by reserve-search candidate.",
+  "outcome": {
+    "actor": "240e2b57-7cf5-46a4-a9a4-bdd1357cfbc7",
+    "position": "(-444.1470210863937, 63.0, -819.5586700079574)",
+    "air": 300,
+    "elapsed": 2038,
+    "health": 1.0,
+    "stage": "health_stop",
+    "gameTime": 327550,
+    "status": "failed"
+  }
+}

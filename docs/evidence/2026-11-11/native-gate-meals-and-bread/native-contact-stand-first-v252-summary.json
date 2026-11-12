@@ -1,0 +1,48 @@
+{
+  "run": "native-contact-stand-first-v252",
+  "stop": {
+    "gameTime": 305090,
+    "status": "failed",
+    "actor": "573a309c-f0fc-4dd1-94cd-8246d352467c",
+    "position": "(-632.969550963822, 65.0, -607.4269720730738)",
+    "air": 300,
+    "elapsed": 582,
+    "health": 1.0,
+    "stage": "health_stop"
+  },
+  "population": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "actualRecordedHandoffs": [
+    {
+      "gameTime": 304788,
+      "giverBefore": 4,
+      "contact": "(-597.1540960672739, 64.5, -613.8016478294228)",
+      "donorSource": "bag",
+      "handReach": 2.4342313337184156,
+      "ownedItemAfter": 2,
+      "usedEmergencyReserve": true,
+      "from": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "receiverAfter": 2,
+      "receiverBefore": 0,
+      "count": 2,
+      "item": "minecraft:potato",
+      "distance": 2.6269135,
+      "ownedItemBefore": 4,
+      "to": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+      "giverAfter": 2
+    }
+  ],
+  "sourceCopyMetadata": "/home/cmkrist/Documents/Villagers/runs/native-eastern-worker-audit-v214/NativeFourRegions",
+  "terminal": {
+    "pid": 2102585,
+    "exitCode": 0
+  }
+}

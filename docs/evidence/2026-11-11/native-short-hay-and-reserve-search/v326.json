@@ -1,0 +1,229 @@
+{
+  "runtime": "runs/native-next-day-family-and-ore-v326",
+  "terminal": {
+    "pid": 2332954,
+    "exitCode": 0
+  },
+  "population": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "stop": {
+    "actor": "110491fa-f5bd-4ded-a182-d784a2c91074",
+    "status": "failed",
+    "gameTime": 336717,
+    "stage": "health_stop",
+    "health": 1.0,
+    "elapsed": 1969,
+    "air": 300,
+    "position": "(-439.19999998807907, 64.5, -822.4816623760767)"
+  },
+  "patients": [
+    {
+      "id": "240e2b57-7cf5-46a4-a9a4-bdd1357cfbc7",
+      "name": "Iris-240e",
+      "health": 18.0,
+      "food": 17,
+      "position": "-434, 63, -817",
+      "campMeals": {
+        "requests": 0,
+        "lastReceived": {}
+      }
+    },
+    {
+      "id": "110491fa-f5bd-4ded-a182-d784a2c91074",
+      "name": "Willow-1104",
+      "health": 1.0,
+      "food": 0,
+      "position": "-440, 64, -823",
+      "campMeals": {
+        "requests": 0,
+        "lastReceived": {}
+      }
+    },
+    {
+      "id": "8ea7e1a5-6ea5-43b7-a3dd-fd713a991f38",
+      "name": "Linden-8ea7",
+      "health": 13.0,
+      "food": 11,
+      "position": "-681, 64, -624",
+      "campMeals": {
+        "requests": 0,
+        "lastReceived": {}
+      }
+    },
+    {
+      "id": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+      "name": "Birch-67f3",
+      "health": 1.0,
+      "food": 9,
+      "position": "-589, 64, -588",
+      "campMeals": {
+        "requests": 7,
+        "lastReceived": {}
+      }
+    }
+  ],
+  "adventurer": {
+    "actors": [
+      {
+        "health": 20.0,
+        "ageTicks": 273229,
+        "iron": {
+          "loadedOre": 3,
+          "lastReceipt": {},
+          "lastApproach": {},
+          "plannedSite": "",
+          "passage": {
+            "reselect": false,
+            "turns": 0,
+            "depth": 0,
+            "root": "",
+            "retainedFloors": 114,
+            "part": 0,
+            "activity": "no prospecting passage",
+            "faceBlock": "",
+            "mode": "descending",
+            "face": "",
+            "retainedEntries": 3,
+            "exhaustedEntries": 1,
+            "stepsWithoutDepth": 0,
+            "waterSeals": {
+              "lastReceipt": {},
+              "activity": "no water sealing job",
+              "active": false,
+              "placed": 0
+            },
+            "foundations": 0,
+            "lastFoundation": {},
+            "exhausted": false,
+            "failedScans": 0,
+            "entry": "",
+            "frontier": "",
+            "backtracks": 0,
+            "lastRoute": {},
+            "frontierSearch": {
+              "queries": 0,
+              "candidates": 0,
+              "activity": "not checking junctions"
+            }
+          },
+          "ironTaken": 3,
+          "crafted": 0,
+          "furnace": "-463, 63, -376",
+          "activity": "approaching a visible soil face in the quarry",
+          "fuelStored": true
+        },
+        "inventory": [
+          "1 minecraft:stone_pickaxe",
+          "1 minecraft:iron_pickaxe",
+          "44 minecraft:dirt",
+          "2 minecraft:bread",
+          "5 minecraft:carrot",
+          "4 minecraft:stick",
+          "1 minecraft:raw_iron",
+          "0 minecraft:air"
+        ],
+        "armor": {
+          "crafted": 0,
+          "lastReceipt": {},
+          "ironTarget": 8,
+          "ready": false,
+          "nextPiece": "CHEST",
+          "equipped": 0
+        },
+        "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+        "food": 19,
+        "navigation": {
+          "path": {},
+          "onGround": true,
+          "position": "(-481.63886681687626, 62.9375, -370.45672786943845)",
+          "wanted": [
+            -482.5,
+            62.9375,
+            -369.5
+          ],
+          "velocity": "(0.0, -0.0784000015258789, 0.0)"
+        },
+        "position": "(-481.63886681687626, 62.9375, -370.45672786943845)",
+        "mainhand": "1 minecraft:wooden_hoe",
+        "quarry": {
+          "lastApproach": {},
+          "step": 9,
+          "lastReceipt": {},
+          "origin": "-475, 63, -347",
+          "inspection": {
+            "reviewAt": 0,
+            "target": "",
+            "survey": {
+              "target": "",
+              "visited": 0,
+              "lastRoute": {}
+            },
+            "lastRetirement": {},
+            "repairs": 0,
+            "returning": false,
+            "reconsidered": 0,
+            "lastRepair": {},
+            "visited": 0,
+            "route": "none"
+          },
+          "lastStop": {},
+          "activity": "approaching a visible soil face in the quarry",
+          "stand": "",
+          "centerings": 0,
+          "dug": 0
+        },
+        "bedding": {
+          "recipes": 0,
+          "lastReceipt": {},
+          "store": "",
+          "sheepWool": {
+            "lastReceipt": {},
+            "target": "",
+            "craftedShears": 0,
+            "sheared": 0,
+            "collected": 0
+          },
+          "activity": "no village bedding work",
+          "placed": 0,
+          "transfers": 0,
+          "site": ""
+        },
+        "family": {
+          "courtship": "",
+          "status": "saving food for a child",
+          "foodGoal": false
+        }
+      }
+    ],
+    "gameTime": 336708,
+    "elapsed": 1960
+  },
+  "receipts": [
+    {
+      "from": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "usedEmergencyReserve": true,
+      "ownedItemAfter": 0,
+      "handReach": 2.9705670651677267,
+      "donorSource": "bag",
+      "contact": "(-596.761845393116, 64.5, -633.395044376337)",
+      "giverBefore": 2,
+      "gameTime": 335923,
+      "giverAfter": 0,
+      "to": "764e71da-6e8c-4016-b4cb-b9aee031c564",
+      "ownedItemBefore": 2,
+      "distance": 3.3745944,
+      "item": "minecraft:bread",
+      "count": 2,
+      "receiverBefore": 0,
+      "receiverAfter": 2
+    }
+  ]
+}

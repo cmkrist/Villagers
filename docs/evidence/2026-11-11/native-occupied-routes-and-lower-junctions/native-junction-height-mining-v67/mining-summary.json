@@ -1,0 +1,308 @@
+{
+  "elapsed": 16000,
+  "hero": {
+    "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+    "name": "Clover-edc5",
+    "position": [
+      -487.2570158541071,
+      63.0,
+      -302.50163288673264
+    ],
+    "production": {
+      "planted": 2,
+      "breadCrafted": 0,
+      "actions": {
+        "replantsFromStock": 0,
+        "cropsHarvested": 1,
+        "swordHits": 0,
+        "replantsFromHarvest": 1,
+        "doorsOpened": 1,
+        "doorsClosed": 1
+      },
+      "lastPlant": {
+        "nativeVillage": true,
+        "hoeDamageAfter": 29,
+        "soil": "-485, 61, -302",
+        "crop": "Block{minecraft:carrots}[age=0]",
+        "seed": "minecraft:carrot",
+        "hoeBroke": false,
+        "seedAfter": 2,
+        "hoeDamageBefore": 28,
+        "seedBefore": 3,
+        "gameTime": 342563
+      },
+      "lastHarvest": {
+        "gameTime": 340813,
+        "position": "-482, 63, -360",
+        "crop": "BEETROOT",
+        "plantingSource": "native harvest",
+        "nativeDrops": [
+          "1 minecraft:beetroot",
+          "2 minecraft:beetroot_seeds"
+        ],
+        "inventoryBefore": [
+          "1 minecraft:stone_pickaxe",
+          "1 minecraft:stone_pickaxe",
+          "64 minecraft:dirt",
+          "2 minecraft:bread",
+          "4 minecraft:carrot",
+          "2 minecraft:stick",
+          "2 minecraft:iron_ingot",
+          "2 minecraft:dirt"
+        ],
+        "inventoryAfter": [
+          "1 minecraft:stone_pickaxe",
+          "1 minecraft:stone_pickaxe",
+          "64 minecraft:dirt",
+          "2 minecraft:bread",
+          "4 minecraft:carrot",
+          "2 minecraft:stick",
+          "2 minecraft:iron_ingot",
+          "2 minecraft:dirt"
+        ],
+        "overflow": [
+          "1 minecraft:beetroot",
+          "1 minecraft:beetroot_seeds"
+        ],
+        "hoeDamageBefore": 23,
+        "hoeDamageAfter": 24,
+        "hoeBroke": false,
+        "usedHoe": true,
+        "cropAfter": "Block{minecraft:beetroots}[age=0]"
+      }
+    },
+    "health": 20.0,
+    "food": 20,
+    "inventory": "[1 minecraft:stone_pickaxe, 1 minecraft:stone_pickaxe, 64 minecraft:dirt, 2 minecraft:bread, 2 minecraft:carrot, 2 minecraft:stick, 2 minecraft:iron_ingot, 5 minecraft:dirt]",
+    "adventure": {
+      "stonePickaxe": true,
+      "nominated": true,
+      "mining": {
+        "blocks": 16,
+        "activity": "needs observed exposed natural stone",
+        "lastReceipt": {
+          "drops": [
+            "1 minecraft:dirt"
+          ],
+          "toolBefore": "1 minecraft:stone_pickaxe",
+          "gameTime": 338883,
+          "contact": "(-475.3943648162716, 62.07340572929215, -379.0)",
+          "position": "-476, 62, -380",
+          "toolDamageAfter": 18,
+          "accessRepaired": false,
+          "toolDamageBefore": 17,
+          "reach": 0.7075272556800414
+        }
+      },
+      "activity": "following the retained mine exit",
+      "quarry": {
+        "inspection": {
+          "target": "",
+          "survey": {
+            "lastRoute": {
+              "moved": true,
+              "gameTime": 341303,
+              "nodes": 25,
+              "end": "-494, 63, -306",
+              "origin": "-494, 64, -330",
+              "target": "-494, 63, -306"
+            },
+            "target": "",
+            "visited": 4
+          },
+          "lastRetirement": {
+            "startedPosition": "(-490.3712542728332, 63.0, -302.49198837347234)",
+            "entryHeight": 63,
+            "entry": "-483, 63, -302",
+            "started": 342803
+          },
+          "repairs": 0,
+          "returning": true,
+          "reconsidered": 2,
+          "lastRepair": {},
+          "visited": 0,
+          "route": "none",
+          "reviewAt": 363643
+        },
+        "lastStop": {
+          "step": 2,
+          "gameTime": 342803,
+          "actor": "-491, 63, -303",
+          "block": "Block{minecraft:farmland}[moisture=0]",
+          "reason": "target is not natural overburden",
+          "target": "-485, 61, -302",
+          "idleTicks": 0
+        },
+        "activity": "stopped quarry at a non-soil block, boundary or stalled route",
+        "stand": "-484, 62, -302",
+        "centerings": 2,
+        "dug": 5,
+        "lastApproach": {
+          "end": "-484, 62, -302",
+          "gameTime": 342513,
+          "nodes": 2,
+          "actor": "(-484.53400028846664, 63.0, -302.4984573589149)",
+          "target": "-485, 61, -302",
+          "accepted": true,
+          "safe": true
+        },
+        "step": 2,
+        "lastReceipt": {
+          "gameTime": 342503,
+          "step": 2,
+          "drops": [
+            "1 minecraft:dirt"
+          ],
+          "position": "-485, 62, -302"
+        },
+        "origin": "-483, 63, -302"
+      },
+      "stone": 0
+    },
+    "woodPreparation": {
+      "goal": "NONE",
+      "activity": "needs accessible natural wood",
+      "lastPath": "none",
+      "pathQueries": 0,
+      "recipes": 0,
+      "gates": {
+        "closed": 0,
+        "gate": "",
+        "lastReceipt": {},
+        "opened": 0
+      },
+      "survey": {
+        "canopy": {
+          "blocks": 0,
+          "lastReceipt": {},
+          "target": ""
+        },
+        "lastRoute": {
+          "rememberedBell": "-493, 64, -329",
+          "nodes": 33,
+          "actor": "(-481.312458250087, 63.0, -359.74874447926186)",
+          "gameTime": 340963,
+          "end": "-494, 64, -330"
+        },
+        "target": ""
+      },
+      "lastStep": {},
+      "stepsPlaced": 0,
+      "logs": 0,
+      "craftFailure": "none"
+    },
+    "ironPreparation": {
+      "lastApproach": {},
+      "plannedSite": "",
+      "passage": {
+        "retainedFloors": 199,
+        "part": 0,
+        "activity": "rechecking the observed blocked prospecting faces after a short pause",
+        "faceBlock": "Block{minecraft:clay}",
+        "mode": "level",
+        "face": "",
+        "reselect": false,
+        "turns": 8,
+        "depth": 0,
+        "root": "",
+        "foundations": 0,
+        "lastFoundation": {},
+        "exhausted": false,
+        "failedScans": 0,
+        "entry": "",
+        "frontier": "",
+        "backtracks": 6,
+        "lastRoute": {
+          "end": "-483, 63, -302",
+          "gameTime": 342873,
+          "nodes": 10,
+          "actor": "(-490.3712542728332, 63.0, -302.49198837347234)",
+          "safe": true,
+          "target": "-483, 63, -302"
+        },
+        "frontierSearch": {
+          "queries": 6,
+          "candidates": 0,
+          "activity": "no remaining eligible observed junctions"
+        }
+      },
+      "ironTaken": 5,
+      "crafted": 0,
+      "furnace": "-463, 63, -376",
+      "activity": "following the retained mine exit",
+      "loadedOre": 5,
+      "lastReceipt": {},
+      "fuelStored": true
+    },
+    "ironIngots": 2,
+    "villageSupplies": {
+      "inspected": 0,
+      "activity": "not seeking village supplies",
+      "lastReceipt": {},
+      "moved": 0,
+      "target": ""
+    },
+    "ironPickaxe": true,
+    "villageBedding": {
+      "sheepWool": {
+        "sheared": 0,
+        "collected": 0,
+        "lastReceipt": {},
+        "target": "",
+        "craftedShears": 0
+      },
+      "activity": "no village bedding work",
+      "placed": 0,
+      "transfers": 0,
+      "site": "",
+      "recipes": 0,
+      "lastReceipt": {},
+      "store": ""
+    },
+    "ironArmor": {
+      "ready": false,
+      "nextPiece": "CHEST",
+      "equipped": 0,
+      "crafted": 0,
+      "lastReceipt": {},
+      "ironTarget": 8
+    },
+    "equippedArmor": {
+      "feet": "0 minecraft:air",
+      "legs": "0 minecraft:air",
+      "chest": "0 minecraft:air",
+      "head": "0 minecraft:air"
+    },
+    "inventoryRoom": {
+      "lastReceipt": {},
+      "actions": 0
+    },
+    "body": {
+      "fatigue": 0.21718749999999676,
+      "activity": "Clover-edc5 \u00b7 following the retained mine exit",
+      "passenger": false,
+      "sleeping": false,
+      "courtship": "NONE"
+    },
+    "held": "1 minecraft:wooden_hoe",
+    "offhand": "1 minecraft:iron_pickaxe",
+    "boat": {
+      "landings": 0,
+      "phase": "NONE",
+      "activity": "boat preparation timed out",
+      "purpose": "NONE",
+      "paddleTicks": 0,
+      "launches": 0,
+      "logsGathered": 0,
+      "recipes": 0,
+      "lastReturn": {},
+      "footReturns": 0
+    },
+    "woodJob": {
+      "taken": 0,
+      "tree": "null",
+      "blockedTable": "null",
+      "table": "BlockPos{x=-525, y=63, z=-347}"
+    }
+  }
+}

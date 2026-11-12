@@ -47,7 +47,7 @@ final class FamilyCompany {
     }
 
     private static boolean eligible(ServerLevel level, Villager v, Session s, Villager other) {
-        return other != v && other.level() == level && other.isAlive() && Villagers.isManaged(other)
+        return other != v && s.mind.partnerships().committedTo(other.getUUID()) && other.level() == level && other.isAlive() && Villagers.isManaged(other)
                 && !other.isSleeping() && Courtship.mayApproach(v.distanceToSqr(other), v.hasLineOfSight(other),
                 !other.isBaby(), VillageSurvival.withinHomeRange(level, s.mind, other.position()),
                 s.mind.opinionOf(other.getUUID()).regard());

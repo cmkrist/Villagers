@@ -1,0 +1,239 @@
+{
+  "scope": "Native COPIES only; original primary hashes unchanged at both wrapper exits. No iron milestone.",
+  "mineralCopy": {
+    "runtime": "runs/native-rock-prospect-v2",
+    "ticks": 24000,
+    "stage": "bounded_iron_observation",
+    "minimumTrackedFinalHealth": 20.0,
+    "hero": {
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "name": "Clover-edc5",
+      "position": [
+        -466.4927285936614,
+        55.0,
+        -378.52377887523465
+      ],
+      "production": {
+        "lastHarvest": {},
+        "planted": 0,
+        "breadCrafted": 0,
+        "actions": {
+          "doorsOpened": 1,
+          "doorsClosed": 2,
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0
+        },
+        "lastPlant": {}
+      },
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[1 minecraft:wooden_pickaxe, 3 minecraft:cobblestone, 33 minecraft:dirt, 1 minecraft:bread, 1 minecraft:wheat_seeds, 7 minecraft:carrot, 1 minecraft:wooden_hoe, 4 minecraft:clay_ball]",
+      "adventure": {
+        "quarry": {
+          "step": 16,
+          "lastReceipt": {
+            "position": "-476, 60, -379",
+            "gameTime": 203139,
+            "step": 9,
+            "drops": [
+              "1 minecraft:dirt"
+            ]
+          },
+          "origin": "-480, 63, -379",
+          "inspection": {
+            "lastRepair": {},
+            "target": "",
+            "survey": {
+              "visited": 0,
+              "lastRoute": {},
+              "target": ""
+            },
+            "reviewAt": 216849,
+            "reconsidered": 3,
+            "visited": 0,
+            "route": "none",
+            "repairs": 0
+          },
+          "lastStop": {
+            "idleTicks": 10,
+            "step": 9,
+            "gameTime": 203149,
+            "actor": "-478, 61, -379",
+            "block": "Block{minecraft:andesite}",
+            "reason": "target is not natural overburden",
+            "target": "-476, 59, -379"
+          },
+          "activity": "stopped quarry at a non-soil block, boundary or stalled route",
+          "stand": "-478, 61, -379",
+          "centerings": 3,
+          "dug": 9,
+          "lastApproach": {
+            "safe": true,
+            "end": "-478, 61, -379",
+            "gameTime": 202989,
+            "nodes": 2,
+            "actor": "(-476.947205360598, 61.0, -378.57400063274383)",
+            "target": "-477, 60, -379",
+            "accepted": true
+          }
+        },
+        "stone": 3,
+        "stonePickaxe": true,
+        "nominated": true,
+        "mining": {
+          "blocks": 39,
+          "activity": "needs observed exposed natural stone",
+          "lastReceipt": {
+            "accessRepaired": false,
+            "toolDamageBefore": 59,
+            "reach": 0.9793147737327039,
+            "drops": [
+              "1 minecraft:andesite"
+            ],
+            "toolBefore": "1 minecraft:stone_pickaxe",
+            "gameTime": 217199,
+            "contact": "(-466.49670258831924, 55.9582926406693, -377.0)",
+            "position": "-467, 55, -377",
+            "toolDamageAfter": 60
+          }
+        },
+        "activity": "walking down one retained mine step"
+      },
+      "woodPreparation": {
+        "stepsPlaced": 0,
+        "goal": "NONE",
+        "lastStep": {},
+        "pathQueries": 0,
+        "logs": 0,
+        "activity": "no preparation job",
+        "lastPath": "none",
+        "recipes": 0
+      },
+      "ironPreparation": {
+        "loadedOre": 0,
+        "lastReceipt": {},
+        "lastApproach": {},
+        "plannedSite": "",
+        "passage": {
+          "reselect": false,
+          "turns": 57,
+          "depth": 2,
+          "root": "-467, 55, -381",
+          "retainedFloors": 23,
+          "part": 3,
+          "activity": "walking down one retained mine step",
+          "faceBlock": "Block{minecraft:andesite}",
+          "mode": "level",
+          "face": "-467, 55, -377",
+          "exhausted": false,
+          "failedScans": 0,
+          "entry": "-480, 63, -379"
+        },
+        "ironTaken": 0,
+        "crafted": 0,
+        "furnace": "-463, 63, -376",
+        "activity": "walking down one retained mine step"
+      },
+      "ironIngots": 0,
+      "villageSupplies": {
+        "moved": 0,
+        "target": "",
+        "inspected": 0,
+        "activity": "not seeking village supplies",
+        "lastReceipt": {}
+      },
+      "ironPickaxe": false,
+      "inventoryRoom": {
+        "lastReceipt": {},
+        "actions": 0
+      },
+      "body": {
+        "fatigue": 0.32499999999999446,
+        "activity": "Clover-edc5 \u00b7 walking down one retained mine step",
+        "passenger": false,
+        "sleeping": false,
+        "courtship": "NONE"
+      },
+      "held": "1 minecraft:stone_pickaxe",
+      "boat": {
+        "landings": 0,
+        "phase": "NONE",
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "launches": 0,
+        "logsGathered": 0,
+        "recipes": 0,
+        "lastReturn": {},
+        "footReturns": 0
+      },
+      "tags": [
+        "villagers:workbench:-463,63,-379,minecraft:overworld",
+        "villagers:mine_floor:-128642862002122",
+        "villagers:mine_floor:-128093106184138",
+        "villagers:mine_floor:-130567007350725",
+        "villagers:mine_floor:-129192617816009",
+        "villagers:managed",
+        "villagers:quarry_failed:-130567007231937:192849",
+        "villagers:quarry_failed:-127268472467393:202145",
+        "villagers:mine_floor:-128093106188234",
+        "villagers:mine_floor:-127268472451014",
+        "villagers:stone_shore:-126168960860097",
+        "villagers:mine_floor:-129467495722952",
+        "villagers:mine_floor:-128367984095178",
+        "villagers:mine_floor:-127268472442824",
+        "villagers:quarry:-131666518978497:EAST:16",
+        "villagers:mine_floor:-129742373629895",
+        "villagers:mine_floor:-128917739909066",
+        "villagers:native_resident_seen",
+        "villagers:mine_floor:-131116763164612",
+        "villagers:mine_floor:-130292129443781",
+        "villagers:stone_shore:-131391641075649",
+        "villagers:mine_floor:-128093106192330",
+        "villagers:mine_floor:-127268472467394",
+        "villagers:mine_stair:-128093106196425:-131666518978497:SOUTH:2:0:level:active",
+        "villagers:mine_floor:-127268472455109",
+        "villagers:mine_floor:-130017251536838",
+        "villagers:mine_floor:-130841885257669",
+        "villagers:mine_floor:-128093106180042",
+        "villagers:mine_floor:-127268472446919",
+        "villagers:stone_shore:-129742373699521",
+        "villagers:mine_floor:-127268472459204",
+        "villagers:stone_shore:-128917739769793",
+        "villagers:mine_floor:-128093106196426",
+        "villagers:mine_floor:-127268472463299",
+        "villagers:owned_furnace:-126993594548161:0:0",
+        "villagers:stone_shore:-130567007150017",
+        "villagers:adventurer"
+      ],
+      "woodJob": {
+        "table": "BlockPos{x=-463, y=63, z=-379}",
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null"
+      }
+    }
+  },
+  "clayCopy": {
+    "runtime": "runs/native-clay-prospect-v1",
+    "ticks": 6310,
+    "stop": "Explicit graceful stop after clay receipt exposed andesite handoff limitation; superseded by rock v2."
+  },
+  "campCopy": {
+    "runtime": "runs/native-camp-meal-fairness-v7",
+    "stage": "health_stop",
+    "ticks": 17680,
+    "criticalVillagers": [
+      "64324351-28f6-4bc1-a8f8-949f3300763b"
+    ],
+    "conclusion": "Retry fairness alone does not establish sustained captive feeding. Camp flags remain off in primary."
+  },
+  "checks": {
+    "javaTests": 478,
+    "javaFailures": 0,
+    "pythonTests": 14,
+    "build": "passed"
+  }
+}

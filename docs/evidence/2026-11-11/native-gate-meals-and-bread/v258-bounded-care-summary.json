@@ -1,0 +1,67 @@
+{
+  "result": {
+    "status": "passed",
+    "stage": "bounded_observation",
+    "elapsed": 4000,
+    "gameTime": 308508
+  },
+  "population": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "terminal": {
+    "pid": 2125923,
+    "exitCode": 0
+  },
+  "savedCareState": [
+    {
+      "id": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+      "health": 1.0,
+      "food": {
+        "foodLevel": 3,
+        "saturation": 0.4000001,
+        "exhaustion": 3.6118348,
+        "timer": 0
+      },
+      "rootPairTags": []
+    },
+    {
+      "id": "64324351-28f6-4bc1-a8f8-949f3300763b",
+      "health": 5.0,
+      "food": {
+        "foodLevel": 11,
+        "saturation": 7.3999996,
+        "exhaustion": 0.5367778,
+        "timer": 0
+      },
+      "rootPairTags": []
+    },
+    {
+      "id": "573a309c-f0fc-4dd1-94cd-8246d352467c",
+      "health": 1.0,
+      "food": {
+        "foodLevel": 8,
+        "saturation": 6.0,
+        "exhaustion": 3.5499437,
+        "timer": 0
+      },
+      "rootPairTags": []
+    },
+    {
+      "id": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "health": 24.0,
+      "food": null,
+      "rootPairTags": [
+        "villagers:given_root_pair:573a309c-f0fc-4dd1-94cd-8246d352467c:minecraft:potato",
+        "villagers:given_root_pair:4c3c0db4-75ea-42f5-8f91-b1c4814944d7:minecraft:potato"
+      ]
+    }
+  ],
+  "scope": "Copied4k care PASS; source214 unchanged, mainunchanged. No main recovery, healing, birth or game-completion claim."
+}

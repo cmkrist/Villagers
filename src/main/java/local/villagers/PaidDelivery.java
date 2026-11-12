@@ -29,6 +29,7 @@ final class PaidDelivery {
         return available.isEmpty()?null:available.get(Math.floorMod(cursor,available.size()));
     }
     private static Offer ready(ServerLevel level,Villager seller,Session s,MarketGoods.Good good,long now) {
+        if(WorkLife.bound(s,good))return null;
         UUID id=switch(good) {
             case HOE->s.toolDemand.requester(now);
             case FOOD->s.foodDemand.intent(now)==FoodDemand.Intent.TRADE?s.foodDemand.requester(now):null;

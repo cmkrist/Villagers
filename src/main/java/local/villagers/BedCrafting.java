@@ -8,6 +8,13 @@ import net.minecraft.world.item.crafting.CraftingInput;
 /** Real portable string/wool and wood intermediates; a bed still needs a native workbench recipe. */
 final class BedCrafting {
     record Plan(List<ItemStack> before,SimpleContainer remaining,CraftingInput input,Item output,int count,boolean table){}
+    static Plan shears(Container bag){
+        if(bag.countItem(Items.IRON_INGOT)<2)return null;
+        var before=HarvestMaterials.snapshot(bag);var remaining=new SimpleContainer(bag.getContainerSize());
+        for(int i=0;i<bag.getContainerSize();i++)remaining.setItem(i,bag.getItem(i).copy());
+        var first=take(remaining,s->s.is(Items.IRON_INGOT));var second=take(remaining,s->s.is(Items.IRON_INGOT));
+        return new Plan(before,remaining,CraftingInput.of(2,2,List.of(ItemStack.EMPTY,first,second,ItemStack.EMPTY)),Items.SHEARS,1,false);
+    }
     static Plan next(Container bag){
         var before=HarvestMaterials.snapshot(bag);var remaining=new SimpleContainer(bag.getContainerSize());
         int planks=0;
@@ -19,16 +26,19 @@ final class BedCrafting {
             if(wood!=null&&wood.step()==WoodCrafting.Step.PLANKS)
                 return new Plan(wood.before(),wood.remaining(),wood.input(),wood.output(),wood.count(),false);
         }
-        if(bag.countItem(Items.WOOL.white())<3){
+        DyeColor color=null;
+        for(var candidate:DyeColor.values())if(bag.countItem(Items.WOOL.pick(candidate))>=3){color=candidate;break;}
+        if(color==null){
             if(bag.countItem(Items.STRING)<4)return null;
             var input=new ArrayList<ItemStack>();for(int i=0;i<4;i++)input.add(take(remaining,s->s.is(Items.STRING)));
             return new Plan(before,remaining,CraftingInput.of(2,2,input),Items.WOOL.white(),1,false);
         }
         if(planks<3)return null;
         var input=new ArrayList<ItemStack>();
-        for(int i=0;i<3;i++)input.add(take(remaining,s->s.is(Items.WOOL.white())));
+        var wool=Items.WOOL.pick(color);
+        for(int i=0;i<3;i++)input.add(take(remaining,s->s.is(wool)));
         for(int i=0;i<3;i++)input.add(take(remaining,WoodCrafting::plank));
-        return new Plan(before,remaining,CraftingInput.of(3,2,input),Items.BED.white(),1,true);
+        return new Plan(before,remaining,CraftingInput.of(3,2,input),Items.BED.pick(color),1,true);
     }
     private static ItemStack take(Container bag,java.util.function.Predicate<ItemStack> test){
         for(int i=0;i<bag.getContainerSize();i++)if(test.test(bag.getItem(i)))return bag.removeItem(i,1);

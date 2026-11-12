@@ -1,0 +1,61 @@
+{
+  "scope": "Copied native gameplay, not primary iron or population evidence.",
+  "runtime": "native-fair-mine-frontiers-v11",
+  "terminal": {
+    "pid": 1238201,
+    "exitCode": 0
+  },
+  "elapsed": 24000,
+  "hero": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+  "health": 20.0,
+  "food": 20,
+  "inventory": "[2 minecraft:oak_planks, 1 minecraft:wooden_hoe, 33 minecraft:dirt, 1 minecraft:bread, 2 minecraft:wheat, 8 minecraft:carrot, 1 minecraft:coal, 2 minecraft:stick]",
+  "coalReceipts": [
+    {
+      "accessRepaired": false,
+      "toolDamageBefore": 26,
+      "reach": 1.6772105981050716,
+      "drops": [
+        "1 minecraft:coal"
+      ],
+      "toolBefore": "1 minecraft:stone_pickaxe",
+      "gameTime": 337846,
+      "contact": "(-469.49898300506374, 58.284317431675944, -383.0)",
+      "position": "-470, 58, -384",
+      "toolDamageAfter": 27
+    }
+  ],
+  "minedBlocks": 32,
+  "passage": {
+    "reselect": false,
+    "turns": 6,
+    "depth": 0,
+    "root": "-470, 56, -384",
+    "retainedFloors": 54,
+    "part": 2,
+    "activity": "mining real surface stone",
+    "faceBlock": "Block{minecraft:stone}",
+    "mode": "level",
+    "face": "-469, 56, -384",
+    "exhausted": false,
+    "failedScans": 0,
+    "entry": "-480, 63, -379",
+    "frontier": "",
+    "backtracks": 2,
+    "lastRoute": {
+      "safe": true,
+      "target": "-480, 63, -379",
+      "end": "-480, 63, -379",
+      "gameTime": 348016,
+      "nodes": 15,
+      "actor": "(-469.4989223777243, 56.0, -383.4303111838667)"
+    },
+    "frontierSearch": {
+      "queries": 2,
+      "candidates": 11,
+      "activity": "following a complete native path to a recorded junction"
+    }
+  },
+  "ironIngots": 0,
+  "limitation": "Obtained coal and reached additional junctions. Full inventory then blocked further progress. Latest code stores real coal in the owned furnace before ore collection and drops stale surface-material targets; awaiting gameplay validation."
+}

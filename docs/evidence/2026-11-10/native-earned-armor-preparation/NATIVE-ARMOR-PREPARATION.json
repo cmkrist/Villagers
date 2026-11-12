@@ -1,0 +1,522 @@
+{
+  "runtime": "runs/native-earned-iron-armor-v1",
+  "status": "passed",
+  "stage": "bounded_iron_armor_observation",
+  "elapsed": 24000,
+  "actor": {
+    "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+    "name": "Clover-edc5",
+    "position": [
+      -470.5184643662642,
+      56.0,
+      -381.28352663309516
+    ],
+    "production": {
+      "planted": 0,
+      "breadCrafted": 1,
+      "actions": {
+        "replantsFromStock": 1,
+        "cropsHarvested": 2,
+        "swordHits": 0,
+        "replantsFromHarvest": 1,
+        "doorsOpened": 1,
+        "doorsClosed": 2
+      },
+      "lastPlant": {},
+      "lastHarvest": {
+        "gameTime": 384237,
+        "position": "-482, 63, -372",
+        "crop": "WHEAT",
+        "plantingSource": "native harvest",
+        "nativeDrops": [
+          "1 minecraft:wheat",
+          "3 minecraft:wheat_seeds"
+        ],
+        "inventoryBefore": [
+          "2 minecraft:oak_planks",
+          "1 minecraft:iron_pickaxe",
+          "39 minecraft:dirt",
+          "1 minecraft:bread",
+          "2 minecraft:wheat",
+          "8 minecraft:carrot",
+          "1 minecraft:stone_pickaxe",
+          "2 minecraft:raw_iron"
+        ],
+        "inventoryAfter": [
+          "2 minecraft:oak_planks",
+          "1 minecraft:iron_pickaxe",
+          "39 minecraft:dirt",
+          "1 minecraft:bread",
+          "3 minecraft:wheat",
+          "8 minecraft:carrot",
+          "1 minecraft:stone_pickaxe",
+          "2 minecraft:raw_iron"
+        ],
+        "overflow": [
+          "2 minecraft:wheat_seeds"
+        ],
+        "hoeDamageBefore": 20,
+        "hoeDamageAfter": 21,
+        "hoeBroke": false,
+        "usedHoe": true,
+        "cropAfter": "Block{minecraft:wheat}[age=0]"
+      }
+    },
+    "health": 20.0,
+    "food": 20,
+    "inventory": "[2 minecraft:oak_planks, 1 minecraft:wooden_hoe, 40 minecraft:dirt, 2 minecraft:bread, 16 minecraft:andesite, 8 minecraft:carrot, 1 minecraft:stone_pickaxe, 2 minecraft:raw_iron]",
+    "adventure": {
+      "stonePickaxe": true,
+      "nominated": true,
+      "mining": {
+        "blocks": 146,
+        "activity": "mining real surface stone",
+        "lastReceipt": {
+          "reach": 0.8325408605973984,
+          "drops": [
+            "1 minecraft:andesite"
+          ],
+          "toolBefore": "1 minecraft:iron_pickaxe",
+          "gameTime": 385447,
+          "contact": "(-470.51332689343866, 57.0, -381.0521098231158)",
+          "position": "-471, 56, -382",
+          "toolDamageAfter": 146,
+          "accessRepaired": false,
+          "toolDamageBefore": 145
+        }
+      },
+      "activity": "mining real surface stone",
+      "quarry": {
+        "inspection": {
+          "target": "",
+          "survey": {
+            "lastRoute": {},
+            "target": "",
+            "visited": 0
+          },
+          "lastRetirement": {},
+          "repairs": 0,
+          "returning": false,
+          "reconsidered": 0,
+          "lastRepair": {},
+          "visited": 0,
+          "route": "none",
+          "reviewAt": 0
+        },
+        "lastStop": {},
+        "activity": "no quarry job",
+        "stand": "",
+        "centerings": 0,
+        "dug": 0,
+        "lastApproach": {},
+        "step": 16,
+        "lastReceipt": {},
+        "origin": "-480, 63, -379"
+      },
+      "stone": 0
+    },
+    "woodPreparation": {
+      "goal": "NONE",
+      "activity": "no preparation job",
+      "lastPath": "none",
+      "pathQueries": 0,
+      "recipes": 0,
+      "gates": {
+        "closed": 0,
+        "gate": "",
+        "lastReceipt": {},
+        "opened": 0
+      },
+      "survey": {
+        "canopy": {
+          "blocks": 0,
+          "lastReceipt": {},
+          "target": ""
+        },
+        "lastRoute": {},
+        "target": ""
+      },
+      "lastStep": {},
+      "stepsPlaced": 0,
+      "logs": 0
+    },
+    "ironPreparation": {
+      "lastApproach": {},
+      "plannedSite": "",
+      "passage": {
+        "retainedFloors": 111,
+        "part": 0,
+        "activity": "mining real surface stone",
+        "faceBlock": "Block{minecraft:stone}",
+        "mode": "level",
+        "face": "-471, 58, -383",
+        "reselect": false,
+        "turns": 25,
+        "depth": 1,
+        "root": "-471, 56, -381",
+        "exhausted": false,
+        "failedScans": 0,
+        "entry": "-480, 63, -379",
+        "frontier": "",
+        "backtracks": 12,
+        "lastRoute": {
+          "end": "-474, 59, -379",
+          "gameTime": 384657,
+          "nodes": 20,
+          "actor": "(-464.30000001192093, 62.0, -379.55976621376317)",
+          "safe": true,
+          "target": "-474, 59, -379"
+        },
+        "frontierSearch": {
+          "queries": 12,
+          "candidates": 3,
+          "activity": "following a complete native path to a recorded junction"
+        }
+      },
+      "ironTaken": 3,
+      "crafted": 0,
+      "furnace": "-463, 63, -376",
+      "activity": "mining real surface stone",
+      "loadedOre": 3,
+      "lastReceipt": {},
+      "fuelStored": true
+    },
+    "ironIngots": 0,
+    "villageSupplies": {
+      "inspected": 0,
+      "activity": "not seeking village supplies",
+      "lastReceipt": {},
+      "moved": 0,
+      "target": ""
+    },
+    "ironPickaxe": true,
+    "villageBedding": {
+      "store": "",
+      "sheepWool": {
+        "sheared": 0,
+        "collected": 0,
+        "lastReceipt": {},
+        "target": "",
+        "craftedShears": 0
+      },
+      "activity": "no village bedding work",
+      "placed": 0,
+      "transfers": 0,
+      "site": "",
+      "recipes": 0,
+      "lastReceipt": {}
+    },
+    "ironArmor": {
+      "ready": false,
+      "nextPiece": "CHEST",
+      "equipped": 0,
+      "crafted": 0,
+      "lastReceipt": {},
+      "ironTarget": 8
+    },
+    "equippedArmor": {
+      "head": "0 minecraft:air",
+      "feet": "0 minecraft:air",
+      "legs": "0 minecraft:air",
+      "chest": "0 minecraft:air"
+    },
+    "inventoryRoom": {
+      "lastReceipt": {},
+      "actions": 0
+    },
+    "body": {
+      "fatigue": 0.048125000000000036,
+      "activity": "Clover-edc5 \u00b7 mining real surface stone",
+      "passenger": false,
+      "sleeping": false,
+      "courtship": "ACTIVE"
+    },
+    "held": "1 minecraft:iron_pickaxe",
+    "offhand": "1 minecraft:wooden_pickaxe",
+    "boat": {
+      "landings": 0,
+      "phase": "NONE",
+      "activity": "no water trip",
+      "purpose": "NONE",
+      "paddleTicks": 0,
+      "launches": 0,
+      "logsGathered": 0,
+      "recipes": 0,
+      "lastReturn": {},
+      "footReturns": 0
+    },
+    "tags": [
+      "villagers:mine_floor:-129467495710666",
+      "villagers:mine_floor:-128642862002122",
+      "villagers:mine_floor:-128642862026697",
+      "villagers:mine_floor:-128367984082890",
+      "villagers:mine_floor:-128917739904970",
+      "villagers:mine_floor:-128917739921353",
+      "villagers:mine_floor:-127268472479689",
+      "villagers:quarry_failed:-127268472467393:202145",
+      "villagers:mine_floor:-128093106188234",
+      "villagers:mine_floor:-127268472463305",
+      "villagers:mine_floor:-128367984095178",
+      "villagers:mine_floor:-127818228281282",
+      "villagers:mine_floor:-128917739909066",
+      "villagers:stored_furnace_fuel:-126993594548161",
+      "villagers:mine_floor:-127543350374338",
+      "villagers:mine_floor:-127818228281289",
+      "villagers:mine_floor:-128367984095170",
+      "villagers:mine_floor:-127818228273097",
+      "villagers:mine_floor:-128642862010314",
+      "villagers:mine_floor:-128917739913161",
+      "villagers:mine_floor:-128093106192330",
+      "villagers:mine_floor:-128093106188226",
+      "villagers:owned_furnace:-126993594548161:3:3",
+      "villagers:mine_floor:-127818228305865",
+      "villagers:mine_floor:-128367984115657",
+      "villagers:mine_floor:-129467495706570",
+      "villagers:mine_floor:-128093106208713",
+      "villagers:mine_floor:-128642862002114",
+      "villagers:mine_floor:-127543350362057",
+      "villagers:stone_shore:-129742373699521",
+      "villagers:mine_floor:-127268472459204",
+      "villagers:mine_floor:-128367984091082",
+      "villagers:mine_floor:-128917739917257",
+      "villagers:mine_floor:-127268472475593",
+      "villagers:mine_floor:-127543350353864",
+      "villagers:adventurer",
+      "villagers:mine_floor:-127543350374345",
+      "villagers:mine_floor:-129742373617610",
+      "villagers:mine_floor:-129467495731145",
+      "villagers:workbench:-463,63,-379,minecraft:overworld",
+      "villagers:mine_floor:-127543350382537",
+      "villagers:mine_floor:-128642862014409",
+      "villagers:mine_floor:-129467495727049",
+      "villagers:mine_floor:-128093106212809",
+      "villagers:mine_floor:-129192617824201",
+      "villagers:mine_floor:-129467495722952",
+      "villagers:quarry:-131666518978497:EAST:16",
+      "villagers:native_resident_seen",
+      "villagers:mine_floor:-127818228285385",
+      "villagers:mine_floor:-131116763164612",
+      "villagers:mine_floor:-129467495714762",
+      "villagers:mine_floor:-130292129443781",
+      "villagers:mine_floor:-127268472467401",
+      "villagers:mine_floor:-127543350378435",
+      "villagers:mine_floor:-127543350378441",
+      "villagers:mine_floor:-127818228269001",
+      "villagers:mine_floor:-128367984119753",
+      "villagers:mine_floor:-128093106204617",
+      "villagers:mine_floor:-129467495718858",
+      "villagers:mine_floor:-127818228293577",
+      "villagers:mine_floor:-128642862022601",
+      "villagers:mine_floor:-129742373621706",
+      "villagers:mine_floor:-130841885257669",
+      "villagers:mine_floor:-129742373638089",
+      "villagers:mine_floor:-127818228301769",
+      "villagers:mine_floor:-128642862018505",
+      "villagers:mine_floor:-127268472483785",
+      "villagers:stone_shore:-128917739769793",
+      "villagers:mine_floor:-128917739925449",
+      "villagers:mine_floor:-128093106196426",
+      "villagers:mine_floor:-129192617820105",
+      "villagers:mine_floor:-129192617816009",
+      "villagers:mine_floor:-128093106200521",
+      "villagers:stone_shore:-126168960860097",
+      "villagers:mine_floor:-127543350386633",
+      "villagers:mine_floor:-127818228289481",
+      "villagers:mine_floor:-129742373629895",
+      "villagers:mine_floor:-127818228264905",
+      "villagers:mine_floor:-129192617803722",
+      "villagers:mine_floor:-127543350394825",
+      "villagers:mine_floor:-129742373613514",
+      "villagers:stone_shore:-131391641075649",
+      "villagers:mine_floor:-127543350390729",
+      "villagers:mine_floor:-127818228297673",
+      "villagers:mine_floor:-130017251540935",
+      "villagers:mine_floor:-127818228260808",
+      "villagers:mine_floor:-128917739929545",
+      "villagers:mine_floor:-130017251545032",
+      "villagers:mine_floor:-130017251536838",
+      "villagers:mine_floor:-128642861989834",
+      "villagers:mine_floor:-128642861993930",
+      "villagers:mine_floor:-127268472463299",
+      "villagers:stone_shore:-130567007150017",
+      "villagers:mine_floor:-128642861998026",
+      "villagers:mine_floor:-126993594548168",
+      "villagers:mine_floor:-128093106184138",
+      "villagers:mine_floor:-130567007350725",
+      "villagers:mine_floor:-128367984111561",
+      "villagers:mine_floor:-128367984099274",
+      "villagers:managed",
+      "villagers:quarry_failed:-130567007231937:192849",
+      "villagers:mine_floor:-129192617828297",
+      "villagers:mine_floor:-127268472451014",
+      "villagers:mine_floor:-126993594539975",
+      "villagers:mine_floor:-127268472442824",
+      "villagers:mine_floor:-128367984107465",
+      "villagers:mine_floor:-128917739900874",
+      "villagers:mine_floor:-127818228277193",
+      "villagers:mine_floor:-127268472467394",
+      "villagers:mine_floor:-128367984086986",
+      "villagers:mine_floor:-127268472471497",
+      "villagers:mine_floor:-128917739896778",
+      "villagers:mine_stair:-129192617824200:-131666518978497:NORTH:1:0:level:active",
+      "villagers:mine_floor:-128642862006218",
+      "villagers:mine_floor:-127268472455109",
+      "villagers:mine_floor:-126993594544071",
+      "villagers:mine_floor:-128093106180042",
+      "villagers:mine_floor:-127268472446919",
+      "villagers:mine_floor:-129192617811914",
+      "villagers:mine_floor:-127543350366153",
+      "villagers:mine_floor:-127543350370249",
+      "villagers:mine_floor:-129192617799626",
+      "villagers:mine_floor:-128367984103370",
+      "villagers:mine_floor:-128093106175945",
+      "villagers:mine_floor:-129192617807818",
+      "villagers:mine_floor:-127543350357961"
+    ],
+    "woodJob": {
+      "table": "BlockPos{x=-472, y=63, z=-367}",
+      "taken": 0,
+      "tree": "null",
+      "blockedTable": "null"
+    }
+  },
+  "nativeRecipeChecks": [
+    {
+      "iron": 8,
+      "piece": "CHEST",
+      "nativeRecipeMatches": true
+    },
+    {
+      "iron": 7,
+      "piece": "LEGS",
+      "nativeRecipeMatches": true
+    },
+    {
+      "iron": 5,
+      "piece": "HEAD",
+      "nativeRecipeMatches": true
+    },
+    {
+      "iron": 4,
+      "piece": "FEET",
+      "nativeRecipeMatches": true
+    }
+  ],
+  "observedMineFaces": [
+    {
+      "direction": "NORTH",
+      "flat": false,
+      "feet": "-471, 55, -383",
+      "newWorkFloor": true,
+      "support": "Block{minecraft:water}[level=0]",
+      "sturdy": false,
+      "first": "-471, 57, -383",
+      "block": "Block{minecraft:stone}",
+      "exposed": true,
+      "contact": "(-470.5075893014868, 57.54932290670436, -382.0)",
+      "structuralCover": "null"
+    },
+    {
+      "direction": "NORTH",
+      "flat": true,
+      "feet": "-471, 56, -383",
+      "newWorkFloor": true,
+      "support": "Block{minecraft:stone}",
+      "sturdy": true,
+      "first": "-471, 58, -383",
+      "block": "Block{minecraft:stone}",
+      "exposed": true,
+      "contact": "(-470.5075893014868, 58.13829870050066, -382.0)",
+      "structuralCover": "null"
+    },
+    {
+      "direction": "EAST",
+      "flat": false,
+      "feet": "-470, 55, -382",
+      "newWorkFloor": false,
+      "support": "Block{minecraft:water}[level=0]",
+      "sturdy": false,
+      "first": "-470, 55, -382",
+      "block": "Block{minecraft:stone}",
+      "exposed": false,
+      "contact": "(-469.7402038594277, 56.0, -381.4489449607505)",
+      "structuralCover": "null"
+    },
+    {
+      "direction": "EAST",
+      "flat": true,
+      "feet": "-470, 56, -382",
+      "newWorkFloor": false,
+      "support": "Block{minecraft:stone}",
+      "sturdy": true
+    },
+    {
+      "direction": "SOUTH",
+      "flat": false,
+      "feet": "-471, 55, -381",
+      "newWorkFloor": false,
+      "support": "Block{minecraft:water}[level=0]",
+      "sturdy": false,
+      "first": "-471, 55, -381",
+      "block": "Block{minecraft:andesite}",
+      "exposed": false,
+      "contact": "(-470.5043548033544, 56.0, -380.6847940168238)",
+      "structuralCover": "null"
+    },
+    {
+      "direction": "SOUTH",
+      "flat": true,
+      "feet": "-471, 56, -381",
+      "newWorkFloor": false,
+      "support": "Block{minecraft:andesite}",
+      "sturdy": true
+    },
+    {
+      "direction": "WEST",
+      "flat": false,
+      "feet": "-472, 55, -382",
+      "newWorkFloor": true,
+      "support": "Block{minecraft:water}[level=0]",
+      "sturdy": false,
+      "first": "-472, 57, -382",
+      "block": "Block{minecraft:andesite}",
+      "exposed": true,
+      "contact": "(-471.0, 57.56112870518599, -381.389727199164)",
+      "structuralCover": "null"
+    },
+    {
+      "direction": "WEST",
+      "flat": true,
+      "feet": "-472, 56, -382",
+      "newWorkFloor": true,
+      "support": "Block{minecraft:andesite}",
+      "sturdy": true,
+      "first": "-472, 58, -382",
+      "block": "Block{minecraft:stone}",
+      "exposed": true,
+      "contact": "(-471.0, 58.051722848878, -381.389727199164)",
+      "structuralCover": "null"
+    }
+  ],
+  "savedBodies": 179,
+  "savedManaged": 33,
+  "minSavedHealth": 20.0,
+  "missingSourceIds": [],
+  "newIds": [],
+  "terminal": {
+    "pid": 1364241,
+    "exitCode": 0
+  },
+  "frozenTerminal": {
+    "pid": 1380946,
+    "exitCode": 0
+  },
+  "productionJars": {
+    "runs/native-earned-iron-armor-v1": {
+      "villagers-0.4.1-dev.jar": "cba43a7db33ceb76bda3251c94222753c29e612b3bee97321e9a0f057643d055"
+    },
+    "runs/native-iron-armor-faces-frozen-v2": {
+      "villagers-0.4.1-dev.jar": "cba43a7db33ceb76bda3251c94222753c29e612b3bee97321e9a0f057643d055"
+    }
+  }
+}

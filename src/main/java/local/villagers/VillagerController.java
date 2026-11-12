@@ -57,24 +57,28 @@ final class VillagerController {
 
     static void resetStatistics() { decisions = completed = safetyInterrupts = thinkNanos = 0; }
 
-    static void tick(ServerLevel level, Villager v) {
-        if (!Villagers.ready() || !v.isAlive()) return;
+    static boolean tick(ServerLevel level, Villager v) {
+        if (!Villagers.ready() || !v.isAlive()) return false;
         // Replacing the brain also removes its native Swim behavior. Keep ordinary jump-control buoyancy.
         v.getNavigation().setCanFloat(true);
         if (v.isInWater() && !v.isPassenger()) v.getJumpControl().jump();
         if ((v.tickCount + v.getId()) % 20 == 0) AdventureActions.prepare(level, v);
         AdventureActions.tickDoors(level, v);
+        var existing=Villagers.existingSession(v.getUUID());if(existing!=null)ForestryGate.closeReturned(level,v,existing);
         // Think every ten simulation ticks, staggered; wall-time frequency follows the configured world TPS.
-        if ((v.tickCount + v.getId()) % 10 != 0) return;
         // The mind is read from disk on the save thread; idle until it arrives rather than stall the server.
         Session s = Villagers.sessionIfLoaded(v, level);
-        if (s == null) return;
+        if (s == null) return false;
+        // The first loaded decision must not wait for the regular stagger.
+        if (s.controllerStarted&&(v.tickCount + v.getId()) % 10 != 0) return true;
+        s.controllerStarted=true;
         long start = System.nanoTime();
         try {
             think(level, v, s);
         } finally {
             thinkNanos += System.nanoTime() - start;
         }
+        return true;
     }
 
     private static void think(ServerLevel level, Villager v, Session s) {
@@ -89,10 +93,25 @@ final class VillagerController {
                     && v.hasLineOfSight(m)).stream().min(Comparator.comparingDouble(v::distanceToSqr)).orElse(null);
         if (v.getLastHurtByMob() != null && v.tickCount - v.getLastHurtByMobTimestamp() < 100
                 && v.getLastHurtByMob().isAlive()) threat = v.getLastHurtByMob();
+        // A nearby understood reply can supply a real meal before the next
+        // starvation interval; waiting at a distant courier's gate is slower.
+        if(threat==null&&s.mind.foodLevel()==0&&v.getHealth()<=v.getMaxHealth()*.25f
+            &&FoodInventory.survivalMealSlot(v.getInventory(),AdventureActions.canHarvest(v),0,v.getHealth(),v.getMaxHealth())<0)
+            FoodHelp.seek(level,v,s,now);
         eatOwnedRation(level, v, s, now, threat==null);
         metabolize(level, v, s, elapsed);
         if (!v.isAlive()) return; // Starved.
+        if(threat==null&&VillageSurvival.recentAlarm(v.getUUID(),now)){
+            var alarm=VillageSurvival.tick(level,v,s.mind,null,now);
+            if(alarm!=null){
+                LocalTrade.interrupt(s,now);FoodDelivery.interrupt(s,now);PaidDelivery.interrupt(s,now);FoodHelp.interrupt(s,now);
+                FamilyCompany.interrupt(s,now);FarmWorksite.interrupt(s,now);s.socialVisit.interrupt(now);
+                s.action=null;s.before=null;label(v,s,alarm);return;
+            }
+        }
         Speech.ensureLanguage(level, v, s);
+        PartnershipLife.review(level,v,s);
+        WorkLife.review(level,v,s);
         s.mind.updateMood(now, v.getHealth() / v.getMaxHealth());
         if (now >= s.nextSave) { Villagers.persist(s); s.nextSave = now + 1200; }
         Home home = s.mind.home();
@@ -104,30 +123,20 @@ final class VillagerController {
             s.mind.home(null);
         }
         if (s.mind.home() == null && now >= s.nextHomeSearch) { claimHome(level, v, s); s.nextHomeSearch = now + 1200; }
+        if(s.nativeCellEscape.target!=null){
+            String continuingEscape=NativeCellEscape.work(level,v,s,now);
+            if(continuingEscape!=null){s.action=null;s.before=null;label(v,s,continuingEscape);return;}
+        }
+        NativeCampMeals.request(level,v,s,now);
+        String campMealWait=threat==null?NativeCampMeals.waitAtGate(level,v,s,now):null;
+        if(campMealWait!=null){s.action=null;s.before=null;label(v,s,campMealWait);return;}
+        // A starving captive must be able to address its own barrier before
+        // another impossible store path takes the shared planning reservation.
+        String escape=NativeCellEscape.work(level,v,s,now);
+        if(escape!=null){s.action=null;s.before=null;label(v,s,escape);return;}
         String storedMeal=NativeFoodStorage.work(level,v,s,threat,now);
         if(storedMeal!=null){s.action=null;s.before=null;label(v,s,storedMeal);return;}
-        // Grain can still require a long route and recipe. A critical body may
-        // ask visible company for a real meal before repeating that work trip.
-        if(MealPolicy.needsRecoveryFood(s.mind.foodLevel(),v.getHealth(),v.getMaxHealth())&&threat==null&&!v.isOnFire()
-                &&!v.isTrading()&&!v.isPassenger()&&!v.isInWater()){
-            String help=FoodHelp.seek(level,v,s,now);
-            if(help!=null){s.action=null;s.before=null;label(v,s,help);return;}
-            if(s.mind.foodLevel()>0&&now<s.nextFoodRequest){
-                // A fed patient can safely rest between actual food requests
-                // instead of repeatedly taking a risky grain/workbench trip.
-                s.action=null;s.before=null;label(v,s,RecoveryRest.work(level,v,s,now));return;
-            }
-        }
-        // Shelter must not make an owner starve with usable meal ingredients in their bag.
-        // This is only possessed grain at a real station; danger still takes precedence.
         boolean urgentGrain=s.mind.foodLevel()<=6||s.mind.foodLevel()<18&&v.getHealth()<v.getMaxHealth();
-        if(urgentGrain&&threat==null&&!v.isOnFire()&&!v.isTrading()&&!v.isPassenger()&&!v.isInWater()
-                &&(HayForaging.hasHay(v.getInventory())||BreadCrafting.wheatCount(v.getInventory())>=3)
-                &&BreadCrafting.table(level,v,s)!=null){
-            if(v.isSleeping())v.stopSleeping();
-            LocalTrade.interrupt(s,now);FoodDelivery.interrupt(s,now);PaidDelivery.interrupt(s,now);FoodHelp.interrupt(s,now);
-            s.action=null;s.before=null;forage(level,v,s,now);label(v,s,"preparing an urgent meal from owned grain");return;
-        }
         Observation current = observe(level, v, s, threat != null);
         if (s.action != null && s.succeeded && s.before != null) finishAttempt(level, v, s);
 
@@ -136,17 +145,73 @@ final class VillagerController {
         String waterExit=WaterEscape.work(level,v,s,threat,now);
         if(waterExit!=null){s.action=null;s.before=null;label(v,s,waterExit);return;}
 
-        if(urgentGrain&&current.foodAvailable()&&threat==null&&!v.isOnFire()&&!v.isTrading()
-                &&!v.isPassenger()&&!v.isInWater()){
-            if(v.isSleeping())v.stopSleeping();
-            s.action=null;s.before=null;forage(level,v,s,now);label(v,s,"seeking an urgent real meal");return;
+        // This is already the owner's meal route. Keep paid passage work
+        // continuous instead of interrupting every dig to retry a blocked
+        // ordinary path to the same workbench.
+        if(FoodAccess.preparingGrain(s,now)){
+            var continuingMeal=FoodAccess.work(level,v,s,threat,current.foodAvailable(),now);
+            if(continuingMeal!=null){s.action=null;s.before=null;label(v,s,continuingMeal);return;}
         }
 
+        // A remembered table may be above an impassable ledge. Resolve the
+        // surveyed food passage before urgent crafting can retry that table.
+        // First retain a complete native route for grain already in this bag.
+        // A zero-length hay plan must not stop an actual workbench walk.
+        if(urgentGrain&&threat==null&&!v.isOnFire()&&!v.isTrading()&&!v.isPassenger()&&!v.isInWater()
+            &&BreadCrafting.wheatCount(v.getInventory())>=3){
+            var table=BreadCrafting.table(level,v,s);
+            if(table!=null){
+                if(v.isSleeping())v.stopSleeping();
+                if(BreadCrafting.canWorkAt(level,v,s,table)){
+                    s.action=null;s.before=null;forage(level,v,s,now);
+                    label(v,s,"preparing an urgent meal from owned grain");return;
+                }
+                boolean walking=BreadCrafting.approach(level,v,s,table,now);
+                // A pending navigation reservation is not a failed station.
+                // Retain this meal task across admission/cooldown ticks so a
+                // separate supply plan cannot replace its actual walking path.
+                // Explicitly blocked stations still fall through to FoodAccess.
+                if(walking||!table.equals(s.blockedCraftTable)||now>=s.blockedCraftUntil){
+                    s.action=null;s.before=null;
+                    label(v,s,walking?"taking owned grain to a reachable workbench":"waiting to plan an owned-grain meal route");return;
+                }
+            }
+        }
+        // Without a usable owned-grain route, ask visible company for a real
+        // meal before repeating a blocked work trip.
+        if(MealPolicy.needsRecoveryFood(s.mind.foodLevel(),v.getHealth(),v.getMaxHealth())&&threat==null&&!v.isOnFire()
+                &&!v.isTrading()&&!v.isPassenger()&&!v.isInWater()){
+            String help=FoodHelp.seek(level,v,s,now);
+            if(help!=null){s.action=null;s.before=null;label(v,s,help);return;}
+            if(s.mind.foodLevel()>0&&(s.mind.foodLevel()>6||s.mind.home()!=null)&&now<s.nextFoodRequest){
+                // Housed patients retain their care rendezvous. Homeless
+                // bodies need their remaining reserve to reach real food.
+                s.action=null;s.before=null;label(v,s,RecoveryRest.work(level,v,s,now));return;
+            }
+        }
         String foodAccess=FoodAccess.work(level,v,s,threat,current.foodAvailable(),now);
         if(foodAccess!=null){
             LocalTrade.interrupt(s,now);FoodDelivery.interrupt(s,now);PaidDelivery.interrupt(s,now);FoodHelp.interrupt(s,now);
             FamilyCompany.interrupt(s,now);FarmWorksite.interrupt(s,now);s.action=null;s.before=null;label(v,s,foodAccess);return;
         }
+        // Shelter must not make an owner starve with usable meal ingredients in their bag.
+        // This is only possessed grain at a real station; danger still takes precedence.
+        if(urgentGrain&&threat==null&&!v.isOnFire()&&!v.isTrading()&&!v.isPassenger()&&!v.isInWater()
+                &&(HayForaging.hasHay(v.getInventory())||BreadCrafting.wheatCount(v.getInventory())>=3)
+                &&BreadCrafting.table(level,v,s)!=null){
+            if(v.isSleeping())v.stopSleeping();
+            LocalTrade.interrupt(s,now);FoodDelivery.interrupt(s,now);PaidDelivery.interrupt(s,now);FoodHelp.interrupt(s,now);
+            s.action=null;s.before=null;forage(level,v,s,now);label(v,s,"preparing an urgent meal from owned grain");return;
+        }
+        if(urgentGrain&&current.foodAvailable()&&threat==null&&!v.isOnFire()&&!v.isTrading()
+                &&!v.isPassenger()&&!v.isInWater()){
+            if(v.isSleeping())v.stopSleeping();
+            s.action=null;s.before=null;forage(level,v,s,now);label(v,s,"seeking an urgent real meal");return;
+        }
+        String quarryRepair=threat==null?AdventureQuarry.repairAccess(level,v,s,now):null;
+        String mineExit=threat==null?MineStair.retreatForNeeds(level,v,s,now):null;
+        if(mineExit!=null){s.action=null;s.before=null;label(v,s,mineExit);return;}
+        if(quarryRepair!=null){s.action=null;s.before=null;label(v,s,quarryRepair);return;}
         String boating = BoatTravel.tick(level, v, s, threat, now);
         if (boating != null) {
             LocalTrade.interrupt(s, now); FoodDelivery.interrupt(s, now); PaidDelivery.interrupt(s, now);
@@ -173,7 +238,11 @@ final class VillagerController {
             s.socialVisit.interrupt(now);
             FoodDelivery.interrupt(s,now);
             PaidDelivery.interrupt(s,now);
-            WorkNavigation.forget(v.getUUID());
+            // Hungry workers may still be waiting for their fair admission to
+            // inspect food access or reach their own grain's workbench. Rest
+            // must not delete that reservation every ten ticks; actual danger
+            // still cancels it along with the interrupted ordinary work.
+            if(!urgentGrain||threat!=null||v.isOnFire()||v.isInWater()||v.isPassenger())WorkNavigation.forget(v.getUUID());
             s.forestryInterval.interrupt();
             FoodHelp.interrupt(s,now);
             FamilyCompany.interrupt(s, now);
@@ -189,6 +258,12 @@ final class VillagerController {
         }
         if (v.isTrading()) { LocalTrade.interrupt(s,now); FoodDelivery.interrupt(s,now); PaidDelivery.interrupt(s,now); WorkNavigation.forget(v.getUUID()); s.forestryInterval.interrupt(); FoodHelp.interrupt(s,now); FamilyCompany.interrupt(s, now); FarmWorksite.interrupt(s, now); v.getNavigation().stop(); s.action = null; s.before = null; return; }
         if (s.action == Action.FLEE) { s.action = null; s.before = null; }
+        String equipment = LooseEquipment.seek(level, v, s, now);
+        if (equipment != null) {
+            LocalTrade.interrupt(s,now); FoodDelivery.interrupt(s,now); PaidDelivery.interrupt(s,now);
+            FoodHelp.interrupt(s,now); FamilyCompany.interrupt(s,now); FarmWorksite.interrupt(s,now);
+            s.action = null; s.before = null; label(v,s,equipment); return;
+        }
         String preparation = SelfProvisioning.work(level, v, s, now);
         if (preparation != null) {
             LocalTrade.interrupt(s,now); FoodDelivery.interrupt(s,now); PaidDelivery.interrupt(s,now);
@@ -217,6 +292,8 @@ final class VillagerController {
             label(v, s, social);
             return;
         }
+        String agreedWork=WorkLife.work(level,v,s,now);
+        if(agreedWork!=null){LocalTrade.interrupt(s,now);FamilyCompany.interrupt(s,now);FarmWorksite.interrupt(s,now);label(v,s,agreedWork);return;}
         String paidDelivery=PaidDelivery.seek(level,v,s,now);
         if(paidDelivery!=null) {
             LocalTrade.interrupt(s,now);FoodHelp.interrupt(s,now);FamilyCompany.interrupt(s,now);FarmWorksite.interrupt(s,now);
@@ -240,6 +317,9 @@ final class VillagerController {
         if (provision != null) { LocalTrade.interrupt(s,now); FoodHelp.interrupt(s,now); FamilyCompany.interrupt(s, now); label(v, s, provision); return; }
         String foodHelp=FoodHelp.seek(level,v,s,now);
         if (foodHelp!=null) { LocalTrade.interrupt(s,now); FamilyCompany.interrupt(s,now);FarmWorksite.interrupt(s,now);label(v,s,foodHelp);return; }
+        VocalSpeech.tick(level,v);
+        String tuition=TutorLife.work(level,v,s,now);
+        if(tuition!=null){s.action=null;s.before=null;label(v,s,tuition);return;}
         String trade=LocalTrade.seek(level,v,s,now);
         if(trade!=null) {FamilyCompany.interrupt(s,now);FarmWorksite.interrupt(s,now);label(v,s,trade);return;}
         String cultivation=FarmExpansion.invest(level,v,s,now);
@@ -252,6 +332,10 @@ final class VillagerController {
         if (station != null) { FamilyCompany.interrupt(s, now); label(v, s, station); return; }
         String tool = ToolProduction.work(level, v, s, now);
         if (tool != null) { FamilyCompany.interrupt(s, now); label(v, s, tool); return; }
+        // Give an eligible, funded family its existing housing preparation
+        // opportunity before the continuing adventure job takes the turn.
+        String bedding=VillageBedding.work(level,v,s,now);
+        if(bedding!=null){FamilyCompany.interrupt(s,now);s.action=null;s.before=null;label(v,s,bedding);return;}
         String adventure = AdventurePreparation.work(level, v, s, now);
         if (adventure != null) { FamilyCompany.interrupt(s, now); s.action = null; s.before = null; label(v, s, adventure); return; }
         boolean seekingCompany = FamilyCompany.seek(level, v, s, now);
@@ -261,6 +345,8 @@ final class VillagerController {
                 v.getNavigation().stop(); s.action = null; s.succeeded = false;
             }
         }
+        String promisedCompany=SocialCompany.honorAgreement(level,v,s,now);
+        if(promisedCompany!=null) {s.action=null;s.before=null;label(v,s,promisedCompany);return;}
         if (s.action != null) {
             if (!s.succeeded) execute(level, v, s, now);
             if (attemptFinished(s,now)) finishAttempt(level, v, s);
@@ -451,14 +537,20 @@ final class VillagerController {
     }
 
     /** Hand one spare food item from one villager to another. False if none could be moved. */
-    static boolean giveFood(Villager giver, Villager receiver) {
+    static boolean giveFood(Villager giver, Villager receiver) {return giveFood(giver,receiver,false);}
+
+    static boolean giveFood(Villager giver,Villager receiver,boolean emergencyRoot) {
         if (giver == receiver || !(giver.level() instanceof ServerLevel level) || giver.level() != receiver.level()
                 || !giver.isAlive() || !receiver.isAlive() || !Villagers.isManaged(giver) || !Villagers.isManaged(receiver)
                 || giver.isTrading() || receiver.isTrading() || giver.isSleeping() || receiver.isSleeping()
                 || !local.villagers.relations.FoodRequest.inReach(giver.distanceToSqr(receiver), Villagers.config().hearingRadius(),
                         giver.hasLineOfSight(receiver) && receiver.hasLineOfSight(giver))) return false;
-        int slot = FoodInventory.sharingSlot(giver.getInventory(),AdventureActions.canHarvest(giver),
-                one -> receiver.getInventory().canAddItem(one));
+        var giverSession=Villagers.existingSession(giver.getUUID());
+        int slot = emergencyRoot&&giverSession!=null
+            ? FoodInventory.emergencyRootGiftSlot(giver.getInventory(),AdventureActions.canHarvest(giver),giverSession.mind.foodLevel(),
+                giver.getHealth(),giver.getMaxHealth(),receiver.getHealth(),receiver.getMaxHealth())
+            : FoodInventory.sharingSlot(giver.getInventory(),AdventureActions.canHarvest(giver),one -> receiver.getInventory().canAddItem(one));
+        if(slot>=0&&!receiver.getInventory().canAddItem(giver.getInventory().getItem(slot).copyWithCount(1)))return false;
         if (slot < 0) return false;
         ItemStack one = giver.getInventory().getItem(slot).copyWithCount(1);
         var offered=one.getItem();var nutrition=one.get(DataComponents.FOOD).nutrition();
@@ -469,8 +561,9 @@ final class VillagerController {
         var from=Villagers.existingSession(giver.getUUID());var to=Villagers.existingSession(receiver.getUUID());
         String item=BuiltInRegistries.ITEM.getKey(one.getItem()).toString();
         if (from!=null) { from.foodSharedGiven++;from.mind.remember("Gave one actual "+item+" to "+receiver.getUUID());Villagers.persist(from); }
-        if (to!=null) { to.foodSharedReceived++;to.mind.remember("Received one actual "+item+" from "+giver.getUUID());Villagers.persist(to); }
+        if (to!=null) { FoodQuestions.received(to,giver.getUUID(),level.getGameTime());to.foodSharedReceived++;to.mind.remember("Received one actual "+item+" from "+giver.getUUID());Villagers.persist(to); }
         var receipt=new LinkedHashMap<String,Object>();
+        receipt.put("emergencyPlantingRoot",emergencyRoot);
         receipt.put("gameTime",level.getGameTime());receipt.put("from",giver.getUUID().toString());receipt.put("to",receiver.getUUID().toString());
         receipt.put("item",BuiltInRegistries.ITEM.getKey(offered).toString());receipt.put("nutrition",nutrition);receipt.put("named",named);
         receipt.put("giverBefore",giverBefore);receipt.put("giverAfter",giver.getInventory().countItem(offered));
@@ -578,7 +671,7 @@ final class VillagerController {
     }
 
     private static int mealSlot(Villager v, Session s) {
-        return FoodInventory.mealSlot(v.getInventory(), AdventureActions.canHarvest(v),
+        return FoodInventory.survivalMealSlot(v.getInventory(), AdventureActions.canHarvest(v),
                 s.mind.foodLevel(), v.getHealth(), v.getMaxHealth());
     }
 
@@ -925,6 +1018,26 @@ final class VillagerController {
     }
 
     private static void explore(Villager v, Session s, ServerLevel level) {
+        boolean emergency=s.mind.home()==null&&s.mind.foodLevel()<=6
+            ||s.mind.foodLevel()<=1&&v.getHealth()<=v.getMaxHealth()*.3;
+        if(emergency){
+            var target=s.target;
+            if(target==null){
+                var pos=DefaultRandomPos.getPos(v,7,3);
+                if(pos==null||!VillageSurvival.withinHomeRange(level,s.mind,pos))return;
+                target=BlockPos.containing(pos);
+            }
+            var destination=target;
+            var path=NativePathLimits.search(v,1,()->NativePathLimits.alsoAvoiding(v,
+                p->!level.isLoaded(p)||!level.getFluidState(p).isEmpty()||!level.getFluidState(p.below()).isEmpty(),
+                ()->v.getNavigation().createPath(destination,0,32)));
+            if(!WorkNavigation.staysHome(level,v,s,path)||!BoatTravel.dryPath(level,path)){
+                v.getNavigation().stop();s.target=null;return;
+            }
+            if(v.getNavigation().moveTo(path,.5))s.target=target;
+            if(v.blockPosition().distSqr(target)<4)s.succeeded=true;
+            return;
+        }
         if (s.target == null) {
             Vec3 pos = DefaultRandomPos.getPos(v, 7, 3);
             if (pos != null && VillageSurvival.withinHomeRange(level, s.mind, pos)) {

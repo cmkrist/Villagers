@@ -1,0 +1,132 @@
+{
+  "gameTime": 270968,
+  "scope": "Actual primary; current six-thousand-tick session counters. Smelter totals ironTaken/loadedOre resume older state and are not new mining.",
+  "hero": {
+    "uuid": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+    "health": 20.0,
+    "food": 20,
+    "ironPreparation": {
+      "lastApproach": {},
+      "plannedSite": "",
+      "passage": {
+        "retainedFloors": 70,
+        "part": 0,
+        "activity": "placed carried dirt under a dry prospective mine step",
+        "faceBlock": "Block{minecraft:andesite}",
+        "mode": "level",
+        "face": "-470, 56, -381",
+        "reselect": false,
+        "turns": 2,
+        "depth": 0,
+        "root": "",
+        "retainedEntries": 1,
+        "waterSeals": {
+          "activity": "no water sealing job",
+          "active": false,
+          "placed": 0,
+          "lastReceipt": {}
+        },
+        "foundations": 1,
+        "lastFoundation": {
+          "reach": 2.8303420629691995,
+          "replaced": "Block{minecraft:air}",
+          "contact": "(-468.5004086598048, 55.0, -380.5000030028309)",
+          "gameTime": 268126,
+          "face": "UP",
+          "position": "-469, 55, -381",
+          "anchor": "-469, 54, -381",
+          "dirtAfter": 32,
+          "dirtBefore": 33
+        },
+        "exhausted": false,
+        "failedScans": 0,
+        "entry": "-480, 63, -379",
+        "frontier": "",
+        "backtracks": 1,
+        "lastRoute": {
+          "end": "-472, 56, -381",
+          "gameTime": 267416,
+          "nodes": 4,
+          "actor": "(-470.27766430012747, 56.0, -382.4954504488028)",
+          "safe": true,
+          "target": "-472, 56, -381"
+        },
+        "frontierSearch": {
+          "queries": 1,
+          "candidates": 16,
+          "activity": "following a complete native path to a recorded junction"
+        }
+      },
+      "ironTaken": 3,
+      "crafted": 0,
+      "furnace": "-463, 63, -376",
+      "activity": "inspecting exposed faces from the cleared quarry floor",
+      "loadedOre": 3,
+      "lastReceipt": {},
+      "fuelStored": true
+    },
+    "mining": {
+      "blocks": 12,
+      "activity": "needs observed exposed natural stone",
+      "lastReceipt": {
+        "reach": 0.8522258159158339,
+        "drops": [
+          "1 minecraft:andesite"
+        ],
+        "toolBefore": "1 minecraft:iron_pickaxe",
+        "gameTime": 267846,
+        "contact": "(-469.9714940651904, 57.0, -380.50675302496484)",
+        "position": "-470, 56, -381",
+        "toolDamageAfter": 12,
+        "accessRepaired": false,
+        "toolDamageBefore": 11
+      }
+    },
+    "quarry": {
+      "inspection": {
+        "target": "-479, 62, -379",
+        "survey": {
+          "lastRoute": {},
+          "target": "",
+          "visited": 0
+        },
+        "lastRetirement": {},
+        "repairs": 0,
+        "returning": false,
+        "reconsidered": 0,
+        "lastRepair": {},
+        "visited": 4,
+        "route": "nodes=2,reaches=true,drop=0,end=-479, 62, -379",
+        "reviewAt": 0
+      },
+      "lastStop": {},
+      "activity": "inspecting exposed faces from the cleared quarry floor",
+      "stand": "",
+      "centerings": 0,
+      "dug": 0,
+      "lastApproach": {},
+      "step": 16,
+      "lastReceipt": {},
+      "origin": "-480, 63, -379"
+    },
+    "ironArmor": {
+      "ready": false,
+      "nextPiece": "CHEST",
+      "equipped": 0,
+      "crafted": 0,
+      "lastReceipt": {},
+      "ironTarget": 8
+    },
+    "ironIngots": 0,
+    "inventory": [
+      "1 minecraft:stone_pickaxe",
+      "1 minecraft:wooden_hoe",
+      "32 minecraft:dirt",
+      "2 minecraft:bread",
+      "2 minecraft:wheat",
+      "6 minecraft:carrot",
+      "4 minecraft:stick",
+      "1 minecraft:raw_iron"
+    ]
+  }
+}

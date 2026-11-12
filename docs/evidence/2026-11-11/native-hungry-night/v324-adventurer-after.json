@@ -1,0 +1,165 @@
+{
+  "actors": [
+    {
+      "navigation": {
+        "path": {
+          "nextIndex": 2,
+          "done": true,
+          "end": "-475, 61, -345",
+          "next": "",
+          "nodes": 2
+        },
+        "onGround": true,
+        "position": "(-474.69999998807907, 61.0, -343.9149159056929)",
+        "wanted": [
+          -474.5,
+          61.0,
+          -344.5
+        ],
+        "velocity": "(0.0, -0.0784000015258789, 0.0)"
+      },
+      "position": "(-474.69999998807907, 61.0, -343.9149159056929)",
+      "mainhand": "1 minecraft:wooden_hoe",
+      "health": 20.0,
+      "ageTicks": 281791,
+      "iron": {
+        "crafted": 0,
+        "furnace": "-463, 63, -376",
+        "activity": "walking down one retained mine step",
+        "loadedOre": 3,
+        "lastReceipt": {},
+        "lastApproach": {},
+        "plannedSite": "",
+        "passage": {
+          "faceBlock": "",
+          "mode": "descending",
+          "face": "",
+          "reselect": false,
+          "turns": 0,
+          "depth": 1,
+          "root": "-475, 62, -346",
+          "retainedFloors": 116,
+          "part": 3,
+          "activity": "walking down one retained mine step",
+          "retainedEntries": 4,
+          "exhaustedEntries": 1,
+          "stepsWithoutDepth": 1,
+          "waterSeals": {
+            "lastReceipt": {},
+            "activity": "no water sealing job",
+            "active": false,
+            "placed": 0
+          },
+          "foundations": 0,
+          "lastFoundation": {},
+          "exhausted": false,
+          "failedScans": 0,
+          "entry": "-475, 63, -347",
+          "frontier": "",
+          "backtracks": 0,
+          "lastRoute": {},
+          "frontierSearch": {
+            "activity": "not checking junctions",
+            "queries": 0,
+            "candidates": 0
+          }
+        },
+        "ironTaken": 3,
+        "fuelStored": true
+      },
+      "inventory": [
+        "1 minecraft:stone_pickaxe",
+        "1 minecraft:iron_pickaxe",
+        "49 minecraft:dirt",
+        "2 minecraft:bread",
+        "5 minecraft:carrot",
+        "4 minecraft:stick",
+        "1 minecraft:raw_iron",
+        "1 minecraft:wheat"
+      ],
+      "armor": {
+        "equipped": 0,
+        "crafted": 0,
+        "lastReceipt": {},
+        "ironTarget": 8,
+        "ready": false,
+        "nextPiece": "CHEST"
+      },
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "food": 19,
+      "quarry": {
+        "dug": 5,
+        "lastApproach": {
+          "actor": "(-474.5690213494475, 60.0, -343.3467111473474)",
+          "target": "-476, 60, -343",
+          "accepted": true,
+          "safe": true,
+          "end": "-475, 59, -343",
+          "gameTime": 339072,
+          "nodes": 2
+        },
+        "step": 16,
+        "lastReceipt": {
+          "drops": [
+            "1 minecraft:dirt"
+          ],
+          "position": "-475, 59, -342",
+          "gameTime": 339202,
+          "step": 16
+        },
+        "origin": "-475, 63, -347",
+        "inspection": {
+          "returning": false,
+          "reconsidered": 0,
+          "lastRepair": {},
+          "visited": 6,
+          "route": "nodes=2,reaches=true,drop=0,end=-475, 62, -346",
+          "reviewAt": 0,
+          "target": "",
+          "survey": {
+            "lastRoute": {},
+            "target": "",
+            "visited": 0
+          },
+          "lastRetirement": {},
+          "repairs": 0
+        },
+        "lastStop": {
+          "actor": "-475, 59, -343",
+          "block": "Block{minecraft:dirt}",
+          "reason": "near furnishings or crops at -472, 62, -342",
+          "target": "-474, 60, -343",
+          "idleTicks": 10,
+          "step": 12,
+          "gameTime": 339142
+        },
+        "activity": "finished inspecting the cleared quarry",
+        "stand": "-475, 59, -343",
+        "centerings": 1
+      },
+      "bedding": {
+        "transfers": 0,
+        "site": "",
+        "recipes": 0,
+        "lastReceipt": {},
+        "store": "",
+        "sheepWool": {
+          "collected": 0,
+          "lastReceipt": {},
+          "target": "",
+          "craftedShears": 0,
+          "sheared": 0
+        },
+        "activity": "no village bedding work",
+        "placed": 0
+      },
+      "family": {
+        "courtship": "",
+        "status": "saving food for a child",
+        "foodGoal": false
+      }
+    }
+  ],
+  "gameTime": 345269,
+  "elapsed": 18520
+}

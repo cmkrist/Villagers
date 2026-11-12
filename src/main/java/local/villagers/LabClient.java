@@ -68,35 +68,83 @@ public final class LabClient implements ClientModInitializer {
             ? Integer.getInteger("villagers.lab.maxPlayTicks", 0) : 0);
     private net.minecraft.server.MinecraftServer budgetServer;
     private boolean observationStopping;
+    private net.minecraft.server.MinecraftServer combatStopServer;
+    private LivingEntity combatStoppedActor;
+    private java.util.Map<String,Object> combatReceipt=java.util.Map.of();
+    private local.villagers.lab.ReviewedCombatRecovery reviewedCombat;
+    private final java.util.List<java.util.Map<String,Object>> reviewedCombatHits=new java.util.ArrayList<>();
+    private java.util.Map<String,Object> reviewedAttackerDeath=java.util.Map.of();
 
     @Override
     public void onInitializeClient() {
         local.villagers.compat.AnimaticaShutdown.initialize();
         if (!DevMode.enabled()) return;
+        var recoveryPath=System.getProperty("villagers.lab.reviewedCombatScope","");
+        if(!recoveryPath.isEmpty()){
+            if(!NATIVE_REGIONS||observationBudget.limit()<=0)throw new IllegalStateException("Reviewed combat requires bounded native observation");
+            try{
+                var scope=com.google.gson.JsonParser.parseString(Files.readString(Path.of(recoveryPath))).getAsJsonObject();
+                if(scope.get("minHealth").getAsInt()!=local.villagers.lab.ReviewedCombatRecovery.MIN_HEALTH
+                    ||scope.getAsJsonArray("proofs").size()<3)throw new IllegalStateException("Reviewed combat lacks its evidence gate");
+                reviewedCombat=new local.villagers.lab.ReviewedCombatRecovery(java.util.UUID.fromString(scope.get("actor").getAsString()),java.util.UUID.fromString(scope.get("attacker").getAsString()));
+            }catch(IOException error){throw new IllegalStateException("Cannot read reviewed combat evidence",error);}
+        }
+        if(observationBudget.limit()>0)net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents.AFTER_DAMAGE.register((entity,source,base,taken,blocked)->{
+            if(observationStopping||!(entity.level() instanceof net.minecraft.server.level.ServerLevel level)
+                ||!DevMode.inWorld(level.getServer(),WORLD)||!(entity instanceof Villager
+                    ||entity instanceof net.minecraft.world.entity.monster.illager.AbstractIllager)
+                ||!local.villagers.lab.ObservationHealthGuard.combatHit(taken,source.getEntity()!=null))return;
+            if(reviewedCombat!=null&&reviewedCombat.permits(entity.getUUID(),source.getEntity().getUUID(),entity.getHealth())){
+                var hit=java.util.Map.<String,Object>of("actor",entity.getUUID().toString(),"attacker",source.getEntity().getUUID().toString(),
+                    "healthAfter",entity.getHealth(),"damage",taken,"gameTime",level.getGameTime());
+                if(reviewedCombatHits.size()<128)reviewedCombatHits.add(hit);
+                LOG.info("Reviewed native combat damage retained: {}",hit);return;
+            }
+            combatStopServer=level.getServer();combatStoppedActor=entity;
+            combatReceipt=java.util.Map.of("actor",entity.getUUID().toString(),"healthAfter",entity.getHealth(),"damage",taken,
+                "gameTime",level.getGameTime(),"cause",source.getMsgId(),"attacker",source.getEntity().getUUID().toString());
+            level.getServer().tickRateManager().setFrozen(true);
+        });
+        if(reviewedCombat!=null)net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents.AFTER_DEATH.register((entity,source)->{
+            if(entity.getUUID().equals(reviewedCombat.attacker())){
+                var attacker=source.getEntity();reviewedAttackerDeath=java.util.Map.of("actor",entity.getUUID().toString(),"gameTime",entity.level().getGameTime(),
+                    "cause",source.getMsgId(),"attacker",attacker==null?"":attacker.getUUID().toString(),"attackerType",attacker==null?"":attacker.getType().toString());
+            }
+        });
         if (observationBudget.limit() > 0) ServerTickEvents.END_SERVER_TICK.register(server -> {
             if (!DevMode.inWorld(server, WORLD)) return;
             if (budgetServer != server) { budgetServer = server; observationBudget.reset(); observationStopping=false; }
-            if(observationStopping)return;
+            if(observationStopping||NativeCareStartup.waiting(server))return;
             long now = server.overworld().getGameTime();
             int minHealth=Integer.getInteger("villagers.lab.minHealth",0);
-            Villager critical=null;
+            LivingEntity critical=combatStopServer==server?combatStoppedActor:null;
             boolean starvationGuard=Boolean.getBoolean("villagers.lab.starvationGuard");
-            if(minHealth>0||starvationGuard)for(var entity:server.overworld().getAllEntities())
-                if(entity instanceof Villager v&&Villagers.isManaged(v)){
-                    var s=Villagers.existingSession(v.getUUID());
-                    boolean lastStarvationInterval=starvationGuard&&v.getHealth()<=1&&s!=null
+            boolean lastHealthRecovery=Boolean.getBoolean("villagers.lab.lastHealthRecovery")&&minHealth==1;
+            if(critical==null&&(minHealth>0||starvationGuard||reviewedCombat!=null))for(var entity:server.overworld().getAllEntities())
+                if(entity instanceof LivingEntity body&&(body instanceof Villager
+                        ||body instanceof net.minecraft.world.entity.monster.illager.AbstractIllager)){
+                    var s=Villagers.existingSession(body.getUUID());
+                    if(lastHealthRecovery&&s==null&&body instanceof Villager v&&Villagers.isManaged(v))s=Villagers.session(v,server.overworld());
+                    boolean lastStarvationInterval=starvationGuard&&body.getHealth()<=1&&s!=null
                         &&s.mind.foodLevel()==0&&s.mind.snapshot().food().timer()>=70;
-                    if(minHealth>0&&v.getHealth()<=minHealth||lastStarvationInterval){critical=v;break;}
+                    if(local.villagers.lab.ObservationHealthGuard.criticalDuringRecovery(body.getHealth(),body.getAirSupply(),
+                            body.isEyeInFluid(net.minecraft.tags.FluidTags.WATER),minHealth,lastHealthRecovery&&body instanceof Villager,
+                            s==null?-1:s.mind.foodLevel(),s==null?-1:s.mind.snapshot().food().timer())||lastStarvationInterval
+                            ||reviewedCombat!=null&&reviewedCombat.critical(body.getUUID(),body.getHealth())){critical=body;break;}
                 }
             if (critical==null&&!observationBudget.expired(now)) return;
             observationStopping=true;
             // Stop exposure at the measured boundary, before the client/save
             // shutdown queue drains. A critical body must not tick on unseen.
             server.tickRateManager().setFrozen(true);
-            if(critical!=null)LOG.info("Observation health stop: actor={} health={} threshold={} gameTime={}",critical.getUUID(),critical.getHealth(),minHealth,now);
+            if(critical!=null)LOG.info("Observation health stop: actor={} health={} air={} threshold={} gameTime={}",critical.getUUID(),critical.getHealth(),critical.getAirSupply(),minHealth,now);
             LOG.info("Observation stop: reason={} startTick={} endTick={} limit={}; requesting normal quit",
-                    critical==null?"tick budget":"health guard",observationBudget.started(), now, observationBudget.limit());
-            String nativeSnapshot = JSON.toJson(VillageFamilyProbe.budgetSnapshot(server));
+                    critical==null?"tick budget":combatStopServer==server&&combatStoppedActor!=null?"combat guard":"health guard",observationBudget.started(), now, observationBudget.limit());
+            var snapshot=new java.util.LinkedHashMap<>(VillageFamilyProbe.budgetSnapshot(server));
+            snapshot.put("combatStop",combatStopServer==server?combatReceipt:java.util.Map.of());
+            if(reviewedCombat!=null)snapshot.put("reviewedCombat",java.util.Map.of("actor",reviewedCombat.actor().toString(),"attacker",reviewedCombat.attacker().toString(),
+                "minHealth",local.villagers.lab.ReviewedCombatRecovery.MIN_HEALTH,"nativeHitsRetained",reviewedCombatHits,"attackerDeath",reviewedAttackerDeath));
+            String nativeSnapshot = JSON.toJson(snapshot);
             Minecraft client = Minecraft.getInstance();
             client.execute(() -> {
                 if (client.getSingleplayerServer() != server) return;
@@ -135,6 +183,15 @@ public final class LabClient implements ClientModInitializer {
             LOG.info("Unique rendered evidence directory: {}", evidence);
         }
         if (!worldRequested && client.gui.screen() instanceof TitleScreen && client.gui.overlay() == null) {
+            int simulationDistance=Integer.getInteger("villagers.lab.simulationDistance",0);
+            if(simulationDistance!=0){
+                if(!NATIVE_REGIONS||simulationDistance<2||simulationDistance>client.options.renderDistance().get())
+                    throw new IllegalArgumentException("Native simulation distance must fit the existing render distance");
+                client.options.simulationDistance().set(simulationDistance);
+                if(client.options.simulationDistance().get()!=simulationDistance)
+                    throw new IllegalStateException("Native simulation distance option was not applied");
+                LOG.info("Native simulation distance requested before opening world: {}",simulationDistance);
+            }
             worldRequested = true;
             if (Files.isRegularFile(client.gameDirectory.toPath().resolve("saves/" + WORLD + "/level.dat"))) {
                 client.createWorldOpenFlows().openWorld(WORLD, () -> worldRequested = false);
@@ -342,6 +399,8 @@ public final class LabClient implements ClientModInitializer {
         observation.addProperty("role", ROLE);
         observation.addProperty("learning_mode", System.getProperty("villagers.learning", "adaptive"));
         observation.addProperty("native_target_tps", client.getSingleplayerServer().tickRateManager().tickrate());
+        observation.addProperty("server_simulation_distance",client.getSingleplayerServer().getPlayerList().getSimulationDistance());
+        observation.addProperty("server_view_distance",client.getSingleplayerServer().getPlayerList().getViewDistance());
         observation.add("training", COMPACT_JSON.toJsonTree(TrainingTrial.statusSnapshot(client.getSingleplayerServer())));
         observation.addProperty("game_time", client.getSingleplayerServer().overworld().getGameTime());
         observation.addProperty("trial", WAR ? "authored four-biome war scenario" : LEGACY_LAB ? "legacy authored lab" : "natural generated village");

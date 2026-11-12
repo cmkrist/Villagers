@@ -1,0 +1,212 @@
+{
+  "base": "/tmp/villagers-source-snapshot-v306",
+  "baseJarSHA256": "62b7ec1baea819eb9c6eff40483ac63d35e116eae933816de5e4359d1127573b",
+  "jarSHA256": "cbd179631b5b099348bcd4aad9ffca8c87060076386562a802ee27080340d91b",
+  "changedFiles": {
+    "src/main/java/local/villagers/NativeFoodStorage.java": "1c1798fd42557beb6d9a491bfa482d28a100784e7593b3cadb7d2973502cae21",
+    "src/main/java/local/villagers/AdventureQuarry.java": "dcf06bffc5a43efb6460a1f58a03b56eec08dd70de38849673a4211bd623bdd0",
+    "src/main/java/local/villagers/FoodInventory.java": "a38210e8253cdb618f799fa316ea7edf2ab24e60c297e9c618415a78e2748734",
+    "src/main/java/local/villagers/VillagerController.java": "4c0cc334c4336bd5e49a95a2afc4cd9b0fb6e66f0030dd762410582a7b45bbcf",
+    "src/test/java/local/villagers/FoodInventoryTest.java": "c8a145178ffcee49a03f18ccf33d63a0329a93c02e54301524fcd92ca3b217f3"
+  },
+  "javaTests": {
+    "tests": 635,
+    "failures": 0,
+    "errors": 0
+  },
+  "buildLog": "/tmp/villagers-worker-v306-quarry-root-build.log",
+  "sourceGameTime": 321513,
+  "runtime": "runs/worker-v306-quarry-root-care-20261111",
+  "status": "Stopped2990ticks on Birch. Quarry departure succeeded; no extra quarry blocks or new ore. Protected furnishing/crop stopped subsequent work. Full care not proved.",
+  "purpose": "Combine supported quarry departure and unsuccessful-store cooldown with previously verified emergency consumption of own planting root, preserving all real item costs and native movement.",
+  "stop": {
+    "status": "failed",
+    "actor": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+    "position": "(-588.3496574417138, 64.0, -587.0964712984036)",
+    "air": 300,
+    "elapsed": 2990,
+    "health": 1.0,
+    "stage": "health_stop",
+    "gameTime": 324503
+  },
+  "population": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "terminal": {
+    "pid": 2295417,
+    "exitCode": 0
+  },
+  "adventurer": {
+    "actors": [
+      {
+        "inventory": [
+          "1 minecraft:stone_pickaxe",
+          "1 minecraft:iron_pickaxe",
+          "40 minecraft:dirt",
+          "3 minecraft:bread",
+          "1 minecraft:carrot",
+          "4 minecraft:stick",
+          "1 minecraft:raw_iron",
+          "0 minecraft:air"
+        ],
+        "iron": {
+          "lastApproach": {},
+          "lastReceipt": {},
+          "loadedOre": 3,
+          "activity": "preparing the observed quarry before entering its work bays",
+          "furnace": "-463, 63, -376",
+          "crafted": 0,
+          "ironTaken": 3,
+          "passage": {
+            "activity": "no prospecting passage",
+            "part": 0,
+            "retainedFloors": 119,
+            "root": "",
+            "depth": 0,
+            "turns": 0,
+            "reselect": false,
+            "face": "",
+            "mode": "descending",
+            "faceBlock": "",
+            "retainedEntries": 4,
+            "exhaustedEntries": 1,
+            "stepsWithoutDepth": 0,
+            "waterSeals": {
+              "lastReceipt": {},
+              "placed": 0,
+              "active": false,
+              "activity": "no water sealing job"
+            },
+            "foundations": 0,
+            "lastFoundation": {},
+            "exhausted": false,
+            "failedScans": 0,
+            "entry": "",
+            "frontier": "",
+            "backtracks": 0,
+            "lastRoute": {
+              "end": "-475, 63, -347",
+              "target": "-475, 63, -347",
+              "safe": true,
+              "actor": "(-474.4007690970837, 61.0, -343.9268909620972)",
+              "nodes": 4,
+              "gameTime": 323767
+            },
+            "frontierSearch": {
+              "activity": "not checking junctions",
+              "candidates": 0,
+              "queries": 0
+            }
+          },
+          "plannedSite": "",
+          "fuelStored": true
+        },
+        "ageTicks": 261007,
+        "health": 20.0,
+        "mainhand": "1 minecraft:wooden_hoe",
+        "position": "(-467.3011880462063, 64.5625, -376.688508621117)",
+        "navigation": {
+          "onGround": true,
+          "path": {},
+          "velocity": "(0.0, -0.0784000015258789, 0.0)",
+          "wanted": [
+            -467.5,
+            64.5625,
+            -376.5
+          ],
+          "position": "(-467.3011880462063, 64.5625, -376.688508621117)"
+        },
+        "food": 17,
+        "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+        "armor": {
+          "ready": false,
+          "ironTarget": 8,
+          "lastReceipt": {},
+          "crafted": 0,
+          "equipped": 0,
+          "nextPiece": "CHEST"
+        },
+        "quarry": {
+          "activity": "approaching a visible soil face in the quarry",
+          "lastStop": {
+            "step": 5,
+            "idleTicks": 690,
+            "target": "-475, 60, -344",
+            "reason": "near furnishings or crops at -475, 62, -346",
+            "block": "Block{minecraft:dirt}",
+            "actor": "-475, 61, -345",
+            "gameTime": 323247
+          },
+          "inspection": {
+            "target": "",
+            "reviewAt": 343202,
+            "route": "none",
+            "visited": 0,
+            "lastRepair": {},
+            "reconsidered": 0,
+            "returning": false,
+            "repairs": 0,
+            "lastRetirement": {
+              "returnedHeight": 63.0,
+              "entry": "-475, 63, -347",
+              "entryHeight": 63,
+              "startedPosition": "(-474.43031561565755, 61.0, -344.31937224620543)",
+              "returnedPosition": "(-473.8260587700111, 63.0, -345.94364344934905)",
+              "returnedGameTime": 323817,
+              "started": 323247
+            },
+            "survey": {
+              "visited": 0,
+              "target": "",
+              "lastRoute": {}
+            }
+          },
+          "origin": "-475, 63, -343",
+          "lastReceipt": {
+            "position": "-475, 61, -344",
+            "drops": [
+              "1 minecraft:dirt"
+            ],
+            "step": 5,
+            "gameTime": 322557
+          },
+          "step": 0,
+          "lastApproach": {
+            "safe": true,
+            "accepted": true,
+            "target": "-475, 60, -344",
+            "actor": "(-474.69999998807907, 62.0, -345.60347244582965)",
+            "nodes": 2,
+            "gameTime": 323147,
+            "end": "-475, 61, -345"
+          },
+          "dug": 5,
+          "centerings": 1,
+          "stand": ""
+        }
+      }
+    ],
+    "elapsed": 2960,
+    "gameTime": 324473
+  },
+  "movementEvidence": {
+    "centerings": 1,
+    "protectedStop": {
+      "step": 5,
+      "idleTicks": 690,
+      "target": "-475, 60, -344",
+      "reason": "near furnishings or crops at -475, 62, -346",
+      "block": "Block{minecraft:dirt}",
+      "actor": "-475, 61, -345",
+      "gameTime": 323247
+    }
+  },
+  "forensicsCaution": "quarry-stop-forensics.json is offline block-palette decoding; verify format against native block observations before relying on exact block identity."
+}

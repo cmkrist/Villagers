@@ -1,0 +1,229 @@
+{
+  "sourcePosition": [
+    -439.19999998807907,
+    64.5,
+    -822.6999999880791
+  ],
+  "health": 1.0,
+  "food": 0,
+  "routes": [
+    {
+      "stand": "-439, 64, -824",
+      "route": {
+        "reaches": true,
+        "found": true,
+        "nodes": 3,
+        "end": "-439, 64, -824"
+      },
+      "guards": {
+        "territoryPresent": true,
+        "ordinary": true,
+        "critical": true,
+        "firstNodeFootings": [
+          {
+            "below": "Block{minecraft:torch}",
+            "bodyClear": false,
+            "floor": 64.0,
+            "supported": true,
+            "at": "-440, 65, -823",
+            "woodenDoorExempt": false,
+            "state": "Block{minecraft:air}"
+          },
+          {
+            "below": "Block{minecraft:cobblestone_stairs}[facing=north,half=bottom,shape=straight,waterlogged=false]",
+            "bodyClear": true,
+            "floor": 64.0,
+            "supported": true,
+            "at": "-439, 64, -823",
+            "woodenDoorExempt": false,
+            "state": "Block{minecraft:air}"
+          },
+          {
+            "below": "Block{minecraft:cobblestone}",
+            "bodyClear": false,
+            "floor": 65.0,
+            "supported": true,
+            "at": "-439, 64, -824",
+            "woodenDoorExempt": true,
+            "state": "Block{minecraft:oak_door}[facing=north,half=lower,hinge=left,open=true,powered=false]"
+          }
+        ]
+      }
+    },
+    {
+      "stand": "-439, 64, -825",
+      "route": {
+        "reaches": true,
+        "found": true,
+        "nodes": 4,
+        "end": "-439, 64, -825"
+      },
+      "guards": {
+        "territoryPresent": true,
+        "ordinary": true,
+        "critical": true,
+        "firstNodeFootings": [
+          {
+            "below": "Block{minecraft:torch}",
+            "bodyClear": false,
+            "floor": 64.0,
+            "supported": true,
+            "at": "-440, 65, -823",
+            "woodenDoorExempt": false,
+            "state": "Block{minecraft:air}"
+          },
+          {
+            "below": "Block{minecraft:cobblestone_stairs}[facing=north,half=bottom,shape=straight,waterlogged=false]",
+            "bodyClear": true,
+            "floor": 64.0,
+            "supported": true,
+            "at": "-439, 64, -823",
+            "woodenDoorExempt": false,
+            "state": "Block{minecraft:air}"
+          },
+          {
+            "below": "Block{minecraft:cobblestone}",
+            "bodyClear": false,
+            "floor": 65.0,
+            "supported": true,
+            "at": "-439, 64, -824",
+            "woodenDoorExempt": true,
+            "state": "Block{minecraft:oak_door}[facing=north,half=lower,hinge=left,open=true,powered=false]"
+          },
+          {
+            "below": "Block{minecraft:oak_planks}",
+            "bodyClear": true,
+            "floor": 64.0,
+            "supported": true,
+            "at": "-439, 64, -825",
+            "woodenDoorExempt": false,
+            "state": "Block{minecraft:air}"
+          }
+        ]
+      }
+    },
+    {
+      "stand": "-439, 65, -825",
+      "route": {
+        "reaches": false,
+        "found": true,
+        "nodes": 4,
+        "end": "-439, 64, -825"
+      },
+      "guards": {
+        "territoryPresent": true,
+        "ordinary": false,
+        "critical": false,
+        "firstNodeFootings": [
+          {
+            "below": "Block{minecraft:torch}",
+            "bodyClear": false,
+            "floor": 64.0,
+            "supported": true,
+            "at": "-440, 65, -823",
+            "woodenDoorExempt": false,
+            "state": "Block{minecraft:air}"
+          },
+          {
+            "below": "Block{minecraft:cobblestone_stairs}[facing=north,half=bottom,shape=straight,waterlogged=false]",
+            "bodyClear": true,
+            "floor": 64.0,
+            "supported": true,
+            "at": "-439, 64, -823",
+            "woodenDoorExempt": false,
+            "state": "Block{minecraft:air}"
+          },
+          {
+            "below": "Block{minecraft:cobblestone}",
+            "bodyClear": false,
+            "floor": 65.0,
+            "supported": true,
+            "at": "-439, 64, -824",
+            "woodenDoorExempt": true,
+            "state": "Block{minecraft:oak_door}[facing=north,half=lower,hinge=left,open=true,powered=false]"
+          },
+          {
+            "below": "Block{minecraft:oak_planks}",
+            "bodyClear": true,
+            "floor": 64.0,
+            "supported": true,
+            "at": "-439, 64, -825",
+            "woodenDoorExempt": false,
+            "state": "Block{minecraft:air}"
+          }
+        ]
+      }
+    },
+    {
+      "stand": "-440, 64, -826",
+      "route": {
+        "reaches": true,
+        "found": true,
+        "nodes": 6,
+        "end": "-440, 64, -826"
+      },
+      "guards": {
+        "territoryPresent": true,
+        "ordinary": true,
+        "critical": true,
+        "firstNodeFootings": [
+          {
+            "below": "Block{minecraft:torch}",
+            "bodyClear": false,
+            "floor": 64.0,
+            "supported": true,
+            "at": "-440, 65, -823",
+            "woodenDoorExempt": false,
+            "state": "Block{minecraft:air}"
+          },
+          {
+            "below": "Block{minecraft:cobblestone_stairs}[facing=north,half=bottom,shape=straight,waterlogged=false]",
+            "bodyClear": true,
+            "floor": 64.0,
+            "supported": true,
+            "at": "-439, 64, -823",
+            "woodenDoorExempt": false,
+            "state": "Block{minecraft:air}"
+          },
+          {
+            "below": "Block{minecraft:cobblestone}",
+            "bodyClear": false,
+            "floor": 65.0,
+            "supported": true,
+            "at": "-439, 64, -824",
+            "woodenDoorExempt": true,
+            "state": "Block{minecraft:oak_door}[facing=north,half=lower,hinge=left,open=true,powered=false]"
+          },
+          {
+            "below": "Block{minecraft:oak_planks}",
+            "bodyClear": true,
+            "floor": 64.0,
+            "supported": true,
+            "at": "-439, 64, -825",
+            "woodenDoorExempt": false,
+            "state": "Block{minecraft:air}"
+          },
+          {
+            "below": "Block{minecraft:oak_planks}",
+            "bodyClear": true,
+            "floor": 64.0,
+            "supported": true,
+            "at": "-439, 64, -826",
+            "woodenDoorExempt": false,
+            "state": "Block{minecraft:air}"
+          },
+          {
+            "below": "Block{minecraft:oak_planks}",
+            "bodyClear": true,
+            "floor": 64.0,
+            "supported": true,
+            "at": "-440, 64, -826",
+            "woodenDoorExempt": false,
+            "state": "Block{minecraft:air}"
+          }
+        ]
+      }
+    }
+  ],
+  "scope": "Frozen native routes; no actor move or terrain/item/knowledge write."
+}

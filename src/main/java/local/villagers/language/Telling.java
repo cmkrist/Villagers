@@ -4,8 +4,8 @@ import java.util.List;
 import local.villagers.mind.Episode;
 
 /**
- * How a villager puts a memory into words. A player who understands at least {@link #UNDERSTANDING} of the words
- * of a told memory comes to share it (it stops reading "???").
+ * Generic concepts for describing an experience. These do not name its subject or identify the episode;
+ * hearing them must not unlock the hidden event record.
  */
 public final class Telling {
     public static final double UNDERSTANDING = 0.5;

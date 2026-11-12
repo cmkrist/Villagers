@@ -76,8 +76,8 @@ final class ForestryWork {
     /** Shared by production planning and the read-only probe; first failing native condition. */
     static String standFailure(ServerLevel level,Villager v,Session s,BlockPos target,BlockPos p) {
         if (!level.isLoaded(p) || !level.isLoaded(p.below())) return "unloaded";
-        if (!level.getBlockState(p).isAir()) return "feet blocked";
-        if (!level.getBlockState(p.above()).isAir()) return "head blocked";
+        if (!level.getBlockState(p).getCollisionShape(level,p).isEmpty()) return "feet blocked";
+        if (!level.getBlockState(p.above()).getCollisionShape(level,p.above()).isEmpty()) return "head blocked";
         if (!level.getBlockState(p.below()).isFaceSturdy(level,p.below(),Direction.UP)) return "support not sturdy";
         var eye=standEye(v,p);
         if (eye.distanceToSqr(Vec3.atCenterOf(target))>9) return "out of reach";

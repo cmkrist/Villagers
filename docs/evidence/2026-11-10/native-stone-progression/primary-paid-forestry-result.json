@@ -1,0 +1,133 @@
+{
+  "exitCode": 0,
+  "wallTimeGuard": false,
+  "oldSaveUnchanged": true,
+  "beforeHumanoids": 179,
+  "afterHumanoids": 179,
+  "missingOriginalIds": [],
+  "newHumanoidIds": [],
+  "managedVillagers": 33,
+  "minManagedHealth": 20.0,
+  "adventurer": {
+    "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+    "type": "minecraft:villager",
+    "position": [
+      -464.4995625765619,
+      63.0,
+      -358.75647256641423
+    ],
+    "health": 20.0,
+    "tags": [
+      "villagers:stone_shore:-129742373699521",
+      "villagers:native_resident_seen",
+      "villagers:quarry_failed:-130292129443777:173329",
+      "villagers:stone_shore:-128917739769793",
+      "villagers:quarry_failed:-131941396856769:175438",
+      "villagers:managed",
+      "villagers:quarry_failed:-127543350390721:171750",
+      "villagers:stone_shore:-130567007150017",
+      "villagers:adventurer",
+      "villagers:stone_shore:-131391641075649",
+      "villagers:stone_shore:-126168960860097"
+    ],
+    "noAI": false,
+    "invulnerable": false,
+    "age": 0,
+    "attributes": [
+      {
+        "modifiers": [
+          {
+            "amount": -0.05755709282684849,
+            "operation": "add_multiplied_base",
+            "id": "minecraft:random_spawn_bonus"
+          }
+        ],
+        "base": 16.0,
+        "id": "minecraft:follow_range"
+      },
+      {
+        "base": 0.5,
+        "id": "minecraft:movement_speed"
+      },
+      {
+        "base": 4.0,
+        "id": "minecraft:attack_speed"
+      },
+      {
+        "base": 1.0,
+        "id": "minecraft:attack_damage"
+      }
+    ],
+    "effects": [],
+    "vehicle": null,
+    "inventory": [
+      {
+        "id": "minecraft:wooden_pickaxe",
+        "count": 1
+      },
+      {
+        "id": "minecraft:crafting_table",
+        "count": 1
+      },
+      {
+        "id": "minecraft:dirt",
+        "count": 7
+      },
+      {
+        "id": "minecraft:wheat",
+        "count": 3
+      },
+      {
+        "id": "minecraft:wheat_seeds",
+        "count": 2
+      },
+      {
+        "id": "minecraft:carrot",
+        "count": 13
+      },
+      {
+        "id": "minecraft:beetroot",
+        "count": 1
+      },
+      {
+        "id": "minecraft:oak_log",
+        "count": 1
+      }
+    ],
+    "equipment": {
+      "mainhand": {
+        "id": "minecraft:wooden_hoe",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 48
+        }
+      }
+    },
+    "meetingPoint": {
+      "value": {
+        "pos": [
+          -493,
+          64,
+          -329
+        ],
+        "dimension": "minecraft:overworld"
+      }
+    },
+    "dimensionFolder": "dimensions/minecraft/overworld/entities",
+    "name": "Clover-edc5",
+    "food": {
+      "foodLevel": 20,
+      "saturation": 0.20000005,
+      "exhaustion": 2.027516,
+      "timer": 0
+    },
+    "home": {
+      "dimension": "minecraft:overworld",
+      "x": -467,
+      "y": 64,
+      "z": -377
+    }
+  },
+  "stonePickaxeMilestoneRequested": false,
+  "stoneTierPickaxeOwned": false
+}

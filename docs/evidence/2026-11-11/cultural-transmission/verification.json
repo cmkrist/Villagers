@@ -1,0 +1,3897 @@
+{
+  "milestone": "Controlled cultural transmission and supported grammar first use",
+  "boundedGoalAcceptance": "passed; seeded conventions, actor-first supported use and unrestricted invention explicitly distinguished",
+  "sweep": {
+    "status": "passed",
+    "conditions": [
+      "seeded-contact",
+      "supported-first-use",
+      "disconnected",
+      "frozen",
+      "full-contact"
+    ],
+    "seeds": 12,
+    "generations": 3,
+    "populationPerCohort": 5,
+    "exposuresPerLearner": 8,
+    "cohorts": 180,
+    "learnerEpisodes": 900,
+    "failures": [],
+    "interpretation": "Syntax-only symbolic experiment, no bodies, births, survival or audio fitness. Lexicon.child supplies weak inherited grammar; exact I/IS/HURT/WALK lexical priors are explicitly normalized to isolate syntax. Adaptive contact hears eight public injury examples per learner. Disconnected learners receive none; frozen learners receive no updates. Seeded compact source starts with authored SO/implicit-IS construction strength 9. Supported-first-use starts without constructions and deliberately exercises the engine's already-authored omission option, then rehearses the emitted form. This is actor-first use and diffusion of a supported pattern, not engine invention. Three staged cohorts per seed use the previous cohort's first learner as teacher; no selection for success. The held-out WALK meaning is never a lesson event. All seeds/conditions and failures are retained; no demographic or population-scale claim."
+  },
+  "conditionTotals": {
+    "seeded-contact": {
+      "population": 180,
+      "adoptedCompact": 180,
+      "fixedCompactMeaningCorrect": 180,
+      "fixedFullMeaningCorrect": 180,
+      "initialProductiveMastery": 0
+    },
+    "supported-first-use": {
+      "population": 180,
+      "adoptedCompact": 180,
+      "fixedCompactMeaningCorrect": 180,
+      "fixedFullMeaningCorrect": 180,
+      "initialProductiveMastery": 0
+    },
+    "disconnected": {
+      "population": 180,
+      "adoptedCompact": 0,
+      "fixedCompactMeaningCorrect": 0,
+      "fixedFullMeaningCorrect": 180,
+      "initialProductiveMastery": 0
+    },
+    "frozen": {
+      "population": 180,
+      "adoptedCompact": 0,
+      "fixedCompactMeaningCorrect": 0,
+      "fixedFullMeaningCorrect": 180,
+      "initialProductiveMastery": 0
+    },
+    "full-contact": {
+      "population": 180,
+      "adoptedCompact": 0,
+      "fixedCompactMeaningCorrect": 0,
+      "fixedFullMeaningCorrect": 180,
+      "initialProductiveMastery": 0
+    }
+  },
+  "nativeReports": {
+    "culture-result.json": {
+      "status": "passed",
+      "ticks": 840,
+      "controlledInnovationOpportunities": 5,
+      "actualRelayUtterances": 3,
+      "sourceInitiallyHadNoConstructions": true,
+      "targetCouldNotHearSourceFact": true,
+      "heldOutProduction": {
+        "intended": [
+          {
+            "subject": "I",
+            "verb": "IS",
+            "object": "WALK",
+            "negated": false,
+            "past": false
+          }
+        ],
+        "sounds": [
+          "sug",
+          "lub"
+        ]
+      },
+      "isolatedComparisonUnresolved": true,
+      "trace": [
+        {
+          "targetGrammar": {
+            "evidence": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "speakingOrder": "SVO",
+            "constructions": [],
+            "receptive": {
+              "dialects": []
+            }
+          },
+          "innovations": 1,
+          "bridgeGrammar": {
+            "evidence": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "speakingOrder": "SVO",
+            "constructions": [
+              {
+                "slots": [
+                  "SUBJECT",
+                  "OBJECT"
+                ],
+                "implicitVerb": "IS",
+                "evidence": 1
+              }
+            ],
+            "receptive": {
+              "dialects": [
+                {
+                  "cues": [
+                    {
+                      "word": "sug",
+                      "meaning": "I"
+                    },
+                    {
+                      "word": "mi",
+                      "meaning": "HURT"
+                    }
+                  ],
+                  "patterns": [
+                    {
+                      "slots": [
+                        "SUBJECT",
+                        "OBJECT"
+                      ],
+                      "implicitVerb": "IS",
+                      "evidence": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "tick": 40,
+          "relays": 0
+        },
+        {
+          "targetGrammar": {
+            "evidence": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "speakingOrder": "SVO",
+            "constructions": [],
+            "receptive": {
+              "dialects": []
+            }
+          },
+          "innovations": 2,
+          "bridgeGrammar": {
+            "evidence": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "speakingOrder": "SVO",
+            "constructions": [
+              {
+                "slots": [
+                  "SUBJECT",
+                  "OBJECT"
+                ],
+                "implicitVerb": "IS",
+                "evidence": 2
+              }
+            ],
+            "receptive": {
+              "dialects": [
+                {
+                  "cues": [
+                    {
+                      "word": "sug",
+                      "meaning": "I"
+                    },
+                    {
+                      "word": "mi",
+                      "meaning": "HURT"
+                    }
+                  ],
+                  "patterns": [
+                    {
+                      "slots": [
+                        "SUBJECT",
+                        "OBJECT"
+                      ],
+                      "implicitVerb": "IS",
+                      "evidence": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "tick": 240,
+          "relays": 0
+        },
+        {
+          "targetGrammar": {
+            "evidence": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "speakingOrder": "SVO",
+            "constructions": [
+              {
+                "slots": [
+                  "SUBJECT",
+                  "OBJECT"
+                ],
+                "implicitVerb": "IS",
+                "evidence": 1
+              }
+            ],
+            "receptive": {
+              "dialects": [
+                {
+                  "cues": [
+                    {
+                      "word": "sug",
+                      "meaning": "I"
+                    },
+                    {
+                      "word": "mi",
+                      "meaning": "HURT"
+                    }
+                  ],
+                  "patterns": [
+                    {
+                      "slots": [
+                        "SUBJECT",
+                        "OBJECT"
+                      ],
+                      "implicitVerb": "IS",
+                      "evidence": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "innovations": 3,
+          "bridgeGrammar": {
+            "evidence": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "speakingOrder": "SVO",
+            "constructions": [
+              {
+                "slots": [
+                  "SUBJECT",
+                  "OBJECT"
+                ],
+                "implicitVerb": "IS",
+                "evidence": 4
+              }
+            ],
+            "receptive": {
+              "dialects": [
+                {
+                  "cues": [
+                    {
+                      "word": "sug",
+                      "meaning": "I"
+                    },
+                    {
+                      "word": "mi",
+                      "meaning": "HURT"
+                    }
+                  ],
+                  "patterns": [
+                    {
+                      "slots": [
+                        "SUBJECT",
+                        "OBJECT"
+                      ],
+                      "implicitVerb": "IS",
+                      "evidence": 3
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "tick": 440,
+          "relays": 1
+        },
+        {
+          "targetGrammar": {
+            "evidence": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "speakingOrder": "SVO",
+            "constructions": [
+              {
+                "slots": [
+                  "SUBJECT",
+                  "OBJECT"
+                ],
+                "implicitVerb": "IS",
+                "evidence": 2
+              }
+            ],
+            "receptive": {
+              "dialects": [
+                {
+                  "cues": [
+                    {
+                      "word": "sug",
+                      "meaning": "I"
+                    },
+                    {
+                      "word": "mi",
+                      "meaning": "HURT"
+                    }
+                  ],
+                  "patterns": [
+                    {
+                      "slots": [
+                        "SUBJECT",
+                        "OBJECT"
+                      ],
+                      "implicitVerb": "IS",
+                      "evidence": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "innovations": 4,
+          "bridgeGrammar": {
+            "evidence": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "speakingOrder": "SVO",
+            "constructions": [
+              {
+                "slots": [
+                  "SUBJECT",
+                  "OBJECT"
+                ],
+                "implicitVerb": "IS",
+                "evidence": 6
+              }
+            ],
+            "receptive": {
+              "dialects": [
+                {
+                  "cues": [
+                    {
+                      "word": "sug",
+                      "meaning": "I"
+                    },
+                    {
+                      "word": "mi",
+                      "meaning": "HURT"
+                    }
+                  ],
+                  "patterns": [
+                    {
+                      "slots": [
+                        "SUBJECT",
+                        "OBJECT"
+                      ],
+                      "implicitVerb": "IS",
+                      "evidence": 4
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "tick": 640,
+          "relays": 2
+        },
+        {
+          "targetGrammar": {
+            "evidence": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "speakingOrder": "SVO",
+            "constructions": [
+              {
+                "slots": [
+                  "SUBJECT",
+                  "OBJECT"
+                ],
+                "implicitVerb": "IS",
+                "evidence": 3
+              }
+            ],
+            "receptive": {
+              "dialects": [
+                {
+                  "cues": [
+                    {
+                      "word": "sug",
+                      "meaning": "I"
+                    },
+                    {
+                      "word": "mi",
+                      "meaning": "HURT"
+                    }
+                  ],
+                  "patterns": [
+                    {
+                      "slots": [
+                        "SUBJECT",
+                        "OBJECT"
+                      ],
+                      "implicitVerb": "IS",
+                      "evidence": 3
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "innovations": 5,
+          "bridgeGrammar": {
+            "evidence": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "speakingOrder": "SVO",
+            "constructions": [
+              {
+                "slots": [
+                  "SUBJECT",
+                  "OBJECT"
+                ],
+                "implicitVerb": "IS",
+                "evidence": 8
+              }
+            ],
+            "receptive": {
+              "dialects": [
+                {
+                  "cues": [
+                    {
+                      "word": "sug",
+                      "meaning": "I"
+                    },
+                    {
+                      "word": "mi",
+                      "meaning": "HURT"
+                    }
+                  ],
+                  "patterns": [
+                    {
+                      "slots": [
+                        "SUBJECT",
+                        "OBJECT"
+                      ],
+                      "implicitVerb": "IS",
+                      "evidence": 5
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "tick": 840,
+          "relays": 3
+        }
+      ],
+      "minds": {
+        "00000000-0000-0515-0000-000000000001": {
+          "schemaVersion": 18,
+          "id": "00000000-0000-0515-0000-000000000001",
+          "name": "Alder-0000",
+          "personality": {
+            "boldness": 0.8980106124659706,
+            "sociability": 0.96598485602345,
+            "curiosity": 0.21989079903389364
+          },
+          "hunger": 0.2,
+          "fatigue": 0.1,
+          "loneliness": 0.2,
+          "learningUpdates": 0,
+          "values": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "visits": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "memories": [],
+          "impressions": [],
+          "episodes": [],
+          "nextEpisodeId": 0,
+          "genome": {
+            "traitGenes": [
+              {
+                "gene": "COURAGE",
+                "first": "NEUTRAL",
+                "second": "SECOND"
+              },
+              {
+                "gene": "GENEROSITY",
+                "first": "SECOND",
+                "second": "SECOND"
+              },
+              {
+                "gene": "SOCIABILITY",
+                "first": "NEUTRAL",
+                "second": "SECOND"
+              },
+              {
+                "gene": "APPETITE",
+                "first": "SECOND",
+                "second": "FIRST"
+              },
+              {
+                "gene": "INDUSTRY",
+                "first": "FIRST",
+                "second": "NEUTRAL"
+              }
+            ],
+            "tendencyGenes": [
+              {
+                "tendency": "BOLDNESS",
+                "first": [
+                  0.9888881814663696,
+                  0.915998840683861,
+                  0.9574250131557244,
+                  0.9159991013406401
+                ],
+                "second": [
+                  0.8071330434655716,
+                  0.8800223842480802,
+                  0.8385962117762168,
+                  0.880022123591301
+                ]
+              },
+              {
+                "tendency": "SOCIABILITY",
+                "first": [
+                  0.9939791256847765,
+                  0.9892485979673421,
+                  0.9893777026896955,
+                  0.9912282190836105
+                ],
+                "second": [
+                  0.9379905863621234,
+                  0.9427211140795578,
+                  0.9425920093572044,
+                  0.9407414929632895
+                ]
+              },
+              {
+                "tendency": "CURIOSITY",
+                "first": [
+                  0.2418934096403206,
+                  0.37893530381271145,
+                  0.41448101669881543,
+                  0.2934105236427407
+                ],
+                "second": [
+                  0.19788818842746667,
+                  0.06084629425507582,
+                  0.02530058136897184,
+                  0.14637107442504663
+                ]
+              },
+              {
+                "tendency": "APPETITE",
+                "first": [
+                  0.38018437854277637,
+                  0.5158020728083554,
+                  0.6089438611755315,
+                  0.7077979512466032
+                ],
+                "second": [
+                  0.34924694195682876,
+                  0.21362924769124964,
+                  0.12048745932407368,
+                  0.021633369253001966
+                ]
+              },
+              {
+                "tendency": "FERTILITY",
+                "first": [
+                  0.9530095303587673,
+                  0.8535341333112512,
+                  0.8509434860620722,
+                  0.9252801423141731
+                ],
+                "second": [
+                  0.32267538877801366,
+                  0.42215078582552984,
+                  0.42474143307470885,
+                  0.35040477682260784
+                ]
+              }
+            ]
+          },
+          "food": {
+            "foodLevel": 16,
+            "saturation": 5.0,
+            "exhaustion": 0.0,
+            "timer": 0
+          },
+          "ageTicks": 0,
+          "lexicon": {
+            "entries": [
+              {
+                "concept": "HELLO",
+                "word": "vuzefam",
+                "strength": 1.0
+              },
+              {
+                "concept": "YES",
+                "word": "na",
+                "strength": 1.0
+              },
+              {
+                "concept": "NO",
+                "word": "kivut",
+                "strength": 1.0
+              },
+              {
+                "concept": "THANKS",
+                "word": "taso",
+                "strength": 1.0
+              },
+              {
+                "concept": "WANT",
+                "word": "ketik",
+                "strength": 1.0
+              },
+              {
+                "concept": "TRADE",
+                "word": "za",
+                "strength": 1.0
+              },
+              {
+                "concept": "FOOD",
+                "word": "sasur",
+                "strength": 1.0
+              },
+              {
+                "concept": "BED",
+                "word": "bemo",
+                "strength": 1.0
+              },
+              {
+                "concept": "FRIEND",
+                "word": "pozake",
+                "strength": 1.0
+              },
+              {
+                "concept": "WALK",
+                "word": "lub",
+                "strength": 1.0
+              },
+              {
+                "concept": "DANGER",
+                "word": "ser",
+                "strength": 1.0
+              },
+              {
+                "concept": "MONSTER",
+                "word": "vesuk",
+                "strength": 1.0
+              },
+              {
+                "concept": "HUNGRY",
+                "word": "fu",
+                "strength": 1.0
+              },
+              {
+                "concept": "TIRED",
+                "word": "ba",
+                "strength": 1.0
+              },
+              {
+                "concept": "LONELY",
+                "word": "pi",
+                "strength": 1.0
+              },
+              {
+                "concept": "HAPPY",
+                "word": "rusigis",
+                "strength": 1.0
+              },
+              {
+                "concept": "AFRAID",
+                "word": "ru",
+                "strength": 1.0
+              },
+              {
+                "concept": "EMERALD",
+                "word": "zid",
+                "strength": 1.0
+              },
+              {
+                "concept": "BREAD",
+                "word": "vig",
+                "strength": 1.0
+              },
+              {
+                "concept": "WHEAT",
+                "word": "livise",
+                "strength": 1.0
+              },
+              {
+                "concept": "CARROT",
+                "word": "kava",
+                "strength": 1.0
+              },
+              {
+                "concept": "POTATO",
+                "word": "didu",
+                "strength": 1.0
+              },
+              {
+                "concept": "BEETROOT",
+                "word": "tega",
+                "strength": 1.0
+              },
+              {
+                "concept": "SEEDS",
+                "word": "dadobu",
+                "strength": 1.0
+              },
+              {
+                "concept": "HOE",
+                "word": "pilu",
+                "strength": 1.0
+              },
+              {
+                "concept": "SWORD",
+                "word": "ki",
+                "strength": 1.0
+              },
+              {
+                "concept": "WOOD",
+                "word": "sabo",
+                "strength": 1.0
+              },
+              {
+                "concept": "YOU",
+                "word": "lo",
+                "strength": 1.0
+              },
+              {
+                "concept": "IS",
+                "word": "daku",
+                "strength": 1.0
+              },
+              {
+                "concept": "SEE",
+                "word": "lis",
+                "strength": 1.0
+              },
+              {
+                "concept": "SAY",
+                "word": "tun",
+                "strength": 1.0
+              },
+              {
+                "concept": "GIVE",
+                "word": "zute",
+                "strength": 1.0
+              },
+              {
+                "concept": "NOT",
+                "word": "kebuf",
+                "strength": 1.0
+              },
+              {
+                "concept": "PAST",
+                "word": "dunaf",
+                "strength": 1.0
+              },
+              {
+                "concept": "HAVE",
+                "word": "nimur",
+                "strength": 1.0
+              },
+              {
+                "concept": "LIKE",
+                "word": "muzu",
+                "strength": 1.0
+              },
+              {
+                "concept": "ASK",
+                "word": "vuke",
+                "strength": 1.0
+              },
+              {
+                "concept": "PROMISE",
+                "word": "zag",
+                "strength": 1.0
+              },
+              {
+                "concept": "MEET",
+                "word": "zoki",
+                "strength": 1.0
+              },
+              {
+                "concept": "AGAIN",
+                "word": "nunome",
+                "strength": 1.0
+              },
+              {
+                "concept": "PERSON",
+                "word": "fen",
+                "strength": 1.0
+              },
+              {
+                "concept": "PLACE",
+                "word": "ta",
+                "strength": 1.0
+              },
+              {
+                "concept": "NAMED",
+                "word": "sero",
+                "strength": 1.0
+              },
+              {
+                "concept": "HERE",
+                "word": "dubof",
+                "strength": 1.0
+              },
+              {
+                "concept": "SOURCE",
+                "word": "teni",
+                "strength": 1.0
+              },
+              {
+                "concept": "RECENT",
+                "word": "baziben",
+                "strength": 1.0
+              },
+              {
+                "concept": "OLD",
+                "word": "dipeme",
+                "strength": 1.0
+              },
+              {
+                "concept": "FROM",
+                "word": "pude",
+                "strength": 1.0
+              },
+              {
+                "concept": "KNOW",
+                "word": "fi",
+                "strength": 1.0
+              },
+              {
+                "concept": "PARTNER",
+                "word": "la",
+                "strength": 1.0
+              },
+              {
+                "concept": "CHILD",
+                "word": "zelo",
+                "strength": 1.0
+              },
+              {
+                "concept": "MAKE",
+                "word": "bezumi",
+                "strength": 1.0
+              },
+              {
+                "concept": "PAY",
+                "word": "ra",
+                "strength": 1.0
+              },
+              {
+                "concept": "WORK",
+                "word": "sel",
+                "strength": 1.0
+              },
+              {
+                "concept": "ONE",
+                "word": "nal",
+                "strength": 1.0
+              },
+              {
+                "concept": "TWO",
+                "word": "zat",
+                "strength": 1.0
+              },
+              {
+                "concept": "SOON",
+                "word": "mogeda",
+                "strength": 1.0
+              },
+              {
+                "concept": "STONE",
+                "word": "kar",
+                "strength": 1.0
+              },
+              {
+                "concept": "I",
+                "word": "sug",
+                "strength": 1.0
+              },
+              {
+                "concept": "HURT",
+                "word": "mi",
+                "strength": 1.0
+              }
+            ],
+            "evidence": [
+              {
+                "word": "sug",
+                "heard": 3,
+                "meanings": [
+                  {
+                    "concept": "I",
+                    "count": 3
+                  }
+                ]
+              },
+              {
+                "word": "mi",
+                "heard": 3,
+                "meanings": [
+                  {
+                    "concept": "HURT",
+                    "count": 3
+                  }
+                ]
+              }
+            ],
+            "developing": false,
+            "grammar": {
+              "evidence": [
+                6,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "speakingOrder": "SVO",
+              "constructions": [
+                {
+                  "slots": [
+                    "SUBJECT",
+                    "OBJECT"
+                  ],
+                  "implicitVerb": "IS",
+                  "evidence": 8
+                }
+              ],
+              "receptive": {
+                "dialects": [
+                  {
+                    "cues": [
+                      {
+                        "word": "sug",
+                        "meaning": "I"
+                      },
+                      {
+                        "word": "mi",
+                        "meaning": "HURT"
+                      }
+                    ],
+                    "patterns": [
+                      {
+                        "slots": [
+                          "SUBJECT",
+                          "OBJECT"
+                        ],
+                        "implicitVerb": "IS",
+                        "evidence": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "referents": {
+              "entries": [
+                {
+                  "word": "alder",
+                  "target": {
+                    "kind": "PERSON",
+                    "person": "00000000-0000-0515-0000-000000000001"
+                  },
+                  "observations": 3,
+                  "lastSeen": 40
+                }
+              ]
+            },
+            "formation": {
+              "preferred": {
+                "order": "MATERIAL_HEAD",
+                "linker": "n",
+                "evidence": 6
+              },
+              "patterns": [
+                {
+                  "order": "MATERIAL_HEAD",
+                  "linker": "n",
+                  "evidence": 6
+                }
+              ]
+            }
+          },
+          "opinions": {
+            "known": []
+          },
+          "experience": {
+            "boldness": 0.0,
+            "sociability": 0.0,
+            "curiosity": 0.0
+          },
+          "nextBreedingAt": 0,
+          "originBiome": "minecraft:plains",
+          "beliefs": {
+            "entries": [
+              {
+                "claim": {
+                  "subject": "00000000-0000-0515-0000-000000000002",
+                  "verb": "IS",
+                  "object": "HURT",
+                  "negated": false,
+                  "past": false
+                },
+                "source": "00000000-0000-0515-0000-000000000002",
+                "evidence": "HEARD",
+                "confidence": 0.4,
+                "tick": 440,
+                "expires": 2840,
+                "provenance": {
+                  "basis": "UNQUALIFIED",
+                  "root": "00000000-0000-0515-0000-000000000002",
+                  "basisTick": 440
+                }
+              }
+            ]
+          },
+          "partnerships": {
+            "history": []
+          },
+          "workOrders": {
+            "history": []
+          },
+          "lessons": {
+            "entries": []
+          },
+          "voice": {
+            "models": [
+              {
+                "kind": "VILLAGER",
+                "words": [
+                  "sug",
+                  "mi"
+                ],
+                "heard": 3,
+                "practice": 0,
+                "lastHeard": 840
+              }
+            ]
+          }
+        },
+        "00000000-0000-0515-0000-000000000002": {
+          "schemaVersion": 18,
+          "id": "00000000-0000-0515-0000-000000000002",
+          "name": "Pip-0000",
+          "personality": {
+            "boldness": 0.6704678331592999,
+            "sociability": 0.17286004721852988,
+            "curiosity": 0.9240848832554328
+          },
+          "hunger": 0.2,
+          "fatigue": 0.1,
+          "loneliness": 0.2,
+          "learningUpdates": 0,
+          "values": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "visits": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "memories": [],
+          "impressions": [],
+          "episodes": [],
+          "nextEpisodeId": 0,
+          "genome": {
+            "traitGenes": [
+              {
+                "gene": "COURAGE",
+                "first": "NEUTRAL",
+                "second": "FIRST"
+              },
+              {
+                "gene": "GENEROSITY",
+                "first": "NEUTRAL",
+                "second": "NEUTRAL"
+              },
+              {
+                "gene": "SOCIABILITY",
+                "first": "SECOND",
+                "second": "NEUTRAL"
+              },
+              {
+                "gene": "APPETITE",
+                "first": "NEUTRAL",
+                "second": "SECOND"
+              },
+              {
+                "gene": "INDUSTRY",
+                "first": "FIRST",
+                "second": "NEUTRAL"
+              }
+            ],
+            "tendencyGenes": [
+              {
+                "tendency": "BOLDNESS",
+                "first": [
+                  0.9238216933003561,
+                  0.9860781345798626,
+                  0.8138470684633226,
+                  0.8988766600198835
+                ],
+                "second": [
+                  0.4171139730182437,
+                  0.3548575317387373,
+                  0.5270885978552773,
+                  0.4420590062987163
+                ]
+              },
+              {
+                "tendency": "SOCIABILITY",
+                "first": [
+                  0.2167262177702651,
+                  0.32460939832193425,
+                  0.1957322918033494,
+                  0.20925067894050958
+                ],
+                "second": [
+                  0.12899387666679465,
+                  0.021110696115125532,
+                  0.14998780263371037,
+                  0.13646941549655017
+                ]
+              },
+              {
+                "tendency": "CURIOSITY",
+                "first": [
+                  0.9341554549862159,
+                  0.9514020416767544,
+                  0.9378038874907902,
+                  0.9253262158144037
+                ],
+                "second": [
+                  0.9140143115246497,
+                  0.8967677248341113,
+                  0.9103658790200754,
+                  0.922843550696462
+                ]
+              },
+              {
+                "tendency": "APPETITE",
+                "first": [
+                  0.7467248944082481,
+                  0.8263900523034342,
+                  0.7853741597660999,
+                  0.9951400772426318
+                ],
+                "second": [
+                  0.5756794095552595,
+                  0.4960142516600734,
+                  0.5370301441974077,
+                  0.32726422672087585
+                ]
+              },
+              {
+                "tendency": "FERTILITY",
+                "first": [
+                  0.5419431931653296,
+                  0.5596530008459675,
+                  0.7381028194167911,
+                  0.5055791332631269
+                ],
+                "second": [
+                  0.21756588814570715,
+                  0.19985608046506925,
+                  0.021406261894245604,
+                  0.2539299480479099
+                ]
+              }
+            ]
+          },
+          "food": {
+            "foodLevel": 16,
+            "saturation": 5.0,
+            "exhaustion": 0.0,
+            "timer": 0
+          },
+          "ageTicks": 0,
+          "lexicon": {
+            "entries": [
+              {
+                "concept": "HELLO",
+                "word": "vuzefam",
+                "strength": 0.6
+              },
+              {
+                "concept": "YES",
+                "word": "na",
+                "strength": 0.6
+              },
+              {
+                "concept": "NO",
+                "word": "kivut",
+                "strength": 0.6
+              },
+              {
+                "concept": "WANT",
+                "word": "ketik",
+                "strength": 0.6
+              },
+              {
+                "concept": "FOOD",
+                "word": "sasur",
+                "strength": 0.6
+              },
+              {
+                "concept": "DANGER",
+                "word": "ser",
+                "strength": 0.6
+              },
+              {
+                "concept": "SEE",
+                "word": "lis",
+                "strength": 0.6
+              },
+              {
+                "concept": "SAY",
+                "word": "tun",
+                "strength": 0.6
+              },
+              {
+                "concept": "NAMED",
+                "word": "sero",
+                "strength": 0.6
+              },
+              {
+                "concept": "IS",
+                "word": "daku",
+                "strength": 1.0
+              },
+              {
+                "concept": "WALK",
+                "word": "lub",
+                "strength": 1.0
+              },
+              {
+                "concept": "I",
+                "word": "sug",
+                "strength": 1.0
+              },
+              {
+                "concept": "HURT",
+                "word": "mi",
+                "strength": 1.0
+              }
+            ],
+            "evidence": [
+              {
+                "word": "sug",
+                "heard": 5,
+                "meanings": [
+                  {
+                    "concept": "I",
+                    "count": 5
+                  }
+                ]
+              },
+              {
+                "word": "mi",
+                "heard": 5,
+                "meanings": [
+                  {
+                    "concept": "HURT",
+                    "count": 5
+                  }
+                ]
+              }
+            ],
+            "developing": true,
+            "grammar": {
+              "evidence": [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "speakingOrder": "SVO",
+              "constructions": [
+                {
+                  "slots": [
+                    "SUBJECT",
+                    "OBJECT"
+                  ],
+                  "implicitVerb": "IS",
+                  "evidence": 8
+                }
+              ],
+              "receptive": {
+                "dialects": [
+                  {
+                    "cues": [
+                      {
+                        "word": "sug",
+                        "meaning": "I"
+                      },
+                      {
+                        "word": "mi",
+                        "meaning": "HURT"
+                      }
+                    ],
+                    "patterns": [
+                      {
+                        "slots": [
+                          "SUBJECT",
+                          "OBJECT"
+                        ],
+                        "implicitVerb": "IS",
+                        "evidence": 5
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "referents": {
+              "entries": [
+                {
+                  "word": "pip",
+                  "target": {
+                    "kind": "PERSON",
+                    "person": "00000000-0000-0515-0000-000000000002"
+                  },
+                  "observations": 3,
+                  "lastSeen": 440
+                }
+              ]
+            },
+            "formation": {
+              "patterns": []
+            }
+          },
+          "opinions": {
+            "known": []
+          },
+          "experience": {
+            "boldness": 0.0,
+            "sociability": 0.0,
+            "curiosity": 0.0
+          },
+          "nextBreedingAt": 0,
+          "originBiome": "minecraft:plains",
+          "beliefs": {
+            "entries": [
+              {
+                "claim": {
+                  "subject": "00000000-0000-0515-0000-000000000001",
+                  "verb": "IS",
+                  "object": "HURT",
+                  "negated": false,
+                  "past": false
+                },
+                "source": "00000000-0000-0515-0000-000000000001",
+                "evidence": "HEARD",
+                "confidence": 0.4,
+                "tick": 440,
+                "expires": 2840,
+                "provenance": {
+                  "basis": "UNQUALIFIED",
+                  "root": "00000000-0000-0515-0000-000000000001",
+                  "basisTick": 440
+                }
+              }
+            ]
+          },
+          "partnerships": {
+            "history": []
+          },
+          "workOrders": {
+            "history": []
+          },
+          "lessons": {
+            "entries": []
+          },
+          "voice": {
+            "models": [
+              {
+                "kind": "VILLAGER",
+                "words": [
+                  "sug",
+                  "mi"
+                ],
+                "heard": 5,
+                "practice": 0,
+                "lastHeard": 840
+              }
+            ]
+          }
+        },
+        "00000000-0000-0515-0000-000000000003": {
+          "schemaVersion": 18,
+          "id": "00000000-0000-0515-0000-000000000003",
+          "name": "Tansy-0000",
+          "personality": {
+            "boldness": 0.07964874966074931,
+            "sociability": 0.10390164518644951,
+            "curiosity": 0.35602017858081236
+          },
+          "hunger": 0.2,
+          "fatigue": 0.1,
+          "loneliness": 0.2,
+          "learningUpdates": 0,
+          "values": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "visits": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "memories": [],
+          "impressions": [],
+          "episodes": [],
+          "nextEpisodeId": 0,
+          "genome": {
+            "traitGenes": [
+              {
+                "gene": "COURAGE",
+                "first": "NEUTRAL",
+                "second": "FIRST"
+              },
+              {
+                "gene": "GENEROSITY",
+                "first": "FIRST",
+                "second": "NEUTRAL"
+              },
+              {
+                "gene": "SOCIABILITY",
+                "first": "NEUTRAL",
+                "second": "FIRST"
+              },
+              {
+                "gene": "APPETITE",
+                "first": "FIRST",
+                "second": "SECOND"
+              },
+              {
+                "gene": "INDUSTRY",
+                "first": "FIRST",
+                "second": "NEUTRAL"
+              }
+            ],
+            "tendencyGenes": [
+              {
+                "tendency": "BOLDNESS",
+                "first": [
+                  0.13115031293450588,
+                  0.13851966880258218,
+                  0.1025592323773834,
+                  0.09636583466101337
+                ],
+                "second": [
+                  0.028147186386992734,
+                  0.02077783051891644,
+                  0.056738266944115205,
+                  0.06293166466048525
+                ]
+              },
+              {
+                "tendency": "SOCIABILITY",
+                "first": [
+                  0.17502643997227962,
+                  0.11136438330541842,
+                  0.16384401343352573,
+                  0.17444257935937585
+                ],
+                "second": [
+                  0.03277685040061938,
+                  0.0964389070674806,
+                  0.04395927693937328,
+                  0.033360711013523156
+                ]
+              },
+              {
+                "tendency": "CURIOSITY",
+                "first": [
+                  0.4148524646303025,
+                  0.710754336211397,
+                  0.5256601721848264,
+                  0.6046492366305937
+                ],
+                "second": [
+                  0.2971878925313222,
+                  0.0012860209502277287,
+                  0.1863801849767983,
+                  0.10739112053103109
+                ]
+              },
+              {
+                "tendency": "APPETITE",
+                "first": [
+                  0.7622341546091789,
+                  0.8057736921939239,
+                  0.5857202567318175,
+                  0.5712350963771766
+                ],
+                "second": [
+                  0.35314313281823106,
+                  0.309603595233486,
+                  0.5296570306955924,
+                  0.5441421910502333
+                ]
+              },
+              {
+                "tendency": "FERTILITY",
+                "first": [
+                  0.9923120745369378,
+                  0.689978673555224,
+                  0.6646126464195579,
+                  0.9373294161603952
+                ],
+                "second": [
+                  0.05102116894835479,
+                  0.35335456993006864,
+                  0.37872059706573485,
+                  0.10600382732489744
+                ]
+              }
+            ]
+          },
+          "food": {
+            "foodLevel": 16,
+            "saturation": 5.0,
+            "exhaustion": 0.0,
+            "timer": 0
+          },
+          "ageTicks": 0,
+          "lexicon": {
+            "entries": [
+              {
+                "concept": "HELLO",
+                "word": "vuzefam",
+                "strength": 0.6
+              },
+              {
+                "concept": "YES",
+                "word": "na",
+                "strength": 0.6
+              },
+              {
+                "concept": "NO",
+                "word": "kivut",
+                "strength": 0.6
+              },
+              {
+                "concept": "WANT",
+                "word": "ketik",
+                "strength": 0.6
+              },
+              {
+                "concept": "FOOD",
+                "word": "sasur",
+                "strength": 0.6
+              },
+              {
+                "concept": "DANGER",
+                "word": "ser",
+                "strength": 0.6
+              },
+              {
+                "concept": "SEE",
+                "word": "lis",
+                "strength": 0.6
+              },
+              {
+                "concept": "SAY",
+                "word": "tun",
+                "strength": 0.6
+              },
+              {
+                "concept": "NAMED",
+                "word": "sero",
+                "strength": 0.6
+              },
+              {
+                "concept": "IS",
+                "word": "daku",
+                "strength": 1.0
+              },
+              {
+                "concept": "HURT",
+                "word": "mi",
+                "strength": 1.0
+              },
+              {
+                "concept": "WALK",
+                "word": "lub",
+                "strength": 1.0
+              },
+              {
+                "concept": "I",
+                "word": "sug",
+                "strength": 1.0
+              }
+            ],
+            "evidence": [
+              {
+                "word": "bi",
+                "heard": 1,
+                "meanings": [
+                  {
+                    "concept": "HURT",
+                    "count": 1
+                  }
+                ]
+              },
+              {
+                "word": "sug",
+                "heard": 3,
+                "meanings": [
+                  {
+                    "concept": "I",
+                    "count": 3
+                  }
+                ]
+              },
+              {
+                "word": "mi",
+                "heard": 2,
+                "meanings": [
+                  {
+                    "concept": "HURT",
+                    "count": 2
+                  }
+                ]
+              }
+            ],
+            "developing": true,
+            "grammar": {
+              "evidence": [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "speakingOrder": "SVO",
+              "constructions": [
+                {
+                  "slots": [
+                    "SUBJECT",
+                    "OBJECT"
+                  ],
+                  "implicitVerb": "IS",
+                  "evidence": 3
+                }
+              ],
+              "receptive": {
+                "dialects": [
+                  {
+                    "cues": [
+                      {
+                        "word": "sug",
+                        "meaning": "I"
+                      },
+                      {
+                        "word": "mi",
+                        "meaning": "HURT"
+                      }
+                    ],
+                    "patterns": [
+                      {
+                        "slots": [
+                          "SUBJECT",
+                          "OBJECT"
+                        ],
+                        "implicitVerb": "IS",
+                        "evidence": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "referents": {
+              "entries": []
+            },
+            "formation": {
+              "patterns": []
+            }
+          },
+          "opinions": {
+            "known": []
+          },
+          "experience": {
+            "boldness": 0.0,
+            "sociability": 0.0,
+            "curiosity": 0.0
+          },
+          "nextBreedingAt": 0,
+          "originBiome": "minecraft:plains",
+          "beliefs": {
+            "entries": [
+              {
+                "claim": {
+                  "subject": "00000000-0000-0515-0000-000000000002",
+                  "verb": "IS",
+                  "object": "HURT",
+                  "negated": false,
+                  "past": false
+                },
+                "source": "00000000-0000-0515-0000-000000000002",
+                "evidence": "HEARD",
+                "confidence": 0.4,
+                "tick": 840,
+                "expires": 3240,
+                "provenance": {
+                  "basis": "UNQUALIFIED",
+                  "root": "00000000-0000-0515-0000-000000000002",
+                  "basisTick": 840
+                }
+              }
+            ]
+          },
+          "partnerships": {
+            "history": []
+          },
+          "workOrders": {
+            "history": []
+          },
+          "lessons": {
+            "entries": []
+          },
+          "voice": {
+            "models": [
+              {
+                "kind": "VILLAGER",
+                "words": [
+                  "sug",
+                  "mi"
+                ],
+                "heard": 3,
+                "practice": 0,
+                "lastHeard": 840
+              }
+            ]
+          }
+        },
+        "00000000-0000-0515-0000-000000000004": {
+          "schemaVersion": 18,
+          "id": "00000000-0000-0515-0000-000000000004",
+          "name": "Nell-0000",
+          "personality": {
+            "boldness": 0.8521059703540786,
+            "sociability": 0.31077683638152953,
+            "curiosity": 0.06021426280235154
+          },
+          "hunger": 0.2,
+          "fatigue": 0.1,
+          "loneliness": 0.2,
+          "learningUpdates": 0,
+          "values": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "visits": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "memories": [],
+          "impressions": [],
+          "episodes": [],
+          "nextEpisodeId": 0,
+          "genome": {
+            "traitGenes": [
+              {
+                "gene": "COURAGE",
+                "first": "NEUTRAL",
+                "second": "NEUTRAL"
+              },
+              {
+                "gene": "GENEROSITY",
+                "first": "SECOND",
+                "second": "FIRST"
+              },
+              {
+                "gene": "SOCIABILITY",
+                "first": "SECOND",
+                "second": "SECOND"
+              },
+              {
+                "gene": "APPETITE",
+                "first": "SECOND",
+                "second": "SECOND"
+              },
+              {
+                "gene": "INDUSTRY",
+                "first": "FIRST",
+                "second": "NEUTRAL"
+              }
+            ],
+            "tendencyGenes": [
+              {
+                "tendency": "BOLDNESS",
+                "first": [
+                  0.9296598518692991,
+                  0.9290864195625796,
+                  0.8728390269686894,
+                  0.9595716267206094
+                ],
+                "second": [
+                  0.7745520888388582,
+                  0.7751255211455776,
+                  0.8313729137394679,
+                  0.7446403139875479
+                ]
+              },
+              {
+                "tendency": "SOCIABILITY",
+                "first": [
+                  0.34661322637251235,
+                  0.39337385752537835,
+                  0.31746242840309147,
+                  0.3565604035132466
+                ],
+                "second": [
+                  0.2749404463905467,
+                  0.22817981523768072,
+                  0.3040912443599676,
+                  0.2649932692498125
+                ]
+              },
+              {
+                "tendency": "CURIOSITY",
+                "first": [
+                  0.07212729425831153,
+                  0.09832612142527769,
+                  0.10671560842487376,
+                  0.08311746350262733
+                ],
+                "second": [
+                  0.04830123134639154,
+                  0.022102404179425376,
+                  0.013712917179829316,
+                  0.03731106210207574
+                ]
+              },
+              {
+                "tendency": "APPETITE",
+                "first": [
+                  0.7595914579209588,
+                  0.7422111297337656,
+                  0.7994585663720444,
+                  0.4885096915023457
+                ],
+                "second": [
+                  0.14875880104942457,
+                  0.1661391292366179,
+                  0.10889169259833914,
+                  0.4198405674680378
+                ]
+              },
+              {
+                "tendency": "FERTILITY",
+                "first": [
+                  0.8455043290838848,
+                  0.7409625570925114,
+                  0.8836158407667833,
+                  0.800378157015973
+                ],
+                "second": [
+                  0.48165306465473473,
+                  0.5861948366461083,
+                  0.44354155297183623,
+                  0.5267792367226466
+                ]
+              }
+            ]
+          },
+          "food": {
+            "foodLevel": 16,
+            "saturation": 5.0,
+            "exhaustion": 0.0,
+            "timer": 0
+          },
+          "ageTicks": 0,
+          "lexicon": {
+            "entries": [
+              {
+                "concept": "HELLO",
+                "word": "vuzefam",
+                "strength": 0.6
+              },
+              {
+                "concept": "YES",
+                "word": "na",
+                "strength": 0.6
+              },
+              {
+                "concept": "NO",
+                "word": "kivut",
+                "strength": 0.6
+              },
+              {
+                "concept": "WANT",
+                "word": "ketik",
+                "strength": 0.6
+              },
+              {
+                "concept": "FOOD",
+                "word": "sasur",
+                "strength": 0.6
+              },
+              {
+                "concept": "DANGER",
+                "word": "ser",
+                "strength": 0.6
+              },
+              {
+                "concept": "SEE",
+                "word": "lis",
+                "strength": 0.6
+              },
+              {
+                "concept": "SAY",
+                "word": "tun",
+                "strength": 0.6
+              },
+              {
+                "concept": "NAMED",
+                "word": "sero",
+                "strength": 0.6
+              },
+              {
+                "concept": "I",
+                "word": "sug",
+                "strength": 1.0
+              },
+              {
+                "concept": "IS",
+                "word": "daku",
+                "strength": 1.0
+              },
+              {
+                "concept": "HURT",
+                "word": "mi",
+                "strength": 1.0
+              },
+              {
+                "concept": "WALK",
+                "word": "lub",
+                "strength": 1.0
+              }
+            ],
+            "evidence": [],
+            "developing": true,
+            "grammar": {
+              "evidence": [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "speakingOrder": "SVO",
+              "constructions": [],
+              "receptive": {
+                "dialects": []
+              }
+            },
+            "referents": {
+              "entries": []
+            },
+            "formation": {
+              "patterns": []
+            }
+          },
+          "opinions": {
+            "known": []
+          },
+          "experience": {
+            "boldness": 0.0,
+            "sociability": 0.0,
+            "curiosity": 0.0
+          },
+          "nextBreedingAt": 0,
+          "originBiome": "minecraft:plains",
+          "beliefs": {
+            "entries": []
+          },
+          "partnerships": {
+            "history": []
+          },
+          "workOrders": {
+            "history": []
+          },
+          "lessons": {
+            "entries": []
+          },
+          "voice": {
+            "models": []
+          }
+        }
+      },
+      "fixture": "NEW peaceful platform, four original stationary NoAI villagers. Source adult starts with full plains SVO and ZERO constructions. Three sparse learner/control lexicons use the actual child inheritance routine plus explicitly equal I/IS/HURT/WALK lexical priors to isolate syntax; no productive construction or parent memory is seeded. Source and bridge have one setup native injury each. A stone visibility barrier prevents target from observing source, while bridge can see both. Separate wall isolates the comparison. Controlled 200-tick opportunities deliberately exercise the already-authored IS-omission option through Speech.innovateObservedState. Bridge speaks only after its own grammar selects the learned form, then target learns from its actual relay utterances. Held-out WALK construction is generated/interpreted for evaluation, never taught as an event. This is supported first use and controlled diffusion, not spontaneous discovery of new syntax, actual births, natural maturation or survival. Only public-state Speech/learning paths run; no post-setup actor setters or new resources."
+    },
+    "culture-restart-result.json": {
+      "status": "restart-passed",
+      "originalsVerifiedAtLoad": 4,
+      "heldOutConstructionRetained": true
+    },
+    "culture-frozen-result.json": {
+      "heldOutConstructionRetained": true,
+      "originalsVerifiedAtLoad": 4,
+      "status": "frozen-passed"
+    }
+  },
+  "terminal": {
+    "terminal-first.json": {
+      "exitCode": 0,
+      "finishedAtEpoch": 1794440287.5356853
+    },
+    "terminal-restart.json": {
+      "exitCode": 0,
+      "finishedAtEpoch": 1794440293.509859
+    },
+    "terminal-frozen.json": {
+      "exitCode": 0,
+      "finishedAtEpoch": 1794440299.4824834
+    }
+  },
+  "artifactPins": {
+    "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+    "mods/villagers-0.4.1-dev.jar": "ab87ea37fb2ace3788c1be2e4235c66e09882c9805762af1f660108ed193ef20",
+    "mods/language-probe.jar": "a2b2aeec72b7759a2f8c91275e6b59ec6d8b43e122402fa653fbd84f7460e56d"
+  },
+  "baseline": {
+    "runtime": "language-teaching-v3",
+    "productionJarSha256": "ab87ea37fb2ace3788c1be2e4235c66e09882c9805762af1f660108ed193ef20",
+    "sourceArchiveSha256": "c128abb6c744277ba9a5505f67edcab9ab9095b4064408c0fb011a2c782d7e9f",
+    "worldUsage": "Read-only compiled classes, source archive, libraries and mods. Baseline world is never opened."
+  },
+  "sourceArchiveSha256": "11ae37acbb57c10c73ceca1808e770cb3c00b38e1c17985d9d7446f79df4a052",
+  "sweepSha256": "ecca28060879fd30b8d61bd80667164fbd75eed04b10aa80e1a2d7f346b0d17e",
+  "archivedProbeSourcesMatchWorkingFiles": true,
+  "compiledMainClassesExactlyMatchExecutedJar": true,
+  "priorExperiment": "language-culture-v1 passed; v2 adds fixed full/compact held-out benchmarks so comparisons do not depend on the current teacher convention",
+  "limitations": [
+    "900 learner episodes are nested in 180 staged cohorts across 12 seeds, not 900 independent populations",
+    "Syntax-only cohort sweep normalizes explicit lexical priors and controlled eight-example exposure; no claim of natural survival, reproduction, demographic fitness or semantic invention",
+    "Supported-first-use deliberately exercises an engine-authored omission option; it is not discovery of a new grammatical category",
+    "Native chain has four stationary NoAI bodies, declared lexical priors, controlled attention and two setup native injuries; no unobserved natural social contact or biological generations claimed",
+    "The native topology constrains joint visual grounding; it is not an audio occlusion/ASR benchmark",
+    "No population-scale performance, client auditory quality or unrestricted artificial life claim"
+  ]
+}

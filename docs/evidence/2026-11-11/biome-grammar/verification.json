@@ -1,0 +1,256 @@
+{
+  "goal": "Biome-based compositional language and grammar with sound-only interpretation and bounded contextual learning",
+  "status": "verified-bounded-engine",
+  "runtime": "/home/cmkrist/Documents/Villagers/runs/language-grammar-v4",
+  "java": {
+    "tests": 583,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "python": {
+    "tests": 17,
+    "passed": true
+  },
+  "native": {
+    "status": "passed",
+    "wrongInterpretationPreventedHandoff": true,
+    "correctInterpretationTransferredRealBread": true,
+    "grammarChangedByActualSpeech": true,
+    "learnerAdoptedOVS": true,
+    "teacherAdoptedSVO": false,
+    "ticks": 800,
+    "fixture": "NEW peaceful walled platform, four provisioned adults at80TPS; requester starts4food, generous donor4bread; learner starts with teacher vocabulary but SVO grammar, teacher OVS. Controlled food-request calls reset request cooldown once between cases; donor lexical error repaired with explicit visible-food lessons. Teacher/learner encounter scheduled every100ticks, ordinary speech cooldown5seconds and hearing apply. No post-setup body, health, terrain, food or physics setters. Not a natural-language emergence, survival, scale or client-rendering claim."
+  },
+  "grammarTrace": [
+    {
+      "preferred": "SVO",
+      "grammar": {
+        "evidence": [
+          6,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "speakingOrder": "SVO"
+      },
+      "teacherGrammar": {
+        "evidence": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          0
+        ],
+        "speakingOrder": "OVS"
+      },
+      "tick": 100
+    },
+    {
+      "preferred": "SVO",
+      "grammar": {
+        "evidence": [
+          6,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "speakingOrder": "SVO"
+      },
+      "teacherGrammar": {
+        "evidence": [
+          1,
+          0,
+          0,
+          0,
+          6,
+          0
+        ],
+        "speakingOrder": "OVS"
+      },
+      "tick": 200
+    },
+    {
+      "preferred": "SVO",
+      "grammar": {
+        "evidence": [
+          6,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "speakingOrder": "SVO"
+      },
+      "teacherGrammar": {
+        "evidence": [
+          2,
+          0,
+          0,
+          0,
+          6,
+          0
+        ],
+        "speakingOrder": "OVS"
+      },
+      "tick": 300
+    },
+    {
+      "preferred": "SVO",
+      "grammar": {
+        "evidence": [
+          6,
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        "speakingOrder": "SVO"
+      },
+      "teacherGrammar": {
+        "evidence": [
+          3,
+          0,
+          0,
+          0,
+          6,
+          0
+        ],
+        "speakingOrder": "OVS"
+      },
+      "tick": 400
+    },
+    {
+      "preferred": "SVO",
+      "grammar": {
+        "evidence": [
+          6,
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        "speakingOrder": "SVO"
+      },
+      "teacherGrammar": {
+        "evidence": [
+          4,
+          0,
+          0,
+          0,
+          6,
+          0
+        ],
+        "speakingOrder": "OVS"
+      },
+      "tick": 500
+    },
+    {
+      "preferred": "SVO",
+      "grammar": {
+        "evidence": [
+          6,
+          0,
+          0,
+          0,
+          5,
+          0
+        ],
+        "speakingOrder": "SVO"
+      },
+      "teacherGrammar": {
+        "evidence": [
+          5,
+          0,
+          0,
+          0,
+          6,
+          0
+        ],
+        "speakingOrder": "OVS"
+      },
+      "tick": 600
+    },
+    {
+      "preferred": "SVO",
+      "grammar": {
+        "evidence": [
+          6,
+          0,
+          0,
+          0,
+          6,
+          0
+        ],
+        "speakingOrder": "SVO"
+      },
+      "teacherGrammar": {
+        "evidence": [
+          6,
+          0,
+          0,
+          0,
+          6,
+          0
+        ],
+        "speakingOrder": "OVS"
+      },
+      "tick": 700
+    },
+    {
+      "preferred": "OVS",
+      "grammar": {
+        "evidence": [
+          6,
+          0,
+          0,
+          0,
+          7,
+          0
+        ],
+        "speakingOrder": "OVS"
+      },
+      "teacherGrammar": {
+        "evidence": [
+          6,
+          0,
+          0,
+          0,
+          7,
+          0
+        ],
+        "speakingOrder": "OVS"
+      },
+      "tick": 800
+    }
+  ],
+  "restart": {
+    "status": "restart-passed",
+    "originalsVerifiedAtLoad": 4
+  },
+  "productionJarSha256": "7ab3d3668c067719544296ffdfd1ae6a0438111d9b9227e120359c867b7aaeb9",
+  "sameAsCurrentBuild": true,
+  "languageTestClasses": [
+    "local.villagers.language.GlossaryPersistenceTest",
+    "local.villagers.language.GlossaryTest",
+    "local.villagers.language.LanguageDevelopmentTest",
+    "local.villagers.language.LexiconTest",
+    "local.villagers.language.SentenceTest",
+    "local.villagers.mind.LanguagePersistenceTest"
+  ],
+  "limits": [
+    "Controlled provisioned server fixture, not a natural village or visual client acceptance",
+    "Authored grammatical orders; no spontaneous new grammar categories",
+    "Generic gossip no longer transfers hidden exact episodes or player reputations",
+    "No large-population performance or survival claim",
+    "Original society worlds never opened by this task"
+  ]
+}

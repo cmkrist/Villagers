@@ -19,10 +19,31 @@ final class AdventurePreparation {
     static final String NOMINATED = "villagers:adventurer";
     static boolean nominated(Mob mob) { return mob instanceof Villager && mob.entityTags().contains(NOMINATED); }
     static boolean pickaxe(Villager v) {
-        return v.getMainHandItem().is(ItemTags.PICKAXES) || v.getInventory().hasAnyMatching(s -> s.is(ItemTags.PICKAXES));
+        return v.getMainHandItem().is(ItemTags.PICKAXES) || v.getOffhandItem().is(ItemTags.PICKAXES)||v.getInventory().hasAnyMatching(s -> s.is(ItemTags.PICKAXES));
     }
     static boolean stonePickaxe(Villager v) {
-        return upgraded(v.getMainHandItem()) || v.getInventory().hasAnyMatching(AdventurePreparation::upgraded);
+        return upgraded(v.getMainHandItem())||upgraded(v.getOffhandItem())||v.getInventory().hasAnyMatching(AdventurePreparation::upgraded);
+    }
+    static int toolUses(net.minecraft.world.item.ItemStack item){return item.isEmpty()?0:item.isDamageableItem()?Math.max(0,item.getMaxDamage()-item.getDamageValue()):Integer.MAX_VALUE;}
+    static boolean reservePickaxe(Villager v){
+        return upgraded(v.getMainHandItem())&&toolUses(v.getMainHandItem())>8
+            ||upgraded(v.getOffhandItem())&&toolUses(v.getOffhandItem())>8
+            ||v.getInventory().hasAnyMatching(a->upgraded(a)&&toolUses(a)>8);
+    }
+    static boolean ironPickaxe(Villager v){return ironOrBetter(v.getMainHandItem())||ironOrBetter(v.getOffhandItem())||v.getInventory().hasAnyMatching(AdventurePreparation::ironOrBetter);}
+    static boolean reserveIronPickaxe(Villager v){
+        return ironOrBetter(v.getMainHandItem())&&toolUses(v.getMainHandItem())>8
+            ||ironOrBetter(v.getOffhandItem())&&toolUses(v.getOffhandItem())>8
+            ||v.getInventory().hasAnyMatching(a->ironOrBetter(a)&&toolUses(a)>8);
+    }
+    static boolean diamondPickaxe(Villager v){
+        return diamondOrBetter(v.getMainHandItem())||diamondOrBetter(v.getOffhandItem())||v.getInventory().hasAnyMatching(AdventurePreparation::diamondOrBetter);
+    }
+    private static boolean diamondOrBetter(net.minecraft.world.item.ItemStack a){
+        return a.is(net.minecraft.world.item.Items.DIAMOND_PICKAXE)||a.is(net.minecraft.world.item.Items.NETHERITE_PICKAXE);
+    }
+    private static boolean ironOrBetter(net.minecraft.world.item.ItemStack a){
+        return a.is(net.minecraft.world.item.Items.IRON_PICKAXE)||a.is(net.minecraft.world.item.Items.DIAMOND_PICKAXE)||a.is(net.minecraft.world.item.Items.NETHERITE_PICKAXE);
     }
     private static boolean upgraded(net.minecraft.world.item.ItemStack stack) {
         return stack.is(net.minecraft.world.item.Items.STONE_PICKAXE)||stack.is(net.minecraft.world.item.Items.IRON_PICKAXE)
@@ -85,13 +106,20 @@ final class AdventurePreparation {
     }
     static String work(ServerLevel level, Villager v, Session s, long now) {
         if (!nominated(v)) return null;
-        if (stonePickaxe(v)) { s.adventureStatus = "stone-tier pickaxe prepared"; s.woodBootstrap.goal=null; return null; }
         if (v.isBaby() || v.isSleeping() || v.isTrading() || v.isOnFire() || v.isInWater() || level.isDarkOutside()
             || s.mind.foodLevel() < 14 || v.getHealth() < .9*v.getMaxHealth() || s.mind.fatigue() >= .6) {
             s.adventureStatus = "recovering before adventure preparation"; return null;
         }
+        if(stonePickaxe(v)){s.woodBootstrap.goal=null;var iron=AdventureIron.work(level,v,s,now);s.adventureStatus=s.iron.activity;return iron;}
         if (pickaxe(v) && WoodCrafting.stoneCount(v.getInventory())<3) {
-            var mining=AdventureMining.work(level,v,s,now);s.adventureStatus=s.mining.status;return mining;
+            var mining=AdventureMining.work(level,v,s,now);
+            if(mining==null&&s.mining.target==null){
+                var wood=WoodBootstrap.prepareUpgradeWood(level,v,s,now);
+                if(wood!=null){s.adventureStatus=s.woodBootstrap.status;return wood;}
+                var quarry=AdventureQuarry.work(level,v,s,now);
+                if(quarry!=null){s.adventureStatus=s.quarry.activity;return quarry;}
+            }
+            s.adventureStatus=s.mining.status;return mining;
         }
         var work = WoodBootstrap.work(level,v,s,pickaxe(v)?WoodBootstrap.Goal.STONE_PICKAXE:WoodBootstrap.Goal.PICKAXE,now);
         s.adventureStatus = s.woodBootstrap.status;

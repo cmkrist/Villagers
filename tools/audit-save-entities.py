@@ -79,6 +79,8 @@ def main():
                                    'health': entity.get('Health', entity.get('health')), 'tags': entity.get('Tags', entity.get('tags', [])),
                                    'noAI': bool(entity.get('NoAI', False)), 'invulnerable': bool(entity.get('Invulnerable', False)),
                                    'age': entity.get('Age', entity.get('age', 0)),
+                                   'attributes': entity.get('attributes', entity.get('Attributes', [])),
+                                   'effects': entity.get('active_effects', entity.get('ActiveEffects', [])),
                                    'vehicle': vehicle,
                                    'inventory': entity.get('Inventory', entity.get('inventory', [])), 'equipment': entity.get('equipment', {}),
                                    'meetingPoint': entity.get('Brain', {}).get('memories', {}).get('minecraft:meeting_point'),

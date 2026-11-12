@@ -17,8 +17,11 @@ import java.util.UUID;
  * other. Words are global, not per village, so a word that means different things in two villages stays
  * ambiguous until the player unifies them. Immutable.
  */
-public record Glossary(int schemaVersion, UUID player, List<WordEvidence> words) {
-    public static final int SCHEMA_VERSION = 1;
+public record Glossary(int schemaVersion, UUID player, List<WordEvidence> words, Grammar grammar, Referents referents, WordFormation formation) {
+    public Glossary(int schemaVersion,UUID player,List<WordEvidence> words,Grammar grammar,Referents referents){this(schemaVersion,player,words,grammar,referents,WordFormation.empty());}
+    public Glossary(int schemaVersion,UUID player,List<WordEvidence> words,Grammar grammar){this(schemaVersion,player,words,grammar,Referents.empty());}
+    public Glossary(int schemaVersion, UUID player, List<WordEvidence> words) { this(schemaVersion, player, words, Grammar.empty()); }
+    public static final int SCHEMA_VERSION = 6;
     public static final int MAX_WORDS = 256;
     public static final int MAX_MEANINGS = 8;
     public static final int MIN_EVIDENCE = 3;
@@ -54,7 +57,11 @@ public record Glossary(int schemaVersion, UUID player, List<WordEvidence> words)
     }
 
     public Glossary {
-        if (schemaVersion != SCHEMA_VERSION) throw new IllegalArgumentException("Unsupported glossary schema " + schemaVersion);
+        if (schemaVersion < 1 || schemaVersion > SCHEMA_VERSION) throw new IllegalArgumentException("Unsupported glossary schema " + schemaVersion);
+        schemaVersion = SCHEMA_VERSION;
+        grammar = grammar == null ? Grammar.empty() : grammar;
+        referents = referents == null ? Referents.empty() : referents;
+        formation = formation == null ? WordFormation.empty() : formation;
         Objects.requireNonNull(player);
         words = List.copyOf(Objects.requireNonNull(words));
         if (words.size() > MAX_WORDS) throw new IllegalArgumentException("Too many glossary words");
@@ -65,15 +72,29 @@ public record Glossary(int schemaVersion, UUID player, List<WordEvidence> words)
     public static Glossary empty(UUID player) { return new Glossary(SCHEMA_VERSION, player, List.of()); }
 
     /** The understood meaning of a word, or null. */
-    public Concept translate(String word) {
+    public Concept atomicTranslate(String word) {
         for (WordEvidence evidence : words) if (evidence.word().equals(word)) return evidence.translation();
         return null;
     }
 
+    public Concept translate(String word){
+        Concept direct=atomicTranslate(word);
+        if(direct!=null&&WordFormation.roots(direct)==null)return direct;
+        var meanings=new java.util.HashSet<>(formation.meanings(word,this::rootWords));
+        if(direct!=null)meanings.add(direct);
+        return meanings.size()==1?meanings.iterator().next():null;
+    }
+    public List<String> rootWords(Concept concept){return words.stream().filter(e->e.translation()==concept).map(WordEvidence::word).limit(Lexicon.MAX_WORDS_PER_CONCEPT).toList();}
+    public Glossary withFormation(WordFormation next){return new Glossary(SCHEMA_VERSION,player,words,grammar,referents,next);}
+
+    public Glossary withGrammar(Grammar next) { return new Glossary(SCHEMA_VERSION, player, words, next, referents,formation); }
+
+    public Glossary withReferents(Referents next){return new Glossary(SCHEMA_VERSION,player,words,grammar,next,formation);}
+
     /** Hear {@code word} in a situation where the {@code context} concepts were apparent. */
     public Glossary hear(String word, Collection<Concept> context) {
         List<WordEvidence> next = observe(words, word, context);
-        return next == words ? this : new Glossary(SCHEMA_VERSION, player, next);
+        return next == words ? this : new Glossary(SCHEMA_VERSION, player, next, grammar, referents,formation);
     }
 
     /** Shared bounded cross-situational evidence for players and villagers; no intended meaning is supplied. */

@@ -1,0 +1,121 @@
+{
+  "runtime": "runs/native-parent-edge-care-v287",
+  "kind": "copied-world only",
+  "population": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "terminal": {
+    "pid": 2220280,
+    "exitCode": 0
+  },
+  "observation": {
+    "status": "failed",
+    "stage": "health_stop",
+    "elapsed": 5137,
+    "gameTime": 318648,
+    "actor": "2a526eee-ec74-45bf-aac8-04c2323a1755",
+    "health": 1.0
+  },
+  "adventurer": {
+    "gameTime": 318631,
+    "actors": [
+      {
+        "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+        "armor": {
+          "nextPiece": "CHEST",
+          "ready": false,
+          "ironTarget": 8,
+          "lastReceipt": {},
+          "crafted": 0,
+          "equipped": 0
+        },
+        "inventory": [
+          "1 minecraft:stone_pickaxe",
+          "1 minecraft:wooden_hoe",
+          "30 minecraft:dirt",
+          "3 minecraft:bread",
+          "2 minecraft:carrot",
+          "4 minecraft:stick",
+          "1 minecraft:raw_iron",
+          "0 minecraft:air"
+        ],
+        "iron": {
+          "ironTaken": 3,
+          "passage": {
+            "activity": "waiting to check remaining recorded mining junctions",
+            "part": 0,
+            "retainedFloors": 92,
+            "root": "-466, 56, -375",
+            "depth": 0,
+            "turns": 6,
+            "reselect": true,
+            "face": "-467, 56, -375",
+            "mode": "level",
+            "faceBlock": "Block{minecraft:andesite}",
+            "retainedEntries": 1,
+            "exhaustedEntries": 0,
+            "stepsWithoutDepth": 15,
+            "waterSeals": {
+              "active": false,
+              "activity": "no water sealing job",
+              "lastReceipt": {},
+              "placed": 0
+            },
+            "foundations": 0,
+            "lastFoundation": {},
+            "exhausted": false,
+            "failedScans": 46,
+            "entry": "-480, 63, -379",
+            "frontier": "",
+            "backtracks": 1,
+            "lastRoute": {
+              "actor": "(-465.6424471214327, 56.0, -379.5254235988953)",
+              "nodes": 34,
+              "gameTime": 314385,
+              "end": "-464, 58, -374",
+              "target": "-464, 58, -374",
+              "safe": true
+            },
+            "frontierSearch": {
+              "queries": 1,
+              "activity": "waiting for fair junction-path admission",
+              "candidates": 19
+            }
+          },
+          "plannedSite": "",
+          "lastApproach": {},
+          "lastReceipt": {},
+          "loadedOre": 3,
+          "activity": "waiting to check remaining recorded mining junctions",
+          "furnace": "-463, 63, -376",
+          "crafted": 0,
+          "fuelStored": true
+        },
+        "ageTicks": 255173,
+        "health": 20.0,
+        "mainhand": "1 minecraft:iron_pickaxe",
+        "position": "(-465.4709716542747, 56.0, -374.72751765329014)",
+        "navigation": {
+          "wanted": [
+            -465.5,
+            56.0,
+            -374.5
+          ],
+          "position": "(-465.4709716542747, 56.0, -374.72751765329014)",
+          "onGround": true,
+          "path": {},
+          "velocity": "(0.0, -0.0784000015258789, 0.0)"
+        },
+        "food": 20
+      }
+    ],
+    "elapsed": 5120
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "scope": "Copied-world birth proof only. Primary remains stopped at 196344. No long-term food stability or primary birth claimed.",
+  "gameTime": 204384,
+  "elapsedTicks": 8040,
+  "parents": [
+    {
+      "id": "0e6136f0-9f73-44de-a539-62c30a83f878",
+      "name": "Fern-0e61",
+      "health": 24.0,
+      "food": 17,
+      "lastBirth": {
+        "nursery": "-660, 64, -628",
+        "breadBeforeB": 6,
+        "breadBeforeA": 6,
+        "breadAfterB": 3,
+        "breadAfterA": 3,
+        "parentB": "0e6136f0-9f73-44de-a539-62c30a83f878",
+        "parentA": "d485788b-10c9-4407-8e58-571b21ae01d2",
+        "child": "2390dde7-d648-439f-8501-61959efefca7",
+        "gameTime": 204384
+      }
+    },
+    {
+      "id": "d485788b-10c9-4407-8e58-571b21ae01d2",
+      "name": "Juniper-d485",
+      "health": 24.0,
+      "food": 20,
+      "lastBirth": {
+        "nursery": "-660, 64, -628",
+        "breadBeforeB": 6,
+        "breadBeforeA": 6,
+        "breadAfterB": 3,
+        "breadAfterA": 3,
+        "parentB": "0e6136f0-9f73-44de-a539-62c30a83f878",
+        "parentA": "d485788b-10c9-4407-8e58-571b21ae01d2",
+        "child": "2390dde7-d648-439f-8501-61959efefca7",
+        "gameTime": 204384
+      }
+    }
+  ],
+  "child": {
+    "species": "minecraft:pillager",
+    "name": "Pip-2390",
+    "learningUpdates": 0,
+    "fatigue": 0.1,
+    "activity": "settling in",
+    "family": {
+      "generation": 1,
+      "ageTicks": 0,
+      "attempts": 0,
+      "nursery": "-660, 64, -628",
+      "activity": "not considering a family",
+      "juvenile": true,
+      "blocked": "",
+      "lastBirth": {},
+      "breedingEnabled": true,
+      "nextBedSearch": 0,
+      "availableNurseries": []
+    },
+    "memories": [],
+    "id": "2390dde7-d648-439f-8501-61959efefca7",
+    "food": 20,
+    "foodWork": {
+      "blocked": [],
+      "crafted": 0,
+      "target": "",
+      "repeatHarvests": 0,
+      "shared": 0,
+      "harvested": 0
+    },
+    "health": 24.0,
+    "campWork": {
+      "route": "none",
+      "transfers": 0,
+      "inspections": 0,
+      "reusedBeds": {
+        "routeRejections": 0,
+        "lastReceipt": {},
+        "collected": 0,
+        "activity": "no bunk job"
+      },
+      "lastReceipt": {},
+      "target": "",
+      "access": {
+        "bed": "",
+        "lastFailure": {},
+        "activity": "no bunkhouse access work",
+        "lastReceipt": {},
+        "step": 0,
+        "blocks": 0
+      },
+      "activity": "no camp work",
+      "beds": 0,
+      "recipes": 0,
+      "bedSite": "",
+      "bedApproach": {},
+      "fallenBeds": 0,
+      "fallenAudit": {},
+      "fallenRoute": {}
+    },
+    "campMeals": {
+      "delivered": 0,
+      "requests": 0,
+      "lastReceipt": {},
+      "rejectedPaths": 0,
+      "activity": "no camp meal request",
+      "lastApproach": {},
+      "waiting": 0,
+      "patrol": {
+        "lastRoute": {},
+        "visited": 0,
+        "target": "",
+        "until": 0
+      }
+    },
+    "company": {
+      "target": "",
+      "contacts": 0
+    },
+    "mainhand": "0 minecraft:air",
+    "offhand": "0 minecraft:air",
+    "inventory": [
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air",
+      "0 minecraft:air"
+    ],
+    "position": "-654, 64, -623",
+    "observedTicks": 0
+  },
+  "savedChildBody": {
+    "id": "2390dde7-d648-439f-8501-61959efefca7",
+    "type": "minecraft:pillager",
+    "position": [
+      -653.5352763946946,
+      64.0,
+      -622.8684865709444
+    ],
+    "health": 24.0,
+    "tags": [
+      "villagers:illager_bed:-181144543248320",
+      "villagers:native_illager_camp:-175646985019319",
+      "villagers:creature_managed",
+      "villagers:illager_juvenile"
+    ],
+    "noAI": false,
+    "invulnerable": false,
+    "age": 0,
+    "attributes": [
+      {
+        "base": 0.5,
+        "id": "minecraft:scale"
+      }
+    ],
+    "effects": [],
+    "vehicle": null,
+    "inventory": [],
+    "equipment": {},
+    "meetingPoint": null,
+    "dimensionFolder": "dimensions/minecraft/overworld/entities"
+  },
+  "campVillagers": 14,
+  "minimumCampVillagerHealth": 20.0,
+  "minimumCampVillagerFood": 12,
+  "exit": {
+    "pid": 1103690,
+    "exitCode": 0
+  },
+  "sourceUnchangedVerification": "Copied-world rehearsal PID 1103690: /home/cmkrist/Documents/Villagers/runs/native-current-complete-home-v1\nCOPIED-WORLD REHEARSAL PASS; primary unchanged: /home/cmkrist/Documents/Villagers/runs/native-current-complete-home-v1/native-illager-habitats.json"
+}

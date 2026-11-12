@@ -1,0 +1,404 @@
+{
+  "scope": "Copied-world frozen native searches; final-neighbor exclusions. Not a rescue or full-game victory proof.",
+  "before": {
+    "runtime": "runs/worker-sage-dry-exit-nodes-20261111",
+    "jarSHA256": "18a79352cdee51cdca3591dbfbd23a030a7bc0518ecc0bf35ad4e327040eb4c9",
+    "eligibleStands": 20,
+    "queries": 40,
+    "completeRoutes": 20,
+    "dryValidRoutes": 0,
+    "alternativeFood": {
+      "found": false
+    },
+    "population": {
+      "beforeHumanoids": 192,
+      "afterHumanoids": 192,
+      "missingOriginalIds": [],
+      "newHumanoidIds": [],
+      "beforeLivingHumanoids": 192,
+      "afterLivingHumanoids": 192,
+      "newlyDeadOrMissingIds": [],
+      "nonlivingAfterIds": []
+    },
+    "terminal": {
+      "pid": 2238960,
+      "exitCode": 0
+    }
+  },
+  "after": {
+    "runtime": "runs/worker-sage-final-neighbor-20261111",
+    "jarSHA256": "299159156deb26be68ff6f6ee7a11fdb944959dd930b050429878acf9cefc01f",
+    "eligibleStands": 20,
+    "queries": 40,
+    "completeRoutes": 0,
+    "dryValidRoutes": 0,
+    "alternativeFood": {
+      "found": false
+    },
+    "population": {
+      "beforeHumanoids": 192,
+      "afterHumanoids": 192,
+      "missingOriginalIds": [],
+      "newHumanoidIds": [],
+      "beforeLivingHumanoids": 192,
+      "afterLivingHumanoids": 192,
+      "newlyDeadOrMissingIds": [],
+      "nonlivingAfterIds": []
+    },
+    "terminal": {
+      "pid": 2240659,
+      "exitCode": 0
+    }
+  },
+  "classComparison": {
+    "local/villagers/NativePathLimits.class": {
+      "beforeSHA256": "bb7f432362e96844c64cc06c7e3bdc2cc373eac5136e67d0c8c719feb01330a8",
+      "afterSHA256": "bb7f432362e96844c64cc06c7e3bdc2cc373eac5136e67d0c8c719feb01330a8",
+      "unchanged": true
+    },
+    "local/villagers/mixin/WalkNodeEvaluatorMixin.class": {
+      "beforeSHA256": "6633dd39a5191426583003bd159110a3580f59d0454cd0b0257180a4eda59708",
+      "afterSHA256": "effa420d9ea68f07eb872a12f89b9c5584b6daaa4a8d2fc7ef18bd4858cad23d",
+      "unchanged": false
+    },
+    "local/villagers/mixin/PathNavigationMixin.class": {
+      "beforeSHA256": "8cf059e0e3ffd07135aaae55464cdfb881ac5a73fbf95f340b7a890fa31d33ac",
+      "afterSHA256": "8cf059e0e3ffd07135aaae55464cdfb881ac5a73fbf95f340b7a890fa31d33ac",
+      "unchanged": true
+    },
+    "local/villagers/NativeBodyRoutes.class": {
+      "beforeSHA256": "2f8471181c0e967f61f09701cdf3d0e50ef7d64c9395ffc654886e7ea0cbd90a",
+      "afterSHA256": "e666a530fc905e5eb5629777a2649a26dcb3c0227905baa7c560831270016e74",
+      "unchanged": false
+    }
+  },
+  "attributionLimit": "Current source also contains concurrent NativeBodyRoutes/storage/language changes. Do not attribute all gameplay outcomes solely to the neighbor filter.",
+  "fullCareReplay": {
+    "runtime": "runs/worker-final-neighbor-full-care-20261111",
+    "requestedTicks": 12000,
+    "stop": {
+      "gameTime": 319574,
+      "status": "failed",
+      "actor": "fad46718-2403-42a5-9067-b66e72485ec0",
+      "position": "(-679.4950416188611, 64.0, -622.4875000119209)",
+      "air": 300,
+      "elapsed": 6063,
+      "health": 1.0,
+      "stage": "health_stop"
+    },
+    "population": {
+      "beforeHumanoids": 192,
+      "afterHumanoids": 192,
+      "missingOriginalIds": [],
+      "newHumanoidIds": [],
+      "beforeLivingHumanoids": 192,
+      "afterLivingHumanoids": 192,
+      "newlyDeadOrMissingIds": [],
+      "nonlivingAfterIds": []
+    },
+    "actors": {
+      "fad46718-2403-42a5-9067-b66e72485ec0": {
+        "health": 1.0,
+        "stores": {
+          "activity": "following the native route to my food store",
+          "target": "",
+          "lastReceipt": {},
+          "routeBlocked": true,
+          "escape": {
+            "target": "",
+            "brokenFenceBlocks": 0,
+            "activity": "no cell escape",
+            "lastReceipt": {},
+            "workTicks": 0,
+            "brokenDoors": 0
+          },
+          "transfers": 0,
+          "mealRendezvous": {},
+          "lastPath": {
+            "store": "-691, 63, -624",
+            "stand": "-690, 63, -625",
+            "reaches": true,
+            "nodes": 13,
+            "end": "-690, 63, -625",
+            "gameTime": 319514,
+            "sharedBudget": false
+          }
+        },
+        "name": "Moss-fad4",
+        "position": "-680, 64, -623",
+        "body": {
+          "activity": "Moss-fad4 \u00b7 waiting for a safe cell-gate route (miserable)",
+          "fire": false,
+          "trading": false,
+          "passenger": false,
+          "water": false,
+          "baby": false,
+          "sleeping": false,
+          "home": "Home[dimension=minecraft:overworld, x=-664, y=64, z=-626]",
+          "ownedMeal": -1,
+          "gateWait": {
+            "door": "",
+            "until": 325514,
+            "stand": ""
+          }
+        },
+        "campMeals": {
+          "requests": 4,
+          "lastReceived": {}
+        },
+        "survival": {
+          "homePathPlans": 0,
+          "lastFloorRoute": {},
+          "floorRoutes": 0,
+          "partialHomeRoutes": 0,
+          "routeStalls": 0,
+          "refugeStandInspections": 0,
+          "lastEscapeRoute": {},
+          "centeringSuccesses": 0,
+          "centeringFailures": 0,
+          "centeringActive": false,
+          "intent": "NORMAL",
+          "recoveryUntil": 0,
+          "refugePathQueries": 0,
+          "centeringAttempts": 0,
+          "rejectedPaths": 0,
+          "lastRefugePlan": {},
+          "plans": 0,
+          "awaitLanding": false
+        },
+        "navigation": {
+          "onGround": true,
+          "path": {},
+          "velocity": "(0.0, -0.0784000015258789, 0.0)",
+          "wanted": [
+            -679.5,
+            63.0,
+            -621.5
+          ],
+          "position": "(-679.4950416188611, 64.0, -622.4875000119209)"
+        },
+        "food": 0,
+        "id": "fad46718-2403-42a5-9067-b66e72485ec0"
+      },
+      "2a526eee-ec74-45bf-aac8-04c2323a1755": {
+        "health": 20.0,
+        "stores": {
+          "activity": "collected a real stored meal",
+          "target": "",
+          "lastReceipt": {
+            "item": "minecraft:apple",
+            "moved": 1,
+            "sourceBefore": 2,
+            "container": "-844, 64, -781",
+            "sourceAfter": 1,
+            "gameTime": 315602
+          },
+          "routeBlocked": false,
+          "escape": {
+            "target": "",
+            "brokenFenceBlocks": 0,
+            "activity": "no cell escape",
+            "lastReceipt": {},
+            "workTicks": 0,
+            "brokenDoors": 0
+          },
+          "transfers": 3,
+          "mealRendezvous": {},
+          "lastPath": {
+            "store": "-844, 64, -781",
+            "stand": "-845, 64, -780",
+            "reaches": true,
+            "nodes": 4,
+            "end": "-845, 64, -780",
+            "gameTime": 315532,
+            "sharedBudget": false
+          }
+        },
+        "name": "Sage-2a52",
+        "position": "-845, 64, -780",
+        "body": {
+          "activity": "Sage-2a52 \u00b7 rest (unhappy)",
+          "fire": false,
+          "trading": false,
+          "passenger": false,
+          "water": false,
+          "baby": false,
+          "sleeping": false,
+          "home": "Home[dimension=minecraft:overworld, x=-819, y=64, z=-781]",
+          "ownedMeal": -1,
+          "gateWait": {
+            "door": "",
+            "until": 0,
+            "stand": ""
+          }
+        },
+        "campMeals": {
+          "requests": 0,
+          "lastReceived": {}
+        },
+        "survival": {
+          "homePathPlans": 5,
+          "lastFloorRoute": {},
+          "floorRoutes": 0,
+          "partialHomeRoutes": 5,
+          "routeStalls": 0,
+          "refugeStandInspections": 375,
+          "lastEscapeRoute": {},
+          "centeringSuccesses": 0,
+          "centeringFailures": 0,
+          "centeringActive": false,
+          "intent": "NORMAL",
+          "recoveryUntil": 0,
+          "refugePathQueries": 15,
+          "centeringAttempts": 0,
+          "rejectedPaths": 0,
+          "lastRefugePlan": {
+            "gameTime": 314902,
+            "position": [
+              -824.4999588612911,
+              63.0,
+              -751.3909499003291
+            ],
+            "bed": "-819, 64, -781",
+            "distance": 29.758802127141045,
+            "covered": true,
+            "inside": false,
+            "dusk": false,
+            "danger": false,
+            "nativeActivity": "work",
+            "clockTime": 314902,
+            "skyDarken": 0,
+            "raining": false,
+            "pathPresent": true,
+            "pathCanReach": false,
+            "pathNodes": 16,
+            "pathEnd": "-823, 62, -766",
+            "endDistance": 15.652475842498529,
+            "partialAccepted": true,
+            "bounded": true,
+            "homeReachable": true,
+            "homeSafe": true,
+            "blockedUntil": 0,
+            "guardianReachable": false,
+            "chosenIntent": "SHELTER"
+          },
+          "plans": 5,
+          "awaitLanding": false
+        },
+        "navigation": {
+          "onGround": true,
+          "path": {},
+          "velocity": "(0.0, -0.0784000015258789, 0.0)",
+          "wanted": [
+            -844.5,
+            64.0,
+            -779.5
+          ],
+          "position": "(-844.651986069829, 64.0, -779.5077311753204)"
+        },
+        "food": 14,
+        "id": "2a526eee-ec74-45bf-aac8-04c2323a1755"
+      }
+    },
+    "adventurer": {
+      "actors": [
+        {
+          "inventory": [
+            "1 minecraft:stone_pickaxe",
+            "1 minecraft:wooden_hoe",
+            "30 minecraft:dirt",
+            "3 minecraft:bread",
+            "2 minecraft:carrot",
+            "4 minecraft:stick",
+            "1 minecraft:raw_iron",
+            "0 minecraft:air"
+          ],
+          "iron": {
+            "lastApproach": {},
+            "lastReceipt": {},
+            "loadedOre": 3,
+            "activity": "walking down one retained mine step",
+            "furnace": "-463, 63, -376",
+            "crafted": 0,
+            "ironTaken": 3,
+            "passage": {
+              "activity": "walking down one retained mine step",
+              "part": 3,
+              "retainedFloors": 92,
+              "root": "-473, 58, -379",
+              "depth": 0,
+              "turns": 6,
+              "reselect": false,
+              "face": "-473, 57, -380",
+              "mode": "descending",
+              "faceBlock": "Block{minecraft:andesite}",
+              "retainedEntries": 1,
+              "exhaustedEntries": 0,
+              "stepsWithoutDepth": 15,
+              "waterSeals": {
+                "lastReceipt": {},
+                "placed": 0,
+                "active": false,
+                "activity": "no water sealing job"
+              },
+              "foundations": 0,
+              "lastFoundation": {},
+              "exhausted": false,
+              "failedScans": 0,
+              "entry": "-480, 63, -379",
+              "frontier": "",
+              "backtracks": 2,
+              "lastRoute": {
+                "end": "-473, 58, -379",
+                "target": "-473, 58, -379",
+                "safe": true,
+                "actor": "(-465.4709716542747, 56.0, -374.72751765329014)",
+                "nodes": 13,
+                "gameTime": 319008
+              },
+              "frontierSearch": {
+                "activity": "following a complete native path to a recorded junction",
+                "candidates": 19,
+                "queries": 2
+              }
+            },
+            "plannedSite": "",
+            "fuelStored": true
+          },
+          "ageTicks": 256096,
+          "health": 20.0,
+          "mainhand": "1 minecraft:iron_pickaxe",
+          "position": "(-472.34877384779736, 58.0, -378.43469777424)",
+          "navigation": {
+            "onGround": true,
+            "path": {},
+            "velocity": "(0.0, -0.0784000015258789, 0.0)",
+            "wanted": [
+              -472.5,
+              58.0,
+              -378.5
+            ],
+            "position": "(-472.34877384779736, 58.0, -378.43469777424)"
+          },
+          "food": 20,
+          "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+          "armor": {
+            "ready": false,
+            "ironTarget": 8,
+            "lastReceipt": {},
+            "crafted": 0,
+            "equipped": 0,
+            "nextPiece": "CHEST"
+          }
+        }
+      ],
+      "elapsed": 6040,
+      "gameTime": 319551
+    },
+    "terminal": {
+      "pid": 2242616,
+      "exitCode": 0
+    },
+    "outcome": "Stopped prelethally at Moss, not a pass. Sage fed through actual storage transactions. Main not advanced or replaced."
+  }
+}

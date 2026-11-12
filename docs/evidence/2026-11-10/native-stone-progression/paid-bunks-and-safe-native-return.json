@@ -1,0 +1,143 @@
+{
+  "scope": "Actual paid work; copied camp states remain unpromoted. No births or stone pickaxe verified in primary.",
+  "camp": {
+    "elapsed": 18000,
+    "gameTime": 109821,
+    "minVillagerHealth": 20.0,
+    "savedHumanoids": 179,
+    "actors": [
+      {
+        "id": "0e6136f0-9f73-44de-a539-62c30a83f878",
+        "health": 24.0,
+        "inventory": [
+          "2 minecraft:bread",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "beds": 0,
+        "fallenBeds": 0,
+        "lastReceipt": {
+          "gameTime": 106247,
+          "contents": [
+            "1 minecraft:egg",
+            "1 minecraft:egg",
+            "1 minecraft:emerald",
+            "1 minecraft:egg",
+            "1 minecraft:emerald",
+            "1 minecraft:egg",
+            "1 minecraft:egg"
+          ],
+          "inspected": "-676, 63, -641"
+        },
+        "family": {
+          "activity": "not ready for a child",
+          "juvenile": false,
+          "blocked": "",
+          "lastBirth": {},
+          "generation": 0,
+          "ageTicks": 17996,
+          "attempts": 0,
+          "nursery": "-660, 64, -629",
+          "breedingEnabled": true,
+          "nextBedSearch": 109827,
+          "availableNurseries": [
+            "-664, 64, -630",
+            "-664, 64, -632",
+            "-663, 65, -638"
+          ]
+        }
+      },
+      {
+        "id": "d485788b-10c9-4407-8e58-571b21ae01d2",
+        "health": 24.0,
+        "inventory": [
+          "0 minecraft:air",
+          "3 minecraft:bread",
+          "9 minecraft:wheat",
+          "0 minecraft:air",
+          "0 minecraft:air"
+        ],
+        "beds": 2,
+        "fallenBeds": 2,
+        "lastReceipt": {
+          "foot": "-663, 65, -637",
+          "bedItemsBefore": 1,
+          "bedItemsAfter": 0,
+          "gameTime": 96520,
+          "head": "-663, 65, -638"
+        },
+        "family": {
+          "activity": "not ready for a child",
+          "juvenile": false,
+          "blocked": "",
+          "lastBirth": {},
+          "generation": 0,
+          "ageTicks": 17999,
+          "attempts": 0,
+          "nursery": "",
+          "breedingEnabled": true,
+          "nextBedSearch": 109830,
+          "availableNurseries": [
+            "-664, 64, -630",
+            "-664, 64, -632",
+            "-663, 65, -638"
+          ]
+        }
+      }
+    ],
+    "beforeRouteAudit": {
+      "actor": "d485788b-10c9-4407-8e58-571b21ae01d2",
+      "position": "-660, 72, -644",
+      "beds": [
+        {
+          "position": "-664, 65, -632",
+          "nativePathNodes": null
+        },
+        {
+          "position": "-664, 65, -630",
+          "nativePathNodes": null
+        },
+        {
+          "position": "-664, 64, -632",
+          "nativePathNodes": 0
+        },
+        {
+          "position": "-664, 64, -630",
+          "nativePathNodes": 0
+        },
+        {
+          "position": "-652, 74, -632",
+          "nativePathNodes": 0
+        }
+      ]
+    },
+    "afterRouteAudit": {
+      "actor": "d485788b-10c9-4407-8e58-571b21ae01d2",
+      "position": "-660, 72, -644",
+      "beds": [
+        {
+          "position": "-664, 65, -632",
+          "nativePathNodes": null
+        },
+        {
+          "position": "-664, 65, -630",
+          "nativePathNodes": null
+        },
+        {
+          "position": "-664, 64, -632",
+          "nativePathNodes": 35
+        },
+        {
+          "position": "-664, 64, -630",
+          "nativePathNodes": 32
+        },
+        {
+          "position": "-652, 74, -632",
+          "nativePathNodes": 0
+        }
+      ]
+    }
+  }
+}

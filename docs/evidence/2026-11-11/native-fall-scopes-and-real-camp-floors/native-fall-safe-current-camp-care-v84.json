@@ -1,0 +1,290 @@
+{
+  "runtime": "runs/native-fall-safe-current-camp-care-v84",
+  "terminal.json": {
+    "pid": 1801391,
+    "exitCode": 0
+  },
+  "population-preservation.json": {
+    "beforeHumanoids": 187,
+    "afterHumanoids": 187,
+    "missingOriginalIds": [],
+    "newHumanoidIds": []
+  },
+  "rehearsal": {
+    "status": "failed",
+    "stage": "health_stop",
+    "elapsed": 5120,
+    "gameTime": 276088,
+    "criticalVillagers": [
+      "e028b7be-3415-4f44-8c0e-d73e81ea7fd4"
+    ],
+    "parents": [
+      {
+        "id": "460ab4b6-1522-4504-9673-25fd503e0610",
+        "name": "Pip-460a",
+        "health": 24.0,
+        "food": 17,
+        "activity": "investigating a loud native camp call",
+        "family": {
+          "juvenile": false,
+          "blocked": "",
+          "lastBirth": {},
+          "generation": 0,
+          "ageTicks": 21774,
+          "attempts": 0,
+          "nursery": "-664, 64, -630",
+          "activity": "not ready for a child",
+          "breedingEnabled": true,
+          "nextBedSearch": 276976,
+          "availableNurseries": []
+        },
+        "campMeals": {
+          "calls": {
+            "lastHeard": {
+              "volume": 6.0,
+              "position": "-598, 64, -614",
+              "heardRange": 72.0,
+              "nativeRange": 96.0,
+              "distance": 23.074116,
+              "sound": "minecraft:entity.villager.no",
+              "speaker": "e3de735e-23c0-421b-a93d-34e386a06ff2",
+              "gameTime": 275680
+            },
+            "heard": 26,
+            "waiting": 1,
+            "target": "-597, 64, -635",
+            "bodyRoutes": {
+              "searches": 180,
+              "blockedNodes": 8285,
+              "lastReceipt": {
+                "action": "native route search avoids the actual neighboring living bodies",
+                "from": "(-610.5101799209317, 65.0, -600.7239408217819)",
+                "bodies": [
+                  "07f6215c-4046-4fe9-b724-bb93106a5e2f",
+                  "37cee7cf-2773-42b0-9d60-3d0c795c1765"
+                ],
+                "gameTime": 276076
+              }
+            }
+          },
+          "patrol": {
+            "until": 0,
+            "cages": 0,
+            "lastRoute": {
+              "end": "-654, 64, -598",
+              "gameTime": 272126,
+              "nodes": 19,
+              "actor": "(-637.7883898634839, 64.0, -601.7817860009613)",
+              "moved": true,
+              "target": "-656, 64, -596",
+              "patrolCeiling": 66
+            },
+            "target": "",
+            "visited": 6
+          },
+          "lastApproach": {
+            "nodes": 0,
+            "actor": "(-592.2736345133558, 63.0, -591.2753167810096)",
+            "stands": 13,
+            "recipient": "(-597.0892956695011, 64.0, -613.8261620125726)",
+            "end": "",
+            "gameTime": 275906
+          },
+          "waiting": 4,
+          "hatch": {
+            "lastReceipt": {
+              "nativeWorldDrops": true,
+              "position": "-590, 64, -588",
+              "tool": "1 minecraft:crossbow",
+              "upperFenceRetained": true,
+              "duration": 60,
+              "gameTime": 275806
+            },
+            "target": "",
+            "opened": 2
+          },
+          "lastReceipt": {
+            "giverBefore": 2,
+            "receiverBefore": 0,
+            "receiverAfter": 1,
+            "contact": "(-588.1529808591151, 64.5, -587.1835622225362)",
+            "item": "minecraft:bread",
+            "giverAfter": 1,
+            "to": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+            "from": "460ab4b6-1522-4504-9673-25fd503e0610",
+            "distance": 2.602279,
+            "gameTime": 275856
+          },
+          "rejectedPaths": 7,
+          "delivered": 3,
+          "requests": 4,
+          "activity": "investigating a loud native camp call"
+        },
+        "campWork": {
+          "beds": 1,
+          "recipes": 0,
+          "route": "none",
+          "transfers": 0,
+          "inspections": 0,
+          "reusedBeds": {
+            "routeRejections": 2,
+            "lastReceipt": {},
+            "collected": 0,
+            "activity": "no reusable free upper bunk nearby"
+          },
+          "lastReceipt": {},
+          "target": "",
+          "access": {
+            "blocks": 0,
+            "bed": "",
+            "lastFailure": {},
+            "activity": "walking a useful native route toward the blocked bunkhouse",
+            "lastReceipt": {},
+            "step": 0
+          },
+          "activity": "walking a useful native route toward the blocked bunkhouse",
+          "bedSite": "",
+          "bedApproach": {},
+          "fallenBeds": 0,
+          "fallenAudit": {},
+          "fallenRoute": {}
+        },
+        "foodWork": {
+          "shared": 0,
+          "harvested": 0,
+          "blocked": [],
+          "crafted": 1,
+          "target": "",
+          "repeatHarvests": 0
+        }
+      },
+      {
+        "id": "e9b7b192-009b-4158-bc2d-1a63456a6f91",
+        "name": "Juniper-e9b7",
+        "health": 24.0,
+        "food": 20,
+        "activity": "finishing the clear native meal handoff stand",
+        "family": {
+          "juvenile": false,
+          "blocked": "",
+          "lastBirth": {},
+          "generation": 0,
+          "ageTicks": 21765,
+          "attempts": 0,
+          "nursery": "-660, 64, -629",
+          "activity": "not ready for a child",
+          "breedingEnabled": true,
+          "nextBedSearch": 276969,
+          "availableNurseries": []
+        },
+        "campMeals": {
+          "calls": {
+            "lastHeard": {
+              "volume": 6.0,
+              "position": "-680, 64, -629",
+              "heardRange": 72.0,
+              "nativeRange": 96.0,
+              "distance": 71.68067,
+              "sound": "minecraft:entity.villager.no",
+              "speaker": "e028b7be-3415-4f44-8c0e-d73e81ea7fd4",
+              "gameTime": 275783
+            },
+            "heard": 29,
+            "waiting": 5,
+            "target": "",
+            "bodyRoutes": {
+              "searches": 185,
+              "blockedNodes": 6830,
+              "lastReceipt": {
+                "action": "native route search avoids the actual neighboring living bodies",
+                "from": "(-599.5010351300202, 63.0, -614.6040583374981)",
+                "bodies": [
+                  "3d0e66ad-79dd-4236-8296-f62192e6d93c",
+                  "e3de735e-23c0-421b-a93d-34e386a06ff2",
+                  "4c3c0db4-75ea-42f5-8f91-b1c4814944d7"
+                ],
+                "gameTime": 275959
+              }
+            }
+          },
+          "patrol": {
+            "until": 274589,
+            "cages": 4,
+            "lastRoute": {
+              "end": "-608, 63, -625",
+              "gameTime": 273939,
+              "nodes": 18,
+              "actor": "(-611.5023911108482, 65.0, -640.9416856995997)",
+              "moved": true,
+              "target": "-606, 63, -623",
+              "patrolCeiling": 66
+            },
+            "target": "-606, 63, -623",
+            "visited": 23
+          },
+          "lastApproach": {
+            "nodes": 1,
+            "actor": "(-599.5010351300202, 63.0, -614.6040583374981)",
+            "stands": 17,
+            "recipient": "(-597.6941021526025, 64.0, -613.1540914690145)",
+            "end": "-600, 63, -615",
+            "gameTime": 275959
+          },
+          "waiting": 4,
+          "hatch": {
+            "lastReceipt": {},
+            "target": "",
+            "opened": 0
+          },
+          "lastReceipt": {},
+          "rejectedPaths": 4,
+          "delivered": 0,
+          "requests": 4,
+          "activity": "finishing the clear native meal handoff stand"
+        },
+        "campWork": {
+          "beds": 0,
+          "recipes": 0,
+          "route": "no safe complete storage path",
+          "transfers": 0,
+          "inspections": 0,
+          "reusedBeds": {
+            "routeRejections": 3,
+            "lastReceipt": {},
+            "collected": 0,
+            "activity": "no reusable free upper bunk nearby"
+          },
+          "lastReceipt": {},
+          "target": "",
+          "access": {
+            "blocks": 0,
+            "bed": "",
+            "lastFailure": {},
+            "activity": "surveying access to a known free bunk",
+            "lastReceipt": {},
+            "step": 0
+          },
+          "activity": "no safe camp supply survey route",
+          "bedSite": "",
+          "bedApproach": {},
+          "fallenBeds": 0,
+          "fallenAudit": {},
+          "fallenRoute": {}
+        },
+        "foodWork": {
+          "shared": 0,
+          "harvested": 0,
+          "blocked": [],
+          "crafted": 2,
+          "target": "",
+          "repeatHarvests": 0
+        }
+      }
+    ]
+  },
+  "frozen": {
+    "status": "failed",
+    "gameTime": 276088,
+    "founders": []
+  }
+}

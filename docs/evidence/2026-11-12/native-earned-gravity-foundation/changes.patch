@@ -1,0 +1,437 @@
+--- base/src/main/java/local/villagers/MineGravityFoundation.java
++++ candidate/src/main/java/local/villagers/MineGravityFoundation.java
+@@ -0,0 +1,180 @@
++package local.villagers;
++
++import java.util.*;
++import local.villagers.capability.CapabilityPermissions.Capability;
++import net.minecraft.core.*;
++import net.minecraft.server.level.ServerLevel;
++import net.minecraft.world.InteractionHand;
++import net.minecraft.world.entity.npc.villager.Villager;
++import net.minecraft.world.entity.item.FallingBlockEntity;
++import net.minecraft.world.item.*;
++import net.minecraft.world.level.ClipContext;
++import net.minecraft.world.level.block.*;
++import net.minecraft.world.level.gameevent.GameEvent;
++import net.minecraft.world.phys.*;
++
++/** A funded falling-block column, excavated and placed from a retained dry floor. */
++final class MineGravityFoundation {
++    private static final String TAG="villagers:mine_gravity_fill:";
++    static final int MAX_DEPTH=4;
++    record Plan(BlockPos origin,Direction direction,BlockPos foot,List<BlockPos> column){}
++    static final class State {
++        Plan plan;BlockPos pending;Block pendingBlock;long until,placedAt;int paid,settled,completed;
++        String activity="no gravity foundation";Map<String,Object> receipt=Map.of();
++        void clear(){plan=null;pending=null;pendingBlock=null;}
++        Map<String,Object> status(){return Map.of("active",plan!=null,"paid",paid,"settled",settled,"completed",completed,
++            "activity",activity,"pending",pending==null?"":pending.toShortString(),"lastReceipt",receipt);}
++    }
++    static boolean retained(Villager v,BlockPos p){return v.entityTags().contains(TAG+p.asLong());}
++    /** A settled paid column stays safe beside a face, but never when removing its support. */
++    static boolean stableNeighbor(ServerLevel level,Villager v,BlockPos excavation,BlockPos neighbor){
++        if(!retained(v,neighbor)||neighbor.below().equals(excavation))return false;
++        var at=neighbor;
++        for(int depth=0;depth<MAX_DEPTH;depth++){
++            var below=at.below();if(below.equals(excavation)||!level.isLoaded(below))return false;
++            var b=level.getBlockState(below);
++            if(!b.getFluidState().isEmpty()||!b.isFaceSturdy(level,below,Direction.UP))return false;
++            if(!(b.getBlock() instanceof FallingBlock))return true;
++            if(!retained(v,below))return false;at=below;
++        }
++        return false;
++    }
++    static Map<String,Object> survey(ServerLevel level,Villager v,Session s){
++        var jobs=new ArrayList<Map<String,Object>>();
++        for(var floor:s.mineStair.floors)for(var direction:Direction.Plane.HORIZONTAL){
++            if(floor.above().distSqr(v.blockPosition())>32*32)continue;
++            var plan=preview(level,v,s,floor.above(),direction);
++            if(plan!=null&&jobs.size()<16)jobs.add(Map.of("origin",plan.origin().toShortString(),"direction",direction.name(),
++                "foot",plan.foot().toShortString(),"cost",plan.column().size(),"settlement",plan.column().getLast().toShortString()));
++        }
++        return Map.of("ownedFill",MineFill.count(v.getInventory()),"fundedJobs",jobs);
++    }
++    static boolean funded(int depth,int owned){return depth>=1&&depth<=MAX_DEPTH&&owned>=depth;}
++    static List<BlockPos> column(BlockPos floor,int depth){
++        if(depth<1||depth>MAX_DEPTH)throw new IllegalArgumentException("Invalid fill depth");
++        return java.util.stream.IntStream.range(0,depth).mapToObj(floor::below).toList();
++    }
++    private static List<BlockPos> openColumn(ServerLevel level,BlockPos floor){
++        for(int depth=1;depth<=MAX_DEPTH;depth++){
++            var p=floor.below(depth-1);var below=p.below();
++            if(!level.isLoaded(p)||!level.isLoaded(below))return List.of();
++            var b=level.getBlockState(p);
++            if(!(b.isAir()||b.is(Blocks.WATER)))return List.of();
++            var support=level.getBlockState(below);
++            if(support.isFaceSturdy(level,below,Direction.UP)&&support.getFluidState().isEmpty())return column(floor,depth);
++        }
++        return List.of();
++    }
++    private static boolean allowed(ServerLevel level,Villager v,Session s){
++        return NativeRegionsScenario.nativeRegions(level)&&Villagers.config().nativeAdventureQuarry()&&AdventurePreparation.nominated(v)
++            &&AdventureActions.PERMISSIONS.allows(Capability.MINE_ADVENTURE_PASSAGE)
++            &&AdventureActions.PERMISSIONS.allows(Capability.REPAIR_QUARRY_ACCESS)&&WoodBootstrap.safe(level,v,s)&&s.mind.foodLevel()>=14;
++    }
++    private static BlockHitResult predictedContact(ServerLevel level,Villager v,BlockPos target,Vec3 eye,Set<BlockPos> removed){
++        for(var side:Direction.values()){
++            var anchor=target.relative(side.getOpposite());
++            if(removed.contains(anchor)||!level.isLoaded(anchor)||!level.getBlockState(anchor).isFaceSturdy(level,anchor,side))continue;
++            for(double h:new double[]{.5,.9,.1}){
++                var point=Vec3.atCenterOf(anchor).add(side.getStepX()*.499,side.getStepY()*.499,side.getStepZ()*.499);
++                if(side.getAxis().isHorizontal())point=point.add(0,h-.5,0);
++                var hit=level.clip(new ClipContext(eye,point,ClipContext.Block.OUTLINE,ClipContext.Fluid.NONE,v){
++                    @Override public net.minecraft.world.phys.shapes.VoxelShape getBlockShape(net.minecraft.world.level.block.state.BlockState state,
++                            net.minecraft.world.level.BlockGetter world,BlockPos at){
++                        return removed.contains(at)?net.minecraft.world.phys.shapes.Shapes.empty():super.getBlockShape(state,world,at);
++                    }
++                });
++                if(hit.getType()==HitResult.Type.BLOCK&&hit.getBlockPos().equals(anchor)&&hit.getDirection()==side&&eye.distanceToSqr(hit.getLocation())<=9)return hit;
++            }
++        }
++        return null;
++    }
++    static Plan preview(ServerLevel level,Villager v,Session s,BlockPos origin,Direction direction){
++        if(!allowed(level,v,s)||direction.getAxis().isVertical()||!s.mineStair.floors.contains(origin.below()))return null;
++        var cells=MineStair.step(origin,direction,1,false);var foot=cells.getLast();
++        if(!MineStair.newWorkFloor(s.mineStair,cells)||!level.isLoaded(origin.below())
++            ||!level.getBlockState(origin.below()).isFaceSturdy(level,origin.below(),Direction.UP))return null;
++        var column=openColumn(level,foot.below());if(!funded(column.size(),MineFill.count(v.getInventory())))return null;
++        for(var p:column)if(ConstructionSites.isProtected(level,p)||NativeTerrainWork.structuralCover(level,p)!=null
++            ||!VillageSurvival.withinHomeRange(level,s.mind,Vec3.atCenterOf(p))||retained(v,p))return null;
++        for(var p:cells){
++            if(!level.isLoaded(p)||!level.isLoaded(p.above())||ConstructionSites.isProtected(level,p)||MineStair.exitFloor(v,p)
++                ||AdventureQuarry.accessSupport(v,p)||retained(v,p)||NativeTerrainWork.structuralCover(level,p)!=null
++                ||!VillageSurvival.withinHomeRange(level,s.mind,Vec3.atCenterOf(p)))return null;
++            var b=level.getBlockState(p);
++            if(!MineStair.clearCell(b)&&!(AdventureMining.naturalRock(b)||b.is(Blocks.DIRT)||b.is(Blocks.GRASS_BLOCK)||b.is(Blocks.COARSE_DIRT)))return null;
++            for(var d:Direction.values()){
++                var n=p.relative(d);if(!level.isLoaded(n))return null;
++                if(!level.getFluidState(n).isEmpty()&&!n.equals(foot.below())
++                    ||level.getBlockState(n).getBlock() instanceof FallingBlock&&!stableNeighbor(level,v,p,n))return null;
++            }
++        }
++        var shaft=new AABB(foot).expandTowards(0,-column.size(),0).expandTowards(0,3,0);
++        if(!level.getEntities(v,shaft,e->!(e instanceof net.minecraft.world.entity.item.ItemEntity)
++            &&!(e instanceof net.minecraft.world.entity.ExperienceOrb)).isEmpty())return null;
++        var eye=ForestryWork.standEye(v,origin);
++        if(predictedContact(level,v,foot,eye,new HashSet<>(cells))==null)return null;
++        return new Plan(origin.immutable(),direction,foot.immutable(),column);
++    }
++    /** Only the exact foot cell of an active, still-funded job may open above its known water column. */
++    static boolean excavationAllowed(ServerLevel level,Villager v,Session s,BlockPos target){
++        var w=s.mineStair.gravity;var plan=w.plan;
++        if(plan==null||w.pending!=null||!allowed(level,v,s)||!v.onGround()
++            ||v.position().distanceToSqr(Vec3.atBottomCenterOf(plan.origin()))>.01)return false;
++        var current=preview(level,v,s,plan.origin(),plan.direction());if(current==null)return false;
++        var first=MineStair.step(plan.origin(),plan.direction(),1,false).stream().filter(p->!MineStair.clearCell(level.getBlockState(p))).findFirst().orElse(null);
++        if(!target.equals(first)||v.getBoundingBox().intersects(new AABB(target)))return false;
++        return target.equals(plan.foot())&&level.getBlockState(target.below()).is(Blocks.WATER)
++            ?AdventureMining.afterWaterSeals(level,v,target,v.getBlockY(),Set.of(target.below()))
++            :AdventureMining.exposed(level,v,target,true);
++    }
++    static String work(ServerLevel level,Villager v,Session s,BlockPos origin,List<Direction> directions,long now){
++        if(!allowed(level,v,s)||!v.onGround())return null;
++        for(var direction:directions){var plan=preview(level,v,s,origin,direction);if(plan==null)continue;
++            var w=s.mineStair.gravity;w.plan=plan;w.until=now+1800;return resume(level,v,s,now);}
++        return null;
++    }
++    static String resume(ServerLevel level,Villager v,Session s,long now){
++        var w=s.mineStair.gravity;if(w.plan==null)return null;
++        if(!allowed(level,v,s)||now>=w.until){w.clear();return null;}
++        var plan=w.plan;var center=Vec3.atBottomCenterOf(plan.origin());
++        if(w.pending!=null){
++            if(now-w.placedAt>200){w.clear();return null;}
++            if(!level.getEntitiesOfClass(FallingBlockEntity.class,new AABB(plan.foot()).expandTowards(0,-MAX_DEPTH,0)).isEmpty()
++                ||!level.getBlockState(w.pending).is(w.pendingBlock)||level.getBlockState(plan.foot()).getBlock() instanceof FallingBlock)
++                return w.activity="waiting for actual mine fill to fall and settle";
++            v.addTag(TAG+w.pending.asLong());w.pending=null;w.pendingBlock=null;w.settled++;
++        }
++        if(level.getBlockState(plan.foot().below()).isFaceSturdy(level,plan.foot().below(),Direction.UP)
++            &&level.getFluidState(plan.foot().below()).isEmpty()
++            &&MineStair.step(plan.origin(),plan.direction(),1,false).stream().allMatch(p->MineStair.clearCell(level.getBlockState(p)))){
++            w.completed++;w.clear();s.mineStair.rejected.remove(plan.origin());s.mineStair.scanAt=0;
++            return w.activity="verified a paid settled foundation under the next mine step";
++        }
++        var current=preview(level,v,s,plan.origin(),plan.direction());if(current==null){w.clear();return null;}
++        if(v.position().distanceToSqr(center)>.0025){
++            if(!v.onGround()||!MineWaterSeal.supportedWalk(level,v,v.position(),center)){w.clear();return null;}
++            v.getNavigation().stop();v.getMoveControl().setWantedPosition(center.x,center.y,center.z,.25);
++            return w.activity="centering on the retained mine floor before foundation work";
++        }
++        if(!v.onGround()||level.noBlockCollision(v,v.getBoundingBox().move(0,-.03,0))){w.clear();return null;}
++        var first=MineStair.step(plan.origin(),plan.direction(),1,false).stream().filter(p->!MineStair.clearCell(level.getBlockState(p))).findFirst().orElse(null);
++        if(first!=null){
++            if(!excavationAllowed(level,v,s,first)){w.clear();return null;}
++            var action=AdventureMining.mineForFoundation(level,v,s,first,now);
++            return w.activity=action==null?"rechecking the funded mine foundation face":action;
++        }
++        var hit=MineFoundation.contact(level,v,plan.foot());if(hit==null)return w.activity="rechecking actual falling-block placement contact";
++        var bag=v.getInventory();int slot=-1;for(int i=0;i<bag.getContainerSize();i++)if(MineFill.material(bag.getItem(i))){slot=i;break;}
++        if(slot<0)return null;var item=bag.getItem(slot);var block=((BlockItem)item.getItem()).getBlock();int before=MineFill.count(bag);
++        if(!level.getBlockState(plan.foot()).isAir()||!level.getEntities(null,new AABB(plan.foot())).isEmpty())return null;
++        if(!level.setBlock(plan.foot(),block.defaultBlockState(),Block.UPDATE_ALL))return null;
++        bag.removeItem(slot,1);w.paid++;w.pending=current.column().getLast();w.pendingBlock=block;w.placedAt=now;
++        w.receipt=Map.of("gameTime",now,"placedAt",plan.foot().toShortString(),"expectedSettlement",w.pending.toShortString(),
++            "fillBefore",before,"fillAfter",MineFill.count(bag),"anchor",hit.getBlockPos().toShortString(),"reach",v.getEyePosition().distanceTo(hit.getLocation()));
++        v.getNavigation().stop();v.swingForAttack(InteractionHand.MAIN_HAND);Villagers.exert(v,.005f);
++        level.gameEvent(v,GameEvent.BLOCK_PLACE,plan.foot());
++        s.mind.remember("Placed one actual carried falling block into a funded mine foundation; waiting for native settling");
++        return w.activity="placed one paid falling block above the wet mine floor";
++    }
++    private MineGravityFoundation(){}
++}
+--- base/src/main/java/local/villagers/MineStair.java
++++ candidate/src/main/java/local/villagers/MineStair.java
+@@ -33,13 +33,15 @@
+         int turns,failedScans,foundations,withoutDepth;boolean exhausted;
+         Map<String,Object> foundationReceipt=Map.of();
+         final MineFoundation.State foundation=new MineFoundation.State();
++        final MineFill.State fill=new MineFill.State();
++        final MineGravityFoundation.State gravity=new MineGravityFoundation.State();
+         final MineWaterSeal.State waterSeals=new MineWaterSeal.State();
+         long pathAt,scanAt;String activity="no prospecting passage";
+     }
+     static Map<String,Object> status(Session s){
+         var w=s.mineStair;var result=new LinkedHashMap<String,Object>(Map.of("activity",w.activity,"root",w.root==null?"":w.root.toShortString(),"depth",w.depth,"part",w.part,"face",w.face==null?"":w.face.toShortString(),"faceBlock",w.faceBlock,"turns",w.turns,"retainedFloors",w.floors.size(),"mode",w.level?"level":"descending","reselect",w.reselect));
+         result.put("retainedEntries",w.entries.size());result.put("exhaustedEntries",w.exhaustedEntries.size());result.put("stepsWithoutDepth",w.withoutDepth);result.put("waterSeals",w.waterSeals.status());result.put("foundations",w.foundations);result.put("lastFoundation",w.foundationReceipt);
+-        result.put("exhausted",w.exhausted);result.put("failedScans",w.failedScans);result.put("entry",w.entry==null?"":w.entry.toShortString());
++        result.put("gravityFoundation",w.gravity.status());result.put("fill",w.fill.status());result.put("exhausted",w.exhausted);result.put("failedScans",w.failedScans);result.put("entry",w.entry==null?"":w.entry.toShortString());
+         result.put("frontier",w.frontier==null?"":w.frontier.toShortString());result.put("backtracks",w.backtracks);result.put("lastRoute",w.route);
+         result.put("frontierSearch",Map.of("activity",w.frontierActivity,"candidates",w.frontierCandidates,"queries",w.frontierQueries));return result;
+     }
+@@ -152,7 +154,7 @@
+                 ||!level.getBlockState(floor).isFaceSturdy(level,floor,Direction.UP))continue;
+             boolean fresh=false;var eye=ForestryWork.standEye(v,root);
+             for(var d:Direction.Plane.HORIZONTAL)for(boolean flat:List.of(false,true))
+-                if(observedFace(level,v,w,root,d,flat,eye)){fresh=true;if(!flat)descending.add(root);}
++                if(observedFace(level,v,w,root,d,flat,eye)||!flat&&MineGravityFoundation.preview(level,v,s,root,d)!=null){fresh=true;if(!flat)descending.add(root);}
+             if(fresh&&(!deeperOnly||descending.contains(root)&&floor.getY()<=deepest))candidates.add(root);
+         }
+         // Revisit a known descent before extending nearby level corridors.
+@@ -179,7 +181,7 @@
+         var w=s.mineStair;load(v,w);
+         if(w.root!=null||s.quarry.root!=null||w.entries.isEmpty()||!WoodBootstrap.safe(level,v,s))return null;
+         if(w.entry==null||w.exhaustedEntries.contains(w.entry)||AdventureQuarry.failedEntry(v,w.entry,now))
+-            w.entry=w.entries.stream().filter(p->!w.exhaustedEntries.contains(p)&&!AdventureQuarry.failedEntry(v,p,now))
++            w.entry=w.entries.stream().filter(p->(!w.exhaustedEntries.contains(p)||MineFill.count(v.getInventory())>=MineFill.RESERVE)&&!AdventureQuarry.failedEntry(v,p,now))
+                 .min(Comparator.comparingDouble(p->p.distSqr(v.blockPosition()))).orElse(null);
+         if(w.entry==null)return null;
+         if(w.frontier!=null)return followFrontier(level,v,s,now);
+@@ -313,6 +315,7 @@
+         if(!NativeRegionsScenario.nativeRegions(level)||!Villagers.config().nativeAdventureQuarry()
+             ||!WoodBootstrap.safe(level,v,s)||!AdventurePreparation.stonePickaxe(v)
+             ||!AdventureActions.PERMISSIONS.allows(Capability.MINE_ADVENTURE_PASSAGE))return null;
++        var gravityWork=MineGravityFoundation.resume(level,v,s,now);if(gravityWork!=null)return w.activity=gravityWork;
+         var sealingWork=MineWaterSeal.resume(level,v,s,now);if(sealingWork!=null)return w.activity=sealingWork;
+         var foundationWork=MineFoundation.resume(level,v,s,now);if(foundationWork!=null)return w.activity=foundationWork;
+         var backtrack=followFrontier(level,v,s,now);if(backtrack!=null)return w.activity=backtrack;
+@@ -353,6 +356,7 @@
+             if(!v.onGround())return null;var origin=v.blockPosition();
+             if(w.floors.size()>=512)return w.activity="retained the bounded mine network and its exit floors";
+             var directions=new ArrayList<Direction>();if(s.quarry.direction!=null)directions.add(s.quarry.direction);for(var d:Direction.Plane.HORIZONTAL)if(!directions.contains(d))directions.add(d);
++            var gravity=MineGravityFoundation.work(level,v,s,origin,directions,now);if(gravity!=null)return w.activity=gravity;
+             search:for(boolean flat:List.of(false,true))for(var d:directions){
+                 if(!observedFace(level,v,w,origin,d,flat,v.getEyePosition()))continue;
+                 w.root=origin;if(w.entry==null)w.entry=s.quarry.root==null?origin:s.quarry.root;
+--- base/src/main/java/local/villagers/AdventureIron.java
++++ candidate/src/main/java/local/villagers/AdventureIron.java
+@@ -90,6 +90,7 @@
+             var exit=MineStair.returnToEntry(level,v,s,now);if(exit!=null)return w.activity=exit;
+             var furnace=AdventureFurnace.work(level,v,s,now);if(furnace!=null)return w.activity=furnace;
+         }
++        var fill=MineFill.work(level,v,s,now);if(fill!=null)return w.activity=fill;
+         var supplies=AdventureSupplies.work(level,v,s,now);if(supplies!=null)return w.activity=supplies;
+         var ore=AdventureMining.work(level,v,s,now);if(ore!=null)return w.activity=ore;
+         if(!needsMining(v,s))return w.activity="waiting for real furnace processing";
+--- base/src/main/java/local/villagers/AdventureMining.java
++++ candidate/src/main/java/local/villagers/AdventureMining.java
+@@ -70,7 +70,7 @@
+     }
+     private static boolean exposedAt(ServerLevel level,Villager v,BlockPos p,boolean excavation,int standY,Set<BlockPos> seals){
+         if(!level.isLoaded(p)||!level.isLoaded(p.above(2))||p.getY()<standY-1
+-                ||!level.getWorldBorder().isWithinBounds(p)||ConstructionSites.isProtected(level,p)||MineStair.exitFloor(v,p)||MineWaterSeal.retained(v,p)
++                ||!level.getWorldBorder().isWithinBounds(p)||ConstructionSites.isProtected(level,p)||MineStair.exitFloor(v,p)||MineWaterSeal.retained(v,p)||MineGravityFoundation.retained(v,p)
+                 ||AdventureQuarry.accessSupport(v,p)&&!AdventureQuarry.canReplaceAccess(level,v,p)
+                 )return false;
+         var state=level.getBlockState(p);
+@@ -81,7 +81,7 @@
+         if(!open)return false;
+         if(level.getEntities(null,new AABB(p).expandTowards(0,2,0)).stream().anyMatch(e->!(e instanceof net.minecraft.world.entity.item.ItemEntity)&&!(e instanceof net.minecraft.world.entity.ExperienceOrb)))return false;
+         for(Direction d:Direction.values()){
+-            var n=p.relative(d);if(!level.isLoaded(n)||!level.getFluidState(n).isEmpty()&&!seals.contains(n)||level.getBlockState(n).getBlock() instanceof FallingBlock)return false;
++            var n=p.relative(d);if(!level.isLoaded(n)||!level.getFluidState(n).isEmpty()&&!seals.contains(n)||level.getBlockState(n).getBlock() instanceof FallingBlock&&!MineGravityFoundation.stableNeighbor(level,v,p,n))return false;
+         }
+         for(BlockPos n:BlockPos.betweenClosed(p.offset(-2,-1,-2),p.offset(2,2,2))){
+             if(!level.isLoaded(n))return false;
+@@ -119,6 +119,13 @@
+         return mineAt(level,v,s,m.target,now,false);
+     }
+     static String mineAt(ServerLevel level,Villager v,Session s,BlockPos p,long now,boolean excavation){
++        return mineAt(level,v,s,p,now,excavation,false);
++    }
++    static String mineForFoundation(ServerLevel level,Villager v,Session s,BlockPos p,long now){
++        if(!MineGravityFoundation.excavationAllowed(level,v,s,p))return null;
++        return mineAt(level,v,s,p,now,true,true);
++    }
++    private static String mineAt(ServerLevel level,Villager v,Session s,BlockPos p,long now,boolean excavation,boolean foundation){
+         var m=s.mining;var block=level.getBlockState(p);
+         if(!AdventureActions.preparePickaxeForMining(level,v,block)){m.status="needs an actual suitable pickaxe";return null;}
+         var held=v.getMainHandItem();
+@@ -158,7 +165,7 @@
+         if((!excavation||AdventureIron.ore(block))&&!loose.isEmpty()){
+             var room=NativeWorkInventory.makeRoom(level,v,s);return m.status=room==null?"stone output needs real bag space":room;
+         }
+-        if(!exposed(level,v,p,excavation)||!VillageSurvival.withinHomeRange(level,s.mind,Vec3.atCenterOf(p))||!level.getBlockState(p).equals(block)||!ItemStack.matches(m.tool,v.getMainHandItem())
++        if(!(foundation?MineGravityFoundation.excavationAllowed(level,v,s,p):exposed(level,v,p,excavation))||!VillageSurvival.withinHomeRange(level,s.mind,Vec3.atCenterOf(p))||!level.getBlockState(p).equals(block)||!ItemStack.matches(m.tool,v.getMainHandItem())
+                 ||!HarvestMaterials.unchanged(v.getInventory(),before)||block.requiresCorrectToolForDrops()&&!v.getMainHandItem().isCorrectToolForDrops(block)
+                 ||BlockContact.point(level,v,v.getEyePosition(),p,3)==null)return null;
+         if(!level.destroyBlock(p,false,v))return null;
+--- base/src/main/java/local/villagers/MineFill.java
++++ candidate/src/main/java/local/villagers/MineFill.java
+@@ -0,0 +1,118 @@
++package local.villagers;
++
++import java.util.*;
++import local.villagers.capability.CapabilityPermissions.Capability;
++import net.minecraft.core.*;
++import net.minecraft.core.component.DataComponents;
++import net.minecraft.server.level.ServerLevel;
++import net.minecraft.world.Container;
++import net.minecraft.world.InteractionHand;
++import net.minecraft.world.SimpleContainer;
++import net.minecraft.world.entity.EquipmentSlot;
++import net.minecraft.world.entity.npc.villager.Villager;
++import net.minecraft.world.item.*;
++import net.minecraft.world.level.block.*;
++import net.minecraft.world.level.block.state.BlockState;
++import net.minecraft.world.phys.*;
++
++/** Gather a small reserve of real falling blocks for supporting observed wet mine floors. */
++final class MineFill {
++    static final int RESERVE=4;
++    static final class State {
++        BlockPos target;long scanAt,pathAt,started,lastWork,until;int broken;
++        ItemStack tool=ItemStack.EMPTY;
++        final Map<BlockPos,Long> blocked=new HashMap<>();
++        String activity="no mine fill gathering";Map<String,Object> receipt=Map.of();
++        Map<String,Object> status(){return Map.of("activity",activity,"target",target==null?"":target.toShortString(),"broken",broken,"lastReceipt",receipt);}
++    }
++    static boolean material(ItemStack item){return !item.has(DataComponents.CUSTOM_NAME)&&(item.is(Items.SAND)||item.is(Items.RED_SAND)||item.is(Items.GRAVEL));}
++    static boolean material(BlockState block){return block.is(Blocks.SAND)||block.is(Blocks.RED_SAND)||block.is(Blocks.GRAVEL);}
++    static int count(Container bag){int n=0;for(int i=0;i<bag.getContainerSize();i++)if(material(bag.getItem(i)))n+=bag.getItem(i).getCount();return n;}
++    /** Never undermine another falling block, a body, a paid exit, or native furnishings. */
++    static boolean eligible(ServerLevel level,Villager v,Session s,BlockPos p){
++        if(!level.isLoaded(p)||!level.isLoaded(p.above(2))||!level.isLoaded(p.below())
++            ||!material(level.getBlockState(p))||!level.getBlockState(p.above()).isAir()
++            ||p.getY()<v.getBlockY()-1||!level.getWorldBorder().isWithinBounds(p)
++            ||ConstructionSites.isProtected(level,p)||MineStair.exitFloor(v,p)||MineGravityFoundation.retained(v,p)||AdventureQuarry.accessSupport(v,p)
++            ||!VillageSurvival.withinHomeRange(level,s.mind,Vec3.atCenterOf(p))
++            ||!level.getBlockState(p.below()).isFaceSturdy(level,p.below(),Direction.UP)
++            ||NativeTerrainWork.structuralCover(level,p)!=null
++            ||level.getEntities(null,new AABB(p).expandTowards(0,2,0)).stream().anyMatch(e->!(e instanceof net.minecraft.world.entity.item.ItemEntity)
++                &&!(e instanceof net.minecraft.world.entity.ExperienceOrb)))return false;
++        for(var d:Direction.values())if(!level.isLoaded(p.relative(d))||!level.getFluidState(p.relative(d)).isEmpty())return false;
++        for(var at:BlockPos.betweenClosed(p.offset(-2,-1,-2),p.offset(2,2,2))){
++            if(!level.isLoaded(at))return false;var b=level.getBlockState(at);
++            if(b.getBlock() instanceof BedBlock||b.getBlock() instanceof DoorBlock||b.is(net.minecraft.tags.BlockTags.PLANKS)
++                ||b.getBlock() instanceof CropBlock||level.getBlockEntity(at)!=null)return false;
++        }
++        return true;
++    }
++    /** Operator-only frozen diagnostic; does not move the body or teach coordinates. */
++    static Map<String,Object> survey(ServerLevel level,Villager v,Session s){
++        int natural=0,valid=0;var visible=new ArrayList<Map<String,Object>>();var origin=v.blockPosition();
++        for(var p:BlockPos.betweenClosed(origin.offset(-28,-1,-28),origin.offset(28,5,28))){
++            if(!level.isLoaded(p)||!material(level.getBlockState(p)))continue;natural++;
++            if(!eligible(level,v,s,p))continue;valid++;
++            var contact=BlockContact.point(level,v,v.getEyePosition(),p,32);
++            if(contact!=null&&visible.size()<12)visible.add(Map.of("at",p.toShortString(),"state",level.getBlockState(p).toString(),"distance",v.position().distanceTo(Vec3.atCenterOf(p))));
++        }
++        return Map.of("natural",natural,"eligible",valid,"visible",visible,"carried",count(v.getInventory()));
++    }
++    static String work(ServerLevel level,Villager v,Session s,long now){
++        var w=s.mineStair.fill;
++        if(!NativeRegionsScenario.nativeRegions(level)||!Villagers.config().nativeAdventureQuarry()||!AdventurePreparation.nominated(v)
++            ||!AdventureActions.PERMISSIONS.allows(Capability.MINE_SURFACE_STONE)||!AdventureActions.PERMISSIONS.allows(Capability.REPAIR_QUARRY_ACCESS)
++            ||!AdventureIron.needsMining(v,s)||!WoodBootstrap.safe(level,v,s)||s.mind.foodLevel()<14
++            ||s.mineStair.gravity.plan!=null||s.mineStair.exhaustedEntries.isEmpty()||count(v.getInventory())>=RESERVE){w.started=0;return null;}
++        if(w.target!=null&&(now>=w.until||!eligible(level,v,s,w.target))){w.blocked.put(w.target,now+600);w.target=null;w.started=0;}
++        if(w.target==null){
++            if(now<w.scanAt)return null;w.scanAt=now+200;w.blocked.entrySet().removeIf(e->e.getValue()<=now);
++            var origin=v.blockPosition();var candidates=new ArrayList<BlockPos>();
++            for(var p:BlockPos.betweenClosed(origin.offset(-28,-1,-28),origin.offset(28,5,28)))
++                if(!w.blocked.containsKey(p)&&eligible(level,v,s,p)&&BlockContact.point(level,v,v.getEyePosition(),p,32)!=null)candidates.add(p.immutable());
++            candidates.sort(Comparator.comparingDouble(p->p.distSqr(origin)));
++            if(candidates.isEmpty())return null;w.target=candidates.getFirst();w.until=now+1200;
++        }
++        var target=w.target;var state=level.getBlockState(target);
++        var contact=BlockContact.point(level,v,v.getEyePosition(),target,3);
++        if(contact==null){
++            w.started=0;
++            if(now>=w.pathAt&&WorkNavigation.admit(level,now,v)){
++                w.pathAt=now+40;var path=AdventureMining.approach(level,v,s,target);
++                if(path==null){w.blocked.put(target,now+600);w.target=null;return null;}
++                v.getNavigation().moveTo(path,.6);
++            }
++            return w.activity="walking to observed natural mine fill";
++        }
++        if(!v.onGround()||!AdventureActions.preparePickaxeForMining(level,v,state))return null;
++        var held=v.getMainHandItem();if(held.isDamageableItem()&&AdventurePreparation.toolUses(held)<=8)return null;
++        if(!v.getInventory().canAddItem(new ItemStack(state.getBlock().asItem()))){
++            var room=NativeWorkInventory.makeRoom(level,v,s);w.started=0;
++            return w.activity=room==null?"mine fill needs actual bag space":room;
++        }
++        v.getNavigation().stop();v.swingForAttack(InteractionHand.MAIN_HAND);
++        if(w.started==0||now-w.lastWork>20||!ItemStack.matches(w.tool,held)){w.started=now;w.tool=held.copy();}
++        w.lastWork=now;int ticks=(int)Math.ceil(state.getDestroySpeed(level,target)*30/Math.max(1,held.getDestroySpeed(state)));
++        if(now-w.started<Math.max(1,ticks))return w.activity="gathering actual exposed sand or gravel";
++        var before=HarvestMaterials.snapshot(v.getInventory());var next=new SimpleContainer(v.getInventory().getContainerSize());
++        for(int i=0;i<next.getContainerSize();i++)next.setItem(i,v.getInventory().getItem(i).copy());
++        var drops=Block.getDrops(state,level,target,null,v,held);var loose=new ArrayList<ItemStack>();
++        for(var drop:drops){if(!material(drop)){loose.add(drop.copy());continue;}if(!next.addItem(drop.copy()).isEmpty())return null;}
++        if(!eligible(level,v,s,target)||!state.equals(level.getBlockState(target))||!ItemStack.matches(w.tool,held)
++            ||!HarvestMaterials.unchanged(v.getInventory(),before)||BlockContact.point(level,v,v.getEyePosition(),target,3)==null)return null;
++        int carried=count(v.getInventory());if(!level.destroyBlock(target,false,v))return null;
++        for(int i=0;i<next.getContainerSize();i++)v.getInventory().setItem(i,next.getItem(i));
++        for(var drop:loose)Block.popResource(level,target,drop);
++        state.spawnAfterBreak(level,target,held,true);var tool=held.get(DataComponents.TOOL);
++        if(tool!=null)held.hurtAndBreak(tool.damagePerBlock(),v,EquipmentSlot.MAINHAND);
++        var receipt=new LinkedHashMap<String,Object>();receipt.put("gameTime",now);receipt.put("position",target.toShortString());
++        receipt.put("block",state.toString());receipt.put("fillBefore",carried);receipt.put("fillAfter",count(v.getInventory()));
++        receipt.put("drops",drops.stream().map(ItemStack::toString).toList());receipt.put("loose",loose.stream().map(ItemStack::toString).toList());
++        receipt.put("toolDamageBefore",w.tool.getDamageValue());receipt.put("toolDamageAfter",held.getDamageValue());
++        receipt.put("contact",contact.toString());receipt.put("reach",v.getEyePosition().distanceTo(contact));w.receipt=Map.copyOf(receipt);
++        w.broken++;w.target=null;w.started=0;w.scanAt=now+20;Villagers.exert(v,.005f);
++        s.mind.remember("Gathered actual falling-block fill from observed natural ground at "+target.toShortString());
++        return w.activity="gathered native mine foundation fill";
++    }
++    private MineFill(){}
++}
+--- base/src/test/java/local/villagers/MineGravityFoundationTest.java
++++ candidate/src/test/java/local/villagers/MineGravityFoundationTest.java
+@@ -0,0 +1,24 @@
++package local.villagers;
++
++import net.minecraft.core.BlockPos;
++import org.junit.jupiter.api.Test;
++import static org.junit.jupiter.api.Assertions.*;
++
++class MineGravityFoundationTest {
++    @Test void aFourCellWetFloorCannotOpenWithOnlyThreeActualFillBlocks(){
++        assertFalse(MineGravityFoundation.funded(4,3));
++        assertTrue(MineGravityFoundation.funded(4,4));
++        assertFalse(MineGravityFoundation.funded(5,64));
++        assertFalse(MineGravityFoundation.funded(0,4));
++        assertFalse(MineGravityFoundation.funded(-1,4));
++        assertFalse(MineGravityFoundation.funded(1,-1));
++    }
++    @Test void thePaidColumnTerminatesAtTheProspectiveFloorWithoutOccupyingTheWalkingCell(){
++        var floor=new BlockPos(-475,54,-380);var column=MineGravityFoundation.column(floor,4);
++        assertEquals(java.util.List.of(floor,floor.below(),floor.below(2),floor.below(3)),column);
++        assertFalse(column.contains(floor.above()));
++        assertEquals(new BlockPos(-475,51,-380),column.getLast());
++        assertThrows(IllegalArgumentException.class,()->MineGravityFoundation.column(floor,0));
++        assertThrows(IllegalArgumentException.class,()->MineGravityFoundation.column(floor,5));
++    }
++}

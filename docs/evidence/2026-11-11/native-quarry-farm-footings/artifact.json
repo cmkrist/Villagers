@@ -1,0 +1,344 @@
+{
+  "base": "/tmp/villagers-source-snapshot-v306",
+  "baseJarSHA256": "62b7ec1baea819eb9c6eff40483ac63d35e116eae933816de5e4359d1127573b",
+  "jarSHA256": "9d7bc800f7354b48782b86beffe48a82a96a44ed982e0075ae2c7193fa643871",
+  "changedFiles": {
+    "src/main/java/local/villagers/AdventureQuarry.java": "dcf06bffc5a43efb6460a1f58a03b56eec08dd70de38849673a4211bd623bdd0",
+    "src/main/java/local/villagers/NativeFoodStorage.java": "1c1798fd42557beb6d9a491bfa482d28a100784e7593b3cadb7d2973502cae21",
+    "src/main/java/local/villagers/FoodInventory.java": "a38210e8253cdb618f799fa316ea7edf2ab24e60c297e9c618415a78e2748734",
+    "src/main/java/local/villagers/VillagerController.java": "4c0cc334c4336bd5e49a95a2afc4cd9b0fb6e66f0030dd762410582a7b45bbcf",
+    "src/main/java/local/villagers/FarmExpansion.java": "83551584114ad40a9b43bebf6975e4b60fb4d4871b618362f0a74d71a94dd39c",
+    "src/test/java/local/villagers/FoodInventoryTest.java": "c8a145178ffcee49a03f18ccf33d63a0329a93c02e54301524fcd92ca3b217f3"
+  },
+  "javaTests": {
+    "tests": 635,
+    "failures": 0,
+    "errors": 0
+  },
+  "buildLog": "/tmp/villagers-worker-v306-farm-footings-build.log",
+  "sourceGameTime": 321513,
+  "runtime": "runs/worker-v306-farm-footings-care-20261111",
+  "status": "Full-cohort trial stopped2994ticks onBirch; all192alive. Hero dug9dirt, no crop/protection stop in this window. Further mining/day stability and new ore remain unproved.",
+  "plantingEvidence": [
+    {
+      "id": "438701f4-3aba-4cda-b583-46051f1e0f53",
+      "name": "Oak-4387",
+      "memories": [
+        "Expanded farm: planted Block{minecraft:beetroots} at -475, 62, -346 using one real planting item and hoe wear"
+      ]
+    }
+  ],
+  "behavior": "Bare planting candidates cannot occupy nearby nominated miners actual tagged quarry-access supports or retained mine floors. Existing crops/mining protections retained. Uses earlier proven departure, empty-store cache and owned-root emergency eating; no supplied items/body setters.",
+  "discardedPreferenceTrials": {
+    "drySite": "runs/worker-v306-dry-site-care-20261111",
+    "dryFirst": "runs/worker-v306-dry-first-care-20261111",
+    "finding": "125candidate orientations,0dry candidates. Ranking did not change chosen site. Both did9realquarrydigs; no newore. Irrigation ranking removed from this candidate."
+  },
+  "stop": {
+    "actor": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+    "status": "failed",
+    "gameTime": 324507,
+    "stage": "health_stop",
+    "health": 1.0,
+    "elapsed": 2994,
+    "air": 300,
+    "position": "(-588.3496574417138, 64.0, -587.0964712984036)"
+  },
+  "population": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "terminal": {
+    "pid": 2316745,
+    "exitCode": 0
+  },
+  "adventurer": {
+    "actors": [
+      {
+        "health": 20.0,
+        "ageTicks": 261004,
+        "iron": {
+          "loadedOre": 3,
+          "lastReceipt": {},
+          "lastApproach": {},
+          "plannedSite": "",
+          "passage": {
+            "reselect": false,
+            "turns": 0,
+            "depth": 0,
+            "root": "",
+            "retainedFloors": 114,
+            "part": 0,
+            "activity": "no prospecting passage",
+            "faceBlock": "",
+            "mode": "descending",
+            "face": "",
+            "retainedEntries": 3,
+            "exhaustedEntries": 1,
+            "stepsWithoutDepth": 0,
+            "waterSeals": {
+              "lastReceipt": {},
+              "activity": "no water sealing job",
+              "active": false,
+              "placed": 0
+            },
+            "foundations": 0,
+            "lastFoundation": {},
+            "exhausted": false,
+            "failedScans": 0,
+            "entry": "",
+            "frontier": "",
+            "backtracks": 0,
+            "lastRoute": {
+              "safe": true,
+              "target": "-475, 63, -347",
+              "end": "-475, 63, -347",
+              "gameTime": 324194,
+              "nodes": 4,
+              "actor": "(-474.43149193138663, 60.0, -343.3142383547188)"
+            },
+            "frontierSearch": {
+              "queries": 0,
+              "candidates": 0,
+              "activity": "not checking junctions"
+            }
+          },
+          "ironTaken": 3,
+          "crafted": 0,
+          "furnace": "-463, 63, -376",
+          "activity": "preparing the observed quarry before entering its work bays",
+          "fuelStored": true
+        },
+        "inventory": [
+          "1 minecraft:stone_pickaxe",
+          "1 minecraft:iron_pickaxe",
+          "44 minecraft:dirt",
+          "3 minecraft:bread",
+          "1 minecraft:carrot",
+          "4 minecraft:stick",
+          "1 minecraft:raw_iron",
+          "0 minecraft:air"
+        ],
+        "armor": {
+          "crafted": 0,
+          "lastReceipt": {},
+          "ironTarget": 8,
+          "ready": false,
+          "nextPiece": "CHEST",
+          "equipped": 0
+        },
+        "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+        "food": 17,
+        "navigation": {
+          "path": {
+            "done": false,
+            "end": "-468, 65, -377",
+            "next": "-470, 64, -376",
+            "nodes": 4,
+            "nextIndex": 1
+          },
+          "onGround": true,
+          "position": "(-469.988142169382, 64.0, -375.51669651284544)",
+          "wanted": [
+            -469.5,
+            64.0,
+            -375.5
+          ],
+          "velocity": "(0.10339013384482146, -0.0784000015258789, -0.0016086600107214888)"
+        },
+        "position": "(-469.988142169382, 64.0, -375.51669651284544)",
+        "mainhand": "1 minecraft:wooden_hoe",
+        "quarry": {
+          "lastApproach": {
+            "accepted": true,
+            "safe": true,
+            "end": "-475, 60, -344",
+            "gameTime": 323924,
+            "nodes": 2,
+            "actor": "(-474.4417730876439, 61.0, -343.9390087543916)",
+            "target": "-475, 59, -343"
+          },
+          "step": 9,
+          "lastReceipt": {
+            "position": "-475, 60, -343",
+            "gameTime": 323304,
+            "step": 9,
+            "drops": [
+              "1 minecraft:dirt"
+            ]
+          },
+          "origin": "-475, 63, -347",
+          "inspection": {
+            "reviewAt": 343202,
+            "target": "",
+            "survey": {
+              "target": "",
+              "visited": 0,
+              "lastRoute": {}
+            },
+            "lastRetirement": {},
+            "repairs": 0,
+            "returning": false,
+            "reconsidered": 0,
+            "lastRepair": {},
+            "visited": 0,
+            "route": "none"
+          },
+          "lastStop": {},
+          "activity": "digging real soil for a quarry stair",
+          "stand": "-475, 60, -344",
+          "centerings": 2,
+          "dug": 9
+        }
+      }
+    ],
+    "gameTime": 324473,
+    "elapsed": 2960
+  },
+  "newOakPlantingMemories": [],
+  "frozenVerification": "runs/worker-farm-footings-frozen-20261111",
+  "frozenStatus": "passed",
+  "frozenPopulation": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "frozenTerminal": {
+    "pid": 2323467,
+    "exitCode": 0
+  },
+  "activeQuarryVerification": {
+    "scope": "Read-only frozen native blocks from the actor's own persisted quarry work tags.",
+    "sites": [
+      {
+        "supports": [
+          {
+            "taggedAccessSupport": true,
+            "retainedMineFloor": false,
+            "block": "Block{minecraft:grass_block}[snowy=false]",
+            "at": "-475, 62, -347"
+          },
+          {
+            "taggedAccessSupport": true,
+            "retainedMineFloor": false,
+            "block": "Block{minecraft:dirt}",
+            "at": "-475, 61, -346"
+          },
+          {
+            "taggedAccessSupport": true,
+            "retainedMineFloor": false,
+            "block": "Block{minecraft:dirt}",
+            "at": "-475, 60, -345"
+          },
+          {
+            "taggedAccessSupport": true,
+            "retainedMineFloor": false,
+            "block": "Block{minecraft:grass_block}[snowy=false]",
+            "at": "-475, 59, -344"
+          },
+          {
+            "taggedAccessSupport": true,
+            "retainedMineFloor": false,
+            "block": "Block{minecraft:dirt}",
+            "at": "-475, 58, -343"
+          }
+        ],
+        "step": 9,
+        "cells": [
+          {
+            "at": "-475, 62, -346",
+            "block": "Block{minecraft:air}"
+          },
+          {
+            "at": "-475, 62, -345",
+            "block": "Block{minecraft:air}"
+          },
+          {
+            "at": "-475, 61, -345",
+            "block": "Block{minecraft:air}"
+          },
+          {
+            "at": "-475, 62, -344",
+            "block": "Block{minecraft:air}"
+          },
+          {
+            "at": "-475, 61, -344",
+            "block": "Block{minecraft:air}"
+          },
+          {
+            "at": "-475, 60, -344",
+            "block": "Block{minecraft:air}"
+          },
+          {
+            "at": "-475, 62, -343",
+            "block": "Block{minecraft:air}"
+          },
+          {
+            "at": "-475, 61, -343",
+            "block": "Block{minecraft:air}"
+          },
+          {
+            "at": "-475, 60, -343",
+            "block": "Block{minecraft:air}"
+          },
+          {
+            "at": "-475, 59, -343",
+            "block": "Block{minecraft:dirt}"
+          },
+          {
+            "at": "-476, 60, -343",
+            "block": "Block{minecraft:dirt}"
+          },
+          {
+            "at": "-476, 59, -343",
+            "block": "Block{minecraft:dirt}"
+          },
+          {
+            "at": "-474, 60, -343",
+            "block": "Block{minecraft:dirt}"
+          },
+          {
+            "at": "-474, 59, -343",
+            "block": "Block{minecraft:dirt}"
+          },
+          {
+            "at": "-475, 60, -342",
+            "block": "Block{minecraft:dirt}"
+          },
+          {
+            "at": "-475, 59, -342",
+            "block": "Block{minecraft:dirt}"
+          }
+        ],
+        "root": "-475, 63, -347",
+        "direction": "SOUTH"
+      }
+    ]
+  },
+  "sharedSourceIntegration": {
+    "files": [
+      "src/main/java/local/villagers/AdventureQuarry.java",
+      "src/main/java/local/villagers/FarmExpansion.java"
+    ],
+    "scope": "Only the two verified short-step and retained-footing guards applied to moving shared root; other candidate changes not copied wholesale.",
+    "javaTests": {
+      "tests": 717,
+      "failures": 0,
+      "errors": 0
+    },
+    "buildLog": "/tmp/villagers-worker-shared-mine-footings-build.log",
+    "deployed": false,
+    "limitation": "Shared root includes unrelated concurrent changes; this build is not a native/main-world artifact proof."
+  }
+}

@@ -20,7 +20,9 @@ public record Opinion(UUID other, double liking, double trust, double fear, long
         /** Fought off a monster that was attacking this villager. */
         PROTECTED(0.3, 0.3, -0.1),
         /** Refused food when this villager was hungry and asked. */
-        REFUSED(-0.12, -0.06, 0);
+        REFUSED(-0.12, -0.06, 0),
+        /** An understood promise was followed by actual shared time. */
+        KEPT_PROMISE(0.06, 0.12, 0);
 
         final double liking, trust, fear;
         Event(double liking, double trust, double fear) { this.liking = liking; this.trust = trust; this.fear = fear; }

@@ -1,0 +1,42 @@
+--- a/src/main/java/local/villagers/NativeFoodStorage.java
++++ b/src/main/java/local/villagers/NativeFoodStorage.java
+@@ -138,7 +138,17 @@
+                 s.mind.remember("Collected one actual "+name+" from a native home food store at "+p.toShortString());
+                 level.gameEvent(v,GameEvent.CONTAINER_OPEN,p);v.getNavigation().stop();return w.activity="collected a real stored meal";
+             }
+-            w.blocked.put(p,now+1200);w.target=null;return null;
++            // This was an actual inspection at hand reach, not a failed path.
++            // Returning every minute to the same depleted public store can
++            // consume the hungry actor's whole travel reserve. Leave time to
++            // find another source before inspecting this one again.
++            long revisit=now+6000;
++            w.blocked.put(p,revisit);
++            w.receipt=Map.of("gameTime",now,"container",p.toShortString(),"moved",0,
++                "reason","no usable meal at actual inspection","revisitAt",revisit);
++            w.activity="remembering a store with no usable meal";
++            s.mind.remember("Inspected public food storage at "+p.toShortString()+"; no usable meal available");
++            w.target=null;return null;
+         }
+         if(!mayWalk)return null;
+         if(!v.onGround())return w.activity="finishing a native landing before the food-store walk";
+--- a/src/main/java/local/villagers/AdventureQuarry.java
++++ b/src/main/java/local/villagers/AdventureQuarry.java
+@@ -266,11 +266,14 @@
+     /** Finish a native path's last fraction of a cell through ordinary MoveControl.
+      * Navigation's waypoint tolerance can leave a foot on the soil being removed. */
+     private static boolean centerApproach(ServerLevel level,Villager v,Session s,BlockPos target,long now){
+-        var q=s.quarry;if(q.stand==null||!v.getNavigation().isDone()||!v.onGround()
+-            ||!q.stand.equals(v.blockPosition())||Math.abs(v.getY()-q.stand.getY())>.01)return false;
++        var q=s.quarry;if(q.stand==null||!v.onGround()
++            ||Math.abs(v.getY()-q.stand.getY())>.01)return false;
+         var point=Vec3.atBottomCenterOf(q.stand);
+-        if(!local.villagers.navigation.FloorCenteringPolicy.local(v.getX(),v.getY(),v.getZ(),point.x,point.y,point.z,v.getBbWidth())
+-            ||v.position().distanceToSqr(point)<.0025||ForestryWork.standFailure(level,v,s,target,q.stand)!=null)return false;
++        // Native waypoint tolerance can stop in the adjacent cell, including
++        // atop the block being removed. Finish only the short same-floor,
++        // fully collision-clear departure to our already validated stand.
++        double distance=v.position().distanceToSqr(point);
++        if(distance>1.5625||distance<.0025||ForestryWork.standFailure(level,v,s,target,q.stand)!=null)return false;
+         var body=v.getBoundingBox().move(point.subtract(v.position()));
+         if(body.intersects(new AABB(target).expandTowards(0,2,0))||!level.noCollision(v,v.getBoundingBox().minmax(body)))return false;
+         // This controller thinks every ten native ticks. MoveControl consumes each

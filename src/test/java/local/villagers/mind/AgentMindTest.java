@@ -8,10 +8,53 @@ import static org.junit.jupiter.api.Assertions.*;
 class AgentMindTest {
     private static final UUID ID = UUID.fromString("12345678-1234-1234-1234-123456789abc");
 
+    @Test void severeHungerAndInjuryDoNotMaskEveryFoodSearchAction(){
+        var mind=new AgentMind(ID);var random=new Random(42);
+        for(boolean night:new boolean[]{false,true}){
+            var starving=new Observation(1,1,.5,.05,false,night,false,false);
+            assertFalse(mind.allowed(Action.REST,starving));
+            assertTrue(mind.allowed(Action.EXPLORE,starving));
+            for(int i=0;i<50;i++)assertEquals(Action.EXPLORE,mind.choose(starving,random));
+            var danger=new Observation(1,1,.5,.05,true,night,false,false);
+            assertEquals(Action.FLEE,mind.choose(danger,random));
+        }
+        assertTrue(mind.allowed(Action.REST,new Observation(.6,.8,.5,.2,false,true,false,false)),
+            "Ordinary injured rest remains available outside the starvation emergency");
+    }
+
+    @Test void criticalFoodReservesStartSearchingBeforeInjury(){
+        var mind=new AgentMind(ID);var random=new Random(42);
+        for(boolean night:new boolean[]{false,true})for(double health:new double[]{.05,.3,.9,1}){
+            var starving=new Observation(1,1,.5,health,false,night,false,false);
+            assertFalse(mind.allowed(Action.REST,starving));
+            assertTrue(mind.allowed(Action.EXPLORE,starving));
+            for(int i=0;i<50;i++)assertEquals(Action.EXPLORE,mind.choose(starving,random));
+            var danger=new Observation(1,1,.5,.05,true,night,false,false);
+            assertEquals(Action.FLEE,mind.choose(danger,random));
+        }
+        assertTrue(mind.allowed(Action.REST,new Observation(.6,.8,.5,.2,false,true,false,false)),
+            "Ordinary injured rest remains available outside the starvation emergency");
+    }
+
+    @Test void foodSearchBeginsWithTravelReserveAndYieldsToKnownMeals(){
+        var mind=new AgentMind(ID);
+        var low=new Observation(.7,.2,.5,.9,false,true,false,false);
+        assertFalse(mind.allowed(Action.REST,low));assertTrue(mind.allowed(Action.EXPLORE,low));
+        assertTrue(mind.allowed(Action.REST,new Observation(Math.nextDown(.7),.2,.5,.9,false,true,false,false)));
+        assertTrue(mind.allowed(Action.REST,new Observation(.7,.2,.5,.9,false,true,true,false)));
+    }
+
+    @Test void housedPatientsRetainRecoveryRestAtLowFood(){
+        var mind=new AgentMind(ID);
+        var housed=new Observation(.9,.2,.5,.2,false,true,false,true);
+        assertTrue(mind.allowed(Action.REST,housed));
+        assertFalse(mind.allowed(Action.EXPLORE,housed));
+    }
+
     @Test void masksRemainValidDuringExplorationAndDangerOverridesEverything() {
         AgentMind mind = new AgentMind(ID);
         Random random = new Random(18);
-        Observation noFoodAtNight = new Observation(0.8, 0.7, 0.9, 0.2, false, true, false, false);
+        Observation noFoodAtNight = new Observation(0.6, 0.7, 0.9, 0.2, false, true, false, false);
         Observation danger = new Observation(1, 1, 1, 0.01, true, true, true, true);
         for (int i = 0; i < 2_000; i++) {
             assertEquals(Action.REST, mind.choose(noFoodAtNight, random));

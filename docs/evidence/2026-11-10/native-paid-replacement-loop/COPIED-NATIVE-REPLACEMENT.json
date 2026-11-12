@@ -1,0 +1,223 @@
+{
+  "scope": "Copied native gameplay only; no supplied items or body/health/resource setters. No copied-world promotion or primary births/iron claim.",
+  "beforeWorld": "runs/native-earned-gate-wood-and-tools-v8/NativeFourRegions",
+  "afterWorld": "runs/native-paid-canopy-and-replacement-v9/NativeFourRegions",
+  "beforeHero": {
+    "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+    "health": 20.0,
+    "position": [
+      -477.34290077998725,
+      63.0,
+      -371.50691310120527
+    ],
+    "inventory": [
+      {
+        "id": "minecraft:wooden_pickaxe",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 3
+        }
+      },
+      {
+        "id": "minecraft:cobblestone",
+        "count": 3
+      },
+      {
+        "id": "minecraft:dirt",
+        "count": 33
+      },
+      {
+        "id": "minecraft:bread",
+        "count": 1
+      },
+      {
+        "id": "minecraft:wheat",
+        "count": 1
+      },
+      {
+        "id": "minecraft:carrot",
+        "count": 10
+      },
+      {
+        "id": "minecraft:stone_pickaxe",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 123
+        }
+      },
+      {
+        "id": "minecraft:clay_ball",
+        "count": 4
+      }
+    ],
+    "equipment": {
+      "mainhand": {
+        "id": "minecraft:wooden_hoe",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 11
+        }
+      }
+    }
+  },
+  "afterHero": {
+    "id": "1d165330-2598-410c-827e-cc3b13c7bef9",
+    "health": 20.0,
+    "position": [
+      -501.5,
+      64.5625,
+      -385.5
+    ],
+    "inventory": [
+      {
+        "id": "minecraft:carrot",
+        "count": 4
+      },
+      {
+        "id": "minecraft:bread",
+        "count": 2
+      },
+      {
+        "id": "minecraft:wheat_seeds",
+        "count": 13
+      },
+      {
+        "id": "minecraft:beetroot_seeds",
+        "count": 7
+      },
+      {
+        "id": "minecraft:wheat",
+        "count": 1
+      }
+    ],
+    "equipment": {}
+  },
+  "terminal": {
+    "pid": 1229679,
+    "exitCode": 0
+  },
+  "elapsed": 13667,
+  "endedEarlyForDiagnosis": true,
+  "retainedHumanoidIds": true,
+  "bodyCount": 179,
+  "minimumSavedManagedHealth": 20.0,
+  "woodPreparation": {
+    "logs": 1,
+    "stepsPlaced": 0,
+    "lastStep": {},
+    "survey": {
+      "target": "",
+      "lastRoute": {
+        "end": "-494, 64, -330",
+        "gameTime": 290112,
+        "actor": "(-477.34290077998725, 63.0, -371.50691310120527)",
+        "nodes": 45,
+        "rememberedBell": "-493, 64, -329"
+      },
+      "canopy": {
+        "target": "",
+        "lastReceipt": {
+          "reach": 1.786654332921245,
+          "drops": [],
+          "toolDamageAfter": 14,
+          "toolDamageBefore": 13,
+          "toolBefore": "1 minecraft:wooden_hoe",
+          "position": "-502, 64, -327",
+          "tree": "-503, 63, -327",
+          "gameTime": 290662
+        },
+        "blocks": 3
+      }
+    },
+    "gates": {
+      "opened": 0,
+      "lastReceipt": {},
+      "gate": "",
+      "closed": 0
+    },
+    "recipes": 3,
+    "pathQueries": 0,
+    "lastPath": "none",
+    "activity": "crafting replacement_pickaxe supplies",
+    "goal": "NONE"
+  },
+  "inventoryTransfers": [
+    {
+      "elapsed": 680,
+      "receipt": {
+        "bagAfter": 0,
+        "offhandCount": 1,
+        "bagBefore": 1,
+        "action": "carried backup pickaxe in empty offhand",
+        "gameTime": 290752,
+        "item": "minecraft:wooden_pickaxe"
+      }
+    },
+    {
+      "elapsed": 720,
+      "receipt": {
+        "worldCount": 4,
+        "bagAfter": 0,
+        "item": "minecraft:clay_ball",
+        "gameTime": 290802,
+        "itemEntity": "f26a739c-e1d0-43f7-9b09-9ef957d5ca7f",
+        "bagBefore": 4,
+        "action": "put down quarry clay byproduct"
+      }
+    }
+  ],
+  "ironIngots": 0,
+  "ironPickaxe": false,
+  "materialAccounting": {
+    "nativeLogHarvests": 1,
+    "nativeRecipeCommits": 3,
+    "cobblestoneSpent": 3,
+    "newUndamagedStonePickaxes": 1,
+    "remainingOakPlanks": 2,
+    "remainingSticks": 2,
+    "backupWoodenPickaxeRetainedInOffhand": true
+  },
+  "limitation": "Replacement loop verified. Mine return later stalled at a distant workbench; latest code routes through the actual remembered mine entrance and retries bounded native search. That continuation is still running. No sustained village/camp growth, iron, Nether, End or victory proved.",
+  "checks": {
+    "command": "bash tools/test.sh",
+    "log": "/tmp/villagers-mine-frontier-lease-tests.log",
+    "tests": 490,
+    "failures": 0,
+    "errors": 0,
+    "pythonTests": 14
+  },
+  "mineReturnContinuation": {
+    "runtime": "native-restocked-mine-entrance-v10",
+    "stage": "bounded_iron_pickaxe_observation",
+    "elapsed": 24000,
+    "health": 20.0,
+    "food": 20,
+    "ironIngots": 0,
+    "passage": {
+      "depth": 0,
+      "turns": 1,
+      "reselect": true,
+      "face": "",
+      "mode": "level",
+      "faceBlock": "",
+      "activity": "rechecking the observed blocked prospecting faces after a short pause",
+      "part": 0,
+      "retainedFloors": 44,
+      "root": "-472, 55, -378",
+      "exhausted": false,
+      "failedScans": 114,
+      "entry": "-480, 63, -379",
+      "frontier": "",
+      "backtracks": 0,
+      "lastRoute": {
+        "safe": true,
+        "actor": "(-471.23164628631866, 55.0, -377.2492998773123)",
+        "nodes": 12,
+        "gameTime": 324009,
+        "end": "-480, 63, -379",
+        "target": "-480, 63, -379"
+      }
+    },
+    "limitation": "Reached the recorded deep floor after retooling; then114failed frontier scans exposed100tick retry versus80tick fair-queue lease. Latest10tick retry has a competing-worker regression test; fresh native trial running."
+  }
+}

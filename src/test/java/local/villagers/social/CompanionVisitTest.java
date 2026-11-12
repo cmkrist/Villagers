@@ -54,4 +54,11 @@ class CompanionVisitTest {
         assertFalse(visit.mayReceive(STRANGER,409));assertTrue(visit.mayReceive(STRANGER,410));
         assertFalse(visit.mayReceive(FRIEND,1209));assertTrue(visit.mayReceive(FRIEND,1210));
     }
+    @Test void ownSavedCommitmentChangesCompanyPreferenceWithoutForcingContactOrIgnoringCoolDown(){
+        var peers=List.of(new CompanionVisit.Candidate(FRIEND,.3,8,false,true),new CompanionVisit.Candidate(STRANGER,.3,1,false,false));
+        var visit=new CompanionVisit();assertEquals(FRIEND,visit.select(peers,0,0));visit.completed(FRIEND,50);
+        assertEquals(STRANGER,visit.select(peers,0,450),"Commitment does not override the partner's attention break");
+        var disliked=List.of(new CompanionVisit.Candidate(FRIEND,-.5,1,false,true),new CompanionVisit.Candidate(STRANGER,.3,8,false,false));
+        assertEquals(STRANGER,new CompanionVisit().select(disliked,0,0));
+    }
 }

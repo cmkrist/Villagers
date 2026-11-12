@@ -5,6 +5,25 @@ import static local.villagers.survival.SurvivalPolicy.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SurvivalPolicyTest {
+    @Test void hungryWakeupDoesNotImmediatelyOrderAnotherBedTrip(){
+        for(int food=0;food<=6;food++){
+            assertFalse(scheduledShelter(true,food));
+            assertEquals(Intent.NORMAL,choose(new Situation(false,scheduledShelter(true,food),true,true,true,4,false)));
+            assertEquals(Intent.SHELTER,choose(new Situation(true,scheduledShelter(true,food),true,true,true,4,false)));
+        }
+        assertTrue(scheduledShelter(true,7));
+        assertTrue(scheduledShelter(true,20));
+        assertFalse(scheduledShelter(false,20));
+    }
+    @Test void calmGuardProximityAllowsRestButNeverSuppressesActualDanger(){
+        assertTrue(mayRestByGuardian(false,64,true));
+        assertFalse(mayRestByGuardian(false,Math.nextUp(64d),true));
+        assertFalse(mayRestByGuardian(true,1,true));
+        assertFalse(mayRestByGuardian(false,1,false));
+        assertFalse(mayRestByGuardian(false,Double.NaN,true));
+        assertFalse(mayRestByGuardian(false,-1,true));
+        assertEquals(Intent.ESCAPE,choose(new Situation(true,false,false,false,false,0,false)));
+    }
     @Test void sharedVillageWorkIsBoundedToTheResidentsOwnBell(){
         assertTrue(withinVillageWorkArea(64,48));
         assertFalse(withinVillageWorkArea(64.01,10));assertFalse(withinVillageWorkArea(10,48.01));

@@ -1,0 +1,179 @@
+PERSISTENT PARTNERSHIPS — FULL LANGUAGE GOAL REMAINS ACTIVE
+2026-11-11
+
+Scope and remaining priorities
+
+This implements the explicit partnership/courtship slice of priority 3 in
+remaining-language-goal.txt. It does not complete practical work agreements,
+receptive grammar, word formation, childhood teaching or cultural/innovation
+evaluation. The full goal remains ACTIVE. These authored social rules are a
+bounded simulation, not evidence of human-like understanding or artificial life.
+
+Relationship behavior
+
+Friendship remains each villager's own opinion and actual shared experiences.
+It is distinct from a partnership, and a partnership is distinct from parenthood.
+An actor can propose a partnership after sufficient personal contact, affection
+and trust. Its own health, food, fatigue, fear, mood, temperament, commitments and
+separation cooldown affect willingness. The recipient evaluates its own state
+independently. Friendship does not guarantee reciprocal attraction or acceptance;
+refusing a partnership does not incur an automatic social penalty.
+
+A structural close-kin safeguard can block a proposal. It does not give either
+actor the other's private ancestry or feelings. The previous runtime shortcut
+that attached unspoken parent UUIDs to family offers has been removed. Existing
+ancestry and family-history records remain intact.
+
+The proposer speaks a relationship request, the receiver must parse it, the
+receiver speaks its own partner promise, the proposer must parse that promise,
+and the proposer speaks a reciprocal promise which the receiver must parse.
+Generic YES, WANT FRIEND, a child request, partial understanding or a past-tense
+statement cannot form a partnership. Speech is sounds and punctuation only;
+there is no LLM call or intended-clause input to an interpreter. The utterance
+receiver is the actual direct conversational participant, not an inferred hidden
+third party. The sentence translation surface recognizes the listener's parsed
+pragmatic frames, e.g. 'Will you be my partner?'.
+
+One active explicit partnership is supported per person. This is an authored
+exclusive-partnership model, not a claim that all real societies work this way.
+Each mind retains its own saved receipt, peer identity, agreement time, ended
+history and actual shared-visit history. Both saved receipts must match before
+mutual family permission exists. A partially saved pair cannot grant consent,
+copy the missing receipt or silently force the other person's commitment.
+An inconsistent pair can reaffirm its commitments only through fresh reciprocal
+spoken promises. The earlier account and its shared visits remain in ended
+RECONFIRMED history; it is not silently copied into the other mind. An existing
+commitment to a different person still blocks acceptance.
+
+Commitments affect ordinary company target preference using the actor's own
+saved relationship. They do not reveal a partner's unseen location, override
+home/navigation permissions, bypass attention cooldowns, force a visit, or prevent
+friendship with other villagers. Actual completed willing company updates opinion
+and persistent shared history; travel, a spoken promise and repeated nearby ticks
+do not earn shared visits. Shared-visit credit has a 400-tick minimum interval.
+A newly made vow receives no retroactive shared-visit completion.
+
+Withdrawal and absence
+
+Either participant can withdraw its own consent immediately. Negative personal
+regard or fear can cause the controller to do this even while the partner is
+absent. This changes only the actor's own relationship account and invalidates
+mutual family permission. Unloading someone does not reveal their current state
+or location. A nearby partner must independently decode the withdrawal before its
+own record is updated. An unintelligible or unheard withdrawal cannot force the
+actor to stay; it can leave the other's belief unresolved. A later actual contact
+can repeat the withdrawal, respecting a finite relationship attention budget.
+Withdrawal does not delete prior shared history, ancestry or children.
+
+At most eight partnership histories are retained; the active record is protected
+while old ended histories can be forgotten. A 2400-tick reconsideration interval
+prevents immediate automatic recommitment after a separation. A new proposal has
+a 1200-tick initiation cooldown. Both speakers have a separate 200-tick relationship
+attention budget, so relationship speech cannot starve urgent food requests.
+These counters/budgets are session state; the commitments themselves are saved.
+
+Separate parenthood consent and resources
+
+A family invitation now explicitly asks about a CHILD rather than describing
+friendship and a bed. A child promise is a different decoded act from a partner
+promise. New family invitations and family-company approaches select an existing
+partner. Each parent independently checks its current willingness and owned
+family-food reserve. Existing child consent remains a short-lived agreement;
+a saved partnership does not resurrect it after restart.
+
+Birth and King Size Bed visits require BOTH matching persistent partner receipts
+and matching current child agreements. Existing age, health, safety, kinship,
+food costs, planting reserve, nursery, occupancy, population, route and capability
+checks remain authoritative. A future-dated commitment cannot authorize a present
+family action. Partnership does not create a bed, food, child or replacement body;
+withdrawal invalidates family permission even before the peer understands it.
+
+Persistence and compatibility
+
+Mind schema 14 adds partnership history. Older saves start with no invented
+partnership while preserving names, words, cultural origins, opinions, learned
+policy, episodes, ancestry and identities. Existing parents are not retroactively
+assigned spouses or erased. Children do not inherit their parents' commitments.
+Unknown future schemas retain existing protection. Frozen checkpoints can use
+saved commitments but do not learn new partnerships, shared histories, withdrawals
+or family invitations.
+
+Verification
+
+Automated tests cover independently saved matching/half/mismatched receipts,
+exclusive commitments, unilateral withdrawal, bounded history, actual contact
+credit and duplicate suppression, own readiness/affection/trust requirements,
+non-inheritance, exact save/reload and schema-13 migration. Language tests cover
+partnership vs parenthood, generic assent, old friendship/bed phrases, foreign
+language/grammar, incomplete or wrongly addressed requests, tense and confidently
+wrong meanings. Integration-level consent tests require both relationship layers
+and show that withdrawal and future dates cannot bypass family permission.
+Company-choice checks compare a farther saved partner with a nearer equally liked
+friend and retain attention/dislike constraints.
+
+Pinned native results and source/artifact comparisons are in:
+  docs/evidence/2026-11-11/partnerships/verification.json
+
+The native fixture is a NEW peaceful platform with eight original adults. Prior
+friendships are explicitly seeded as three historic food-favor opinions; their
+acquisition is not claimed here. The seeker starts lonely and healthy; the host
+and six control actors are stationary NoAI responders. All start full with six
+actual bread. The ordinary production controller drives the seeker. It completes
+company, forms a mutually understood partnership and later records a separate
+actual shared visit. Three controlled production proposal opportunities verify an
+independently unwilling respondent and a pair lacking shared biome language.
+Those two controls acquire no relationship. A separate controlled pair begins
+with an explicitly declared one-sided prior receipt, grants no initial mutual
+consent, and repairs it through fresh decoded reciprocal promises while retaining
+the previous account. No saved mind is edited after setup. No post-setup fixture setters for body,
+health, inventory, grammar or relationships, or cooldown resets, are used.
+
+Further isolated restarts verify exact partnership/language/belief/opinion/episode
+records before new actions; frozen use without social learning; a separate native
+child invitation when breeding is enabled; missing-nursery birth rejection with
+parent food conserved; a declared spoken separation opportunity; and persistence
+of both ended accounts. No existing society is opened or advanced. Exhaustion0,
+stationary respondents, prior friendship and phase-specific breeding settings are
+declared controls. Native evidence does not claim naturally emerging attraction,
+newborn survival, visual UX, unrestricted culture, population scaling or a native
+paid birth under the new partnership gate.
+
+A retained first attempt passed formation/shared visits and frozen behavior but
+its restart proof tried to read stationary actors from an unpopulated session
+cache. The fixture now explicitly loads those original saved minds for its rare
+snapshot operation. It does not manufacture replacement minds. Subsequent fresh
+runs and final results are identified in the verification record; a failed proof
+run is not counted as a successful restart. A later family-phase proof also
+assumed a reply before a stationary NoAI actor's mind had been loaded. The final
+fixture loads that original mind and allows the ordinary invitation cooldown to
+elapse, without resetting it or forcing an invitation.
+
+Reproduce with a fresh lowercase runtime name:
+  source tools/java-env.sh
+  villagers_select_java
+  ./tools/test.sh
+  ./gradlew -I tools/probe-classpath.gradle writeProbeClasspath
+  python3 tools/partnership-server-test.py --runtime-name language-partnerships-FRESH
+
+The runner refuses retained directories, uses localhost:25622, requires the
+prepared server's accepted EULA, pins JARs/source and retains custody/results for
+each bounded owned process. Its five phases are first, frozen, family, restart
+and separated. The first phase deliberately disables breeding to isolate vows;
+the family phase enables it without adding a nursery or supplies.
+
+Next priority
+
+Persistent practical work agreements must negotiate actual terms through speech,
+guide permitted existing work, and distinguish completion, interruption and
+unfulfilled obligations. The full remaining language/cultural roadmap stays active.
+
+Final evidence: 654 Java tests and 19 Python tests passed. The pinned final
+native runtime language-partnerships-v6 passed all five phases, preserved all
+eight original bodies, reconciled its declared half-save through speech, reached
+the actual missing-nursery decision without spending parent food, and preserved
+both ended accounts on restart. Goal-relevant sources match the executed archive
+and the current build matches the pinned production JAR.
+
+Progress update: the bounded persistent work-agreement framework is implemented
+in docs/work-agreements-progress.txt. Receptive grammar, word formation, childhood
+teaching and cultural evaluation remain required under the ACTIVE full goal.

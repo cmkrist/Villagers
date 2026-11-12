@@ -1,0 +1,432 @@
+{
+  "runtime": "runs/native-current-supply-and-ore-v303",
+  "terminal": {
+    "pid": 2272251,
+    "exitCode": 0
+  },
+  "stop": {
+    "health": 1.0,
+    "elapsed": 1241,
+    "air": 300,
+    "position": "(-588.3496574417138, 64.0, -587.0964712984036)",
+    "actor": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+    "status": "failed",
+    "gameTime": 322754,
+    "stage": "health_stop"
+  },
+  "population": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "adventurer": {
+    "elapsed": 1240,
+    "actors": [
+      {
+        "armor": {
+          "equipped": 0,
+          "crafted": 0,
+          "lastReceipt": {},
+          "ironTarget": 8,
+          "ready": false,
+          "nextPiece": "CHEST"
+        },
+        "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+        "food": 19,
+        "navigation": {
+          "velocity": "(0.0, -0.0784000015258789, 0.0)",
+          "path": {},
+          "onGround": true,
+          "position": "(-474.69999998807907, 62.0, -344.80667143768164)",
+          "wanted": [
+            -474.5,
+            62.0,
+            -345.5
+          ]
+        },
+        "position": "(-474.69999998807907, 62.0, -344.80667143768164)",
+        "mainhand": "1 minecraft:wooden_hoe",
+        "health": 20.0,
+        "ageTicks": 259288,
+        "iron": {
+          "passage": {
+            "faceBlock": "",
+            "mode": "descending",
+            "face": "",
+            "reselect": false,
+            "turns": 0,
+            "depth": 0,
+            "root": "",
+            "retainedFloors": 114,
+            "part": 0,
+            "activity": "no prospecting passage",
+            "retainedEntries": 3,
+            "exhaustedEntries": 1,
+            "stepsWithoutDepth": 0,
+            "waterSeals": {
+              "active": false,
+              "placed": 0,
+              "lastReceipt": {},
+              "activity": "no water sealing job"
+            },
+            "foundations": 0,
+            "lastFoundation": {},
+            "exhausted": false,
+            "failedScans": 0,
+            "entry": "",
+            "frontier": "",
+            "backtracks": 0,
+            "lastRoute": {},
+            "frontierSearch": {
+              "candidates": 0,
+              "activity": "not checking junctions",
+              "queries": 0
+            }
+          },
+          "ironTaken": 3,
+          "crafted": 0,
+          "furnace": "-463, 63, -376",
+          "activity": "approaching a visible soil face in the quarry",
+          "loadedOre": 3,
+          "lastReceipt": {},
+          "lastApproach": {},
+          "plannedSite": "",
+          "fuelStored": true
+        },
+        "inventory": [
+          "1 minecraft:stone_pickaxe",
+          "1 minecraft:iron_pickaxe",
+          "37 minecraft:dirt",
+          "3 minecraft:bread",
+          "1 minecraft:carrot",
+          "4 minecraft:stick",
+          "1 minecraft:raw_iron",
+          "0 minecraft:air"
+        ],
+        "quarry": {
+          "centerings": 0,
+          "dug": 2,
+          "lastApproach": {
+            "gameTime": 322558,
+            "nodes": 2,
+            "actor": "(-473.3618391193644, 63.0, -345.5031991951391)",
+            "target": "-475, 61, -345",
+            "accepted": true,
+            "safe": true,
+            "end": "-475, 62, -346"
+          },
+          "step": 2,
+          "lastReceipt": {
+            "step": 2,
+            "drops": [
+              "1 minecraft:dirt"
+            ],
+            "position": "-475, 62, -345",
+            "gameTime": 321908
+          },
+          "origin": "-475, 63, -347",
+          "inspection": {
+            "survey": {
+              "lastRoute": {},
+              "target": "",
+              "visited": 0
+            },
+            "lastRetirement": {},
+            "repairs": 0,
+            "returning": false,
+            "reconsidered": 0,
+            "lastRepair": {},
+            "visited": 0,
+            "route": "none",
+            "reviewAt": 343202,
+            "target": ""
+          },
+          "lastStop": {},
+          "activity": "approaching a visible soil face in the quarry",
+          "stand": "-475, 62, -346"
+        }
+      }
+    ],
+    "gameTime": 322753
+  },
+  "patients": [
+    {
+      "id": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+      "name": "Birch-67f3",
+      "health": 1.0,
+      "food": 0,
+      "position": "-589, 64, -588",
+      "campMeals": {
+        "requests": 0,
+        "lastReceived": {}
+      },
+      "navigation": {
+        "velocity": "(0.0, -0.0784000015258789, 0.0)",
+        "path": {},
+        "onGround": true,
+        "position": "(-588.3496574417138, 64.0, -587.0964712984036)",
+        "wanted": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "body": {
+        "home": "Home[dimension=minecraft:overworld, x=-629, y=64, z=-602]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false,
+        "activity": "Birch-67f3 \u00b7 rest (miserable)",
+        "gateWait": {
+          "until": 328714,
+          "door": "",
+          "stand": ""
+        },
+        "ownedMeal": -1
+      }
+    },
+    {
+      "id": "4ed39acd-b764-4c41-b799-5ac9d5feefe7",
+      "name": "Willow-4ed3",
+      "health": 6.0,
+      "food": 5,
+      "position": "-631, 64, -607",
+      "campMeals": {
+        "requests": 0,
+        "lastReceived": {}
+      },
+      "navigation": {
+        "velocity": "(0.0, -0.0784000015258789, 0.0)",
+        "path": {},
+        "onGround": true,
+        "position": "(-630.3648672839797, 64.0, -606.7111915488407)",
+        "wanted": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "body": {
+        "home": "Home[dimension=minecraft:overworld, x=-626, y=74, z=-619]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false,
+        "activity": "Willow-4ed3 \u00b7 waiting for a nearby food reply (miserable)",
+        "gateWait": {
+          "until": 0,
+          "door": "",
+          "stand": ""
+        },
+        "ownedMeal": -1
+      }
+    },
+    {
+      "id": "fad46718-2403-42a5-9067-b66e72485ec0",
+      "name": "Moss-fad4",
+      "health": 3.0,
+      "food": 14,
+      "position": "-680, 64, -623",
+      "campMeals": {
+        "requests": 0,
+        "lastReceived": {}
+      },
+      "navigation": {
+        "velocity": "(0.0, -0.0784000015258789, 0.0)",
+        "path": {},
+        "onGround": true,
+        "position": "(-679.4966535631014, 64.0, -622.4875000119209)",
+        "wanted": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "body": {
+        "home": "Home[dimension=minecraft:overworld, x=-664, y=64, z=-626]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false,
+        "activity": "Moss-fad4 \u00b7 waiting for a nearby food reply (miserable)",
+        "gateWait": {
+          "until": 0,
+          "door": "",
+          "stand": ""
+        },
+        "ownedMeal": -1
+      }
+    },
+    {
+      "id": "240e2b57-7cf5-46a4-a9a4-bdd1357cfbc7",
+      "name": "Iris-240e",
+      "health": 18.0,
+      "food": 7,
+      "position": "-440, 64, -823",
+      "campMeals": {
+        "requests": 0,
+        "lastReceived": {}
+      },
+      "navigation": {
+        "velocity": "(0.0, -0.0784000015258789, 0.0)",
+        "path": {},
+        "onGround": true,
+        "position": "(-439.19999998807907, 64.5, -822.5117079202196)",
+        "wanted": [
+          -440.5,
+          63.0,
+          -822.5
+        ]
+      },
+      "body": {
+        "home": "null",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false,
+        "activity": "Iris-240e \u00b7 approaching neighbour to ask for food (unhappy)",
+        "gateWait": {
+          "until": 0,
+          "door": "",
+          "stand": ""
+        },
+        "ownedMeal": -1
+      }
+    }
+  ],
+  "workerReceipts": [
+    {
+      "actor": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "task": "campWork",
+      "receipt": {
+        "container": "-649, 64, -624",
+        "sourceBefore": 2,
+        "moved": 2,
+        "item": "minecraft:string",
+        "gameTime": 321591,
+        "sourceAfter": 0
+      }
+    },
+    {
+      "actor": "460ab4b6-1522-4504-9673-25fd503e0610",
+      "task": "campWork",
+      "receipt": {
+        "contents": [
+          "1 minecraft:egg"
+        ],
+        "inspected": "-688, 63, -596",
+        "gameTime": 321562
+      }
+    },
+    {
+      "actor": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "task": "campWork",
+      "receipt": {
+        "contents": [
+          "1 minecraft:arrow",
+          "1 minecraft:arrow",
+          "1 minecraft:egg",
+          "1 minecraft:egg",
+          "1 minecraft:arrow",
+          "1 minecraft:egg",
+          "1 minecraft:egg",
+          "1 minecraft:arrow",
+          "1 minecraft:egg"
+        ],
+        "inspected": "-649, 64, -624",
+        "gameTime": 321621
+      }
+    },
+    {
+      "actor": "40b3d4ca-683e-4f45-a8e4-0b38edf65b31",
+      "task": "campWork",
+      "receipt": {
+        "contents": [
+          "3 minecraft:arrow",
+          "4 minecraft:arrow"
+        ],
+        "inspected": "-682, 64, -591",
+        "gameTime": 321704
+      }
+    },
+    {
+      "actor": "460ab4b6-1522-4504-9673-25fd503e0610",
+      "task": "campWork",
+      "receipt": {
+        "contents": [
+          "3 minecraft:arrow",
+          "4 minecraft:arrow"
+        ],
+        "inspected": "-682, 64, -591",
+        "gameTime": 321852
+      }
+    },
+    {
+      "actor": "40b3d4ca-683e-4f45-a8e4-0b38edf65b31",
+      "task": "campWork",
+      "receipt": {
+        "contents": [
+          "1 minecraft:emerald",
+          "1 minecraft:egg",
+          "1 minecraft:emerald",
+          "1 minecraft:emerald",
+          "1 minecraft:emerald"
+        ],
+        "inspected": "-682, 63, -596",
+        "gameTime": 322034
+      }
+    },
+    {
+      "actor": "40b3d4ca-683e-4f45-a8e4-0b38edf65b31",
+      "task": "campWork",
+      "receipt": {
+        "contents": [],
+        "inspected": "-674, 63, -573",
+        "gameTime": 322324
+      }
+    },
+    {
+      "actor": "40b3d4ca-683e-4f45-a8e4-0b38edf65b31",
+      "task": "campWork",
+      "receipt": {
+        "contents": [
+          "1 minecraft:egg",
+          "2 minecraft:egg",
+          "1 minecraft:ominous_bottle",
+          "1 minecraft:ominous_bottle"
+        ],
+        "inspected": "-666, 64, -573",
+        "gameTime": 322424
+      }
+    },
+    {
+      "actor": "460ab4b6-1522-4504-9673-25fd503e0610",
+      "task": "campWork",
+      "receipt": {
+        "contents": [
+          "1 minecraft:emerald",
+          "1 minecraft:egg",
+          "1 minecraft:emerald",
+          "1 minecraft:emerald",
+          "1 minecraft:emerald"
+        ],
+        "inspected": "-682, 63, -596",
+        "gameTime": 322462
+      }
+    }
+  ]
+}

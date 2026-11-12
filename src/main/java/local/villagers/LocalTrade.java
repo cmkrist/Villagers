@@ -66,6 +66,7 @@ final class LocalTrade {
     }
     static String seek(ServerLevel level,Villager buyer,Session s,long now) {
         var good=need(buyer,s);
+        if(WorkLife.bound(s,good))return null;
         if(Villagers.LEARNING_MODE==LearningMode.FROZEN || !body(level,buyer,s) || good==null || now<s.nextTradeAttempt) {
             if(s.tradePeer!=null)buyer.getNavigation().stop();interrupt(s,now);return null;
         }
@@ -131,6 +132,7 @@ final class LocalTrade {
         if(Villagers.LEARNING_MODE==LearningMode.FROZEN || buyer==seller || to==null || !body(level,buyer,from) || !body(level,seller,to)
                 || need(buyer,from)!=good || !VillageSurvival.withinHomeRange(level,to.mind,buyer.position())
                 || !FoodRequest.inReach(buyer.distanceToSqr(seller),Villagers.config().hearingRadius(),buyer.hasLineOfSight(seller) && seller.hasLineOfSight(buyer)))return false;
+        if(WorkLife.bound(from,good)||WorkLife.bound(to,good))return false;
         var concept=MarketGoods.concept(good);
         var request=List.of(Concept.WANT,Concept.TRADE,concept,Concept.EMERALD);
         if(!understands(level,buyer,from,seller,to,request))return declined(from,good,"proposal not understood");
@@ -195,6 +197,9 @@ final class LocalTrade {
         if(good==MarketGoods.Good.WOOD && !ready)return;
         if(!ready && good==MarketGoods.Good.HOE && !ToolProduction.canPrepare(seller,to))return;
         if(!ready && good==MarketGoods.Good.FOOD && !FoodSupply.canPrepare(seller.getInventory(),AdventureActions.canHarvest(seller)))return;
+        if(!ready&&(good==MarketGoods.Good.HOE||good==MarketGoods.Good.FOOD)){
+            WorkLife.negotiate(level,buyer,from,seller,good==MarketGoods.Good.HOE?local.villagers.work.WorkOrders.Task.WOODEN_HOE:local.villagers.work.WorkOrders.Task.BREAD);return;
+        }
         var concept=MarketGoods.concept(good);
         var quote=new ArrayList<Concept>();quote.add(Concept.TRADE);quote.add(concept);
         for(int i=0;i<price;i++)quote.add(Concept.EMERALD);

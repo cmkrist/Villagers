@@ -1,0 +1,132 @@
+VERIFIABLE LANGUAGE AND GRAMMAR GOAL
+2026-11-11
+
+Objective
+
+Give managed villagers compositional biome-based speech, listener-specific
+interpretation, and language change through observable social encounters. Every
+NPC interpretation must come from sounds and the listener's knowledge. No LLM
+participates. Preserve saved words and origins, keep learning bounded, and verify
+that interpretation influences existing AI interactions.
+
+Acceptance criteria
+
+1. Same-language speakers can express and parse complete subject/verb/object
+   clauses. Four founding cultures have distinct deterministic word orders:
+   plains SVO; desert/badlands SOV; forest/jungle/taiga VSO; snowy/frozen/peaks OVS.
+2. Speaker intention and listener interpretation are separate. A listener may
+   be 100% confident while choosing the wrong meaning or reversing semantic roles.
+   Correctness is diagnostic data, not an AI decision oracle.
+3. Missing required words, including negation/past markers, never disappear to
+   produce a deceptively complete sentence. Developing children can still use
+   their sparse primitive phrases, subject to existing complete-request checks.
+4. Repeated varied observable encounters teach vocabulary and grammatical word
+   order. Unobserved private meanings provide no learning evidence. Contradictory
+   observable evidence can repair an incorrect word association.
+5. Food requests, trade acceptance and family signals are checked through the
+   listener's decoded sentence. Actual reach, inventory, willingness and other
+   existing action requirements remain authoritative.
+6. Learning survives save/reload and children inherit a small vocabulary and a
+   weak preference for a parent's learned grammar. Older saves upgrade while
+   keeping their existing words and cultural origin. Future schemas stay protected.
+7. Generic gossip cannot unlock a named person's exact reputation or episode
+   unless speech actually identifies that information. Current generic phrases
+   therefore describe experiences but no longer disclose those hidden records.
+8. An isolated Minecraft server demonstrates a wrong interpretation preventing
+   a real handoff, repaired interpretation enabling a conserved real handoff,
+   speech-driven grammar change, and original minds retaining grammar on restart.
+
+Implementation
+
+Clause represents subject, predicate, object, negation and past marking. Sentence
+realizes these into learned sounds using the speaker's current word order.
+The interpreter accepts only sounds, vocabulary and grammar; intended clauses
+are retained separately for diagnostic comparison. Semicolon punctuation bounds
+up to 8 clauses / 47 sounds. English translations are constructed from the listener's
+interpretation, so they can also be confidently wrong.
+
+Grammar stores six bounded order scores, up to 1000 each, decaying by halving on
+saturation. Founders start with 6 observations for their biome order; children
+start with 2 for a parent's selected order. Independently observed three-role
+events add evidence only when known words identify one unambiguous order.
+Contact can change the preferred spoken construction. Ties retain the existing
+spoken convention; adoption requires strictly greater evidence. Passive vocabulary
+acquisition retains native pronunciations while learning receptive synonyms.
+
+LanguageLearning supplies a sound-only boundary for both NPCs and players.
+Speech provides candidate meanings from public gestures, held objects, damage
+and jointly visible blocks; speech intent itself supplies no private labels.
+Existing request production no longer leaks the requester's private hunger as
+player/NPC vocabulary evidence. Interpretation summaries enter the donor's
+bounded memory when it hears a care request.
+
+Mind schema 10 embeds grammar within Lexicon. Glossary schema 2 stores player
+grammar and accepts schema 1 migration. Existing concept ordinals 0..27 remain
+stable; syntax concepts are appended. Old adults acquire missing grammatical
+words from their own founding language rather than a new private random dialect.
+Sparse old children are not overwritten with adult vocabulary.
+
+Verification and retained evidence
+
+./tools/test.sh — 583 Java tests and 17 Python tests passed on the implementation.
+SentenceTest exercises same-language situations across four biomes, confident
+wrong meanings/roles, foreign vocabulary+grammar acquisition from no vocabulary,
+contradictory-evidence repair, missing markers, all current care/commerce phrases,
+sound-only decoding, and finite evidence. LanguagePersistenceTest and
+GlossaryPersistenceTest cover grammar inheritance, reload and older-schema upgrades.
+
+Native integration: tools/language-server-test.py creates a NEW peaceful walled
+world with four declared provisioned adults. It never opens a society save.
+It compiles a fixture mod against the mapped production classes and pins JAR
+hashes and source. The fixture controls encounter scheduling; it is an integration
+test, not an assertion of spontaneous natural-village emergence or survival.
+
+runs/language-grammar-v1 retained a failed directional expectation: grammar changed
+in the original teacher, while the check required the learner to change. Both
+participants had receptive exposure; the recorded result was bidirectional
+convergence. The acceptance check now requires either participant to adopt the
+other's observed order and records which one changed; no production rule was
+added to force a preferred outcome.
+
+runs/language-grammar-v2 passed at 700 native ticks and passed restart with all 4
+original minds verified before decisions. It showed a mistaken food->bed meaning
+preventing a gift, explicit observable-food repair enabling one real bread gift,
+and the snowy teacher adopting SVO through actual Speech.converse exchanges.
+All4fixture bodies survived. Final artifact verification runs and artifact hashes are
+recorded in docs/evidence/2026-11-11/biome-grammar/verification.json.
+
+Final runs/language-grammar-v4 passed at 800 native ticks. The learner adopted
+OVS through actual conversations; ties now retain existing conventions until
+foreign evidence wins strictly. Restart verified all four original minds.
+The tested production JAR matched the current build when evidence was captured.
+
+Reproduce
+
+source tools/java-env.sh
+villagers_select_java
+./tools/test.sh
+./gradlew -I tools/probe-classpath.gradle writeProbeClasspath
+python3 tools/language-server-test.py --runtime-name language-FRESH-LOWERCASE-NAME
+
+Use a new language-[a-z0-9-]+runtime name. The runner refuses retained directories
+and requires the existing owner-accepted server EULA. It binds localhost:25618,
+uses bounded first/restart processes, and records terminal reports and PID custody.
+
+Limits and follow-on work
+
+This achieves a bounded first language/grammar engine. Six authored word-order
+patterns are learned; new grammatical categories do not emerge from scratch.
+Confidence is an uncalibrated grammar-evidence heuristic, not a probability of truth.
+Grammar preferences currently mix across encounters rather than keeping a separate
+syntax model for each foreign language. Negation and past marking are supported
+and tested by the engine; legacy activity adapters mostly emit present clauses.
+Proper names, explicit third-party event references, novel compound words,
+conversational clarification, knowledge testimony, promises, jobs, courtship
+dialogue and general planning remain further milestones. Generic memories cannot
+currently teach the full exact episode through speech; already-shared memories
+remain available through the existing recall interface.
+
+The runtime proof is server-side. No new visual-client acceptance or large
+population compute benchmark is claimed. Primary and historical native worlds
+were not advanced. This does not establish human-like understanding, consciousness,
+autonomous grammar invention, sustained survival or population-level evolution.

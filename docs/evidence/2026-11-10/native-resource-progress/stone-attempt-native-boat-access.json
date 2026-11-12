@@ -1,0 +1,4364 @@
+{
+  "elapsed": 6000,
+  "stage": "bounded_observation",
+  "initialGameTime": 73819,
+  "copyBorderSize": 8192.0,
+  "initial": [
+    {
+      "id": "96cbd3bc-ebc5-4522-b101-b83ee55c471f",
+      "name": "Birch-96cb",
+      "position": [
+        -524.5325714522401,
+        63.0,
+        -365.6832158791377
+      ],
+      "production": {
+        "lastHarvest": {},
+        "planted": 0,
+        "breadCrafted": 0,
+        "actions": {
+          "doorsOpened": 0,
+          "doorsClosed": 0,
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0
+        },
+        "lastPlant": {}
+      },
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[3 minecraft:oak_planks, 2 minecraft:stick]",
+      "adventure": {
+        "activity": "no adventure objective",
+        "quarry": {
+          "origin": "",
+          "dug": 0,
+          "activity": "no quarry job",
+          "step": 0,
+          "lastReceipt": {}
+        },
+        "stone": 0,
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        }
+      },
+      "woodPreparation": {
+        "activity": "no preparation job",
+        "logs": 0,
+        "goal": "NONE",
+        "recipes": 0,
+        "pathQueries": 0,
+        "lastPath": "none"
+      },
+      "body": {
+        "fatigue": 0.05684375000000004,
+        "activity": "Birch-96cb · socialize",
+        "passenger": false,
+        "sleeping": false,
+        "courtship": "NONE"
+      },
+      "held": "1 minecraft:wooden_hoe",
+      "boat": {
+        "launches": 0,
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "landings": 0,
+        "phase": "NONE",
+        "logsGathered": 0,
+        "recipes": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:workbench:-525,63,-347,minecraft:overworld",
+        "villagers:managed",
+        "villagers:sea:PREPARE:-482,63,-330,-482,-329:-480,63,-285,-479,-285:true:FOOD"
+      ],
+      "woodJob": {
+        "table": "null",
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null"
+      },
+      "westernPublicBench": {
+        "route": {
+          "exists": false
+        },
+        "position": "-525, 63, -347"
+      },
+      "station": "-525, 63, -347",
+      "stationRoutes": [
+        {
+          "stand": "-524, 63, -349",
+          "ordinary": {
+            "end": "-524, 63, -349",
+            "canReach": true,
+            "nodes": 18,
+            "exists": true,
+            "wet": [],
+            "bounded": false
+          },
+          "waterExcluded": {
+            "end": "-524, 63, -349",
+            "canReach": true,
+            "nodes": 18,
+            "exists": true,
+            "wet": [],
+            "bounded": false
+          },
+          "range64": {
+            "end": "-524, 63, -349",
+            "canReach": true,
+            "nodes": 18,
+            "exists": true,
+            "wet": [],
+            "bounded": false
+          },
+          "range64Budget2": {
+            "end": "-524, 63, -349",
+            "canReach": true,
+            "nodes": 18,
+            "exists": true,
+            "wet": [],
+            "bounded": false
+          }
+        },
+        {
+          "stand": "-524, 63, -348",
+          "ordinary": {
+            "end": "-524, 63, -348",
+            "canReach": true,
+            "nodes": 19,
+            "exists": true,
+            "wet": [],
+            "bounded": false
+          },
+          "waterExcluded": {
+            "end": "-524, 63, -348",
+            "canReach": true,
+            "nodes": 19,
+            "exists": true,
+            "wet": [],
+            "bounded": false
+          },
+          "range64": {
+            "end": "-524, 63, -348",
+            "canReach": true,
+            "nodes": 19,
+            "exists": true,
+            "wet": [],
+            "bounded": false
+          },
+          "range64Budget2": {
+            "end": "-524, 63, -348",
+            "canReach": true,
+            "nodes": 19,
+            "exists": true,
+            "wet": [],
+            "bounded": false
+          }
+        },
+        {
+          "stand": "-524, 63, -347",
+          "ordinary": {
+            "end": "-524, 63, -347",
+            "canReach": true,
+            "nodes": 20,
+            "exists": true,
+            "wet": [],
+            "bounded": false
+          },
+          "waterExcluded": {
+            "end": "-524, 63, -347",
+            "canReach": true,
+            "nodes": 20,
+            "exists": true,
+            "wet": [],
+            "bounded": false
+          },
+          "range64": {
+            "end": "-524, 63, -347",
+            "canReach": true,
+            "nodes": 20,
+            "exists": true,
+            "wet": [],
+            "bounded": false
+          },
+          "range64Budget2": {
+            "end": "-524, 63, -347",
+            "canReach": true,
+            "nodes": 20,
+            "exists": true,
+            "wet": [],
+            "bounded": false
+          }
+        }
+      ],
+      "followRange": 14.81937118993688,
+      "trees": [],
+      "tables": [],
+      "ripeCrops": [],
+      "meetingPoint": "-493, 64, -329",
+      "fields": [
+        {
+          "visible": false,
+          "position": "-489, 64, -325",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -325",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -325",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -325",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -324",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": true,
+          "position": "-489, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -323",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": true,
+          "position": "-489, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": true,
+          "position": "-488, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": true,
+          "position": "-489, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": true,
+          "position": "-488, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -321",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": true,
+          "position": "-489, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": true,
+          "position": "-488, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": true,
+          "position": "-489, 64, -319",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": true,
+          "position": "-488, 64, -319",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": true,
+          "position": "-486, 64, -319",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        }
+      ],
+      "villageTrees": [
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-476, 66, -359"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-477, 66, -350"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-524, 67, -348"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-503, 63, -327"
+        }
+      ],
+      "surfaceStone": [],
+      "launches": [
+        {
+          "land": "-525, 63, -366",
+          "reachable": true,
+          "water": "-525, 62, -367"
+        },
+        {
+          "land": "-526, 63, -365",
+          "reachable": true,
+          "water": "-527, 62, -365"
+        },
+        {
+          "land": "-524, 63, -365",
+          "reachable": true,
+          "water": "-523, 62, -365"
+        }
+      ],
+      "observedCrossing": {
+        "arrival": "-528, 63, -320",
+        "points": 16,
+        "launch": "-525, 63, -366",
+        "found": true
+      }
+    },
+    {
+      "id": "5432d3df-f37a-4371-9465-aa1568bb4b02",
+      "name": "Nell-5432",
+      "position": [
+        -526.26432070389,
+        63.0,
+        -323.2212440806335
+      ],
+      "production": {
+        "lastHarvest": {},
+        "planted": 0,
+        "breadCrafted": 0,
+        "actions": {
+          "doorsOpened": 0,
+          "doorsClosed": 0,
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0
+        },
+        "lastPlant": {}
+      },
+      "health": 20.0,
+      "food": 15,
+      "inventory": "[]",
+      "adventure": {
+        "activity": "no adventure objective",
+        "quarry": {
+          "origin": "",
+          "dug": 0,
+          "activity": "no quarry job",
+          "step": 0,
+          "lastReceipt": {}
+        },
+        "stone": 0,
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        }
+      },
+      "woodPreparation": {
+        "activity": "no preparation job",
+        "logs": 0,
+        "goal": "NONE",
+        "recipes": 0,
+        "pathQueries": 0,
+        "lastPath": "none"
+      },
+      "body": {
+        "fatigue": 0.056875000000000044,
+        "activity": "Nell-5432 · walking to observed ripe crops",
+        "passenger": false,
+        "sleeping": false,
+        "courtship": "NONE"
+      },
+      "held": "0 minecraft:air",
+      "boat": {
+        "launches": 0,
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "landings": 0,
+        "phase": "NONE",
+        "logsGathered": 0,
+        "recipes": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed",
+        "villagers:sea:PREPARE:-521,63,-332,-520,-332:-497,63,-386,-496,-386:true:FOOD"
+      ],
+      "woodJob": {
+        "table": "null",
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null"
+      },
+      "westernPublicBench": {
+        "route": {
+          "end": "-526, 63, -346",
+          "canReach": true,
+          "nodes": 24,
+          "exists": true,
+          "wet": [],
+          "bounded": true
+        },
+        "position": "-525, 63, -347"
+      },
+      "station": "-525, 63, -347",
+      "stationRoutes": [
+        {
+          "stand": "-524, 63, -345",
+          "ordinary": {
+            "end": "-524, 63, -345",
+            "canReach": true,
+            "nodes": 22,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "waterExcluded": {
+            "end": "-524, 63, -345",
+            "canReach": true,
+            "nodes": 22,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64": {
+            "end": "-524, 63, -345",
+            "canReach": true,
+            "nodes": 22,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-524, 63, -345",
+            "canReach": true,
+            "nodes": 22,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        },
+        {
+          "stand": "-527, 63, -346",
+          "ordinary": {
+            "end": "-527, 63, -346",
+            "canReach": true,
+            "nodes": 23,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "waterExcluded": {
+            "end": "-527, 63, -346",
+            "canReach": true,
+            "nodes": 23,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64": {
+            "end": "-527, 63, -346",
+            "canReach": true,
+            "nodes": 23,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-527, 63, -346",
+            "canReach": true,
+            "nodes": 23,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        },
+        {
+          "stand": "-526, 63, -346",
+          "ordinary": {
+            "end": "-526, 63, -346",
+            "canReach": true,
+            "nodes": 24,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "waterExcluded": {
+            "end": "-526, 63, -346",
+            "canReach": true,
+            "nodes": 24,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64": {
+            "end": "-526, 63, -346",
+            "canReach": true,
+            "nodes": 24,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-526, 63, -346",
+            "canReach": true,
+            "nodes": 24,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        }
+      ],
+      "followRange": 16.536234940167816,
+      "trees": [],
+      "tables": [],
+      "ripeCrops": [],
+      "meetingPoint": "-493, 64, -329",
+      "fields": [
+        {
+          "visible": false,
+          "position": "-489, 64, -325",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -325",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -325",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -325",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -324",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -323",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -321",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -319",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -319",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -319",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        }
+      ],
+      "villageTrees": [
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-476, 66, -359"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-477, 66, -350"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-524, 67, -348"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-503, 63, -327"
+        }
+      ],
+      "surfaceStone": [],
+      "launches": [
+        {
+          "land": "-528, 63, -323",
+          "reachable": true,
+          "water": "-529, 62, -323"
+        },
+        {
+          "land": "-529, 63, -325",
+          "reachable": true,
+          "water": "-530, 62, -325"
+        },
+        {
+          "land": "-528, 63, -322",
+          "reachable": true,
+          "water": "-529, 62, -322"
+        }
+      ],
+      "observedCrossing": {
+        "arrival": "-525, 63, -366",
+        "points": 6,
+        "launch": "-528, 63, -323",
+        "found": true
+      }
+    },
+    {
+      "id": "438701f4-3aba-4cda-b583-46051f1e0f53",
+      "name": "Oak-4387",
+      "position": [
+        -521.4625754641753,
+        64.0,
+        -324.47969122797974
+      ],
+      "production": {
+        "lastHarvest": {},
+        "planted": 0,
+        "breadCrafted": 0,
+        "actions": {
+          "doorsOpened": 0,
+          "doorsClosed": 0,
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0
+        },
+        "lastPlant": {}
+      },
+      "health": 20.0,
+      "food": 16,
+      "inventory": "[6 minecraft:wheat, 1 minecraft:potato]",
+      "adventure": {
+        "activity": "no adventure objective",
+        "quarry": {
+          "origin": "",
+          "dug": 0,
+          "activity": "no quarry job",
+          "step": 0,
+          "lastReceipt": {}
+        },
+        "stone": 0,
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        }
+      },
+      "woodPreparation": {
+        "activity": "no preparation job",
+        "logs": 0,
+        "goal": "NONE",
+        "recipes": 0,
+        "pathQueries": 0,
+        "lastPath": "none"
+      },
+      "body": {
+        "fatigue": 0.05656250000000004,
+        "activity": "Oak-4387 · needs accessible natural boat wood (unhappy)",
+        "passenger": false,
+        "sleeping": false,
+        "courtship": "NONE"
+      },
+      "held": "0 minecraft:air",
+      "boat": {
+        "launches": 0,
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "landings": 0,
+        "phase": "NONE",
+        "logsGathered": 0,
+        "recipes": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:workbench:-478,63,-361,minecraft:overworld",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "table": "null",
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null"
+      },
+      "westernPublicBench": {
+        "route": {
+          "end": "-524, 63, -346",
+          "canReach": true,
+          "nodes": 24,
+          "exists": true,
+          "wet": [],
+          "bounded": true
+        },
+        "position": "-525, 63, -347"
+      },
+      "station": "-525, 63, -347",
+      "stationRoutes": [
+        {
+          "stand": "-524, 63, -345",
+          "ordinary": {
+            "end": "-524, 63, -345",
+            "canReach": true,
+            "nodes": 23,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "waterExcluded": {
+            "end": "-524, 63, -345",
+            "canReach": true,
+            "nodes": 23,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64": {
+            "end": "-524, 63, -345",
+            "canReach": true,
+            "nodes": 23,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-524, 63, -345",
+            "canReach": true,
+            "nodes": 23,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        },
+        {
+          "stand": "-524, 63, -346",
+          "ordinary": {
+            "end": "-524, 63, -346",
+            "canReach": true,
+            "nodes": 24,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "waterExcluded": {
+            "end": "-524, 63, -346",
+            "canReach": true,
+            "nodes": 24,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64": {
+            "end": "-524, 63, -346",
+            "canReach": true,
+            "nodes": 24,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-524, 63, -346",
+            "canReach": true,
+            "nodes": 24,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        },
+        {
+          "stand": "-525, 63, -346",
+          "ordinary": {
+            "end": "-525, 63, -346",
+            "canReach": true,
+            "nodes": 24,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "waterExcluded": {
+            "end": "-525, 63, -346",
+            "canReach": true,
+            "nodes": 24,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64": {
+            "end": "-525, 63, -346",
+            "canReach": true,
+            "nodes": 24,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-525, 63, -346",
+            "canReach": true,
+            "nodes": 24,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        }
+      ],
+      "followRange": 16.701067836982563,
+      "trees": [],
+      "tables": [],
+      "ripeCrops": [],
+      "meetingPoint": "-493, 64, -329",
+      "fields": [
+        {
+          "visible": false,
+          "position": "-489, 64, -325",
+          "mature": true,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -325",
+          "mature": true,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -325",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -325",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -324",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -324",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -324",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -323",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -323",
+          "mature": true,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -322",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -322",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -321",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -321",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -319",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -319",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -319",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        }
+      ],
+      "villageTrees": [
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-476, 66, -359"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-477, 66, -350"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-524, 67, -348"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-503, 63, -327"
+        }
+      ],
+      "surfaceStone": [],
+      "launches": [
+        {
+          "land": "-522, 63, -319",
+          "reachable": true,
+          "water": "-522, 62, -318"
+        },
+        {
+          "land": "-521, 63, -319",
+          "reachable": true,
+          "water": "-521, 62, -318"
+        },
+        {
+          "land": "-528, 63, -323",
+          "reachable": true,
+          "water": "-529, 62, -323"
+        }
+      ],
+      "observedCrossing": {
+        "found": false
+      }
+    },
+    {
+      "id": "af2b94ad-f799-4b93-a2c3-e958b2836c84",
+      "name": "Dara-af2b",
+      "position": [
+        -523.4698918544193,
+        63.0,
+        -345.67143800216854
+      ],
+      "production": {
+        "lastHarvest": {},
+        "planted": 0,
+        "breadCrafted": 0,
+        "actions": {
+          "doorsOpened": 0,
+          "doorsClosed": 0,
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0
+        },
+        "lastPlant": {}
+      },
+      "health": 20.0,
+      "food": 16,
+      "inventory": "[]",
+      "adventure": {
+        "activity": "no adventure objective",
+        "quarry": {
+          "origin": "",
+          "dug": 0,
+          "activity": "no quarry job",
+          "step": 0,
+          "lastReceipt": {}
+        },
+        "stone": 0,
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        }
+      },
+      "woodPreparation": {
+        "activity": "no preparation job",
+        "logs": 0,
+        "goal": "NONE",
+        "recipes": 0,
+        "pathQueries": 0,
+        "lastPath": "none"
+      },
+      "body": {
+        "fatigue": 0.04807812499999983,
+        "activity": "Dara-af2b · looking for boat wood",
+        "passenger": false,
+        "sleeping": false,
+        "courtship": "NONE"
+      },
+      "held": "0 minecraft:air",
+      "boat": {
+        "launches": 0,
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "landings": 0,
+        "phase": "NONE",
+        "logsGathered": 0,
+        "recipes": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "table": "null",
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null"
+      },
+      "westernPublicBench": {
+        "route": {
+          "end": "-524, 63, -347",
+          "canReach": true,
+          "nodes": 2,
+          "exists": true,
+          "wet": [],
+          "bounded": true
+        },
+        "position": "-525, 63, -347"
+      },
+      "station": "-525, 63, -347",
+      "stationRoutes": [
+        {
+          "stand": "-524, 63, -346",
+          "ordinary": {
+            "end": "-524, 63, -346",
+            "canReach": true,
+            "nodes": 1,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "waterExcluded": {
+            "end": "-524, 63, -346",
+            "canReach": true,
+            "nodes": 1,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64": {
+            "end": "-524, 63, -346",
+            "canReach": true,
+            "nodes": 1,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-524, 63, -346",
+            "canReach": true,
+            "nodes": 1,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        },
+        {
+          "stand": "-524, 63, -347",
+          "ordinary": {
+            "end": "-524, 63, -347",
+            "canReach": true,
+            "nodes": 2,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "waterExcluded": {
+            "end": "-524, 63, -347",
+            "canReach": true,
+            "nodes": 2,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64": {
+            "end": "-524, 63, -347",
+            "canReach": true,
+            "nodes": 2,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-524, 63, -347",
+            "canReach": true,
+            "nodes": 2,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        },
+        {
+          "stand": "-525, 63, -346",
+          "ordinary": {
+            "end": "-525, 63, -346",
+            "canReach": true,
+            "nodes": 2,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "waterExcluded": {
+            "end": "-525, 63, -346",
+            "canReach": true,
+            "nodes": 2,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64": {
+            "end": "-525, 63, -346",
+            "canReach": true,
+            "nodes": 2,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-525, 63, -346",
+            "canReach": true,
+            "nodes": 2,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        }
+      ],
+      "followRange": 15.338650627704117,
+      "trees": [],
+      "tables": [
+        {
+          "visible": true,
+          "position": "-525, 63, -347"
+        }
+      ],
+      "ripeCrops": [],
+      "meetingPoint": "-493, 64, -329",
+      "fields": [
+        {
+          "visible": false,
+          "position": "-489, 64, -325",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -325",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -325",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -325",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -324",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -323",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -321",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -319",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -319",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -319",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        }
+      ],
+      "villageTrees": [
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-476, 66, -359"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-477, 66, -350"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-524, 67, -348"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-503, 63, -327"
+        }
+      ],
+      "surfaceStone": [],
+      "launches": [
+        {
+          "land": "-527, 63, -347",
+          "reachable": true,
+          "water": "-527, 62, -348"
+        },
+        {
+          "land": "-527, 63, -347",
+          "reachable": true,
+          "water": "-528, 62, -347"
+        },
+        {
+          "land": "-528, 63, -345",
+          "reachable": true,
+          "water": "-529, 62, -345"
+        }
+      ],
+      "observedCrossing": {
+        "arrival": "-503, 63, -389",
+        "points": 9,
+        "launch": "-527, 63, -347",
+        "found": true
+      }
+    },
+    {
+      "id": "1d165330-2598-410c-827e-cc3b13c7bef9",
+      "name": "Birch-1d16",
+      "position": [
+        -498.5573560290864,
+        63.0,
+        -381.50543017020584
+      ],
+      "production": {
+        "lastHarvest": {},
+        "planted": 0,
+        "breadCrafted": 0,
+        "actions": {
+          "doorsOpened": 0,
+          "doorsClosed": 0,
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0
+        },
+        "lastPlant": {}
+      },
+      "health": 20.0,
+      "food": 17,
+      "inventory": "[1 minecraft:beetroot_seeds, 2 minecraft:bread, 3 minecraft:wheat]",
+      "adventure": {
+        "activity": "no adventure objective",
+        "quarry": {
+          "origin": "",
+          "dug": 0,
+          "activity": "no quarry job",
+          "step": 0,
+          "lastReceipt": {}
+        },
+        "stone": 0,
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        }
+      },
+      "woodPreparation": {
+        "activity": "no preparation job",
+        "logs": 0,
+        "goal": "NONE",
+        "recipes": 0,
+        "pathQueries": 0,
+        "lastPath": "none"
+      },
+      "body": {
+        "fatigue": 0.05656250000000004,
+        "activity": "Birch-1d16 · explore",
+        "passenger": false,
+        "sleeping": false,
+        "courtship": "NONE"
+      },
+      "held": "0 minecraft:air",
+      "boat": {
+        "launches": 0,
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "landings": 0,
+        "phase": "NONE",
+        "logsGathered": 0,
+        "recipes": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:workbench:-478,63,-361,minecraft:overworld",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "table": "null",
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null"
+      },
+      "westernPublicBench": {
+        "route": {
+          "exists": false
+        },
+        "position": "-525, 63, -347"
+      },
+      "station": "-478, 63, -361",
+      "stationRoutes": [
+        {
+          "stand": "-480, 63, -362",
+          "ordinary": {
+            "end": "-480, 63, -362",
+            "canReach": true,
+            "nodes": 35,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "waterExcluded": {
+            "end": "-480, 63, -362",
+            "canReach": true,
+            "nodes": 35,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64": {
+            "end": "-480, 63, -362",
+            "canReach": true,
+            "nodes": 35,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-480, 63, -362",
+            "canReach": true,
+            "nodes": 35,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        },
+        {
+          "stand": "-480, 63, -361",
+          "ordinary": {
+            "end": "-480, 63, -361",
+            "canReach": true,
+            "nodes": 35,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "waterExcluded": {
+            "end": "-480, 63, -361",
+            "canReach": true,
+            "nodes": 35,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64": {
+            "end": "-480, 63, -361",
+            "canReach": true,
+            "nodes": 35,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-480, 63, -361",
+            "canReach": true,
+            "nodes": 35,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        },
+        {
+          "stand": "-479, 63, -361",
+          "ordinary": {
+            "end": "-479, 63, -361",
+            "canReach": true,
+            "nodes": 36,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "waterExcluded": {
+            "end": "-479, 63, -361",
+            "canReach": true,
+            "nodes": 36,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64": {
+            "end": "-479, 63, -361",
+            "canReach": true,
+            "nodes": 36,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-479, 63, -361",
+            "canReach": true,
+            "nodes": 36,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        }
+      ],
+      "followRange": 15.284160993708696,
+      "trees": [],
+      "tables": [],
+      "ripeCrops": [],
+      "meetingPoint": "-493, 64, -329",
+      "fields": [
+        {
+          "visible": false,
+          "position": "-489, 64, -325",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -325",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": true,
+          "position": "-486, 64, -325",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": true,
+          "position": "-485, 64, -325",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": true,
+          "position": "-486, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": true,
+          "position": "-485, 64, -324",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -323",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": true,
+          "position": "-485, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": true,
+          "position": "-485, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -321",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": true,
+          "position": "-485, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -319",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -319",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -319",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        }
+      ],
+      "villageTrees": [
+        {
+          "boundedApproach": true,
+          "dryApproach": true,
+          "root": "-476, 66, -359"
+        },
+        {
+          "boundedApproach": true,
+          "dryApproach": false,
+          "root": "-477, 66, -350"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-524, 67, -348"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-503, 63, -327"
+        }
+      ],
+      "surfaceStone": [],
+      "launches": [
+        {
+          "land": "-497, 63, -384",
+          "reachable": true,
+          "water": "-496, 62, -384"
+        },
+        {
+          "land": "-499, 63, -379",
+          "reachable": true,
+          "water": "-499, 62, -378"
+        },
+        {
+          "land": "-500, 63, -379",
+          "reachable": true,
+          "water": "-500, 62, -378"
+        }
+      ],
+      "observedCrossing": {
+        "arrival": "-527, 63, -353",
+        "points": 19,
+        "launch": "-497, 63, -384",
+        "found": true
+      }
+    },
+    {
+      "id": "f572553d-4483-44b5-8ed5-6ffe7e7745b7",
+      "name": "Tansy-f572",
+      "position": [
+        -482.5,
+        64.0,
+        -288.5
+      ],
+      "production": {
+        "lastHarvest": {},
+        "planted": 0,
+        "breadCrafted": 0,
+        "actions": {
+          "doorsOpened": 0,
+          "doorsClosed": 0,
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0
+        },
+        "lastPlant": {}
+      },
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[1 minecraft:carrot, 5 minecraft:wheat, 4 minecraft:wheat_seeds, 2 minecraft:bread]",
+      "adventure": {
+        "activity": "no adventure objective",
+        "quarry": {
+          "origin": "",
+          "dug": 0,
+          "activity": "no quarry job",
+          "step": 0,
+          "lastReceipt": {}
+        },
+        "stone": 0,
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        }
+      },
+      "woodPreparation": {
+        "activity": "no preparation job",
+        "logs": 0,
+        "goal": "NONE",
+        "recipes": 0,
+        "pathQueries": 0,
+        "lastPath": "none"
+      },
+      "body": {
+        "fatigue": 0.058437500000000045,
+        "activity": "Tansy-f572 · socialize",
+        "passenger": false,
+        "sleeping": false,
+        "courtship": "NONE"
+      },
+      "held": "0 minecraft:air",
+      "boat": {
+        "launches": 0,
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "landings": 0,
+        "phase": "NONE",
+        "logsGathered": 0,
+        "recipes": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "table": "null",
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null"
+      },
+      "westernPublicBench": {
+        "route": {
+          "exists": false
+        },
+        "position": "-525, 63, -347"
+      },
+      "trees": [],
+      "tables": [],
+      "ripeCrops": [],
+      "meetingPoint": "-493, 64, -329",
+      "fields": [
+        {
+          "visible": false,
+          "position": "-489, 64, -325",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -325",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -325",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -325",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -324",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -323",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -321",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -321",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -320",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -319",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -319",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -319",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        }
+      ],
+      "villageTrees": [
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-476, 66, -359"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-477, 66, -350"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-524, 67, -348"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-503, 63, -327"
+        }
+      ],
+      "surfaceStone": [],
+      "launches": [
+        {
+          "land": "-480, 63, -289",
+          "reachable": true,
+          "water": "-479, 62, -289"
+        },
+        {
+          "land": "-480, 63, -290",
+          "reachable": true,
+          "water": "-479, 62, -290"
+        },
+        {
+          "land": "-480, 63, -291",
+          "reachable": true,
+          "water": "-479, 62, -291"
+        }
+      ],
+      "observedCrossing": {
+        "found": false
+      }
+    },
+    {
+      "id": "c5578b5b-8991-428d-9d82-7cb57a956269",
+      "name": "Alder-c557",
+      "position": [
+        -478.5,
+        64.0,
+        -374.5
+      ],
+      "production": {
+        "lastHarvest": {},
+        "planted": 0,
+        "breadCrafted": 0,
+        "actions": {
+          "doorsOpened": 0,
+          "doorsClosed": 0,
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0
+        },
+        "lastPlant": {}
+      },
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[1 minecraft:bread, 9 minecraft:wheat]",
+      "adventure": {
+        "activity": "no adventure objective",
+        "quarry": {
+          "origin": "",
+          "dug": 0,
+          "activity": "no quarry job",
+          "step": 0,
+          "lastReceipt": {}
+        },
+        "stone": 0,
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        }
+      },
+      "woodPreparation": {
+        "activity": "no preparation job",
+        "logs": 0,
+        "goal": "NONE",
+        "recipes": 0,
+        "pathQueries": 0,
+        "lastPath": "none"
+      },
+      "body": {
+        "fatigue": 0.05656250000000004,
+        "activity": "Alder-c557 · gathering food for a child",
+        "passenger": false,
+        "sleeping": false,
+        "courtship": "NONE"
+      },
+      "held": "0 minecraft:air",
+      "boat": {
+        "launches": 0,
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "landings": 0,
+        "phase": "NONE",
+        "logsGathered": 0,
+        "recipes": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed",
+        "villagers:workbench:-472,63,-367,minecraft:overworld"
+      ],
+      "woodJob": {
+        "table": "null",
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null"
+      },
+      "westernPublicBench": {
+        "route": {
+          "exists": false
+        },
+        "position": "-525, 63, -347"
+      },
+      "station": "-472, 63, -367",
+      "stationRoutes": [
+        {
+          "stand": "-472, 63, -368",
+          "ordinary": {
+            "end": "-472, 63, -368",
+            "canReach": true,
+            "nodes": 12,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "waterExcluded": {
+            "end": "-472, 63, -368",
+            "canReach": true,
+            "nodes": 12,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64": {
+            "end": "-472, 63, -368",
+            "canReach": true,
+            "nodes": 12,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-472, 63, -368",
+            "canReach": true,
+            "nodes": 12,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        },
+        {
+          "stand": "-472, 64, -367",
+          "ordinary": {
+            "end": "-472, 64, -367",
+            "canReach": true,
+            "nodes": 13,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "waterExcluded": {
+            "end": "-472, 64, -367",
+            "canReach": true,
+            "nodes": 13,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64": {
+            "end": "-472, 64, -367",
+            "canReach": true,
+            "nodes": 13,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-472, 64, -367",
+            "canReach": true,
+            "nodes": 13,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        },
+        {
+          "stand": "-473, 63, -366",
+          "ordinary": {
+            "end": "-473, 63, -366",
+            "canReach": true,
+            "nodes": 14,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "waterExcluded": {
+            "end": "-473, 63, -366",
+            "canReach": true,
+            "nodes": 14,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64": {
+            "end": "-473, 63, -366",
+            "canReach": true,
+            "nodes": 14,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-473, 63, -366",
+            "canReach": true,
+            "nodes": 14,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        }
+      ],
+      "followRange": 15.180496553071213,
+      "trees": [
+        "-476, 66, -359"
+      ],
+      "tables": [
+        {
+          "visible": false,
+          "position": "-472, 63, -367"
+        },
+        {
+          "visible": false,
+          "position": "-473, 63, -363"
+        },
+        {
+          "visible": false,
+          "position": "-478, 63, -361"
+        }
+      ],
+      "ripeCrops": [],
+      "meetingPoint": "-493, 64, -329",
+      "fields": [
+        {
+          "visible": false,
+          "position": "-489, 64, -325",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -325",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -325",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -325",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -324",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -324",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -323",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -323",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -322",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -321",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-485, 64, -321",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -320",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-489, 64, -319",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-488, 64, -319",
+          "mature": false,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        },
+        {
+          "visible": false,
+          "position": "-486, 64, -319",
+          "mature": true,
+          "nativeDryRoute": false,
+          "boundedRoute": false
+        }
+      ],
+      "villageTrees": [
+        {
+          "boundedApproach": true,
+          "dryApproach": true,
+          "root": "-476, 66, -359"
+        },
+        {
+          "boundedApproach": true,
+          "dryApproach": false,
+          "root": "-477, 66, -350"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-524, 67, -348"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-503, 63, -327"
+        }
+      ],
+      "surfaceStone": [],
+      "launches": [
+        {
+          "land": "-482, 63, -376",
+          "reachable": true,
+          "water": "-483, 62, -376"
+        },
+        {
+          "land": "-481, 63, -379",
+          "reachable": true,
+          "water": "-481, 62, -380"
+        },
+        {
+          "land": "-483, 63, -373",
+          "reachable": true,
+          "water": "-484, 62, -373"
+        }
+      ],
+      "observedCrossing": {
+        "found": false
+      }
+    },
+    {
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "name": "Clover-edc5",
+      "position": [
+        -475.4917311326141,
+        63.0,
+        -329.52523970420197
+      ],
+      "production": {
+        "lastHarvest": {},
+        "planted": 0,
+        "breadCrafted": 0,
+        "actions": {
+          "doorsOpened": 0,
+          "doorsClosed": 0,
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0
+        },
+        "lastPlant": {}
+      },
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[3 minecraft:bread, 1 minecraft:wooden_pickaxe]",
+      "adventure": {
+        "activity": "no adventure objective",
+        "quarry": {
+          "origin": "",
+          "dug": 0,
+          "activity": "no quarry job",
+          "step": 0,
+          "lastReceipt": {}
+        },
+        "stone": 0,
+        "stonePickaxe": false,
+        "nominated": true,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        }
+      },
+      "woodPreparation": {
+        "activity": "no preparation job",
+        "logs": 0,
+        "goal": "NONE",
+        "recipes": 0,
+        "pathQueries": 0,
+        "lastPath": "none"
+      },
+      "body": {
+        "fatigue": 0.05653125000000004,
+        "activity": "Clover-edc5 · looking for preparation wood",
+        "passenger": false,
+        "sleeping": false,
+        "courtship": "NONE"
+      },
+      "held": "1 minecraft:wooden_hoe",
+      "boat": {
+        "launches": 0,
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "landings": 0,
+        "phase": "NONE",
+        "logsGathered": 0,
+        "recipes": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:quarry_failed:-132216274710465",
+        "villagers:quarry_failed:-132216274751425",
+        "villagers:managed",
+        "villagers:stone_shore:-130567007150017",
+        "villagers:adventurer"
+      ],
+      "woodJob": {
+        "table": "null",
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null"
+      },
+      "quarrySites": {
+        "examples": [
+          {
+            "safeApproach": false,
+            "root": "-476, 63, -335",
+            "target": "-476, 62, -336",
+            "ready": false,
+            "direction": "NORTH",
+            "reasons": [
+              "native structure piece",
+              "covered",
+              "near furnishings or crops"
+            ]
+          },
+          {
+            "safeApproach": false,
+            "root": "-476, 63, -335",
+            "target": "-475, 62, -335",
+            "ready": false,
+            "direction": "EAST",
+            "reasons": [
+              "native structure piece",
+              "adjacent fluid or unloaded",
+              "near furnishings or crops"
+            ]
+          },
+          {
+            "safeApproach": false,
+            "root": "-476, 63, -335",
+            "target": "-477, 62, -335",
+            "ready": false,
+            "direction": "WEST",
+            "reasons": [
+              "native structure piece",
+              "adjacent fluid or unloaded"
+            ]
+          },
+          {
+            "safeApproach": false,
+            "root": "-477, 63, -335",
+            "target": "-477, 62, -336",
+            "ready": false,
+            "direction": "NORTH",
+            "reasons": [
+              "native structure piece",
+              "covered",
+              "near furnishings or crops"
+            ]
+          },
+          {
+            "safeApproach": false,
+            "root": "-477, 63, -335",
+            "target": "-476, 62, -335",
+            "ready": false,
+            "direction": "EAST",
+            "reasons": [
+              "native structure piece",
+              "adjacent fluid or unloaded"
+            ]
+          },
+          {
+            "safeApproach": false,
+            "root": "-477, 63, -335",
+            "target": "-478, 62, -335",
+            "ready": false,
+            "direction": "WEST",
+            "reasons": [
+              "native structure piece",
+              "adjacent fluid or unloaded"
+            ]
+          },
+          {
+            "safeApproach": false,
+            "root": "-478, 63, -335",
+            "target": "-478, 62, -336",
+            "ready": false,
+            "direction": "NORTH",
+            "reasons": [
+              "native structure piece",
+              "covered",
+              "near furnishings or crops"
+            ]
+          },
+          {
+            "safeApproach": false,
+            "root": "-478, 63, -335",
+            "target": "-477, 62, -335",
+            "ready": false,
+            "direction": "EAST",
+            "reasons": [
+              "native structure piece",
+              "adjacent fluid or unloaded"
+            ]
+          },
+          {
+            "safeApproach": false,
+            "root": "-478, 63, -335",
+            "target": "-479, 62, -335",
+            "ready": false,
+            "direction": "WEST",
+            "reasons": [
+              "native structure piece",
+              "adjacent fluid or unloaded"
+            ]
+          },
+          {
+            "safeApproach": false,
+            "root": "-474, 63, -335",
+            "target": "-474, 62, -336",
+            "ready": false,
+            "direction": "NORTH",
+            "reasons": [
+              "native structure piece",
+              "near furnishings or crops"
+            ]
+          },
+          {
+            "safeApproach": false,
+            "root": "-474, 63, -335",
+            "target": "-475, 62, -335",
+            "ready": false,
+            "direction": "WEST",
+            "reasons": [
+              "native structure piece",
+              "adjacent fluid or unloaded",
+              "near furnishings or crops"
+            ]
+          },
+          {
+            "safeApproach": false,
+            "root": "-479, 63, -335",
+            "target": "-479, 62, -336",
+            "ready": false,
+            "direction": "NORTH",
+            "reasons": [
+              "native structure piece",
+              "covered",
+              "near furnishings or crops"
+            ]
+          }
+        ],
+        "counts": {
+          "adjacent fluid or unloaded": 30,
+          "covered": 36,
+          "native structure piece": 77,
+          "near furnishings or crops": 57,
+          "not visible top": 2
+        },
+        "candidateRoots": 25
+      },
+      "naturalWood": [
+        {
+          "position": "-503, 63, -327",
+          "eligible": true,
+          "block": "Block{minecraft:oak_log}[axis\u003dy]",
+          "route": {
+            "exists": false
+          }
+        },
+        {
+          "position": "-476, 66, -359",
+          "eligible": true,
+          "block": "Block{minecraft:oak_log}[axis\u003dy]",
+          "route": {
+            "end": "-476, 63, -359",
+            "canReach": true,
+            "nodes": 48,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        },
+        {
+          "position": "-477, 66, -350",
+          "eligible": true,
+          "block": "Block{minecraft:oak_log}[axis\u003dy]",
+          "route": {
+            "end": "-478, 63, -349",
+            "canReach": true,
+            "nodes": 36,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        },
+        {
+          "position": "-476, 64, -363",
+          "eligible": false,
+          "block": "Block{minecraft:oak_log}[axis\u003dy]",
+          "route": {
+            "end": "-476, 63, -361",
+            "canReach": true,
+            "nodes": 48,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        }
+      ],
+      "westernPublicBench": {
+        "route": {
+          "exists": false
+        },
+        "position": "-525, 63, -347"
+      },
+      "station": "-478, 63, -361",
+      "stationRoutes": [
+        {
+          "stand": "-478, 63, -359",
+          "ordinary": {
+            "end": "-478, 62, -354",
+            "canReach": false,
+            "nodes": 41,
+            "exists": true,
+            "wet": [
+              "-478, 62, -354"
+            ],
+            "bounded": false
+          },
+          "waterExcluded": {
+            "end": "-478, 63, -353",
+            "canReach": false,
+            "nodes": 40,
+            "exists": true,
+            "wet": [],
+            "bounded": false
+          },
+          "range64": {
+            "end": "-478, 63, -359",
+            "canReach": true,
+            "nodes": 50,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-478, 63, -359",
+            "canReach": true,
+            "nodes": 50,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        },
+        {
+          "stand": "-476, 63, -360",
+          "ordinary": {
+            "end": "-473, 63, -357",
+            "canReach": false,
+            "nodes": 44,
+            "exists": true,
+            "wet": [],
+            "bounded": false
+          },
+          "waterExcluded": {
+            "end": "-473, 63, -357",
+            "canReach": false,
+            "nodes": 44,
+            "exists": true,
+            "wet": [],
+            "bounded": false
+          },
+          "range64": {
+            "end": "-476, 63, -360",
+            "canReach": true,
+            "nodes": 48,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-476, 63, -360",
+            "canReach": true,
+            "nodes": 48,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        },
+        {
+          "stand": "-477, 63, -360",
+          "ordinary": {
+            "end": "-473, 63, -357",
+            "canReach": false,
+            "nodes": 44,
+            "exists": true,
+            "wet": [],
+            "bounded": false
+          },
+          "waterExcluded": {
+            "end": "-473, 63, -357",
+            "canReach": false,
+            "nodes": 44,
+            "exists": true,
+            "wet": [],
+            "bounded": false
+          },
+          "range64": {
+            "end": "-477, 63, -360",
+            "canReach": true,
+            "nodes": 49,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          },
+          "range64Budget2": {
+            "end": "-477, 63, -360",
+            "canReach": true,
+            "nodes": 49,
+            "exists": true,
+            "wet": [],
+            "bounded": true
+          }
+        }
+      ],
+      "followRange": 15.079086514770424,
+      "trees": [],
+      "tables": [],
+      "ripeCrops": [
+        "-489, 64, -325",
+        "-488, 64, -325",
+        "-485, 64, -324",
+        "-488, 64, -323",
+        "-486, 64, -321",
+        "-486, 64, -319"
+      ],
+      "meetingPoint": "-493, 64, -329",
+      "fields": [
+        {
+          "visible": true,
+          "position": "-489, 64, -325",
+          "mature": true,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-488, 64, -325",
+          "mature": true,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-486, 64, -325",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-485, 64, -325",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-489, 64, -324",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-488, 64, -324",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-486, 64, -324",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-485, 64, -324",
+          "mature": true,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-489, 64, -323",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-488, 64, -323",
+          "mature": true,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-486, 64, -323",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-485, 64, -323",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-489, 64, -322",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-488, 64, -322",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-486, 64, -322",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-485, 64, -322",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-489, 64, -321",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-488, 64, -321",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-486, 64, -321",
+          "mature": true,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-485, 64, -321",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-489, 64, -320",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-488, 64, -320",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-486, 64, -320",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-489, 64, -319",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-488, 64, -319",
+          "mature": false,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        },
+        {
+          "visible": true,
+          "position": "-486, 64, -319",
+          "mature": true,
+          "nativeDryRoute": true,
+          "boundedRoute": true
+        }
+      ],
+      "villageTrees": [
+        {
+          "boundedApproach": true,
+          "dryApproach": true,
+          "root": "-476, 66, -359"
+        },
+        {
+          "boundedApproach": true,
+          "dryApproach": true,
+          "root": "-477, 66, -350"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-524, 67, -348"
+        },
+        {
+          "boundedApproach": false,
+          "dryApproach": false,
+          "root": "-503, 63, -327"
+        }
+      ],
+      "surfaceStone": [],
+      "launches": [
+        {
+          "land": "-477, 63, -330",
+          "reachable": true,
+          "water": "-477, 62, -329"
+        },
+        {
+          "land": "-476, 63, -330",
+          "reachable": true,
+          "water": "-476, 62, -329"
+        },
+        {
+          "land": "-478, 63, -330",
+          "reachable": true,
+          "water": "-478, 62, -329"
+        }
+      ],
+      "observedCrossing": {
+        "arrival": "-460, 63, -384",
+        "points": 24,
+        "launch": "-477, 63, -330",
+        "found": true
+      }
+    }
+  ],
+  "status": "passed",
+  "gameTime": 79819,
+  "scope": "Actual saved island residents in a copy; no actor/resources/inventory/health setters. Primary unchanged. Bounded observation alone is not food-voyage proof.",
+  "actors": [
+    {
+      "id": "96cbd3bc-ebc5-4522-b101-b83ee55c471f",
+      "name": "Birch-96cb",
+      "position": [
+        -483.97261752300665,
+        63.0,
+        -327.5009918709269
+      ],
+      "production": {
+        "lastHarvest": {
+          "gameTime": 76811,
+          "position": "-485, 64, -324",
+          "crop": "BEETROOT",
+          "plantingSource": "owned stock",
+          "nativeDrops": [
+            "1 minecraft:beetroot",
+            "3 minecraft:beetroot_seeds"
+          ],
+          "inventoryBefore": [
+            "3 minecraft:oak_planks",
+            "2 minecraft:stick",
+            "2 minecraft:wheat",
+            "2 minecraft:wheat_seeds",
+            "0 minecraft:air",
+            "3 minecraft:beetroot_seeds",
+            "0 minecraft:air",
+            "0 minecraft:air"
+          ],
+          "inventoryAfter": [
+            "3 minecraft:oak_planks",
+            "2 minecraft:stick",
+            "2 minecraft:wheat",
+            "2 minecraft:wheat_seeds",
+            "1 minecraft:beetroot",
+            "5 minecraft:beetroot_seeds",
+            "0 minecraft:air",
+            "0 minecraft:air"
+          ],
+          "overflow": [],
+          "hoeDamageBefore": 3,
+          "hoeDamageAfter": 4,
+          "hoeBroke": false,
+          "usedHoe": true,
+          "cropAfter": "Block{minecraft:beetroots}[age\u003d0]"
+        },
+        "planted": 4,
+        "breadCrafted": 0,
+        "actions": {
+          "doorsOpened": 0,
+          "doorsClosed": 0,
+          "replantsFromStock": 2,
+          "cropsHarvested": 4,
+          "swordHits": 0,
+          "replantsFromHarvest": 2
+        },
+        "lastPlant": {
+          "gameTime": 79311,
+          "nativeVillage": true,
+          "hoeDamageAfter": 8,
+          "soil": "-484, 62, -327",
+          "crop": "Block{minecraft:beetroots}[age\u003d0]",
+          "seed": "minecraft:beetroot_seeds",
+          "hoeBroke": false,
+          "seedAfter": 2,
+          "hoeDamageBefore": 7,
+          "seedBefore": 3
+        }
+      },
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[3 minecraft:oak_planks, 2 minecraft:stick, 2 minecraft:wheat, 1 minecraft:wheat_seeds, 2 minecraft:beetroot_seeds]",
+      "adventure": {
+        "activity": "no adventure objective",
+        "quarry": {
+          "origin": "",
+          "dug": 0,
+          "activity": "no quarry job",
+          "step": 0,
+          "lastReceipt": {}
+        },
+        "stone": 0,
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        }
+      },
+      "woodPreparation": {
+        "activity": "no preparation job",
+        "logs": 0,
+        "goal": "NONE",
+        "recipes": 0,
+        "pathQueries": 0,
+        "lastPath": "none"
+      },
+      "body": {
+        "fatigue": 0.24409374999999617,
+        "activity": "Birch-96cb · needs a dry route to natural boat wood (unhappy)",
+        "passenger": false,
+        "sleeping": false,
+        "courtship": "NONE"
+      },
+      "held": "1 minecraft:wooden_hoe",
+      "boat": {
+        "launches": 0,
+        "activity": "needs a dry route to natural boat wood",
+        "purpose": "FOOD",
+        "paddleTicks": 870,
+        "landings": 1,
+        "phase": "PREPARE",
+        "logsGathered": 0,
+        "recipes": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:workbench:-525,63,-347,minecraft:overworld",
+        "villagers:managed",
+        "villagers:sea:PREPARE:-482,63,-330,-482,-329:-480,63,-285,-479,-285:true:FOOD"
+      ],
+      "woodJob": {
+        "table": "BlockPos{x\u003d-478, y\u003d63, z\u003d-361}",
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null"
+      }
+    },
+    {
+      "id": "5432d3df-f37a-4371-9465-aa1568bb4b02",
+      "name": "Nell-5432",
+      "position": [
+        -516.6895820726141,
+        63.0,
+        -326.5162054736321
+      ],
+      "production": {
+        "lastHarvest": {},
+        "planted": 0,
+        "breadCrafted": 0,
+        "actions": {
+          "doorsOpened": 4,
+          "doorsClosed": 5,
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0
+        },
+        "lastPlant": {}
+      },
+      "health": 20.0,
+      "food": 14,
+      "inventory": "[]",
+      "adventure": {
+        "activity": "no adventure objective",
+        "quarry": {
+          "origin": "",
+          "dug": 0,
+          "activity": "no quarry job",
+          "step": 0,
+          "lastReceipt": {}
+        },
+        "stone": 0,
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        }
+      },
+      "woodPreparation": {
+        "activity": "needs a dry route to natural preparation wood",
+        "logs": 0,
+        "goal": "HOE",
+        "recipes": 0,
+        "pathQueries": 0,
+        "lastPath": "none"
+      },
+      "body": {
+        "fatigue": 0.24412499999999618,
+        "activity": "Nell-5432 · looking for boat wood (unhappy)",
+        "passenger": false,
+        "sleeping": false,
+        "courtship": "NONE"
+      },
+      "held": "0 minecraft:air",
+      "boat": {
+        "launches": 0,
+        "activity": "looking for boat wood",
+        "purpose": "FOOD",
+        "paddleTicks": 0,
+        "landings": 0,
+        "phase": "PREPARE",
+        "logsGathered": 0,
+        "recipes": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed",
+        "villagers:sea:PREPARE:-521,63,-332,-520,-332:-497,63,-386,-496,-386:true:FOOD"
+      ],
+      "woodJob": {
+        "table": "BlockPos{x\u003d-525, y\u003d63, z\u003d-347}",
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null"
+      }
+    },
+    {
+      "id": "438701f4-3aba-4cda-b583-46051f1e0f53",
+      "name": "Oak-4387",
+      "position": [
+        -525.4953538126613,
+        63.0,
+        -324.46432863608135
+      ],
+      "production": {
+        "lastHarvest": {},
+        "planted": 0,
+        "breadCrafted": 2,
+        "actions": {
+          "doorsOpened": 5,
+          "doorsClosed": 4,
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0
+        },
+        "lastPlant": {}
+      },
+      "health": 20.0,
+      "food": 16,
+      "inventory": "[1 minecraft:potato, 2 minecraft:bread]",
+      "adventure": {
+        "activity": "no adventure objective",
+        "quarry": {
+          "origin": "",
+          "dug": 0,
+          "activity": "no quarry job",
+          "step": 0,
+          "lastReceipt": {}
+        },
+        "stone": 0,
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        }
+      },
+      "woodPreparation": {
+        "activity": "needs a dry route to natural preparation wood",
+        "logs": 0,
+        "goal": "HOE",
+        "recipes": 0,
+        "pathQueries": 0,
+        "lastPath": "none"
+      },
+      "body": {
+        "fatigue": 0.24378124999999617,
+        "activity": "Oak-4387 · explore (unhappy)",
+        "passenger": false,
+        "sleeping": false,
+        "courtship": "NONE"
+      },
+      "held": "0 minecraft:air",
+      "boat": {
+        "launches": 0,
+        "activity": "boat preparation timed out",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "landings": 0,
+        "phase": "NONE",
+        "logsGathered": 0,
+        "recipes": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:workbench:-478,63,-361,minecraft:overworld",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "table": "BlockPos{x\u003d-525, y\u003d63, z\u003d-347}",
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "BlockPos{x\u003d-478, y\u003d63, z\u003d-361}"
+      }
+    },
+    {
+      "id": "af2b94ad-f799-4b93-a2c3-e958b2836c84",
+      "name": "Dara-af2b",
+      "position": [
+        -517.2344309606124,
+        63.0,
+        -345.49093081795417
+      ],
+      "production": {
+        "lastHarvest": {},
+        "planted": 0,
+        "breadCrafted": 0,
+        "actions": {
+          "doorsOpened": 2,
+          "doorsClosed": 2,
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0
+        },
+        "lastPlant": {}
+      },
+      "health": 20.0,
+      "food": 11,
+      "inventory": "[]",
+      "adventure": {
+        "activity": "no adventure objective",
+        "quarry": {
+          "origin": "",
+          "dug": 0,
+          "activity": "no quarry job",
+          "step": 0,
+          "lastReceipt": {}
+        },
+        "stone": 0,
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        }
+      },
+      "woodPreparation": {
+        "activity": "no preparation job",
+        "logs": 0,
+        "goal": "NONE",
+        "recipes": 0,
+        "pathQueries": 0,
+        "lastPath": "none"
+      },
+      "body": {
+        "fatigue": 0.2074531249999984,
+        "activity": "Dara-af2b · explore (unhappy)",
+        "passenger": false,
+        "sleeping": false,
+        "courtship": "NONE"
+      },
+      "held": "0 minecraft:air",
+      "boat": {
+        "launches": 0,
+        "activity": "boat preparation timed out",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "landings": 0,
+        "phase": "NONE",
+        "logsGathered": 0,
+        "recipes": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "table": "BlockPos{x\u003d-525, y\u003d63, z\u003d-347}",
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null"
+      }
+    },
+    {
+      "id": "1d165330-2598-410c-827e-cc3b13c7bef9",
+      "name": "Birch-1d16",
+      "position": [
+        -497.49487094438,
+        63.0,
+        -328.23875171910134
+      ],
+      "production": {
+        "lastHarvest": {
+          "gameTime": 77355,
+          "position": "-488, 64, -322",
+          "crop": "WHEAT",
+          "plantingSource": "native harvest",
+          "nativeDrops": [
+            "1 minecraft:wheat",
+            "3 minecraft:wheat_seeds"
+          ],
+          "inventoryBefore": [
+            "1 minecraft:beetroot_seeds",
+            "2 minecraft:bread",
+            "0 minecraft:air",
+            "2 minecraft:stick",
+            "0 minecraft:air",
+            "0 minecraft:air",
+            "0 minecraft:air",
+            "0 minecraft:air"
+          ],
+          "inventoryAfter": [
+            "1 minecraft:beetroot_seeds",
+            "2 minecraft:bread",
+            "1 minecraft:wheat",
+            "2 minecraft:stick",
+            "2 minecraft:wheat_seeds",
+            "0 minecraft:air",
+            "0 minecraft:air",
+            "0 minecraft:air"
+          ],
+          "overflow": [],
+          "hoeDamageBefore": 0,
+          "hoeDamageAfter": 1,
+          "hoeBroke": false,
+          "usedHoe": true,
+          "cropAfter": "Block{minecraft:wheat}[age\u003d0]"
+        },
+        "planted": 1,
+        "breadCrafted": 1,
+        "actions": {
+          "doorsOpened": 1,
+          "doorsClosed": 1,
+          "replantsFromStock": 0,
+          "cropsHarvested": 1,
+          "swordHits": 0,
+          "replantsFromHarvest": 1
+        },
+        "lastPlant": {
+          "gameTime": 77605,
+          "nativeVillage": true,
+          "hoeDamageAfter": 2,
+          "soil": "-485, 62, -327",
+          "crop": "Block{minecraft:wheat}[age\u003d0]",
+          "seed": "minecraft:wheat_seeds",
+          "hoeBroke": false,
+          "seedAfter": 1,
+          "hoeDamageBefore": 1,
+          "seedBefore": 2
+        }
+      },
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[1 minecraft:beetroot_seeds, 2 minecraft:bread, 1 minecraft:wheat, 2 minecraft:stick, 1 minecraft:wheat_seeds]",
+      "adventure": {
+        "activity": "no adventure objective",
+        "quarry": {
+          "origin": "",
+          "dug": 0,
+          "activity": "no quarry job",
+          "step": 0,
+          "lastReceipt": {}
+        },
+        "stone": 0,
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        }
+      },
+      "woodPreparation": {
+        "activity": "crafting hoe supplies",
+        "logs": 1,
+        "goal": "HOE",
+        "recipes": 1,
+        "pathQueries": 3,
+        "lastPath": "reach\u003dtrue nodes\u003d6 target\u003dBlockPos{x\u003d-476, y\u003d66, z\u003d-359} end\u003dBlockPos{x\u003d-476, y\u003d63, z\u003d-359} moved\u003dtrue"
+      },
+      "body": {
+        "fatigue": 0.007187500000000002,
+        "activity": "Birch-1d16 · returning to remembered farm",
+        "passenger": false,
+        "sleeping": false,
+        "courtship": "NONE"
+      },
+      "held": "1 minecraft:wooden_hoe",
+      "boat": {
+        "launches": 0,
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "landings": 0,
+        "phase": "NONE",
+        "logsGathered": 0,
+        "recipes": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:workbench:-478,63,-361,minecraft:overworld",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "table": "BlockPos{x\u003d-525, y\u003d63, z\u003d-347}",
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "BlockPos{x\u003d-478, y\u003d63, z\u003d-361}"
+      }
+    },
+    {
+      "id": "f572553d-4483-44b5-8ed5-6ffe7e7745b7",
+      "name": "Tansy-f572",
+      "position": [
+        -484.67776876157825,
+        63.0,
+        -327.24887077776646
+      ],
+      "production": {
+        "lastHarvest": {
+          "gameTime": 74629,
+          "position": "-486, 64, -321",
+          "crop": "POTATO",
+          "plantingSource": "owned stock",
+          "nativeDrops": [
+            "1 minecraft:potato",
+            "3 minecraft:potato"
+          ],
+          "inventoryBefore": [
+            "1 minecraft:carrot",
+            "5 minecraft:wheat",
+            "4 minecraft:wheat_seeds",
+            "2 minecraft:bread",
+            "4 minecraft:potato",
+            "0 minecraft:air",
+            "0 minecraft:air",
+            "0 minecraft:air"
+          ],
+          "inventoryAfter": [
+            "1 minecraft:carrot",
+            "5 minecraft:wheat",
+            "4 minecraft:wheat_seeds",
+            "2 minecraft:bread",
+            "7 minecraft:potato",
+            "0 minecraft:air",
+            "0 minecraft:air",
+            "0 minecraft:air"
+          ],
+          "overflow": [],
+          "hoeDamageBefore": 0,
+          "hoeDamageAfter": 0,
+          "hoeBroke": false,
+          "usedHoe": false,
+          "cropAfter": "Block{minecraft:potatoes}[age\u003d0]"
+        },
+        "planted": 0,
+        "breadCrafted": 0,
+        "actions": {
+          "doorsOpened": 1,
+          "doorsClosed": 0,
+          "replantsFromStock": 1,
+          "cropsHarvested": 2,
+          "swordHits": 0,
+          "replantsFromHarvest": 1
+        },
+        "lastPlant": {}
+      },
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[1 minecraft:carrot, 5 minecraft:wheat, 4 minecraft:wheat_seeds, 2 minecraft:bread, 4 minecraft:potato]",
+      "adventure": {
+        "activity": "no adventure objective",
+        "quarry": {
+          "origin": "",
+          "dug": 0,
+          "activity": "no quarry job",
+          "step": 0,
+          "lastReceipt": {}
+        },
+        "stone": 0,
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        }
+      },
+      "woodPreparation": {
+        "activity": "needs a dry route to natural preparation wood",
+        "logs": 0,
+        "goal": "TABLE",
+        "recipes": 0,
+        "pathQueries": 0,
+        "lastPath": "none"
+      },
+      "body": {
+        "fatigue": 0.12593749999999615,
+        "activity": "Tansy-f572 · checking remembered farm",
+        "passenger": false,
+        "sleeping": false,
+        "courtship": "NONE"
+      },
+      "held": "0 minecraft:air",
+      "boat": {
+        "launches": 0,
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "landings": 0,
+        "phase": "NONE",
+        "logsGathered": 0,
+        "recipes": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "table": "null",
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null"
+      }
+    },
+    {
+      "id": "c5578b5b-8991-428d-9d82-7cb57a956269",
+      "name": "Alder-c557",
+      "position": [
+        -477.5129443192796,
+        63.0,
+        -358.53040543349357
+      ],
+      "production": {
+        "lastHarvest": {},
+        "planted": 0,
+        "breadCrafted": 3,
+        "actions": {
+          "doorsOpened": 1,
+          "doorsClosed": 0,
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0
+        },
+        "lastPlant": {}
+      },
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[3 minecraft:bread]",
+      "adventure": {
+        "activity": "no adventure objective",
+        "quarry": {
+          "origin": "",
+          "dug": 0,
+          "activity": "no quarry job",
+          "step": 0,
+          "lastReceipt": {}
+        },
+        "stone": 0,
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        }
+      },
+      "woodPreparation": {
+        "activity": "needs accessible natural wood",
+        "logs": 0,
+        "goal": "HOE",
+        "recipes": 0,
+        "pathQueries": 0,
+        "lastPath": "none"
+      },
+      "body": {
+        "fatigue": 0.24387499999999618,
+        "activity": "Alder-c557 · gathering food for a child",
+        "passenger": false,
+        "sleeping": false,
+        "courtship": "NONE"
+      },
+      "held": "0 minecraft:air",
+      "boat": {
+        "launches": 0,
+        "activity": "no observed safe water crossing",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "landings": 0,
+        "phase": "NONE",
+        "logsGathered": 0,
+        "recipes": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed",
+        "villagers:workbench:-472,63,-367,minecraft:overworld"
+      ],
+      "woodJob": {
+        "table": "BlockPos{x\u003d-478, y\u003d63, z\u003d-361}",
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "BlockPos{x\u003d-472, y\u003d63, z\u003d-367}"
+      }
+    },
+    {
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "name": "Clover-edc5",
+      "position": [
+        -481.14381349845183,
+        63.0,
+        -368.1604050774453
+      ],
+      "production": {
+        "lastHarvest": {},
+        "planted": 0,
+        "breadCrafted": 0,
+        "actions": {
+          "doorsOpened": 0,
+          "doorsClosed": 0,
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0
+        },
+        "lastPlant": {}
+      },
+      "health": 20.0,
+      "food": 16,
+      "inventory": "[3 minecraft:bread, 1 minecraft:wooden_pickaxe, 1 minecraft:oak_log, 5 minecraft:dirt]",
+      "adventure": {
+        "activity": "needs observed exposed natural stone",
+        "quarry": {
+          "origin": "",
+          "dug": 5,
+          "activity": "stopped quarry at a non-soil block, boundary or stalled route",
+          "step": 0,
+          "lastReceipt": {
+            "position": "-482, 62, -370",
+            "gameTime": 78528,
+            "step": 1,
+            "drops": [
+              "1 minecraft:dirt"
+            ]
+          }
+        },
+        "stone": 0,
+        "stonePickaxe": false,
+        "nominated": true,
+        "mining": {
+          "blocks": 0,
+          "activity": "needs observed exposed natural stone",
+          "lastReceipt": {}
+        }
+      },
+      "woodPreparation": {
+        "activity": "gathered preparation wood",
+        "logs": 1,
+        "goal": "STONE_PICKAXE",
+        "recipes": 0,
+        "pathQueries": 2,
+        "lastPath": "reach\u003dtrue nodes\u003d36 target\u003dBlockPos{x\u003d-477, y\u003d66, z\u003d-350} end\u003dBlockPos{x\u003d-478, y\u003d63, z\u003d-349} moved\u003dtrue"
+      },
+      "body": {
+        "fatigue": 0.2439999999999962,
+        "activity": "Clover-edc5 · rest",
+        "passenger": false,
+        "sleeping": false,
+        "courtship": "NONE"
+      },
+      "held": "1 minecraft:wooden_hoe",
+      "boat": {
+        "launches": 0,
+        "activity": "no observed safe water crossing",
+        "purpose": "NONE",
+        "paddleTicks": 520,
+        "landings": 1,
+        "phase": "NONE",
+        "logsGathered": 0,
+        "recipes": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:quarry_failed:-132216274710465",
+        "villagers:quarry_failed:-132216274751425",
+        "villagers:managed",
+        "villagers:stone_shore:-130567007150017",
+        "villagers:adventurer"
+      ],
+      "woodJob": {
+        "table": "BlockPos{x\u003d-478, y\u003d63, z\u003d-361}",
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null"
+      }
+    }
+  ]
+}

@@ -21,17 +21,26 @@ within96 blocks; waterfalls, ice and long unobserved ocean voyages are excluded.
 In the native development map, loaded villagers inside the border join learning
 after the initial trial activates, without replacing its original cohort.
 
-Native-map adventurers can now prepare tools from gathered wood and real crop
-reserves, mine exposed natural stone with an owned pickaxe, and craft a stone
-upgrade. Empty-bag preparation, native harvest/replant, mining wear, swimming,
-workbench memory and cold-reopen conservation passed isolated tests. The live
-native map has recorded three starvation deaths among its original eight;
-sustainable food, population growth and game completion remain unfinished.
-The live island has now recorded a paid beetroot harvest, real hay-to-bread meals,
-and natural recovery from critical starvation to full health. Clover qualified as
-its first adventurer and crafted an owned wooden pickaxe. A longer copy kept all
-seven island residents alive, but repeat yields and births remain unproven.
-[Recovery evidence](docs/evidence/2026-11-10/native-island-recovery/README.md).
+Native-map adventurers prepare tools from gathered wood and real crop reserves.
+The primary save has now reached **game time253965**: Clover owns an earned
+**iron pickaxe**, crafted from physically mined iron, native furnace smelting
+and the actual workbench recipe. All179humanoid UUIDs from the observation
+baseline remain; all33saved managed villagers are at full health. The grassland
+cohort was actively simulated; this does not prove sustained care of every region.
+The original authored save is unchanged. Earlier runs recorded three starvation
+deaths among the initial eight; that history is retained. Sustained faction
+growth, diamond equipment, Nether/End progression and game completion remain
+unfinished.
+
+Villagers can place an owned dirt step to reach remaining natural tree trunks.
+Quarry work follows native paths with bounded drops and protects actual buildings
+and their footing. Copied camp tests recovered and placed two real nursery beds;
+captive meal delivery and camp growth are still being verified, with camp features
+disabled in the primary save.
+[Primary iron-pickaxe evidence](docs/evidence/2026-11-10/native-earned-iron-pickaxe/PRIMARY-EARNED-IRON-PICKAXE.json),
+[Primary stone-pickaxe evidence](docs/evidence/2026-11-10/native-stone-progression/PRIMARY-STONE-PICKAXE.json),
+[current work and limitations](docs/HANDOFF.md), and
+[boat return evidence](docs/evidence/2026-11-10/native-boats-and-cells/README.md).
 
 **Four Biomes War:** run `./tools/play-war.sh` to open the separate64×64-chunk
 world, split into Grassland, Forest, Snowy Mountains and Desert. Each biome has
@@ -150,12 +159,33 @@ inference remain future work. Nothing
 here establishes personhood or a proven many-agent capacity.
 
 Current language development adds persistent biome-based cultural factions and
-founding dialects. Children begin with six core concepts; local conversations,
+founding dialects. Children begin with ten core concepts, including basic sentence words; local conversations,
 visible objects and real meals supply evidence for learning more words. Villagers
 can understand foreign synonyms while retaining their native pronunciation, and
 travel does not change faction identity. `/villagers language` reports origin,
 vocabulary and nearby listeners' comprehension. Existing saved words are preserved.
 [Language mechanics and validation limits](docs/design/living-villages.md).
+
+Current source adds compositional subject/verb/object sentences, with distinct
+founding word orders for plains, desert, forest and snowy cultures. Listeners
+interpret spoken sounds through their own learned vocabulary and grammar; they
+can be confidently wrong. Observable encounters can change word meanings and
+grammar preferences, and those changes survive saves and pass to children.
+Care, trade and family signals use decoded requests. Generic gossip no longer
+unlocks an unnamed person's exact memory or reputation record. No LLM is used.
+See [verification goal and limits](docs/language-grammar-goal.txt).
+
+The next language milestone adds attributed, expiring beliefs, spoken clarification
+and grounded word repair, interpreted invitations and promises that guide actual
+companionship, and learned constructions that generalize to new sentences.
+These features use bounded local rules and preserve the no-LLM interpretation
+boundary. [Current priorities, verification and limits](docs/language-life-priorities.txt).
+
+Grounded reference development adds learned spoken aliases for encountered people
+and jointly observed places. Unfamiliar or ambiguous names remain unresolved;
+listeners can also retain mistaken bindings. Named reports use the listener's
+own reference memory, with no spoken UUIDs/coordinates or copied private episodes.
+[Reference progress and remaining goal](docs/grounded-references-progress.txt).
 
 ## Research and design
 
@@ -187,6 +217,10 @@ or native drops to pay for replanting. Hoe use wears the actual tool. General bl
 placement stay disabled. Dusk/home-range/refuge logic and seeking nearby vanilla
 golem protection are authored safety capabilities. Golems retain vanilla AI in
 this iteration; a distinct persistent guardian agent type is a later extension.
+
+Managed villagers also collect nearby dropped tools and weapons, including items
+thrown by players, when their inventory has space. Normal pickup delays and the
+mob-griefing gamerule apply; seeking equipment yields to food and safety needs.
 
 That iteration's build passed its unit tests. Live generated-village evidence and unresolved
 acceptance checks are recorded separately; this is not a multi-day survival pass

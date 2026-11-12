@@ -1,0 +1,375 @@
+{
+  "scope": "Observed native bodies and resource receipts. Copied tests are never promoted or counted as primary births. Goal remains incomplete.",
+  "primary": {
+    "source": "runs/native-primary-rock-prospect-v1/result.json",
+    "gameTime": 205346,
+    "exitCode": 0,
+    "oldSaveUnchanged": true,
+    "beforeHumanoids": 179,
+    "afterHumanoids": 179,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "managedVillagers": 33,
+    "minManagedHealth": 20.0,
+    "ironIngotsOwned": 0
+  },
+  "miningBefore": {
+    "runtime": "native-rock-prospect-v2",
+    "stage": "bounded_iron_observation",
+    "elapsed": 24000,
+    "passage": {
+      "reselect": false,
+      "turns": 57,
+      "depth": 2,
+      "root": "-467, 55, -381",
+      "retainedFloors": 23,
+      "part": 3,
+      "activity": "walking down one retained mine step",
+      "faceBlock": "Block{minecraft:andesite}",
+      "mode": "level",
+      "face": "-467, 55, -377",
+      "exhausted": false,
+      "failedScans": 0,
+      "entry": "-480, 63, -379"
+    },
+    "blocks": 39
+  },
+  "miningAfterFreshFloorFix": {
+    "runtime": "native-fresh-mine-front-v3",
+    "stage": "bounded_iron_pickaxe_observation",
+    "elapsed": 24000,
+    "health": 20.0,
+    "food": 20,
+    "ironIngots": 0,
+    "passage": {
+      "mode": "level",
+      "faceBlock": "",
+      "activity": "rechecking the observed blocked prospecting faces after a short pause",
+      "part": 0,
+      "retainedFloors": 26,
+      "root": "",
+      "depth": 0,
+      "turns": 1,
+      "reselect": false,
+      "face": "",
+      "exhausted": false,
+      "failedScans": 0,
+      "entry": ""
+    },
+    "quarry": {
+      "centerings": 3,
+      "stand": "",
+      "activity": "needs an observed dry natural-soil quarry site",
+      "lastStop": {
+        "actor": "-469, 60, -372",
+        "gameTime": 243724,
+        "step": 1,
+        "idleTicks": 1210,
+        "target": "-467, 59, -372",
+        "reason": "no physical progress",
+        "block": "Block{minecraft:dirt}"
+      },
+      "inspection": {
+        "route": "none",
+        "visited": 0,
+        "reconsidered": 2,
+        "reviewAt": 250704,
+        "survey": {
+          "visited": 10,
+          "target": "",
+          "lastRoute": {
+            "nodes": 30,
+            "gameTime": 241224,
+            "moved": true,
+            "target": "-463, 63, -374",
+            "origin": "-475, 63, -350",
+            "end": "-463, 63, -374"
+          }
+        },
+        "target": "",
+        "lastRepair": {},
+        "repairs": 0
+      },
+      "origin": "",
+      "lastReceipt": {
+        "step": 1,
+        "gameTime": 242514,
+        "position": "-468, 59, -372",
+        "drops": [
+          "1 minecraft:dirt"
+        ]
+      },
+      "step": 0,
+      "lastApproach": {
+        "actor": "(-468.3280094306956, 60.0, -371.5438227035789)",
+        "nodes": 0,
+        "gameTime": 243704,
+        "end": "",
+        "safe": false,
+        "accepted": false,
+        "target": "-467, 59, -372"
+      },
+      "dug": 14
+    },
+    "limitation": "Exited old passage and surveyed new ground, but a later quarry retirement forgot its entrance below the surface. This prompted the retained-exit change, still under gameplay test."
+  },
+  "squareGateOnlyCare": {
+    "runtime": "native-camp-square-gate-care-v7",
+    "stage": "health_stop",
+    "elapsed": 17320,
+    "dara": {
+      "position": "-630, 64, -608",
+      "id": "573a309c-f0fc-4dd1-94cd-8246d352467c",
+      "name": "Dara-573a",
+      "health": 4.0,
+      "food": 0,
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 2
+      },
+      "stores": {
+        "transfers": 0,
+        "activity": "walking to a native home food store",
+        "escape": {
+          "workTicks": 0,
+          "brokenDoors": 0,
+          "activity": "no cell escape",
+          "target": "",
+          "lastReceipt": {}
+        },
+        "target": "",
+        "lastReceipt": {}
+      },
+      "body": {
+        "fire": false,
+        "ownedMeal": -1,
+        "passenger": false,
+        "sleeping": false,
+        "home": "Home[dimension=minecraft:overworld, x=-635, y=64, z=-602]",
+        "trading": false,
+        "baby": false,
+        "water": false
+      }
+    },
+    "limitation": "FAILED sustained care. Door alignment alone did not prevent hunger. Later request-lifetime and crowding changes are being tested separately."
+  },
+  "readonlyGateRoute": [
+    {
+      "squareApproach": {
+        "nodes": 2,
+        "end": "-633, 65, -608",
+        "lastNodes": [
+          "-634, 65, -608",
+          "-633, 65, -608"
+        ],
+        "maxDrop": 0,
+        "reaches": true,
+        "present": true
+      },
+      "door": "-633, 65, -609",
+      "normal": {
+        "nodes": 2,
+        "end": "-633, 65, -608",
+        "lastNodes": [
+          "-634, 65, -608",
+          "-633, 65, -608"
+        ],
+        "maxDrop": 0,
+        "reaches": true,
+        "present": true
+      },
+      "limited": {
+        "nodes": 2,
+        "end": "-633, 65, -608",
+        "lastNodes": [
+          "-634, 65, -608",
+          "-633, 65, -608"
+        ],
+        "maxDrop": 0,
+        "reaches": true,
+        "present": true
+      }
+    }
+  ],
+  "villageCapacity": [
+    {
+      "id": "438701f4-3aba-4cda-b583-46051f1e0f53",
+      "name": "Oak-4387",
+      "bedsWithin64": 7,
+      "freeBeds": 0,
+      "currentNurseries": []
+    },
+    {
+      "id": "1d165330-2598-410c-827e-cc3b13c7bef9",
+      "name": "Birch-1d16",
+      "bedsWithin64": 7,
+      "freeBeds": 0,
+      "currentNurseries": []
+    },
+    {
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "name": "Clover-edc5",
+      "bedsWithin64": 5,
+      "freeBeds": 0,
+      "currentNurseries": []
+    }
+  ],
+  "terminalEvidence": {
+    "native-rock-prospect-v2": {
+      "pid": 1193739,
+      "exitCode": 0
+    },
+    "native-fresh-mine-front-v3": {
+      "pid": 1197199,
+      "exitCode": 0
+    },
+    "native-camp-square-gate-care-v7": {
+      "pid": 1198614,
+      "exitCode": 0
+    },
+    "native-camp-square-gates-frozen-v3": {
+      "pid": 1198240,
+      "exitCode": 0
+    }
+  },
+  "matchedRequestWaitCare": {
+    "runtime": "native-camp-matched-request-wait-v8",
+    "stage": "health_stop",
+    "elapsed": 17600,
+    "criticalVillagers": [
+      "4ed39acd-b764-4c41-b799-5ac9d5feefe7"
+    ],
+    "terminal": {
+      "pid": 1200506,
+      "exitCode": 0
+    },
+    "dara": {
+      "health": 13.0,
+      "name": "Dara-573a",
+      "id": "573a309c-f0fc-4dd1-94cd-8246d352467c",
+      "position": "-633, 65, -608",
+      "body": {
+        "home": "Home[dimension=minecraft:overworld, x=-635, y=64, z=-602]",
+        "sleeping": false,
+        "baby": false,
+        "water": false,
+        "passenger": false,
+        "trading": false,
+        "fire": false,
+        "activity": "Dara-573a \u00b7 waiting inside the cell gate for requested food (unhappy)",
+        "gateWait": {
+          "until": 227912,
+          "door": "-633, 65, -609",
+          "stand": "-633, 65, -608"
+        },
+        "ownedMeal": -1
+      },
+      "stores": {
+        "lastReceipt": {},
+        "target": "",
+        "escape": {
+          "workTicks": 0,
+          "lastReceipt": {},
+          "target": "",
+          "activity": "no cell escape",
+          "brokenDoors": 0
+        },
+        "activity": "not seeking stored food",
+        "transfers": 0
+      },
+      "campMeals": {
+        "requests": 39,
+        "lastReceived": {
+          "gameTime": 221605,
+          "leverRestored": true,
+          "from": "0e6136f0-9f73-44de-a539-62c30a83f878",
+          "to": "573a309c-f0fc-4dd1-94cd-8246d352467c",
+          "receiverBefore": 0,
+          "contact": "(-632.8806675872135, 65.5, -607.1807676886099)",
+          "distance": 2.5336614,
+          "receiverAfter": 1,
+          "giverAfter": 1,
+          "giverBefore": 2,
+          "lever": "-634, 66, -610",
+          "item": "minecraft:bread",
+          "gatesClosed": true
+        }
+      },
+      "food": 15
+    },
+    "limitation": "Dara received a real loaf via the native lever/gate and ate it, but had already lost health. Willow reached4HP; sustained care FAILED. No promotion or primary growth claim."
+  },
+  "checks": {
+    "command": "bash tools/test.sh",
+    "log": "/tmp/villagers-quarry-entry-height-tests.log",
+    "javaTests": 481,
+    "pythonTests": 14,
+    "failures": 0,
+    "scope": "Unit/build checks; gameplay evidence is reported separately."
+  },
+  "retainedExitTrial": {
+    "runtime": "native-retained-quarry-exit-v4",
+    "stage": "bounded_iron_pickaxe_observation",
+    "elapsed": 24000,
+    "terminal": {
+      "pid": 1202689,
+      "exitCode": 0
+    },
+    "health": 20.0,
+    "food": 18,
+    "ironIngots": 0,
+    "transitions": [
+      {
+        "elapsed": 20360,
+        "position": [
+          -484.5407702391013,
+          63.0,
+          -339.6654499978568
+        ],
+        "origin": "-481, 63, -343",
+        "returning": true
+      },
+      {
+        "elapsed": 20720,
+        "position": [
+          -482.0538309806297,
+          63.0,
+          -341.53047951969006
+        ],
+        "origin": "",
+        "returning": false
+      },
+      {
+        "elapsed": 22400,
+        "position": [
+          -467.34520967407,
+          62.0,
+          -356.3868453836387
+        ],
+        "origin": "-468, 63, -356",
+        "returning": true
+      },
+      {
+        "elapsed": 22440,
+        "position": [
+          -467.34520967407,
+          62.0,
+          -356.3868453836387
+        ],
+        "origin": "",
+        "returning": false
+      },
+      {
+        "elapsed": 22480,
+        "position": [
+          -467.35761257834434,
+          62.0,
+          -356.475986670778
+        ],
+        "origin": "",
+        "returning": false
+      }
+    ],
+    "limitation": "Entrance was retained during retreat, but the distance-only arrival test could clear it one block below entrance height. Added a shared surface-height arrival check plus regression test; next copied trial verifies actual play."
+  }
+}

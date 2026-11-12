@@ -1,0 +1,465 @@
+Compiled from "CropBlock.java"
+public class net.minecraft.world.level.block.CropBlock extends net.minecraft.world.level.block.VegetationBlock implements net.minecraft.world.level.block.BonemealableBlock {
+  public static final int MAX_AGE;
+
+  public static final net.minecraft.world.level.block.state.properties.IntegerProperty AGE;
+
+  private static final net.minecraft.world.phys.shapes.VoxelShape[] SHAPES;
+
+  protected net.minecraft.world.level.block.CropBlock(net.minecraft.world.level.block.state.BlockBehaviour$Properties);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokespecial #3                  // Method net/minecraft/world/level/block/VegetationBlock."<init>":(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+         5: aload_0
+         6: aload_0
+         7: getfield      #9                  // Field stateDefinition:Lnet/minecraft/world/level/block/state/StateDefinition;
+        10: invokevirtual #15                 // Method net/minecraft/world/level/block/state/StateDefinition.any:()Lnet/minecraft/world/level/block/state/StateHolder;
+        13: checkcast     #21                 // class net/minecraft/world/level/block/state/BlockState
+        16: aload_0
+        17: invokevirtual #23                 // Method getAgeProperty:()Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+        20: iconst_0
+        21: invokestatic  #27                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        24: invokevirtual #33                 // Method net/minecraft/world/level/block/state/BlockState.setValue:(Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+        27: checkcast     #21                 // class net/minecraft/world/level/block/state/BlockState
+        30: invokevirtual #37                 // Method registerDefaultState:(Lnet/minecraft/world/level/block/state/BlockState;)V
+        33: return
+
+  protected net.minecraft.world.phys.shapes.VoxelShape getShape(net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.BlockGetter, net.minecraft.core.BlockPos, net.minecraft.world.phys.shapes.CollisionContext);
+    Code:
+         0: getstatic     #41                 // Field SHAPES:[Lnet/minecraft/world/phys/shapes/VoxelShape;
+         3: aload_0
+         4: aload_1
+         5: invokevirtual #45                 // Method getAge:(Lnet/minecraft/world/level/block/state/BlockState;)I
+         8: aaload
+         9: areturn
+
+  protected boolean mayPlaceOn(net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.BlockGetter, net.minecraft.core.BlockPos);
+    Code:
+         0: aload_1
+         1: getstatic     #49                 // Field net/minecraft/tags/BlockTags.SUPPORTS_CROPS:Lnet/minecraft/tags/TagKey;
+         4: invokevirtual #55                 // Method net/minecraft/world/level/block/state/BlockState.is:(Lnet/minecraft/tags/TagKey;)Z
+         7: ireturn
+
+  protected net.minecraft.world.level.block.state.properties.IntegerProperty getAgeProperty();
+    Code:
+         0: getstatic     #59                 // Field AGE:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+         3: areturn
+
+  public int getMaxAge();
+    Code:
+         0: bipush        7
+         2: ireturn
+
+  public int getAge(net.minecraft.world.level.block.state.BlockState);
+    Code:
+         0: aload_1
+         1: aload_0
+         2: invokevirtual #23                 // Method getAgeProperty:()Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+         5: invokevirtual #63                 // Method net/minecraft/world/level/block/state/BlockState.getValue:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Comparable;
+         8: checkcast     #28                 // class java/lang/Integer
+        11: invokevirtual #67                 // Method java/lang/Integer.intValue:()I
+        14: ireturn
+
+  public net.minecraft.world.level.block.state.BlockState getStateForAge(int);
+    Code:
+         0: aload_0
+         1: invokevirtual #71                 // Method defaultBlockState:()Lnet/minecraft/world/level/block/state/BlockState;
+         4: aload_0
+         5: invokevirtual #23                 // Method getAgeProperty:()Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+         8: iload_1
+         9: invokestatic  #27                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        12: invokevirtual #33                 // Method net/minecraft/world/level/block/state/BlockState.setValue:(Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+        15: checkcast     #21                 // class net/minecraft/world/level/block/state/BlockState
+        18: areturn
+
+  public final boolean isMaxAge(net.minecraft.world.level.block.state.BlockState);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #45                 // Method getAge:(Lnet/minecraft/world/level/block/state/BlockState;)I
+         5: aload_0
+         6: invokevirtual #75                 // Method getMaxAge:()I
+         9: if_icmplt     16
+        12: iconst_1
+        13: goto          17
+        16: iconst_0
+        17: ireturn
+
+  protected boolean isRandomlyTicking(net.minecraft.world.level.block.state.BlockState);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #78                 // Method isMaxAge:(Lnet/minecraft/world/level/block/state/BlockState;)Z
+         5: ifne          12
+         8: iconst_1
+         9: goto          13
+        12: iconst_0
+        13: ireturn
+
+  protected void randomTick(net.minecraft.world.level.block.state.BlockState, net.minecraft.server.level.ServerLevel, net.minecraft.core.BlockPos, net.minecraft.util.RandomSource);
+    Code:
+         0: aload_2
+         1: aload_3
+         2: iconst_0
+         3: invokevirtual #82                 // Method net/minecraft/server/level/ServerLevel.getRawBrightness:(Lnet/minecraft/core/BlockPos;I)I
+         6: bipush        9
+         8: if_icmplt     68
+        11: aload_0
+        12: aload_1
+        13: invokevirtual #45                 // Method getAge:(Lnet/minecraft/world/level/block/state/BlockState;)I
+        16: istore        5
+        18: iload         5
+        20: aload_0
+        21: invokevirtual #75                 // Method getMaxAge:()I
+        24: if_icmpge     68
+        27: aload_0
+        28: aload_2
+        29: aload_3
+        30: invokestatic  #90                 // Method getGrowthSpeed:(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)F
+        33: fstore        6
+        35: aload         4
+        37: ldc           #94                 // float 25.0f
+        39: fload         6
+        41: fdiv
+        42: f2i
+        43: iconst_1
+        44: iadd
+        45: invokeinterface #95,  2           // InterfaceMethod net/minecraft/util/RandomSource.nextInt:(I)I
+        50: ifne          68
+        53: aload_2
+        54: aload_3
+        55: aload_0
+        56: iload         5
+        58: iconst_1
+        59: iadd
+        60: invokevirtual #101                // Method getStateForAge:(I)Lnet/minecraft/world/level/block/state/BlockState;
+        63: iconst_2
+        64: invokevirtual #107                // Method net/minecraft/server/level/ServerLevel.setBlock:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z
+        67: pop
+        68: return
+
+  public void growCrops(net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState);
+    Code:
+         0: aload_0
+         1: invokevirtual #75                 // Method getMaxAge:()I
+         4: aload_0
+         5: aload_3
+         6: invokevirtual #45                 // Method getAge:(Lnet/minecraft/world/level/block/state/BlockState;)I
+         9: aload_0
+        10: aload_1
+        11: invokevirtual #111                // Method getBonemealAgeIncrease:(Lnet/minecraft/world/level/Level;)I
+        14: iadd
+        15: invokestatic  #115                // Method java/lang/Math.min:(II)I
+        18: istore        4
+        20: aload_1
+        21: aload_2
+        22: aload_0
+        23: iload         4
+        25: invokevirtual #101                // Method getStateForAge:(I)Lnet/minecraft/world/level/block/state/BlockState;
+        28: iconst_2
+        29: invokevirtual #121                // Method net/minecraft/world/level/Level.setBlock:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z
+        32: pop
+        33: return
+
+  protected int getBonemealAgeIncrease(net.minecraft.world.level.Level);
+    Code:
+         0: aload_1
+         1: invokevirtual #122                // Method net/minecraft/world/level/Level.getRandom:()Lnet/minecraft/util/RandomSource;
+         4: iconst_2
+         5: iconst_5
+         6: invokestatic  #126                // Method net/minecraft/util/Mth.nextInt:(Lnet/minecraft/util/RandomSource;II)I
+         9: ireturn
+
+  protected static float getGrowthSpeed(net.minecraft.world.level.block.Block, net.minecraft.world.level.BlockGetter, net.minecraft.core.BlockPos);
+    Code:
+         0: fconst_1
+         1: fstore_3
+         2: aload_2
+         3: invokevirtual #131                // Method net/minecraft/core/BlockPos.below:()Lnet/minecraft/core/BlockPos;
+         6: astore        4
+         8: iconst_m1
+         9: istore        5
+        11: iload         5
+        13: iconst_1
+        14: if_icmpgt     120
+        17: iconst_m1
+        18: istore        6
+        20: iload         6
+        22: iconst_1
+        23: if_icmpgt     114
+        26: fconst_0
+        27: fstore        7
+        29: aload_1
+        30: aload         4
+        32: iload         5
+        34: iconst_0
+        35: iload         6
+        37: invokevirtual #137                // Method net/minecraft/core/BlockPos.offset:(III)Lnet/minecraft/core/BlockPos;
+        40: invokeinterface #141,  2          // InterfaceMethod net/minecraft/world/level/BlockGetter.getBlockState:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+        45: astore        8
+        47: aload         8
+        49: getstatic     #147                // Field net/minecraft/tags/BlockTags.GROWS_CROPS:Lnet/minecraft/tags/TagKey;
+        52: invokevirtual #55                 // Method net/minecraft/world/level/block/state/BlockState.is:(Lnet/minecraft/tags/TagKey;)Z
+        55: ifeq          86
+        58: fconst_1
+        59: fstore        7
+        61: aload         8
+        63: getstatic     #150                // Field net/minecraft/world/level/block/FarmlandBlock.MOISTURE:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+        66: iconst_0
+        67: invokestatic  #27                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        70: invokevirtual #155                // Method net/minecraft/world/level/block/state/BlockState.getValueOrElse:(Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;)Ljava/lang/Comparable;
+        73: checkcast     #28                 // class java/lang/Integer
+        76: invokevirtual #67                 // Method java/lang/Integer.intValue:()I
+        79: ifle          86
+        82: ldc           #159                // float 3.0f
+        84: fstore        7
+        86: iload         5
+        88: ifne          96
+        91: iload         6
+        93: ifeq          103
+        96: fload         7
+        98: ldc           #160                // float 4.0f
+       100: fdiv
+       101: fstore        7
+       103: fload_3
+       104: fload         7
+       106: fadd
+       107: fstore_3
+       108: iinc          6, 1
+       111: goto          20
+       114: iinc          5, 1
+       117: goto          11
+       120: aload_2
+       121: invokevirtual #161                // Method net/minecraft/core/BlockPos.north:()Lnet/minecraft/core/BlockPos;
+       124: astore        5
+       126: aload_2
+       127: invokevirtual #164                // Method net/minecraft/core/BlockPos.south:()Lnet/minecraft/core/BlockPos;
+       130: astore        6
+       132: aload_2
+       133: invokevirtual #167                // Method net/minecraft/core/BlockPos.west:()Lnet/minecraft/core/BlockPos;
+       136: astore        7
+       138: aload_2
+       139: invokevirtual #170                // Method net/minecraft/core/BlockPos.east:()Lnet/minecraft/core/BlockPos;
+       142: astore        8
+       144: aload_1
+       145: aload         7
+       147: invokeinterface #141,  2          // InterfaceMethod net/minecraft/world/level/BlockGetter.getBlockState:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+       152: aload_0
+       153: invokevirtual #173                // Method net/minecraft/world/level/block/state/BlockState.is:(Ljava/lang/Object;)Z
+       156: ifne          174
+       159: aload_1
+       160: aload         8
+       162: invokeinterface #141,  2          // InterfaceMethod net/minecraft/world/level/BlockGetter.getBlockState:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+       167: aload_0
+       168: invokevirtual #173                // Method net/minecraft/world/level/block/state/BlockState.is:(Ljava/lang/Object;)Z
+       171: ifeq          178
+       174: iconst_1
+       175: goto          179
+       178: iconst_0
+       179: istore        9
+       181: aload_1
+       182: aload         5
+       184: invokeinterface #141,  2          // InterfaceMethod net/minecraft/world/level/BlockGetter.getBlockState:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+       189: aload_0
+       190: invokevirtual #173                // Method net/minecraft/world/level/block/state/BlockState.is:(Ljava/lang/Object;)Z
+       193: ifne          211
+       196: aload_1
+       197: aload         6
+       199: invokeinterface #141,  2          // InterfaceMethod net/minecraft/world/level/BlockGetter.getBlockState:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+       204: aload_0
+       205: invokevirtual #173                // Method net/minecraft/world/level/block/state/BlockState.is:(Ljava/lang/Object;)Z
+       208: ifeq          215
+       211: iconst_1
+       212: goto          216
+       215: iconst_0
+       216: istore        10
+       218: iload         9
+       220: ifeq          235
+       223: iload         10
+       225: ifeq          235
+       228: fload_3
+       229: fconst_2
+       230: fdiv
+       231: fstore_3
+       232: goto          323
+       235: aload_1
+       236: aload         7
+       238: invokevirtual #161                // Method net/minecraft/core/BlockPos.north:()Lnet/minecraft/core/BlockPos;
+       241: invokeinterface #141,  2          // InterfaceMethod net/minecraft/world/level/BlockGetter.getBlockState:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+       246: aload_0
+       247: invokevirtual #173                // Method net/minecraft/world/level/block/state/BlockState.is:(Ljava/lang/Object;)Z
+       250: ifne          307
+       253: aload_1
+       254: aload         8
+       256: invokevirtual #161                // Method net/minecraft/core/BlockPos.north:()Lnet/minecraft/core/BlockPos;
+       259: invokeinterface #141,  2          // InterfaceMethod net/minecraft/world/level/BlockGetter.getBlockState:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+       264: aload_0
+       265: invokevirtual #173                // Method net/minecraft/world/level/block/state/BlockState.is:(Ljava/lang/Object;)Z
+       268: ifne          307
+       271: aload_1
+       272: aload         8
+       274: invokevirtual #164                // Method net/minecraft/core/BlockPos.south:()Lnet/minecraft/core/BlockPos;
+       277: invokeinterface #141,  2          // InterfaceMethod net/minecraft/world/level/BlockGetter.getBlockState:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+       282: aload_0
+       283: invokevirtual #173                // Method net/minecraft/world/level/block/state/BlockState.is:(Ljava/lang/Object;)Z
+       286: ifne          307
+       289: aload_1
+       290: aload         7
+       292: invokevirtual #164                // Method net/minecraft/core/BlockPos.south:()Lnet/minecraft/core/BlockPos;
+       295: invokeinterface #141,  2          // InterfaceMethod net/minecraft/world/level/BlockGetter.getBlockState:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+       300: aload_0
+       301: invokevirtual #173                // Method net/minecraft/world/level/block/state/BlockState.is:(Ljava/lang/Object;)Z
+       304: ifeq          311
+       307: iconst_1
+       308: goto          312
+       311: iconst_0
+       312: istore        11
+       314: iload         11
+       316: ifeq          323
+       319: fload_3
+       320: fconst_2
+       321: fdiv
+       322: fstore_3
+       323: fload_3
+       324: freturn
+
+  protected boolean canSurvive(net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.LevelReader, net.minecraft.core.BlockPos);
+    Code:
+         0: aload_2
+         1: aload_3
+         2: invokestatic  #176                // Method hasSufficientLight:(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;)Z
+         5: ifeq          22
+         8: aload_0
+         9: aload_1
+        10: aload_2
+        11: aload_3
+        12: invokespecial #180                // Method net/minecraft/world/level/block/VegetationBlock.canSurvive:(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;)Z
+        15: ifeq          22
+        18: iconst_1
+        19: goto          23
+        22: iconst_0
+        23: ireturn
+
+  protected static boolean hasSufficientLight(net.minecraft.world.level.LevelReader, net.minecraft.core.BlockPos);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: iconst_0
+         3: invokeinterface #184,  3          // InterfaceMethod net/minecraft/world/level/LevelReader.getRawBrightness:(Lnet/minecraft/core/BlockPos;I)I
+         8: bipush        8
+        10: if_icmplt     17
+        13: iconst_1
+        14: goto          18
+        17: iconst_0
+        18: ireturn
+
+  protected void entityInside(net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.world.entity.Entity, net.minecraft.world.entity.InsideBlockEffectApplier, boolean);
+    Code:
+         0: aload_2
+         1: instanceof    #83                 // class net/minecraft/server/level/ServerLevel
+         4: ifeq          51
+         7: aload_2
+         8: checkcast     #83                 // class net/minecraft/server/level/ServerLevel
+        11: astore        7
+        13: aload         4
+        15: instanceof    #187                // class net/minecraft/world/entity/monster/Ravager
+        18: ifeq          51
+        21: aload         7
+        23: invokevirtual #189                // Method net/minecraft/server/level/ServerLevel.getGameRules:()Lnet/minecraft/world/level/gamerules/GameRules;
+        26: getstatic     #193                // Field net/minecraft/world/level/gamerules/GameRules.MOB_GRIEFING:Lnet/minecraft/world/level/gamerules/GameRule;
+        29: invokevirtual #199                // Method net/minecraft/world/level/gamerules/GameRules.get:(Lnet/minecraft/world/level/gamerules/GameRule;)Ljava/lang/Object;
+        32: checkcast     #203                // class java/lang/Boolean
+        35: invokevirtual #205                // Method java/lang/Boolean.booleanValue:()Z
+        38: ifeq          51
+        41: aload         7
+        43: aload_3
+        44: iconst_1
+        45: aload         4
+        47: invokevirtual #209                // Method net/minecraft/server/level/ServerLevel.destroyBlock:(Lnet/minecraft/core/BlockPos;ZLnet/minecraft/world/entity/Entity;)Z
+        50: pop
+        51: aload_0
+        52: aload_1
+        53: aload_2
+        54: aload_3
+        55: aload         4
+        57: aload         5
+        59: iload         6
+        61: invokespecial #213                // Method net/minecraft/world/level/block/VegetationBlock.entityInside:(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/InsideBlockEffectApplier;Z)V
+        64: return
+
+  protected net.minecraft.world.level.ItemLike getBaseSeedId();
+    Code:
+         0: getstatic     #217                // Field net/minecraft/world/item/Items.WHEAT_SEEDS:Lnet/minecraft/world/item/Item;
+         3: areturn
+
+  protected net.minecraft.world.item.ItemStack getCloneItemStack(net.minecraft.world.level.LevelReader, net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState, boolean);
+    Code:
+         0: new           #223                // class net/minecraft/world/item/ItemStack
+         3: dup
+         4: aload_0
+         5: invokevirtual #225                // Method getBaseSeedId:()Lnet/minecraft/world/level/ItemLike;
+         8: invokespecial #229                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+        11: areturn
+
+  public boolean isValidBonemealTarget(net.minecraft.world.level.LevelReader, net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.block.BonemealSource);
+    Code:
+         0: aload_0
+         1: aload_3
+         2: invokevirtual #78                 // Method isMaxAge:(Lnet/minecraft/world/level/block/state/BlockState;)Z
+         5: ifne          12
+         8: iconst_1
+         9: goto          13
+        12: iconst_0
+        13: ireturn
+
+  public boolean isBonemealSuccess(net.minecraft.world.level.Level, net.minecraft.util.RandomSource, net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.block.BonemealSource);
+    Code:
+         0: iconst_1
+         1: ireturn
+
+  public void performBonemeal(net.minecraft.server.level.ServerLevel, net.minecraft.util.RandomSource, net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.block.BonemealSource);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_3
+         3: aload         4
+         5: invokevirtual #232                // Method growCrops:(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
+         8: return
+
+  protected void createBlockStateDefinition(net.minecraft.world.level.block.state.StateDefinition$Builder<net.minecraft.world.level.block.Block, net.minecraft.world.level.block.state.BlockState>);
+    Code:
+         0: aload_1
+         1: iconst_1
+         2: anewarray     #236                // class net/minecraft/world/level/block/state/properties/Property
+         5: dup
+         6: iconst_0
+         7: getstatic     #59                 // Field AGE:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+        10: aastore
+        11: invokevirtual #238                // Method net/minecraft/world/level/block/state/StateDefinition$Builder.add:([Lnet/minecraft/world/level/block/state/properties/Property;)Lnet/minecraft/world/level/block/state/StateDefinition$Builder;
+        14: pop
+        15: return
+
+  private static net.minecraft.world.phys.shapes.VoxelShape lambda$static$0(int);
+    Code:
+         0: ldc2_w        #244                // double 16.0d
+         3: dconst_0
+         4: iconst_2
+         5: iload_0
+         6: iconst_2
+         7: imul
+         8: iadd
+         9: i2d
+        10: invokestatic  #246                // Method net/minecraft/world/level/block/Block.column:(DDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+        13: areturn
+
+  static {};
+    Code:
+         0: getstatic     #250                // Field net/minecraft/world/level/block/state/properties/BlockStateProperties.AGE_7:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+         3: putstatic     #59                 // Field AGE:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+         6: bipush        7
+         8: invokedynamic #253,  0            // InvokeDynamic #0:apply:()Ljava/util/function/IntFunction;
+        13: invokestatic  #257                // Method net/minecraft/world/level/block/Block.boxes:(ILjava/util/function/IntFunction;)[Lnet/minecraft/world/phys/shapes/VoxelShape;
+        16: putstatic     #41                 // Field SHAPES:[Lnet/minecraft/world/phys/shapes/VoxelShape;
+        19: return
+}

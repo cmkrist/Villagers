@@ -9,9 +9,26 @@ import net.minecraft.world.phys.Vec3;
 /** Live, in-memory state of one adopted villager. Only touched on the server thread. */
 final class Session {
     final FoodAccess.State foodAccess=new FoodAccess.State();
+    boolean controllerStarted;
     final WoodBootstrap.State woodBootstrap = new WoodBootstrap.State();
     final AdventureMining.State mining = new AdventureMining.State();
     final NativeFoodStorage.State nativeFoodStorage=new NativeFoodStorage.State();
+    final NativeCellEscape.State nativeCellEscape=new NativeCellEscape.State();
+    long nextCampMealRequest,campMealRequests,nextCampCall;
+    long campMealWaitUntil,nextCampMealPath;
+    BlockPos campMealStand,campMealDoor;
+    java.util.Map<String,Object> campMealMeetReceipt=java.util.Map.of();
+    final AdventureQuarry.State quarry=new AdventureQuarry.State();
+    final AdventureIron.State iron=new AdventureIron.State();
+    final AdventureArmor.State armor=new AdventureArmor.State();
+    final AdventureSupplies.State adventureSupplies=new AdventureSupplies.State();
+    final VillageBedding.State villageBedding=new VillageBedding.State();
+    final SheepWool.State sheepWool=new SheepWool.State();
+    final ForestryGate.State forestryGate=new ForestryGate.State();
+    final ForestryCanopy.State forestryCanopy=new ForestryCanopy.State();
+    final MineStair.State mineStair=new MineStair.State();
+    long inventoryRoomActions;
+    java.util.Map<String,Object> inventoryRoomReceipt=java.util.Map.of();
     BlockPos preparationCrop;
     BlockPos waterExit;
     BlockPos urgentCrop;
@@ -19,12 +36,19 @@ final class Session {
     long nextWaterExit,waterExitsPlanned;
     long nextPreparationScan;
     long nextLooseWoodScan,nextLooseWoodPath,looseWoodCollected;
+    long nextEquipmentScan, nextEquipmentPath;
     BoatTravel.Trip boatTrip;
+    BlockPos boatSurvey;
+    long boatSurveyUntil,nextBoatSurvey,nextBoatSurveyPath;
+    final java.util.Map<BlockPos,Long> boatSurveyed=new java.util.HashMap<>();
+    java.util.Map<String,Object> boatSurveyReceipt=java.util.Map.of();
     BlockPos boatTree;
     net.minecraft.world.level.block.Block boatTreeBlock;
     int boatLogsTaken;
     long nextBoatSearch, nextBoatWork, nextBoatPath, boatLogWork;
     long boatRecipes, boatLogsGathered, boatLaunches, boatLandings, boatPaddleTicks;
+    long boatFootReturns;
+    java.util.Map<String,Object> boatReturnReceipt=java.util.Map.of();
     String boatStatus = "no water trip";
     long nextAdventureWork, adventureCrafts;
     String adventureStatus = "no adventure objective";
@@ -37,6 +61,9 @@ final class Session {
     BlockPos recoveryStand;
     long nextRecoveryStand;
     long nextCraftScan, breadCrafted;
+    BlockPos craftingStand;
+    long craftApproachUntil;
+    java.util.Map<String,Object> lastFarmExpansion=java.util.Map.of();
     String craftingStatus = "idle";
     BlockPos toolTable;
     long toolProductionStarted, toolWorkStarted, lastToolWork, nextToolWork, woodRecipesCrafted, hoesCrafted;
@@ -83,6 +110,13 @@ final class Session {
     final local.villagers.navigation.WorkSearch<BlockPos> tradeSearch=new local.villagers.navigation.WorkSearch<>();
     long tradePathQueries,tradePathStarts;
     java.util.Map<String,Object> lastTradePath=java.util.Map.of();
+    final local.villagers.language.Dialogue.Budget workDialogueBudget=new local.villagers.language.Dialogue.Budget();
+    final local.villagers.navigation.WorkJourney orderJourney=new local.villagers.navigation.WorkJourney();
+    final local.villagers.navigation.WorkSearch<BlockPos> orderSearch=new local.villagers.navigation.WorkSearch<>();
+    long nextOrderOffer,nextOrderPath,nextOrderAttempt,orderProposals,ordersAccepted,ordersRefused,ordersUnknown;
+    String orderStatus="no work agreement";
+    java.util.Map<String,Object> lastWorkSettlement=java.util.Map.of();
+    long orderWorkStarted,orderWorkLast;
     String tradeStatus="not trading";
     long productionRequestsHeard;
     java.util.Map<String,Object> lastProductionRequest=java.util.Map.of();
@@ -140,6 +174,26 @@ final class Session {
     boolean succeeded;
     /** Earliest tick for the next unprompted remark, and for the next word a player may teach. */
     long nextSpeech, nextLesson;
+    final local.villagers.language.Dialogue.Budget dialogueBudget = new local.villagers.language.Dialogue.Budget();
+    local.villagers.language.PracticalQuestions.Conversation foodQuestion;
+    local.villagers.language.PracticalQuestions.Offer foodAnswer;
+    long nextFoodQuestion;
+    long foodQuestions,sourceQuestions,qualifiedFoodLeads,foodLeadInvestigations,foodLeadVerifications;
+    java.util.UUID socialAgreementPeer;
+    long socialAgreementUntil;
+    final local.villagers.language.Dialogue.Budget namingBudget = new local.villagers.language.Dialogue.Budget();
+    final local.villagers.language.Dialogue.Budget relationshipBudget=new local.villagers.language.Dialogue.Budget();
+    long nextPartnershipOffer,partnershipProposals,partnershipAgreements,partnershipRefusals,partnershipUnknown,partnershipWithdrawals;
+    String partnershipStatus="no partnership conversation";
+    final local.villagers.language.Dialogue.Budget tuitionBudget=new local.villagers.language.Dialogue.Budget();
+    java.util.UUID tuitionPeer,tuitionHelpFrom;
+    long tuitionHelpUntil,nextTuitionHelp;
+    final java.util.LinkedHashMap<java.util.UUID,Long> tuitionRequests=new java.util.LinkedHashMap<>();
+    local.villagers.language.Concept tuitionTopic;
+    long tuitionUntil,nextTuitionScan,nextTuitionOffer,tuitionDemonstrations,tuitionQuestions,tuitionCorrect,tuitionUnresolved;
+    String tuitionStatus="not teaching";
+    long introductions,placeNamings,namedReports;
+    long clarificationRequests, clarificationDenials, groundedRepairs, socialInvitations, socialAgreements;
 
     Session(AgentMind mind, long tick) {
         this.mind = mind;

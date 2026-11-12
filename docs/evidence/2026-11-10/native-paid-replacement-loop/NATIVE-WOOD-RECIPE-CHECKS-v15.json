@@ -1,0 +1,32 @@
+{
+  "scope": "Read-only native matching on actual copied saved inventory; no materials or recipes changed.",
+  "source": "native-gate-first-boat-wood-v14",
+  "checks": {
+    "inventorySlots": 8,
+    "plans": [
+      {
+        "goal": "STONE_PICKAXE",
+        "plan": "STICKS",
+        "expected": "4 minecraft:stick",
+        "nativeRecipe": true,
+        "actual": "4 minecraft:stick",
+        "remainingItems": "[0 minecraft:air, 0 minecraft:air]",
+        "fits": true
+      },
+      {
+        "goal": "TABLE",
+        "plan": "TABLE",
+        "expected": "1 minecraft:crafting_table",
+        "nativeRecipe": true,
+        "actual": "1 minecraft:crafting_table",
+        "remainingItems": "[0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air]",
+        "fits": true
+      }
+    ]
+  },
+  "inventory": "[1 minecraft:stone_pickaxe, 3 minecraft:cobblestone, 33 minecraft:dirt, 1 minecraft:bread, 2 minecraft:wheat, 3 minecraft:carrot, 4 minecraft:oak_planks]",
+  "terminal": {
+    "pid": 1404835,
+    "exitCode": 0
+  }
+}

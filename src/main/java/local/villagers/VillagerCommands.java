@@ -96,6 +96,14 @@ final class VillagerCommands {
         }
         tell(source, s.mind.name() + " faction=" + s.mind.faction() + " originBiome=" + s.mind.originBiome()
                 + " vocabulary=" + lexicon.knownConcepts() + "/" + Concept.values().length
+                + " grammar=" + lexicon.grammar().preferred()
+                + " grammarConfidence=" + String.format(Locale.ROOT, "%.0f%%", 100 * lexicon.grammar().confidence())
+                + " knownNames=" + lexicon.referents().entries().stream().filter(e -> lexicon.referents().resolve(e.word())!=null).count()
+                + " introductions=" + s.introductions + " placeNamings=" + s.placeNamings + " namedReports=" + s.namedReports
+                + " constructions=" + lexicon.grammar().constructions().size()
+                + " beliefs=" + s.mind.beliefs().entries().size()
+                + " clarifications=" + s.clarificationRequests + " repairs=" + s.groundedRepairs
+                + " socialAgreements=" + s.socialAgreements
                 + " learningWords=" + lexicon.evidence().size() + (lexicon.developing() ? " (developing)" : ""));
         tell(source, "Says: " + words.toString().trim());
         var neighbours = source.getLevel().getEntitiesOfClass(Villager.class, v.getBoundingBox().inflate(128),

@@ -11,7 +11,8 @@ import local.villagers.navigation.WorkJourney;
 public final class CompanionVisit {
     public static final int MAX_PEERS = 16, CONTACT_TICKS = 40;
     public static final long PEER_COOLDOWN = 1200, VISIT_INTERVAL = 400;
-    public record Candidate(UUID id, double regard, double distance, boolean stranger) {
+    public record Candidate(UUID id, double regard, double distance, boolean stranger, boolean partner) {
+        public Candidate(UUID id,double regard,double distance,boolean stranger){this(id,regard,distance,stranger,false);}
         public Candidate {
             if (id == null || !Double.isFinite(regard) || regard < -1 || regard > 1
                     || !Double.isFinite(distance) || distance < 0 || distance > 16)
@@ -39,7 +40,7 @@ public final class CompanionVisit {
         if (target != null || now < nextAllowed) return target;
         target = visible.stream().filter(c -> c.regard() > -.3 && now >= recent.getOrDefault(c.id(), 0L))
                 .max(Comparator.comparingDouble((Candidate c) -> 2 * c.regard()
-                        + (c.stranger() ? curiosity : 0) - c.distance() / 32)
+                        + (c.stranger() ? curiosity : 0) + (c.partner() ? .4 : 0) - c.distance() / 32)
                         .thenComparing(c -> c.id().toString())).map(Candidate::id).orElse(null);
         if (target == null) nextAllowed = now + 100;
         return target;

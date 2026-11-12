@@ -1,0 +1,192 @@
+{
+  "source": "runs/native-primary-earned-iron-loop-v2",
+  "result": {
+    "exitCode": 0,
+    "wallTimeGuard": false,
+    "oldSaveUnchanged": true,
+    "beforeHumanoids": 179,
+    "afterHumanoids": 179,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "managedVillagers": 33,
+    "minManagedHealth": 20.0,
+    "adventurer": {
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "type": "minecraft:villager",
+      "position": [
+        -466.7349514320072,
+        55.0,
+        -378.50006835891725
+      ],
+      "health": 20.0,
+      "tags": [
+        "villagers:workbench:-463,63,-379,minecraft:overworld",
+        "villagers:mine_floor:-128642862002122",
+        "villagers:mine_floor:-130567007350725",
+        "villagers:mine_floor:-129192617816009",
+        "villagers:managed",
+        "villagers:quarry_failed:-130567007231937:192849",
+        "villagers:quarry_failed:-127268472467393:202145",
+        "villagers:mine_floor:-128093106188234",
+        "villagers:mine_floor:-127268472451014",
+        "villagers:stone_shore:-126168960860097",
+        "villagers:mine_floor:-129467495722952",
+        "villagers:mine_floor:-128367984095178",
+        "villagers:mine_floor:-127268472442824",
+        "villagers:quarry:-131666518978497:EAST:16",
+        "villagers:mine_floor:-129742373629895",
+        "villagers:mine_floor:-128917739909066",
+        "villagers:native_resident_seen",
+        "villagers:mine_floor:-131116763164612",
+        "villagers:mine_floor:-130292129443781",
+        "villagers:stone_shore:-131391641075649",
+        "villagers:mine_floor:-127268472467394",
+        "villagers:mine_floor:-127268472455109",
+        "villagers:mine_floor:-130017251536838",
+        "villagers:mine_floor:-130841885257669",
+        "villagers:mine_floor:-127268472446919",
+        "villagers:stone_shore:-129742373699521",
+        "villagers:mine_floor:-127268472459204",
+        "villagers:mine_stair:-128093106188233:-131666518978497:NORTH:0:1:level:active",
+        "villagers:stone_shore:-128917739769793",
+        "villagers:mine_floor:-127268472463299",
+        "villagers:owned_furnace:-126993594548161:0:0",
+        "villagers:stone_shore:-130567007150017",
+        "villagers:adventurer"
+      ],
+      "noAI": false,
+      "invulnerable": false,
+      "age": 0,
+      "attributes": [
+        {
+          "base": 4.0,
+          "id": "minecraft:attack_speed"
+        },
+        {
+          "base": 1.0,
+          "id": "minecraft:attack_damage"
+        },
+        {
+          "base": 0.5,
+          "id": "minecraft:movement_speed"
+        },
+        {
+          "modifiers": [
+            {
+              "amount": -0.05755709282684849,
+              "operation": "add_multiplied_base",
+              "id": "minecraft:random_spawn_bonus"
+            }
+          ],
+          "base": 16.0,
+          "id": "minecraft:follow_range"
+        }
+      ],
+      "effects": [],
+      "vehicle": null,
+      "inventory": [
+        {
+          "id": "minecraft:wooden_pickaxe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 3
+          }
+        },
+        {
+          "id": "minecraft:cobblestone",
+          "count": 2
+        },
+        {
+          "id": "minecraft:dirt",
+          "count": 33
+        },
+        {
+          "id": "minecraft:bread",
+          "count": 1
+        },
+        {
+          "id": "minecraft:wheat_seeds",
+          "count": 1
+        },
+        {
+          "id": "minecraft:carrot",
+          "count": 8
+        },
+        {
+          "id": "minecraft:wooden_hoe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 3
+          }
+        },
+        {
+          "id": "minecraft:clay_ball",
+          "count": 4
+        }
+      ],
+      "equipment": {
+        "mainhand": {
+          "id": "minecraft:stone_pickaxe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 49
+          }
+        }
+      },
+      "meetingPoint": {
+        "value": {
+          "pos": [
+            -493,
+            64,
+            -329
+          ],
+          "dimension": "minecraft:overworld"
+        }
+      },
+      "dimensionFolder": "dimensions/minecraft/overworld/entities",
+      "name": "Clover-edc5",
+      "food": {
+        "foodLevel": 20,
+        "saturation": 0.0,
+        "exhaustion": 0.299015,
+        "timer": 0
+      },
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -467,
+        "y": 64,
+        "z": -377
+      }
+    },
+    "stonePickaxeMilestoneRequested": false,
+    "ironIngotsMilestoneRequested": false,
+    "ironPickaxeMilestoneRequested": false,
+    "stoneTierPickaxeOwned": true,
+    "ironIngotsOwned": 0,
+    "ironTierPickaxeOwned": false
+  },
+  "gameTime": 217347,
+  "process": {
+    "pid": 1348305,
+    "started": 1794360568.5915668,
+    "tickBudget": 12000,
+    "minHealth": 12,
+    "observer": [
+      -490,
+      95,
+      -310
+    ],
+    "nativeTps": 20,
+    "starvationGuard": true,
+    "stopOnStonePickaxe": false,
+    "stopOnIronIngots": false,
+    "stopOnIronPickaxe": true,
+    "productionJarSHA256": "303edfe06b490bdbbc6745c787d5e2667e2d698d19f66ca3c57a5903dbec1713",
+    "config": {
+      "godChildren": false,
+      "hayForaging": true,
+      "nativeAdventureQuarry": true
+    }
+  },
+  "scope": "Actual primary normal20TPS. No copied-world promotion; no iron or births yet."
+}

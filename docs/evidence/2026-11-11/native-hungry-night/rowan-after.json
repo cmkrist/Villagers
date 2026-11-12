@@ -1,0 +1,119 @@
+{
+  "position": "-836, 63, -737",
+  "body": {
+    "baby": false,
+    "sleeping": false,
+    "home": "Home[dimension=minecraft:overworld, x=-839, y=64, z=-764]",
+    "ownedMeal": 2,
+    "gateWait": {
+      "until": 0,
+      "stand": "",
+      "door": ""
+    },
+    "activity": "Rowan-cfca \u00b7 looking for preparation wood (unhappy)",
+    "fire": false,
+    "trading": false,
+    "passenger": false,
+    "water": false
+  },
+  "campMeals": {
+    "lastReceived": {},
+    "requests": 0
+  },
+  "survival": {
+    "recoveryUntil": 0,
+    "refugePathQueries": 15,
+    "centeringAttempts": 0,
+    "rejectedPaths": 0,
+    "lastRefugePlan": {
+      "gameTime": 340376,
+      "position": [
+        -832.9337108963085,
+        63.0,
+        -728.4998024159627
+      ],
+      "bed": "-839, 64, -764",
+      "distance": 35.47178322705987,
+      "covered": true,
+      "inside": false,
+      "dusk": false,
+      "danger": false,
+      "nativeActivity": "work",
+      "clockTime": 340376,
+      "skyDarken": 0,
+      "raining": false,
+      "pathPresent": true,
+      "pathCanReach": false,
+      "pathNodes": 34,
+      "pathEnd": "-839, 63, -760",
+      "endDistance": 4.123105625617661,
+      "partialAccepted": true,
+      "bounded": true,
+      "homeReachable": true,
+      "homeSafe": true,
+      "blockedUntil": 0,
+      "guardianReachable": false,
+      "chosenIntent": "SHELTER"
+    },
+    "plans": 27,
+    "awaitLanding": false,
+    "homePathPlans": 7,
+    "lastFloorRoute": {},
+    "floorRoutes": 0,
+    "partialHomeRoutes": 4,
+    "routeStalls": 0,
+    "refugeStandInspections": 300,
+    "lastEscapeRoute": {},
+    "centeringSuccesses": 0,
+    "centeringFailures": 0,
+    "centeringActive": false,
+    "intent": "NORMAL"
+  },
+  "navigation": {
+    "velocity": "(0.0, -0.0784000015258789, 0.0)",
+    "wanted": [
+      -836.5,
+      63.0,
+      -737.5
+    ],
+    "position": "(-835.8179928827732, 63.0, -736.7836158311961)",
+    "onGround": true,
+    "path": {}
+  },
+  "food": 16,
+  "id": "cfca97fe-3cde-4e9b-998d-da9d95500b18",
+  "health": 20.0,
+  "stores": {
+    "transfers": 5,
+    "mealRendezvous": {},
+    "lastPath": {
+      "nodes": 4,
+      "end": "-845, 64, -780",
+      "gameTime": 334956,
+      "sharedBudget": false,
+      "store": "-844, 64, -781",
+      "stand": "-845, 64, -780",
+      "reaches": true
+    },
+    "activity": "waiting to plan a native food-store route",
+    "target": "",
+    "lastReceipt": {
+      "container": "-844, 64, -781",
+      "sourceAfter": 0,
+      "gameTime": 335076,
+      "item": "minecraft:apple",
+      "moved": 1,
+      "sourceBefore": 1
+    },
+    "routeBlocked": false,
+    "escape": {
+      "brokenDoors": 0,
+      "target": "",
+      "brokenFenceBlocks": 0,
+      "activity": "no cell escape",
+      "lastReceipt": {},
+      "workTicks": 0
+    }
+  },
+  "name": "Rowan-cfca"
+}

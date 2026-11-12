@@ -1,0 +1,149 @@
+{
+  "runtime": "runs/native-fall-cache-and-bunk-handoffs-v83",
+  "terminal.json": {
+    "pid": 1800907,
+    "exitCode": 0
+  },
+  "population-preservation.json": {
+    "beforeHumanoids": 187,
+    "afterHumanoids": 187,
+    "missingOriginalIds": [],
+    "newHumanoidIds": []
+  },
+  "frozen": {
+    "status": "passed",
+    "gameTime": 270968,
+    "founders": [
+      {
+        "id": "460ab4b6-1522-4504-9673-25fd503e0610",
+        "nativePathCache": {
+          "scopedSearchFresh": true,
+          "commonQueryReturnedPath": true,
+          "commonQueryWasFresh": true,
+          "seed": true,
+          "fallLimitedDestinationPreserved": true,
+          "fallLimitedSearchFresh": true,
+          "activeDestinationPreserved": true,
+          "activePathPreserved": true,
+          "ordinaryCacheReused": true,
+          "chosenDestinationCommitted": true
+        },
+        "westHandoffPaths": [
+          {
+            "recipient": "e028b7be-3415-4f44-8c0e-d73e81ea7fd4",
+            "productionPath": {
+              "reaches": false,
+              "nodes": 0,
+              "present": false,
+              "end": ""
+            },
+            "largerDetours": [],
+            "windowCandidates": 8,
+            "reachableWindows": 0
+          },
+          {
+            "recipient": "8ea7e1a5-6ea5-43b7-a3dd-fd713a991f38",
+            "productionPath": {
+              "reaches": false,
+              "nodes": 0,
+              "present": false,
+              "end": ""
+            },
+            "largerDetours": [],
+            "windowCandidates": 11,
+            "reachableWindows": 0
+          },
+          {
+            "recipient": "fad46718-2403-42a5-9067-b66e72485ec0",
+            "productionPath": {
+              "reaches": false,
+              "nodes": 0,
+              "present": false,
+              "end": ""
+            },
+            "largerDetours": [],
+            "windowCandidates": 15,
+            "reachableWindows": 0
+          },
+          {
+            "recipient": "c73f2812-0861-417f-8180-38f671532381",
+            "productionPath": {
+              "reaches": false,
+              "nodes": 0,
+              "present": false,
+              "end": ""
+            },
+            "largerDetours": [],
+            "windowCandidates": 16,
+            "reachableWindows": 0
+          }
+        ]
+      },
+      {
+        "id": "e9b7b192-009b-4158-bc2d-1a63456a6f91",
+        "nativePathCache": {
+          "scopedSearchFresh": true,
+          "commonQueryReturnedPath": true,
+          "commonQueryWasFresh": true,
+          "seed": true,
+          "fallLimitedDestinationPreserved": true,
+          "fallLimitedSearchFresh": true,
+          "activeDestinationPreserved": true,
+          "activePathPreserved": true,
+          "ordinaryCacheReused": true,
+          "chosenDestinationCommitted": true
+        },
+        "westHandoffPaths": [
+          {
+            "recipient": "e028b7be-3415-4f44-8c0e-d73e81ea7fd4",
+            "productionPath": {
+              "reaches": false,
+              "nodes": 0,
+              "present": false,
+              "end": ""
+            },
+            "largerDetours": [],
+            "windowCandidates": 8,
+            "reachableWindows": 0
+          },
+          {
+            "recipient": "8ea7e1a5-6ea5-43b7-a3dd-fd713a991f38",
+            "productionPath": {
+              "reaches": false,
+              "nodes": 0,
+              "present": false,
+              "end": ""
+            },
+            "largerDetours": [],
+            "windowCandidates": 11,
+            "reachableWindows": 0
+          },
+          {
+            "recipient": "fad46718-2403-42a5-9067-b66e72485ec0",
+            "productionPath": {
+              "reaches": false,
+              "nodes": 0,
+              "present": false,
+              "end": ""
+            },
+            "largerDetours": [],
+            "windowCandidates": 15,
+            "reachableWindows": 0
+          },
+          {
+            "recipient": "c73f2812-0861-417f-8180-38f671532381",
+            "productionPath": {
+              "reaches": false,
+              "nodes": 0,
+              "present": false,
+              "end": ""
+            },
+            "largerDetours": [],
+            "windowCandidates": 16,
+            "reachableWindows": 0
+          }
+        ]
+      }
+    ]
+  }
+}

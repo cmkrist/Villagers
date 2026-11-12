@@ -16,7 +16,12 @@ Native camp tests verified existing-body enrollment without supplies, real hay
 harvesting, bread recipes, sharing, and native storage withdrawals. Six earlier
 founders survived an 8000-tick copy at full health after roof-directed movement
 was corrected. Later tests use one existing local pair, preserving saved founders
-when continued. These observations have not yet proved new housing or births.
+when continued. These observations have not yet proved new housing or births. Tests before v14
+did not guarantee continuous founder residency: v13 exposed an unforced western
+corner and one founder stopped ticking. Their health snapshots are not continuous
+endurance proof. v14 fixed this, with complete camp chunk coverage and per-founder
+age-progress guards; it stopped after 20,000 simulated ticks when a captive
+villager reached 4 health. Primary remained unchanged at 60017.
 
 The separate native bed recipe audit uses only an in-memory recipe fixture. It
 confirms one log and twelve strings become one bed and one spare plank. It grants

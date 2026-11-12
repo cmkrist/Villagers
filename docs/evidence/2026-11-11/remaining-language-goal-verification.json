@@ -1,0 +1,55 @@
+{
+  "status": "complete \u2014 bounded engineering contract verified",
+  "scope": "Bounded engineering milestones in docs/remaining-language-goal.txt, including user steering for adult learning and native villager/pillager voice/imitation. Not unrestricted artificial life.",
+  "milestones": [
+    {
+      "milestone": "Grounded references",
+      "verification": "docs/evidence/2026-11-11/grounded-references/verification.json"
+    },
+    {
+      "milestone": "Source-qualified practical questions",
+      "verification": "docs/evidence/2026-11-11/practical-questions/verification.json"
+    },
+    {
+      "milestone": "Persistent interpreted partnerships",
+      "verification": "docs/evidence/2026-11-11/partnerships/verification.json"
+    },
+    {
+      "milestone": "Persistent work obligations",
+      "verification": "docs/evidence/2026-11-11/work-agreements/verification.json"
+    },
+    {
+      "milestone": "Foreign reception separate from native production",
+      "verification": "docs/evidence/2026-11-11/receptive-grammar/verification.json"
+    },
+    {
+      "milestone": "Compound formation, child/adult teaching and native voices",
+      "verification": "docs/evidence/2026-11-11/teaching-and-voices/verification.json"
+    },
+    {
+      "milestone": "Controlled cultural transmission and supported first use",
+      "verification": "docs/evidence/2026-11-11/cultural-transmission/verification.json"
+    }
+  ],
+  "finalLanguageBuild": {
+    "artifact": "dist/villagers-language-verified-2026-11-11.jar",
+    "sha256": "ab87ea37fb2ace3788c1be2e4235c66e09882c9805762af1f660108ed193ef20",
+    "javaTests": 717,
+    "pythonTests": 19,
+    "latestNativePhases": 16,
+    "cultureCohorts": 180,
+    "cultureNestedLearnerEpisodes": 900,
+    "cultureSeeds": 12,
+    "cultureStagedGenerations": 3
+  },
+  "statePreservation": "Existing identities, vocabulary, references, commitments, capabilities and physical resources remain authoritative. Only fresh isolated worlds were used; baseline build files were read without opening its world. Concurrent unrelated workspace edits were preserved.",
+  "limits": [
+    "Finite authored meanings/constructions; supported first use is not invention of a new category",
+    "Shared regional dialects with individual voices/learned words; no assertion of unrelated unique languages for every actor",
+    "Timed grunts render symbolic speech; no waveform ASR, reversible phonetic codec or client auditory quality result",
+    "Staged cohorts and controlled native opportunities are not biological reproduction, natural social rates or survival evidence",
+    "No population-scale compute/audio benchmark or artificial-life equivalence claim"
+  ],
+  "checkpointStatusNote": "Individual milestone evidence retains its status at capture; this ledger records final goal completion.",
+  "finalSourceAudit": "34 goal source files match each of the five final native archives; compiled main classes match the executed JAR; all artifact pins and terminal outcomes verified."
+}

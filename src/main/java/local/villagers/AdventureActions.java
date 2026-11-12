@@ -86,19 +86,39 @@ public final class AdventureActions {
     public static boolean acceptsTool(ItemStack stack) {
         return sword(stack) || hoe(stack) || usable(stack) && stack.is(ItemTags.PICKAXES);
     }
+
+    /** Equipment worth keeping from real ground drops, including tools not yet used by work AI. */
+    public static boolean acceptsDroppedEquipment(ItemStack stack) {
+        return usable(stack) && (acceptsTool(stack) || stack.has(DataComponents.TOOL)
+            || stack.has(DataComponents.WEAPON) || stack.getItem() instanceof net.minecraft.world.item.ProjectileWeaponItem
+            || stack.is(Items.SHEARS) || stack.is(Items.FISHING_ROD) || stack.is(Items.FLINT_AND_STEEL)
+            || stack.is(Items.BRUSH) || stack.is(Items.SHIELD));
+    }
     /** Equip one actual possessed pickaxe; the displaced held item uses the same conserved swap as a hoe. */
     static boolean preparePickaxeForMining(ServerLevel level,Villager v,BlockState block) {
         if (!managed(v) || v.level()!=level || !PERMISSIONS.allows(Capability.EQUIP_ITEM)) return false;
         double speed = usable(v.getMainHandItem()) && v.getMainHandItem().is(ItemTags.PICKAXES)
-            && v.getMainHandItem().isCorrectToolForDrops(block) ? v.getMainHandItem().getDestroySpeed(block) : -1;
+            && (!block.requiresCorrectToolForDrops()||v.getMainHandItem().isCorrectToolForDrops(block)) ? v.getMainHandItem().getDestroySpeed(block) : -1;
+        int remaining=speed<0?-1:AdventurePreparation.toolUses(v.getMainHandItem());
         int best=-1;
         for(int i=0;i<v.getInventory().getContainerSize();i++) {
             var stack=v.getInventory().getItem(i);
-            if(usable(stack)&&stack.is(ItemTags.PICKAXES)&&stack.isCorrectToolForDrops(block)&&stack.getDestroySpeed(block)>speed) {
-                best=i;speed=stack.getDestroySpeed(block);
+            if(usable(stack)&&stack.is(ItemTags.PICKAXES)&&(!block.requiresCorrectToolForDrops()||stack.isCorrectToolForDrops(block))
+                &&preferPickaxe(stack.getDestroySpeed(block),AdventurePreparation.toolUses(stack),speed,remaining)) {
+                best=i;speed=stack.getDestroySpeed(block);remaining=AdventurePreparation.toolUses(stack);
             }
         }
+        var offhand=v.getOffhandItem();
+        if(usable(offhand)&&offhand.is(ItemTags.PICKAXES)&&(!block.requiresCorrectToolForDrops()||offhand.isCorrectToolForDrops(block))
+            &&preferPickaxe(offhand.getDestroySpeed(block),AdventurePreparation.toolUses(offhand),speed,remaining)){
+            switchOffhand(level,v);return true;
+        }
         return best>=0 ? switchTool(level,v,best,state(v)) : speed>=0;
+    }
+    static boolean preferPickaxe(double speed,int uses,double currentSpeed,int currentUses){
+        if(currentSpeed<0)return true;
+        if((uses>8)!=(currentUses>8))return uses>8;
+        return speed>currentSpeed||speed==currentSpeed&&uses>currentUses;
     }
 
     /** Store the actual held hoe/item; a real weapon is never put away for soil work. */
@@ -119,8 +139,16 @@ public final class AdventureActions {
     private static boolean hoe(ItemStack stack) { return usable(stack) && stack.is(ItemTags.HOES); }
     static boolean prepareHoeForWork(ServerLevel level, Villager v) {
         if (hoe(v.getMainHandItem())) return true;
+        if(hoe(v.getOffhandItem())&&managed(v)&&v.level()==level&&PERMISSIONS.allows(Capability.EQUIP_ITEM)){switchOffhand(level,v);return true;}
         int slot = inventoryTool(v, false);
         return slot >= 0 && switchTool(level, v, slot, state(v));
+    }
+    static boolean prepareShears(ServerLevel level,Villager v){
+        if(!managed(v)||v.level()!=level||!PERMISSIONS.allows(Capability.EQUIP_ITEM))return false;
+        if(v.getMainHandItem().is(Items.SHEARS)&&usable(v.getMainHandItem()))return true;
+        if(v.getOffhandItem().is(Items.SHEARS)&&usable(v.getOffhandItem())){switchOffhand(level,v);return true;}
+        for(int i=0;i<v.getInventory().getContainerSize();i++)if(v.getInventory().getItem(i).is(Items.SHEARS)&&usable(v.getInventory().getItem(i)))return switchTool(level,v,i,state(v));
+        return false;
     }
     private static int inventoryTool(Villager villager, boolean sword) {
         for (int slot = 0; slot < villager.getInventory().getContainerSize(); slot++) {
@@ -146,6 +174,16 @@ public final class AdventureActions {
         if (!previous.isEmpty()) villager.getInventory().setItem(storage, previous);
         equip(level, villager, actualItem, actor);
         return true;
+    }
+
+    /** Display one actually possessed example; the displaced hand goes into the selected stack's freed slot. */
+    static boolean displayForLesson(ServerLevel level,Villager v,int slot){
+        if(!managed(v)||v.level()!=level||!PERMISSIONS.allows(Capability.EQUIP_ITEM)||v.isSleeping()||v.isTrading()
+                ||slot<0||slot>=v.getInventory().getContainerSize())return false;
+        var selected=v.getInventory().getItem(slot);if(selected.isEmpty())return false;
+        var previous=v.getMainHandItem();
+        v.getInventory().setItem(slot,previous);
+        equip(level,v,selected,state(v));return true;
     }
 
     /** Real sneak-right-click handoff; success consumes the interaction and exactly one existing item. */
@@ -175,6 +213,10 @@ public final class AdventureActions {
         villager.setGuaranteedDrop(EquipmentSlot.MAINHAND);
         // LivingEntity applies equipped attribute modifiers on its next equipment update.
         actor.weaponReadyAt = level.getGameTime() + 1;
+    }
+    private static void switchOffhand(ServerLevel level,Villager v){
+        var previous=v.getMainHandItem();var actual=v.getOffhandItem();
+        v.setItemSlot(EquipmentSlot.OFFHAND,previous);v.setGuaranteedDrop(EquipmentSlot.OFFHAND);equip(level,v,actual,state(v));
     }
 
     /** Attempts one stationary defensive strike. true means native damage succeeded; never starts pursuit. */
@@ -215,7 +257,7 @@ public final class AdventureActions {
         return managed(villager) && PERMISSIONS.allows(Capability.HARVEST_REPLANT);
     }
     static boolean hasHoe(Villager villager) {
-        return hoe(villager.getMainHandItem()) || inventoryTool(villager,false)>=0;
+        return hoe(villager.getMainHandItem())||hoe(villager.getOffhandItem())||inventoryTool(villager,false)>=0;
     }
 
     /** Bounded radius-eight/y±three search. Root should cache results instead of scanning every tick. */

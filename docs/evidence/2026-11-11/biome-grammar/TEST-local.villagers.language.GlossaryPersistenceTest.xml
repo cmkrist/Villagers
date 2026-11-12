@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="local.villagers.language.GlossaryPersistenceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-11T19:25:38.183Z" hostname="td001" time="0.009">
+  <properties/>
+  <testcase name="freshStoreNeverOverwritesFutureSchemaWithoutLoad()" classname="local.villagers.language.GlossaryPersistenceTest" time="0.001"/>
+  <testcase name="failedWriteIsRetainedAndRetriedAfterDiskRecovers()" classname="local.villagers.language.GlossaryPersistenceTest" time="0.005"/>
+  <testcase name="playerGrammarSurvivesReloadAndSchemaOneUpgradesWithoutLosingEvidence()" classname="local.villagers.language.GlossaryPersistenceTest" time="0.001"/>
+  <testcase name="shutdownReportsUnsavedChanges()" classname="local.villagers.language.GlossaryPersistenceTest" time="0.001"/>
+  <testcase name="reconnectUsesPendingLessonsWhileWriterIsBlocked()" classname="local.villagers.language.GlossaryPersistenceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

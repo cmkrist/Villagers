@@ -43,7 +43,8 @@ final class LabCommands {
                 .then(Commands.literal("openlab").executes(c -> openLab(c.getSource())))
                 .then(Commands.literal("danger").executes(c -> danger(c.getSource())))
                 .then(Commands.literal("calm").executes(c -> calm(c.getSource())))
-                .then(Commands.literal("report").executes(c -> report(c.getSource()))));
+                .then(Commands.literal("report").executes(c -> report(c.getSource())))
+                .then(Commands.literal("native-care-resume").executes(c -> NativeCareStartup.resume(c.getSource().getServer()))));
     }
 
     private static boolean labWorld(CommandSourceStack source) {
@@ -193,6 +194,7 @@ final class LabCommands {
         if (state != null) row.put("foodAccess",FoodAccess.status(state));
         if (state != null) row.put("nativeFoodStores",NativeFoodStorage.status(state));
         if (state != null) row.put("mining", AdventureMining.status(state));
+        if (state != null) row.put("quarry", AdventureQuarry.status(state));
         row.put("social", SocialReactions.status(v.getUUID()));
         row.put("action", state == null ? null : state.action);
         if (state != null) row.put("adventure", Map.of("nominated", AdventurePreparation.nominated(v),

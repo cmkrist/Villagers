@@ -1,0 +1,320 @@
+{
+  "milestone": "Language-specific receptive grammar separate from native production",
+  "fullGoalStatus": "active; priority 5 remains incomplete until bounded word formation/acquisition and deliberate childhood teaching are verified; controlled cultural/grammar-innovation evaluation also remains required",
+  "java": {
+    "tests": 682,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "python": {
+    "tests": 19,
+    "passed": true
+  },
+  "automatedCommand": "./tools/test.sh --console=plain",
+  "runtime": "/home/cmkrist/Documents/Villagers/runs/language-reception-v2",
+  "native": {
+    "status": "passed",
+    "ticks": 440,
+    "foreignBiome": "minecraft:snowy_slopes",
+    "initiallyWrong": true,
+    "fullLessons": 3,
+    "compactLessons": 3,
+    "nativeLessons": 3,
+    "nativeOrder": "SVO",
+    "unexposedControlBlocked": true,
+    "actualFoodReceipt": {
+      "receiverAfter": 1,
+      "receiverBefore": 0,
+      "nutrition": 5,
+      "named": false,
+      "giverBefore": 3,
+      "gameTime": 440,
+      "from": "00000000-0000-03ea-0000-000000000007",
+      "to": "00000000-0000-03e9-0000-000000000001",
+      "giverAfter": 2,
+      "item": "minecraft:bread"
+    },
+    "fullForeignExample": {
+      "intended": [
+        {
+          "subject": "I",
+          "verb": "SEE",
+          "object": "BREAD",
+          "negated": false,
+          "past": false
+        }
+      ],
+      "sounds": [
+        "no",
+        "bodem",
+        "taza"
+      ]
+    },
+    "compactForeignExample": {
+      "intended": [
+        {
+          "subject": "I",
+          "verb": "IS",
+          "object": "HURT",
+          "negated": false,
+          "past": false
+        }
+      ],
+      "sounds": [
+        "gafu",
+        "taza"
+      ]
+    },
+    "retainedNativeExample": {
+      "intended": [
+        {
+          "subject": "I",
+          "verb": "IS",
+          "object": "HURT",
+          "negated": false,
+          "past": false
+        }
+      ],
+      "sounds": [
+        "sug",
+        "daku",
+        "mi"
+      ]
+    },
+    "receptiveProfiles": {
+      "dialects": [
+        {
+          "cues": [
+            {
+              "word": "no",
+              "meaning": "BREAD"
+            },
+            {
+              "word": "bodem",
+              "meaning": "SEE"
+            },
+            {
+              "word": "taza",
+              "meaning": "I"
+            },
+            {
+              "word": "gafu",
+              "meaning": "HURT"
+            }
+          ],
+          "patterns": [
+            {
+              "slots": [
+                "OBJECT",
+                "VERB",
+                "SUBJECT"
+              ],
+              "evidence": 3
+            },
+            {
+              "slots": [
+                "OBJECT",
+                "SUBJECT"
+              ],
+              "implicitVerb": "IS",
+              "evidence": 3
+            }
+          ]
+        },
+        {
+          "cues": [
+            {
+              "word": "sug",
+              "meaning": "I"
+            },
+            {
+              "word": "lis",
+              "meaning": "SEE"
+            },
+            {
+              "word": "vig",
+              "meaning": "BREAD"
+            }
+          ],
+          "patterns": [
+            {
+              "slots": [
+                "SUBJECT",
+                "VERB",
+                "OBJECT"
+              ],
+              "evidence": 3
+            }
+          ]
+        }
+      ]
+    },
+    "fixture": "NEW peaceful platform with a separate walled comparison chamber. Five original stationary NoAI adults. The listener/control start with native plains SVO and declared prior acquaintance with seven foreign word meanings, but no foreign receptive grammar; those lexical acquisitions are not claimed here. A real existing snowy/frozen/peaks founding vocabulary with distinct cues is selected and reported. A healthy foreign speaker visibly holds bread; a separate same-biome speaker starts with one native injury and a seeded compact OS copula convention; a native peer also visibly holds bread. Controlled public utterance opportunities obey each speaker's 200-tick dialogue budget. The listener hears full OVS, compact OS and native SVO from actual sounds plus public speaker-specific facts. The wall control has the same lexical priors but no visibility/exposure. No post-setup position, health, vocabulary, grammar or inventory setters; one actual interpreted food request causes a conserved production-code handoff. No existing society opened; no natural bilingual emergence, new semantic invention, visual UX or scaling claim."
+  },
+  "restart": {
+    "status": "restart-passed",
+    "originalsVerifiedAtLoad": 5,
+    "knownReceptionUsable": true
+  },
+  "frozen": {
+    "status": "frozen-passed",
+    "originalsVerifiedAtLoad": 5,
+    "knownReceptionUsable": true,
+    "learnedLanguageUnchanged": true
+  },
+  "originalBodies": [
+    "00000000-0000-03e9-0000-000000000001",
+    "00000000-0000-03e9-0000-000000000002",
+    "00000000-0000-03eb-0000-000000000001",
+    "00000000-0000-03ea-0000-000000000007",
+    "00000000-0000-03ec-0000-000000000001"
+  ],
+  "allFiveOriginalsAlive": true,
+  "regression": {
+    "runtime": "/home/cmkrist/Documents/Villagers/runs/language-life-reception-v2",
+    "native": {
+      "status": "passed",
+      "ticks": 2508,
+      "initialMisinterpretationBlockedGift": true,
+      "automaticGroundedRepairs": 4,
+      "spokenDenials": 4,
+      "realFoodReceipt": {
+        "item": "minecraft:bread",
+        "giverAfter": 0,
+        "to": "00000000-0000-0191-0000-000000000001",
+        "from": "00000000-0000-0191-0000-000000000026",
+        "gameTime": 1908,
+        "giverBefore": 1,
+        "named": false,
+        "nutrition": 5,
+        "receiverBefore": 0,
+        "receiverAfter": 1
+      },
+      "autonomousUnderstoodSocialVisit": true,
+      "socialAgreements": 2,
+      "innovationOpportunities": 7,
+      "nativeOnePointDamageEvents": 7,
+      "generalizedConstruction": {
+        "intended": [
+          {
+            "subject": "YOU",
+            "verb": "IS",
+            "object": "HAPPY",
+            "negated": false,
+            "past": false
+          }
+        ],
+        "sounds": [
+          "lo",
+          "rusigis"
+        ]
+      },
+      "fixture": "NEW peaceful walled platform, four adults in two separate chambers, declared requester4food, generous full donor20food/20saturation and1inventorybread+1publichandbread, lonely visitor with3prior food-favour opinions of host; visitor/host each6bread. No post-setup position/food/health setters, seed repair, grammar assignment or cooldown resets. Controlled request opportunities every20ticks respect ordinary request/repair cooldowns. After actual feeding+native social visit, continuous controlled compression opportunities respect speech cooldown and require actual native walking or visible injury. At most12declared native1damage stimuli, only when the visitor is at full health, provide repeated public injury evidence; healing and food consumption remain native. No body movement is forced. Tests learning and generalization of a bounded construction, not spontaneous invention of semantic categories or natural survival."
+    },
+    "restart": {
+      "status": "restart-passed",
+      "originalsVerifiedAtLoad": 4
+    },
+    "frozen": {
+      "status": "frozen-passed",
+      "originalsVerifiedAtLoad": 4,
+      "understoodAgreement": true,
+      "learnedStateUnchanged": true
+    }
+  },
+  "terminals": {
+    "language-reception-v2": {
+      "first": {
+        "exitCode": 0,
+        "finishedAtEpoch": 1794436482.4450483
+      },
+      "restart": {
+        "exitCode": 0,
+        "finishedAtEpoch": 1794436488.5699675
+      },
+      "frozen": {
+        "exitCode": 0,
+        "finishedAtEpoch": 1794436494.5451562
+      }
+    },
+    "language-life-reception-v2": {
+      "first": {
+        "exitCode": 0,
+        "finishedAtEpoch": 1794436507.4302604
+      },
+      "restart": {
+        "exitCode": 0,
+        "finishedAtEpoch": 1794436513.5057108
+      },
+      "frozen": {
+        "exitCode": 0,
+        "finishedAtEpoch": 1794436519.4286814
+      }
+    }
+  },
+  "productionJarSha256": "37438939b4101a4dee33a00b162c00154c7f7f8a02a52588673065329138e8fb",
+  "matchesCurrentBuildAtCapture": true,
+  "artifactPins": {
+    "language-reception-v2": {
+      "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+      "mods/villagers-0.4.1-dev.jar": "37438939b4101a4dee33a00b162c00154c7f7f8a02a52588673065329138e8fb",
+      "mods/language-probe.jar": "2904c6af2811a9695be94d70ca51eb0c6a98e56fe625553af3224f4f3b94d5dd"
+    },
+    "language-life-reception-v2": {
+      "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+      "mods/villagers-0.4.1-dev.jar": "37438939b4101a4dee33a00b162c00154c7f7f8a02a52588673065329138e8fb",
+      "mods/language-probe.jar": "53ec1390775abcc71252077d77d462c3d5d277a48f42f3ee48039572e64437fc"
+    }
+  },
+  "sourceArchiveSha256": {
+    "language-reception-v2": "f83d9f27ef539bfc19a75e2e05a3b3fb7409a7ccf84ec97ff5f734c56a8c0b2e",
+    "language-life-reception-v2": "aebb769fe1c85b9f83b44d6df4f0835458657ec69d2bde3e155e4ddb6b87bcf4"
+  },
+  "goalSourcesMatchExecutedSnapshots": {
+    "language-reception-v2": {
+      "src/main/java/local/villagers/language/Grammar.java": true,
+      "src/main/java/local/villagers/language/ReceptiveGrammar.java": true,
+      "src/main/java/local/villagers/language/Sentence.java": true,
+      "src/main/java/local/villagers/language/LanguageLearning.java": true,
+      "src/main/java/local/villagers/language/Referents.java": true,
+      "src/main/java/local/villagers/language/Lexicon.java": true,
+      "src/main/java/local/villagers/language/Glossary.java": true,
+      "src/main/java/local/villagers/Speech.java": true,
+      "src/main/java/local/villagers/mind/AgentMind.java": true,
+      "src/test/java/local/villagers/language/SentenceTest.java": true,
+      "src/test/java/local/villagers/language/ConstructionTest.java": true,
+      "src/test/java/local/villagers/language/ReceptiveGrammarTest.java": true,
+      "src/test/java/local/villagers/mind/ReceptiveGrammarPersistenceTest.java": true,
+      "tools/tests/java/local/villagers/ReceptionServerProbe.java": true
+    },
+    "language-life-reception-v2": {
+      "src/main/java/local/villagers/language/Grammar.java": true,
+      "src/main/java/local/villagers/language/ReceptiveGrammar.java": true,
+      "src/main/java/local/villagers/language/Sentence.java": true,
+      "src/main/java/local/villagers/language/LanguageLearning.java": true,
+      "src/main/java/local/villagers/language/Referents.java": true,
+      "src/main/java/local/villagers/language/Lexicon.java": true,
+      "src/main/java/local/villagers/language/Glossary.java": true,
+      "src/main/java/local/villagers/Speech.java": true,
+      "src/main/java/local/villagers/mind/AgentMind.java": true,
+      "src/test/java/local/villagers/language/SentenceTest.java": true,
+      "src/test/java/local/villagers/language/ConstructionTest.java": true,
+      "src/test/java/local/villagers/language/ReceptiveGrammarTest.java": true,
+      "src/test/java/local/villagers/mind/ReceptiveGrammarPersistenceTest.java": true,
+      "tools/tests/java/local/villagers/LanguageLifeServerProbe.java": true
+    }
+  },
+  "priorSuccessfulRuns": [
+    "language-reception-v1",
+    "language-life-reception-v1; repeated on final artifact after partial-child bootstrap preservation fix"
+  ],
+  "limitations": [
+    "Five stationary NoAI actors, seven seeded foreign lexical meanings and a seeded compact convention are declared conditions; lexical acquisition and spontaneous bilingual/cultural emergence are not claimed",
+    "Native experiment supports one distinct-cue foreign full/compact language and native production; two foreign dialects and indistinguishable-cue ambiguity have automated evidence",
+    "Profiles use heard word tokens and grounded role alignment, not waveform recognition, hidden language IDs or unrestricted syntax/semantic invention",
+    "Same-language accommodation remains authored and bounded; generalizing a supported form does not invent a new semantic category",
+    "A grammar bootstrap preservation check is not implementation/verification of deliberate childhood teaching or new word formation",
+    "No visual UX, full foreign vocabulary mastery, population-scale benchmark or existing society advancement claimed"
+  ]
+}

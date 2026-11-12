@@ -1,0 +1,100 @@
+{
+  "status": "passed",
+  "elapsed": 16000,
+  "gameTime": 342891,
+  "initialGameTime": 326891,
+  "scope": "Actual saved island residents in a copy; no actor/resources/inventory/health setters. Primary unchanged. Bounded observation alone is not food-voyage proof.",
+  "hero": {
+    "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+    "position": [
+      -480.9918839767809,
+      63.0,
+      -369.6534205326453
+    ],
+    "health": 20.0,
+    "food": 20,
+    "inventory": "[1 minecraft:stone_pickaxe, 1 minecraft:stone_pickaxe, 63 minecraft:dirt, 2 minecraft:bread, 5 minecraft:carrot, 2 minecraft:stick, 2 minecraft:iron_ingot, 1 minecraft:wheat]",
+    "ironIngots": 2,
+    "ironArmor": {
+      "equipped": 0,
+      "nextPiece": "CHEST",
+      "ready": false,
+      "ironTarget": 8,
+      "lastReceipt": {},
+      "crafted": 0
+    },
+    "equippedArmor": {
+      "legs": "0 minecraft:air",
+      "feet": "0 minecraft:air",
+      "head": "0 minecraft:air",
+      "chest": "0 minecraft:air"
+    }
+  },
+  "mining": {
+    "activity": "needs observed exposed natural stone",
+    "blocks": 18,
+    "lastReceipt": {
+      "position": "-465, 62, -380",
+      "contact": "(-464.5236337003027, 63.0, -379.2643470545236)",
+      "gameTime": 339451,
+      "toolBefore": "1 minecraft:stone_pickaxe",
+      "drops": [
+        "1 minecraft:dirt"
+      ],
+      "reach": 1.792545524418756,
+      "toolDamageBefore": 19,
+      "accessRepaired": false,
+      "toolDamageAfter": 20
+    }
+  },
+  "passage": {
+    "mode": "level",
+    "faceBlock": "Block{minecraft:oak_log}[axis=y]",
+    "activity": "walking down one retained mine step",
+    "part": 3,
+    "retainedFloors": 213,
+    "root": "-481, 63, -377",
+    "depth": 7,
+    "turns": 17,
+    "reselect": false,
+    "face": "-480, 65, -377",
+    "retainedEntries": 1,
+    "waterSeals": {
+      "placed": 1,
+      "active": false,
+      "activity": "sealed native mine water with one carried dirt block",
+      "lastReceipt": {
+        "position": "-482, 62, -380",
+        "anchor": "-482, 61, -380",
+        "gameTime": 341761,
+        "contact": "(-481.499615489502, 62.0, -379.4996027073075)",
+        "replaced": "Block{minecraft:water}[level=0]",
+        "reach": 2.993789762354466,
+        "dirtBefore": 64,
+        "dirtAfter": 63,
+        "faceToMine": "-482, 62, -379"
+      }
+    },
+    "foundations": 0,
+    "lastFoundation": {},
+    "exhausted": false,
+    "failedScans": 0,
+    "entry": "-480, 63, -379",
+    "frontier": "",
+    "backtracks": 8,
+    "lastRoute": {
+      "actor": "(-479.949606033607, 63.0, -378.07629603951153)",
+      "nodes": 5,
+      "gameTime": 342371,
+      "end": "-481, 63, -375",
+      "target": "-481, 63, -375",
+      "safe": true
+    },
+    "frontierSearch": {
+      "activity": "following a complete native path to a recorded junction",
+      "candidates": 2,
+      "queries": 8
+    }
+  },
+  "miningCounterScope": "Current rehearsal only. ironTaken/loadedOre from resumed smelting state are not new ore receipts."
+}

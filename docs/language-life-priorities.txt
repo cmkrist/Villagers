@@ -1,0 +1,134 @@
+LANGUAGE AS PART OF VILLAGER LIFE — PRIORITY AND VERIFICATION
+2026-11-11
+
+Current priority
+
+Develop clarification dialogue, personal beliefs, relationship conversations and
+learned grammatical constructions through the existing language engine. No LLM
+may speak or interpret on a villager's behalf. These take priority over cosmetic
+dialogue expansion. Existing native survival work and society saves remain separate.
+
+Implemented acceptance cases
+
+1. Each mind retains up to 64 attributed beliefs. A belief contains a resolved
+   conversational subject, predicate, object, optional participant reference,
+   negation, tense, source, confidence, observation time and expiry. Generic nouns
+   do not reveal a named third party. A listener stores its interpretation even
+   when that interpretation is wrong.
+2. Testimony remains separate from observation. Repetition by one speaker cannot
+   promote hearsay into independent evidence or increase its confidence. An actual
+   observation can confirm/contradict testimony while preserving attribution.
+   An updated statement can supersede its source's older statement. No record is
+   copied from another villager's private memory or inventory.
+3. Fresh, positively interpreted HAVE FOOD testimony influences ordering among
+   actually visible, otherwise eligible food-help candidates. It grants no items,
+   remote stock access, expanded reach or navigation permission. Leads expire.
+4. A confused listener can repeat its own interpretation or ask again. The
+   speaker decodes that echo and compares it with its own intention. A decoded
+   denial retracts the listener's tentative interpretation, without blaming a
+   source for deliberate deception. Confirmation alone supplies no objective
+   truth: symmetric mistranslations can remain undetected.
+5. A food-word repair requires a real food item publicly held by a participant
+   and joint line of sight. Its sound is demonstrated against observable food.
+   Evidence accumulates across encounters; a request's private intention never
+   supplies a per-word translation. Repair/relationship attention is bounded to
+   one opportunity per participant per 200 ticks. Ordinary request and speech
+   budgets still apply.
+6. Ordinary companion visits require an interpreted invitation, the receiver's
+   independent willingness, and an interpreted promise. Accepted short agreements
+   influence AI: the host waits for company rather than starting another elective
+   walk. Survival, food, health and existing higher-priority work still take
+   precedence. Actual sustained contact fulfills the promise and provides trust
+   and social relief; words alone do not award these benefits.
+7. Grammar can induce bounded surface constructions from known sounds aligned
+   with independently observed events. It can learn a two-word state construction
+   with an implicit copula or a repeated-role pattern beyond the six founding
+   orders. Repeated evidence permits interpretation; evidence exceeding the
+   existing production preference permits adoption. Patterns generalize to new
+   combinations of known words. Ambiguous constructions trigger uncertainty.
+8. Ordinary conversations can occasionally propose a shorter state construction
+   for actual visible walking or injury. The speaker's intention does not teach
+   listeners the missing grammar. Children inherit weak exposure to established
+   constructions, not instant mastery. At most eight patterns are stored; evidence
+   is bounded and decays together on saturation. Sentences allow at most eight
+   clauses and 63 sounds.
+9. Mind schema 11 persists beliefs and learned constructions, with migration from
+   schema 10 retaining old vocabulary and origin. Player glossary schema 3
+   preserves earlier evidence while adding construction state. Future schemas
+   remain protected. Frozen research controls can use already-understood agreements
+   while their learned language, beliefs and opinions remain fixed. The language command exposes belief, construction, repair
+   and agreement counts for inspection.
+
+Verification
+
+Automated checks cover source attribution, fallible interpretation, expiry,
+contradiction, retraction, source withdrawal, finite state, understood promises,
+confirmation and symmetric errors, construction induction/generalization,
+unknown markers, ambiguity, inheritance and restart/migration.
+
+The native fixture tools/language-life-server-test.py creates a NEW peaceful
+world. Requester/donor and visitor/host occupy separate chambers. Declared setup:
+requester starts at 4 food; a generous donor starts at 20 food/20 saturation with
+one inventory bread and one actual publicly held bread; the lonely visitor has
+three declared prior food-favour impressions of the host; visitor/host each own
+six bread. There are no post-setup position, food, health, pose or grammar setters.
+
+The fixture schedules requests while retaining real request/repair cooldowns.
+It requires denied mistranslation, automatic grounded word repair, one conserved
+real bread transfer, an autonomously completed understood social visit, adoption
+of a learned construction, generalization to a new phrase, and exact restart
+preservation for all four original minds. Controlled compression opportunities
+respect speech timing and require actual walking or a real visible injury.
+At most twelve native one-point damage events, only at full health, can supply
+repeated injury observations; regeneration and food consumption remain native.
+These are declared experimental stimuli, not proof of spontaneous emergence.
+
+Verified: 606 Java tests and 19 Python tests passed. Native fixture
+language-life-v7 passed at 2537 simulation ticks: 4 grounded repairs,
+4 spoken denials, one conserved real bread transfer, an autonomous social
+visit, and a generalized compact construction after 7 observed opportunities.
+All four original bodies survived. Adaptive restart preserved their language and
+beliefs. A subsequent frozen-control run understood an agreement while preserving
+learned vocabulary, constructions, beliefs and opinions.
+
+Final results, test counts, artifact hashes and fixture conditions are stored in
+docs/evidence/2026-11-11/language-life/verification.json.
+Previous fixtures remain under runs/language-life-v1 through subsequent versions.
+Their stopped/failed outcomes are retained: symmetric errors surviving an echo,
+food-provisioning preventing social activity, and sparse public movement samples
+were treated as findings, not silently relabeled as successful tests. The third
+phase uses a checkpoint of the actual adaptive restart state, rather than
+incorrectly comparing that later state with the original earlier checkpoint.
+
+Reproduce in a fresh runtime
+
+source tools/java-env.sh
+villagers_select_java
+./tools/test.sh
+./gradlew -I tools/probe-classpath.gradle writeProbeClasspath
+python3 tools/language-life-server-test.py --runtime-name language-life-FRESH
+
+Replace FRESH with a new lowercase name. The runner refuses existing runtimes,
+requires the prepared server's owner-accepted EULA, binds localhost:25619 and
+records owned process custody, pinned artifacts, terminal results, restart and a
+frozen-control compatibility check.
+
+Priority following this bounded milestone
+
+Extend explicit referents and grounded testimony to places and named third
+parties; add multi-turn questions and practical promises; develop persistent
+partnership/courtship conversations and work agreements; distinguish receptive
+grammar by foreign language; expand word formation and teaching across childhood.
+Evaluate how learned conventions spread across generations and contact networks.
+
+Limits
+
+Beliefs are bounded propositions, not a general causal model or arbitrary nested
+reasoning. Short rendezvous execution state is transient; the attributed promise
+and witnessed outcome persist. This does not yet implement marriage dialogue,
+employment contracts, unrestricted free-text conversation, or general planning.
+Construction induction operates over authored semantic roles and a constrained
+copula-omission innovation; it does not invent new semantic categories or prove
+unrestricted grammar emergence. Confidence is a heuristic, not a calibrated
+probability. The native proof is a declared provisioned server experiment; it
+does not prove visual-client UX, natural-village survival or population scaling.

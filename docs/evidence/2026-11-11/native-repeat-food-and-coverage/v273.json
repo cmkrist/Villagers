@@ -1,0 +1,151 @@
+{
+  "version": 273,
+  "runtime": "runs/native-food-production-v273",
+  "kind": "copied-world only",
+  "population": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "terminal": {
+    "pid": 2184145,
+    "exitCode": 0
+  },
+  "observation": {
+    "status": "failed",
+    "stage": "health_stop",
+    "gameTime": 318535,
+    "elapsed": 10026,
+    "actor": "240e2b57-7cf5-46a4-a9a4-bdd1357cfbc7",
+    "health": 1.0
+  },
+  "notableBodies": [
+    {
+      "id": "240e2b57-7cf5-46a4-a9a4-bdd1357cfbc7",
+      "name": "Iris-240e",
+      "health": 1.0,
+      "food": {
+        "foodLevel": 0,
+        "saturation": 0.0,
+        "exhaustion": 0.9783373,
+        "timer": 60
+      },
+      "position": [
+        -425.4948708493114,
+        64.0,
+        -807.9961635902204
+      ],
+      "inventory": []
+    },
+    {
+      "id": "2a526eee-ec74-45bf-aac8-04c2323a1755",
+      "name": "Sage-2a52",
+      "health": 20.0,
+      "food": {
+        "foodLevel": 16,
+        "saturation": 0.0,
+        "exhaustion": 0.7716053,
+        "timer": 0
+      },
+      "position": [
+        -833.7193268812252,
+        63.0,
+        -774.4801632157481
+      ],
+      "inventory": []
+    },
+    {
+      "id": "764e71da-6e8c-4016-b4cb-b9aee031c564",
+      "name": "Birch-764e",
+      "health": 20.0,
+      "food": {
+        "foodLevel": 20,
+        "saturation": 1.0,
+        "exhaustion": 3.8744793,
+        "timer": 0
+      },
+      "position": [
+        -596.5532177936221,
+        64.0,
+        -633.2202172605597
+      ],
+      "inventory": [
+        {
+          "id": "minecraft:carrot",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "88893f4d-fbba-4245-b563-089e8c0a5b52",
+      "name": "Rowan-8889",
+      "health": 14.0,
+      "food": {
+        "foodLevel": 13,
+        "saturation": 0.0,
+        "exhaustion": 3.2439182,
+        "timer": 0
+      },
+      "position": [
+        -595.5794774316125,
+        64.0,
+        -633.5912010198881
+      ],
+      "inventory": [
+        {
+          "id": "minecraft:carrot",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "e028b7be-3415-4f44-8c0e-d73e81ea7fd4",
+      "name": "Tansy-e028",
+      "health": 16.0,
+      "food": {
+        "foodLevel": 5,
+        "saturation": 2.0,
+        "exhaustion": 2.6750631,
+        "timer": 0
+      },
+      "position": [
+        -680.4999813751936,
+        64.0,
+        -623.8470679314789
+      ],
+      "inventory": [
+        {
+          "id": "minecraft:carrot",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+      "name": "Pip-4c3c",
+      "health": 15.833333969116211,
+      "food": {
+        "foodLevel": 12,
+        "saturation": 0.0,
+        "exhaustion": 2.9698615,
+        "timer": 0
+      },
+      "position": [
+        -597.296228943182,
+        64.0,
+        -614.0094921764701
+      ],
+      "inventory": [
+        {
+          "id": "minecraft:potato",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

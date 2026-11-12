@@ -1,0 +1,57 @@
+{
+  "base": "/tmp/villagers-source-snapshot-v297",
+  "baseJarSHA256": "0f9dd3b7d5eed6b5341162f4d9d423ffd89fee48264b0ac4fdef1b3c46fd4bb6",
+  "changedFiles": {
+    "src/main/java/local/villagers/mind/AgentMind.java": "00251f2b30243d61839b2aa50d34b19ddef2a3be8a4c1915342d1752cf774a0e",
+    "src/main/java/local/villagers/VillagerController.java": "59c7e5a2285e1364d0fe314a84d2cafadf0975fed77f5869619b129c0e1bd563",
+    "src/test/java/local/villagers/mind/AgentMindTest.java": "06cea07d6b0ec85707938a4a71394d873246bd04336ea410dbd6bdea553fa8ca"
+  },
+  "jarSHA256": "63e2afa98cb5d5cb057cdc43849d5d3d809edf280cceec1dd64dcd716bc3695a",
+  "javaTests": {
+    "tests": 630,
+    "failures": 0,
+    "errors": 0
+  },
+  "buildLog": "/tmp/villagers-worker-v297-reserve-search-build.log",
+  "behavior": "At food6 or less and no known meal, allow dry fall-limited search before injury; actual danger still forces flight. Known meals and adequate reserves retain ordinary rest. No schema/language changes, resources or body setters.",
+  "lateHealthySearchOutcome": {
+    "gameTime": 327549,
+    "stage": "health_stop",
+    "health": 1.0,
+    "elapsed": 2037,
+    "air": 300,
+    "position": "(-405.85714660392483, 63.0, -844.5936341535966)",
+    "actor": "240e2b57-7cf5-46a4-a9a4-bdd1357cfbc7",
+    "status": "failed"
+  },
+  "status": "Native full-cohort trial stopped on Birch before Iris reached the six-food search boundary. Candidate not proved to rescue Iris or sustain a day.",
+  "sourceFrozenRuntime": "runs/worker-v292-iris-healthy-frozen-20261111",
+  "sourceGameTime": 321513,
+  "runtime": "runs/worker-v297-reserve-search-care-20261111",
+  "stop": {
+    "stage": "health_stop",
+    "health": 1.0,
+    "elapsed": 1243,
+    "air": 300,
+    "position": "(-588.3496574417138, 64.0, -587.0964712984036)",
+    "actor": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+    "status": "failed",
+    "gameTime": 322756
+  },
+  "population": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "terminal": {
+    "pid": 2270984,
+    "exitCode": 0
+  },
+  "birchFrozenAudit": "runs/worker-birch-boundary-frozen-20261111",
+  "birchFinding": "Same camp/home coverage/decoding are true for all3 workers; listening paths64,110,118nodes. No boundary eligibility change justified."
+}

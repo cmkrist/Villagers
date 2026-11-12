@@ -42,6 +42,28 @@ class WoodBootstrapMaterialsTest {
         assertEquals(0,bag.countItem(Items.STICK)); assertEquals(1,bag.countItem(Items.CRAFTING_TABLE));
         assertEquals(1,bag.countItem(Items.WOODEN_HOE));assertEquals(1,bag.countItem(Items.WOODEN_PICKAXE));
     }
+    @Test void sparePlanksCanFreeOneSlotWhileConservingEveryOtherMiningSupply(){
+        var bag=new SimpleContainer(8);
+        var stock=List.of(Items.STONE_PICKAXE,Items.WOODEN_HOE,Items.COBBLESTONE,Items.WOODEN_PICKAXE,Items.CRAFTING_TABLE,Items.OAK_LOG);
+        for(int slot=0;slot<stock.size();slot++)bag.setItem(slot,new ItemStack(stock.get(slot)));
+        bag.setItem(6,new ItemStack(Items.OAK_PLANKS,2));bag.setItem(7,new ItemStack(Items.STICK,2));
+        var plan=WoodCrafting.compactPlanks(bag);assertNotNull(plan);
+        assertEquals(2,bag.countItem(Items.OAK_PLANKS),"Planning cannot spend owned resources");
+        commit(bag,plan);
+        assertEquals(0,bag.countItem(Items.OAK_PLANKS));assertEquals(6,bag.countItem(Items.STICK));
+        for(var item:stock)assertEquals(1,bag.countItem(item));
+        int empty=0;for(int slot=0;slot<8;slot++)if(bag.getItem(slot).isEmpty())empty++;
+        assertEquals(1,empty);
+    }
+    @Test void compactionCannotConsumeBoatSizedPlankStockOrCreateAnotherStickStack(){
+        for(int planks:List.of(1,3,4,5)){
+            var bag=new SimpleContainer(new ItemStack(Items.OAK_PLANKS,planks),new ItemStack(Items.STICK,2));
+            assertNull(WoodCrafting.compactPlanks(bag));assertEquals(planks,bag.countItem(Items.OAK_PLANKS));
+        }
+        var bag=new SimpleContainer(new ItemStack(Items.OAK_PLANKS,2),new ItemStack(Items.STICK,64));
+        assertNull(WoodCrafting.compactPlanks(bag));assertEquals(2,bag.countItem(Items.OAK_PLANKS));
+        assertNull(WoodCrafting.compactPlanks(new SimpleContainer(new ItemStack(Items.OAK_PLANKS,2),ItemStack.EMPTY)));
+    }
     private static void commit(SimpleContainer bag,WoodCrafting.Plan plan) {
         assertNotNull(plan);assertTrue(WoodCrafting.commit(bag,plan,new ItemStack(plan.output(),plan.count())));
     }

@@ -65,7 +65,7 @@ final class FarmExpansion {
             if (now < s.nextExpansionScan) return null;
             s.nextExpansionScan = now + 100;
             if (PlantingMaterials.reserve(v.getInventory()) == null) return null;
-            s.expansionTarget = ConstructionSites.candidates(level, v.blockPosition()).stream()
+            s.expansionTarget = java.util.stream.Stream.concat(ConstructionSites.candidates(level, v.blockPosition()).stream(),NativeVillageFarms.candidates(level,v,s).stream()).distinct()
                     .filter(p -> p.distSqr(v.blockPosition()) <= 64 && ground(level, v, s, p))
                     .min(Comparator.comparingDouble(p -> v.position().distanceToSqr(Vec3.atCenterOf(p)))).orElse(null);
         }
@@ -97,16 +97,22 @@ final class FarmExpansion {
                         || !level.getBlockState(stand.above()).getCollisionShape(level, stand.above()).isEmpty()
                         || level.getBlockState(stand.below()).getCollisionShape(level, stand.below()).isEmpty()) continue;
                 if (++attempts > 3) break;
-                var path = v.getNavigation().createPath(stand, 0);
-                if (WorkNavigation.staysHome(level, v, s, path)) { moved = v.getNavigation().moveTo(path, .6); if (moved) break; }
+                var path = NativeRegionsScenario.nativeRegions(level)?v.getNavigation().createPath(stand,0,64):v.getNavigation().createPath(stand, 0);
+                if (WorkNavigation.staysHome(level, v, s, path)&&(!NativeRegionsScenario.nativeRegions(level)||BoatTravel.dryPath(level,path))) { moved = v.getNavigation().moveTo(path, .6); if (moved) break; }
             }
             if (!moved) { s.expansionTarget = null; s.nextExpansionScan = now + 200; return "farm expansion route blocked"; }
         }
         return "approaching approved farm ground";
     }
     private static boolean ground(ServerLevel level, Villager v, Session s, BlockPos soil) {
-        if (!ConstructionSites.allowsFarm(level, soil) || !level.isLoaded(soil) || !level.isLoaded(soil.above(2))
+        if (!(ConstructionSites.allowsFarm(level, soil)||NativeVillageFarms.allowed(level,v,s,soil)) || !level.isLoaded(soil) || !level.isLoaded(soil.above(2))
                 || !VillageSurvival.withinHomeRange(level, s.mind, Vec3.atCenterOf(soil.above()))) return false;
+        // Active quarry stairs and paid mine exits are retained supports, not
+        // new agricultural plots. Check nearby nominated workers' actual
+        // saved work footprints before either tilling or spending a seed.
+        if(NativeRegionsScenario.nativeRegions(level)&&level.getEntitiesOfClass(Villager.class,new AABB(soil).inflate(32),
+                miner->miner.isAlive()&&Villagers.isManaged(miner)&&AdventurePreparation.nominated(miner))
+            .stream().anyMatch(miner->AdventureQuarry.accessSupport(miner,soil)||MineStair.exitFloor(miner,soil)))return false;
         var state = level.getBlockState(soil);
         if ((!state.is(Blocks.DIRT) && !state.is(Blocks.GRASS_BLOCK)) || level.getBlockEntity(soil) != null
                 || !level.getBlockState(soil.above()).isAir() || !level.getBlockState(soil.above(2)).isAir()
@@ -129,6 +135,7 @@ final class FarmExpansion {
         var plan = planting(level,v,soil.above());
         if (plan == null) return false;
         ItemStack hoe = v.getMainHandItem(), hoeBefore = hoe.copy();
+        boolean explicit=ConstructionSites.allowsFarm(level,soil);int seedBefore=v.getInventory().countItem(plan.before().getItem());
         BlockState before = level.getBlockState(soil), farmland = Blocks.FARMLAND.defaultBlockState();
         BlockState crop = plan.before().is(Items.WHEAT_SEEDS) ? Blocks.WHEAT.defaultBlockState()
                 : plan.before().is(Items.CARROT) ? Blocks.CARROTS.defaultBlockState()
@@ -137,7 +144,7 @@ final class FarmExpansion {
             if (!ground(level, v, s, soil) || !PlantingMaterials.unchanged(v.getInventory(), plan)) return false;
             if (!level.setBlock(soil, farmland, Block.UPDATE_ALL)) return false;
             boolean placed = crop.canSurvive(level, soil.above()) && level.setBlock(soil.above(), crop, Block.UPDATE_ALL);
-            if (!placed || !ConstructionSites.allowsFarm(level, soil) || !level.getBlockState(soil).equals(farmland)
+            if (!placed || !(ConstructionSites.allowsFarm(level, soil)||NativeVillageFarms.allowed(level,v,s,soil)) || !level.getBlockState(soil).equals(farmland)
                     || !level.getBlockState(soil.above()).equals(crop) || !ItemStack.matches(v.getMainHandItem(), hoeBefore)
                     || !PlantingMaterials.commit(v.getInventory(), plan)) {
                 if (level.getBlockState(soil.above()).equals(crop)) level.setBlock(soil.above(), Blocks.AIR.defaultBlockState(), Block.UPDATE_ALL);
@@ -146,7 +153,10 @@ final class FarmExpansion {
             }
             hoe.hurtAndBreak(1, v, EquipmentSlot.MAINHAND);
             v.swingForAttack(InteractionHand.MAIN_HAND); level.gameEvent(v, GameEvent.BLOCK_CHANGE, soil);
-            ConstructionSites.completed(level, soil); s.plotsCultivated++;
+            if(explicit)ConstructionSites.completed(level, soil); s.plotsCultivated++;
+            s.lastFarmExpansion=java.util.Map.of("gameTime",level.getGameTime(),"soil",soil.toShortString(),"nativeVillage",!explicit,
+                "seed",plan.before().getItem().toString(),"seedBefore",seedBefore,"seedAfter",v.getInventory().countItem(plan.before().getItem()),
+                "hoeDamageBefore",hoeBefore.getDamageValue(),"hoeDamageAfter",hoe.getDamageValue(),"hoeBroke",hoe.isEmpty(),"crop",crop.toString());
             s.mind.remember("Expanded farm: planted " + crop.getBlock() + " at " + soil.above().toShortString()
                     + " using one real planting item and hoe wear");
             return true;

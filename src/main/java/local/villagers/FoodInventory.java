@@ -6,7 +6,7 @@ import net.minecraft.world.Container;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
-/** Read-only inventory affordances; selecting a ration never consumes stock or the last planting root. */
+/** Read-only food selection. Ordinary meals preserve planting stock; survival may spend an owned root. */
 final class FoodInventory {
     private FoodInventory() {}
 
@@ -23,6 +23,13 @@ final class FoodInventory {
 
     static int availableCount(ItemStack item, boolean farmer) {
         return Math.max(0, item.getCount() - (farmer && (item.is(Items.CARROT) || item.is(Items.POTATO)) ? 1 : 0));
+    }
+
+    /** Factual possession differs from a meal one is able or willing to spend. Only inspect the owner's own bag. */
+    static boolean containsFood(Container inventory) {
+        for(int slot=0;slot<inventory.getContainerSize();slot++)
+            if(inventory.getItem(slot).has(DataComponents.FOOD))return true;
+        return false;
     }
 
     static int anySlot(Container inventory, boolean farmer) {
@@ -49,6 +56,34 @@ final class FoodInventory {
             }
         }
         return best;
+    }
+
+    /** At zero food and critical health, living to replant takes precedence.
+     * Prefer every ordinary ration before the actor's last actual planting root.
+     * Selection itself never creates or removes an item. */
+    static int survivalMealSlot(Container inventory,boolean farmer,int food,float health,float maxHealth){
+        int ordinary=mealSlot(inventory,farmer,food,health,maxHealth);
+        if(ordinary>=0||!farmer||food!=0||!Float.isFinite(health)||!Float.isFinite(maxHealth)
+                ||health<=0||maxHealth<=0||health>maxHealth*.25f)return ordinary;
+        for(int i=0;i<inventory.getContainerSize();i++){
+            var item=inventory.getItem(i);
+            if((item.is(Items.CARROT)||item.is(Items.POTATO))&&item.getCount()>0&&fits(item,food,health,maxHealth))return i;
+        }
+        return -1;
+    }
+
+    /** One last planting root may answer an understood request from a visibly
+     * dying neighbour. This never changes ordinary meals or sharing reserves. */
+    static int emergencyRootGiftSlot(Container bag,boolean farmer,int donorFood,float donorHealth,float donorMax,
+            float receiverHealth,float receiverMax){
+        if(!farmer||donorFood<14||donorFood>20||!Float.isFinite(donorHealth)||!Float.isFinite(donorMax)
+            ||!Float.isFinite(receiverHealth)||!Float.isFinite(receiverMax)||donorMax<=0||receiverMax<=0
+            ||donorHealth<donorMax*.5f||donorHealth>donorMax||receiverHealth<=0||receiverHealth>receiverMax*.25f)return -1;
+        for(int i=0;i<bag.getContainerSize();i++){
+            var item=bag.getItem(i);
+            if(item.getCount()==1&&(item.is(Items.CARROT)||item.is(Items.POTATO))&&!item.has(DataComponents.CUSTOM_NAME))return i;
+        }
+        return -1;
     }
 
     static int mealSlot(Container inventory, boolean farmer, int food, float health, float maxHealth) {

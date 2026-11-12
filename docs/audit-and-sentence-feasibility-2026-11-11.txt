@@ -1,0 +1,235 @@
+VILLAGERS AUDIT AND SENTENCE FEASIBILITY — 2026-11-11
+
+Scope and validation
+
+Audited the current working tree based on f97bee1, including existing modified
+and untracked source. This is a source/design audit with build verification and
+small executable language probes, not an exhaustive line-by-line review of all
+211 production Java files or a new live gameplay/performance acceptance test.
+Reviewed the controller/mixin boundary, minds, persistence, language acquisition,
+conversation, food requests, navigation admission, creature integration, config,
+and recorded survival evidence. Existing unrelated changes were preserved.
+No game world was started or advanced, and no gameplay source was changed.
+
+./tools/test.sh: BUILD SUCCESSFUL; 567 Java tests, zero failures/errors/skips;
+17 Python tests passed. The build reports deprecated Gradle features and an
+upstream JOML Unsafe warning. These did not fail the build.
+Reproduction probe: /tmp/villagers-language-audit/LanguageAudit.java, compiled
+against the actual Concept, Words, Glossary, Lexicon, and Utterance sources.
+
+Architecture assessment
+
+This is a Fabric mod, not a server plugin. Managed villagers replace Brain.tick
+through VillagerMixin while retaining native navigation/physics. The mixin falls
+back to the native brain when the controller cannot yet run. This also removes
+vanilla brain-driven profession/restocking/breeding routines; authored replacements
+are substantial but are not general vanilla feature parity.
+
+VillagerController thinks every ten simulation ticks with entity staggering:
+two decisions/second at 20 TPS, eight at 80 TPS. AgentMind uses a 32-context,
+five-action table combined with authored utility and 4% random exploration. Most
+complex survival/work capability selection is authored controller logic before
+the learner gets control. This is bounded online preference learning, not an
+LLM or a general planner learning Minecraft from scratch.
+
+Persistent identity, genes, needs, mood, opinions and memories provide useful
+dialogue grounding. Mind schema is 9; routine memory is capped at 48 records,
+episodes at 64, player impressions at 32, farm memories at 8. Lexicons have 28
+concepts, three competing words per concept, and up to 256 evidence entries.
+These bounds are helpful for both simulation cost and future prompt construction.
+
+MindPersistence coalesces immutable snapshots and writes in the background;
+AgentStore validates schema/identity, limits reads to 1 MiB, quarantines corrupt
+loads, and uses atomic replacement when supported. Unsupported versions are
+protected. This is a strong foundation. Mind files and Minecraft entity saves
+are separate writes: atomic replacement does not make them one cross-file
+transaction or guarantee consistency across power loss. Avoid adding inventory
+ownership to dialogue-generated state.
+
+WorkNavigation uses fair admission backed by WorkBudget: one admission per ten
+ticks per dimension, up to 128 waiters, lease expiry at 80 ticks. At 20 TPS this
+is two planning admissions/second; at 80 TPS it is eight. An admission may contain
+multiple bounded path queries, and other navigation paths have separate limits;
+this is not a global bound on all native pathfinding. Queue delay and pathfinding
+deserve profiling before language arithmetic is blamed for server load.
+
+Speech currently produces ordered concept lists and renders translated glosses
+or invented words. There is no subject/verb/object representation, tense,
+negation scope, general sentence grammar, free-text dialogue parser, or neural
+inference dependency. Phrases and Telling choose authored short combinations.
+Speech.converse passes words/opinions/requests; Speech.talk tells selected memories.
+The existing sendSystemMessage path is text output, not synthesized speech audio.
+
+Priority findings
+
+1. HIGH: The existing language test permits wrong meanings to unlock memories.
+   Utterance.java:83 counts non-null glossary translations, regardless of whether
+   each translation equals the actual Spoken.concept. The Lexicon overload at
+   line 60 correctly compares meanings. Speech.java:279 and :384 use the glossary
+   result with Telling.UNDERSTANDING=0.5 to reveal detailed episodes.
+   Reproduced: a villager says HURT/AFRAID as kalu/mora; a player's glossary knows
+   kalu=BED and mora=FOOD. Rendering is "bed food", comprehension is still 1.0.
+   Remedy: compare decoded meanings, and require the semantic slots necessary
+   for the particular disclosure. This is an in-game information/learning bug,
+   not an account data security finding.
+
+2. HIGH: Memory and reputation transmission lack identifying semantic content.
+   Telling.java:22-23 encodes player harm/protection as HURT AFRAID or MONSTER
+   FRIEND, with no player reference, time, or location. Speech.java:261-262 then
+   transfers the particular player's impression; lines 279-280 reveal the exact
+   memory through the server-side describe function. The emitted words never
+   establish which player/event was meant. Distinct events can sound identical.
+   Utterance.of also silently removes unknown concepts. Reproduced: a speaker
+   knowing only FRIEND emits one word for MONSTER FRIEND; the listener receives
+   a comprehension score of 1.0. Missing intended content is absent from the
+   denominator. The 50% threshold already allows substantial omission.
+   Remedy: retain intended semantic content separately, represent referents and
+   event identity explicitly, and gate disclosure/reputation on required slots.
+
+3. MEDIUM: Player vocabulary acquisition has privileged evidence unavailable to
+   villager listeners. Speech.java:131 calls utterance.teach(glossary, ambient).
+   Utterance.java:45 injects all spoken concepts when grounded. Speech.say marks
+   its phrases grounded even for private needs such as loneliness/fear. In
+   contrast, the villager teaching path uses adapter-supplied visibleContext.
+   Reproduced: three grounded AFRAID utterances teach the word with empty visible
+   context. Player hearing also checks distance/aliveness rather than line of
+   sight; naming a distant object can therefore teach without joint attention.
+   Hearing through walls may be intentional; learning from hidden semantics
+   should be an explicit design decision. Remedy: use listener-observable
+   evidence consistently and separate audibility from learning eligibility.
+
+4. MEDIUM: The 45-second speech setting is not a hard total output budget.
+   Speech.java:120 skips the cooldown for prompted lines. Gifts, teaching,
+   food/family/trade replies have caller-specific limits. Every emitted line
+   also moves nextSpeech forward, potentially suppressing ambient remarks.
+   This is tolerable for short authored text but unsuitable as an LLM admission
+   policy. Add a separate global generation queue/rate limit, player proximity
+   gating and per-conversation limits. Keep essential care signals independent.
+
+5. HIGH gameplay limitation: sustained autonomous survival is not established.
+   docs/HANDOFF.md records the stopped primary v213 at gameTime304508 with 192
+   saved humanoids alive, including critically starving/injured residents. Copied
+   later trials show real potato delivery/eating but expose further food/gate
+   access failures. Those are recorded results, not a fresh census performed by
+   this audit. An alive UUID census does not establish sustained nutrition, and
+   unsimulated regions cannot establish active survival. Do not resume the primary
+   save for a dialogue benchmark. Use an isolated controlled fixture.
+
+6. MEDIUM maintainability/observability: VillagerController is 1,040 lines with
+   many early-return capability owners and repeated interruption handling.
+   CreatureAgents has a related but separate controller. Existing regressions
+   document task starvation and ownership conflicts. A language call inserted
+   here must never block or take movement ownership. Existing totalThinkMillis
+   and TickStatistics are useful, but there is no speech/LLM-specific latency,
+   queue, allocation, token, or dropped-result instrumentation. README and
+   architecture docs also contain historical claims (including schema 5) that
+   differ from current source and the handoff. Label dated evidence explicitly.
+
+Full sentences: three implementation levels
+
+A. Authored grammatical realization: "I am hungry. Could you spare some bread?"
+   Convert an intent plus verified arguments into a complete sentence, selecting
+   bounded variants based on personality, mood and relationship. A grammar can
+   combine clauses rather than relying on one fixed string per event. This needs
+   no neural model, GPU, or external API. Incremental work is bounded string
+   construction plus existing message delivery; it should be small beside world
+   scanning/pathfinding, but no percentage overhead has been measured.
+   Suggested acceptance target: aggregate additional main-thread dialogue work
+   below 1 ms per tick at the chosen population, measured rather than assumed.
+   English output is easiest. Preserving learnable invented languages requires
+   added grammatical rules/function words and a partial-comprehension renderer.
+   Do not teach English filler words as arbitrary existing concepts.
+
+B. Optional LLM realization: a single shared small instruction model rewrites a
+   grounded intent into one or two natural sentences. Personalities/memories live
+   in each request; villagers do not each need a model copy or neural training.
+   Candidate for a benchmark: Qwen3-4B-Instruct-2507, a released non-thinking 4B
+   instruction model. llama.cpp provides quantized CPU/GPU serving, parallel
+   decoding, continuous batching and constrained JSON. Model/backend support and
+   actual AMD performance still require validation on this machine.
+
+   Hardware inspected: Ryzen 7 7800X3D, 16 logical CPUs, 61 GiB OS-reported RAM,
+   AMD Navi 48 discrete GPU with 15.92 GiB VRAM, plus integrated Radeon graphics.
+   PCI identification groups RX 9070/9070 XT/9070 GRE; no exact board model is
+   inferred. Nominal 4-bit weights cost parameters*0.5 bytes: about 2 GB for 4B
+   and 4 GB for 8B, before quantization metadata, KV cache and runtime buffers.
+   For short prompts/few slots, provisional total memory budgets are 3-5 GB for
+   4B and 6-9 GB for 8B; context/concurrency can increase these materially.
+   Minecraft and display rendering share that GPU. Memory capacity looks feasible;
+   a sustained token rate or gameplay FPS/MSPT claim would require a benchmark.
+
+C. Open-ended autonomous dialogue and learned grammar: sentences alone do not
+   grant comprehension, planning, truthful memory, or emergent language. Having
+   every villager use a model to interpret/respond to every line increases calls
+   and needs explicit turn-taking, conversation memory and evaluation. Learning
+   syntax from scratch in-world is a separate research objective, not a renderer
+   upgrade with a predictable compute multiplier. Audio/TTS is another separate
+   feature requiring synthesis, voice assets and client playback/network support.
+
+Compute planning (estimates, not measured inference throughput)
+
+Assume N generating speakers, one line per 45 real seconds, 600 input tokens
+and 40 generated tokens per line. Calls/second=N/45; input demand=600*N/45;
+output demand=40*N/45. Input and output token costs are not interchangeable.
+
+  Speakers    Calls/s    Input tokens/s    Output tokens/s
+        10       0.22               133                8.9
+        30       0.67               400               26.7
+       100       2.22              1333               88.9
+       200       4.44              2667              177.8
+
+These are hypothetical generating populations, not a claim that every saved
+humanoid is a managed speaking villager. They assume continuous eligibility;
+actual ambient speech can be much lower, while prompted replies add demand.
+At 80 TPS the current 900-tick cooldown lasts 11.25 wall seconds: multiply all
+rates by four if every eligible actor speaks at that frequency. Calling an LLM
+every ordinary think would be much worse: 100 villagers at 20 TPS produce 200
+requests/s and 8,000 output tokens/s at 40 tokens each. Do not use that design.
+
+A serialized backend providing 30 output tokens/s needs at least 1.33 seconds
+to emit 40 tokens, plus prompt evaluation and queueing; this is an illustration,
+not a measured speed of this GPU. At 30 speakers the output-only demand of
+26.7 tokens/s already leaves little margin on that hypothetical backend.
+Near-player generation for eight speakers instead needs about 7.1 output
+tokens/s at 20 TPS. Short bounded contexts and a cap of 1-2 concurrent requests
+are sensible starting points; use one backend model and bounded conversation state.
+
+For remote inference, at 30 speakers the same assumptions produce 2,400 calls,
+1.44 million input tokens and 0.096 million output tokens per real hour.
+Hourly cost = 1.44*input_price_per_million + 0.096*output_price_per_million,
+before cache discounts. No provider price is assumed. Multiplayer population,
+context growth, autonomous replies and accelerated simulation change this cost.
+
+Recommended integration and acceptance
+
+First fix semantic disclosure/acquisition defects. Add a typed speech act with
+speaker, listener, intent, referents, grounded facts and required comprehension
+slots. Preserve existing concept-based care/trade signals as authoritative.
+Render that act through a grammar for every villager. Add an optional LLM only
+for nearby dialogue where variation matters, with the grammar as immediate fallback.
+
+For inference, snapshot a small permitted fact set on the server thread; perform
+model/HTTP work in a separate bounded worker/service; return text to the server
+thread. Recheck world, UUID, life state, conversation and fact freshness before
+display. Expire stale queued requests on unload/death/new intent. Never send a
+live world/entity object to a background inference worker. Keep model output from
+creating items, changing opinions, selecting work targets or revealing episodes.
+Constrained JSON helps format, but does not establish factual correctness.
+
+Use an isolated deterministic fixture at 20 TPS, then 80 TPS, with 10/30/100
+managed villagers, speech disabled, grammar enabled, and optional model enabled.
+Measure p50/p95/p99 MSPT, achieved wall TPS, client FPS, prompt/generation latency,
+GPU memory, queue depth, request expiry and message volume. Verify unknown-word
+gates, wrong homonyms, omitted referents, grounded lessons, dialect differences,
+save/reload, unloaded/dead speakers, backend failure and survival interruptions.
+No exact hardware throughput estimate should replace this acceptance matrix.
+
+Verdict: full grammatical text is feasible with very little additional compute.
+Small-model nearby dialogue is plausible on the inspected hardware, with measured
+limits still needed. Population-wide continuous LLM conversation is a materially
+different workload and should not be promised without a concurrent game benchmark.
+
+External primary sources checked
+
+https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md

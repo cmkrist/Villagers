@@ -1,0 +1,99 @@
+{
+  "milestone": "Grounded person/place reference foundation",
+  "fullGoalStatus": "active; reasoning/questions, courtship/work agreements, receptive grammar/word formation/childhood teaching and cultural evaluation remain incomplete",
+  "java": {
+    "tests": 620,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "python": {
+    "tests": 19,
+    "passed": true
+  },
+  "runtime": "/home/cmkrist/Documents/Villagers/runs/language-references-v4",
+  "native": {
+    "status": "passed",
+    "ticks": 840,
+    "initiallyUnknown": true,
+    "introductions": 4,
+    "placeNamings": 3,
+    "namedPersonStatement": {
+      "intended": [
+        {
+          "subject": "PERSON",
+          "verb": "HAVE",
+          "object": "FOOD",
+          "negated": false,
+          "past": false,
+          "subjectReference": {
+            "word": "ember",
+            "target": {
+              "kind": "PERSON",
+              "person": "00000000-0000-0259-0000-000000000001"
+            }
+          }
+        }
+      ],
+      "sounds": [
+        "ember",
+        "nimur",
+        "sasur"
+      ]
+    },
+    "namedPlaceStatement": {
+      "intended": [
+        {
+          "subject": "PLACE",
+          "verb": "IS",
+          "object": "BED",
+          "negated": false,
+          "past": false,
+          "subjectReference": {
+            "word": "zige",
+            "target": {
+              "kind": "PLACE",
+              "place": {
+                "dimension": "minecraft:overworld",
+                "x": 5,
+                "y": 81,
+                "z": 7
+              }
+            }
+          }
+        }
+      ],
+      "sounds": [
+        "zige",
+        "daku",
+        "bemo"
+      ]
+    },
+    "unexposedControlStayedUnknown": true,
+    "fixture": "NEW peaceful walled platform with a separate closed control chamber. Four provisioned adults with distinct public name stems, six actual bread each; subject holds one additional actual bread. One existing fixture bed is named by pointing. Controlled introduction/naming opportunities every20ticks obey200tick naming budgets; reported claims obey dialogue budget. No post-setup inventory, body, health, reference-memory, grammar or world setters. Name bindings arise through actual Speech introductions/shared attention, not copied speaker metadata. No source society was opened; no natural emergence, visual UX or survival scaling claim."
+  },
+  "restart": {
+    "status": "restart-passed",
+    "originalsVerifiedAtLoad": 4
+  },
+  "allOriginalFixtureBodiesAlive": true,
+  "productionJarSha256": "da1a6ffb5e8c08b061933f5d7831baea444859df939ad95f44b5b1a58d9f6a89",
+  "matchesCurrentBuildAtCapture": true,
+  "limitations": [
+    "Same-biome naming construction in a controlled provisioned fixture",
+    "Public particle pointing cue plus server-side visibility checks; no visual-client UX acceptance",
+    "No exact private episode/reputation disclosure, no practical WHO/WHERE reasoning yet",
+    "No existing society worlds opened or advanced"
+  ],
+  "goalSourcesMatchExecutedSnapshot": {
+    "src/main/java/local/villagers/language/Referents.java": true,
+    "src/main/java/local/villagers/language/Clause.java": true,
+    "src/main/java/local/villagers/language/Sentence.java": true,
+    "src/main/java/local/villagers/language/Dialogue.java": true,
+    "src/main/java/local/villagers/language/Lexicon.java": true,
+    "src/main/java/local/villagers/language/Glossary.java": true,
+    "src/main/java/local/villagers/mind/AgentMind.java": true,
+    "src/main/java/local/villagers/mind/Beliefs.java": true,
+    "src/main/java/local/villagers/Speech.java": true
+  }
+}

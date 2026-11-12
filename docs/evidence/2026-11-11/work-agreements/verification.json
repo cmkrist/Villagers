@@ -1,0 +1,199 @@
+{
+  "milestone": "Persistent mutually interpreted production agreements with real crafting and fixed-price settlement",
+  "fullGoalStatus": "active; receptive grammar, word formation, childhood teaching and controlled cultural/grammar-innovation evaluation remain required",
+  "java": {
+    "tests": 670,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "python": {
+    "tests": 19,
+    "passed": true
+  },
+  "automatedCommand": "./tools/test.sh --console=plain",
+  "runtime": "/home/cmkrist/Documents/Villagers/runs/language-work-v2",
+  "pending": {
+    "status": "pending-passed",
+    "foreignBlocked": true,
+    "unsafeBlocked": true
+  },
+  "native": {
+    "status": "passed",
+    "ticks": 2366,
+    "nativeInjuryPausedWork": true,
+    "hoeSettlement": {
+      "workerOwnInventory": {
+        "tick": 233,
+        "goodsBefore": 1,
+        "goodsAfter": 0,
+        "coinsBefore": 0,
+        "coinsAfter": 2
+      },
+      "terms": {
+        "buyer": "00000000-0000-0386-0000-000000000001",
+        "worker": "00000000-0000-0385-0000-000000000001",
+        "task": "WOODEN_HOE",
+        "quantity": 1,
+        "price": 2,
+        "agreedAt": 40,
+        "dueAt": 2440
+      },
+      "production": {
+        "tick": 173,
+        "station": {
+          "dimension": "minecraft:overworld",
+          "x": 8,
+          "y": 81,
+          "z": 7
+        },
+        "count": 1
+      },
+      "gameTime": 233,
+      "buyerOwnInventory": {
+        "tick": 233,
+        "goodsBefore": 0,
+        "goodsAfter": 1,
+        "coinsBefore": 2,
+        "coinsAfter": 0
+      }
+    },
+    "breadSettlement": {
+      "workerOwnInventory": {
+        "tick": 331,
+        "goodsBefore": 4,
+        "goodsAfter": 3,
+        "coinsBefore": 0,
+        "coinsAfter": 1
+      },
+      "terms": {
+        "buyer": "00000000-0000-0387-0000-000000000001",
+        "worker": "00000000-0000-0387-0000-000000000002",
+        "task": "BREAD",
+        "quantity": 1,
+        "price": 1,
+        "agreedAt": 40,
+        "dueAt": 2440
+      },
+      "production": {
+        "tick": 211,
+        "station": {
+          "dimension": "minecraft:overworld",
+          "x": 18,
+          "y": 81,
+          "z": 7
+        },
+        "count": 1
+      },
+      "gameTime": 331,
+      "buyerOwnInventory": {
+        "tick": 331,
+        "goodsBefore": 0,
+        "goodsAfter": 1,
+        "coinsBefore": 1,
+        "coinsAfter": 0
+      }
+    },
+    "lostStationOutcome": {
+      "terms": {
+        "buyer": "00000000-0000-038a-0000-000000000001",
+        "worker": "00000000-0000-038a-0000-000000000002",
+        "task": "BREAD",
+        "quantity": 1,
+        "price": 1,
+        "agreedAt": 40,
+        "dueAt": 2440
+      },
+      "state": "EXPIRED",
+      "reason": "ROUTE",
+      "updated": 2445,
+      "interruptions": 1
+    },
+    "fixture": "NEW peaceful five-room platform, four loaded fixture chunks, ten original adults. Five controlled production negotiation opportunities use actual WorkLife speech: two legitimate jobs, one legitimate job whose station is then destroyed with native drops, a foreign-language control and an undernourished refusing worker. Six ordinary AI bodies resume autonomous production/delivery/expiry after a clean pending-order restart; four controls are NoAI stationary. Inputs, existing tables, a retained working hoe, actual emeralds and food reserves are explicitly seeded fixture conditions. No post-setup actor/inventory/mind setters; one declared five-point native injury tests real interruption/recovery, and one declared station destruction tests unfulfilled work. Exhaustion0 and breedingFalse are controlled conditions. Paid native recipes, movement and physical transfers remain production code; no existing society opened, no resource grants, no natural job emergence or visual/scaling claim."
+  },
+  "frozen": {
+    "status": "frozen-passed",
+    "originalsVerifiedAtLoad": 10,
+    "orderReadable": true,
+    "noPaymentOrCompletion": true
+  },
+  "restart": {
+    "status": "restart-passed",
+    "originalsVerifiedAtLoad": 10,
+    "noReplay": true
+  },
+  "allOriginalFixtureBodiesAlive": true,
+  "originalBodies": [
+    "00000000-0000-0386-0000-000000000001",
+    "00000000-0000-0385-0000-000000000001",
+    "00000000-0000-0387-0000-000000000001",
+    "00000000-0000-0387-0000-000000000002",
+    "00000000-0000-0388-0000-000000000001",
+    "00000000-0000-0388-0000-000000000002",
+    "00000000-0000-0389-0000-000000000001",
+    "00000000-0000-0389-0000-000000000002",
+    "00000000-0000-038a-0000-000000000001",
+    "00000000-0000-038a-0000-000000000002"
+  ],
+  "terminals": {
+    "first": {
+      "exitCode": 0,
+      "finishedAtEpoch": 1794434600.7906559
+    },
+    "frozen": {
+      "exitCode": 0,
+      "finishedAtEpoch": 1794434608.1194973
+    },
+    "resume": {
+      "exitCode": 0,
+      "finishedAtEpoch": 1794434644.700482
+    },
+    "restart": {
+      "exitCode": 0,
+      "finishedAtEpoch": 1794434651.08232
+    }
+  },
+  "artifactPins": {
+    "mods/fabric-api-0.162.0+26.3.jar": "8626c189b702f466800b1c8ddac6203cf8a1e0bdaee75a5f9a33b18c2baa81b1",
+    "mods/villagers-0.4.1-dev.jar": "396dde15cd27de3233163a1a7a5036132f054e0df8df2cf128a98e443056c50d",
+    "mods/language-probe.jar": "64605a356d07a5c7ed7af672afdfe015b8ce42ad893ba6e433931ae995a8c46a"
+  },
+  "sourceArchiveSha256": "f2d71c724269bb4450ec5e36307a3402859ea2387213881df4aabe7ace8a792c",
+  "productionJarSha256": "396dde15cd27de3233163a1a7a5036132f054e0df8df2cf128a98e443056c50d",
+  "matchesCurrentBuildAtCapture": true,
+  "goalSourcesMatchExecutedSnapshot": {
+    "src/main/java/local/villagers/WorkLife.java": true,
+    "src/main/java/local/villagers/LocalTrade.java": true,
+    "src/main/java/local/villagers/PaidDelivery.java": true,
+    "src/main/java/local/villagers/ToolProduction.java": true,
+    "src/main/java/local/villagers/BreadCrafting.java": true,
+    "src/main/java/local/villagers/Session.java": true,
+    "src/main/java/local/villagers/VillagerController.java": true,
+    "src/main/java/local/villagers/work/WorkOrders.java": true,
+    "src/main/java/local/villagers/language/WorkDialogue.java": true,
+    "src/main/java/local/villagers/language/Concept.java": true,
+    "src/main/java/local/villagers/language/Clause.java": true,
+    "src/main/java/local/villagers/language/Lexicon.java": true,
+    "src/main/java/local/villagers/language/Sentence.java": true,
+    "src/main/java/local/villagers/mind/AgentMind.java": true,
+    "src/test/java/local/villagers/work/WorkOrdersTest.java": true,
+    "src/test/java/local/villagers/language/WorkDialogueTest.java": true,
+    "src/test/java/local/villagers/mind/WorkOrderPersistenceTest.java": true,
+    "tools/tests/java/local/villagers/WorkServerProbe.java": true
+  },
+  "retainedAttempts": [
+    {
+      "runtime": "language-work-v1",
+      "outcome": "both real paid jobs completed and worker expired blocked work; final fixture assertion incorrectly required the customer to expire in the same tick. Corrected to await both scheduled updates; pause-count and relevant signal cleanup were also corrected before final run."
+    }
+  ],
+  "limitations": [
+    "Two supported commissioned recipes, quantity one, prices one/two emeralds, fixed 2400-tick SOON convention and one active obligation per person",
+    "Controlled negotiation opportunities, seeded supplies/tables/working tool/currency, native station-loss and injury stimuli are declared; natural employment emergence is not claimed",
+    "Ordinary controllers drive six bodies on resume; four controls remain stationary NoAI",
+    "Frozen checkpoint can read saved terms but inherits the existing economy exclusion on one-shot production/payment progression",
+    "Normal orderly restart and no completed-order replay verified; crash-atomic persistence across entity NBT/mind files and automatic half-save work reaffirmation are not claimed",
+    "Cancellation frame/consent semantics have automated checks; no native spontaneous cancellation policy is claimed",
+    "No career/wage/credit system, visual UX, cultural learning or population scaling claim; no existing society opened or advanced"
+  ]
+}

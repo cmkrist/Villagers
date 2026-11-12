@@ -12,7 +12,7 @@ import net.minecraft.world.item.crafting.CraftingInput;
 
 /** Finite bootstrap recipes from actual held wood. The server still decides whether each recipe exists. */
 final class WoodCrafting {
-    enum Step { PLANKS, STICKS, HOE, TABLE, PICKAXE, BOAT, STONE_PICKAXE }
+    enum Step { PLANKS, STICKS, HOE, TABLE, PICKAXE, BOAT, STONE_PICKAXE, IRON_PICKAXE, DIAMOND_PICKAXE }
     record Plan(Step step, List<ItemStack> before, SimpleContainer remaining,
                 CraftingInput input, Item output, int count) {}
     private static final Map<Item, Item> PLANKS = Map.ofEntries(
@@ -52,7 +52,27 @@ final class WoodCrafting {
         return next(inventory, false);
     }
     static Plan pickaxe(Container inventory) { return next(inventory, true); }
+    /** Free a working slot only when the native stick recipe removes all
+     * carried planks and its output merges into already owned sticks. */
+    static Plan compactPlanks(Container inventory) {
+        int planks=0;
+        for(int slot=0;slot<inventory.getContainerSize();slot++)if(plank(inventory.getItem(slot)))planks+=inventory.getItem(slot).getCount();
+        if(planks!=2||inventory.countItem(Items.STICK)<2)return null;
+        var before=new ArrayList<ItemStack>();var remaining=new SimpleContainer(inventory.getContainerSize());
+        for(int slot=0;slot<inventory.getContainerSize();slot++){
+            before.add(inventory.getItem(slot).copy());remaining.setItem(slot,inventory.getItem(slot).copy());
+        }
+        var input=CraftingInput.of(1,2,List.of(take(remaining,false),take(remaining,false)));
+        var capacity=new SimpleContainer(inventory.getContainerSize());
+        for(int slot=0;slot<capacity.getContainerSize();slot++)capacity.setItem(slot,remaining.getItem(slot).copy());
+        if(!capacity.addItem(new ItemStack(Items.STICK,4)).isEmpty())return null;
+        long freeBefore=before.stream().filter(ItemStack::isEmpty).count();int freeAfter=0;
+        for(int slot=0;slot<capacity.getContainerSize();slot++)if(capacity.getItem(slot).isEmpty())freeAfter++;
+        return freeAfter>freeBefore?new Plan(Step.STICKS,List.copyOf(before),remaining,input,Items.STICK,4):null;
+    }
     static Plan stonePickaxe(Container inventory) { return next(inventory,true,true); }
+    static Plan ironPickaxe(Container inventory) { return next(inventory,true,false,true); }
+    static Plan diamondPickaxe(Container inventory) { return next(inventory,true,false,false,true); }
     static boolean stoneMaterial(ItemStack stack) {
         return stack.is(Items.COBBLESTONE) || stack.is(Items.COBBLED_DEEPSLATE) || stack.is(Items.BLACKSTONE);
     }
@@ -99,7 +119,15 @@ final class WoodCrafting {
         return next(inventory,pickaxe,false);
     }
     private static Plan next(Container inventory, boolean pickaxe, boolean stone) {
+        return next(inventory,pickaxe,stone,false);
+    }
+    private static Plan next(Container inventory, boolean pickaxe, boolean stone,boolean iron) {
+        return next(inventory,pickaxe,stone,iron,false);
+    }
+    private static Plan next(Container inventory, boolean pickaxe, boolean stone,boolean iron,boolean diamond) {
         if (stone && stoneCount(inventory)<3) return null;
+        if (iron && inventory.countItem(Items.IRON_INGOT)<3) return null;
+        if (diamond && inventory.countItem(Items.DIAMOND)<3) return null;
         int planks = 0, sticks = 0, logSlot = -1;
         for (int slot = 0; slot < inventory.getContainerSize(); slot++) {
             var stack = inventory.getItem(slot);
@@ -107,7 +135,7 @@ final class WoodCrafting {
             else if (stack.is(Items.STICK)) sticks += stack.getCount();
             else if (logSlot < 0 && !stack.isEmpty() && PLANKS.containsKey(stack.getItem())) logSlot = slot;
         }
-        int neededPlanks = (stone ? 0 : pickaxe ? 3 : 2) + (sticks >= 2 ? 0 : 2);
+        int neededPlanks = (stone||iron||diamond ? 0 : pickaxe ? 3 : 2) + (sticks >= 2 ? 0 : 2);
         if (planks < neededPlanks && logSlot < 0) return null;
         var before = new ArrayList<ItemStack>();
         var remaining = new SimpleContainer(inventory.getContainerSize());
@@ -124,6 +152,12 @@ final class WoodCrafting {
         if (stone) return new Plan(Step.STONE_PICKAXE,List.copyOf(before),remaining,
             CraftingInput.of(3,3,List.of(takeStone(remaining),takeStone(remaining),takeStone(remaining),ItemStack.EMPTY,
                 take(remaining,true),ItemStack.EMPTY,ItemStack.EMPTY,take(remaining,true),ItemStack.EMPTY)),Items.STONE_PICKAXE,1);
+        if (iron) return new Plan(Step.IRON_PICKAXE,List.copyOf(before),remaining,
+            CraftingInput.of(3,3,List.of(takeIron(remaining),takeIron(remaining),takeIron(remaining),ItemStack.EMPTY,
+                take(remaining,true),ItemStack.EMPTY,ItemStack.EMPTY,take(remaining,true),ItemStack.EMPTY)),Items.IRON_PICKAXE,1);
+        if (diamond) return new Plan(Step.DIAMOND_PICKAXE,List.copyOf(before),remaining,
+            CraftingInput.of(3,3,List.of(takeMaterial(remaining,Items.DIAMOND),takeMaterial(remaining,Items.DIAMOND),takeMaterial(remaining,Items.DIAMOND),ItemStack.EMPTY,
+                take(remaining,true),ItemStack.EMPTY,ItemStack.EMPTY,take(remaining,true),ItemStack.EMPTY)),Items.DIAMOND_PICKAXE,1);
         ItemStack a = take(remaining, false), b = take(remaining, false);
         if (pickaxe) return new Plan(Step.PICKAXE, List.copyOf(before), remaining,
             CraftingInput.of(3, 3, List.of(a, b, take(remaining, false), ItemStack.EMPTY,
@@ -136,6 +170,11 @@ final class WoodCrafting {
     private static ItemStack takeStone(SimpleContainer inventory) {
         for(int i=0;i<inventory.getContainerSize();i++)if(stoneMaterial(inventory.getItem(i)))return inventory.removeItem(i,1);
         throw new IllegalStateException("Missing reserved stone");
+    }
+    private static ItemStack takeIron(SimpleContainer inventory){return takeMaterial(inventory,Items.IRON_INGOT);}
+    private static ItemStack takeMaterial(SimpleContainer inventory,Item material){
+        for(int i=0;i<inventory.getContainerSize();i++)if(inventory.getItem(i).is(material))return inventory.removeItem(i,1);
+        throw new IllegalStateException("Missing reserved material: "+material);
     }
     private static ItemStack take(SimpleContainer inventory, boolean stick) {
         for (int slot = 0; slot < inventory.getContainerSize(); slot++)

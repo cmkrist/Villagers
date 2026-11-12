@@ -1,0 +1,1893 @@
+{
+  "campGuards": [],
+  "actors": [
+    {
+      "id": "5432d3df-f37a-4371-9465-aa1568bb4b02",
+      "name": "Nell-5432",
+      "position": [
+        -523.230175522438,
+        64.5625,
+        -322.17637575518785
+      ],
+      "production": {
+        "breadCrafted": 1,
+        "actions": {
+          "replantsFromStock": 2,
+          "cropsHarvested": 2,
+          "swordHits": 0,
+          "replantsFromHarvest": 0,
+          "doorsOpened": 3,
+          "doorsClosed": 5
+        },
+        "lastPlant": {},
+        "lastHarvest": {
+          "gameTime": 271719,
+          "position": "-515, 63, -319",
+          "crop": "WHEAT",
+          "plantingSource": "owned stock",
+          "nativeDrops": [
+            "1 minecraft:wheat",
+            "3 minecraft:wheat_seeds"
+          ],
+          "inventoryBefore": [
+            "1 minecraft:potato",
+            "2 minecraft:bread",
+            "5 minecraft:oak_planks",
+            "1 minecraft:carrot",
+            "1 minecraft:beetroot_seeds",
+            "9 minecraft:wheat_seeds",
+            "2 minecraft:wheat",
+            "0 minecraft:air"
+          ],
+          "inventoryAfter": [
+            "1 minecraft:potato",
+            "2 minecraft:bread",
+            "5 minecraft:oak_planks",
+            "1 minecraft:carrot",
+            "1 minecraft:beetroot_seeds",
+            "11 minecraft:wheat_seeds",
+            "3 minecraft:wheat",
+            "0 minecraft:air"
+          ],
+          "overflow": [],
+          "hoeDamageBefore": 50,
+          "hoeDamageAfter": 51,
+          "hoeBroke": false,
+          "usedHoe": true,
+          "cropAfter": "Block{minecraft:wheat}[age\u003d0]"
+        },
+        "planted": 0
+      },
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[1 minecraft:potato, 3 minecraft:bread, 5 minecraft:oak_planks, 1 minecraft:carrot, 1 minecraft:beetroot_seeds, 11 minecraft:wheat_seeds]",
+      "adventure": {
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        },
+        "activity": "no adventure objective",
+        "quarry": {
+          "lastStop": {},
+          "activity": "no quarry job",
+          "stand": "",
+          "centerings": 0,
+          "dug": 0,
+          "lastApproach": {},
+          "step": 0,
+          "lastReceipt": {},
+          "origin": "",
+          "inspection": {
+            "survey": {
+              "lastRoute": {},
+              "target": "",
+              "visited": 0
+            },
+            "lastRetirement": {},
+            "repairs": 0,
+            "returning": false,
+            "reconsidered": 0,
+            "lastRepair": {},
+            "visited": 0,
+            "route": "none",
+            "reviewAt": 0,
+            "target": ""
+          }
+        },
+        "stone": 0
+      },
+      "woodPreparation": {
+        "goal": "NONE",
+        "activity": "no preparation job",
+        "lastPath": "none",
+        "pathQueries": 0,
+        "recipes": 0,
+        "gates": {
+          "closed": 0,
+          "gate": "",
+          "lastReceipt": {},
+          "opened": 0
+        },
+        "survey": {
+          "canopy": {
+            "blocks": 0,
+            "lastReceipt": {},
+            "target": ""
+          },
+          "lastRoute": {},
+          "target": ""
+        },
+        "lastStep": {},
+        "stepsPlaced": 0,
+        "logs": 0,
+        "craftFailure": "none"
+      },
+      "ironPreparation": {
+        "lastApproach": {},
+        "plannedSite": "",
+        "passage": {
+          "part": 0,
+          "activity": "no prospecting passage",
+          "faceBlock": "",
+          "mode": "descending",
+          "face": "",
+          "reselect": false,
+          "turns": 0,
+          "depth": 0,
+          "root": "",
+          "retainedFloors": 0,
+          "exhausted": false,
+          "failedScans": 0,
+          "entry": "",
+          "frontier": "",
+          "backtracks": 0,
+          "lastRoute": {},
+          "frontierSearch": {
+            "queries": 0,
+            "candidates": 0,
+            "activity": "not checking junctions"
+          }
+        },
+        "ironTaken": 0,
+        "crafted": 0,
+        "furnace": "",
+        "activity": "not preparing iron",
+        "loadedOre": 0,
+        "lastReceipt": {},
+        "fuelStored": false
+      },
+      "ironIngots": 0,
+      "villageSupplies": {
+        "activity": "not seeking village supplies",
+        "lastReceipt": {},
+        "moved": 0,
+        "target": "",
+        "inspected": 0
+      },
+      "ironPickaxe": false,
+      "villageBedding": {
+        "sheepWool": {
+          "sheared": 0,
+          "collected": 0,
+          "lastReceipt": {},
+          "target": "",
+          "craftedShears": 0
+        },
+        "activity": "no village bedding work",
+        "placed": 0,
+        "transfers": 0,
+        "site": "",
+        "recipes": 0,
+        "lastReceipt": {},
+        "store": ""
+      },
+      "ironArmor": {
+        "ready": false,
+        "nextPiece": "CHEST",
+        "equipped": 0,
+        "crafted": 0,
+        "lastReceipt": {},
+        "ironTarget": 8
+      },
+      "equippedArmor": {
+        "feet": "0 minecraft:air",
+        "legs": "0 minecraft:air",
+        "chest": "0 minecraft:air",
+        "head": "0 minecraft:air"
+      },
+      "inventoryRoom": {
+        "lastReceipt": {},
+        "actions": 0
+      },
+      "body": {
+        "activity": "Nell-5432 · sheltered",
+        "passenger": false,
+        "sleeping": true,
+        "courtship": "EXPIRED",
+        "fatigue": 0.0
+      },
+      "held": "1 minecraft:wooden_hoe",
+      "offhand": "0 minecraft:air",
+      "boat": {
+        "phase": "NONE",
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "launches": 0,
+        "logsGathered": 0,
+        "recipes": 0,
+        "lastReturn": {},
+        "footReturns": 0,
+        "landings": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:workbench:-478,63,-361,minecraft:overworld",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null",
+        "table": "BlockPos{x\u003d-525, y\u003d63, z\u003d-347}"
+      }
+    },
+    {
+      "id": "96cbd3bc-ebc5-4522-b101-b83ee55c471f",
+      "name": "Birch-96cb",
+      "position": [
+        -515.5,
+        64.5625,
+        -324.5
+      ],
+      "production": {
+        "breadCrafted": 0,
+        "actions": {
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0,
+          "doorsOpened": 2,
+          "doorsClosed": 0
+        },
+        "lastPlant": {
+          "hoeDamageAfter": 40,
+          "soil": "-521, 62, -319",
+          "crop": "Block{minecraft:wheat}[age\u003d0]",
+          "seed": "minecraft:wheat_seeds",
+          "hoeBroke": false,
+          "seedAfter": 9,
+          "hoeDamageBefore": 39,
+          "seedBefore": 10,
+          "gameTime": 270918,
+          "nativeVillage": true
+        },
+        "lastHarvest": {},
+        "planted": 1
+      },
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[3 minecraft:oak_planks, 2 minecraft:stick, 1 minecraft:potato, 2 minecraft:bread, 2 minecraft:beetroot_seeds, 9 minecraft:wheat_seeds, 4 minecraft:carrot]",
+      "adventure": {
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        },
+        "activity": "no adventure objective",
+        "quarry": {
+          "lastStop": {},
+          "activity": "no quarry job",
+          "stand": "",
+          "centerings": 0,
+          "dug": 0,
+          "lastApproach": {},
+          "step": 0,
+          "lastReceipt": {},
+          "origin": "",
+          "inspection": {
+            "survey": {
+              "lastRoute": {},
+              "target": "",
+              "visited": 0
+            },
+            "lastRetirement": {},
+            "repairs": 0,
+            "returning": false,
+            "reconsidered": 0,
+            "lastRepair": {},
+            "visited": 0,
+            "route": "none",
+            "reviewAt": 0,
+            "target": ""
+          }
+        },
+        "stone": 0
+      },
+      "woodPreparation": {
+        "goal": "NONE",
+        "activity": "no preparation job",
+        "lastPath": "none",
+        "pathQueries": 0,
+        "recipes": 0,
+        "gates": {
+          "closed": 0,
+          "gate": "",
+          "lastReceipt": {},
+          "opened": 0
+        },
+        "survey": {
+          "canopy": {
+            "blocks": 0,
+            "lastReceipt": {},
+            "target": ""
+          },
+          "lastRoute": {},
+          "target": ""
+        },
+        "lastStep": {},
+        "stepsPlaced": 0,
+        "logs": 0,
+        "craftFailure": "none"
+      },
+      "ironPreparation": {
+        "lastApproach": {},
+        "plannedSite": "",
+        "passage": {
+          "part": 0,
+          "activity": "no prospecting passage",
+          "faceBlock": "",
+          "mode": "descending",
+          "face": "",
+          "reselect": false,
+          "turns": 0,
+          "depth": 0,
+          "root": "",
+          "retainedFloors": 0,
+          "exhausted": false,
+          "failedScans": 0,
+          "entry": "",
+          "frontier": "",
+          "backtracks": 0,
+          "lastRoute": {},
+          "frontierSearch": {
+            "queries": 0,
+            "candidates": 0,
+            "activity": "not checking junctions"
+          }
+        },
+        "ironTaken": 0,
+        "crafted": 0,
+        "furnace": "",
+        "activity": "not preparing iron",
+        "loadedOre": 0,
+        "lastReceipt": {},
+        "fuelStored": false
+      },
+      "ironIngots": 0,
+      "villageSupplies": {
+        "activity": "not seeking village supplies",
+        "lastReceipt": {},
+        "moved": 0,
+        "target": "",
+        "inspected": 0
+      },
+      "ironPickaxe": false,
+      "villageBedding": {
+        "sheepWool": {
+          "sheared": 0,
+          "collected": 0,
+          "lastReceipt": {},
+          "target": "",
+          "craftedShears": 0
+        },
+        "activity": "walking to inspect a village bedding store",
+        "placed": 0,
+        "transfers": 0,
+        "site": "",
+        "recipes": 0,
+        "lastReceipt": {},
+        "store": ""
+      },
+      "ironArmor": {
+        "ready": false,
+        "nextPiece": "CHEST",
+        "equipped": 0,
+        "crafted": 0,
+        "lastReceipt": {},
+        "ironTarget": 8
+      },
+      "equippedArmor": {
+        "feet": "0 minecraft:air",
+        "legs": "0 minecraft:air",
+        "chest": "0 minecraft:air",
+        "head": "0 minecraft:air"
+      },
+      "inventoryRoom": {
+        "lastReceipt": {},
+        "actions": 0
+      },
+      "body": {
+        "activity": "Birch-96cb · sheltered",
+        "passenger": false,
+        "sleeping": true,
+        "courtship": "EXPIRED",
+        "fatigue": 0.0
+      },
+      "held": "1 minecraft:wooden_hoe",
+      "offhand": "0 minecraft:air",
+      "boat": {
+        "phase": "NONE",
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "launches": 0,
+        "logsGathered": 0,
+        "recipes": 0,
+        "lastReturn": {},
+        "footReturns": 0,
+        "landings": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:workbench:-478,63,-361,minecraft:overworld",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null",
+        "table": "BlockPos{x\u003d-525, y\u003d63, z\u003d-347}"
+      }
+    },
+    {
+      "id": "f572553d-4483-44b5-8ed5-6ffe7e7745b7",
+      "name": "Tansy-f572",
+      "position": [
+        -482.5,
+        64.5625,
+        -287.5
+      ],
+      "production": {
+        "breadCrafted": 0,
+        "actions": {
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0,
+          "doorsOpened": 0,
+          "doorsClosed": 1
+        },
+        "lastPlant": {},
+        "lastHarvest": {},
+        "planted": 0
+      },
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[1 minecraft:carrot, 18 minecraft:wheat_seeds, 2 minecraft:bread, 1 minecraft:potato, 2 minecraft:beetroot_seeds]",
+      "adventure": {
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        },
+        "activity": "no adventure objective",
+        "quarry": {
+          "lastStop": {},
+          "activity": "no quarry job",
+          "stand": "",
+          "centerings": 0,
+          "dug": 0,
+          "lastApproach": {},
+          "step": 0,
+          "lastReceipt": {},
+          "origin": "",
+          "inspection": {
+            "survey": {
+              "lastRoute": {},
+              "target": "",
+              "visited": 0
+            },
+            "lastRetirement": {},
+            "repairs": 0,
+            "returning": false,
+            "reconsidered": 0,
+            "lastRepair": {},
+            "visited": 0,
+            "route": "none",
+            "reviewAt": 0,
+            "target": ""
+          }
+        },
+        "stone": 0
+      },
+      "woodPreparation": {
+        "goal": "NONE",
+        "activity": "no preparation job",
+        "lastPath": "none",
+        "pathQueries": 0,
+        "recipes": 0,
+        "gates": {
+          "closed": 0,
+          "gate": "",
+          "lastReceipt": {},
+          "opened": 0
+        },
+        "survey": {
+          "canopy": {
+            "blocks": 0,
+            "lastReceipt": {},
+            "target": ""
+          },
+          "lastRoute": {},
+          "target": ""
+        },
+        "lastStep": {},
+        "stepsPlaced": 0,
+        "logs": 0,
+        "craftFailure": "none"
+      },
+      "ironPreparation": {
+        "lastApproach": {},
+        "plannedSite": "",
+        "passage": {
+          "part": 0,
+          "activity": "no prospecting passage",
+          "faceBlock": "",
+          "mode": "descending",
+          "face": "",
+          "reselect": false,
+          "turns": 0,
+          "depth": 0,
+          "root": "",
+          "retainedFloors": 0,
+          "exhausted": false,
+          "failedScans": 0,
+          "entry": "",
+          "frontier": "",
+          "backtracks": 0,
+          "lastRoute": {},
+          "frontierSearch": {
+            "queries": 0,
+            "candidates": 0,
+            "activity": "not checking junctions"
+          }
+        },
+        "ironTaken": 0,
+        "crafted": 0,
+        "furnace": "",
+        "activity": "not preparing iron",
+        "loadedOre": 0,
+        "lastReceipt": {},
+        "fuelStored": false
+      },
+      "ironIngots": 0,
+      "villageSupplies": {
+        "activity": "not seeking village supplies",
+        "lastReceipt": {},
+        "moved": 0,
+        "target": "",
+        "inspected": 0
+      },
+      "ironPickaxe": false,
+      "villageBedding": {
+        "sheepWool": {
+          "sheared": 0,
+          "collected": 0,
+          "lastReceipt": {},
+          "target": "",
+          "craftedShears": 0
+        },
+        "activity": "no village bedding work",
+        "placed": 0,
+        "transfers": 0,
+        "site": "",
+        "recipes": 0,
+        "lastReceipt": {},
+        "store": ""
+      },
+      "ironArmor": {
+        "ready": false,
+        "nextPiece": "CHEST",
+        "equipped": 0,
+        "crafted": 0,
+        "lastReceipt": {},
+        "ironTarget": 8
+      },
+      "equippedArmor": {
+        "feet": "0 minecraft:air",
+        "legs": "0 minecraft:air",
+        "chest": "0 minecraft:air",
+        "head": "0 minecraft:air"
+      },
+      "inventoryRoom": {
+        "lastReceipt": {},
+        "actions": 0
+      },
+      "body": {
+        "activity": "Tansy-f572 · sheltered",
+        "passenger": false,
+        "sleeping": true,
+        "courtship": "NONE",
+        "fatigue": 9.375E-4
+      },
+      "held": "0 minecraft:air",
+      "offhand": "0 minecraft:air",
+      "boat": {
+        "phase": "NONE",
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "launches": 0,
+        "logsGathered": 0,
+        "recipes": 0,
+        "lastReturn": {},
+        "footReturns": 0,
+        "landings": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null",
+        "table": "null"
+      }
+    },
+    {
+      "id": "af2b94ad-f799-4b93-a2c3-e958b2836c84",
+      "name": "Dara-af2b",
+      "position": [
+        -515.5,
+        64.5625,
+        -349.5
+      ],
+      "production": {
+        "breadCrafted": 0,
+        "actions": {
+          "replantsFromStock": 2,
+          "cropsHarvested": 3,
+          "swordHits": 0,
+          "replantsFromHarvest": 1,
+          "doorsOpened": 0,
+          "doorsClosed": 1
+        },
+        "lastPlant": {},
+        "lastHarvest": {
+          "gameTime": 275495,
+          "position": "-520, 63, -320",
+          "crop": "BEETROOT",
+          "plantingSource": "owned stock",
+          "nativeDrops": [
+            "1 minecraft:beetroot",
+            "2 minecraft:beetroot_seeds"
+          ],
+          "inventoryBefore": [
+            "3 minecraft:stick",
+            "2 minecraft:bread",
+            "2 minecraft:wheat_seeds",
+            "1 minecraft:carrot",
+            "2 minecraft:wheat",
+            "0 minecraft:air",
+            "1 minecraft:beetroot_seeds",
+            "0 minecraft:air"
+          ],
+          "inventoryAfter": [
+            "3 minecraft:stick",
+            "2 minecraft:bread",
+            "2 minecraft:wheat_seeds",
+            "1 minecraft:carrot",
+            "2 minecraft:wheat",
+            "1 minecraft:beetroot",
+            "2 minecraft:beetroot_seeds",
+            "0 minecraft:air"
+          ],
+          "overflow": [],
+          "hoeDamageBefore": 17,
+          "hoeDamageAfter": 18,
+          "hoeBroke": false,
+          "usedHoe": true,
+          "cropAfter": "Block{minecraft:beetroots}[age\u003d0]"
+        },
+        "planted": 0
+      },
+      "health": 20.0,
+      "food": 19,
+      "inventory": "[3 minecraft:stick, 2 minecraft:bread, 2 minecraft:wheat_seeds, 1 minecraft:carrot, 2 minecraft:wheat, 2 minecraft:beetroot_seeds]",
+      "adventure": {
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        },
+        "activity": "no adventure objective",
+        "quarry": {
+          "lastStop": {},
+          "activity": "no quarry job",
+          "stand": "",
+          "centerings": 0,
+          "dug": 0,
+          "lastApproach": {},
+          "step": 0,
+          "lastReceipt": {},
+          "origin": "",
+          "inspection": {
+            "survey": {
+              "lastRoute": {},
+              "target": "",
+              "visited": 0
+            },
+            "lastRetirement": {},
+            "repairs": 0,
+            "returning": false,
+            "reconsidered": 0,
+            "lastRepair": {},
+            "visited": 0,
+            "route": "none",
+            "reviewAt": 0,
+            "target": ""
+          }
+        },
+        "stone": 0
+      },
+      "woodPreparation": {
+        "goal": "NONE",
+        "activity": "no preparation job",
+        "lastPath": "none",
+        "pathQueries": 0,
+        "recipes": 0,
+        "gates": {
+          "closed": 0,
+          "gate": "",
+          "lastReceipt": {},
+          "opened": 0
+        },
+        "survey": {
+          "canopy": {
+            "blocks": 0,
+            "lastReceipt": {},
+            "target": ""
+          },
+          "lastRoute": {},
+          "target": ""
+        },
+        "lastStep": {},
+        "stepsPlaced": 0,
+        "logs": 0,
+        "craftFailure": "none"
+      },
+      "ironPreparation": {
+        "lastApproach": {},
+        "plannedSite": "",
+        "passage": {
+          "part": 0,
+          "activity": "no prospecting passage",
+          "faceBlock": "",
+          "mode": "descending",
+          "face": "",
+          "reselect": false,
+          "turns": 0,
+          "depth": 0,
+          "root": "",
+          "retainedFloors": 0,
+          "exhausted": false,
+          "failedScans": 0,
+          "entry": "",
+          "frontier": "",
+          "backtracks": 0,
+          "lastRoute": {},
+          "frontierSearch": {
+            "queries": 0,
+            "candidates": 0,
+            "activity": "not checking junctions"
+          }
+        },
+        "ironTaken": 0,
+        "crafted": 0,
+        "furnace": "",
+        "activity": "not preparing iron",
+        "loadedOre": 0,
+        "lastReceipt": {},
+        "fuelStored": false
+      },
+      "ironIngots": 0,
+      "villageSupplies": {
+        "activity": "not seeking village supplies",
+        "lastReceipt": {},
+        "moved": 0,
+        "target": "",
+        "inspected": 0
+      },
+      "ironPickaxe": false,
+      "villageBedding": {
+        "sheepWool": {
+          "sheared": 0,
+          "collected": 0,
+          "lastReceipt": {},
+          "target": "",
+          "craftedShears": 0
+        },
+        "activity": "no village bedding work",
+        "placed": 0,
+        "transfers": 0,
+        "site": "",
+        "recipes": 0,
+        "lastReceipt": {},
+        "store": ""
+      },
+      "ironArmor": {
+        "ready": false,
+        "nextPiece": "CHEST",
+        "equipped": 0,
+        "crafted": 0,
+        "lastReceipt": {},
+        "ironTarget": 8
+      },
+      "equippedArmor": {
+        "feet": "0 minecraft:air",
+        "legs": "0 minecraft:air",
+        "chest": "0 minecraft:air",
+        "head": "0 minecraft:air"
+      },
+      "inventoryRoom": {
+        "lastReceipt": {},
+        "actions": 0
+      },
+      "body": {
+        "activity": "Dara-af2b · sheltered",
+        "passenger": false,
+        "sleeping": true,
+        "courtship": "NONE",
+        "fatigue": 0.0
+      },
+      "held": "1 minecraft:wooden_hoe",
+      "offhand": "0 minecraft:air",
+      "boat": {
+        "phase": "NONE",
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "launches": 0,
+        "logsGathered": 0,
+        "recipes": 0,
+        "lastReturn": {},
+        "footReturns": 0,
+        "landings": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:workbench:-478,63,-361,minecraft:overworld",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null",
+        "table": "BlockPos{x\u003d-525, y\u003d63, z\u003d-347}"
+      }
+    },
+    {
+      "id": "c5578b5b-8991-428d-9d82-7cb57a956269",
+      "name": "Alder-c557",
+      "position": [
+        -478.5,
+        64.5625,
+        -373.5
+      ],
+      "production": {
+        "breadCrafted": 0,
+        "actions": {
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0,
+          "doorsOpened": 3,
+          "doorsClosed": 3
+        },
+        "lastPlant": {},
+        "lastHarvest": {},
+        "planted": 0
+      },
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[2 minecraft:stick, 2 minecraft:bread, 5 minecraft:carrot, 1 minecraft:beetroot, 13 minecraft:wheat_seeds, 12 minecraft:beetroot_seeds, 2 minecraft:wheat]",
+      "adventure": {
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        },
+        "activity": "no adventure objective",
+        "quarry": {
+          "lastStop": {},
+          "activity": "no quarry job",
+          "stand": "",
+          "centerings": 0,
+          "dug": 0,
+          "lastApproach": {},
+          "step": 0,
+          "lastReceipt": {},
+          "origin": "",
+          "inspection": {
+            "survey": {
+              "lastRoute": {},
+              "target": "",
+              "visited": 0
+            },
+            "lastRetirement": {},
+            "repairs": 0,
+            "returning": false,
+            "reconsidered": 0,
+            "lastRepair": {},
+            "visited": 0,
+            "route": "none",
+            "reviewAt": 0,
+            "target": ""
+          }
+        },
+        "stone": 0
+      },
+      "woodPreparation": {
+        "goal": "NONE",
+        "activity": "no preparation job",
+        "lastPath": "none",
+        "pathQueries": 0,
+        "recipes": 0,
+        "gates": {
+          "closed": 0,
+          "gate": "",
+          "lastReceipt": {},
+          "opened": 0
+        },
+        "survey": {
+          "canopy": {
+            "blocks": 0,
+            "lastReceipt": {},
+            "target": ""
+          },
+          "lastRoute": {},
+          "target": ""
+        },
+        "lastStep": {},
+        "stepsPlaced": 0,
+        "logs": 0,
+        "craftFailure": "none"
+      },
+      "ironPreparation": {
+        "lastApproach": {},
+        "plannedSite": "",
+        "passage": {
+          "part": 0,
+          "activity": "no prospecting passage",
+          "faceBlock": "",
+          "mode": "descending",
+          "face": "",
+          "reselect": false,
+          "turns": 0,
+          "depth": 0,
+          "root": "",
+          "retainedFloors": 0,
+          "exhausted": false,
+          "failedScans": 0,
+          "entry": "",
+          "frontier": "",
+          "backtracks": 0,
+          "lastRoute": {},
+          "frontierSearch": {
+            "queries": 0,
+            "candidates": 0,
+            "activity": "not checking junctions"
+          }
+        },
+        "ironTaken": 0,
+        "crafted": 0,
+        "furnace": "",
+        "activity": "not preparing iron",
+        "loadedOre": 0,
+        "lastReceipt": {},
+        "fuelStored": false
+      },
+      "ironIngots": 0,
+      "villageSupplies": {
+        "activity": "not seeking village supplies",
+        "lastReceipt": {},
+        "moved": 0,
+        "target": "",
+        "inspected": 0
+      },
+      "ironPickaxe": false,
+      "villageBedding": {
+        "sheepWool": {
+          "sheared": 0,
+          "collected": 0,
+          "lastReceipt": {},
+          "target": "",
+          "craftedShears": 0
+        },
+        "activity": "no village bedding work",
+        "placed": 0,
+        "transfers": 0,
+        "site": "",
+        "recipes": 0,
+        "lastReceipt": {},
+        "store": ""
+      },
+      "ironArmor": {
+        "ready": false,
+        "nextPiece": "CHEST",
+        "equipped": 0,
+        "crafted": 0,
+        "lastReceipt": {},
+        "ironTarget": 8
+      },
+      "equippedArmor": {
+        "feet": "0 minecraft:air",
+        "legs": "0 minecraft:air",
+        "chest": "0 minecraft:air",
+        "head": "0 minecraft:air"
+      },
+      "inventoryRoom": {
+        "lastReceipt": {},
+        "actions": 0
+      },
+      "body": {
+        "activity": "Alder-c557 · sheltered",
+        "passenger": false,
+        "sleeping": true,
+        "courtship": "NONE",
+        "fatigue": 0.00125
+      },
+      "held": "1 minecraft:wooden_hoe",
+      "offhand": "0 minecraft:air",
+      "boat": {
+        "phase": "NONE",
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "launches": 0,
+        "logsGathered": 0,
+        "recipes": 0,
+        "lastReturn": {},
+        "footReturns": 0,
+        "landings": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:workbench:-478,63,-361,minecraft:overworld",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null",
+        "table": "BlockPos{x\u003d-478, y\u003d63, z\u003d-361}"
+      }
+    },
+    {
+      "id": "1d165330-2598-410c-827e-cc3b13c7bef9",
+      "name": "Birch-1d16",
+      "position": [
+        -501.5,
+        64.5625,
+        -385.5
+      ],
+      "production": {
+        "breadCrafted": 0,
+        "actions": {
+          "replantsFromStock": 2,
+          "cropsHarvested": 2,
+          "swordHits": 0,
+          "replantsFromHarvest": 0,
+          "doorsOpened": 1,
+          "doorsClosed": 1
+        },
+        "lastPlant": {},
+        "lastHarvest": {
+          "gameTime": 272352,
+          "position": "-482, 63, -365",
+          "crop": "BEETROOT",
+          "plantingSource": "owned stock",
+          "nativeDrops": [
+            "1 minecraft:beetroot",
+            "3 minecraft:beetroot_seeds"
+          ],
+          "inventoryBefore": [
+            "8 minecraft:carrot",
+            "2 minecraft:wheat",
+            "10 minecraft:wheat_seeds",
+            "6 minecraft:beetroot_seeds",
+            "1 minecraft:bread",
+            "1 minecraft:potato",
+            "0 minecraft:air",
+            "0 minecraft:air"
+          ],
+          "inventoryAfter": [
+            "8 minecraft:carrot",
+            "2 minecraft:wheat",
+            "10 minecraft:wheat_seeds",
+            "8 minecraft:beetroot_seeds",
+            "1 minecraft:bread",
+            "1 minecraft:potato",
+            "1 minecraft:beetroot",
+            "0 minecraft:air"
+          ],
+          "overflow": [],
+          "hoeDamageBefore": 0,
+          "hoeDamageAfter": 0,
+          "hoeBroke": false,
+          "usedHoe": false,
+          "cropAfter": "Block{minecraft:beetroots}[age\u003d0]"
+        },
+        "planted": 0
+      },
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[8 minecraft:carrot, 2 minecraft:wheat, 10 minecraft:wheat_seeds, 8 minecraft:beetroot_seeds, 1 minecraft:bread, 1 minecraft:potato]",
+      "adventure": {
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        },
+        "activity": "no adventure objective",
+        "quarry": {
+          "lastStop": {},
+          "activity": "no quarry job",
+          "stand": "",
+          "centerings": 0,
+          "dug": 0,
+          "lastApproach": {},
+          "step": 0,
+          "lastReceipt": {},
+          "origin": "",
+          "inspection": {
+            "survey": {
+              "lastRoute": {},
+              "target": "",
+              "visited": 0
+            },
+            "lastRetirement": {},
+            "repairs": 0,
+            "returning": false,
+            "reconsidered": 0,
+            "lastRepair": {},
+            "visited": 0,
+            "route": "none",
+            "reviewAt": 0,
+            "target": ""
+          }
+        },
+        "stone": 0
+      },
+      "woodPreparation": {
+        "goal": "NONE",
+        "activity": "no preparation job",
+        "lastPath": "none",
+        "pathQueries": 0,
+        "recipes": 0,
+        "gates": {
+          "closed": 0,
+          "gate": "",
+          "lastReceipt": {},
+          "opened": 0
+        },
+        "survey": {
+          "canopy": {
+            "blocks": 0,
+            "lastReceipt": {},
+            "target": ""
+          },
+          "lastRoute": {},
+          "target": ""
+        },
+        "lastStep": {},
+        "stepsPlaced": 0,
+        "logs": 0,
+        "craftFailure": "none"
+      },
+      "ironPreparation": {
+        "lastApproach": {},
+        "plannedSite": "",
+        "passage": {
+          "part": 0,
+          "activity": "no prospecting passage",
+          "faceBlock": "",
+          "mode": "descending",
+          "face": "",
+          "reselect": false,
+          "turns": 0,
+          "depth": 0,
+          "root": "",
+          "retainedFloors": 0,
+          "exhausted": false,
+          "failedScans": 0,
+          "entry": "",
+          "frontier": "",
+          "backtracks": 0,
+          "lastRoute": {},
+          "frontierSearch": {
+            "queries": 0,
+            "candidates": 0,
+            "activity": "not checking junctions"
+          }
+        },
+        "ironTaken": 0,
+        "crafted": 0,
+        "furnace": "",
+        "activity": "not preparing iron",
+        "loadedOre": 0,
+        "lastReceipt": {},
+        "fuelStored": false
+      },
+      "ironIngots": 0,
+      "villageSupplies": {
+        "activity": "not seeking village supplies",
+        "lastReceipt": {},
+        "moved": 0,
+        "target": "",
+        "inspected": 0
+      },
+      "ironPickaxe": false,
+      "villageBedding": {
+        "sheepWool": {
+          "sheared": 0,
+          "collected": 0,
+          "lastReceipt": {},
+          "target": "",
+          "craftedShears": 0
+        },
+        "activity": "no village bedding work",
+        "placed": 0,
+        "transfers": 0,
+        "site": "",
+        "recipes": 0,
+        "lastReceipt": {},
+        "store": ""
+      },
+      "ironArmor": {
+        "ready": false,
+        "nextPiece": "CHEST",
+        "equipped": 0,
+        "crafted": 0,
+        "lastReceipt": {},
+        "ironTarget": 8
+      },
+      "equippedArmor": {
+        "feet": "0 minecraft:air",
+        "legs": "0 minecraft:air",
+        "chest": "0 minecraft:air",
+        "head": "0 minecraft:air"
+      },
+      "inventoryRoom": {
+        "lastReceipt": {},
+        "actions": 0
+      },
+      "body": {
+        "activity": "Birch-1d16 · sheltered",
+        "passenger": false,
+        "sleeping": true,
+        "courtship": "EXPIRED",
+        "fatigue": 0.0021875
+      },
+      "held": "0 minecraft:air",
+      "offhand": "0 minecraft:air",
+      "boat": {
+        "phase": "NONE",
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "launches": 0,
+        "logsGathered": 0,
+        "recipes": 0,
+        "lastReturn": {},
+        "footReturns": 0,
+        "landings": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:workbench:-478,63,-361,minecraft:overworld",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null",
+        "table": "BlockPos{x\u003d-478, y\u003d63, z\u003d-361}"
+      }
+    },
+    {
+      "id": "438701f4-3aba-4cda-b583-46051f1e0f53",
+      "name": "Oak-4387",
+      "position": [
+        -507.5,
+        64.5625,
+        -337.5
+      ],
+      "production": {
+        "breadCrafted": 0,
+        "actions": {
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0,
+          "doorsOpened": 5,
+          "doorsClosed": 5
+        },
+        "lastPlant": {},
+        "lastHarvest": {},
+        "planted": 0
+      },
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[1 minecraft:potato, 1 minecraft:stick, 3 minecraft:bread, 6 minecraft:beetroot_seeds, 3 minecraft:carrot, 8 minecraft:wheat_seeds]",
+      "adventure": {
+        "stonePickaxe": false,
+        "nominated": false,
+        "mining": {
+          "blocks": 0,
+          "activity": "not quarrying",
+          "lastReceipt": {}
+        },
+        "activity": "no adventure objective",
+        "quarry": {
+          "lastStop": {},
+          "activity": "no quarry job",
+          "stand": "",
+          "centerings": 0,
+          "dug": 0,
+          "lastApproach": {},
+          "step": 0,
+          "lastReceipt": {},
+          "origin": "",
+          "inspection": {
+            "survey": {
+              "lastRoute": {},
+              "target": "",
+              "visited": 0
+            },
+            "lastRetirement": {},
+            "repairs": 0,
+            "returning": false,
+            "reconsidered": 0,
+            "lastRepair": {},
+            "visited": 0,
+            "route": "none",
+            "reviewAt": 0,
+            "target": ""
+          }
+        },
+        "stone": 0
+      },
+      "woodPreparation": {
+        "goal": "NONE",
+        "activity": "no preparation job",
+        "lastPath": "none",
+        "pathQueries": 0,
+        "recipes": 0,
+        "gates": {
+          "closed": 0,
+          "gate": "",
+          "lastReceipt": {},
+          "opened": 0
+        },
+        "survey": {
+          "canopy": {
+            "blocks": 0,
+            "lastReceipt": {},
+            "target": ""
+          },
+          "lastRoute": {},
+          "target": ""
+        },
+        "lastStep": {},
+        "stepsPlaced": 0,
+        "logs": 0,
+        "craftFailure": "none"
+      },
+      "ironPreparation": {
+        "lastApproach": {},
+        "plannedSite": "",
+        "passage": {
+          "part": 0,
+          "activity": "no prospecting passage",
+          "faceBlock": "",
+          "mode": "descending",
+          "face": "",
+          "reselect": false,
+          "turns": 0,
+          "depth": 0,
+          "root": "",
+          "retainedFloors": 0,
+          "exhausted": false,
+          "failedScans": 0,
+          "entry": "",
+          "frontier": "",
+          "backtracks": 0,
+          "lastRoute": {},
+          "frontierSearch": {
+            "queries": 0,
+            "candidates": 0,
+            "activity": "not checking junctions"
+          }
+        },
+        "ironTaken": 0,
+        "crafted": 0,
+        "furnace": "",
+        "activity": "not preparing iron",
+        "loadedOre": 0,
+        "lastReceipt": {},
+        "fuelStored": false
+      },
+      "ironIngots": 0,
+      "villageSupplies": {
+        "activity": "not seeking village supplies",
+        "lastReceipt": {},
+        "moved": 0,
+        "target": "",
+        "inspected": 0
+      },
+      "ironPickaxe": false,
+      "villageBedding": {
+        "sheepWool": {
+          "sheared": 0,
+          "collected": 0,
+          "lastReceipt": {},
+          "target": "",
+          "craftedShears": 0
+        },
+        "activity": "no village bedding work",
+        "placed": 0,
+        "transfers": 0,
+        "site": "",
+        "recipes": 0,
+        "lastReceipt": {},
+        "store": ""
+      },
+      "ironArmor": {
+        "ready": false,
+        "nextPiece": "CHEST",
+        "equipped": 0,
+        "crafted": 0,
+        "lastReceipt": {},
+        "ironTarget": 8
+      },
+      "equippedArmor": {
+        "feet": "0 minecraft:air",
+        "legs": "0 minecraft:air",
+        "chest": "0 minecraft:air",
+        "head": "0 minecraft:air"
+      },
+      "inventoryRoom": {
+        "lastReceipt": {},
+        "actions": 0
+      },
+      "body": {
+        "activity": "Oak-4387 · sheltered",
+        "passenger": false,
+        "sleeping": true,
+        "courtship": "EXPIRED",
+        "fatigue": 0.0018750000000000001
+      },
+      "held": "0 minecraft:air",
+      "offhand": "0 minecraft:air",
+      "boat": {
+        "phase": "NONE",
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "launches": 0,
+        "logsGathered": 0,
+        "recipes": 0,
+        "lastReturn": {},
+        "footReturns": 0,
+        "landings": 0
+      },
+      "tags": [
+        "villagers:native_resident_seen",
+        "villagers:workbench:-478,63,-361,minecraft:overworld",
+        "villagers:managed"
+      ],
+      "woodJob": {
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null",
+        "table": "BlockPos{x\u003d-478, y\u003d63, z\u003d-361}"
+      }
+    },
+    {
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "name": "Clover-edc5",
+      "position": [
+        -466.5,
+        64.5625,
+        -376.5
+      ],
+      "production": {
+        "breadCrafted": 0,
+        "actions": {
+          "replantsFromStock": 0,
+          "cropsHarvested": 0,
+          "swordHits": 0,
+          "replantsFromHarvest": 0,
+          "doorsOpened": 1,
+          "doorsClosed": 1
+        },
+        "lastPlant": {},
+        "lastHarvest": {},
+        "planted": 0
+      },
+      "health": 20.0,
+      "food": 20,
+      "inventory": "[1 minecraft:raw_iron, 1 minecraft:wooden_hoe, 33 minecraft:dirt, 2 minecraft:bread, 2 minecraft:wheat, 4 minecraft:carrot, 4 minecraft:stick, 1 minecraft:iron_ingot]",
+      "adventure": {
+        "stonePickaxe": true,
+        "nominated": true,
+        "mining": {
+          "blocks": 1,
+          "activity": "needs observed exposed natural stone",
+          "lastReceipt": {
+            "drops": [
+              "1 minecraft:raw_iron"
+            ],
+            "toolBefore": "1 minecraft:iron_pickaxe",
+            "gameTime": 270932,
+            "contact": "(-465.502073834282, 57.5002360566255, -384.0)",
+            "position": "-466, 57, -385",
+            "toolDamageAfter": 25,
+            "accessRepaired": false,
+            "toolDamageBefore": 24,
+            "reach": 1.1742239256736084
+          }
+        },
+        "activity": "needs a safe observed mining face",
+        "quarry": {
+          "lastStop": {},
+          "activity": "no quarry job",
+          "stand": "",
+          "centerings": 0,
+          "dug": 0,
+          "lastApproach": {},
+          "step": 16,
+          "lastReceipt": {},
+          "origin": "-480, 63, -379",
+          "inspection": {
+            "survey": {
+              "lastRoute": {},
+              "target": "",
+              "visited": 0
+            },
+            "lastRetirement": {},
+            "repairs": 0,
+            "returning": false,
+            "reconsidered": 0,
+            "lastRepair": {},
+            "visited": 0,
+            "route": "none",
+            "reviewAt": 0,
+            "target": ""
+          }
+        },
+        "stone": 0
+      },
+      "woodPreparation": {
+        "goal": "NONE",
+        "activity": "no preparation job",
+        "lastPath": "none",
+        "pathQueries": 0,
+        "recipes": 0,
+        "gates": {
+          "closed": 0,
+          "gate": "",
+          "lastReceipt": {},
+          "opened": 0
+        },
+        "survey": {
+          "canopy": {
+            "blocks": 0,
+            "lastReceipt": {},
+            "target": ""
+          },
+          "lastRoute": {},
+          "target": ""
+        },
+        "lastStep": {},
+        "stepsPlaced": 0,
+        "logs": 0,
+        "craftFailure": "none"
+      },
+      "ironPreparation": {
+        "lastApproach": {},
+        "plannedSite": "",
+        "passage": {
+          "part": 2,
+          "activity": "no prospecting passage",
+          "faceBlock": "",
+          "mode": "level",
+          "face": "",
+          "reselect": false,
+          "turns": 0,
+          "depth": 3,
+          "root": "-470, 56, -384",
+          "retainedFloors": 74,
+          "exhausted": false,
+          "failedScans": 0,
+          "entry": "-480, 63, -379",
+          "frontier": "",
+          "backtracks": 0,
+          "lastRoute": {},
+          "frontierSearch": {
+            "queries": 0,
+            "candidates": 0,
+            "activity": "not checking junctions"
+          }
+        },
+        "ironTaken": 4,
+        "crafted": 0,
+        "furnace": "-463, 63, -376",
+        "activity": "needs a safe observed mining face",
+        "loadedOre": 4,
+        "lastReceipt": {},
+        "fuelStored": true
+      },
+      "ironIngots": 1,
+      "villageSupplies": {
+        "activity": "not seeking village supplies",
+        "lastReceipt": {},
+        "moved": 0,
+        "target": "",
+        "inspected": 0
+      },
+      "ironPickaxe": true,
+      "villageBedding": {
+        "sheepWool": {
+          "sheared": 0,
+          "collected": 0,
+          "lastReceipt": {},
+          "target": "",
+          "craftedShears": 0
+        },
+        "activity": "no village bedding work",
+        "placed": 0,
+        "transfers": 0,
+        "site": "",
+        "recipes": 0,
+        "lastReceipt": {},
+        "store": ""
+      },
+      "ironArmor": {
+        "ready": false,
+        "nextPiece": "CHEST",
+        "equipped": 0,
+        "crafted": 0,
+        "lastReceipt": {},
+        "ironTarget": 8
+      },
+      "equippedArmor": {
+        "feet": "0 minecraft:air",
+        "legs": "0 minecraft:air",
+        "chest": "0 minecraft:air",
+        "head": "0 minecraft:air"
+      },
+      "inventoryRoom": {
+        "lastReceipt": {
+          "action": "put down superseded pickaxe",
+          "bagBefore": 1,
+          "itemEntity": "229524de-f722-4b18-80aa-c441bea05d8f",
+          "gameTime": 270922,
+          "item": "minecraft:wooden_pickaxe",
+          "bagAfter": 0,
+          "worldCount": 1
+        },
+        "actions": 2
+      },
+      "body": {
+        "activity": "Clover-edc5 · sheltered",
+        "passenger": false,
+        "sleeping": true,
+        "courtship": "NONE",
+        "fatigue": 0.0
+      },
+      "held": "1 minecraft:iron_pickaxe",
+      "offhand": "1 minecraft:stone_pickaxe",
+      "boat": {
+        "phase": "NONE",
+        "activity": "no water trip",
+        "purpose": "NONE",
+        "paddleTicks": 0,
+        "launches": 0,
+        "logsGathered": 0,
+        "recipes": 0,
+        "lastReturn": {},
+        "footReturns": 0,
+        "landings": 0
+      },
+      "tags": [
+        "villagers:mine_floor:-129467495710666",
+        "villagers:mine_floor:-128642862002122",
+        "villagers:mine_floor:-128367984082890",
+        "villagers:mine_floor:-128917739904970",
+        "villagers:mine_floor:-129192617816009",
+        "villagers:mine_floor:-129192617820106",
+        "villagers:mine_floor:-128917739921353",
+        "villagers:mine_floor:-127268472479689",
+        "villagers:quarry_failed:-127268472467393:202145",
+        "villagers:mine_floor:-128093106188234",
+        "villagers:mine_floor:-128093106200521",
+        "villagers:stone_shore:-126168960860097",
+        "villagers:mine_floor:-127543350386633",
+        "villagers:mine_floor:-128367984095178",
+        "villagers:mine_floor:-129742373629895",
+        "villagers:mine_floor:-128917739909066",
+        "villagers:stored_furnace_fuel:-126993594548161",
+        "villagers:mine_floor:-129192617803722",
+        "villagers:mine_floor:-128642862010314",
+        "villagers:mine_floor:-129742373613514",
+        "villagers:mine_floor:-129467495735241",
+        "villagers:mine_floor:-128917739913162",
+        "villagers:stone_shore:-131391641075649",
+        "villagers:mine_floor:-128093106192330",
+        "villagers:mine_floor:-127543350390729",
+        "villagers:mine_floor:-127818228297673",
+        "villagers:mine_floor:-128917739929545",
+        "villagers:mine_floor:-128367984115657",
+        "villagers:mine_floor:-130017251536838",
+        "villagers:mine_floor:-129467495706570",
+        "villagers:mine_floor:-128093106208713",
+        "villagers:stone_shore:-129742373699521",
+        "villagers:mine_floor:-127268472459204",
+        "villagers:mine_floor:-128642861989834",
+        "villagers:mine_floor:-128642861993930",
+        "villagers:mine_floor:-128367984091082",
+        "villagers:mine_floor:-128917739917257",
+        "villagers:mine_floor:-127268472463299",
+        "villagers:stone_shore:-130567007150017",
+        "villagers:mine_floor:-128642861998026",
+        "villagers:adventurer",
+        "villagers:mine_floor:-129742373617610",
+        "villagers:mine_floor:-129467495731145",
+        "villagers:workbench:-463,63,-379,minecraft:overworld",
+        "villagers:mine_floor:-128093106184138",
+        "villagers:mine_floor:-130567007350725",
+        "villagers:mine_floor:-128642862014409",
+        "villagers:mine_floor:-128367984111561",
+        "villagers:mine_floor:-128367984099274",
+        "villagers:managed",
+        "villagers:quarry_failed:-130567007231937:192849",
+        "villagers:mine_floor:-129467495727049",
+        "villagers:mine_floor:-129192617828297",
+        "villagers:mine_floor:-127268472451014",
+        "villagers:mine_floor:-129192617824201",
+        "villagers:mine_floor:-129467495722952",
+        "villagers:mine_floor:-127268472442824",
+        "villagers:quarry:-131666518978497:EAST:16",
+        "villagers:native_resident_seen",
+        "villagers:mine_floor:-128367984107465",
+        "villagers:mine_floor:-131116763164612",
+        "villagers:mine_floor:-129467495714762",
+        "villagers:mine_floor:-130292129443781",
+        "villagers:mine_floor:-128917739900874",
+        "villagers:mine_floor:-127268472467394",
+        "villagers:mine_floor:-128367984086986",
+        "villagers:mine_floor:-128917739896778",
+        "villagers:mine_floor:-128642862006218",
+        "villagers:owned_furnace:-126993594548161:4:4",
+        "villagers:mine_floor:-128093106204617",
+        "villagers:mine_floor:-129467495718858",
+        "villagers:mine_floor:-127818228293577",
+        "villagers:mine_floor:-128642862022601",
+        "villagers:mine_stair:-128917739929544:-131666518978497:EAST:3:2:level:active",
+        "villagers:mine_floor:-127268472455109",
+        "villagers:mine_floor:-129742373621706",
+        "villagers:mine_floor:-130841885257669",
+        "villagers:mine_floor:-128093106180042",
+        "villagers:mine_floor:-127268472446919",
+        "villagers:mine_floor:-129192617811914",
+        "villagers:mine_floor:-127268472483785",
+        "villagers:mine_floor:-128642862018505",
+        "villagers:mine_floor:-129192617799626",
+        "villagers:mine_floor:-128367984103370",
+        "villagers:stone_shore:-128917739769793",
+        "villagers:mine_floor:-128917739925449",
+        "villagers:mine_floor:-128093106196426",
+        "villagers:mine_floor:-129192617807818",
+        "villagers:mine_floor:-129192617832393"
+      ],
+      "woodJob": {
+        "taken": 0,
+        "tree": "null",
+        "blockedTable": "null",
+        "table": "BlockPos{x\u003d-472, y\u003d63, z\u003d-367}"
+      }
+    }
+  ],
+  "residentHealth": [
+    {
+      "health": 20.0,
+      "lastFoodReceived": {},
+      "position": "-524, 64, -323",
+      "id": "5432d3df-f37a-4371-9465-aa1568bb4b02",
+      "campMealRequests": 0,
+      "name": "Nell-5432 · sheltered",
+      "food": 20
+    },
+    {
+      "health": 20.0,
+      "lastFoodReceived": {},
+      "position": "-516, 64, -325",
+      "id": "96cbd3bc-ebc5-4522-b101-b83ee55c471f",
+      "campMealRequests": 0,
+      "name": "Birch-96cb · sheltered",
+      "food": 20
+    },
+    {
+      "health": 20.0,
+      "lastFoodReceived": {},
+      "position": "-483, 64, -288",
+      "id": "f572553d-4483-44b5-8ed5-6ffe7e7745b7",
+      "campMealRequests": 0,
+      "name": "Tansy-f572 · sheltered",
+      "food": 20
+    },
+    {
+      "health": 20.0,
+      "lastFoodReceived": {},
+      "position": "-516, 64, -350",
+      "id": "af2b94ad-f799-4b93-a2c3-e958b2836c84",
+      "campMealRequests": 0,
+      "name": "Dara-af2b · sheltered",
+      "food": 19
+    },
+    {
+      "health": 20.0,
+      "lastFoodReceived": {},
+      "position": "-479, 64, -374",
+      "id": "c5578b5b-8991-428d-9d82-7cb57a956269",
+      "campMealRequests": 0,
+      "name": "Alder-c557 · sheltered",
+      "food": 20
+    },
+    {
+      "health": 20.0,
+      "lastFoodReceived": {},
+      "position": "-502, 64, -386",
+      "id": "1d165330-2598-410c-827e-cc3b13c7bef9",
+      "campMealRequests": 0,
+      "name": "Birch-1d16 · sheltered",
+      "food": 20
+    },
+    {
+      "health": 20.0,
+      "lastFoodReceived": {},
+      "position": "-508, 64, -338",
+      "id": "438701f4-3aba-4cda-b583-46051f1e0f53",
+      "campMealRequests": 0,
+      "name": "Oak-4387 · sheltered",
+      "food": 20
+    },
+    {
+      "health": 20.0,
+      "lastFoodReceived": {},
+      "position": "-467, 64, -377",
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "campMealRequests": 0,
+      "name": "Clover-edc5 · sheltered",
+      "food": 20
+    }
+  ],
+  "elapsed": 8000
+}

@@ -1,0 +1,234 @@
+{
+  "runtime": "runs/native-retained-food-work-v296",
+  "terminal": {
+    "pid": 2251603,
+    "exitCode": 0
+  },
+  "stop": {
+    "air": 300,
+    "position": "(-679.4966535631014, 64.0, -622.4875000119209)",
+    "actor": "fad46718-2403-42a5-9067-b66e72485ec0",
+    "status": "failed",
+    "gameTime": 319562,
+    "stage": "health_stop",
+    "health": 1.0,
+    "elapsed": 2050
+  },
+  "population": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "adventurer": {
+    "actors": [
+      {
+        "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+        "food": 20,
+        "navigation": {
+          "velocity": "(0.0, -0.0784000015258789, 0.0)",
+          "path": {},
+          "onGround": true,
+          "position": "(-474.4906878907131, 56.0, -377.58212086231947)",
+          "wanted": [
+            -474.5,
+            56.0,
+            -377.5
+          ]
+        },
+        "position": "(-474.4906878907131, 56.0, -377.58212086231947)",
+        "mainhand": "1 minecraft:iron_pickaxe",
+        "health": 20.0,
+        "ageTicks": 256088,
+        "iron": {
+          "ironTaken": 3,
+          "crafted": 0,
+          "furnace": "-463, 63, -376",
+          "activity": "mining real surface stone",
+          "loadedOre": 3,
+          "lastReceipt": {},
+          "lastApproach": {},
+          "plannedSite": "",
+          "passage": {
+            "faceBlock": "Block{minecraft:andesite}",
+            "mode": "level",
+            "face": "-475, 57, -377",
+            "reselect": false,
+            "turns": 1,
+            "depth": 2,
+            "root": "-475, 56, -380",
+            "retainedFloors": 99,
+            "part": 1,
+            "activity": "mining real surface stone",
+            "retainedEntries": 1,
+            "exhaustedEntries": 0,
+            "stepsWithoutDepth": 22,
+            "waterSeals": {
+              "placed": 0,
+              "lastReceipt": {},
+              "activity": "no water sealing job",
+              "active": false
+            },
+            "foundations": 0,
+            "lastFoundation": {},
+            "exhausted": false,
+            "failedScans": 0,
+            "entry": "-480, 63, -379",
+            "frontier": "",
+            "backtracks": 0,
+            "lastRoute": {},
+            "frontierSearch": {
+              "activity": "not checking junctions",
+              "queries": 0,
+              "candidates": 0
+            }
+          },
+          "fuelStored": true
+        },
+        "inventory": [
+          "1 minecraft:stone_pickaxe",
+          "1 minecraft:wooden_hoe",
+          "30 minecraft:dirt",
+          "3 minecraft:bread",
+          "2 minecraft:carrot",
+          "4 minecraft:stick",
+          "1 minecraft:raw_iron",
+          "0 minecraft:air"
+        ],
+        "armor": {
+          "equipped": 0,
+          "crafted": 0,
+          "lastReceipt": {},
+          "ironTarget": 8,
+          "ready": false,
+          "nextPiece": "CHEST"
+        }
+      }
+    ],
+    "gameTime": 319552,
+    "elapsed": 2040
+  },
+  "receipts": [
+    {
+      "actor": "460ab4b6-1522-4504-9673-25fd503e0610",
+      "task": "campMeals",
+      "receipt": {
+        "donorSource": "bag",
+        "from": "460ab4b6-1522-4504-9673-25fd503e0610",
+        "to": "4ed39acd-b764-4c41-b799-5ac9d5feefe7",
+        "giverAfter": 0,
+        "handReach": 2.9481421109628365,
+        "ownedItemBefore": 1,
+        "giverBefore": 1,
+        "distance": 3.1917136,
+        "receiverBefore": 0,
+        "contact": "(-632.3966191173572, 66.1, -607.5668172218197)",
+        "ownedItemAfter": 0,
+        "receiverAfter": 1,
+        "item": "minecraft:bread",
+        "count": 1,
+        "gatesClosed": true,
+        "usedEmergencyReserve": true,
+        "gameTime": 318479,
+        "leverRestored": true,
+        "lever": "-634, 66, -610"
+      }
+    },
+    {
+      "actor": "460ab4b6-1522-4504-9673-25fd503e0610",
+      "task": "campWork",
+      "receipt": {
+        "sourceBefore": 2,
+        "moved": 2,
+        "item": "minecraft:bread",
+        "gameTime": 318839,
+        "sourceAfter": 0,
+        "container": "-649, 64, -626"
+      }
+    },
+    {
+      "actor": "460ab4b6-1522-4504-9673-25fd503e0610",
+      "task": "campMeals",
+      "receipt": {
+        "ownedItemBefore": 2,
+        "distance": 2.5726578,
+        "item": "minecraft:bread",
+        "count": 2,
+        "receiverBefore": 0,
+        "receiverAfter": 2,
+        "from": "460ab4b6-1522-4504-9673-25fd503e0610",
+        "usedEmergencyReserve": true,
+        "ownedItemAfter": 0,
+        "handReach": 2.3755788564537044,
+        "donorSource": "bag",
+        "contact": "(-596.4999820890413, 64.5, -613.7124964437561)",
+        "giverBefore": 2,
+        "gameTime": 319329,
+        "giverAfter": 0,
+        "to": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7"
+      }
+    }
+  ],
+  "patients": [
+    {
+      "id": "fad46718-2403-42a5-9067-b66e72485ec0",
+      "name": "Moss-fad4",
+      "position": [
+        -679.4966535631014,
+        64.0,
+        -622.4875000119209
+      ],
+      "health": 1.0,
+      "food": {
+        "foodLevel": 0,
+        "saturation": 0.0,
+        "exhaustion": 2.1909668,
+        "timer": 60
+      },
+      "inventory": []
+    },
+    {
+      "id": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+      "name": "Pip-4c3c",
+      "position": [
+        -596.4999820890413,
+        64.0,
+        -613.8028064378221
+      ],
+      "health": 1.0,
+      "food": {
+        "foodLevel": 12,
+        "saturation": 11.0,
+        "exhaustion": 0.44996908,
+        "timer": 0
+      },
+      "inventory": [
+        {
+          "id": "minecraft:potato",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "4ed39acd-b764-4c41-b799-5ac9d5feefe7",
+      "name": "Willow-4ed3",
+      "position": [
+        -631.5588472320514,
+        65.0,
+        -607.342047203111
+      ],
+      "health": 4.0,
+      "food": {
+        "foodLevel": 5,
+        "saturation": 4.0,
+        "exhaustion": 1.1708714,
+        "timer": 0
+      },
+      "inventory": []
+    }
+  ]
+}

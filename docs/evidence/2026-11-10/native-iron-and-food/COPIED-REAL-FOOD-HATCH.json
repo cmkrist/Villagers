@@ -1,0 +1,502 @@
+{
+  "scope": "Real copied-world hatch and paid-food proof only. This care window stopped at17840/Moss4HP and does NOT prove camp-wide sustainability. Primary unchanged.",
+  "gameTime": 222224,
+  "elapsed": 17840,
+  "stage": "health_stop",
+  "openedFence": [
+    {
+      "position": [
+        -590,
+        63,
+        -588
+      ],
+      "block": {
+        "Name": "minecraft:dark_oak_slab",
+        "Properties": {
+          "type": "top",
+          "waterlogged": "false"
+        }
+      }
+    },
+    {
+      "position": [
+        -590,
+        64,
+        -588
+      ],
+      "block": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      }
+    },
+    {
+      "position": [
+        -590,
+        65,
+        -588
+      ],
+      "block": {
+        "Name": "minecraft:dark_oak_fence",
+        "Properties": {
+          "waterlogged": "false",
+          "west": "false",
+          "east": "false",
+          "south": "true",
+          "north": "true"
+        }
+      }
+    },
+    {
+      "position": [
+        -590,
+        66,
+        -588
+      ],
+      "block": {
+        "Name": "minecraft:dark_oak_fence",
+        "Properties": {
+          "waterlogged": "false",
+          "west": "false",
+          "east": "false",
+          "south": "true",
+          "north": "true"
+        }
+      }
+    },
+    {
+      "position": [
+        -590,
+        67,
+        -588
+      ],
+      "block": {
+        "Name": "minecraft:dark_oak_stairs",
+        "Properties": {
+          "waterlogged": "false",
+          "half": "bottom",
+          "facing": "east",
+          "shape": "straight"
+        }
+      }
+    }
+  ],
+  "parents": [
+    {
+      "id": "0e6136f0-9f73-44de-a539-62c30a83f878",
+      "name": "Fern-0e61",
+      "health": 24.0,
+      "food": 20,
+      "meals": {
+        "waiting": 0,
+        "rejectedPaths": 1,
+        "lastReceipt": {
+          "gameTime": 210599,
+          "distance": 2.641675,
+          "from": "0e6136f0-9f73-44de-a539-62c30a83f878",
+          "to": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+          "giverAfter": 1,
+          "item": "minecraft:bread",
+          "contact": "(-588.1529808591151, 64.5, -587.1835622225362)",
+          "receiverAfter": 1,
+          "receiverBefore": 0,
+          "giverBefore": 2
+        },
+        "patrol": {
+          "target": "",
+          "visited": 31,
+          "lastRoute": {
+            "target": "-626, 74, -621",
+            "end": "",
+            "actor": "(-603.4928943472245, 63.862499952316284, -592.6999999880791)",
+            "nodes": 0,
+            "gameTime": 217629,
+            "moved": false
+          },
+          "until": 0
+        },
+        "activity": "bringing requested food to a camp captive",
+        "delivered": 4,
+        "requests": 5,
+        "hatch": {
+          "opened": 1,
+          "target": "",
+          "lastReceipt": {
+            "upperFenceRetained": true,
+            "tool": "1 minecraft:crossbow",
+            "position": "-590, 64, -588",
+            "nativeWorldDrops": true,
+            "gameTime": 210449,
+            "duration": 60
+          }
+        },
+        "lastApproach": {
+          "recipient": "(-588.1529808591151, 64.0, -587.1835622225362)",
+          "stands": 21,
+          "actor": "(-590.6775540821294, 63.0, -589.4150403750002)",
+          "nodes": 9,
+          "gameTime": 210709,
+          "end": "-591, 63, -588"
+        }
+      },
+      "foodWork": {
+        "repeatHarvests": 0,
+        "target": "",
+        "crafted": 3,
+        "blocked": [],
+        "harvested": 0,
+        "shared": 0
+      }
+    },
+    {
+      "id": "d485788b-10c9-4407-8e58-571b21ae01d2",
+      "name": "Juniper-d485",
+      "health": 24.0,
+      "food": 20,
+      "meals": {
+        "waiting": 0,
+        "rejectedPaths": 2,
+        "lastReceipt": {
+          "giverBefore": 3,
+          "giverAfter": 2,
+          "receiverAfter": 1,
+          "distance": 2.1174653,
+          "contact": "(-632.2707275074857, 65.5, -607.4349414968715)",
+          "from": "d485788b-10c9-4407-8e58-571b21ae01d2",
+          "to": "f13adb74-0ccc-4105-af94-63bc300bc5c3",
+          "receiverBefore": 0,
+          "leverRestored": true,
+          "gameTime": 210768,
+          "gatesClosed": true,
+          "item": "minecraft:bread",
+          "lever": "-634, 66, -610"
+        },
+        "patrol": {
+          "target": "",
+          "visited": 31,
+          "lastRoute": {
+            "target": "-649, 75, -625",
+            "end": "-649, 74, -627",
+            "actor": "(-648.5020709912621, 75.375, -627.3000000119209)",
+            "nodes": 2,
+            "gameTime": 214778,
+            "moved": true
+          },
+          "until": 0
+        },
+        "activity": "handed a real meal through the native cell gate",
+        "delivered": 4,
+        "requests": 6,
+        "hatch": {
+          "opened": 0,
+          "target": "",
+          "lastReceipt": {}
+        },
+        "lastApproach": {
+          "recipient": "(-632.2902889710716, 65.0, -607.5694519895484)",
+          "stands": 30,
+          "actor": "(-632.2725527399499, 66.0, -609.4225986350934)",
+          "nodes": 2,
+          "gameTime": 210748,
+          "end": "-633, 65, -610"
+        }
+      },
+      "foodWork": {
+        "repeatHarvests": 0,
+        "target": "",
+        "crafted": 5,
+        "blocked": [
+          {
+            "position": "-637, 63, -658",
+            "until": 222558
+          },
+          {
+            "position": "-633, 64, -630",
+            "until": 222258
+          },
+          {
+            "position": "-661, 76, -642",
+            "until": 222458
+          },
+          {
+            "position": "-633, 73, -643",
+            "until": 222358
+          }
+        ],
+        "harvested": 0,
+        "shared": 1
+      }
+    }
+  ],
+  "villagers": [
+    {
+      "id": "8ea7e1a5-6ea5-43b7-a3dd-fd713a991f38",
+      "name": "Linden-8ea7",
+      "health": 20.0,
+      "food": 5,
+      "campMeals": {
+        "lastReceived": {
+          "giverBefore": 3,
+          "giverAfter": 2,
+          "receiverAfter": 1,
+          "distance": 2.8271832,
+          "contact": "(-679.5027648376495, 64.5, -623.663232273001)",
+          "from": "0e6136f0-9f73-44de-a539-62c30a83f878",
+          "to": "8ea7e1a5-6ea5-43b7-a3dd-fd713a991f38",
+          "receiverBefore": 0,
+          "leverRestored": true,
+          "gameTime": 206869,
+          "gatesClosed": true,
+          "item": "minecraft:bread",
+          "lever": "-682, 65, -622"
+        },
+        "requests": 2
+      }
+    },
+    {
+      "id": "fad46718-2403-42a5-9067-b66e72485ec0",
+      "name": "Moss-fad4",
+      "health": 4.0,
+      "food": 0,
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      }
+    },
+    {
+      "id": "c73f2812-0861-417f-8180-38f671532381",
+      "name": "Ember-c73f",
+      "health": 13.0,
+      "food": 0,
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      }
+    },
+    {
+      "id": "e028b7be-3415-4f44-8c0e-d73e81ea7fd4",
+      "name": "Tansy-e028",
+      "health": 20.0,
+      "food": 4,
+      "campMeals": {
+        "lastReceived": {
+          "giverBefore": 3,
+          "giverAfter": 2,
+          "receiverAfter": 1,
+          "distance": 2.3442774,
+          "contact": "(-680.5030732583979, 64.5, -623.6168180263065)",
+          "from": "0e6136f0-9f73-44de-a539-62c30a83f878",
+          "to": "e028b7be-3415-4f44-8c0e-d73e81ea7fd4",
+          "receiverBefore": 0,
+          "leverRestored": true,
+          "gameTime": 207189,
+          "gatesClosed": true,
+          "item": "minecraft:bread",
+          "lever": "-682, 65, -622"
+        },
+        "requests": 3
+      }
+    },
+    {
+      "id": "f13adb74-0ccc-4105-af94-63bc300bc5c3",
+      "name": "Dara-f13a",
+      "health": 20.0,
+      "food": 11,
+      "campMeals": {
+        "lastReceived": {
+          "giverBefore": 3,
+          "giverAfter": 2,
+          "receiverAfter": 1,
+          "distance": 2.1174653,
+          "contact": "(-632.2707275074857, 65.5, -607.4349414968715)",
+          "from": "d485788b-10c9-4407-8e58-571b21ae01d2",
+          "to": "f13adb74-0ccc-4105-af94-63bc300bc5c3",
+          "receiverBefore": 0,
+          "leverRestored": true,
+          "gameTime": 210768,
+          "gatesClosed": true,
+          "item": "minecraft:bread",
+          "lever": "-634, 66, -610"
+        },
+        "requests": 2
+      }
+    },
+    {
+      "id": "573a309c-f0fc-4dd1-94cd-8246d352467c",
+      "name": "Dara-573a",
+      "health": 20.0,
+      "food": 10,
+      "campMeals": {
+        "lastReceived": {
+          "giverBefore": 5,
+          "giverAfter": 4,
+          "receiverAfter": 1,
+          "distance": 2.3539238,
+          "contact": "(-632.6112045687926, 65.0, -607.0044268638485)",
+          "from": "d485788b-10c9-4407-8e58-571b21ae01d2",
+          "to": "573a309c-f0fc-4dd1-94cd-8246d352467c",
+          "receiverBefore": 0,
+          "leverRestored": true,
+          "gameTime": 210688,
+          "gatesClosed": true,
+          "item": "minecraft:bread",
+          "lever": "-634, 66, -610"
+        },
+        "requests": 5
+      }
+    },
+    {
+      "id": "64324351-28f6-4bc1-a8f8-949f3300763b",
+      "name": "Oak-6432",
+      "health": 20.0,
+      "food": 10,
+      "campMeals": {
+        "lastReceived": {
+          "giverBefore": 6,
+          "giverAfter": 5,
+          "receiverAfter": 1,
+          "distance": 1.84052,
+          "contact": "(-632.9593353825621, 65.5, -607.6085444103965)",
+          "from": "d485788b-10c9-4407-8e58-571b21ae01d2",
+          "to": "64324351-28f6-4bc1-a8f8-949f3300763b",
+          "receiverBefore": 0,
+          "leverRestored": true,
+          "gameTime": 210558,
+          "gatesClosed": true,
+          "item": "minecraft:bread",
+          "lever": "-634, 66, -610"
+        },
+        "requests": 3
+      }
+    },
+    {
+      "id": "4ed39acd-b764-4c41-b799-5ac9d5feefe7",
+      "name": "Willow-4ed3",
+      "health": 20.0,
+      "food": 10,
+      "campMeals": {
+        "lastReceived": {
+          "giverBefore": 4,
+          "giverAfter": 3,
+          "receiverAfter": 1,
+          "distance": 1.9592807,
+          "contact": "(-632.8829165029974, 65.5, -607.5035540440184)",
+          "from": "d485788b-10c9-4407-8e58-571b21ae01d2",
+          "to": "4ed39acd-b764-4c41-b799-5ac9d5feefe7",
+          "receiverBefore": 0,
+          "leverRestored": true,
+          "gameTime": 210728,
+          "gatesClosed": true,
+          "item": "minecraft:bread",
+          "lever": "-634, 66, -610"
+        },
+        "requests": 4
+      }
+    },
+    {
+      "id": "764e71da-6e8c-4016-b4cb-b9aee031c564",
+      "name": "Birch-764e",
+      "health": 14.0,
+      "food": 0,
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      }
+    },
+    {
+      "id": "88893f4d-fbba-4245-b563-089e8c0a5b52",
+      "name": "Rowan-8889",
+      "health": 9.0,
+      "food": 0,
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      }
+    },
+    {
+      "id": "e3de735e-23c0-421b-a93d-34e386a06ff2",
+      "name": "Juniper-e3de",
+      "health": 20.0,
+      "food": 1,
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      }
+    },
+    {
+      "id": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+      "name": "Pip-4c3c",
+      "health": 18.0,
+      "food": 0,
+      "campMeals": {
+        "lastReceived": {},
+        "requests": 0
+      }
+    },
+    {
+      "id": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+      "name": "Birch-67f3",
+      "health": 20.0,
+      "food": 12,
+      "campMeals": {
+        "lastReceived": {
+          "gameTime": 210599,
+          "distance": 2.641675,
+          "from": "0e6136f0-9f73-44de-a539-62c30a83f878",
+          "to": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+          "giverAfter": 1,
+          "item": "minecraft:bread",
+          "contact": "(-588.1529808591151, 64.5, -587.1835622225362)",
+          "receiverAfter": 1,
+          "receiverBefore": 0,
+          "giverBefore": 2
+        },
+        "requests": 2
+      }
+    },
+    {
+      "id": "d10cee59-b8c5-41fa-863a-1e455d73749b",
+      "name": "Clover-d10c",
+      "health": 20.0,
+      "food": 12,
+      "campMeals": {
+        "lastReceived": {
+          "gameTime": 210459,
+          "distance": 2.1847303,
+          "from": "0e6136f0-9f73-44de-a539-62c30a83f878",
+          "to": "d10cee59-b8c5-41fa-863a-1e455d73749b",
+          "giverAfter": 1,
+          "item": "minecraft:bread",
+          "contact": "(-588.5693537871911, 64.5, -587.862897295102)",
+          "receiverAfter": 1,
+          "receiverBefore": 0,
+          "giverBefore": 2
+        },
+        "requests": 1
+      }
+    }
+  ],
+  "beforeHumanoids": 179,
+  "afterHumanoids": 178,
+  "missingOriginalIds": [
+    "e7f0b50f-ec2b-414f-9d8f-3deebf8f3118"
+  ],
+  "newHumanoidIds": [],
+  "child": [
+    {
+      "nursery": "-664, 64, -630",
+      "attempts": 0,
+      "ageTicks": 17833,
+      "generation": 1,
+      "lastBirth": {},
+      "blocked": "",
+      "juvenile": true,
+      "activity": "not ready for a child",
+      "breedingEnabled": true,
+      "nextBedSearch": 222387,
+      "availableNurseries": [
+        "-660, 64, -628",
+        "-660, 64, -627"
+      ]
+    }
+  ]
+}

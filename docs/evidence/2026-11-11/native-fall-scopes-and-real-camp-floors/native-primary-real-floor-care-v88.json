@@ -1,0 +1,108 @@
+{
+  "runtime": "runs/native-primary-real-floor-care-v88",
+  "terminal.json": {
+    "pid": 1805432,
+    "exitCode": 0,
+    "wallTimeGuard": false,
+    "milestoneRequested": false,
+    "ended": 1794385169.0970955,
+    "evidence": "/home/cmkrist/Documents/Villagers/runs/native-four-regions-play/evidence/play-2026-11-11T08-18-54.252558074Z-8a8313fa"
+  },
+  "result.json": {
+    "requestedNativeTps": 80,
+    "nativeRateVerifiedInObservation": true,
+    "lastObservedNativeTps": 80.0,
+    "observedNativeRates": [
+      20.0,
+      80.0
+    ],
+    "exitCode": 0,
+    "wallTimeGuard": false,
+    "oldSaveUnchanged": true,
+    "beforeHumanoids": 187,
+    "afterHumanoids": 187,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "managedVillagers": 56,
+    "minManagedHealth": 20.0,
+    "adventurer": {
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "position": [
+        -476.3264353684239,
+        60.0,
+        -378.50109411905544
+      ],
+      "health": 20.0,
+      "inventory": [
+        {
+          "id": "minecraft:stone_pickaxe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 70
+          }
+        },
+        {
+          "id": "minecraft:wooden_hoe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 17
+          }
+        },
+        {
+          "id": "minecraft:dirt",
+          "count": 31
+        },
+        {
+          "id": "minecraft:bread",
+          "count": 2
+        },
+        {
+          "id": "minecraft:wheat",
+          "count": 2
+        },
+        {
+          "id": "minecraft:carrot",
+          "count": 6
+        },
+        {
+          "id": "minecraft:stick",
+          "count": 4
+        },
+        {
+          "id": "minecraft:raw_iron",
+          "count": 1
+        }
+      ],
+      "equipment": {
+        "mainhand": {
+          "id": "minecraft:iron_pickaxe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 13
+          }
+        },
+        "offhand": {
+          "id": "minecraft:wooden_pickaxe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 4
+          }
+        }
+      },
+      "food": {
+        "foodLevel": 20,
+        "saturation": 0.0,
+        "exhaustion": 1.1854565,
+        "timer": 0
+      }
+    },
+    "stonePickaxeMilestoneRequested": false,
+    "sourceUnchangedDuringRun": true,
+    "nativeIllagerEnrollmentRequested": false,
+    "ironIngotsMilestoneRequested": false,
+    "ironPickaxeMilestoneRequested": false,
+    "stoneTierPickaxeOwned": true,
+    "ironIngotsOwned": 0,
+    "ironTierPickaxeOwned": true
+  }
+}

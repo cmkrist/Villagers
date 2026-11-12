@@ -1,0 +1,152 @@
+VERIFIED LANGUAGE FOUNDATION: WORD FORMATION, CHILD/ADULT TEACHING AND NATIVE VOICES
+2026-11-11
+
+The implementation and its limits
+
+Villagers now have bounded productive word formation. Four authored semantic
+combinations distinguish wooden/stone hoes and swords. Known material and tool
+roots combine using a learned order and linker; stem length is at most four
+letters, with at most four stored conventions and evidence capped at 1000. Three
+unambiguous public observations are required before a rule is productive. Hearing
+foreign morphology does not replace an established native production convention.
+Unknown roots, ambiguous stem collisions and conflicting readings stay unresolved.
+Established atomic vocabulary retains precedence, preserving existing meanings.
+Old enum ordinals and generic HOE/SWORD item recognition remain intact.
+
+Founding biome languages can differ in head/material order and linker. Adults
+retain authored founding conventions when bootstrapping an old missing formation
+field. Developing children receive no adult formation rules. Both receptive word
+evidence and incomplete formation evidence persist; player glossaries can also
+infer an unheard compound from independently acquired roots and rules. This is
+composition over four known semantic categories, not invention of a new category.
+
+TutorLife is part of the ordinary villager controller after urgent needs,
+committed work and food-help priorities. Teachers display actual owned items using
+a permitted conserved equipment swap. Observers receive all public material/tool
+features, not the teacher's selected noun. Varying exemplars can disambiguate a
+shared head. Lessons use a demonstration, then a spoken request on a later
+200-tick attention turn. A learner independently decodes the raw request and
+points at an actually visible matching object, then speaks its own answer.
+
+The teacher uses its own decoded reply and the public pointing gesture. It never
+reads a learner dictionary or receives the learner's inferred category as an
+answer key. A reply can sound correct to the teacher while the pointed object is
+wrong; that lesson is not confirmed. Teacher journals store only their own
+observed demonstrations and confirmed answers, capped at 32 peer/topic records.
+A child's independently understood YES can reinforce its own successful words.
+No food, tool, adult status, work authority, relationship or private memory is
+created by a lesson. Unsafe, hungry, tired or interrupted bodies can stop teaching.
+
+Adults can request deliberate teaching too. A listener's own incomplete decoding
+of a public demonstration records a temporary need for help. An audible nearby
+repair request includes a visible questioning gesture, allowing a teacher to
+respond before all words are shared. The request and actual response are public;
+teachers do not inspect private vocabulary to decide whether an adult is ignorant.
+Adult lesson requests/attention are transient; acquired words, incomplete grammar
+and the teacher's observed history are saved. Deliberate adult scheduling currently
+uses villager bodies. Pillagers can hear and learn from cross-species public
+examples, but a complete pillager school/negotiation system is not claimed.
+
+Native voices and reciprocal imitation
+
+Actual symbolic utterances now schedule native VILLAGER_AMBIENT or
+PILLAGER_AMBIENT sound pulses. Word strings affect pitch contours, and the body's
+stable UUID affects pitch/rhythm. This supplies individual accents alongside
+shared regional founding dialects and vocabulary changed by life. It does not
+create an unrelated language for every individual or guarantee unique voices in
+an arbitrarily large population. Managed pillagers get separate species founding
+vocabularies without replacing an existing saved vocabulary or cultural origin.
+
+The sound scheduler is bounded to 128 active voice records and 126 pending pulses
+per body. Normal consecutive phrases queue. Overflow explicitly interrupts the
+older queue and records that interruption. Silent speakers cannot emit language.
+Illager physical danger/food priorities and existing urgent native camp alarms
+remain separate from these elective utterances.
+
+Voice memory stores only actual heard sound strings and coarse public voice type,
+not a speaker's intentions, vocabulary meanings, hidden biome or grammar. Each
+body can attempt to reproduce a heard other-species phrase. Early attempts use
+authored articulation substitutions; practice can improve reproduction and borrow
+some target sample timbre. The actual altered strings enter acquisition and
+interpretation. Existing dictionaries may misunderstand them confidently, or
+remain uncertain. Sound-only parroting supplies no grounded meaning evidence,
+although a listener can form a fallible attributed belief from an independently
+understood utterance. Practice does not translate a phrase or grant its meanings.
+
+The current audio is timed native grunts accompanying symbolic word strings.
+It is not waveform recognition, reversible phonetic synthesis or a verified
+natural-sounding spoken language. NPC semantic turns are currently atomic while
+sound playback is timed. Client listening quality, turn synchronization under
+crowded dialogue and population-scale audio mixing remain unmeasured.
+
+Persistence
+
+Mind schema 18 adds saved lesson histories and voice exemplars/practice; glossary
+schema 6 adds formation evidence. Schema 16/17 minds and schema 5 glossaries
+migrate without fabricating lesson success or heard voices. Existing identities,
+words, references, beliefs, commitments and work records are retained. Children
+start with sparse FIRST_WORDS and weak production exposure, without parents'
+adult receptive/morphological mastery or private memories. Frozen controls use
+known language while new lessons, imitation practice and hearing do not mutate
+learned state. Unknown future-schema protections remain active.
+
+Verification and artifact scope
+
+717 Java tests and 19 Python tests passed for the pinned language build.
+Thirteen final native phases passed across four fresh isolated fixture worlds:
+  runs/language-teaching-v3: partial, resume, restart, frozen
+  runs/language-voice-v3: first, restart, frozen
+  runs/language-reception-voices-v2: first, restart, frozen
+  runs/language-life-voices-v2: first, restart, frozen
+
+Pinned artifact/source details and full reports:
+  docs/evidence/2026-11-11/teaching-and-voices/verification.json
+
+The teaching fixture has seven original bodies. A controlled NoAI teacher/child
+pair starts with real FIRST_WORDS, acquires four roots through public lessons,
+then saves two observations of a compound rule at tick 7640. After restart, a
+third demonstration makes the rule usable. The child independently understands,
+produces and answers a request using the never-heard stone-sword form "karnki".
+No lexical entry/evidence for that held-out form exists before evaluation. All six
+actual teaching examples remain conserved. A wall-separated child acquires no
+rule; unrelated emerald vocabulary and adult agreements remain unknown. A separate
+AI-enabled pair completes a bread lesson through ordinary scheduling. A further
+adult pair demonstrates an actual comprehension-gap request and confirmed learning
+of a declared initially missing HOE word. All seven original minds survive exact
+restart checks. This fixture does not assert naturally occurring teaching rates
+or natural child development under survival pressure.
+
+The voice fixture has two stationary NoAI bodies, villager and pillager, in a NEW
+normal-difficulty world. They have different actual species founding vocabularies
+and explicitly declared prior meanings for foreign I/SEE words. Four public bread
+demonstrations acquire the foreign bread label in both directions. Reciprocal
+imitation uses the actually heard phrases and altered emitted strings without
+adding lexical meanings from parroting. Native sample playback methods execute
+for both bodies; one real held bread per actor remains unchanged. Partial motor
+practice and vocabulary reopen exactly, then practice resumes incrementally.
+Frozen controls retain language/voice memory. No client auditory quality result
+or spontaneous cross-species diplomacy is claimed.
+
+Earlier reception and language-life scenarios were rerun on this same artifact,
+checking foreign comprehension/native production, real gifting, actual company,
+construction generalization, restart and frozen compatibility. Failed first voice
+restart fixtures v1/v2 are retained: their harness inspected stationary minds
+before explicitly loading them. v3 corrects that harness issue and passes.
+
+The working tree contains concurrent unrelated work. Evidence pins the executed
+language build and its archived source. Unrelated subsequent working changes are
+listed and preserved; those edits are not claimed as validated by these runs.
+Cultural evaluation reuses this immutable build's files in fresh worlds, never
+opening or advancing its retained society/fixture world.
+
+Reproduce using unused lowercase runtime names:
+  source tools/java-env.sh
+  villagers_select_java
+  ./tools/test.sh --console=plain
+  ./gradlew -I tools/probe-classpath.gradle writeProbeClasspath
+  python3 tools/teaching-server-test.py --runtime-name language-teaching-fresh
+  python3 tools/voice-server-test.py --runtime-name language-voice-fresh
+
+The runners bind localhost ports 25625/25626, require the already accepted prepared
+server EULA, refuse retained directories, archive artifacts/source and retain
+owned-process custody and terminal results. They create only new isolated worlds.

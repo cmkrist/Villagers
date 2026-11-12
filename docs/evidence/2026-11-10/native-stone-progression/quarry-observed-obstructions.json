@@ -1,0 +1,146 @@
+{
+  "scope": "Frozen copied world audit only; no operator-provided worksite used in production",
+  "gameTime": 200147,
+  "hero": [
+    -523.407237823132,
+    63.0,
+    -344.30753876825116
+  ],
+  "survey": {
+    "counts": {
+      "adjacent falling block": 46,
+      "adjacent fluid or unloaded": 123,
+      "covered": 163,
+      "native structure piece": 419,
+      "near furnishings or crops": 208,
+      "not visible top": 258
+    },
+    "examples": [
+      {
+        "safeApproach": false,
+        "root": "-524, 63, -345",
+        "target": "-524, 62, -346",
+        "ready": false,
+        "direction": "NORTH",
+        "reasons": [
+          "native structure piece"
+        ]
+      },
+      {
+        "safeApproach": false,
+        "root": "-524, 63, -345",
+        "target": "-523, 62, -345",
+        "ready": false,
+        "direction": "EAST",
+        "reasons": [
+          "native structure piece"
+        ]
+      },
+      {
+        "safeApproach": false,
+        "root": "-524, 63, -345",
+        "target": "-524, 62, -344",
+        "ready": false,
+        "direction": "SOUTH",
+        "reasons": [
+          "native structure piece"
+        ]
+      },
+      {
+        "safeApproach": false,
+        "root": "-524, 63, -345",
+        "target": "-525, 62, -345",
+        "ready": false,
+        "direction": "WEST",
+        "reasons": [
+          "native structure piece"
+        ]
+      },
+      {
+        "safeApproach": false,
+        "root": "-524, 63, -346",
+        "target": "-524, 62, -347",
+        "ready": false,
+        "direction": "NORTH",
+        "reasons": [
+          "native structure piece"
+        ]
+      },
+      {
+        "safeApproach": false,
+        "root": "-524, 63, -346",
+        "target": "-524, 62, -345",
+        "ready": false,
+        "direction": "SOUTH",
+        "reasons": [
+          "native structure piece"
+        ]
+      },
+      {
+        "safeApproach": false,
+        "root": "-524, 63, -346",
+        "target": "-525, 62, -346",
+        "ready": false,
+        "direction": "WEST",
+        "reasons": [
+          "native structure piece"
+        ]
+      },
+      {
+        "safeApproach": false,
+        "root": "-523, 63, -345",
+        "target": "-522, 62, -345",
+        "ready": false,
+        "direction": "EAST",
+        "reasons": [
+          "native structure piece",
+          "near furnishings or crops"
+        ]
+      },
+      {
+        "safeApproach": false,
+        "root": "-523, 63, -345",
+        "target": "-524, 62, -345",
+        "ready": false,
+        "direction": "WEST",
+        "reasons": [
+          "native structure piece"
+        ]
+      },
+      {
+        "safeApproach": false,
+        "root": "-525, 63, -346",
+        "target": "-525, 62, -347",
+        "ready": false,
+        "direction": "NORTH",
+        "reasons": [
+          "native structure piece",
+          "covered"
+        ]
+      },
+      {
+        "safeApproach": false,
+        "root": "-525, 63, -346",
+        "target": "-524, 62, -346",
+        "ready": false,
+        "direction": "EAST",
+        "reasons": [
+          "native structure piece"
+        ]
+      },
+      {
+        "safeApproach": false,
+        "root": "-525, 63, -346",
+        "target": "-525, 62, -345",
+        "ready": false,
+        "direction": "SOUTH",
+        "reasons": [
+          "native structure piece"
+        ]
+      }
+    ],
+    "candidateRoots": 171,
+    "surveyRadius": 28,
+    "readyExamples": []
+  }
+}

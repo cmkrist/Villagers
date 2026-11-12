@@ -7,11 +7,11 @@ import java.util.Objects;
 import java.util.Set;
 
 /**
- * Something a villager says: concepts in order, the words its lexicon has for them, and whether the concepts are
- * apparent from the situation. Grounded speech (a villager saying "hungry" as it goes for food) teaches listeners;
- * ungrounded speech (gossip about something elsewhere) does not, because nothing shows what the words mean.
+ * Spoken sentence plus legacy concept-word diagnostics. Only sounds cross the interpretation boundary;
+ * learning receives independently observable context, never these intended concept labels.
  */
-public record Utterance(List<Spoken> words, boolean grounded) {
+public record Utterance(List<Spoken> words, boolean grounded, Sentence sentence) {
+    public Utterance(List<Spoken> words, boolean grounded) { this(words, grounded, null); }
     public record Spoken(Concept concept, String word) {
         public Spoken { Objects.requireNonNull(concept); if (!Words.valid(word)) throw new IllegalArgumentException("Invalid word"); }
     }
@@ -28,6 +28,27 @@ public record Utterance(List<Spoken> words, boolean grounded) {
         return words.isEmpty() ? null : new Utterance(words, grounded);
     }
 
+    /** Production speech uses complete clauses. Unknown required words cause silence, never omitted meanings. */
+    public static Utterance compose(Lexicon lexicon, List<Concept> concepts, boolean grounded) {
+        var clauses = Clause.fromConcepts(concepts);
+        if (clauses.isEmpty()) return null;
+        var sentence = Sentence.speak(clauses, lexicon);
+        if (sentence == null) return null;
+        var legacy = of(lexicon, concepts, grounded);
+        return legacy == null ? null : new Utterance(legacy.words(), grounded, sentence);
+    }
+
+    public static Utterance clauses(Lexicon lexicon, List<Clause> clauses, boolean grounded, boolean innovate) {
+        var sentence = Sentence.speak(clauses,lexicon,innovate);
+        if (sentence == null) return null;
+        var words = new ArrayList<Spoken>();
+        for (Clause clause : clauses) for (Concept c : clause.concepts()) {
+            String word = lexicon.wordFor(c);
+            if (word != null) words.add(new Spoken(c,word));
+        }
+        return new Utterance(words,grounded,sentence);
+    }
+
     public Set<Concept> concepts() {
         Set<Concept> result = EnumSet.noneOf(Concept.class);
         words.forEach(spoken -> result.add(spoken.concept()));
@@ -35,26 +56,24 @@ public record Utterance(List<Spoken> words, boolean grounded) {
     }
 
     /**
-     * Update a listener's glossary. Each word counts every concept apparent to the listener as a possible meaning:
-     * the utterance's own concepts when grounded, plus {@code ambient} (what else the listener can see, such as the
-     * item they hold or the villager's current activity).
+     * Update a listener's glossary from observable candidate meanings supplied by the caller.
+     * The speaker's grounding flag and private concept labels supply no evidence.
      */
     public Glossary teach(Glossary glossary, Set<Concept> ambient) {
         Set<Concept> context = EnumSet.noneOf(Concept.class);
         context.addAll(ambient);
-        if (grounded) context.addAll(concepts());
         if (context.isEmpty()) return glossary;
         Glossary result = glossary;
-        for (Spoken spoken : words) result = result.hear(spoken.word(), context);
+        for (String sound : sounds()) if (!sound.equals(";")) result = result.hear(sound, context);
         return result;
     }
 
     /** Only audible sounds cross the acquisition boundary; context comes from the world adapter. */
     public Lexicon teach(Lexicon listener, Set<Concept> visibleContext, java.util.random.RandomGenerator random) {
-        return listener.observe(sounds(), visibleContext, random);
+        return listener.observe(sounds().stream().filter(w -> !w.equals(";")).toList(), visibleContext, random);
     }
 
-    public List<String> sounds() { return words.stream().map(Spoken::word).toList(); }
+    public List<String> sounds() { return sentence == null ? words.stream().map(Spoken::word).toList() : sentence.sounds(); }
 
     /** Correctly decoded fraction; familiar sounds with a different meaning do not count. */
     public double understoodBy(Lexicon listener) {
@@ -79,9 +98,9 @@ public record Utterance(List<Spoken> words, boolean grounded) {
         return text.toString();
     }
 
-    /** Fraction of the words this listener understands, 0 to 1. */
+    /** Diagnostic correctness for legacy words, not the listener's subjective confidence or an AI permission. */
     public double understoodBy(Glossary glossary) {
-        long known = render(glossary).stream().filter(segment -> segment.translation() != null).count();
-        return known / (double) words.size();
+        long known = words.stream().filter(w -> glossary.translate(w.word()) == w.concept()).count();
+        return words.isEmpty() ? 0 : known / (double) words.size();
     }
 }

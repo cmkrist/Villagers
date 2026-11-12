@@ -1,0 +1,44 @@
+--- parent/src/main/java/local/villagers/NativeFoodStorage.java
++++ candidate/src/main/java/local/villagers/NativeFoodStorage.java
+@@ -63,6 +63,11 @@
+             &&level.getFluidState(p.above()).isEmpty()
+             &&level.getBlockState(p.below()).isFaceSturdy(level,p.below(),Direction.UP);
+     }
++    /** The native starting node rounds partial-height feet upward; retain the real off-center body there. */
++    static boolean actualStartFooting(int index,BlockPos node,BlockPos actor,double feetY){
++        return index==0&&Double.isFinite(feetY)&&node.getX()==actor.getX()&&node.getZ()==actor.getZ()
++            &&node.getY()==Math.ceil(feetY);
++    }
+     private static boolean safeRoute(ServerLevel level,Villager v,net.minecraft.world.level.levelgen.structure.BoundingBox bounds,
+                                      net.minecraft.world.level.pathfinder.Path path,boolean critical){
+         if(path==null||!path.canReach())return false;int y=v.getBlockY(),wet=0;
+@@ -76,7 +81,9 @@
+                 double floor=net.minecraft.world.level.pathfinder.WalkNodeEvaluator.getFloorLevel(level,n);
+                 var shape=level.getBlockState(n).getCollisionShape(level,n);
+                 if(!shape.isEmpty())floor=Math.max(floor,n.getY()+shape.max(Direction.Axis.Y));
+-                var feet=new Vec3(n.getX()+.5,floor,n.getZ()+.5);var body=v.getBoundingBox().move(feet.subtract(v.position()));
++                var feet=new Vec3(n.getX()+.5,floor,n.getZ()+.5);
++                var body=actualStartFooting(i,n,v.blockPosition(),v.getY())?v.getBoundingBox()
++                    :v.getBoundingBox().move(feet.subtract(v.position()));
+                 if(!level.noBlockCollision(v,body)||level.noBlockCollision(v,body.move(0,-.03,0)))return false;
+             }
+             y=n.getY();
+--- parent/src/test/java/local/villagers/NativeFoodStorageRouteTest.java
++++ candidate/src/test/java/local/villagers/NativeFoodStorageRouteTest.java
+@@ -4,6 +4,16 @@
+ import org.junit.jupiter.api.Test;
+ import static org.junit.jupiter.api.Assertions.*;
+ class NativeFoodStorageRouteTest {
++    @Test void roundedNativeStartRetainsTheActualPartialHeightBodyOnlyAtTheSameStartingCell(){
++        var actor=new BlockPos(-440,64,-823);var start=new BlockPos(-440,65,-823);
++        assertTrue(NativeFoodStorage.actualStartFooting(0,start,actor,64.5));
++        assertTrue(NativeFoodStorage.actualStartFooting(0,actor,actor,64));
++        assertFalse(NativeFoodStorage.actualStartFooting(1,start,actor,64.5));
++        assertFalse(NativeFoodStorage.actualStartFooting(0,start.offset(1,0,0),actor,64.5));
++        assertFalse(NativeFoodStorage.actualStartFooting(0,start.above(),actor,64.5));
++        assertFalse(NativeFoodStorage.actualStartFooting(0,start,actor,Double.NaN));
++    }
++
+     @Test void aHealthyFoodTripCanCrossTheSingleRecordedShallowWaterCellButNotAChannel(){
+         assertTrue(NativeFoodStorage.waterBudget(false,0));
+         assertTrue(NativeFoodStorage.waterBudget(false,1));

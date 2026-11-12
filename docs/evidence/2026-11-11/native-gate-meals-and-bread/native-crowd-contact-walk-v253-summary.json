@@ -1,0 +1,90 @@
+{
+  "run": "native-crowd-contact-walk-v253",
+  "stop": {
+    "status": "failed",
+    "gameTime": 306479,
+    "stage": "health_stop",
+    "health": 1.0,
+    "elapsed": 1971,
+    "air": 300,
+    "position": "(-597.3948405300232, 64.0, -613.6050576813916)",
+    "actor": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7"
+  },
+  "population": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "actualRecordedHandoffs": [
+    {
+      "usedEmergencyReserve": true,
+      "ownedItemAfter": 2,
+      "handReach": 2.2286317439004493,
+      "donorSource": "bag",
+      "contact": "(-597.3380499718394, 64.5, -613.6617938173413)",
+      "giverBefore": 4,
+      "gameTime": 304787,
+      "giverAfter": 2,
+      "to": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+      "ownedItemBefore": 4,
+      "distance": 2.4376204,
+      "item": "minecraft:potato",
+      "count": 2,
+      "receiverBefore": 0,
+      "receiverAfter": 2,
+      "from": "cb79c23c-9623-45ac-9776-90c0f0a7813e"
+    },
+    {
+      "ownedItemAfter": 0,
+      "receiverAfter": 2,
+      "item": "minecraft:potato",
+      "count": 2,
+      "gatesClosed": true,
+      "usedEmergencyReserve": true,
+      "gameTime": 305037,
+      "leverRestored": true,
+      "lever": "-634, 66, -610",
+      "donorSource": "bag",
+      "from": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "to": "573a309c-f0fc-4dd1-94cd-8246d352467c",
+      "giverAfter": 0,
+      "handReach": 2.9129991228908114,
+      "ownedItemBefore": 2,
+      "giverBefore": 2,
+      "distance": 2.5190654,
+      "receiverBefore": 0,
+      "contact": "(-633.215965277292, 65.5, -606.9440627604738)"
+    },
+    {
+      "ownedItemAfter": 0,
+      "receiverAfter": 1,
+      "item": "minecraft:bread",
+      "count": 1,
+      "gatesClosed": true,
+      "usedEmergencyReserve": true,
+      "gameTime": 305727,
+      "leverRestored": true,
+      "lever": "-634, 66, -610",
+      "donorSource": "bag",
+      "from": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "to": "64324351-28f6-4bc1-a8f8-949f3300763b",
+      "giverAfter": 0,
+      "handReach": 2.72687446119163,
+      "ownedItemBefore": 1,
+      "giverBefore": 1,
+      "distance": 2.4690156,
+      "receiverBefore": 0,
+      "contact": "(-632.5662975453121, 65.5, -608.0456567896468)"
+    }
+  ],
+  "sourceCopyMetadata": "/home/cmkrist/Documents/Villagers/runs/native-eastern-worker-audit-v214/NativeFourRegions",
+  "terminal": {
+    "pid": 2108266,
+    "exitCode": 0
+  }
+}

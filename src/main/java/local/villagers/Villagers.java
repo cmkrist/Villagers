@@ -57,6 +57,7 @@ public class Villagers implements ModInitializer {
         GodChildren.initialize();
         TraderRecruitment.initialize();
         CreatureAgents.initialize();
+        VocalSpeech.initialize();
         WarScenario.initialize();
         NativeRegionsScenario.initialize();
         NativeIllagers.initialize();
@@ -128,6 +129,7 @@ public class Villagers implements ModInitializer {
             TrainingTrial.register(dispatcher);
             VillageSocialProbe.register(dispatcher);
         });
+        NativeCareStartup.initialize();
         UseEntityCallback.EVENT.register((player, level, hand, entity, hit) -> {
             if (!(entity instanceof Villager villager) || !isManaged(villager) || !player.isShiftKeyDown())
                 return InteractionResult.PASS;
@@ -147,6 +149,8 @@ public class Villagers implements ModInitializer {
 
     /** Mixin hook: runs in place of the vanilla brain for adopted villagers. */
     public static void tick(ServerLevel level, Villager villager) { VillagerController.tick(level, villager); }
+    /** Native decisions continue while an adopted mind loads asynchronously. */
+    public static boolean tickIfReady(ServerLevel level,Villager villager){return VillagerController.tick(level,villager);}
 
     public static VillagersConfig config() { return config; }
 

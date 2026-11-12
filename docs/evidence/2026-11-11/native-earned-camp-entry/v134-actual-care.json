@@ -1,0 +1,267 @@
+{
+  "gameTime": 289174,
+  "injured": [
+    {
+      "id": "110491fa-f5bd-4ded-a182-d784a2c91074",
+      "name": "Willow-1104",
+      "health": 19.0,
+      "food": {
+        "foodLevel": 15,
+        "saturation": 0.0,
+        "exhaustion": 1.3471823,
+        "timer": 0
+      },
+      "position": [
+        -421.54520351910026,
+        62.9375,
+        -819.5033750281525
+      ]
+    },
+    {
+      "id": "240e2b57-7cf5-46a4-a9a4-bdd1357cfbc7",
+      "name": "Iris-240e",
+      "health": 18.0,
+      "food": {
+        "foodLevel": 15,
+        "saturation": 0.0,
+        "exhaustion": 2.9155078,
+        "timer": 0
+      },
+      "position": [
+        -421.2254382792823,
+        63.0,
+        -822.7324517089049
+      ]
+    },
+    {
+      "id": "e3de735e-23c0-421b-a93d-34e386a06ff2",
+      "name": "Juniper-e3de",
+      "health": 16.0,
+      "food": {
+        "foodLevel": 4,
+        "saturation": 0.0,
+        "exhaustion": 2.0621648,
+        "timer": 0
+      },
+      "position": [
+        -597.6941021526025,
+        64.0,
+        -613.1540914690145
+      ]
+    },
+    {
+      "id": "f13adb74-0ccc-4105-af94-63bc300bc5c3",
+      "name": "Dara-f13a",
+      "health": 13.0,
+      "food": {
+        "foodLevel": 0,
+        "saturation": 0.0,
+        "exhaustion": 2.045361,
+        "timer": 30
+      },
+      "position": [
+        -632.9412374165146,
+        65.0,
+        -607.5420039584487
+      ]
+    },
+    {
+      "id": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+      "name": "Birch-67f3",
+      "health": 17.0,
+      "food": {
+        "foodLevel": 16,
+        "saturation": 0.0,
+        "exhaustion": 3.8406928,
+        "timer": 0
+      },
+      "position": [
+        -588.1529808591151,
+        64.0,
+        -587.1835622225362
+      ]
+    }
+  ],
+  "dara": {
+    "id": "f13adb74-0ccc-4105-af94-63bc300bc5c3",
+    "type": "minecraft:villager",
+    "position": [
+      -632.9412374165146,
+      65.0,
+      -607.5420039584487
+    ],
+    "health": 13.0,
+    "tags": [
+      "villagers:native_resident_seen",
+      "villagers:managed"
+    ],
+    "noAI": false,
+    "invulnerable": false,
+    "age": 0,
+    "attributes": [
+      {
+        "modifiers": [
+          {
+            "amount": -0.043439379308136114,
+            "operation": "add_multiplied_base",
+            "id": "minecraft:random_spawn_bonus"
+          }
+        ],
+        "base": 16.0,
+        "id": "minecraft:follow_range"
+      },
+      {
+        "base": 0.5,
+        "id": "minecraft:movement_speed"
+      }
+    ],
+    "effects": [],
+    "vehicle": null,
+    "inventory": [],
+    "equipment": {},
+    "meetingPoint": {
+      "value": {
+        "pos": [
+          -198,
+          76,
+          905
+        ],
+        "dimension": "minecraft:overworld"
+      }
+    },
+    "dimensionFolder": "dimensions/minecraft/overworld/entities",
+    "name": "Dara-f13a",
+    "food": {
+      "foodLevel": 0,
+      "saturation": 0.0,
+      "exhaustion": 2.045361,
+      "timer": 30
+    },
+    "home": {
+      "dimension": "minecraft:overworld",
+      "x": -633,
+      "y": 64,
+      "z": -602
+    }
+  },
+  "workers": [
+    {
+      "name": "Pip-460a",
+      "health": 24.0,
+      "food": 20,
+      "inventory": [
+        "0 minecraft:air",
+        "0 minecraft:air",
+        "1 minecraft:bread",
+        "0 minecraft:air",
+        "0 minecraft:air"
+      ],
+      "offhand": "1 minecraft:bread",
+      "campMeals": {
+        "requests": 4,
+        "delivered": 1,
+        "rejectedPaths": 6,
+        "lastReceipt": {
+          "receiverAfter": 1,
+          "donorSource": "bag",
+          "giverAfter": 1,
+          "item": "minecraft:bread",
+          "handReach": 2.7929881974363617,
+          "usedEmergencyReserve": false,
+          "distance": 2.9624276,
+          "from": "460ab4b6-1522-4504-9673-25fd503e0610",
+          "to": "d10cee59-b8c5-41fa-863a-1e455d73749b",
+          "ownedItemAfter": 2,
+          "contact": "(-588.5693537871911, 64.5, -587.862897295102)",
+          "gameTime": 288409,
+          "receiverBefore": 0,
+          "giverBefore": 2,
+          "ownedItemBefore": 3
+        },
+        "hatch": {
+          "opened": 0,
+          "target": "",
+          "lastReceipt": {}
+        },
+        "waiting": 4,
+        "lastApproach": {
+          "end": "-633, 65, -611",
+          "recipient": "(-632.8224600825573, 65.0, -607.4574814089057)",
+          "stands": 35,
+          "actor": "(-633.7550481872786, 64.0, -619.5000034322484)",
+          "nodes": 19,
+          "gameTime": 289139
+        },
+        "patrol": {
+          "visited": 6,
+          "target": "",
+          "lastRoute": {
+            "target": "-616, 64, -594",
+            "moved": false,
+            "actor": "(-612.1979917045493, 67.17675927506424, -591.3000000119209)",
+            "nodes": 0,
+            "gameTime": 288109,
+            "end": "",
+            "patrolCeiling": 66
+          },
+          "cages": 2,
+          "until": 288979
+        },
+        "calls": {
+          "waiting": 4,
+          "target": "-598, 64, -614",
+          "bodyRoutes": {
+            "lastReceipt": {
+              "bodies": [
+                "9d95ae68-7a0d-46ce-b3af-5a69471ac1e3",
+                "66c66299-0e6b-4fb0-8864-94ab4dbe4b82",
+                "f1658252-2899-4697-bbe1-5054bc863d46",
+                "22b5e173-6501-4cb6-bb5b-71352d10f681",
+                "99c34bb9-9f27-4519-a413-d0ec0ce7bd26",
+                "838d6c16-7d9e-44f8-aaf6-cdb15496e636",
+                "16ce29b3-7c25-4e74-bb06-3bcf276bd0c1"
+              ],
+              "from": "(-633.7550481872786, 64.0, -619.5000034322484)",
+              "action": "native route search avoids the actual neighboring living bodies",
+              "gameTime": 289139
+            },
+            "blockedNodes": 1977,
+            "searches": 104
+          },
+          "heard": 53,
+          "entrance": {
+            "removed": 2,
+            "outer": "",
+            "lastReceipt": {
+              "drops": [],
+              "gameTime": 287669,
+              "duration": 200,
+              "tool": "1 minecraft:crossbow",
+              "position": "-612, 66, -603"
+            },
+            "step": 3,
+            "activity": "removed a real block from the narrow camp entrance"
+          },
+          "lastHeard": {
+            "speaker": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+            "sound": "minecraft:entity.villager.no",
+            "distance": 58.239845,
+            "nativeRange": 96.0,
+            "heardRange": 72.0,
+            "position": "-589, 64, -588",
+            "volume": 6.0,
+            "gameTime": 289150
+          }
+        },
+        "activity": "bringing requested food to a camp captive"
+      },
+      "waterSafety": {
+        "nativeFloatTicks": 0,
+        "shore": {},
+        "air": 300,
+        "water": false,
+        "position": "(-640.5018565711891, 64.0, -613.7387032702924)"
+      }
+    }
+  ]
+}

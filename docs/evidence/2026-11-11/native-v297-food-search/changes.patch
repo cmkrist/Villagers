@@ -1,0 +1,76 @@
+--- a/src/main/java/local/villagers/mind/AgentMind.java
++++ b/src/main/java/local/villagers/mind/AgentMind.java
+@@ -499,14 +499,19 @@
+             case FLEE -> false;
+             // Like a player, a villager with a full food bar cannot eat.
+             case FORAGE -> observation.foodAvailable() && observation.hunger() > 0;
+-            case REST -> true; // Resting in place remains possible without an assigned bed.
++            case REST -> !emergencyFoodSearch(observation);
+             case SOCIALIZE -> !observation.night() && observation.health() > 0.3 && observation.hunger() < 0.9;
+             // A hungry agent without known food must still be able to search for it.
+             // Cowards stay in when hurt; the brave also wander at night while healthy, at their own risk.
+-            case EXPLORE -> has(Trait.BRAVE)
++            case EXPLORE -> emergencyFoodSearch(observation) || (has(Trait.BRAVE)
+                     ? observation.health() > 0.3 && (!observation.night() || observation.health() > 0.6)
+-                    : !observation.night() && observation.health() > (has(Trait.COWARD) ? 0.6 : 0.3);
++                    : !observation.night() && observation.health() > (has(Trait.COWARD) ? 0.6 : 0.3));
+         };
++    }
++
++    private static boolean emergencyFoodSearch(Observation observation){
++        // Rest cannot restore a starving body. Danger still forces flight.
++        return observation.hunger()>=.95&&observation.health()>0&&observation.health()<=.3&&!observation.foodAvailable();
+     }
+ 
+     public Action choose(Observation observation, RandomGenerator random) {
+--- a/src/main/java/local/villagers/VillagerController.java
++++ b/src/main/java/local/villagers/VillagerController.java
+@@ -997,6 +997,25 @@
+     }
+ 
+     private static void explore(Villager v, Session s, ServerLevel level) {
++        boolean emergency=s.mind.foodLevel()<=1&&v.getHealth()<=v.getMaxHealth()*.3;
++        if(emergency){
++            var target=s.target;
++            if(target==null){
++                var pos=DefaultRandomPos.getPos(v,7,3);
++                if(pos==null||!VillageSurvival.withinHomeRange(level,s.mind,pos))return;
++                target=BlockPos.containing(pos);
++            }
++            var destination=target;
++            var path=NativePathLimits.search(v,1,()->NativePathLimits.alsoAvoiding(v,
++                p->!level.isLoaded(p)||!level.getFluidState(p).isEmpty()||!level.getFluidState(p.below()).isEmpty(),
++                ()->v.getNavigation().createPath(destination,0,32)));
++            if(!WorkNavigation.staysHome(level,v,s,path)||!BoatTravel.dryPath(level,path)){
++                v.getNavigation().stop();s.target=null;return;
++            }
++            if(v.getNavigation().moveTo(path,.5))s.target=target;
++            if(v.blockPosition().distSqr(target)<4)s.succeeded=true;
++            return;
++        }
+         if (s.target == null) {
+             Vec3 pos = DefaultRandomPos.getPos(v, 7, 3);
+             if (pos != null && VillageSurvival.withinHomeRange(level, s.mind, pos)) {
+--- a/src/test/java/local/villagers/mind/AgentMindTest.java
++++ b/src/test/java/local/villagers/mind/AgentMindTest.java
+@@ -7,6 +7,20 @@
+ 
+ class AgentMindTest {
+     private static final UUID ID = UUID.fromString("12345678-1234-1234-1234-123456789abc");
++
++    @Test void severeHungerAndInjuryDoNotMaskEveryFoodSearchAction(){
++        var mind=new AgentMind(ID);var random=new Random(42);
++        for(boolean night:new boolean[]{false,true}){
++            var starving=new Observation(1,1,.5,.05,false,night,false,false);
++            assertFalse(mind.allowed(Action.REST,starving));
++            assertTrue(mind.allowed(Action.EXPLORE,starving));
++            for(int i=0;i<50;i++)assertEquals(Action.EXPLORE,mind.choose(starving,random));
++            var danger=new Observation(1,1,.5,.05,true,night,false,false);
++            assertEquals(Action.FLEE,mind.choose(danger,random));
++        }
++        assertTrue(mind.allowed(Action.REST,new Observation(.8,.8,.5,.2,false,true,false,false)),
++            "Ordinary injured rest remains available outside the starvation emergency");
++    }
+ 
+     @Test void masksRemainValidDuringExplorationAndDangerOverridesEverything() {
+         AgentMind mind = new AgentMind(ID);

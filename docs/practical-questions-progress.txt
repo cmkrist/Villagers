@@ -1,0 +1,129 @@
+PRACTICAL QUESTIONS AND SOURCES — FULL LANGUAGE GOAL REMAINS ACTIVE
+2026-11-11
+
+Implemented scope
+
+This completes a bounded food-question/investigation slice of priority 2 in
+remaining-language-goal.txt. It builds on the verified person/place references.
+Persistent partnership/work agreements, receptive grammars, word formation,
+childhood teaching and cultural evaluation remain required. This is not general
+human reasoning, unrestricted language invention or completion of the full goal.
+
+A healthy hungry villager without a usable meal can ask a visible neighbor who
+has food. That neighbor parses the actual sounds in its own language and chooses
+an answer from its own beliefs. An unknown answer means lack of knowledge,
+not proof that no food exists. A complete answer must identify a person through
+the asker's own name bindings or conversational I/YOU context. Confidently wrong
+names remain wrong; the intended target is not given to the listener.
+
+A later turn asks how the report is known. Both actors share the existing
+200-tick dialogue attention budget. Replies distinguish a claimed sighting from
+a claimed named source and describe the basis as recent or old. Names in source
+attribution must also be understood. The original responder retains its own
+answer context; it never passes that Entry to the asker's interpreter. Changed,
+expired or displaced contexts cannot silently qualify an unrelated answer.
+
+The asker's independently decoded account retains its immediate speaker, stated
+root, evidence kind and conservative age. A reported sight remains HEARD, not
+OBSERVED. Unqualified and unknown sources get lower decision weights. Old or
+attribution that resolves back to the asker cannot qualify a usable query result.
+There is no omniscient social-network cycle detector: unspoken or mistranslated
+origins remain uncertain. Repetition cannot
+refresh the original age; multiple routes from the same stated root neither add
+confidence nor reset that root's age. Ranking uses strongest evidence rather than
+summing repeated reports. These are bounded heuristics, not calibrated truth
+probabilities or proof that the reported witness told the truth.
+
+Recent means within 400 simulation ticks. With a recent verbal age band, the
+listener conservatively assumes the oldest possible basis in that band. Food
+accounts expire within 600 ticks, rather than allowing fresh hearing to make old
+food last indefinitely. This can reject useful fresh reports when the protocol
+cannot distinguish a new sighting from repetition; it favors bounded uncertain
+memory over invented precision. Exact observation timestamps are not spoken.
+
+The decoded answer can redirect FoodHelp from the witness to the named provider
+only if the seeker independently sees that provider within its existing search
+radius and home permissions. Speech does not reveal an unseen current location.
+Existing navigation, inventory, willingness, reach and recipient capacity checks
+still govern the request and transfer. Receiving a real item records a separate
+observed past GIVE FOOD event. It does not assert the donor still owns more food.
+
+An understood report of no food reduces a lead but remains testimony. Actual
+observation can contradict prior testimony while retaining its attribution.
+A failed transfer is not proof of absent food or deliberate refusal. Stock
+reports distinguish physical possession from shareable meals: a reserved final
+planting root still exists. Only the owner examines its own bag; third-party
+food observations use public held food, visibility and learned names.
+
+Urgent hunger/injury uses the existing direct request path. Healthy inquiries
+have a finite 600-tick context and a 1200-tick initiation cooldown; failed or
+unknown answers fall back to ordinary requests. Pending source questions prevent
+incidental healthy food requests from consuming the asker's food-request budget.
+Frozen mode does not initiate these conversations or mutate this knowledge.
+
+Supported surface vs autonomous behavior
+
+WHO FOOD, WHERE FOOD and SOURCE frames have independent production/interpretation
+checks. Autonomous FoodHelp currently uses WHO FOOD plus SOURCE. Named place
+answers are supported and unit-tested, but an autonomous crop/site investigation
+policy is not claimed. Source chains, circularity, stale accounts, conflicting
+reports and confidently wrong identities have automated checks. The native
+fixture demonstrates a direct witness; multi-hop social diffusion remains part
+of the later cultural evaluation.
+
+Persistence
+
+Mind schema 13 adds provenance to saved beliefs. Schema-12 accounts migrate as
+unqualified testimony from the already-known immediate speaker; no hidden
+original witness is invented. Existing observation remains observation. Existing
+words, references, cultural origin and identities are preserved. The short-lived
+question/answer attention context is session state, so restart cancels a pending
+conversation while preserving the learned account. Future-schema protection
+remains in place.
+
+Verification
+
+Final results, hashes and source-snapshot comparisons are in
+  docs/evidence/2026-11-11/practical-questions/verification.json
+
+The native fixture is a NEW peaceful stone platform with declared prior
+acquaintances. Name acquisition was independently verified by the earlier
+reference fixture and is not claimed here. The hungry seeker starts full-health,
+food8, empty bag; the stationary empty witness can see a farther generous
+provider holding food. The provider starts with two actual bread in its bag and
+one held bread. A stationary control does not know the provider's name.
+
+The production controller runs for seeker/provider. The fixture never calls the
+action adapters, sets post-setup inventories/positions/health, or seeds testimony.
+The witness/control use NoAI to keep their locations fixed; exhaustion0 is an
+explicit controlled condition. No existing society world is opened or advanced.
+
+Required native outcomes: the near empty witness receives the first question;
+a later source question qualifies the parsed named lead; FoodHelp redirects to
+the farther visible provider; actual permitted navigation/delivery conserves one
+bread; observed handoff and hearsay remain distinct; the unacquainted control
+cannot resolve the named lead; all four original bodies survive. A restart
+checks their exact saved language, source records and beliefs before new actions.
+This is server integration evidence, not visual UX, natural emergence or scaling.
+
+Reproduce with a new lowercase runtime name:
+  source tools/java-env.sh
+  villagers_select_java
+  ./tools/test.sh
+  ./gradlew -I tools/probe-classpath.gradle writeProbeClasspath
+  python3 tools/question-server-test.py --runtime-name language-questions-FRESH
+
+The runner refuses retained directories, requires the prepared server's accepted
+EULA, and binds localhost:25621. Each retained runtime pins the actual mod and
+probe JARs, copies the probe, archives source, records owned process custody and
+retains first-run/restart results.
+
+Next priority
+
+Persistent courtship/partnership conversations, followed by practical work
+agreements, must connect independently understood commitments to permitted real
+actions and preserve those commitments across restart. The full goal stays ACTIVE.
+
+Progress update: persistent interpreted partnerships are now implemented in
+docs/partnerships-progress.txt. Work agreements are the next implementation
+priority; the full goal remains ACTIVE.

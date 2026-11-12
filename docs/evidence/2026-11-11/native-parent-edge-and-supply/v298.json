@@ -1,0 +1,251 @@
+{
+  "runtime": "runs/native-frozen-food-store-v298",
+  "terminal": {
+    "pid": 2256454,
+    "exitCode": 0
+  },
+  "population": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "native": {
+    "native-illager-habitats.json": {
+      "status": "failed",
+      "gameTime": 318708,
+      "elapsed": 1196,
+      "actor": "4ed39acd-b764-4c41-b799-5ac9d5feefe7",
+      "health": 1.0,
+      "stage": "health_stop"
+    },
+    "native-emergency-stop.json": {
+      "position": "(-632.3077282040421, 65.0, -607.391088385473)",
+      "air": 300,
+      "elapsed": 1196,
+      "health": 1.0,
+      "stage": "health_stop",
+      "gameTime": 318708,
+      "status": "failed",
+      "actor": "4ed39acd-b764-4c41-b799-5ac9d5feefe7"
+    },
+    "native-care-startup.json": {
+      "schema": 1,
+      "stage": "resumed",
+      "gameTime": 317512,
+      "expectedGameTime": 317512,
+      "resident": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+      "worker": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "bodyBefore": "cb79c23c-9623-45ac-9776-90c0f0a7813e:(-595.5411388274904, 63.0, -629.5383464002545):24.0:false:false:[0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air]:1 minecraft:crossbow:0 minecraft:air",
+      "bodyAfter": "cb79c23c-9623-45ac-9776-90c0f0a7813e:(-595.5411388274904, 63.0, -629.5383464002545):24.0:false:false:[0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air]:1 minecraft:crossbow:0 minecraft:air",
+      "adoption": {
+        "enrolledExisting": 0,
+        "alreadyManaged": true,
+        "id": "cb79c23c-9623-45ac-9776-90c0f0a7813e"
+      },
+      "frozenFrames": 3,
+      "error": ""
+    },
+    "native-adventurer-progress.json": {
+      "elapsed": 1160,
+      "gameTime": 318672,
+      "actors": [
+        {
+          "position": "(-474.27502940780784, 56.0, -379.5296019733395)",
+          "navigation": {
+            "velocity": "(0.0, -0.0784000015258789, 0.0)",
+            "wanted": [
+              -474.5,
+              56.0,
+              -379.5
+            ],
+            "position": "(-474.27502940780784, 56.0, -379.5296019733395)",
+            "onGround": true,
+            "path": {}
+          },
+          "food": 20,
+          "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+          "armor": {
+            "equipped": 0,
+            "nextPiece": "CHEST",
+            "ready": false,
+            "ironTarget": 8,
+            "lastReceipt": {},
+            "crafted": 0
+          },
+          "inventory": [
+            "1 minecraft:stone_pickaxe",
+            "1 minecraft:wooden_hoe",
+            "30 minecraft:dirt",
+            "3 minecraft:bread",
+            "2 minecraft:carrot",
+            "4 minecraft:stick",
+            "1 minecraft:raw_iron",
+            "0 minecraft:air"
+          ],
+          "iron": {
+            "activity": "walking down one retained mine step",
+            "furnace": "-463, 63, -376",
+            "crafted": 0,
+            "ironTaken": 3,
+            "passage": {
+              "face": "-475, 56, -379",
+              "mode": "level",
+              "faceBlock": "Block{minecraft:andesite}",
+              "activity": "walking down one retained mine step",
+              "part": 3,
+              "retainedFloors": 97,
+              "root": "-475, 56, -380",
+              "depth": 0,
+              "turns": 1,
+              "reselect": false,
+              "retainedEntries": 1,
+              "exhaustedEntries": 0,
+              "stepsWithoutDepth": 20,
+              "waterSeals": {
+                "placed": 0,
+                "active": false,
+                "activity": "no water sealing job",
+                "lastReceipt": {}
+              },
+              "foundations": 0,
+              "lastFoundation": {},
+              "exhausted": false,
+              "failedScans": 0,
+              "entry": "-480, 63, -379",
+              "frontier": "",
+              "backtracks": 0,
+              "lastRoute": {},
+              "frontierSearch": {
+                "activity": "not checking junctions",
+                "candidates": 0,
+                "queries": 0
+              }
+            },
+            "plannedSite": "",
+            "lastApproach": {},
+            "lastReceipt": {},
+            "loadedOre": 3,
+            "fuelStored": true
+          },
+          "ageTicks": 255208,
+          "health": 20.0,
+          "mainhand": "1 minecraft:iron_pickaxe"
+        }
+      ]
+    }
+  },
+  "receipts": [
+    {
+      "actor": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "task": "campWork",
+      "receipt": {
+        "contents": [
+          "1 minecraft:egg",
+          "4 minecraft:iron_nugget",
+          "2 minecraft:iron_nugget",
+          "3 minecraft:iron_nugget",
+          "1 minecraft:egg"
+        ],
+        "gameTime": 318089,
+        "inspected": "-616, 64, -633"
+      }
+    },
+    {
+      "actor": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "task": "campWork",
+      "receipt": {
+        "container": "-604, 63, -635",
+        "sourceAfter": 0,
+        "gameTime": 318439,
+        "item": "minecraft:beetroot",
+        "moved": 3,
+        "sourceBefore": 3
+      }
+    }
+  ],
+  "patients": [
+    {
+      "id": "fad46718-2403-42a5-9067-b66e72485ec0",
+      "name": "Moss-fad4",
+      "position": [
+        -679.4966535631014,
+        64.0,
+        -622.4875000119209
+      ],
+      "health": 11.0,
+      "food": {
+        "foodLevel": 0,
+        "saturation": 0.0,
+        "exhaustion": 2.7913027,
+        "timer": 0
+      },
+      "inventory": []
+    },
+    {
+      "id": "e028b7be-3415-4f44-8c0e-d73e81ea7fd4",
+      "name": "Tansy-e028",
+      "position": [
+        -680.3292282843494,
+        64.0,
+        -623.8992385841461
+      ],
+      "health": 6.0,
+      "food": {
+        "foodLevel": 10,
+        "saturation": 7.0,
+        "exhaustion": 0.5564839,
+        "timer": 0
+      },
+      "inventory": [
+        {
+          "id": "minecraft:carrot",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+      "name": "Pip-4c3c",
+      "position": [
+        -596.4996676230056,
+        64.0,
+        -613.7195997790885
+      ],
+      "health": 1.0,
+      "food": {
+        "foodLevel": 2,
+        "saturation": 0.0,
+        "exhaustion": 1.4596164,
+        "timer": 0
+      },
+      "inventory": [
+        {
+          "id": "minecraft:potato",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "4ed39acd-b764-4c41-b799-5ac9d5feefe7",
+      "name": "Willow-4ed3",
+      "position": [
+        -632.3077282040421,
+        65.0,
+        -607.391088385473
+      ],
+      "health": 1.0,
+      "food": {
+        "foodLevel": 0,
+        "saturation": 0.0,
+        "exhaustion": 1.9028848,
+        "timer": 66
+      },
+      "inventory": []
+    }
+  ]
+}

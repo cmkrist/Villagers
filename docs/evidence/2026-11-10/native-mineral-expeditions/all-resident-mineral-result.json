@@ -1,0 +1,362 @@
+{
+  "scope": "All-resident COPY failed a health guard; no primary deployment or copied-save promotion.",
+  "status": {
+    "failure": "java.lang.AssertionError: copy resident health stop: 965a16a4-47eb-4f0f-9670-4333eb02389f",
+    "status": "failed"
+  },
+  "terminal": {
+    "pid": 1208237,
+    "exitCode": 0
+  },
+  "lastProgressElapsed": 15920,
+  "hero": {
+    "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+    "name": "Clover-edc5",
+    "position": [
+      -481.30956521741007,
+      63.0,
+      -359.75275856618237
+    ],
+    "production": {
+      "actions": {
+        "replantsFromHarvest": 4,
+        "swordHits": 0,
+        "cropsHarvested": 6,
+        "replantsFromStock": 2,
+        "doorsClosed": 0,
+        "doorsOpened": 0
+      },
+      "breadCrafted": 0,
+      "planted": 2,
+      "lastHarvest": {
+        "gameTime": 242521,
+        "position": "-482, 63, -360",
+        "crop": "BEETROOT",
+        "plantingSource": "native harvest",
+        "nativeDrops": [
+          "1 minecraft:beetroot",
+          "2 minecraft:beetroot_seeds"
+        ],
+        "inventoryBefore": [
+          "1 minecraft:wooden_pickaxe",
+          "3 minecraft:cobblestone",
+          "48 minecraft:dirt",
+          "2 minecraft:bread",
+          "3 minecraft:carrot",
+          "1 minecraft:stone_pickaxe",
+          "4 minecraft:clay_ball",
+          "1 minecraft:wheat"
+        ],
+        "inventoryAfter": [
+          "1 minecraft:wooden_pickaxe",
+          "3 minecraft:cobblestone",
+          "48 minecraft:dirt",
+          "2 minecraft:bread",
+          "3 minecraft:carrot",
+          "1 minecraft:stone_pickaxe",
+          "4 minecraft:clay_ball",
+          "1 minecraft:wheat"
+        ],
+        "overflow": [
+          "1 minecraft:beetroot",
+          "1 minecraft:beetroot_seeds"
+        ],
+        "hoeDamageBefore": 34,
+        "hoeDamageAfter": 35,
+        "hoeBroke": false,
+        "usedHoe": true,
+        "cropAfter": "Block{minecraft:beetroots}[age=0]"
+      },
+      "lastPlant": {
+        "seedAfter": 3,
+        "hoeBroke": false,
+        "seed": "minecraft:carrot",
+        "crop": "Block{minecraft:carrots}[age=0]",
+        "soil": "-476, 61, -352",
+        "hoeDamageAfter": 34,
+        "nativeVillage": true,
+        "gameTime": 241481,
+        "seedBefore": 4,
+        "hoeDamageBefore": 33
+      }
+    },
+    "health": 20.0,
+    "food": 19,
+    "inventory": "[1 minecraft:wooden_pickaxe, 3 minecraft:cobblestone, 48 minecraft:dirt, 2 minecraft:bread, 3 minecraft:carrot, 1 minecraft:stone_pickaxe, 4 minecraft:clay_ball, 1 minecraft:wheat]",
+    "adventure": {
+      "mining": {
+        "blocks": 0,
+        "lastReceipt": {},
+        "activity": "needs observed exposed natural stone"
+      },
+      "nominated": true,
+      "stonePickaxe": true,
+      "stone": 3,
+      "quarry": {
+        "centerings": 0,
+        "stand": "",
+        "activity": "waiting to plan a quarry survey walk",
+        "lastStop": {
+          "actor": "-477, 63, -353",
+          "gameTime": 241371,
+          "step": 2,
+          "idleTicks": 0,
+          "target": "-477, 61, -352",
+          "reason": "target is not natural overburden",
+          "block": "Block{minecraft:farmland}[moisture=0]"
+        },
+        "inspection": {
+          "returning": false,
+          "target": "",
+          "lastRepair": {},
+          "reconsidered": 0,
+          "reviewAt": 242115,
+          "survey": {
+            "visited": 1,
+            "target": "",
+            "lastRoute": {
+              "nodes": 25,
+              "gameTime": 240491,
+              "moved": true,
+              "target": "-489, 63, -359",
+              "origin": "-465, 63, -359",
+              "end": "-489, 63, -359"
+            }
+          },
+          "repairs": 0,
+          "visited": 0,
+          "route": "none"
+        },
+        "origin": "",
+        "lastReceipt": {
+          "step": 2,
+          "gameTime": 241271,
+          "position": "-477, 62, -352",
+          "drops": [
+            "1 minecraft:dirt"
+          ]
+        },
+        "step": 0,
+        "lastApproach": {
+          "actor": "(-484.0350712180572, 63.0, -360.506180984768)",
+          "nodes": 26,
+          "gameTime": 241081,
+          "end": "-477, 63, -353",
+          "safe": true,
+          "accepted": true,
+          "target": "-476, 62, -352"
+        },
+        "dug": 2
+      },
+      "activity": "waiting to plan a quarry survey walk"
+    },
+    "woodPreparation": {
+      "lastPath": "none",
+      "activity": "no preparation job",
+      "logs": 0,
+      "pathQueries": 0,
+      "lastStep": {},
+      "goal": "NONE",
+      "stepsPlaced": 0,
+      "recipes": 0
+    },
+    "ironPreparation": {
+      "crafted": 0,
+      "ironTaken": 0,
+      "passage": {
+        "faceBlock": "",
+        "activity": "no prospecting passage",
+        "part": 0,
+        "retainedFloors": 55,
+        "root": "",
+        "depth": 0,
+        "turns": 0,
+        "reselect": false,
+        "face": "",
+        "mode": "descending",
+        "exhausted": false,
+        "failedScans": 0,
+        "entry": ""
+      },
+      "plannedSite": "",
+      "lastApproach": {},
+      "lastReceipt": {},
+      "loadedOre": 0,
+      "activity": "waiting to plan a quarry survey walk",
+      "furnace": "-463, 63, -376"
+    },
+    "ironIngots": 0,
+    "villageSupplies": {
+      "activity": "not seeking village supplies",
+      "inspected": 0,
+      "target": "",
+      "moved": 0,
+      "lastReceipt": {}
+    },
+    "ironPickaxe": false,
+    "inventoryRoom": {
+      "actions": 0,
+      "lastReceipt": {}
+    },
+    "body": {
+      "passenger": false,
+      "activity": "Clover-edc5 \u00b7 approaching approved farm ground",
+      "fatigue": 0.16468749999999788,
+      "courtship": "NONE",
+      "sleeping": false
+    },
+    "held": "1 minecraft:wooden_hoe",
+    "boat": {
+      "recipes": 0,
+      "logsGathered": 0,
+      "launches": 0,
+      "paddleTicks": 0,
+      "purpose": "NONE",
+      "activity": "boat preparation timed out",
+      "phase": "NONE",
+      "landings": 0,
+      "footReturns": 0,
+      "lastReturn": {}
+    },
+    "tags": [
+      "villagers:mine_floor:-128642862002122",
+      "villagers:mine_floor:-131116763054021",
+      "villagers:mine_floor:-129192617816009",
+      "villagers:mine_floor:-129192617820106",
+      "villagers:mine_floor:-128367984005059",
+      "villagers:mine_floor:-130292129333186",
+      "villagers:mine_floor:-130567007240131",
+      "villagers:mine_floor:-128093106188234",
+      "villagers:mine_floor:-131666518978498",
+      "villagers:stone_shore:-126168960860097",
+      "villagers:mine_floor:-134965053788102",
+      "villagers:mine_floor:-128367984017350",
+      "villagers:mine_floor:-128367984095178",
+      "villagers:quarry_failed:-131941396737985:225685",
+      "villagers:mine_floor:-129742373629895",
+      "villagers:mine_floor:-128917739909066",
+      "villagers:mine_floor:-128367984000962",
+      "villagers:mine_floor:-130841885179844",
+      "villagers:quarry_failed:-131391640993729:223645",
+      "villagers:mine_floor:-131116763017157",
+      "villagers:quarry_failed:-128367984000961:227745",
+      "villagers:mine_floor:-128642862010314",
+      "villagers:mine_floor:-128917739913162",
+      "villagers:mine_floor:-135789687508931",
+      "villagers:mine_floor:-136064565415874",
+      "villagers:stone_shore:-131391641075649",
+      "villagers:mine_floor:-128093106192330",
+      "villagers:mine_floor:-135514809601988",
+      "villagers:mine_floor:-131116763086787",
+      "villagers:mine_floor:-131391641071555",
+      "villagers:mine_floor:-135239931695045",
+      "villagers:mine_floor:-130017251536838",
+      "villagers:quarry_failed:-131666518978497:218115",
+      "villagers:stone_shore:-129742373699521",
+      "villagers:mine_floor:-130841885147076",
+      "villagers:mine_floor:-127268472459204",
+      "villagers:mine_floor:-131941396737986",
+      "villagers:mine_floor:-127268472463299",
+      "villagers:stone_shore:-130567007150017",
+      "villagers:mine_floor:-130841885110214",
+      "villagers:adventurer",
+      "villagers:workbench:-463,63,-379,minecraft:overworld",
+      "villagers:mine_floor:-130567007350726",
+      "villagers:mine_floor:-128367984009156",
+      "villagers:mine_floor:-130567007350725",
+      "villagers:mine_floor:-128367984099274",
+      "villagers:managed",
+      "villagers:mine_floor:-128367984013253",
+      "villagers:mine_floor:-127268472451014",
+      "villagers:mine_floor:-131391640960966",
+      "villagers:mine_floor:-130292129365958",
+      "villagers:mine_floor:-129467495722952",
+      "villagers:mine_floor:-127268472442824",
+      "villagers:quarry_failed:-136064565415873:219965",
+      "villagers:native_resident_seen",
+      "villagers:mine_floor:-131391640924100",
+      "villagers:mine_floor:-131116763164612",
+      "villagers:mine_floor:-130292129443781",
+      "villagers:mine_floor:-127268472467394",
+      "villagers:quarry_failed:-130292129333185:241371",
+      "villagers:mine_floor:-128642862006218",
+      "villagers:mine_floor:-131391640993730",
+      "villagers:mine_floor:-127268472455109",
+      "villagers:mine_floor:-130841885257669",
+      "villagers:mine_floor:-127268472446919",
+      "villagers:mine_floor:-128367984103370",
+      "villagers:stone_shore:-128917739769793",
+      "villagers:mine_floor:-128093106196426",
+      "villagers:mine_floor:-130567007272901",
+      "villagers:owned_furnace:-126993594548161:0:0",
+      "villagers:mine_floor:-131666518831043"
+    ],
+    "woodJob": {
+      "tree": "null",
+      "taken": 0,
+      "table": "BlockPos{x=-478, y=63, z=-361}",
+      "blockedTable": "null"
+    }
+  },
+  "starvingResident": {
+    "id": "965a16a4-47eb-4f0f-9670-4333eb02389f",
+    "type": "minecraft:villager",
+    "position": [
+      636.5420584697838,
+      100.0,
+      304.18415356288654
+    ],
+    "health": 7.0,
+    "tags": [
+      "villagers:native_resident_seen",
+      "villagers:workbench:644,99,296,minecraft:overworld",
+      "villagers:managed"
+    ],
+    "noAI": false,
+    "invulnerable": false,
+    "age": 0,
+    "attributes": [
+      {
+        "base": 0.5,
+        "id": "minecraft:movement_speed"
+      },
+      {
+        "modifiers": [
+          {
+            "amount": 0.06180574639079067,
+            "operation": "add_multiplied_base",
+            "id": "minecraft:random_spawn_bonus"
+          }
+        ],
+        "base": 16.0,
+        "id": "minecraft:follow_range"
+      }
+    ],
+    "effects": [],
+    "vehicle": null,
+    "inventory": [
+      {
+        "id": "minecraft:wheat",
+        "count": 9
+      }
+    ],
+    "equipment": {},
+    "meetingPoint": null,
+    "dimensionFolder": "dimensions/minecraft/overworld/entities",
+    "name": "Willow-965a",
+    "food": {
+      "foodLevel": 0,
+      "saturation": 0.0,
+      "exhaustion": 0.3363451,
+      "timer": 0
+    },
+    "home": null
+  },
+  "copyHumanoids": 179,
+  "primaryAudit": {
+    "humanoids": 179,
+    "managedVillagers": 33,
+    "minimumManagedHealth": 20.0
+  },
+  "productionArtifactSHA256": "330e5fbc16e568e7cd738217fc7baa47b1c021006a2a7b739b482b82af0b495a"
+}

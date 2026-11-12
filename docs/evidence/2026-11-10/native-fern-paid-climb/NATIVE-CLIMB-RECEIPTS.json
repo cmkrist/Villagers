@@ -1,0 +1,970 @@
+[
+  {
+    "runtime": "runs/native-fern-directed-passage-frozen-v3",
+    "status": "passed",
+    "stage": "frozen_station_routes",
+    "elapsed": 0,
+    "initial": {
+      "health": 8.0,
+      "food": 0,
+      "position": [
+        657.2877594827147,
+        86.0,
+        306.6539734245425
+      ],
+      "inventory": "[10 minecraft:sand, 9 minecraft:wheat]"
+    },
+    "final": {
+      "health": 8.0,
+      "food": 0,
+      "position": [
+        657.2877594827147,
+        86.0,
+        306.6539734245425
+      ],
+      "inventory": "[10 minecraft:sand, 9 minecraft:wheat]",
+      "breadCrafted": 0
+    },
+    "foodAccess": {
+      "activity": "no food access trip",
+      "lastFailure": "none",
+      "lastPlan": {
+        "directedRetry": true,
+        "closest": "645, 99, 295",
+        "cachedCells": 3323,
+        "found": true,
+        "clear": 978,
+        "diggable": 2067,
+        "edge": [],
+        "distance": 1,
+        "goals": [
+          "644, 99, 295",
+          "645, 99, 295",
+          "645, 100, 296"
+        ],
+        "targets": [
+          "644, 99, 296"
+        ]
+      },
+      "digs": 0,
+      "arrivals": 0
+    },
+    "stationPassage": {
+      "digs": 32,
+      "steps": [
+        {
+          "dig": [],
+          "feet": "657, 86, 305"
+        },
+        {
+          "dig": [],
+          "feet": "657, 87, 304"
+        },
+        {
+          "dig": [],
+          "feet": "657, 87, 303"
+        },
+        {
+          "dig": [],
+          "feet": "657, 87, 302"
+        },
+        {
+          "dig": [
+            "657, 88, 301"
+          ],
+          "feet": "657, 88, 301"
+        },
+        {
+          "dig": [
+            "656, 90, 301",
+            "656, 89, 301"
+          ],
+          "feet": "656, 89, 301"
+        },
+        {
+          "dig": [
+            "655, 90, 301"
+          ],
+          "feet": "655, 90, 301"
+        },
+        {
+          "dig": [],
+          "feet": "655, 91, 300"
+        },
+        {
+          "dig": [],
+          "feet": "654, 91, 300"
+        },
+        {
+          "dig": [],
+          "feet": "653, 91, 299"
+        },
+        {
+          "dig": [
+            "653, 93, 298"
+          ],
+          "feet": "653, 92, 298"
+        },
+        {
+          "dig": [
+            "652, 93, 298",
+            "652, 92, 298"
+          ],
+          "feet": "652, 92, 298"
+        },
+        {
+          "dig": [
+            "651, 93, 298",
+            "651, 92, 298"
+          ],
+          "feet": "651, 92, 298"
+        },
+        {
+          "dig": [
+            "650, 93, 298",
+            "650, 92, 298"
+          ],
+          "feet": "650, 92, 298"
+        },
+        {
+          "dig": [
+            "649, 93, 298",
+            "649, 92, 298"
+          ],
+          "feet": "649, 92, 298"
+        },
+        {
+          "dig": [
+            "648, 93, 298",
+            "648, 92, 298"
+          ],
+          "feet": "648, 92, 298"
+        },
+        {
+          "dig": [
+            "648, 94, 298",
+            "648, 94, 299",
+            "648, 93, 299"
+          ],
+          "feet": "648, 93, 299"
+        },
+        {
+          "dig": [
+            "649, 96, 299",
+            "649, 95, 299",
+            "649, 94, 299",
+            "649, 93, 299"
+          ],
+          "feet": "649, 93, 299"
+        },
+        {
+          "dig": [
+            "649, 96, 300",
+            "649, 95, 300",
+            "649, 94, 300"
+          ],
+          "feet": "649, 94, 300"
+        },
+        {
+          "dig": [
+            "648, 97, 300",
+            "648, 96, 300",
+            "648, 95, 300"
+          ],
+          "feet": "648, 95, 300"
+        },
+        {
+          "dig": [
+            "647, 98, 300",
+            "647, 97, 300",
+            "647, 96, 300"
+          ],
+          "feet": "647, 96, 300"
+        },
+        {
+          "dig": [
+            "646, 97, 300"
+          ],
+          "feet": "646, 97, 300"
+        },
+        {
+          "dig": [],
+          "feet": "645, 98, 300"
+        },
+        {
+          "dig": [],
+          "feet": "645, 99, 299"
+        },
+        {
+          "dig": [],
+          "feet": "646, 99, 298"
+        },
+        {
+          "dig": [],
+          "feet": "647, 99, 298"
+        },
+        {
+          "dig": [],
+          "feet": "648, 99, 298"
+        },
+        {
+          "dig": [],
+          "feet": "648, 99, 297"
+        },
+        {
+          "dig": [],
+          "feet": "648, 99, 296"
+        },
+        {
+          "dig": [],
+          "feet": "648, 99, 295"
+        },
+        {
+          "dig": [],
+          "feet": "647, 99, 295"
+        },
+        {
+          "dig": [],
+          "feet": "646, 99, 295"
+        },
+        {
+          "dig": [],
+          "feet": "645, 99, 295"
+        }
+      ],
+      "found": true
+    },
+    "terminal": {
+      "pid": 1234487,
+      "exitCode": 0
+    },
+    "productionJar": {
+      "villagers-0.4.1-dev.jar": "e7a48603bfd2506f97d1478945022e51ddd06f4876a9badd3937bbb964b0a994"
+    }
+  },
+  {
+    "runtime": "runs/native-fern-directed-passage-cycle-v4",
+    "status": "failed",
+    "stage": "health_stop",
+    "elapsed": 21452,
+    "initial": {
+      "health": 20.0,
+      "food": 16,
+      "position": [
+        646.6314552898982,
+        73.0,
+        332.27950138091444
+      ],
+      "inventory": "[]"
+    },
+    "final": {
+      "health": 8.0,
+      "food": 0,
+      "position": [
+        648.3000000119209,
+        93.0,
+        299.69999998807907
+      ],
+      "inventory": "[9 minecraft:sand, 9 minecraft:wheat]",
+      "breadCrafted": 0
+    },
+    "foodAccess": {
+      "lastFailure": "dig rejected at 649, 96, 299 from (648.3000000119209, 93.0, 299.69999998807907): safe=true, reach=5.014399948692322, visible=false",
+      "activity": "walking the clear food passage",
+      "arrivals": 1,
+      "digs": 14,
+      "lastPlan": {
+        "table": "644, 99, 296",
+        "digs": 13,
+        "gameTime": 226398,
+        "visited": 267,
+        "store": "644, 99, 296",
+        "edible": false,
+        "steps": 14
+      }
+    },
+    "stationPassage": null,
+    "terminal": {
+      "pid": 1235516,
+      "exitCode": 0
+    },
+    "productionJar": {
+      "villagers-0.4.1-dev.jar": "cd17409742d95ad1903976528880ff25c51b01480fe33203f6bcd2f632e2f896"
+    }
+  },
+  {
+    "runtime": "runs/native-fern-side-sand-contact-v7",
+    "status": "failed",
+    "stage": "bounded_observation",
+    "elapsed": 240,
+    "initial": {
+      "health": 8.0,
+      "food": 0,
+      "position": [
+        648.3000000119209,
+        93.0,
+        299.69999998807907
+      ],
+      "inventory": "[9 minecraft:sand, 9 minecraft:wheat]"
+    },
+    "final": {
+      "health": 6.0,
+      "food": 0,
+      "position": [
+        648.3000000119209,
+        93.0,
+        299.69999998807907
+      ],
+      "inventory": "[11 minecraft:sand, 9 minecraft:wheat]",
+      "breadCrafted": 0
+    },
+    "foodAccess": {
+      "lastPlan": {
+        "visited": 213,
+        "store": "644, 99, 296",
+        "edible": false,
+        "steps": 14,
+        "table": "644, 99, 296",
+        "digs": 13,
+        "gameTime": 226813
+      },
+      "lastFailure": "none",
+      "settlingWaits": 1,
+      "recentWork": [
+        {
+          "gameTime": 226893,
+          "drops": [],
+          "block": "Block{minecraft:sandstone}",
+          "jobDigs": 1,
+          "contact": "(649.0, 94.55000000248353, 299.58333332919415)",
+          "position": "649, 94, 299"
+        },
+        {
+          "gameTime": 226933,
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "block": "Block{minecraft:sand}",
+          "jobDigs": 2,
+          "contact": "(649.0, 94.55000000248353, 299.58333332919415)",
+          "position": "649, 94, 299"
+        },
+        {
+          "gameTime": 226963,
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "block": "Block{minecraft:sand}",
+          "jobDigs": 3,
+          "contact": "(649.0, 94.55000000248353, 299.58333332919415)",
+          "position": "649, 94, 299"
+        }
+      ],
+      "activity": "digging a natural step to reach food",
+      "digs": 3,
+      "arrivals": 0
+    },
+    "stationPassage": {
+      "found": true,
+      "steps": [
+        {
+          "feet": "649, 93, 299",
+          "dig": [
+            "649, 94, 299",
+            "649, 95, 299",
+            "649, 96, 299",
+            "649, 93, 299"
+          ]
+        },
+        {
+          "feet": "649, 94, 300",
+          "dig": [
+            "649, 95, 300",
+            "649, 96, 300",
+            "649, 94, 300"
+          ]
+        },
+        {
+          "feet": "649, 95, 301",
+          "dig": [
+            "649, 96, 301",
+            "649, 97, 301",
+            "649, 95, 301"
+          ]
+        },
+        {
+          "feet": "648, 96, 301",
+          "dig": [
+            "648, 97, 301",
+            "648, 96, 301"
+          ]
+        },
+        {
+          "feet": "648, 97, 300",
+          "dig": [
+            "648, 97, 300"
+          ]
+        },
+        {
+          "feet": "649, 98, 300",
+          "dig": []
+        },
+        {
+          "feet": "648, 99, 299",
+          "dig": []
+        },
+        {
+          "feet": "648, 99, 298",
+          "dig": []
+        },
+        {
+          "feet": "648, 99, 297",
+          "dig": []
+        },
+        {
+          "feet": "648, 99, 296",
+          "dig": []
+        },
+        {
+          "feet": "648, 99, 295",
+          "dig": []
+        },
+        {
+          "feet": "647, 99, 295",
+          "dig": []
+        },
+        {
+          "feet": "646, 99, 295",
+          "dig": []
+        },
+        {
+          "feet": "645, 99, 295",
+          "dig": []
+        }
+      ],
+      "digs": 13
+    },
+    "terminal": {
+      "pid": 1263159,
+      "exitCode": 0
+    },
+    "productionJar": {
+      "villagers-0.4.1-dev.jar": "6710bd7182aa0d5d50b6dab15c577b38bd91c71b8547d27bb59ba868d6330af9"
+    }
+  },
+  {
+    "runtime": "runs/native-fern-side-sand-cycle-v8",
+    "status": "failed",
+    "stage": "health_stop",
+    "elapsed": 21439,
+    "initial": {
+      "health": 20.0,
+      "food": 16,
+      "position": [
+        646.6314552898982,
+        73.0,
+        332.27950138091444
+      ],
+      "inventory": "[]"
+    },
+    "final": {
+      "health": 8.0,
+      "food": 0,
+      "position": [
+        649.5213855129225,
+        94.0,
+        300.2914729937142
+      ],
+      "inventory": "[18 minecraft:sand, 3 minecraft:wheat, 3 minecraft:wheat_seeds]",
+      "breadCrafted": 0
+    },
+    "foodAccess": {
+      "arrivals": 0,
+      "lastPlan": {
+        "visited": 12504,
+        "store": "644, 99, 296",
+        "edible": false,
+        "steps": 19,
+        "table": "644, 99, 296",
+        "digs": 19,
+        "gameTime": 223425
+      },
+      "lastFailure": "none",
+      "settlingWaits": 1,
+      "recentWork": [
+        {
+          "gameTime": 225025,
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "block": "Block{minecraft:sand}",
+          "jobDigs": 8,
+          "contact": "(649.0, 94.55267041681628, 299.39653428759027)",
+          "position": "649, 94, 299"
+        },
+        {
+          "gameTime": 225115,
+          "drops": [],
+          "block": "Block{minecraft:sandstone}",
+          "jobDigs": 9,
+          "contact": "(649.0, 93.99159053951082, 299.39653428759027)",
+          "position": "649, 93, 299"
+        },
+        {
+          "gameTime": 225485,
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "block": "Block{minecraft:sand}",
+          "jobDigs": 10,
+          "contact": "(649.4160664514849, 95.07651199480506, 300.0)",
+          "position": "649, 95, 300"
+        },
+        {
+          "gameTime": 225515,
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "block": "Block{minecraft:sand}",
+          "jobDigs": 11,
+          "contact": "(649.4160664514849, 95.07651199480506, 300.0)",
+          "position": "649, 95, 300"
+        },
+        {
+          "gameTime": 225605,
+          "drops": [],
+          "block": "Block{minecraft:sandstone}",
+          "jobDigs": 12,
+          "contact": "(649.4160664514849, 94.5577483669524, 300.0)",
+          "position": "649, 94, 300"
+        },
+        {
+          "gameTime": 226035,
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "block": "Block{minecraft:sand}",
+          "jobDigs": 13,
+          "contact": "(649.0, 96.06921261164472, 300.3979195398566)",
+          "position": "648, 96, 300"
+        },
+        {
+          "gameTime": 226065,
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "block": "Block{minecraft:sand}",
+          "jobDigs": 14,
+          "contact": "(649.0, 96.06921261164472, 300.3979195398566)",
+          "position": "648, 96, 300"
+        },
+        {
+          "gameTime": 226095,
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "block": "Block{minecraft:sand}",
+          "jobDigs": 15,
+          "contact": "(649.0, 95.5587437374283, 300.3979195398566)",
+          "position": "648, 95, 300"
+        }
+      ],
+      "activity": "walking toward village food supplies",
+      "digs": 30
+    },
+    "stationPassage": null,
+    "terminal": {
+      "pid": 1264777,
+      "exitCode": 0
+    },
+    "productionJar": {
+      "villagers-0.4.1-dev.jar": "6710bd7182aa0d5d50b6dab15c577b38bd91c71b8547d27bb59ba868d6330af9"
+    }
+  },
+  {
+    "runtime": "runs/native-fern-cleared-step-recovery-v9",
+    "status": "failed",
+    "stage": "health_stop",
+    "elapsed": 321,
+    "initial": {
+      "health": 8.0,
+      "food": 0,
+      "position": [
+        649.5213855129225,
+        94.0,
+        300.2914729937142
+      ],
+      "inventory": "[18 minecraft:sand, 3 minecraft:wheat, 3 minecraft:wheat_seeds]"
+    },
+    "final": {
+      "health": 4.0,
+      "food": 0,
+      "position": [
+        648.4871861419657,
+        99.0,
+        297.6297905548851
+      ],
+      "inventory": "[21 minecraft:sand, 3 minecraft:wheat, 3 minecraft:wheat_seeds]",
+      "breadCrafted": 0
+    },
+    "foodAccess": {
+      "recentWork": [
+        {
+          "jobDigs": 1,
+          "block": "Block{minecraft:sand}",
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "gameTime": 226836,
+          "position": "648, 97, 301",
+          "contact": "(648.5756319929657, 97.05861697064934, 301.0)"
+        },
+        {
+          "jobDigs": 2,
+          "block": "Block{minecraft:sand}",
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "gameTime": 226866,
+          "position": "648, 96, 301",
+          "contact": "(648.5756319929657, 96.56018859762928, 301.0)"
+        },
+        {
+          "jobDigs": 3,
+          "block": "Block{minecraft:sand}",
+          "drops": [
+            "1 minecraft:sand"
+          ],
+          "gameTime": 226926,
+          "position": "649, 97, 301",
+          "contact": "(649.0, 97.55859789879761, 301.39868477623133)"
+        }
+      ],
+      "settlingWaits": 0,
+      "lastFailure": "none",
+      "lastPlan": {
+        "edible": false,
+        "store": "644, 99, 296",
+        "visited": 49,
+        "gameTime": 226796,
+        "digs": 3,
+        "table": "644, 99, 296",
+        "steps": 12
+      },
+      "arrivals": 0,
+      "digs": 3,
+      "activity": "following the cleared next step toward a real meal"
+    },
+    "stationPassage": {
+      "steps": [
+        {
+          "dig": [],
+          "feet": "648, 95, 300"
+        },
+        {
+          "dig": [
+            "648, 97, 301",
+            "648, 96, 301"
+          ],
+          "feet": "648, 96, 301"
+        },
+        {
+          "dig": [
+            "649, 97, 301"
+          ],
+          "feet": "649, 97, 301"
+        },
+        {
+          "dig": [],
+          "feet": "649, 98, 300"
+        },
+        {
+          "dig": [],
+          "feet": "648, 99, 299"
+        },
+        {
+          "dig": [],
+          "feet": "648, 99, 298"
+        },
+        {
+          "dig": [],
+          "feet": "648, 99, 297"
+        },
+        {
+          "dig": [],
+          "feet": "648, 99, 296"
+        },
+        {
+          "dig": [],
+          "feet": "648, 99, 295"
+        },
+        {
+          "dig": [],
+          "feet": "647, 99, 295"
+        },
+        {
+          "dig": [],
+          "feet": "646, 99, 295"
+        },
+        {
+          "dig": [],
+          "feet": "645, 99, 295"
+        }
+      ],
+      "found": true,
+      "digs": 3
+    },
+    "terminal": {
+      "pid": 1354562,
+      "exitCode": 0
+    },
+    "productionJar": {
+      "villagers-0.4.1-dev.jar": "e6281d4744b2704c98dfeea37285ff142c87c59bda3aa991dabc120819d7839f"
+    }
+  },
+  {
+    "runtime": "runs/native-fern-cleared-step-cycle-v10",
+    "status": "failed",
+    "stage": "health_stop",
+    "elapsed": 1,
+    "initial": {
+      "health": 8.0,
+      "food": 0,
+      "position": [
+        657.2877594827147,
+        86.0,
+        306.6539734245425
+      ],
+      "inventory": "[10 minecraft:sand, 9 minecraft:wheat]"
+    },
+    "final": {
+      "health": 8.0,
+      "food": 0,
+      "position": [
+        657.2877594827147,
+        86.0,
+        306.6539734245425
+      ],
+      "inventory": "[10 minecraft:sand, 9 minecraft:wheat]",
+      "breadCrafted": 0
+    },
+    "foodAccess": {
+      "arrivals": 0,
+      "digs": 0,
+      "activity": "no food access trip",
+      "recentWork": [],
+      "settlingWaits": 0,
+      "lastFailure": "none",
+      "lastPlan": {
+        "directedRetry": true,
+        "closest": "645, 99, 295",
+        "cachedCells": 3340,
+        "found": true,
+        "clear": 979,
+        "diggable": 2083,
+        "edge": [],
+        "distance": 1,
+        "goals": [
+          "644, 99, 295",
+          "645, 99, 295",
+          "645, 100, 296"
+        ],
+        "targets": [
+          "644, 99, 296"
+        ]
+      }
+    },
+    "stationPassage": {
+      "digs": 32,
+      "steps": [
+        {
+          "feet": "657, 86, 305",
+          "dig": []
+        },
+        {
+          "feet": "657, 87, 304",
+          "dig": []
+        },
+        {
+          "feet": "657, 87, 303",
+          "dig": []
+        },
+        {
+          "feet": "657, 87, 302",
+          "dig": []
+        },
+        {
+          "feet": "657, 88, 301",
+          "dig": [
+            "657, 88, 301"
+          ]
+        },
+        {
+          "feet": "656, 89, 301",
+          "dig": [
+            "656, 90, 301",
+            "656, 89, 301"
+          ]
+        },
+        {
+          "feet": "655, 90, 301",
+          "dig": [
+            "655, 90, 301"
+          ]
+        },
+        {
+          "feet": "655, 91, 300",
+          "dig": []
+        },
+        {
+          "feet": "654, 91, 300",
+          "dig": []
+        },
+        {
+          "feet": "653, 91, 299",
+          "dig": []
+        },
+        {
+          "feet": "653, 92, 298",
+          "dig": [
+            "653, 93, 298"
+          ]
+        },
+        {
+          "feet": "652, 92, 298",
+          "dig": [
+            "652, 93, 298",
+            "652, 92, 298"
+          ]
+        },
+        {
+          "feet": "651, 92, 298",
+          "dig": [
+            "651, 93, 298",
+            "651, 92, 298"
+          ]
+        },
+        {
+          "feet": "650, 92, 298",
+          "dig": [
+            "650, 93, 298",
+            "650, 92, 298"
+          ]
+        },
+        {
+          "feet": "649, 92, 298",
+          "dig": [
+            "649, 93, 298",
+            "649, 92, 298"
+          ]
+        },
+        {
+          "feet": "648, 92, 298",
+          "dig": [
+            "648, 93, 298",
+            "648, 92, 298"
+          ]
+        },
+        {
+          "feet": "648, 93, 299",
+          "dig": [
+            "648, 94, 298",
+            "648, 94, 299",
+            "648, 93, 299"
+          ]
+        },
+        {
+          "feet": "649, 93, 299",
+          "dig": [
+            "649, 94, 299",
+            "649, 95, 299",
+            "649, 96, 299",
+            "649, 93, 299"
+          ]
+        },
+        {
+          "feet": "649, 94, 300",
+          "dig": [
+            "649, 95, 300",
+            "649, 96, 300",
+            "649, 94, 300"
+          ]
+        },
+        {
+          "feet": "648, 95, 300",
+          "dig": [
+            "648, 96, 300",
+            "648, 97, 300",
+            "648, 95, 300"
+          ]
+        },
+        {
+          "feet": "647, 96, 300",
+          "dig": [
+            "647, 97, 300",
+            "647, 98, 300",
+            "647, 96, 300"
+          ]
+        },
+        {
+          "feet": "646, 97, 300",
+          "dig": [
+            "646, 97, 300"
+          ]
+        },
+        {
+          "feet": "645, 98, 300",
+          "dig": []
+        },
+        {
+          "feet": "645, 99, 299",
+          "dig": []
+        },
+        {
+          "feet": "646, 99, 298",
+          "dig": []
+        },
+        {
+          "feet": "647, 99, 298",
+          "dig": []
+        },
+        {
+          "feet": "648, 99, 298",
+          "dig": []
+        },
+        {
+          "feet": "648, 99, 297",
+          "dig": []
+        },
+        {
+          "feet": "648, 99, 296",
+          "dig": []
+        },
+        {
+          "feet": "648, 99, 295",
+          "dig": []
+        },
+        {
+          "feet": "647, 99, 295",
+          "dig": []
+        },
+        {
+          "feet": "646, 99, 295",
+          "dig": []
+        },
+        {
+          "feet": "645, 99, 295",
+          "dig": []
+        }
+      ],
+      "found": true
+    },
+    "terminal": {
+      "pid": 1355503,
+      "exitCode": 0
+    },
+    "productionJar": {
+      "villagers-0.4.1-dev.jar": "e6281d4744b2704c98dfeea37285ff142c87c59bda3aa991dabc120819d7839f"
+    }
+  }
+]

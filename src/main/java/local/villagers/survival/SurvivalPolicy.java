@@ -11,6 +11,10 @@ public final class SurvivalPolicy {
             if (!Double.isFinite(homeDistance) || homeDistance < 0) throw new IllegalArgumentException("Invalid home distance");
         }
     }
+    /** Match the ordinary hungry wake-up threshold; actual danger is handled separately. */
+    public static boolean scheduledShelter(boolean restScheduled,int food){
+        return restScheduled&&food>6;
+    }
     public static Intent choose(Situation s) {
         if (s.danger()) {
             if (s.coveredHome() && s.reachableHome() && s.safeHome()) return Intent.SHELTER;
@@ -22,6 +26,9 @@ public final class SurvivalPolicy {
         return Intent.NORMAL;
     }
     public static boolean withinHomeRange(double distance) { return Double.isFinite(distance) && distance >= 0 && distance <= 28; }
+    public static boolean mayRestByGuardian(boolean danger,double distanceSquared,boolean visible){
+        return !danger&&visible&&Double.isFinite(distanceSquared)&&distanceSquared>=0&&distanceSquared<=64;
+    }
     public static boolean withinVillageWorkArea(double homeToBell,double pointToBell) {
         return Double.isFinite(homeToBell)&&Double.isFinite(pointToBell)&&homeToBell>=0&&homeToBell<=64
             &&pointToBell>=0&&pointToBell<=48;

@@ -20,7 +20,7 @@ class LexiconTest {
         assertEquals(Concept.WOOD,Concept.forItem("minecraft:mangrove_log"));
         assertEquals(Concept.WOOD,Concept.forItem("minecraft:stripped_warped_hyphae"));
         assertNull(Concept.forItem("minecraft:oak_planks"));
-        assertEquals(Concept.WOOD,Concept.values()[Concept.values().length-1]);
+        assertEquals(Concept.WOOD,Concept.values()[27]);
     }
     @Test void inventedLanguagesHaveADistinctValidWordForEveryConcept() {
         Lexicon lexicon = Lexicon.invent(new Random(1));

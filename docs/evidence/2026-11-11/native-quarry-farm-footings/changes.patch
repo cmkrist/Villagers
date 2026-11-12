@@ -1,0 +1,129 @@
+--- a/src/main/java/local/villagers/AdventureQuarry.java
++++ b/src/main/java/local/villagers/AdventureQuarry.java
+@@ -266,11 +266,14 @@
+     /** Finish a native path's last fraction of a cell through ordinary MoveControl.
+      * Navigation's waypoint tolerance can leave a foot on the soil being removed. */
+     private static boolean centerApproach(ServerLevel level,Villager v,Session s,BlockPos target,long now){
+-        var q=s.quarry;if(q.stand==null||!v.getNavigation().isDone()||!v.onGround()
+-            ||!q.stand.equals(v.blockPosition())||Math.abs(v.getY()-q.stand.getY())>.01)return false;
++        var q=s.quarry;if(q.stand==null||!v.onGround()
++            ||Math.abs(v.getY()-q.stand.getY())>.01)return false;
+         var point=Vec3.atBottomCenterOf(q.stand);
+-        if(!local.villagers.navigation.FloorCenteringPolicy.local(v.getX(),v.getY(),v.getZ(),point.x,point.y,point.z,v.getBbWidth())
+-            ||v.position().distanceToSqr(point)<.0025||ForestryWork.standFailure(level,v,s,target,q.stand)!=null)return false;
++        // Native waypoint tolerance can stop in the adjacent cell, including
++        // atop the block being removed. Finish only the short same-floor,
++        // fully collision-clear departure to our already validated stand.
++        double distance=v.position().distanceToSqr(point);
++        if(distance>1.5625||distance<.0025||ForestryWork.standFailure(level,v,s,target,q.stand)!=null)return false;
+         var body=v.getBoundingBox().move(point.subtract(v.position()));
+         if(body.intersects(new AABB(target).expandTowards(0,2,0))||!level.noCollision(v,v.getBoundingBox().minmax(body)))return false;
+         // This controller thinks every ten native ticks. MoveControl consumes each
+--- a/src/main/java/local/villagers/NativeFoodStorage.java
++++ b/src/main/java/local/villagers/NativeFoodStorage.java
+@@ -138,7 +138,17 @@
+                 s.mind.remember("Collected one actual "+name+" from a native home food store at "+p.toShortString());
+                 level.gameEvent(v,GameEvent.CONTAINER_OPEN,p);v.getNavigation().stop();return w.activity="collected a real stored meal";
+             }
+-            w.blocked.put(p,now+1200);w.target=null;return null;
++            // This was an actual inspection at hand reach, not a failed path.
++            // Returning every minute to the same depleted public store can
++            // consume the hungry actor's whole travel reserve. Leave time to
++            // find another source before inspecting this one again.
++            long revisit=now+6000;
++            w.blocked.put(p,revisit);
++            w.receipt=Map.of("gameTime",now,"container",p.toShortString(),"moved",0,
++                "reason","no usable meal at actual inspection","revisitAt",revisit);
++            w.activity="remembering a store with no usable meal";
++            s.mind.remember("Inspected public food storage at "+p.toShortString()+"; no usable meal available");
++            w.target=null;return null;
+         }
+         if(!mayWalk)return null;
+         if(!v.onGround())return w.activity="finishing a native landing before the food-store walk";
+--- a/src/main/java/local/villagers/FoodInventory.java
++++ b/src/main/java/local/villagers/FoodInventory.java
+@@ -51,6 +51,20 @@
+         return best;
+     }
+ 
++    /** A critically starving owner may spend its own root, never a gift or trade reserve. */
++    static int emergencyPlantingSlot(Container inventory,boolean farmer,int food,float health,float maxHealth){
++        if(!farmer||food!=0||!Float.isFinite(health)||!Float.isFinite(maxHealth)
++            ||health<=0||maxHealth<=0||health>maxHealth*.3f||anySlot(inventory,farmer)>=0)return -1;
++        int best=-1,nutrition=0;
++        for(int slot=0;slot<inventory.getContainerSize();slot++){
++            var item=inventory.getItem(slot);
++            if(item.getCount()!=1||!(item.is(Items.CARROT)||item.is(Items.POTATO))||!fits(item,food,health,maxHealth))continue;
++            int value=item.get(DataComponents.FOOD).nutrition();
++            if(value>nutrition){best=slot;nutrition=value;}
++        }
++        return best;
++    }
++
+     static int mealSlot(Container inventory, boolean farmer, int food, float health, float maxHealth) {
+         for (int i = 0; i < inventory.getContainerSize(); i++) {
+             ItemStack item = inventory.getItem(i);
+--- a/src/main/java/local/villagers/VillagerController.java
++++ b/src/main/java/local/villagers/VillagerController.java
+@@ -759,8 +759,11 @@
+         if (now < s.nextMeal || v.isTrading() || !AdventureActions.PERMISSIONS.allows(
+                 local.villagers.capability.CapabilityPermissions.Capability.CONSUME_FOOD)) return;
+         int slot = mealSlot(v, s);
++        boolean emergencyRoot=slot<0;
++        if(emergencyRoot)slot=FoodInventory.emergencyPlantingSlot(v.getInventory(),AdventureActions.canHarvest(v),
++            s.mind.foodLevel(),v.getHealth(),v.getMaxHealth());
+         if (slot < 0) return;
+-        if (safeForTrip && FoodDelivery.reserveMeal(level,v,s,now,slot)) return;
++        if (!emergencyRoot && safeForTrip && FoodDelivery.reserveMeal(level,v,s,now,slot)) return;
+         FoodProperties meal = v.getInventory().getItem(slot).get(DataComponents.FOOD);
+         if (meal == null || !MealPolicy.shouldEat(s.mind.foodLevel(), meal.nutrition(), v.getHealth(), v.getMaxHealth())) return;
+         if (s.action != null && s.succeeded && s.before != null) finishAttempt(level, v, s);
+@@ -770,6 +773,7 @@
+         ItemStack actual = v.getInventory().removeItem(slot, 1);
+         if (actual.isEmpty()) return;
+         nourish(level, v, s, actual);
++        if(emergencyRoot)s.mind.remember("Used my last owned planting root to avoid starvation");
+         s.mind.remember("Ate owned " + BuiltInRegistries.ITEM.getKey(actual.getItem()) + " for hunger or healing");
+     }
+ 
+--- a/src/main/java/local/villagers/FarmExpansion.java
++++ b/src/main/java/local/villagers/FarmExpansion.java
+@@ -107,6 +107,12 @@
+     private static boolean ground(ServerLevel level, Villager v, Session s, BlockPos soil) {
+         if (!(ConstructionSites.allowsFarm(level, soil)||NativeVillageFarms.allowed(level,v,s,soil)) || !level.isLoaded(soil) || !level.isLoaded(soil.above(2))
+                 || !VillageSurvival.withinHomeRange(level, s.mind, Vec3.atCenterOf(soil.above()))) return false;
++        // Active quarry stairs and paid mine exits are retained supports, not
++        // new agricultural plots. Check nearby nominated workers' actual
++        // saved work footprints before either tilling or spending a seed.
++        if(NativeRegionsScenario.nativeRegions(level)&&level.getEntitiesOfClass(Villager.class,new AABB(soil).inflate(32),
++                miner->miner.isAlive()&&Villagers.isManaged(miner)&&AdventurePreparation.nominated(miner))
++            .stream().anyMatch(miner->AdventureQuarry.accessSupport(miner,soil)||MineStair.exitFloor(miner,soil)))return false;
+         var state = level.getBlockState(soil);
+         if ((!state.is(Blocks.DIRT) && !state.is(Blocks.GRASS_BLOCK)) || level.getBlockEntity(soil) != null
+                 || !level.getBlockState(soil.above()).isAir() || !level.getBlockState(soil.above(2)).isAir()
+--- a/src/test/java/local/villagers/FoodInventoryTest.java
++++ b/src/test/java/local/villagers/FoodInventoryTest.java
+@@ -108,4 +108,23 @@
+         assertEquals(-1,FoodInventory.sharingSlot(inv,true));
+         assertEquals(1,inv.countItem(Items.CARROT));
+     }
++    @Test void aCriticallyStarvingOwnerCanUseItsRealPlantingRootWithoutMakingItShareable(){
++        var bag=new SimpleContainer(ration(Items.POTATO,1,1));
++        assertEquals(-1,FoodInventory.mealSlot(bag,true,0,6,20));
++        assertEquals(0,FoodInventory.emergencyPlantingSlot(bag,true,0,6,20));
++        assertEquals(-1,FoodInventory.sharingSlot(bag,true));
++        assertEquals(1,bag.countItem(Items.POTATO),"Selection is read-only; native eating must consume the actual item");
++        assertEquals(-1,FoodInventory.emergencyPlantingSlot(bag,true,1,6,20));
++        assertEquals(-1,FoodInventory.emergencyPlantingSlot(bag,true,0,Math.nextUp(6f),20));
++        assertEquals(-1,FoodInventory.emergencyPlantingSlot(bag,true,0,0,20));
++        assertEquals(-1,FoodInventory.emergencyPlantingSlot(bag,true,0,Float.NaN,20));
++    }
++    @Test void anOrdinaryMealTakesPrecedenceOverSpendingAPlantingRoot(){
++        var bag=new SimpleContainer(ration(Items.POTATO,1,1),ration(Items.BREAD,1,5));
++        assertEquals(1,FoodInventory.mealSlot(bag,true,0,1,20));
++        assertEquals(-1,FoodInventory.emergencyPlantingSlot(bag,true,0,1,20));
++        bag.setItem(1,ration(Items.CARROT,1,3));
++        assertEquals(1,FoodInventory.emergencyPlantingSlot(bag,true,0,1,20));
++        assertEquals(1,bag.countItem(Items.POTATO));assertEquals(1,bag.countItem(Items.CARROT));
++    }
+ }

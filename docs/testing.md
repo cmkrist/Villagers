@@ -497,3 +497,45 @@ server-side last-starvation-interval stop (food0, health<=1, timer>=70). Default
 leaves interactive play unchanged. It freezes before normal quit and never pauses
 hunger while actors continue working. Use copied recovery proof before advancing
 a critically hungry primary, and distinguish food recovery from complete healing.
+
+
+Dropped equipment regression (fresh isolated world, prepared server required):
+
+```sh
+source tools/java-env.sh
+villagers_select_java
+./gradlew build test
+python3 tools/equipment-server-test.py --runtime-name equipment-pickup-new
+```
+
+The probe checks native walking and pickup of player-thrown pickaxes and swords,
+item conservation and retained damage, pickup delays, full inventory rejection,
+and unchanged unmanaged villagers. It also checks eligibility for axes, shovels,
+hoes, shears, bows, crossbows, tridents and shields. Existing society worlds are
+never opened. Use `--build-dir` for isolated Gradle output. The script uses the
+existing `build/probe-classpath.txt` dependency classpath.
+
+Verified on 2026-11-11: 618 Java tests passed; native equipment fixture passed
+at tick 101. Evidence: `docs/evidence/2026-11-11/dropped-equipment-pickup/`.
+
+The bounded language goal has a pinned completion ledger at
+[remaining-language-goal-verification.json](evidence/2026-11-11/remaining-language-goal-verification.json).
+[Teaching and voices](teaching-and-voices-progress.txt) covers child/adult lessons,
+compound generalization, native villager/pillager sounds and fallible imitation.
+[Cultural transmission](cultural-transmission-progress.txt) records the staged
+cohort sweep and native relay/control/restart experiments, including their limits.
+
+Use unused runtime names for the new fixtures:
+
+```bash
+python3 tools/teaching-server-test.py --runtime-name language-teaching-fresh
+python3 tools/voice-server-test.py --runtime-name language-voice-fresh
+python3 tools/culture-server-test.py --runtime-name language-culture-fresh --baseline-runtime language-teaching-v3
+```
+
+Select Java with `source tools/java-env.sh` and `villagers_select_java` first.
+Teaching and voice fixtures use the prepared build/classpath. Cultural evaluation
+checks and reuses an already pinned build, creating a new world without opening
+the baseline world. The runners refuse retained destinations and save custody,
+artifacts, sources and terminal results. Native sound checks establish server
+playback calls; they do not establish client listening quality or waveform ASR.

@@ -1,0 +1,90 @@
+{
+  "runtime": "runs/native-continuous-current-mining-v91",
+  "terminal.json": {
+    "pid": 1809516,
+    "exitCode": 0
+  },
+  "population-preservation.json": {
+    "beforeHumanoids": 187,
+    "afterHumanoids": 187,
+    "missingOriginalIds": [],
+    "newHumanoidIds": []
+  },
+  "mining": {
+    "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+    "health": 20.0,
+    "food": 20,
+    "inventory": "[1 minecraft:stone_pickaxe, 1 minecraft:wooden_hoe, 30 minecraft:dirt, 2 minecraft:bread, 2 minecraft:wheat, 4 minecraft:carrot, 4 minecraft:stick, 1 minecraft:raw_iron]",
+    "position": [
+      -466.5,
+      64.5625,
+      -376.5
+    ],
+    "ironPreparation": {
+      "ironTaken": 3,
+      "crafted": 0,
+      "furnace": "-463, 63, -376",
+      "activity": "gathered native stone drops",
+      "loadedOre": 3,
+      "lastReceipt": {},
+      "lastApproach": {},
+      "plannedSite": "",
+      "passage": {
+        "faceBlock": "Block{minecraft:stone}",
+        "mode": "level",
+        "face": "-466, 57, -378",
+        "reselect": false,
+        "turns": 2,
+        "depth": 1,
+        "root": "-464, 56, -378",
+        "retainedFloors": 80,
+        "part": 1,
+        "activity": "gathered native stone drops",
+        "retainedEntries": 1,
+        "waterSeals": {
+          "placed": 0,
+          "lastReceipt": {},
+          "activity": "no water sealing job",
+          "active": false
+        },
+        "foundations": 0,
+        "lastFoundation": {},
+        "exhausted": false,
+        "failedScans": 0,
+        "entry": "-480, 63, -379",
+        "frontier": "",
+        "backtracks": 0,
+        "lastRoute": {
+          "safe": true,
+          "target": "-480, 63, -379",
+          "end": "-480, 63, -379",
+          "gameTime": 276009,
+          "nodes": 21,
+          "actor": "(-463.5103205148473, 56.0, -377.56010429640145)"
+        },
+        "frontierSearch": {
+          "activity": "not checking junctions",
+          "queries": 0,
+          "candidates": 0
+        }
+      },
+      "fuelStored": true
+    },
+    "ironArmor": {
+      "equipped": 0,
+      "crafted": 0,
+      "lastReceipt": {},
+      "ironTarget": 8,
+      "ready": false,
+      "nextPiece": "CHEST"
+    },
+    "body": {
+      "passenger": false,
+      "sleeping": true,
+      "courtship": "NONE",
+      "fatigue": 0.000625,
+      "activity": "Clover-edc5 \u00b7 sheltered"
+    },
+    "blocks": 24
+  }
+}

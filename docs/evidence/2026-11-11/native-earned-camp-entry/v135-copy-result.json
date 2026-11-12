@@ -1,0 +1,174 @@
+{
+  "status": "passed",
+  "stage": "bounded_observation",
+  "elapsed": 1000,
+  "gameTime": 290174,
+  "population": {
+    "beforeHumanoids": 186,
+    "afterHumanoids": 186,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 186,
+    "afterLivingHumanoids": 186,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "dara": {
+    "body": {
+      "trading": false,
+      "fire": false,
+      "activity": "Dara-f13a \u00b7 finishing the safe inside-gate rendezvous (miserable)",
+      "gateWait": {
+        "door": "-633, 65, -609",
+        "stand": "-633, 65, -608",
+        "until": 295701
+      },
+      "ownedMeal": -1,
+      "home": "Home[dimension=minecraft:overworld, x=-633, y=64, z=-602]",
+      "sleeping": false,
+      "baby": false,
+      "water": false,
+      "passenger": false
+    },
+    "stores": {
+      "lastReceipt": {},
+      "target": "",
+      "escape": {
+        "brokenFenceBlocks": 0,
+        "target": "",
+        "brokenDoors": 0,
+        "workTicks": 0,
+        "lastReceipt": {},
+        "activity": "no cell escape"
+      },
+      "routeBlocked": false,
+      "transfers": 0,
+      "activity": "not seeking stored food"
+    },
+    "campMeals": {
+      "requests": 2,
+      "lastReceived": {
+        "distance": 2.8937218,
+        "receiverAfter": 1,
+        "giverAfter": 0,
+        "leverRestored": true,
+        "gatesClosed": true,
+        "item": "minecraft:bread",
+        "to": "f13adb74-0ccc-4105-af94-63bc300bc5c3",
+        "usedEmergencyReserve": true,
+        "contact": "(-632.7012374069778, 65.5, -607.7820039679855)",
+        "from": "460ab4b6-1522-4504-9673-25fd503e0610",
+        "ownedItemBefore": 2,
+        "ownedItemAfter": 1,
+        "donorSource": "bag",
+        "giverBefore": 1,
+        "receiverBefore": 0,
+        "lever": "-634, 66, -610",
+        "handReach": 2.8715733844525317,
+        "gameTime": 289228
+      }
+    },
+    "food": 5,
+    "health": 13.0,
+    "name": "Dara-f13a",
+    "id": "f13adb74-0ccc-4105-af94-63bc300bc5c3",
+    "position": "-633, 65, -608"
+  },
+  "workers": [
+    {
+      "name": "Pip-460a",
+      "health": 24.0,
+      "food": 20,
+      "inventory": [
+        "3 minecraft:wheat",
+        "1 minecraft:bread",
+        "0 minecraft:air",
+        "0 minecraft:air",
+        "0 minecraft:air"
+      ],
+      "offhand": "0 minecraft:air",
+      "campMeals": {
+        "waiting": 3,
+        "hatch": {
+          "lastReceipt": {},
+          "target": "",
+          "opened": 0
+        },
+        "lastReceipt": {
+          "distance": 2.9101815,
+          "receiverAfter": 1,
+          "giverAfter": 0,
+          "leverRestored": true,
+          "gatesClosed": true,
+          "item": "minecraft:bread",
+          "to": "64324351-28f6-4bc1-a8f8-949f3300763b",
+          "usedEmergencyReserve": true,
+          "contact": "(-632.5215018568892, 65.5, -607.7405448474816)",
+          "from": "460ab4b6-1522-4504-9673-25fd503e0610",
+          "ownedItemBefore": 1,
+          "ownedItemAfter": 0,
+          "donorSource": "bag",
+          "giverBefore": 1,
+          "receiverBefore": 0,
+          "lever": "-634, 66, -610",
+          "handReach": 2.9016386499236666,
+          "gameTime": 289748
+        },
+        "rejectedPaths": 0,
+        "delivered": 3,
+        "requests": 3,
+        "activity": "handed a real meal through the native cell gate",
+        "calls": {
+          "target": "",
+          "waiting": 6,
+          "lastHeard": {
+            "sound": "minecraft:entity.villager.no",
+            "speaker": "c73f2812-0861-417f-8180-38f671532381",
+            "gameTime": 289992,
+            "volume": 6.0,
+            "position": "-681, 64, -623",
+            "heardRange": 72.0,
+            "nativeRange": 96.0,
+            "distance": 65.11733
+          },
+          "entrance": {
+            "lastReceipt": {},
+            "outer": "",
+            "removed": 2,
+            "activity": "no camp entrance work",
+            "step": 0
+          },
+          "heard": 22,
+          "bodyRoutes": {
+            "searches": 38,
+            "blockedNodes": 1075,
+            "lastReceipt": {
+              "bodies": [
+                "1f59fc97-4ee9-4731-b39c-83bb1b9a0b80",
+                "07f6215c-4046-4fe9-b724-bb93106a5e2f"
+              ],
+              "gameTime": 290128,
+              "action": "native route search avoids the actual neighboring living bodies",
+              "from": "(-619.3544408538405, 64.0, -604.3012421485525)"
+            }
+          }
+        },
+        "patrol": {
+          "lastRoute": {},
+          "target": "",
+          "visited": 0,
+          "until": 0,
+          "cages": 0
+        },
+        "lastApproach": {
+          "stands": 41,
+          "recipient": "(-632.2733904105695, 65.0, -607.500648381535)",
+          "end": "-633, 65, -611",
+          "gameTime": 289738,
+          "nodes": 3,
+          "actor": "(-634.4370486449467, 65.0, -611.4146499233585)"
+        }
+      }
+    }
+  ]
+}

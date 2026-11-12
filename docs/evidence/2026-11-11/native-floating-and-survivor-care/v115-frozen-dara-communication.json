@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "gameTime": 289811,
+  "id": "f13adb74-0ccc-4105-af94-63bc300bc5c3",
+  "position": [
+    -631.5,
+    64.0,
+    -601.5
+  ],
+  "health": 4.0,
+  "food": 0,
+  "campCommunication": {
+    "requestsThisLoad": 0,
+    "needsCall": true,
+    "homeCoversSelf": true,
+    "canFormUrgentWords": true,
+    "listeners": [
+      {
+        "id": "460ab4b6-1522-4504-9673-25fd503e0610",
+        "decodesRequest": true,
+        "sameCamp": true,
+        "distance": 26.729527,
+        "listeningQueries": 12,
+        "listeningRoute": {
+          "found": false
+        },
+        "insideDonorCamp": true,
+        "homeCoversDonor": true
+      },
+      {
+        "id": "e9b7b192-009b-4158-bc2d-1a63456a6f91",
+        "decodesRequest": true,
+        "sameCamp": true,
+        "distance": 21.085592,
+        "listeningQueries": 12,
+        "listeningRoute": {
+          "found": false
+        },
+        "insideDonorCamp": true,
+        "homeCoversDonor": true
+      }
+    ]
+  },
+  "scope": "Frozen source remains unchanged. Twelve bounded route batches per existing donor; failed to find a complete safe listening route. Saved vocabularies loaded before testing decoding."
+}

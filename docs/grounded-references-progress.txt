@@ -1,0 +1,107 @@
+GROUNDED REFERENCE PROGRESS — FULL LANGUAGE GOAL REMAINS ACTIVE
+2026-11-11
+
+Scope
+
+This implements the reference foundation within docs/remaining-language-goal.txt.
+It does not finish source-aware reasoning, practical questions, persistent
+partnerships/work agreements, receptive grammars, word formation or the cultural
+transmission evaluation. Those remain required parts of the active goal.
+
+Implemented behavior
+
+Each villager and player glossary can retain up to 64 learned name-to-referent
+bindings. Targets identify either a person or a particular place in a dimension.
+Names are ordinary phonetic words; UUIDs and coordinates are never put on the
+spoken wire. A speaker must know its own binding before using a reference.
+
+Villagers announce their own spoken alias using a naming construction. Listeners
+must understand that construction and actually see the speaker. Learning needs
+three observations separated by at least 40 simulation ticks. Actual naming
+opportunities have a separate 200-tick attention budget. A familiar sound with
+multiple possible people/places remains ambiguous. A confidently incorrect
+binding can produce a confidently incorrect interpretation.
+
+Places are named only at an actual nearby loaded bed or crop block visible to
+both participants. The speaker turns toward it and emits a public particle cue
+to model pointing. The listener's binding comes from that joint-attention event,
+not the intended sentence's metadata. The names can later be spoken without
+transmitting coordinates. The server fixture verifies the observation adapter;
+visual-client gesture UX has not been accepted.
+
+Clause and Sentence preserve names in subject/object slots. Interpretation takes
+only sounds and the listener's own vocabulary, grammar and reference memory.
+The speaker's intended references remain diagnostics, never resolution inputs.
+Confirmation preserves a named object instead of silently turning it into a
+generic person. Generic PERSON/PLACE words cannot identify a private third party.
+
+Conversations can describe a named third party who visibly holds real food, or
+a previously named nearby place whose actual block supports the description.
+The speaker's observation and the listener's testimony are recorded separately.
+The latter uses identities/places reconstructed from the listener's bindings.
+No reputation record or exact private episode is copied between minds.
+
+Children inherit naming vocabulary, not their parents' private acquaintances or
+maps. Existing sparse developing vocabularies remain sparse. Old saved names,
+words and cultural origins are retained. Spoken aliases do not replace entity
+UUIDs or Minecraft name tags. Individual naming/statement counters are diagnostic
+session state; the reference memories and beliefs persist.
+
+Compatibility
+
+Mind schema 12 and glossary schema 4 add reference memory. Missing reference data
+in older saves starts empty rather than inventing knowledge of other people.
+Existing resolved-person belief representation is preserved. Unknown future
+schemas remain protected. Word reinforcement, grammar learning and save/reload
+preserve reference bindings. Lexical lessons repeat individual sounds, including
+grammatical verbs, without routing those atoms through the sentence adapter.
+
+Verification
+
+ReferentsTest covers observation spacing, missing visibility, familiar and
+unfamiliar names, homonyms, confidently wrong identities, independent decoding,
+places without spoken coordinates, lexical/name collisions, finite memory,
+named-object confirmation and exclusion of inherited private acquaintance data.
+LanguagePersistenceTest and GlossaryPersistenceTest verify reference/belief reload
+and migration, including schema-eleven resolved-person compatibility.
+
+tools/reference-server-test.py creates a NEW peaceful provisioned fixture with
+four adults. Three can encounter each other; the fourth remains behind a closed
+wall. Distinct public name stems are selected for this fixture. Each starts with
+six bread; the subject holds one additional real bread. One bed supplies a place
+to name. Requests to introduce/name respect actual naming budgets, range and
+visibility. Reports respect the dialogue budget. No post-setup actor position,
+health, inventory, reference-memory or world setters are used.
+
+Verified on the pinned final artifact: 620 Java tests and 19 Python tests
+passed. Native fixture language-references-v4 passed at 840 simulation ticks
+with 4 self-introductions and 3 place-naming events. The wall-separated
+control remained unable to resolve the names. All four original bodies survived;
+restart preserved their learned names and attributed beliefs exactly.
+
+Required native outcome: the narrator initially cannot identify the third party;
+repeated introductions and shared attention establish bindings; the listener
+decodes the named person/bed reports into its own attributed beliefs; the control
+cannot resolve either name; all four original bodies survive and retain their
+reference/belief state across restart. Final artifact pins and results are saved
+in docs/evidence/2026-11-11/grounded-references/verification.json.
+
+Reproduce
+
+source tools/java-env.sh
+villagers_select_java
+./tools/test.sh
+./gradlew -I tools/probe-classpath.gradle writeProbeClasspath
+python3 tools/reference-server-test.py --runtime-name language-references-FRESH
+
+Use a new lowercase runtime name. The runner refuses retained directories,
+requires the prepared server's owner-accepted EULA and binds localhost:25620.
+
+Next work and limits
+
+The next step is multi-turn WHO/WHERE-style practical questions with explicit
+evidence/source qualification, followed by investigation that changes an actual
+permitted decision. Current naming acquisition needs an understood naming
+construction; foreign naming grammar and childhood/pragmatic teaching remain
+part of the broader goal. No unrestricted grammar invention, marriage/work
+contract completion, natural-village survival or population scaling is claimed.

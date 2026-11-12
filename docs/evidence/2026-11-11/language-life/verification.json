@@ -1,0 +1,83 @@
+{
+  "objective": "Bounded beliefs, clarification and grounded repair, interpreted relationship promises, induced constructions and generalization",
+  "status": "verified",
+  "java": {
+    "tests": 606,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "python": {
+    "tests": 19,
+    "passed": true
+  },
+  "runtime": "/home/cmkrist/Documents/Villagers/runs/language-life-v7",
+  "native": {
+    "status": "passed",
+    "ticks": 2537,
+    "initialMisinterpretationBlockedGift": true,
+    "automaticGroundedRepairs": 4,
+    "spokenDenials": 4,
+    "realFoodReceipt": {
+      "gameTime": 1840,
+      "giverBefore": 1,
+      "named": false,
+      "nutrition": 5,
+      "receiverBefore": 0,
+      "receiverAfter": 1,
+      "item": "minecraft:bread",
+      "giverAfter": 0,
+      "to": "00000000-0000-0191-0000-000000000001",
+      "from": "00000000-0000-0191-0000-000000000026"
+    },
+    "autonomousUnderstoodSocialVisit": true,
+    "socialAgreements": 2,
+    "innovationOpportunities": 7,
+    "nativeOnePointDamageEvents": 7,
+    "generalizedConstruction": {
+      "intended": [
+        {
+          "subject": "YOU",
+          "verb": "IS",
+          "object": "HAPPY",
+          "negated": false,
+          "past": false
+        }
+      ],
+      "sounds": [
+        "lo",
+        "rusigis"
+      ]
+    },
+    "fixture": "NEW peaceful walled platform, four adults in two separate chambers, declared requester4food, generous full donor20food/20saturation and1inventorybread+1publichandbread, lonely visitor with3prior food-favour opinions of host; visitor/host each6bread. No post-setup position/food/health setters, seed repair, grammar assignment or cooldown resets. Controlled request opportunities every20ticks respect ordinary request/repair cooldowns. After actual feeding+native social visit, continuous controlled compression opportunities respect speech cooldown and require actual native walking or visible injury. At most12declared native1damage stimuli, only when the visitor is at full health, provide repeated public injury evidence; healing and food consumption remain native. No body movement is forced. Tests learning and generalization of a bounded construction, not spontaneous invention of semantic categories or natural survival."
+  },
+  "restart": {
+    "status": "restart-passed",
+    "originalsVerifiedAtLoad": 4
+  },
+  "frozen": {
+    "status": "frozen-passed",
+    "originalsVerifiedAtLoad": 4,
+    "understoodAgreement": true,
+    "learnedStateUnchanged": true
+  },
+  "allOriginalFixtureBodiesAlive": true,
+  "productionJarSha256": "0c4efbd0954ffed37e7d71f71b7bd311c92630d158e7b25203832c82f23614b2",
+  "matchesCurrentBuildAtCapture": true,
+  "limits": [
+    "Declared provisioned native server fixture with bounded native damage stimuli; no natural emergence or survival claim",
+    "Constructions use authored semantic roles; no invention of new semantic categories",
+    "No visual client acceptance or population scaling benchmark",
+    "No primary society saves opened",
+    "Marriage, work contracts and general causal planning remain priorities after this milestone"
+  ],
+  "goalSourcesMatchExecutedSnapshot": {
+    "src/main/java/local/villagers/Speech.java": true,
+    "src/main/java/local/villagers/SocialCompany.java": true,
+    "src/main/java/local/villagers/language/Construction.java": true,
+    "src/main/java/local/villagers/language/Grammar.java": true,
+    "src/main/java/local/villagers/language/Dialogue.java": true,
+    "src/main/java/local/villagers/mind/Beliefs.java": true,
+    "src/main/java/local/villagers/mind/AgentMind.java": true
+  }
+}

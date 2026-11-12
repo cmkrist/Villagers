@@ -29,10 +29,14 @@ public final class FoodPassagePlanner {
     private record Node(BlockPos p,int digs,double cost,double priority,Node parent,List<BlockPos> dig,Set<BlockPos> cleared) {}
     private static int clearance(Grid grid,Node node,BlockPos p){return node.cleared.contains(p)?0:grid.clearance(p);}
     public static Plan find(Grid grid,BlockPos start,Set<BlockPos> goals,int maxDigs,int maxVisited) {
+        return find(grid,start,goals,maxDigs,maxVisited,8);
+    }
+    public static Plan find(Grid grid,BlockPos start,Set<BlockPos> goals,int maxDigs,int maxVisited,int goalWeight) {
+        if(goalWeight<1||goalWeight>32)throw new IllegalArgumentException("Invalid goal search weight");
         if(goals.isEmpty())return null;
         var open=new PriorityQueue<Node>(Comparator.comparingDouble(Node::priority));
         var costs=new HashMap<Key,Double>();
-        var first=new Node(start.immutable(),0,0,estimate(start,goals)*8,null,List.of(),Set.of());
+        var first=new Node(start.immutable(),0,0,estimate(start,goals)*goalWeight,null,List.of(),Set.of());
         open.add(first);costs.put(new Key(first.p,0),0.0);int visited=0;
         while(!open.isEmpty()&&visited++<maxVisited){
             var node=open.remove();if(node.cost>costs.getOrDefault(new Key(node.p,node.digs),Double.MAX_VALUE))continue;
@@ -46,7 +50,7 @@ public final class FoodPassagePlanner {
                 for(int dy=-3;dy<=1;dy++){
                     var p=node.p.offset(dx,dy,dz);if(!grid.allowed(p)||node.cleared.contains(p.below())||!grid.support(p.below()))continue;
                     int feet=clearance(grid,node,p),head=clearance(grid,node,p.above());if(feet<0||head<0)continue;
-                    if(dy>0&&clearance(grid,node,node.p.above(2))!=0)continue;
+                    if(dy>0&&clearance(grid,node,node.p.above(2))<0)continue;
                     if(dy<-1){
                         boolean clear=true;
                         for(int y=p.getY();y<=node.p.getY()+1;y++)if(clearance(grid,node,new BlockPos(p.getX(),y,p.getZ()))!=0){clear=false;break;}
@@ -58,6 +62,10 @@ public final class FoodPassagePlanner {
                         if(clearance(grid,node,a)!=0||clearance(grid,node,a.above())!=0||clearance(grid,node,b)!=0||clearance(grid,node,b.above())!=0)continue;
                     }
                     var initial=new ArrayList<BlockPos>();
+                    // Jumping onto a higher step also sweeps the old ceiling.
+                    // It may be excavated when authorized and reachable; it
+                    // must be paid for before the destination head/foot cells.
+                    if(dy>0&&clearance(grid,node,node.p.above(2))>0)initial.add(node.p.above(2));
                     // A body must move past the lip before it falls. Clear the old head height too,
                     // otherwise native navigation correctly rejects an apparently two-block stair.
                     if(dy==-1){
@@ -73,7 +81,7 @@ public final class FoodPassagePlanner {
                     var key=new Key(p,total);if(cost>=costs.getOrDefault(key,Double.MAX_VALUE))continue;
                     var cleared=node.cleared;
                     if(!dig.isEmpty()){var changed=new HashSet<>(cleared);changed.addAll(dig);cleared=Set.copyOf(changed);}
-                    costs.put(key,cost);open.add(new Node(p,total,cost,cost+estimate(p,goals)*8,node,List.copyOf(dig),cleared));
+                    costs.put(key,cost);open.add(new Node(p,total,cost,cost+estimate(p,goals)*goalWeight,node,List.copyOf(dig),cleared));
                 }
             }
         }

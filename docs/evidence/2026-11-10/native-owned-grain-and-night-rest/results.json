@@ -1,0 +1,647 @@
+{
+  "native-willow-station-frozen-v1": {
+    "status": "passed",
+    "stage": "frozen_station_routes",
+    "elapsed": 0,
+    "actor": {
+      "id": "965a16a4-47eb-4f0f-9670-4333eb02389f",
+      "name": "Willow-965a",
+      "position": [
+        636.5420584697838,
+        100.0,
+        304.18415356288654
+      ],
+      "health": 7.0,
+      "food": 0,
+      "inventory": "[9 minecraft:wheat]",
+      "activity": "Willow-965a \u00b7 walking toward village food supplies (miserable)",
+      "home": "null",
+      "crafting": "idle",
+      "breadCrafted": 0,
+      "foodAccess": {
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {},
+        "lastFailure": "none",
+        "activity": "no food access trip"
+      },
+      "table": "BlockPos{x=644, y=99, z=296}",
+      "blockedTable": "null",
+      "canWorkAt": false
+    },
+    "residentHealth": [],
+    "terminal": {
+      "pid": 1214162,
+      "exitCode": 0
+    },
+    "productionJarSHA256": "330e5fbc16e568e7cd738217fc7baa47b1c021006a2a7b739b482b82af0b495a"
+  },
+  "native-willow-owned-grain-baseline-v1": {
+    "status": "passed",
+    "stage": "native_bread_consumed",
+    "elapsed": 2641,
+    "actor": {
+      "id": "965a16a4-47eb-4f0f-9670-4333eb02389f",
+      "name": "Willow-965a",
+      "position": [
+        644.6295307934856,
+        100.0,
+        296.5924018936858
+      ],
+      "health": 5.0,
+      "food": 15,
+      "inventory": "[]",
+      "activity": "Willow-965a \u00b7 preparing an urgent meal from owned grain (miserable)",
+      "home": "null",
+      "crafting": "crafted bread",
+      "breadCrafted": 3,
+      "foodAccess": {
+        "lastFailure": "none",
+        "lastPlan": {},
+        "digs": 0,
+        "arrivals": 0,
+        "activity": "no food access trip"
+      },
+      "table": "BlockPos{x=644, y=99, z=296}",
+      "blockedTable": "null",
+      "canWorkAt": true
+    },
+    "residentHealth": [],
+    "terminal": {
+      "pid": 1216159,
+      "exitCode": 0
+    },
+    "productionJarSHA256": "330e5fbc16e568e7cd738217fc7baa47b1c021006a2a7b739b482b82af0b495a"
+  },
+  "native-willow-owned-grain-priority-v2": {
+    "status": "passed",
+    "stage": "health_stop",
+    "elapsed": 240,
+    "actor": {
+      "id": "965a16a4-47eb-4f0f-9670-4333eb02389f",
+      "name": "Willow-965a",
+      "position": [
+        636.5420584697838,
+        100.0,
+        304.18415356288654
+      ],
+      "health": 4.0,
+      "food": 0,
+      "inventory": "[9 minecraft:wheat]",
+      "activity": "Willow-965a \u00b7 waiting for a nearby food reply (miserable)",
+      "home": "null",
+      "crafting": "needs crafting table",
+      "breadCrafted": 0,
+      "foodAccess": {
+        "arrivals": 0,
+        "digs": 0,
+        "lastPlan": {},
+        "lastFailure": "none",
+        "activity": "no food access trip"
+      },
+      "table": "BlockPos{x=644, y=99, z=296}",
+      "blockedTable": "BlockPos{x=644, y=99, z=296}",
+      "canWorkAt": false
+    },
+    "residentHealth": [],
+    "terminal": {
+      "pid": 1216398,
+      "exitCode": 0
+    },
+    "productionJarSHA256": "7b09dcc7681664907e3ee9341582bc43c55ef33f4cdb44b6c86b536fd7ee9da4"
+  },
+  "native-willow-grain-before-reply-v3": {
+    "status": "passed",
+    "stage": "native_bread_consumed",
+    "elapsed": 188,
+    "actor": {
+      "id": "965a16a4-47eb-4f0f-9670-4333eb02389f",
+      "name": "Willow-965a",
+      "position": [
+        644.6257186010662,
+        100.0,
+        296.5929703362585
+      ],
+      "health": 6.0,
+      "food": 15,
+      "inventory": "[]",
+      "activity": "Willow-965a \u00b7 preparing an urgent meal from owned grain (unhappy)",
+      "home": "null",
+      "crafting": "crafted bread",
+      "breadCrafted": 3,
+      "foodAccess": {
+        "activity": "no food access trip",
+        "lastFailure": "none",
+        "lastPlan": {},
+        "digs": 0,
+        "arrivals": 0
+      },
+      "table": "BlockPos{x=644, y=99, z=296}",
+      "blockedTable": "null",
+      "canWorkAt": true
+    },
+    "residentHealth": [],
+    "terminal": {
+      "pid": 1217523,
+      "exitCode": 0
+    },
+    "productionJarSHA256": "de6ef71ff78375f40fcaa1cb24ca39a0efd3c0cddba72c220bcc843c0dceb02c"
+  },
+  "native-willow-full-life-trace-v4": {
+    "status": "passed",
+    "stage": "native_bread_consumed",
+    "elapsed": 8904,
+    "actor": {
+      "id": "965a16a4-47eb-4f0f-9670-4333eb02389f",
+      "name": "Willow-965a",
+      "position": [
+        644.506436870807,
+        100.0,
+        296.5747900037602
+      ],
+      "health": 19.0,
+      "food": 15,
+      "inventory": "[2 minecraft:sand, 3 minecraft:wheat]",
+      "activity": "Willow-965a \u00b7 preparing an urgent meal from owned grain",
+      "home": "null",
+      "crafting": "crafted bread",
+      "breadCrafted": 2,
+      "foodAccess": {
+        "lastPlan": {
+          "found": true,
+          "diggable": 145,
+          "closest": "645, 99, 295",
+          "clear": 286,
+          "targets": [
+            "644, 99, 296"
+          ],
+          "cachedCells": 582,
+          "goals": [
+            "644, 99, 295",
+            "645, 99, 295",
+            "645, 100, 296"
+          ],
+          "edge": [],
+          "distance": 1
+        },
+        "digs": 2,
+        "arrivals": 1,
+        "activity": "walking toward village food supplies",
+        "lastFailure": "native clear walking stretch rejected from (642.9372945917006, 98.23152379758702, 301.46499807765764) toward 633, 100, 307"
+      },
+      "foodHelp": "no visible neighbour in home range",
+      "foodRequests": 4,
+      "table": "BlockPos{x=644, y=99, z=296}",
+      "blockedTable": "null",
+      "canWorkAt": true
+    },
+    "residentHealth": [],
+    "terminal": {
+      "pid": 1221806,
+      "exitCode": 0
+    },
+    "productionJarSHA256": "de6ef71ff78375f40fcaa1cb24ca39a0efd3c0cddba72c220bcc843c0dceb02c"
+  },
+  "native-willow-calm-guardian-cycle-v5": {
+    "status": "failed",
+    "stage": "health_stop",
+    "elapsed": 21480,
+    "actor": {
+      "id": "965a16a4-47eb-4f0f-9670-4333eb02389f",
+      "name": "Willow-965a",
+      "position": [
+        635.2276895591556,
+        99.0,
+        315.28379936265304
+      ],
+      "health": 20.0,
+      "food": 18,
+      "inventory": "[9 minecraft:wheat, 2 minecraft:bread]",
+      "activity": "Willow-965a \u00b7 rest",
+      "home": "null",
+      "running": false,
+      "restScheduled": false,
+      "threats": [],
+      "crafting": "going to crafting table",
+      "breadCrafted": 3,
+      "foodAccess": {
+        "activity": "walking toward village food supplies",
+        "arrivals": 1,
+        "digs": 0,
+        "lastPlan": {
+          "cachedCells": 705,
+          "targets": [
+            "644, 99, 296"
+          ],
+          "clear": 336,
+          "closest": "645, 99, 295",
+          "diggable": 201,
+          "found": true,
+          "distance": 1,
+          "edge": [],
+          "goals": [
+            "644, 99, 295",
+            "645, 99, 295",
+            "645, 100, 296"
+          ]
+        },
+        "lastFailure": "none"
+      },
+      "foodHelp": "own need or request budget unmet",
+      "foodRequests": 2,
+      "table": "BlockPos{x=644, y=99, z=296}",
+      "blockedTable": "BlockPos{x=644, y=99, z=296}",
+      "canWorkAt": false
+    },
+    "residentHealth": [
+      {
+        "id": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+        "health": 20.0,
+        "food": 4
+      },
+      {
+        "id": "d10cee59-b8c5-41fa-863a-1e455d73749b",
+        "health": 20.0,
+        "food": 4
+      },
+      {
+        "id": "f13adb74-0ccc-4105-af94-63bc300bc5c3",
+        "health": 20.0,
+        "food": 4
+      },
+      {
+        "id": "573a309c-f0fc-4dd1-94cd-8246d352467c",
+        "health": 20.0,
+        "food": 3
+      },
+      {
+        "id": "64324351-28f6-4bc1-a8f8-949f3300763b",
+        "health": 20.0,
+        "food": 3
+      },
+      {
+        "id": "4ed39acd-b764-4c41-b799-5ac9d5feefe7",
+        "health": 20.0,
+        "food": 3
+      },
+      {
+        "id": "e3de735e-23c0-421b-a93d-34e386a06ff2",
+        "health": 20.0,
+        "food": 4
+      },
+      {
+        "id": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+        "health": 20.0,
+        "food": 4
+      },
+      {
+        "id": "fad46718-2403-42a5-9067-b66e72485ec0",
+        "health": 20.0,
+        "food": 3
+      },
+      {
+        "id": "c73f2812-0861-417f-8180-38f671532381",
+        "health": 20.0,
+        "food": 4
+      },
+      {
+        "id": "c5578b5b-8991-428d-9d82-7cb57a956269",
+        "health": 20.0,
+        "food": 20
+      },
+      {
+        "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+        "health": 20.0,
+        "food": 20
+      },
+      {
+        "id": "af2b94ad-f799-4b93-a2c3-e958b2836c84",
+        "health": 20.0,
+        "food": 20
+      },
+      {
+        "id": "96cbd3bc-ebc5-4522-b101-b83ee55c471f",
+        "health": 20.0,
+        "food": 20
+      },
+      {
+        "id": "5432d3df-f37a-4371-9465-aa1568bb4b02",
+        "health": 20.0,
+        "food": 20
+      },
+      {
+        "id": "438701f4-3aba-4cda-b583-46051f1e0f53",
+        "health": 20.0,
+        "food": 20
+      },
+      {
+        "id": "1d165330-2598-410c-827e-cc3b13c7bef9",
+        "health": 20.0,
+        "food": 20
+      },
+      {
+        "id": "f572553d-4483-44b5-8ed5-6ffe7e7745b7",
+        "health": 20.0,
+        "food": 20
+      },
+      {
+        "id": "97d2706c-4143-42bb-bab8-ecd680cafe5a",
+        "health": 20.0,
+        "food": 18
+      },
+      {
+        "id": "d3ab9ff6-cec6-4def-a199-92b911261b09",
+        "health": 20.0,
+        "food": 20
+      },
+      {
+        "id": "3c29e5bd-14b7-435c-8737-d49ac9cb7fdb",
+        "health": 20.0,
+        "food": 17
+      },
+      {
+        "id": "9bcb6ddf-4238-4531-a3a5-a7dea6d532ce",
+        "health": 20.0,
+        "food": 20
+      },
+      {
+        "id": "5d267809-1bbc-434f-a95a-7fd61c8de269",
+        "health": 15.0,
+        "food": 16
+      },
+      {
+        "id": "c19f89d2-5b6a-419f-8cb1-6a8568ca6d6b",
+        "health": 20.0,
+        "food": 20
+      },
+      {
+        "id": "99ed2ddb-9f4d-4968-851e-11fe3b6667e9",
+        "health": 20.0,
+        "food": 16
+      },
+      {
+        "id": "965a16a4-47eb-4f0f-9670-4333eb02389f",
+        "health": 20.0,
+        "food": 18
+      },
+      {
+        "id": "878bdd32-e485-485a-b9ed-79c0b987a0ab",
+        "health": 20.0,
+        "food": 16
+      },
+      {
+        "id": "88dbfce2-e4f6-4a28-9b76-f3a43a689a75",
+        "health": 20.0,
+        "food": 20
+      },
+      {
+        "id": "c9be37e3-bde8-4899-a365-5107233a0807",
+        "health": 20.0,
+        "food": 20
+      },
+      {
+        "id": "c7502bbf-79e6-4dca-8f58-e2debae7b0b1",
+        "health": 17.0,
+        "food": 4
+      },
+      {
+        "id": "31260997-4324-4b3b-98e2-c544eb0a9f33",
+        "health": 20.0,
+        "food": 18
+      },
+      {
+        "id": "48fd2e6d-6bf2-4694-9192-4b1e4ba295bf",
+        "health": 20.0,
+        "food": 5
+      },
+      {
+        "id": "d3494b6e-3a98-4a9c-8823-388f5d620f4f",
+        "health": 8.0,
+        "food": 0
+      }
+    ],
+    "terminal": {
+      "pid": 1224721,
+      "exitCode": 0
+    },
+    "productionJarSHA256": "507d5cef2fe45590f15e680273b3b55a00b648fd864caeda0a01fe3cacbe34a6"
+  },
+  "copyBodiesAfter": {
+    "humanoids": 179,
+    "managedVillagers": 33,
+    "minimumManagedHealth": 8.0,
+    "residents": [
+      {
+        "id": "965a16a4-47eb-4f0f-9670-4333eb02389f",
+        "type": "minecraft:villager",
+        "position": [
+          635.2276895591556,
+          99.0,
+          315.28379936265304
+        ],
+        "health": 20.0,
+        "tags": [
+          "villagers:native_resident_seen",
+          "villagers:workbench:644,99,296,minecraft:overworld",
+          "villagers:managed"
+        ],
+        "noAI": false,
+        "invulnerable": false,
+        "age": 0,
+        "attributes": [
+          {
+            "base": 0.5,
+            "id": "minecraft:movement_speed"
+          },
+          {
+            "modifiers": [
+              {
+                "amount": 0.06180574639079067,
+                "operation": "add_multiplied_base",
+                "id": "minecraft:random_spawn_bonus"
+              }
+            ],
+            "base": 16.0,
+            "id": "minecraft:follow_range"
+          }
+        ],
+        "effects": [],
+        "vehicle": null,
+        "inventory": [
+          {
+            "id": "minecraft:wheat",
+            "count": 9
+          },
+          {
+            "id": "minecraft:bread",
+            "count": 2
+          }
+        ],
+        "equipment": {},
+        "meetingPoint": null,
+        "dimensionFolder": "dimensions/minecraft/overworld/entities",
+        "name": "Willow-965a",
+        "food": {
+          "foodLevel": 18,
+          "saturation": 1.0,
+          "exhaustion": 1.4995773,
+          "timer": 0
+        },
+        "home": null
+      },
+      {
+        "id": "d3494b6e-3a98-4a9c-8823-388f5d620f4f",
+        "type": "minecraft:villager",
+        "position": [
+          657.2877594827147,
+          86.0,
+          306.6539734245425
+        ],
+        "health": 8.0,
+        "tags": [
+          "villagers:native_resident_seen",
+          "villagers:workbench:644,99,296,minecraft:overworld",
+          "villagers:managed"
+        ],
+        "noAI": false,
+        "invulnerable": false,
+        "age": 0,
+        "attributes": [
+          {
+            "base": 0.5,
+            "id": "minecraft:movement_speed"
+          },
+          {
+            "modifiers": [
+              {
+                "amount": -0.01087595821519545,
+                "operation": "add_multiplied_base",
+                "id": "minecraft:random_spawn_bonus"
+              }
+            ],
+            "base": 16.0,
+            "id": "minecraft:follow_range"
+          }
+        ],
+        "effects": [],
+        "vehicle": null,
+        "inventory": [
+          {
+            "id": "minecraft:sand",
+            "count": 10
+          },
+          {
+            "id": "minecraft:wheat",
+            "count": 9
+          }
+        ],
+        "equipment": {},
+        "meetingPoint": null,
+        "dimensionFolder": "dimensions/minecraft/overworld/entities",
+        "name": "Fern-d349",
+        "food": {
+          "foodLevel": 0,
+          "saturation": 0.0,
+          "exhaustion": 3.9215171,
+          "timer": 0
+        },
+        "home": null
+      }
+    ]
+  },
+  "primaryBodiesAfter": {
+    "humanoids": 179,
+    "managedVillagers": 33,
+    "minimumManagedHealth": 20.0,
+    "residents": [
+      {
+        "id": "965a16a4-47eb-4f0f-9670-4333eb02389f",
+        "type": "minecraft:villager",
+        "position": [
+          645.7204986190856,
+          100.0,
+          295.63145528989816
+        ],
+        "health": 20.0,
+        "tags": [
+          "villagers:native_resident_seen",
+          "villagers:managed"
+        ],
+        "noAI": false,
+        "invulnerable": false,
+        "age": 0,
+        "attributes": [
+          {
+            "modifiers": [
+              {
+                "amount": 0.06180574639079067,
+                "operation": "add_multiplied_base",
+                "id": "minecraft:random_spawn_bonus"
+              }
+            ],
+            "base": 16.0,
+            "id": "minecraft:follow_range"
+          }
+        ],
+        "effects": [],
+        "vehicle": null,
+        "inventory": [],
+        "equipment": {},
+        "meetingPoint": null,
+        "dimensionFolder": "dimensions/minecraft/overworld/entities",
+        "name": "Willow-965a",
+        "food": {
+          "foodLevel": 16,
+          "saturation": 5.0,
+          "exhaustion": 0.0,
+          "timer": 0
+        },
+        "home": null
+      },
+      {
+        "id": "d3494b6e-3a98-4a9c-8823-388f5d620f4f",
+        "type": "minecraft:villager",
+        "position": [
+          646.6314552898982,
+          73.0,
+          332.27950138091444
+        ],
+        "health": 20.0,
+        "tags": [
+          "villagers:native_resident_seen",
+          "villagers:managed"
+        ],
+        "noAI": false,
+        "invulnerable": false,
+        "age": 0,
+        "attributes": [
+          {
+            "modifiers": [
+              {
+                "amount": -0.01087595821519545,
+                "operation": "add_multiplied_base",
+                "id": "minecraft:random_spawn_bonus"
+              }
+            ],
+            "base": 16.0,
+            "id": "minecraft:follow_range"
+          }
+        ],
+        "effects": [],
+        "vehicle": null,
+        "inventory": [],
+        "equipment": {},
+        "meetingPoint": null,
+        "dimensionFolder": "dimensions/minecraft/overworld/entities",
+        "name": "Fern-d349",
+        "food": {
+          "foodLevel": 16,
+          "saturation": 5.0,
+          "exhaustion": 0.0,
+          "timer": 0
+        },
+        "home": null
+      }
+    ]
+  }
+}

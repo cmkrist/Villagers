@@ -1,0 +1,61 @@
+{
+  "runtime": "runs/native-frozen-care-startup-v267",
+  "kind": "copied-world only",
+  "version": 267,
+  "population": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "terminal": {
+    "pid": 2174001,
+    "exitCode": 0
+  },
+  "startup": {
+    "schema": 1,
+    "stage": "resumed",
+    "gameTime": 304508,
+    "expectedGameTime": 304508,
+    "resident": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+    "worker": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+    "bodyBefore": "cb79c23c-9623-45ac-9776-90c0f0a7813e:(-613.6656344598083, 64.0, -612.4454949418018):24.0:false:false:[0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air]:1 minecraft:crossbow:0 minecraft:air",
+    "bodyAfter": "cb79c23c-9623-45ac-9776-90c0f0a7813e:(-613.6656344598083, 64.0, -612.4454949418018):24.0:false:false:[0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air]:1 minecraft:crossbow:0 minecraft:air",
+    "adoption": {
+      "bodyAfter": "cb79c23c-9623-45ac-9776-90c0f0a7813e:(-613.6656344598083, 64.0, -612.4454949418018):24.0:false:false:[0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air]:1 minecraft:crossbow:0 minecraft:air",
+      "selection": "Closest eligible local neighbour with real resource access; contents remain unknown until contact",
+      "reference": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+      "schema": 1,
+      "spawnedAdults": 0,
+      "id": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "bodyBefore": "cb79c23c-9623-45ac-9776-90c0f0a7813e:(-613.6656344598083, 64.0, -612.4454949418018):24.0:false:false:[0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air]:1 minecraft:crossbow:0 minecraft:air",
+      "role": "additional existing worker",
+      "camp": "-175646985019319",
+      "enrolledExisting": 1,
+      "joinedAt": 304508,
+      "candidates": [
+        {
+          "position": "(-613.6656344598083, 64.0, -612.4454949418018)",
+          "distanceSquared": 276.681249251354,
+          "id": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+          "supplyPathNodes": 8
+        }
+      ],
+      "suppliedItems": 0
+    },
+    "frozenFrames": 3,
+    "error": ""
+  },
+  "observation": {
+    "status": "passed",
+    "stage": "bounded_observation",
+    "gameTime": 308508,
+    "elapsed": 4000,
+    "targetTps": 20.0
+  },
+  "sourceMatchesBeforeActual269": true
+}

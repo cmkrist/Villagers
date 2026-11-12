@@ -50,6 +50,26 @@ if (playTicks != 0 && (playTicks < 100 || playTicks > 12000 || runtimeRole != 'p
 }
 def playMinHealthText = System.getenv('VILLAGERS_PLAY_MIN_HEALTH') ?: '0'
 def starvationGuard = System.getenv('VILLAGERS_PLAY_STARVATION_GUARD') ?: '0'
+def lastHealthRecovery = System.getenv('VILLAGERS_PLAY_LAST_HEALTH_RECOVERY') ?: '0'
+if (!(lastHealthRecovery in ['0','1']) || lastHealthRecovery == '1'
+        && (playTicks == 0 || playMinHealthText != '1' || starvationGuard != '1')) {
+    throw new GradleException('Final-health recovery requires bounded play, min-health1 and the starvation guard')
+}
+def reviewedCombatText = System.getenv('VILLAGERS_REVIEWED_COMBAT_SCOPE') ?: ''
+if (reviewedCombatText && (playTicks == 0 || runtimeRole != 'play' || System.getenv('VILLAGERS_TRIAL') != 'native-regions'
+        || !file(reviewedCombatText).isFile() || !file(reviewedCombatText).canonicalFile.toPath().startsWith(file('runs').canonicalFile.toPath()))) {
+    throw new GradleException('Reviewed combat requires a bounded native play run and an existing local evidence scope')
+}
+def careStartupText = System.getenv('VILLAGERS_CARE_STARTUP_SCOPE') ?: ''
+if (careStartupText && (playTicks == 0 || lastHealthRecovery != '1' || System.getenv('VILLAGERS_TRIAL') != 'native-regions'
+        || !file(careStartupText).isFile() || !file(careStartupText).canonicalFile.toPath().startsWith(file('runs').canonicalFile.toPath()))) {
+    throw new GradleException('Care startup requires bounded native recovery and an existing local scope')
+}
+def simulationDistanceText = System.getenv('VILLAGERS_SIMULATION_DISTANCE') ?: '0'
+if (!(simulationDistanceText ==~ /[0-9]{1,2}/) || simulationDistanceText != '0'
+        && (simulationDistanceText.toInteger() < 2 || simulationDistanceText.toInteger() > 32)) {
+    throw new GradleException('VILLAGERS_SIMULATION_DISTANCE must be0 or2..32')
+}
 if (!(starvationGuard in ['0','1']) || starvationGuard == '1' && playTicks == 0) {
     throw new GradleException('VILLAGERS_PLAY_STARVATION_GUARD must be0 or1 and requires a play-tick budget')
 }
@@ -72,6 +92,10 @@ loom {
             if (playTicks != 0) vmArg '-Dvillagers.lab.maxPlayTicks=' + playTicks
             if (playMinHealthText != '0') vmArg '-Dvillagers.lab.minHealth=' + playMinHealthText
             if (starvationGuard == '1') vmArg '-Dvillagers.lab.starvationGuard=true'
+            if (lastHealthRecovery == '1') vmArg '-Dvillagers.lab.lastHealthRecovery=true'
+            if (reviewedCombatText) vmArg '-Dvillagers.lab.reviewedCombatScope=' + file(reviewedCombatText).canonicalPath
+            if (careStartupText) vmArg '-Dvillagers.lab.careStartupScope=' + file(careStartupText).canonicalPath
+            if (simulationDistanceText != '0') vmArg '-Dvillagers.lab.simulationDistance=' + simulationDistanceText
         }
     }
 }

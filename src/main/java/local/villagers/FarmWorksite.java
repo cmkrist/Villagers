@@ -109,7 +109,13 @@ final class FarmWorksite {
         }
         if (now >= s.nextFarmPath && WorkNavigation.admit(level, now, v)) {
             s.nextFarmPath = now + 40;
-            var path = v.getNavigation().createPath(site, 1);
+            var target=site;
+            // Remembered work is not bounded by combat follow range. The
+            // native short search can stop one cell short of a distant farm
+            // despite an ordinary permitted route to the same observed crop.
+            var path = NativeRegionsScenario.nativeRegions(level)
+                ? NativePathLimits.search(v,2,()->WorkNavigation.pathTo(level,v,s,target,1))
+                : v.getNavigation().createPath(site, 1);
             boolean allowed=WorkNavigation.staysHome(level,v,s,path);
             s.lastFarmPath=java.util.Map.of("gameTime",now,"target",site.toShortString(),"fromObservation",fromObservation,
                     "nodes",path==null?0:path.getNodeCount(),"canReach",path!=null && path.canReach(),"permitted",allowed);

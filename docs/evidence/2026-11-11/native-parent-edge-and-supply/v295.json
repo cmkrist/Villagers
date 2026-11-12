@@ -1,0 +1,174 @@
+{
+  "runtime": "runs/native-food-return-cooldown-v295",
+  "terminal": {
+    "pid": 2246916,
+    "exitCode": 0
+  },
+  "stop": {
+    "stage": "health_stop",
+    "health": 1.0,
+    "elapsed": 1194,
+    "air": 300,
+    "position": "(-631.7787623999602, 65.0, -607.3646613567992)",
+    "actor": "4ed39acd-b764-4c41-b799-5ac9d5feefe7",
+    "status": "failed",
+    "gameTime": 318706
+  },
+  "population": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "adventurer": {
+    "elapsed": 1160,
+    "actors": [
+      {
+        "armor": {
+          "equipped": 0,
+          "crafted": 0,
+          "lastReceipt": {},
+          "ironTarget": 8,
+          "ready": false,
+          "nextPiece": "CHEST"
+        },
+        "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+        "food": 20,
+        "navigation": {
+          "wanted": [
+            -474.5,
+            56.0,
+            -379.5
+          ],
+          "velocity": "(0.0, -0.0784000015258789, 0.0)",
+          "path": {},
+          "onGround": true,
+          "position": "(-474.27502940780784, 56.0, -379.5296019733395)"
+        },
+        "position": "(-474.27502940780784, 56.0, -379.5296019733395)",
+        "mainhand": "1 minecraft:iron_pickaxe",
+        "health": 20.0,
+        "ageTicks": 255208,
+        "iron": {
+          "plannedSite": "",
+          "passage": {
+            "faceBlock": "Block{minecraft:andesite}",
+            "mode": "level",
+            "face": "-475, 56, -379",
+            "reselect": false,
+            "turns": 1,
+            "depth": 0,
+            "root": "-475, 56, -380",
+            "retainedFloors": 97,
+            "part": 3,
+            "activity": "walking down one retained mine step",
+            "retainedEntries": 1,
+            "exhaustedEntries": 0,
+            "stepsWithoutDepth": 20,
+            "waterSeals": {
+              "active": false,
+              "placed": 0,
+              "lastReceipt": {},
+              "activity": "no water sealing job"
+            },
+            "foundations": 0,
+            "lastFoundation": {},
+            "exhausted": false,
+            "failedScans": 0,
+            "entry": "-480, 63, -379",
+            "frontier": "",
+            "backtracks": 0,
+            "lastRoute": {},
+            "frontierSearch": {
+              "candidates": 0,
+              "activity": "not checking junctions",
+              "queries": 0
+            }
+          },
+          "ironTaken": 3,
+          "crafted": 0,
+          "furnace": "-463, 63, -376",
+          "activity": "walking down one retained mine step",
+          "loadedOre": 3,
+          "lastReceipt": {},
+          "lastApproach": {},
+          "fuelStored": true
+        },
+        "inventory": [
+          "1 minecraft:stone_pickaxe",
+          "1 minecraft:wooden_hoe",
+          "30 minecraft:dirt",
+          "3 minecraft:bread",
+          "2 minecraft:carrot",
+          "4 minecraft:stick",
+          "1 minecraft:raw_iron",
+          "0 minecraft:air"
+        ]
+      }
+    ],
+    "gameTime": 318672
+  },
+  "receipts": [],
+  "patients": [
+    {
+      "id": "fad46718-2403-42a5-9067-b66e72485ec0",
+      "name": "Moss-fad4",
+      "position": [
+        -679.4966535631014,
+        64.0,
+        -622.4875000119209
+      ],
+      "health": 11.0,
+      "food": {
+        "foodLevel": 0,
+        "saturation": 0.0,
+        "exhaustion": 2.8049746,
+        "timer": 0
+      },
+      "inventory": []
+    },
+    {
+      "id": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+      "name": "Pip-4c3c",
+      "position": [
+        -596.4780951558236,
+        64.0,
+        -613.6770474995228
+      ],
+      "health": 1.0,
+      "food": {
+        "foodLevel": 2,
+        "saturation": 0.0,
+        "exhaustion": 1.3465315,
+        "timer": 0
+      },
+      "inventory": [
+        {
+          "id": "minecraft:potato",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "4ed39acd-b764-4c41-b799-5ac9d5feefe7",
+      "name": "Willow-4ed3",
+      "position": [
+        -631.7787623999602,
+        65.0,
+        -607.3646613567992
+      ],
+      "health": 1.0,
+      "food": {
+        "foodLevel": 0,
+        "saturation": 0.0,
+        "exhaustion": 1.9959869,
+        "timer": 64
+      },
+      "inventory": []
+    }
+  ]
+}

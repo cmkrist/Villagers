@@ -15,6 +15,28 @@ class GlossaryPersistenceTest {
     @TempDir Path root;
     private static final UUID PLAYER = new UUID(8, 9);
 
+    @Test void learnedPlayerReferencesSurviveRestartWithoutGrantingNamesToOldGlossaries(){
+        var names=Referents.empty().establish("fern",Referents.Target.person(new UUID(9,9)),0);
+        var glossary=Glossary.empty(PLAYER).withReferents(names);
+        var store=new GlossaryStore(root);assertTrue(store.save(glossary));
+        assertEquals(glossary,store.load(PLAYER,new StringBuilder()));
+        var old=new com.google.gson.Gson().fromJson("{\"schemaVersion\":3,\"player\":\""+PLAYER+"\",\"words\":[]}",Glossary.class);
+        assertTrue(old.referents().entries().isEmpty());
+    }
+
+    @Test void playerGrammarSurvivesReloadAndSchemaOneUpgradesWithoutLosingEvidence() throws Exception {
+        var old = "{\"schemaVersion\":1,\"player\":\"" + PLAYER + "\",\"words\":[{\"word\":\"mora\",\"heard\":3,\"meanings\":[{\"concept\":\"FOOD\",\"count\":3}]}]}";
+        Files.createDirectories(root.resolve("players"));
+        Files.writeString(root.resolve("players").resolve(PLAYER + ".json"), old);
+        var store = new GlossaryStore(root);
+        var loaded = store.load(PLAYER, new StringBuilder());
+        assertEquals(Concept.FOOD, loaded.translate("mora"));
+        assertFalse(loaded.grammar().initialized());
+        var next = loaded.withGrammar(Grammar.founding(Grammar.Order.VSO));
+        assertTrue(store.save(next));
+        assertEquals(next, new GlossaryStore(root).load(PLAYER, new StringBuilder()));
+    }
+
     @Test void reconnectUsesPendingLessonsWhileWriterIsBlocked() throws Exception {
         var writer = Executors.newSingleThreadExecutor();
         var release = new CountDownLatch(1);

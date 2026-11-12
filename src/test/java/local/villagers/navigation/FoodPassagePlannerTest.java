@@ -7,6 +7,46 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FoodPassagePlannerTest {
+    @Test void directedRetryFindsAPaidStairWithoutRelaxingTheWorkBudgetOrFloorRules(){
+        var start=new BlockPos(10,1,0);var goal=new BlockPos(-5,15,0);
+        FoodPassagePlanner.Grid mesa=new FoodPassagePlanner.Grid(){
+            public int clearance(BlockPos p){return p.getX()<=0&&p.getY()<=14?80:0;}
+            public boolean support(BlockPos p){return p.getY()==0||p.getX()<=0&&p.getY()<=14;}
+            public boolean allowed(BlockPos p){return Math.abs(p.getX())<=20&&Math.abs(p.getZ())<=20&&p.getY()>=1&&p.getY()<=15;}
+        };
+        var plan=FoodPassagePlanner.find(mesa,start,Set.of(goal),64,4000,32);
+        assertNotNull(plan);assertTrue(plan.digCount()>0&&plan.digCount()<=64);assertTrue(plan.visited()<=4000);
+        var previous=start;
+        for(var step:plan.steps()){
+            assertTrue(mesa.allowed(step.feet()));assertTrue(mesa.support(step.feet().below()));
+            assertTrue(step.feet().getY()-previous.getY()<=1);previous=step.feet();
+        }
+        assertEquals(goal,previous);
+        assertThrows(IllegalArgumentException.class,()->FoodPassagePlanner.find(mesa,start,Set.of(goal),64,4000,33));
+    }
+    @Test void ascendingTunnelPaysForOldCeilingBeforeJumpingToTheNextStep(){
+        var start=new BlockPos(0,0,0);var first=new BlockPos(1,1,0);var goal=new BlockPos(2,2,0);
+        var rock=Set.of(start.above(2),first,first.above(),first.above(2),goal,goal.above());
+        FoodPassagePlanner.Grid tunnel=new FoodPassagePlanner.Grid(){
+            public int clearance(BlockPos p){return rock.contains(p)?10:0;}
+            public boolean support(BlockPos p){return p.getY()<p.getX();}
+            public boolean allowed(BlockPos p){return Set.of(start,first,goal).contains(p);}
+        };
+        assertNull(FoodPassagePlanner.find(tunnel,start,Set.of(goal),5,100));
+        var plan=FoodPassagePlanner.find(tunnel,start,Set.of(goal),6,100);
+        assertNotNull(plan);assertEquals(6,plan.digCount());
+        assertEquals(start.above(2),plan.steps().getFirst().dig().getFirst());
+        assertEquals(first.above(2),plan.steps().getLast().dig().getFirst());
+    }
+    @Test void ascendingTunnelCannotRemoveAProtectedOldCeiling(){
+        var start=BlockPos.ZERO;var goal=new BlockPos(1,1,0);
+        FoodPassagePlanner.Grid blocked=new FoodPassagePlanner.Grid(){
+            public int clearance(BlockPos p){return p.equals(start.above(2))?-1:0;}
+            public boolean support(BlockPos p){return true;}
+            public boolean allowed(BlockPos p){return p.equals(start)||p.equals(goal);}
+        };
+        assertNull(FoodPassagePlanner.find(blocked,start,Set.of(goal),64,100));
+    }
     @Test void nativeWalkingStopsBeforeAnUnpaidExcavationButCanReuseClearedBlocks(){
         var block=new BlockPos(2,1,0);
         var steps=List.of(new FoodPassagePlanner.Step(new BlockPos(1,1,0),List.of()),new FoodPassagePlanner.Step(block,List.of(block)),new FoodPassagePlanner.Step(new BlockPos(3,1,0),List.of()));

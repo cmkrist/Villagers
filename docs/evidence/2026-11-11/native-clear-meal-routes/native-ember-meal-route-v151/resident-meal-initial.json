@@ -1,0 +1,3042 @@
+{
+  "id": "8a41fdfa-cbb9-4807-8a33-9373867ccba3",
+  "name": "Ember-8a41",
+  "position": [
+    -429.6830013827258,
+    63.0,
+    -778.4968758131884
+  ],
+  "health": 20.0,
+  "food": 2,
+  "inventory": "[]",
+  "activity": "Ember-8a41 · walking toward village food supplies (unhappy)",
+  "home": "Home[dimension\u003dminecraft:overworld, x\u003d-434, y\u003d64, z\u003d-777]",
+  "running": false,
+  "restScheduled": false,
+  "threats": [],
+  "crafting": "idle",
+  "breadCrafted": 0,
+  "foodAccess": {
+    "digs": 0,
+    "activity": "no food access trip",
+    "recentWork": [],
+    "settlingWaits": 0,
+    "lastFailure": "none",
+    "lastPlan": {},
+    "arrivals": 0
+  },
+  "preparation": {
+    "lastPath": "none",
+    "pathQueries": 0,
+    "recipes": 0,
+    "gates": {
+      "closed": 0,
+      "gate": "",
+      "lastReceipt": {},
+      "opened": 0
+    },
+    "survey": {
+      "lastRoute": {},
+      "target": "",
+      "canopy": {
+        "lastReceipt": {},
+        "target": "",
+        "blocks": 0
+      }
+    },
+    "lastStep": {},
+    "stepsPlaced": 0,
+    "logs": 0,
+    "goal": "NONE",
+    "activity": "no preparation job",
+    "craftFailure": "none"
+  },
+  "fatigue": 0.0878124999999995,
+  "foodHelp": "not seeking food help",
+  "foodRequests": 0,
+  "campCommunication": {
+    "requestsThisLoad": 0,
+    "needsCall": true,
+    "homeCoversSelf": true,
+    "canFormUrgentWords": true,
+    "listeners": [
+      {
+        "voiceRouteDiagnosis": {
+          "entranceCandidates": [
+            {
+              "cells": [
+                {
+                  "state": "Block{minecraft:cobblestone}",
+                  "at": "-612, 64, -639"
+                },
+                {
+                  "state": "Block{minecraft:cobblestone}",
+                  "at": "-612, 65, -639"
+                },
+                {
+                  "state": "Block{minecraft:cobblestone}",
+                  "at": "-612, 66, -639"
+                },
+                {
+                  "state": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                  "at": "-612, 64, -640"
+                },
+                {
+                  "state": "Block{minecraft:air}",
+                  "at": "-612, 65, -640"
+                },
+                {
+                  "state": "Block{minecraft:air}",
+                  "at": "-612, 66, -640"
+                },
+                {
+                  "state": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                  "at": "-612, 64, -641"
+                },
+                {
+                  "state": "Block{minecraft:air}",
+                  "at": "-612, 65, -641"
+                },
+                {
+                  "state": "Block{minecraft:air}",
+                  "at": "-612, 66, -641"
+                }
+              ],
+              "safe": false,
+              "route": {
+                "found": false
+              },
+              "exitFloor": 64.0,
+              "inward": "north",
+              "width": 3,
+              "outsideStand": "-612, 65, -638",
+              "outer": "-612, 64, -639",
+              "fromExit": {
+                "safe": false,
+                "route": {
+                  "end": "-545, 62, -704",
+                  "nodes": 69,
+                  "found": true,
+                  "reaches": false
+                },
+                "scope": "Hypothetical native start at the existing far-side stand; no body or block change."
+              }
+            }
+          ],
+          "standCount": 0,
+          "neighbors": [
+            {
+              "id": "764e71da-6e8c-4016-b4cb-b9aee031c564",
+              "managed": false,
+              "noAI": false,
+              "type": "entity.minecraft.villager",
+              "position": "(-596.5853269079677, 64.0, -633.1484311593383)"
+            },
+            {
+              "id": "88893f4d-fbba-4245-b563-089e8c0a5b52",
+              "managed": false,
+              "noAI": false,
+              "type": "entity.minecraft.villager",
+              "position": "(-596.4548504824115, 64.0, -633.9413193282401)"
+            }
+          ],
+          "nativeStart": {
+            "dryConnectivity": {
+              "nativeConnectivity": {
+                "trace": [
+                  {
+                    "bodyFits": true,
+                    "at": "-550, 62, -696",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-551, 62, -695",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-552, 62, -694",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-553, 62, -693",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-554, 62, -692",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-555, 62, -691",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-556, 62, -690",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-557, 62, -689",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-558, 62, -688",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-559, 62, -687",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-560, 62, -686",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-561, 62, -685",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-562, 62, -684",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-563, 62, -683",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-564, 62, -682",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-565, 62, -681",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-566, 62, -680",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-567, 62, -679",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-568, 62, -678",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-569, 62, -677",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-570, 62, -676",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-571, 62, -675",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-572, 62, -674",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-573, 62, -673",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-574, 62, -672",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-575, 62, -671",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-576, 62, -670",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-577, 62, -669",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-578, 62, -668",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-579, 62, -667",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-580, 62, -666",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-581, 62, -665",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-582, 62, -664",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-583, 62, -663",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-584, 62, -662",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-585, 62, -661",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-586, 62, -660",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-587, 62, -659",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-588, 62, -658",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-589, 62, -657",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-590, 62, -656",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-591, 62, -655",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-592, 62, -654",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-593, 62, -653",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-594, 62, -652",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-595, 62, -651",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-596, 62, -650",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-597, 62, -649",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-598, 62, -648",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-599, 62, -647",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-600, 62, -646",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-601, 62, -645",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-601, 62, -644",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-601, 62, -643",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-601, 62, -642",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-601, 62, -641",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-601, 62, -640",
+                    "fluid": "net.minecraft.world.level.material.WaterFluid$Source@6dde913e[falling\u003dfalse]",
+                    "state": "Block{minecraft:water}[level\u003d0]"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-601, 63, -639",
+                    "fluid": "net.minecraft.world.level.material.EmptyFluid@7c919e1e",
+                    "state": "Block{minecraft:air}"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-601, 63, -638",
+                    "fluid": "net.minecraft.world.level.material.EmptyFluid@7c919e1e",
+                    "state": "Block{minecraft:short_grass}"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-601, 63, -637",
+                    "fluid": "net.minecraft.world.level.material.EmptyFluid@7c919e1e",
+                    "state": "Block{minecraft:short_grass}"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-602, 63, -637",
+                    "fluid": "net.minecraft.world.level.material.EmptyFluid@7c919e1e",
+                    "state": "Block{minecraft:air}"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-603, 63, -637",
+                    "fluid": "net.minecraft.world.level.material.EmptyFluid@7c919e1e",
+                    "state": "Block{minecraft:air}"
+                  },
+                  {
+                    "bodyFits": true,
+                    "at": "-604, 63, -636",
+                    "fluid": "net.minecraft.world.level.material.EmptyFluid@7c919e1e",
+                    "state": "Block{minecraft:short_grass}"
+                  }
+                ],
+                "distanceToVoice": 145.91093173576817,
+                "closest": "-550, 62, -696",
+                "remainingQueue": 0,
+                "inspected": 21535
+              },
+              "reachableControls": [
+                {
+                  "at": "-632, 74, -628",
+                  "distanceToVoice": 252.44009190300974,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003deast,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-632, 75, -628",
+                  "distanceToVoice": 252.48564315620007,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003deast,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-629, 74, -620",
+                  "distanceToVoice": 254.9568590958086,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003deast,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-629, 75, -620",
+                  "distanceToVoice": 255.0019607767752,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003deast,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-632, 79, -617",
+                  "distanceToVoice": 259.43014474035203,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dnorth,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-632, 80, -617",
+                  "distanceToVoice": 259.4937378820537,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dnorth,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-632, 74, -612",
+                  "distanceToVoice": 262.3242268643901,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003deast,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-632, 75, -612",
+                  "distanceToVoice": 262.3680620807342,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003deast,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-645, 74, -629",
+                  "distanceToVoice": 262.3852129979889,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dwest,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-645, 75, -629",
+                  "distanceToVoice": 262.42903802742563,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dwest,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-633, 65, -609",
+                  "distanceToVoice": 264.78859492055165,
+                  "state": "Block{minecraft:iron_door}[facing\u003dsouth,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-633, 66, -609",
+                  "distanceToVoice": 264.79803624649486,
+                  "state": "Block{minecraft:iron_door}[facing\u003dsouth,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-634, 66, -610",
+                  "distanceToVoice": 264.92640487501427,
+                  "state": "Block{minecraft:lever}[face\u003dwall,facing\u003dnorth,powered\u003dfalse]"
+                },
+                {
+                  "at": "-659, 64, -627",
+                  "distanceToVoice": 274.8563261051126,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dwest,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-659, 65, -627",
+                  "distanceToVoice": 274.86178344760845,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dwest,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-661, 64, -615",
+                  "distanceToVoice": 283.2984292226132,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dwest,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-661, 65, -615",
+                  "distanceToVoice": 283.3037239430502,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dwest,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-658, 64, -607",
+                  "distanceToVoice": 285.6028711340276,
+                  "state": "Block{minecraft:dark_oak_fence_gate}[facing\u003dwest,in_wall\u003dfalse,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-658, 64, -606",
+                  "distanceToVoice": 286.2062193593983,
+                  "state": "Block{minecraft:dark_oak_fence_gate}[facing\u003dwest,in_wall\u003dfalse,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-664, 64, -612",
+                  "distanceToVoice": 287.4821733603668,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dnorth,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-664, 65, -612",
+                  "distanceToVoice": 287.48739102785015,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dnorth,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-651, 64, -592",
+                  "distanceToVoice": 289.50129533388963,
+                  "state": "Block{minecraft:dark_oak_fence_gate}[facing\u003dwest,in_wall\u003dfalse,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-651, 64, -591",
+                  "distanceToVoice": 290.14823797500475,
+                  "state": "Block{minecraft:dark_oak_fence_gate}[facing\u003dwest,in_wall\u003dfalse,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-651, 64, -590",
+                  "distanceToVoice": 290.79718017890065,
+                  "state": "Block{minecraft:dark_oak_fence_gate}[facing\u003dwest,in_wall\u003dfalse,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-679, 65, -622",
+                  "distanceToVoice": 294.37051482782715,
+                  "state": "Block{minecraft:lever}[face\u003dwall,facing\u003dsouth,powered\u003dfalse]"
+                },
+                {
+                  "at": "-680, 64, -623",
+                  "distanceToVoice": 294.6811836544709,
+                  "state": "Block{minecraft:iron_door}[facing\u003dnorth,half\u003dlower,hinge\u003dright,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-680, 65, -623",
+                  "distanceToVoice": 294.6862738574703,
+                  "state": "Block{minecraft:iron_door}[facing\u003dnorth,half\u003dupper,hinge\u003dright,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-681, 64, -623",
+                  "distanceToVoice": 295.53003231482245,
+                  "state": "Block{minecraft:iron_door}[facing\u003dnorth,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-681, 65, -623",
+                  "distanceToVoice": 295.53510789752204,
+                  "state": "Block{minecraft:iron_door}[facing\u003dnorth,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-682, 65, -622",
+                  "distanceToVoice": 296.9124450069414,
+                  "state": "Block{minecraft:lever}[face\u003dwall,facing\u003dsouth,powered\u003dfalse]"
+                },
+                {
+                  "at": "-676, 70, -610",
+                  "distanceToVoice": 298.5397795939429,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dwest,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                },
+                {
+                  "at": "-676, 71, -610",
+                  "distanceToVoice": 298.564900817226,
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dwest,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]"
+                }
+              ],
+              "operatorFloorMap": {
+                "rows": [
+                  "-690:                                                                                                                                                 ",
+                  "-689:                                                                                                                                                 ",
+                  "-688:                                                                                                                                                 ",
+                  "-687:                                                                                                                                                 ",
+                  "-686:                                                                                                                                                 ",
+                  "-685:                                                                                                                                                 ",
+                  "-684:                                                                                                                                                 ",
+                  "-683:                                                                                                                                                 ",
+                  "-682:                                                                                                                                                 ",
+                  "-681:                                                                                                                                                 ",
+                  "-680:                                                                                                                                                 ",
+                  "-679:                                                                                                                                                 ",
+                  "-678:                                                                                                                                                 ",
+                  "-677:                                                                                                                                                 ",
+                  "-676:                                                                                                                                                 ",
+                  "-675:                                                                       # F #                                                                     ",
+                  "-674:                                                                       #   #                                                                     ",
+                  "-673:                                                     F         #FF#  ###  ####                                                                   ",
+                  "-672:                                                     #         F  F      F#                                                                      ",
+                  "-671:                                                     F         F  F  F   o  oF                                                                   ",
+                  "-670:                                                               #FF#   o   o o                                                                    ",
+                  "-669:                                                     F               F   o   F    F                                                              ",
+                  "-668:                                                     #                   F        #                                                              ",
+                  "-667:                                                     F  # F #        ###   ###    F                                                              ",
+                  "-666:                                                        #   #          #   #                                                                     ",
+                  "-665:                                                        ##  #          # F #      F                                                              ",
+                  "-664:                                                        #   #   #FF#              #                                                              ",
+                  "-663:                                                        # F #   F  F              F t                                                            ",
+                  "-662:                                                                F  F                                                                             ",
+                  "-661:                                                                #FF#      #####                                                                  ",
+                  "-660:                                                                                                                                                 ",
+                  "-659:                                                     # F #          F     F   F                                                                  ",
+                  "-658:                                                     #   #          #                                                                            ",
+                  "-657:                                                     #   #          F     #####                                                                  ",
+                  "-656:                                                     #   #                                                                                       ",
+                  "-655:                                                     # F #          F                                                                            ",
+                  "-654:                                                                    #                                                                            ",
+                  "-653:                                                                    F                                                                            ",
+                  "-652:                                                                                                                                                 ",
+                  "-651:                                     t          oo##o               oooooo                                                                       ",
+                  "-650:                                  t        o##########oooooo    ooo#####oooooo                                                                   ",
+                  "-649:                                          o################oooooo##########oo#########oo   oooo                                                  ",
+                  "-648:                   #####                  o##################oo#########################oooooooooo                                               ",
+                  "-647:                              tt          ######################################o#########oooooooooo                                             ",
+                  "-646:                   F   F       F#FtF#F    ######   #############################ooo##############oooo                                            ",
+                  "-645:                                         o#####     ######################o#####oooo###############oo                                            ",
+                  "-644:                   #####          #####  o#####     ######################ooo###oooo#####o#########ooo                                           ",
+                  "-643:                                         o#####     ######################ooo###oooo###ooooooooo####oo                                           ",
+                  "-642:                                  F   F  o######   ########oo#############ooo###ooo###ooooooooooo###oo                                           ",
+                  "-641:                      #ooo#              o#############oooooo#######o###o#ooo###ooo###oooooooooooo###o                                           ",
+                  "-640:                      o###o       #####   #############oooooo#o#o#o#o#ooo#ooooooooo###oooooooooooo####o                                          ",
+                  "-639:                      o#oooo              o###########ooooooooooooooooooooooooooooo##ooooooooooooo####o                                          ",
+                  "-638:                  F   o###oo  F F F       o###########ooooooooooooooooooooooooooooo###oooooooooooo####o   #####                                  ",
+                  "-637:                  #   #ooo#   ooooo        o##########oooooooooooooooooooooooooooooo##oooooooooooo###oo                                          ",
+                  "-636:                  F          ######o       o##########ooooooooooooooooooooooooooooo####ooooooooooo###oo   F   F   #FF#    ###                    ",
+                  "-635:                            ooooooo         ##########oooooo#ooooooo#ooooooo#ooooooo###oooooooooooo##oo  t           F    ##o                    ",
+                  "-634:                  F           F F F         o#########ooooo####ooo#####################oooooooF F F##oo   #####      F    ###                    ",
+                  "-633:                  #                         oo###ooo###ooo#####ooo#####################ooooooooo## ###o           #FF#    ###                    ",
+                  "-632:                  F                          oooBBoo##ooooo###oooo############ooo######oooooooFoooF###o                   ###                    ",
+                  "-631:                  t          F    F          o##ooo###ooooo##ooooooo#####o#o##o#oo#####oooooooooooo###ot               F  F F                    ",
+                  "-630:               t             ######          o##BBoo##ooooo####oo#oooo###oooooo#oo#####oooooooF F F###                 #                         ",
+                  "-629:               t            ###  ###          ###ooBB##oooo##W#oo#oooooooooooooooo#####ooooooooooo####                 F                         ",
+                  "-628:               t            ###  ###          ##BBooo#ooooo####oo#ooooooooooooo#oo#####oooooooo#ooo###                                           ",
+                  "-627:               t   #####     ##  ##           ##oooooDooooo##ooooooo#ooooooo#oo#oo####ooooooooo##oo###                 F                         ",
+                  "-626:                             ##  ##           ##BBooo#ooooo###################ooo#####ooooooooF###F###o         F F    #                         ",
+                  "-625:                   F   F    ###  ###         o###oo####ooo#############################oooooooo###o###o t       #o#    F                         ",
+                  "-624:                            ###  ###         o########ooooo###o#ooo###o#######ooooo###ooooooooF###F###o   ##### o##       #FF#                   ",
+                  "-623:                   #####     ##II##          o####oo#ooooooo#ooooooo#oooo#oo#ooooooo#oooooooooo###o###o         ###       F  F                   ",
+                  "-622:                                            oo###ooooooooooo#ooooooooo#ooo#oooooooooooooooooooF###F###o   F   F o##       F  F                   ",
+                  "-621:                                            oo###ooooooooooo#ooooooooooooooooooooooooooooooooooo#oo###          ###       #FF#                   ",
+                  "-620:                   F#F F#F                  o###ooooooooooo###oooooooooooooooooooooooooooooooooooooo##    #####                                  ",
+                  "-619:                                            o######ooooooooo#ooooo#####ooooo#ooooooo#ooooooooooooooo##                                           ",
+                  "-618:                                            o#######oooooooooooooo#   #oooo###ooooo###ooooooooF FtFo##                                           ",
+                  "-617:                                            #########ooooooooooooo##  #ooo#############ooooooooo##oo##                                           ",
+                  "-616:                                            ###oooo#oooooooooooooo#   #oooo###########ooooooooFoooF###                                           ",
+                  "-615:                            ###########     ###ooooDoooooooo#ooooo#####oooo###########ooooooooooooo###o          #FF#                            ",
+                  "-614:                            ###########     ###oooo#ooooooo###ooooooooooooo###########ooooooooF F F###o                 #FF#                     ",
+                  "-613:                            ###########     ####oo###FFooooo#oooooooooooooo############oooooooooooo###o          F  F   F  F                     ",
+                  "-612:                            ###########     ####D###ooFoooo##oooooooooooooo############ooooooooooo#####          #FF#   F  F                     ",
+                  "-611:                            ###########     ###ooo#oooFooooo#oooooooooooooo############ooooooooooo#####                 #FF#                     ",
+                  "-610:                            ###########    o##ooooooooFoooo###o#o#ooo#o#o#o#############oooooooooo#####                                          ",
+                  "-609:                            ###########    o##ooooooooFooooo############################ooooooooo#####o                                          ",
+                  "-608:                            ###########    o##ooooooooFoooooo#o#o#ooo#o#o#o## ###   ####oooooooooo####o                                          ",
+                  "-607:                            ###########    o##ooooooooGoooooooooooooooooooo##       ####oooooooooo###oo                                          ",
+                  "-606:                            ###########    o##ooooooooGoooooooooooooooooooo##    #######oooooooooo###o                                           ",
+                  "-605:                            ###########    o###oooooooFoooooooooooooooooooo##    ######ooooooooooo###o                                           ",
+                  "-604:                                           o##ooooooooFoooooooooooooooooooo##       ###ooooooFtF F####                                           ",
+                  "-603:                                           o##ooooooooFoooooo ooooooooooooo##B B B B##ooooooooo##t####                                           ",
+                  "-602:                                           o##ooooooooFooooooFooooooooooooo##B B B B##oooooooFoooFo###o         F F F                            ",
+                  "-601:                                           o##ooooooooFoooooo ooo###oooooo#############oooooooooooo###o         ooooo                            ",
+                  "-600:                                           o##FFFFFFFFFooooooo ooooooo oooo############ooooooF FtF###oo        ######o                           ",
+                  "-599:                                           o##ooooooooooooooooFoooooooFooooo#ooo######oooooooooooo###o        ooooooo    #####                   ",
+                  "-598:                     # F #                o######oooooooooooootoFoooootFoooooooo#####ooooooooooooo###           F F F                            ",
+                  "-597:                     #   # #####          o########oooooooooooooF  toooFooootooo###oooooooooooooooo # t      t      # F #F   F                   ",
+                  "-596:                     #   #   #            o#########oo#ooooo#oooF F  oooFoooFooo###o####ooooooooooo #   t           #   #  #                     ",
+                  "-595:                     #   # F   F          o##############o####ooF### oooFooo oo###oo####oooooF F Fo #o              #   ######                   ",
+                  "-594:                     # F #                o#############ooooo##F#FFF#FFF#oooooo###oo####ooooooo##t####o    # #      #   #                        ",
+                  "-593:                           #####          o#############ooooo#ooo  toooFooooooo###oo####oooooFoooF####o    ##       # F #                        ",
+                  "-592:                              #o###F      ##############o###oGoooooooooFooooooo##ooooooooooooooooo####o tt # #                                   ",
+                  "-591:                              ####o       ############oooooooGooooooooo#ooooooo##ooooooooooooF F F####         tt                                ",
+                  "-590:                              #o#o#F      ############oooooooGoooooooooFoooooo###oooooooooooooooo####o   t     t  t                              ",
+                  "-589:                                          ############o#####o#oooooooooFoooooo###oooooooooooooooo#####       F FtF        #FF#                   ",
+                  "-588:                                         #############o#####o##F#ooo#FFFoooooo###oooooooooooF FtF#####       ooooooot        F                   ",
+                  "-587:                                         #####################oooooooooooooooo##oooooooooooooo##t#####      o######       F  F                   ",
+                  "-586:                                         ####################oooooooooooooooo###ooooooooooooFoooF####o       ooooot      t#FF#                   ",
+                  "-585:                     t                   ####################oooooooooooooooo##oo o ooooooooooooo###oo       F F F      t    tt t                ",
+                  "-584:                  t t                    ####################oooooooooooo#ooo###o###ooooooooFtF F###o                     t                      ",
+                  "-583:                                         ####################o F ooooooo##ooo###o###oooooooooooooo##o                      t tt                  ",
+                  "-582:                                         ####################oooooo Fto###ooo###o###oooooooooooooo##o                     o                      ",
+                  "-581:                                         ###################oooooooooooo##ooo###o###ooooooooooooo###oo                  Fo#oF                    ",
+                  "-580:                  #FF#   F#F F#F         #####################oooo#ooooo##ooo###o###ooooooooooooo####o                   o#o                     ",
+                  "-579:                  F  F                     o#######################ooooo##ooo###oooooooooooooooo#####o           t  tt  Fo#oF                    ",
+                  "-578:                  F  F                     oooo###oooooo####o#############oo####oooooooooooooooo#####o               t   o#o                     ",
+                  "-577:                  #FF#    #FF#             ooooooooooFoFoFooooo#################oooooooooooooooo#####o              t   Fo#oF                    ",
+                  "-576:                          F  F             ooF F Fooo#######oooooo##############oooooooooooooooo####oo                    #o                     ",
+                  "-575:                          F  F              oooo##oo#######ooooooooooooooo###ooooooooooooooooooo####o                      o                     ",
+                  "-574:                          #FF#     #####    oFoooFooo#####oooooooooooooooooFoooooooooooooooooooo###oo                                            ",
+                  "-573:                                     #       o###ooooFoFoFoooooooooooooooooFoooooooo####oooooooo###oo                      t                     ",
+                  "-572:                                   F   F     F F#FoooooooooooooooooooooooooFoooooooo####ooooooo###ooo                                            ",
+                  "-571:                                             ooooooooooooooooooooooooooooo###ooooooo####oooooo####oo                                             ",
+                  "-570:                                   #####      ooooooooooooooooooooooooo#########oooo####ooooo#####oo                                             ",
+                  "-569:                                              ooooo#o#oo####ooooooooooo#########ooooooooooo######oo                                              ",
+                  "-568:                                               ooooo#ooo####ooooooooooo############ooo##########oo                                               ",
+                  "-567:                                               oooo###oo####ooooooooooo##oooo################oooo                                                ",
+                  "-566:                                                 ooooooo####ooooooooooo##oooo###########ooooooo t                                                ",
+                  "-565:                                                  ooooooooooooooooooooo###ooo###oooooooooooo                                                     ",
+                  "-564:                           t                        ooooooooooooooooooo#### o###oooooooooo                                                       ",
+                  "-563:                                                     oooooooooo     ooo#########oooooooo                                                         ",
+                  "-562:                            t                            oooo         o#########oooooo                                                           ",
+                  "-561:                                                                       ooooooooooo                                                               ",
+                  "-560:                         t                                                        #####                                                          ",
+                  "-559:                           t                                                      #####                                                          ",
+                  "-558:                           t                                # F #                 #####                                                          ",
+                  "-557:                           ##                               #   #                 #####                                                          ",
+                  "-556:                          ###                               #  ##             F#F F#F#                                                           ",
+                  "-555:                     t t ####                               #   #                                                                                ",
+                  "-554:                        t####                               # F #                                                                                ",
+                  "-553:                    t   t####tt                                                                                                                  ",
+                  "-552:                  t t    #####t     t ###                      F#F F#F                                                                           ",
+                  "-551:                  t    t#######       ###                                                                                                        ",
+                  "-550:                   t t ########## t   t##                                                                                                        ",
+                  "-549:                 t t t############     ##                              # F #                                                                     ",
+                  "-548:                 t t #############     ##                              #   #     o                                                               ",
+                  "-547:               t  t  ############       #                  # ###F    ###  ####   o#                                                              ",
+                  "-546:               t     ############                          #####         F#     Fo#oF                                                            ",
+                  "-545:                 ttt ##########                            #####F    F       F   o#o                                                             ",
+                  "-544:                   tt##########t                                                Fo#oF                                                            ",
+                  "-543:            t        ########## t                               F F  F       F    #                                                              ",
+                  "-542:                t t  ############                               ###      F      F # F                                                            ",
+                  "-541:            t t   ###############                               ###  ###   ###                                                                   ",
+                  "-540:                #################                               ###    #   #                                                                     ",
+                  "-539:              t t################                                ##    # F #                                                                     ",
+                  "-538:            t     ###############                               ###      t                                                                       ",
+                  "-537:               t  t##############                                     t                                                                          ",
+                  "-536:               ttt ##############                                                                                                                ",
+                  "-535:              tt   ##############                                                                                                                ",
+                  "-534:                 tt##############                                                                                                                ",
+                  "-533:            t t    ###############                                                                                                               ",
+                  "-532:            t     ###################                                                                                                            ",
+                  "-531:       t      t    ##################                                                                                                            ",
+                  "-530:               t    #################                                                                                                            ",
+                  "-529:       t t   t      #################                                                                                                            ",
+                  "-528:      t   t   ttt t  ################                                                                                                            ",
+                  "-527:     t       t t  t  ################                                                                                                            ",
+                  "-526:       tt t t        ################                                                                                                            ",
+                  "-525:     t     t        t################                                                                                                            ",
+                  "-524:            t       t#################                                                                                                           ",
+                  "-523:        t     t tt     ###############                                                                                                           ",
+                  "-522:           t          t  #############                                                                                                           "
+                ],
+                "y": 64,
+                "minZ": -690,
+                "minX": -712
+              },
+              "nearest": [
+                {
+                  "at": "-587, 63, -637",
+                  "sides": [
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-587, 63, -638",
+                      "below": "Block{minecraft:water}[level\u003d0]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-586, 63, -637",
+                      "below": "Block{minecraft:water}[level\u003d0]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-587, 63, -636",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:short_grass}",
+                      "at": "-588, 63, -637",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    }
+                  ],
+                  "distanceToVoice": 211.69081227110448
+                },
+                {
+                  "at": "-588, 63, -638",
+                  "sides": [
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-588, 63, -639",
+                      "below": "Block{minecraft:water}[level\u003d0]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-587, 63, -638",
+                      "below": "Block{minecraft:water}[level\u003d0]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:short_grass}",
+                      "at": "-588, 63, -637",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:short_grass}",
+                      "at": "-589, 63, -638",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    }
+                  ],
+                  "distanceToVoice": 211.7663807123312
+                },
+                {
+                  "at": "-587, 63, -636",
+                  "sides": [
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-587, 63, -637",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-586, 63, -636",
+                      "below": "Block{minecraft:water}[level\u003d0]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:short_grass}",
+                      "at": "-587, 63, -635",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:dark_oak_slab}[type\u003dtop,waterlogged\u003dfalse]",
+                      "at": "-588, 63, -636",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:dark_oak_stairs}[facing\u003dnorth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]"
+                    }
+                  ],
+                  "distanceToVoice": 212.3628969476542
+                },
+                {
+                  "at": "-588, 63, -637",
+                  "sides": [
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-588, 63, -638",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-587, 63, -637",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:dark_oak_slab}[type\u003dtop,waterlogged\u003dfalse]",
+                      "at": "-588, 63, -636",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:dark_oak_stairs}[facing\u003dnorth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-589, 63, -637",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    }
+                  ],
+                  "distanceToVoice": 212.4335190124195
+                },
+                {
+                  "at": "-589, 63, -638",
+                  "sides": [
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-589, 63, -639",
+                      "below": "Block{minecraft:water}[level\u003d0]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-588, 63, -638",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-589, 63, -637",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-590, 63, -638",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    }
+                  ],
+                  "distanceToVoice": 212.51352898109803
+                },
+                {
+                  "at": "-587, 63, -635",
+                  "sides": [
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-587, 63, -636",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-586, 63, -635",
+                      "below": "Block{minecraft:water}[level\u003d0]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-587, 63, -634",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:stripped_dark_oak_log}[axis\u003dx]",
+                      "at": "-588, 63, -635",
+                      "below": "Block{minecraft:dirt}",
+                      "head": "Block{minecraft:air}"
+                    }
+                  ],
+                  "distanceToVoice": 213.03755537463343
+                },
+                {
+                  "at": "-588, 65, -636",
+                  "sides": [
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-588, 65, -637",
+                      "below": "Block{minecraft:air}",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-587, 65, -636",
+                      "below": "Block{minecraft:air}",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-588, 65, -635",
+                      "below": "Block{minecraft:air}",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-589, 65, -636",
+                      "below": "Block{minecraft:barrel}[facing\u003dup,open\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    }
+                  ],
+                  "distanceToVoice": 213.11264626952573
+                },
+                {
+                  "at": "-589, 63, -637",
+                  "sides": [
+                    {
+                      "block": "Block{minecraft:short_grass}",
+                      "at": "-589, 63, -638",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:short_grass}",
+                      "at": "-588, 63, -637",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:dark_oak_slab}[type\u003dtop,waterlogged\u003dfalse]",
+                      "at": "-589, 63, -636",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:barrel}[facing\u003dup,open\u003dfalse]"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-590, 63, -637",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    }
+                  ],
+                  "distanceToVoice": 213.17832910500073
+                },
+                {
+                  "at": "-590, 63, -638",
+                  "sides": [
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-590, 63, -639",
+                      "below": "Block{minecraft:water}[level\u003d0]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:short_grass}",
+                      "at": "-589, 63, -638",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-590, 63, -637",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-591, 63, -638",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    }
+                  ],
+                  "distanceToVoice": 213.26274873967088
+                },
+                {
+                  "at": "-586, 63, -633",
+                  "sides": [
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-586, 63, -634",
+                      "below": "Block{minecraft:water}[level\u003d0]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-585, 63, -633",
+                      "below": "Block{minecraft:water}[level\u003d0]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-586, 63, -632",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-587, 63, -633",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    }
+                  ],
+                  "distanceToVoice": 213.66328650472454
+                },
+                {
+                  "at": "-587, 63, -634",
+                  "sides": [
+                    {
+                      "block": "Block{minecraft:short_grass}",
+                      "at": "-587, 63, -635",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-586, 63, -634",
+                      "below": "Block{minecraft:water}[level\u003d0]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-587, 63, -633",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:dark_oak_slab}[type\u003dtop,waterlogged\u003dfalse]",
+                      "at": "-588, 63, -634",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:pumpkin}"
+                    }
+                  ],
+                  "distanceToVoice": 213.71476317746513
+                },
+                {
+                  "at": "-588, 64, -635",
+                  "sides": [
+                    {
+                      "block": "Block{minecraft:dark_oak_stairs}[facing\u003dnorth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                      "at": "-588, 64, -636",
+                      "below": "Block{minecraft:dark_oak_slab}[type\u003dtop,waterlogged\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-587, 64, -635",
+                      "below": "Block{minecraft:short_grass}",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:pumpkin}",
+                      "at": "-588, 64, -634",
+                      "below": "Block{minecraft:dark_oak_slab}[type\u003dtop,waterlogged\u003dfalse]",
+                      "head": "Block{minecraft:pumpkin}"
+                    },
+                    {
+                      "block": "Block{minecraft:hay_block}[axis\u003dy]",
+                      "at": "-589, 64, -635",
+                      "below": "Block{minecraft:dark_oak_slab}[type\u003dtop,waterlogged\u003dfalse]",
+                      "head": "Block{minecraft:pumpkin}"
+                    }
+                  ],
+                  "distanceToVoice": 213.7779221528734
+                },
+                {
+                  "at": "-589, 65, -636",
+                  "sides": [
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-589, 65, -637",
+                      "below": "Block{minecraft:air}",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-588, 65, -636",
+                      "below": "Block{minecraft:dark_oak_stairs}[facing\u003dnorth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:pumpkin}",
+                      "at": "-589, 65, -635",
+                      "below": "Block{minecraft:hay_block}[axis\u003dy]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-590, 65, -636",
+                      "below": "Block{minecraft:dark_oak_stairs}[facing\u003dnorth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    }
+                  ],
+                  "distanceToVoice": 213.85509112480815
+                },
+                {
+                  "at": "-590, 63, -637",
+                  "sides": [
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-590, 63, -638",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-589, 63, -637",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:dark_oak_slab}[type\u003dtop,waterlogged\u003dfalse]",
+                      "at": "-590, 63, -636",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:dark_oak_stairs}[facing\u003dnorth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-591, 63, -637",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    }
+                  ],
+                  "distanceToVoice": 213.92522057952868
+                },
+                {
+                  "at": "-591, 63, -638",
+                  "sides": [
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-591, 63, -639",
+                      "below": "Block{minecraft:water}[level\u003d0]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-590, 63, -638",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-591, 63, -637",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-592, 63, -638",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    }
+                  ],
+                  "distanceToVoice": 214.0140182324513
+                },
+                {
+                  "at": "-592, 63, -639",
+                  "sides": [
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-592, 63, -640",
+                      "below": "Block{minecraft:water}[level\u003d0]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-591, 63, -639",
+                      "below": "Block{minecraft:water}[level\u003d0]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:air}",
+                      "at": "-592, 63, -638",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    },
+                    {
+                      "block": "Block{minecraft:short_grass}",
+                      "at": "-593, 63, -639",
+                      "below": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                      "head": "Block{minecraft:air}"
+                    }
+                  ],
+                  "distanceToVoice": 214.11212016137713
+                }
+              ],
+              "inspected": 10005,
+              "remainingQueue": 0,
+              "allControls": [
+                {
+                  "at": "-645, 74, -629",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dwest,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-645, 75, -629",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dwest,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-632, 74, -628",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003deast,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-632, 75, -628",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003deast,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-659, 64, -627",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dwest,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-659, 65, -627",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dwest,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-681, 64, -623",
+                  "state": "Block{minecraft:iron_door}[facing\u003dnorth,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-680, 64, -623",
+                  "state": "Block{minecraft:iron_door}[facing\u003dnorth,half\u003dlower,hinge\u003dright,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-681, 65, -623",
+                  "state": "Block{minecraft:iron_door}[facing\u003dnorth,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-680, 65, -623",
+                  "state": "Block{minecraft:iron_door}[facing\u003dnorth,half\u003dupper,hinge\u003dright,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-682, 65, -622",
+                  "state": "Block{minecraft:lever}[face\u003dwall,facing\u003dsouth,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-679, 65, -622",
+                  "state": "Block{minecraft:lever}[face\u003dwall,facing\u003dsouth,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-629, 74, -620",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003deast,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-629, 75, -620",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003deast,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-632, 79, -617",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dnorth,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-632, 80, -617",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dnorth,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-661, 64, -615",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dwest,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-661, 65, -615",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dwest,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-664, 64, -612",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dnorth,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-664, 65, -612",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dnorth,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-632, 74, -612",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003deast,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-632, 75, -612",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003deast,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-634, 66, -610",
+                  "state": "Block{minecraft:lever}[face\u003dwall,facing\u003dnorth,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-676, 70, -610",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dwest,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-676, 71, -610",
+                  "state": "Block{minecraft:dark_oak_door}[facing\u003dwest,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-633, 65, -609",
+                  "state": "Block{minecraft:iron_door}[facing\u003dsouth,half\u003dlower,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-633, 66, -609",
+                  "state": "Block{minecraft:iron_door}[facing\u003dsouth,half\u003dupper,hinge\u003dleft,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-658, 64, -607",
+                  "state": "Block{minecraft:dark_oak_fence_gate}[facing\u003dwest,in_wall\u003dfalse,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-658, 64, -606",
+                  "state": "Block{minecraft:dark_oak_fence_gate}[facing\u003dwest,in_wall\u003dfalse,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-651, 64, -592",
+                  "state": "Block{minecraft:dark_oak_fence_gate}[facing\u003dwest,in_wall\u003dfalse,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-651, 64, -591",
+                  "state": "Block{minecraft:dark_oak_fence_gate}[facing\u003dwest,in_wall\u003dfalse,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                },
+                {
+                  "at": "-651, 64, -590",
+                  "state": "Block{minecraft:dark_oak_fence_gate}[facing\u003dwest,in_wall\u003dfalse,open\u003dfalse,powered\u003dfalse]",
+                  "nearReachable": true
+                }
+              ]
+            },
+            "cells": [
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-606, 61, -638",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 61, -638",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-604, 61, -638",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 61, -638",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-602, 61, -638",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-606, 62, -638",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 62, -638",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-604, 62, -638",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 62, -638",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-602, 62, -638",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-606, 63, -638",
+                "block": "Block{minecraft:dark_oak_fence}[east\u003dfalse,north\u003dfalse,south\u003dfalse,waterlogged\u003dfalse,west\u003dfalse]",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 63, -638",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-604, 63, -638",
+                "block": "Block{minecraft:dark_oak_fence}[east\u003dfalse,north\u003dfalse,south\u003dfalse,waterlogged\u003dfalse,west\u003dfalse]",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 63, -638",
+                "block": "Block{minecraft:short_grass}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-602, 63, -638",
+                "block": "Block{minecraft:dark_oak_fence}[east\u003dfalse,north\u003dfalse,south\u003dfalse,waterlogged\u003dfalse,west\u003dfalse]",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-606, 64, -638",
+                "block": "Block{minecraft:gray_wool_stairs}[facing\u003dsouth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 64.5
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 64, -638",
+                "block": "Block{minecraft:light_gray_wool_stairs}[facing\u003dsouth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-604, 64, -638",
+                "block": "Block{minecraft:light_gray_wool_stairs}[facing\u003dsouth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 64.5
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 64, -638",
+                "block": "Block{minecraft:light_gray_wool_stairs}[facing\u003dsouth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-602, 64, -638",
+                "block": "Block{minecraft:gray_wool_stairs}[facing\u003dsouth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 64.5
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-606, 65, -638",
+                "block": "Block{minecraft:air}",
+                "floor": 65.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-605, 65, -638",
+                "block": "Block{minecraft:air}",
+                "floor": 65.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-604, 65, -638",
+                "block": "Block{minecraft:air}",
+                "floor": 65.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-603, 65, -638",
+                "block": "Block{minecraft:air}",
+                "floor": 65.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-602, 65, -638",
+                "block": "Block{minecraft:air}",
+                "floor": 65.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-606, 61, -637",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 61, -637",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-604, 61, -637",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 61, -637",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-602, 61, -637",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-606, 62, -637",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 62, -637",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-604, 62, -637",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 62, -637",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-602, 62, -637",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-606, 63, -637",
+                "block": "Block{minecraft:short_grass}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-605, 63, -637",
+                "block": "Block{minecraft:short_grass}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-604, 63, -637",
+                "block": "Block{minecraft:short_grass}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-603, 63, -637",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-602, 63, -637",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-606, 64, -637",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 64, -637",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-604, 64, -637",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 64, -637",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-602, 64, -637",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-606, 65, -637",
+                "block": "Block{minecraft:gray_wool_stairs}[facing\u003dsouth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 64.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 65, -637",
+                "block": "Block{minecraft:light_gray_wool_stairs}[facing\u003dsouth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 64.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-604, 65, -637",
+                "block": "Block{minecraft:light_gray_wool_stairs}[facing\u003dsouth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 64.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 65, -637",
+                "block": "Block{minecraft:light_gray_wool_stairs}[facing\u003dsouth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 64.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-602, 65, -637",
+                "block": "Block{minecraft:gray_wool_stairs}[facing\u003dsouth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 64.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-606, 61, -636",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 61, -636",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-604, 61, -636",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 61, -636",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-602, 61, -636",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-606, 62, -636",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 62, -636",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-604, 62, -636",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 62, -636",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-602, 62, -636",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-606, 63, -636",
+                "block": "Block{minecraft:dark_oak_fence}[east\u003dfalse,north\u003dfalse,south\u003dfalse,waterlogged\u003dfalse,west\u003dfalse]",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-605, 63, -636",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-604, 63, -636",
+                "block": "Block{minecraft:short_grass}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-603, 63, -636",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-602, 63, -636",
+                "block": "Block{minecraft:dark_oak_fence}[east\u003dfalse,north\u003dfalse,south\u003dfalse,waterlogged\u003dfalse,west\u003dfalse]",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-606, 64, -636",
+                "block": "Block{minecraft:dark_oak_fence}[east\u003dfalse,north\u003dfalse,south\u003dfalse,waterlogged\u003dfalse,west\u003dfalse]",
+                "floor": 64.5
+              },
+              {
+                "bodyFits": true,
+                "pathType": "OPEN",
+                "malus": 0.0,
+                "at": "-605, 64, -636",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "OPEN",
+                "malus": 0.0,
+                "at": "-604, 64, -636",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "OPEN",
+                "malus": 0.0,
+                "at": "-603, 64, -636",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-602, 64, -636",
+                "block": "Block{minecraft:dark_oak_fence}[east\u003dfalse,north\u003dfalse,south\u003dfalse,waterlogged\u003dfalse,west\u003dfalse]",
+                "floor": 64.5
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-606, 65, -636",
+                "block": "Block{minecraft:dark_oak_fence}[east\u003dfalse,north\u003dtrue,south\u003dtrue,waterlogged\u003dfalse,west\u003dfalse]",
+                "floor": 65.5
+              },
+              {
+                "bodyFits": true,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 65, -636",
+                "block": "Block{minecraft:air}",
+                "floor": 64.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-604, 65, -636",
+                "block": "Block{minecraft:air}",
+                "floor": 64.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 65, -636",
+                "block": "Block{minecraft:air}",
+                "floor": 64.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-602, 65, -636",
+                "block": "Block{minecraft:dark_oak_fence}[east\u003dfalse,north\u003dtrue,south\u003dtrue,waterlogged\u003dfalse,west\u003dfalse]",
+                "floor": 65.5
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-606, 61, -635",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 61, -635",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-604, 61, -635",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 61, -635",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-602, 61, -635",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-606, 62, -635",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 62, -635",
+                "block": "Block{minecraft:dirt}",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-604, 62, -635",
+                "block": "Block{minecraft:dirt}",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 62, -635",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-602, 62, -635",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-606, 63, -635",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 63, -635",
+                "block": "Block{minecraft:crafting_table}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-604, 63, -635",
+                "block": "Block{minecraft:barrel}[facing\u003dup,open\u003dfalse]",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-603, 63, -635",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-602, 63, -635",
+                "block": "Block{minecraft:short_grass}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-606, 64, -635",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 64, -635",
+                "block": "Block{minecraft:air}",
+                "floor": 64.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-604, 64, -635",
+                "block": "Block{minecraft:air}",
+                "floor": 64.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 64, -635",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-602, 64, -635",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-606, 65, -635",
+                "block": "Block{minecraft:gray_wool_stairs}[facing\u003dnorth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 64.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 65, -635",
+                "block": "Block{minecraft:light_gray_wool_stairs}[facing\u003dnorth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 64.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-604, 65, -635",
+                "block": "Block{minecraft:light_gray_wool_stairs}[facing\u003dnorth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 64.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 65, -635",
+                "block": "Block{minecraft:light_gray_wool_stairs}[facing\u003dnorth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 64.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-602, 65, -635",
+                "block": "Block{minecraft:gray_wool_stairs}[facing\u003dnorth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 64.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-606, 61, -634",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 61, -634",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-604, 61, -634",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 61, -634",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-602, 61, -634",
+                "block": "Block{minecraft:dirt}",
+                "floor": 61.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-606, 62, -634",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 62, -634",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-604, 62, -634",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 62, -634",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-602, 62, -634",
+                "block": "Block{minecraft:grass_block}[snowy\u003dfalse]",
+                "floor": 62.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-606, 63, -634",
+                "block": "Block{minecraft:dark_oak_fence}[east\u003dfalse,north\u003dfalse,south\u003dfalse,waterlogged\u003dfalse,west\u003dfalse]",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 63, -634",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-604, 63, -634",
+                "block": "Block{minecraft:dark_oak_fence}[east\u003dfalse,north\u003dtrue,south\u003dfalse,waterlogged\u003dfalse,west\u003dfalse]",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 63, -634",
+                "block": "Block{minecraft:air}",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "FENCE",
+                "malus": -1.0,
+                "at": "-602, 63, -634",
+                "block": "Block{minecraft:dark_oak_fence}[east\u003dfalse,north\u003dfalse,south\u003dfalse,waterlogged\u003dfalse,west\u003dfalse]",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-606, 64, -634",
+                "block": "Block{minecraft:gray_wool_stairs}[facing\u003dnorth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 64.5
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-605, 64, -634",
+                "block": "Block{minecraft:light_gray_wool_stairs}[facing\u003dnorth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-604, 64, -634",
+                "block": "Block{minecraft:light_gray_wool_stairs}[facing\u003dnorth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 64.5
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-603, 64, -634",
+                "block": "Block{minecraft:light_gray_wool_stairs}[facing\u003dnorth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 63.0
+              },
+              {
+                "bodyFits": false,
+                "pathType": "BLOCKED",
+                "malus": -1.0,
+                "at": "-602, 64, -634",
+                "block": "Block{minecraft:gray_wool_stairs}[facing\u003dnorth,half\u003dbottom,shape\u003dstraight,waterlogged\u003dfalse]",
+                "floor": 64.5
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-606, 65, -634",
+                "block": "Block{minecraft:air}",
+                "floor": 65.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-605, 65, -634",
+                "block": "Block{minecraft:air}",
+                "floor": 65.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-604, 65, -634",
+                "block": "Block{minecraft:air}",
+                "floor": 65.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-603, 65, -634",
+                "block": "Block{minecraft:air}",
+                "floor": 65.0
+              },
+              {
+                "bodyFits": true,
+                "pathType": "WALKABLE",
+                "malus": 0.0,
+                "at": "-602, 65, -634",
+                "block": "Block{minecraft:air}",
+                "floor": 65.0
+              }
+            ],
+            "edges": [
+              {
+                "at": "-604, 63, -637",
+                "malus": 0.0,
+                "type": "WALKABLE"
+              },
+              {
+                "at": "-603, 63, -636",
+                "malus": 0.0,
+                "type": "WALKABLE"
+              },
+              {
+                "at": "-605, 63, -636",
+                "malus": 0.0,
+                "type": "WALKABLE"
+              },
+              {
+                "at": "-603, 63, -637",
+                "malus": 0.0,
+                "type": "WALKABLE"
+              },
+              {
+                "at": "-605, 63, -637",
+                "malus": 0.0,
+                "type": "WALKABLE"
+              }
+            ],
+            "canPassDoors": true,
+            "canOpenDoors": false,
+            "start": {
+              "at": "-604, 63, -636",
+              "malus": 0.0,
+              "type": "WALKABLE"
+            },
+            "canFloat": true
+          },
+          "paths": [],
+          "position": "(-603.0403383347243, 63.0, -635.4790995286521)"
+        },
+        "insideDonorCamp": false,
+        "distance": 224.73729,
+        "homeCoversDonor": false,
+        "id": "460ab4b6-1522-4504-9673-25fd503e0610",
+        "listeningQueries": 12,
+        "listeningRoute": {
+          "found": false
+        },
+        "sameCamp": false,
+        "decodesRequest": true
+      }
+    ]
+  },
+  "rememberedFarmRoutes": [],
+  "localFoodSurvey": {
+    "nearest": [
+      {
+        "state": "Block{minecraft:hay_block}[axis\u003dz]",
+        "at": "-435, 63, -782",
+        "visible": true,
+        "route": {
+          "end": "-435, 64, -782",
+          "nodes": 6,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 5.830951894845301
+      },
+      {
+        "state": "Block{minecraft:hay_block}[axis\u003dz]",
+        "at": "-434, 63, -784",
+        "visible": false,
+        "route": {
+          "end": "-434, 64, -783",
+          "nodes": 7,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 6.4031242374328485
+      },
+      {
+        "state": "Block{minecraft:hay_block}[axis\u003dz]",
+        "at": "-436, 63, -782",
+        "visible": false,
+        "route": {
+          "end": "-435, 64, -782",
+          "nodes": 6,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 6.708203932499369
+      },
+      {
+        "state": "Block{minecraft:hay_block}[axis\u003dx]",
+        "at": "-434, 63, -785",
+        "visible": false,
+        "route": {
+          "end": "-434, 64, -784",
+          "nodes": 8,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 7.211102550927978
+      },
+      {
+        "state": "Block{minecraft:hay_block}[axis\u003dy]",
+        "at": "-433, 63, -786",
+        "visible": false,
+        "route": {
+          "end": "-433, 64, -786",
+          "nodes": 10,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 7.615773105863909
+      },
+      {
+        "state": "Block{minecraft:hay_block}[axis\u003dz]",
+        "at": "-434, 63, -786",
+        "visible": false,
+        "route": {
+          "end": "-434, 64, -785",
+          "nodes": 9,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 8.06225774829855
+      },
+      {
+        "state": "Block{minecraft:hay_block}[axis\u003dx]",
+        "at": "-435, 63, -786",
+        "visible": false,
+        "route": {
+          "end": "-435, 64, -786",
+          "nodes": 10,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 8.602325267042627
+      },
+      {
+        "state": "Block{minecraft:hay_block}[axis\u003dy]",
+        "at": "-437, 63, -784",
+        "visible": false,
+        "route": {
+          "end": "-437, 64, -784",
+          "nodes": 8,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 8.602325267042627
+      },
+      {
+        "state": "Block{minecraft:beetroots}[age\u003d1]",
+        "at": "-441, 64, -755",
+        "visible": false,
+        "route": {
+          "end": "-441, 64, -755",
+          "nodes": 27,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 26.419689627245813
+      },
+      {
+        "state": "Block{minecraft:wheat}[age\u003d3]",
+        "at": "-442, 64, -755",
+        "visible": false,
+        "route": {
+          "end": "-441, 64, -755",
+          "nodes": 27,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 26.851443164195103
+      },
+      {
+        "state": "Block{minecraft:wheat}[age\u003d3]",
+        "at": "-443, 64, -755",
+        "visible": false,
+        "route": {
+          "end": "-442, 64, -755",
+          "nodes": 28,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 27.313000567495326
+      },
+      {
+        "state": "Block{minecraft:wheat}[age\u003d4]",
+        "at": "-441, 64, -754",
+        "visible": false,
+        "route": {
+          "end": "-441, 64, -754",
+          "nodes": 28,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 27.331300737432898
+      },
+      {
+        "state": "Block{minecraft:wheat}[age\u003d3]",
+        "at": "-442, 64, -754",
+        "visible": false,
+        "route": {
+          "end": "-442, 64, -754",
+          "nodes": 28,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 27.748873851023216
+      },
+      {
+        "state": "Block{minecraft:wheat}[age\u003d1]",
+        "at": "-444, 64, -755",
+        "visible": false,
+        "route": {
+          "end": "-444, 64, -755",
+          "nodes": 31,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 27.80287754891569
+      },
+      {
+        "state": "Block{minecraft:wheat}[age\u003d1]",
+        "at": "-443, 64, -754",
+        "visible": false,
+        "route": {
+          "end": "-443, 64, -754",
+          "nodes": 29,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 28.19574435974337
+      },
+      {
+        "state": "Block{minecraft:wheat}[age\u003d4]",
+        "at": "-445, 64, -755",
+        "visible": false,
+        "route": {
+          "end": "-445, 64, -755",
+          "nodes": 32,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 28.319604517012593
+      },
+      {
+        "state": "Block{minecraft:wheat}[age\u003d1]",
+        "at": "-444, 64, -754",
+        "visible": false,
+        "route": {
+          "end": "-444, 64, -754",
+          "nodes": 30,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 28.6705423736629
+      },
+      {
+        "state": "Block{minecraft:carrots}[age\u003d5]",
+        "at": "-446, 64, -755",
+        "visible": false,
+        "route": {
+          "end": "-446, 64, -755",
+          "nodes": 33,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 28.861739379323623
+      },
+      {
+        "state": "Block{minecraft:beetroots}[age\u003d2]",
+        "at": "-445, 64, -754",
+        "visible": false,
+        "route": {
+          "end": "-445, 64, -754",
+          "nodes": 31,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 29.171904291629644
+      },
+      {
+        "state": "Block{minecraft:carrots}[age\u003d3]",
+        "at": "-447, 64, -755",
+        "visible": false,
+        "route": {
+          "end": "-447, 64, -755",
+          "nodes": 34,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 29.427877939124322
+      },
+      {
+        "state": "Block{minecraft:carrots}[age\u003d7]",
+        "at": "-442, 64, -752",
+        "visible": false,
+        "route": {
+          "end": "-442, 64, -752",
+          "nodes": 32,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 29.563490998188964
+      },
+      {
+        "state": "Block{minecraft:potatoes}[age\u003d5]",
+        "at": "-446, 64, -754",
+        "visible": false,
+        "route": {
+          "end": "-446, 64, -754",
+          "nodes": 33,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 29.698484809834994
+      },
+      {
+        "state": "Block{minecraft:carrots}[age\u003d5]",
+        "at": "-444, 64, -751",
+        "visible": false,
+        "route": {
+          "end": "-443, 64, -751",
+          "nodes": 33,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 31.32091952673165
+      },
+      {
+        "state": "Block{minecraft:carrots}[age\u003d2]",
+        "at": "-446, 64, -752",
+        "visible": false,
+        "route": {
+          "end": "-446, 64, -752",
+          "nodes": 37,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": true,
+        "distance": 31.400636936215164
+      },
+      {
+        "state": "Block{minecraft:carrots}[age\u003d1]",
+        "at": "-445, 64, -751",
+        "visible": false,
+        "route": {
+          "end": "-444, 64, -751",
+          "nodes": 36,
+          "found": true,
+          "reaches": true
+        },
+        "homeRange": false,
+        "distance": 31.78049716414141
+      },
+      {
+        "state": "Block{minecraft:chest}[facing\u003dwest,type\u003dsingle,waterlogged\u003dfalse]",
+        "at": "-439, 64, -827",
+        "visible": false,
+        "route": {
+          "end": "-436, 63, -820",
+          "nodes": 42,
+          "found": true,
+          "reaches": false
+        },
+        "homeRange": false,
+        "distance": 48.84669896727925
+      },
+      {
+        "state": "Block{minecraft:potatoes}[age\u003d2]",
+        "at": "-471, 64, -815",
+        "visible": false,
+        "route": {
+          "end": "-445, 62, -804",
+          "nodes": 29,
+          "found": true,
+          "reaches": false
+        },
+        "homeRange": false,
+        "distance": 54.57105459856901
+      },
+      {
+        "state": "Block{minecraft:carrots}[age\u003d1]",
+        "at": "-471, 64, -816",
+        "visible": false,
+        "route": {
+          "end": "-445, 62, -804",
+          "nodes": 29,
+          "found": true,
+          "reaches": false
+        },
+        "homeRange": false,
+        "distance": 55.235857918565905
+      },
+      {
+        "state": "Block{minecraft:potatoes}[age\u003d0]",
+        "at": "-471, 64, -817",
+        "visible": false,
+        "route": {
+          "end": "-445, 62, -804",
+          "nodes": 29,
+          "found": true,
+          "reaches": false
+        },
+        "homeRange": false,
+        "distance": 55.910642993977454
+      },
+      {
+        "state": "Block{minecraft:carrots}[age\u003d0]",
+        "at": "-474, 64, -814",
+        "visible": false,
+        "route": {
+          "end": "-445, 62, -804",
+          "nodes": 29,
+          "found": true,
+          "reaches": false
+        },
+        "homeRange": false,
+        "distance": 56.231663678038196
+      },
+      {
+        "state": "Block{minecraft:beetroots}[age\u003d0]",
+        "at": "-471, 64, -818",
+        "visible": false,
+        "route": {
+          "end": "-445, 62, -804",
+          "nodes": 29,
+          "found": true,
+          "reaches": false
+        },
+        "homeRange": false,
+        "distance": 56.595052787324086
+      },
+      {
+        "state": "Block{minecraft:beetroots}[age\u003d2]",
+        "at": "-474, 64, -815",
+        "visible": false,
+        "route": {
+          "end": "-445, 62, -804",
+          "nodes": 29,
+          "found": true,
+          "reaches": false
+        },
+        "homeRange": false,
+        "distance": 56.859475903318
+      },
+      {
+        "state": "Block{minecraft:potatoes}[age\u003d1]",
+        "at": "-475, 64, -814",
+        "visible": false,
+        "route": {
+          "end": "-445, 62, -804",
+          "nodes": 29,
+          "found": true,
+          "reaches": false
+        },
+        "homeRange": false,
+        "distance": 57.01754116059373
+      },
+      {
+        "state": "Block{minecraft:beetroots}[age\u003d0]",
+        "at": "-474, 64, -817",
+        "visible": false,
+        "route": {
+          "end": "-445, 62, -804",
+          "nodes": 29,
+          "found": true,
+          "reaches": false
+        },
+        "homeRange": false,
+        "distance": 58.146367040426526
+      },
+      {
+        "state": "Block{minecraft:beetroots}[age\u003d1]",
+        "at": "-475, 64, -819",
+        "visible": false,
+        "route": {
+          "end": "-445, 62, -804",
+          "nodes": 29,
+          "found": true,
+          "reaches": false
+        },
+        "homeRange": false,
+        "distance": 60.21627686929839
+      }
+    ],
+    "scope": "Frozen operator-only block and native route survey; no contents read, resource grants, body movement, or coordinates taught.",
+    "counts": {
+      "Block{minecraft:beetroots}": 6,
+      "Block{minecraft:carrots}": 14,
+      "Block{minecraft:chest}": 1,
+      "Block{minecraft:hay_block}": 51,
+      "Block{minecraft:potatoes}": 4,
+      "Block{minecraft:wheat}": 30
+    }
+  },
+  "table": "null",
+  "blockedTable": "null",
+  "canWorkAt": false
+}

@@ -1,0 +1,136 @@
+{
+  "exitCode": 0,
+  "wallTimeGuard": false,
+  "oldSaveUnchanged": true,
+  "beforeHumanoids": 179,
+  "afterHumanoids": 179,
+  "missingOriginalIds": [],
+  "newHumanoidIds": [],
+  "managedVillagers": 33,
+  "minManagedHealth": 20.0,
+  "adventurer": {
+    "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+    "type": "minecraft:villager",
+    "position": [
+      -462.6590880129306,
+      63.0,
+      -373.6763037932411
+    ],
+    "health": 20.0,
+    "tags": [
+      "villagers:quarry_failed:-128917739929537:131408",
+      "villagers:quarry_failed:-133315786215361:131408",
+      "villagers:quarry_failed:-127268472487873:131408",
+      "villagers:quarry_failed:-133590664163265:131408",
+      "villagers:managed",
+      "villagers:stone_shore:-126168960860097",
+      "villagers:quarry_failed:-132216274751425:131408",
+      "villagers:quarry_failed:-130292129456065:131408",
+      "villagers:stone_shore:-129742373699521",
+      "villagers:native_resident_seen",
+      "villagers:stone_shore:-128917739769793",
+      "villagers:stone_shore:-130567007150017",
+      "villagers:quarry_failed:-132216274767809:131408",
+      "villagers:adventurer"
+    ],
+    "noAI": false,
+    "invulnerable": false,
+    "age": 0,
+    "attributes": [
+      {
+        "modifiers": [
+          {
+            "amount": -0.05755709282684849,
+            "operation": "add_multiplied_base",
+            "id": "minecraft:random_spawn_bonus"
+          }
+        ],
+        "base": 16.0,
+        "id": "minecraft:follow_range"
+      },
+      {
+        "base": 1.0,
+        "id": "minecraft:attack_damage"
+      },
+      {
+        "base": 0.5,
+        "id": "minecraft:movement_speed"
+      },
+      {
+        "base": 4.0,
+        "id": "minecraft:attack_speed"
+      }
+    ],
+    "effects": [],
+    "vehicle": null,
+    "inventory": [
+      {
+        "id": "minecraft:wooden_pickaxe",
+        "count": 1
+      },
+      {
+        "id": "minecraft:crafting_table",
+        "count": 1
+      },
+      {
+        "id": "minecraft:dirt",
+        "count": 4
+      },
+      {
+        "id": "minecraft:wheat",
+        "count": 1
+      },
+      {
+        "id": "minecraft:wheat_seeds",
+        "count": 4
+      },
+      {
+        "id": "minecraft:carrot",
+        "count": 1
+      },
+      {
+        "id": "minecraft:beetroot_seeds",
+        "count": 1
+      },
+      {
+        "id": "minecraft:bread",
+        "count": 1
+      }
+    ],
+    "equipment": {
+      "mainhand": {
+        "id": "minecraft:wooden_hoe",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 30
+        }
+      }
+    },
+    "meetingPoint": {
+      "value": {
+        "pos": [
+          -493,
+          64,
+          -329
+        ],
+        "dimension": "minecraft:overworld"
+      }
+    },
+    "dimensionFolder": "dimensions/minecraft/overworld/entities",
+    "name": "Clover-edc5",
+    "food": {
+      "foodLevel": 20,
+      "saturation": 6.0,
+      "exhaustion": 2.3619308,
+      "timer": 0
+    },
+    "home": {
+      "dimension": "minecraft:overworld",
+      "x": -467,
+      "y": 64,
+      "z": -377
+    }
+  },
+  "stonePickaxeMilestoneRequested": false,
+  "stoneTierPickaxeOwned": false
+}

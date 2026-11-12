@@ -1,0 +1,2055 @@
+{
+  "runtime": "runs/native-primary-paced-iron-v6",
+  "result": {
+    "requestedNativeTps": 80,
+    "nativeRateVerifiedInObservation": true,
+    "lastObservedNativeTps": 80.0,
+    "observedNativeRates": [
+      20.0,
+      80.0
+    ],
+    "exitCode": 0,
+    "wallTimeGuard": false,
+    "oldSaveUnchanged": true,
+    "beforeHumanoids": 179,
+    "afterHumanoids": 179,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "managedVillagers": 33,
+    "minManagedHealth": 20.0,
+    "adventurer": {
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "type": "minecraft:villager",
+      "position": [
+        -467.2806174798235,
+        64.5625,
+        -376.7016081717848
+      ],
+      "health": 20.0,
+      "tags": [
+        "villagers:mine_floor:-129467495710666",
+        "villagers:mine_floor:-128642862002122",
+        "villagers:mine_floor:-128367984082890",
+        "villagers:mine_floor:-128917739904970",
+        "villagers:mine_floor:-129192617816009",
+        "villagers:mine_floor:-129192617820106",
+        "villagers:mine_floor:-128917739921353",
+        "villagers:mine_floor:-127268472479689",
+        "villagers:quarry_failed:-127268472467393:202145",
+        "villagers:mine_floor:-128093106188234",
+        "villagers:mine_floor:-128093106200521",
+        "villagers:stone_shore:-126168960860097",
+        "villagers:mine_floor:-127543350386633",
+        "villagers:mine_floor:-128367984095178",
+        "villagers:mine_floor:-129742373629895",
+        "villagers:mine_floor:-128917739909066",
+        "villagers:stored_furnace_fuel:-126993594548161",
+        "villagers:mine_floor:-129192617803722",
+        "villagers:mine_floor:-128642862010314",
+        "villagers:mine_floor:-129742373613514",
+        "villagers:mine_floor:-129467495735241",
+        "villagers:mine_floor:-128917739913162",
+        "villagers:mine_stair:-127268472483784:-131666518978497:WEST:5:1:level:active",
+        "villagers:stone_shore:-131391641075649",
+        "villagers:mine_floor:-128093106192330",
+        "villagers:mine_floor:-127543350390729",
+        "villagers:mine_floor:-127818228297673",
+        "villagers:owned_furnace:-126993594548161:3:3",
+        "villagers:mine_floor:-130017251536838",
+        "villagers:mine_floor:-129467495706570",
+        "villagers:stone_shore:-129742373699521",
+        "villagers:mine_floor:-127268472459204",
+        "villagers:mine_floor:-128642861989834",
+        "villagers:mine_floor:-128642861993930",
+        "villagers:mine_floor:-128367984091082",
+        "villagers:mine_floor:-127268472463299",
+        "villagers:stone_shore:-130567007150017",
+        "villagers:mine_floor:-128642861998026",
+        "villagers:adventurer",
+        "villagers:mine_floor:-129742373617610",
+        "villagers:mine_floor:-129467495731145",
+        "villagers:workbench:-463,63,-379,minecraft:overworld",
+        "villagers:mine_floor:-128093106184138",
+        "villagers:mine_floor:-130567007350725",
+        "villagers:mine_floor:-128642862014409",
+        "villagers:mine_floor:-128367984111561",
+        "villagers:mine_floor:-128367984099274",
+        "villagers:managed",
+        "villagers:quarry_failed:-130567007231937:192849",
+        "villagers:mine_floor:-129467495727049",
+        "villagers:mine_floor:-129192617828297",
+        "villagers:mine_floor:-127268472451014",
+        "villagers:mine_floor:-129467495722952",
+        "villagers:mine_floor:-127268472442824",
+        "villagers:quarry:-131666518978497:EAST:16",
+        "villagers:native_resident_seen",
+        "villagers:mine_floor:-128367984107465",
+        "villagers:mine_floor:-131116763164612",
+        "villagers:mine_floor:-129467495714762",
+        "villagers:mine_floor:-130292129443781",
+        "villagers:mine_floor:-128917739900874",
+        "villagers:mine_floor:-127268472467394",
+        "villagers:mine_floor:-128367984086986",
+        "villagers:mine_floor:-128917739896778",
+        "villagers:mine_floor:-128642862006218",
+        "villagers:mine_floor:-128093106204617",
+        "villagers:mine_floor:-129467495718858",
+        "villagers:mine_floor:-127818228293577",
+        "villagers:mine_floor:-127268472455109",
+        "villagers:mine_floor:-129742373621706",
+        "villagers:mine_floor:-130841885257669",
+        "villagers:mine_floor:-128093106180042",
+        "villagers:mine_floor:-127268472446919",
+        "villagers:mine_floor:-129192617811914",
+        "villagers:mine_floor:-127268472483785",
+        "villagers:mine_floor:-128642862018505",
+        "villagers:mine_floor:-129192617799626",
+        "villagers:mine_floor:-128367984103370",
+        "villagers:stone_shore:-128917739769793",
+        "villagers:mine_floor:-128093106196426",
+        "villagers:mine_floor:-129192617807818"
+      ],
+      "noAI": false,
+      "invulnerable": false,
+      "age": 0,
+      "attributes": [
+        {
+          "base": 0.5,
+          "id": "minecraft:movement_speed"
+        },
+        {
+          "modifiers": [
+            {
+              "amount": -0.05755709282684849,
+              "operation": "add_multiplied_base",
+              "id": "minecraft:random_spawn_bonus"
+            }
+          ],
+          "base": 16.0,
+          "id": "minecraft:follow_range"
+        },
+        {
+          "base": 1.0,
+          "id": "minecraft:attack_damage"
+        },
+        {
+          "base": 4.0,
+          "id": "minecraft:attack_speed"
+        }
+      ],
+      "effects": [],
+      "vehicle": null,
+      "inventory": [
+        {
+          "id": "minecraft:iron_pickaxe",
+          "count": 1
+        },
+        {
+          "id": "minecraft:wooden_hoe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 17
+          }
+        },
+        {
+          "id": "minecraft:dirt",
+          "count": 33
+        },
+        {
+          "id": "minecraft:bread",
+          "count": 2
+        },
+        {
+          "id": "minecraft:wheat",
+          "count": 2
+        },
+        {
+          "id": "minecraft:carrot",
+          "count": 7
+        },
+        {
+          "id": "minecraft:stick",
+          "count": 4
+        }
+      ],
+      "equipment": {
+        "mainhand": {
+          "id": "minecraft:stone_pickaxe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 70
+          }
+        },
+        "offhand": {
+          "id": "minecraft:wooden_pickaxe",
+          "count": 1,
+          "components": {
+            "minecraft:damage": 4
+          }
+        }
+      },
+      "meetingPoint": {
+        "value": {
+          "pos": [
+            -493,
+            64,
+            -329
+          ],
+          "dimension": "minecraft:overworld"
+        }
+      },
+      "dimensionFolder": "dimensions/minecraft/overworld/entities",
+      "name": "Clover-edc5",
+      "food": {
+        "foodLevel": 19,
+        "saturation": 0.0,
+        "exhaustion": 0.3541776,
+        "timer": 0
+      },
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -467,
+        "y": 64,
+        "z": -377
+      }
+    },
+    "stonePickaxeMilestoneRequested": false,
+    "ironIngotsMilestoneRequested": false,
+    "ironPickaxeMilestoneRequested": true,
+    "stoneTierPickaxeOwned": true,
+    "ironIngotsOwned": 0,
+    "ironTierPickaxeOwned": true
+  },
+  "terminal": {
+    "pid": 1419772,
+    "exitCode": 0,
+    "wallTimeGuard": false,
+    "milestoneRequested": true,
+    "ended": 1794363560.3536968,
+    "evidence": "/home/cmkrist/Documents/Villagers/runs/native-four-regions-play/evidence/play-2026-11-11T02-17-10.541446029Z-2379df82"
+  },
+  "milestoneGameTime": 253831,
+  "milestoneHero": {
+    "uuid": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+    "position": [
+      -467.2806174798235,
+      64.5625,
+      -376.7016081717848
+    ],
+    "health": 20.0,
+    "nativeAge": 0,
+    "baby": false,
+    "sleeping": true,
+    "food": 20,
+    "fatigue": 0.0018750000000000001,
+    "mood": "CONTENT",
+    "nextBreedingAt": 0,
+    "courtship": "none",
+    "courtshipActive": false,
+    "nextFamilySignal": 252164,
+    "nextFamilyReply": 0,
+    "familyStatus": "saving food for a child",
+    "familyFoodGoal": false,
+    "selfFoodGoal": false,
+    "selfFoodDeficit": 0,
+    "stockWheatTarget": 0,
+    "foodStatus": "not working",
+    "plotsCultivatedThisLoad": 0,
+    "expansionTarget": "none",
+    "farmJourneyActive": false,
+    "farmRecall": {
+      "knownFarms": [
+        {
+          "id": 0,
+          "kind": "OBSERVED_FARM",
+          "tick": 124613,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -486,
+            "y": 64,
+            "z": -324
+          },
+          "detail": "minecraft:wheat",
+          "knownBy": []
+        },
+        {
+          "id": 1,
+          "kind": "OBSERVED_FARM",
+          "tick": 125283,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -489,
+            "y": 64,
+            "z": -321
+          },
+          "detail": "minecraft:carrots",
+          "knownBy": []
+        },
+        {
+          "id": 2,
+          "kind": "OBSERVED_FARM",
+          "tick": 129212,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -485,
+            "y": 63,
+            "z": -329
+          },
+          "detail": "minecraft:wheat",
+          "knownBy": []
+        },
+        {
+          "id": 3,
+          "kind": "OBSERVED_FARM",
+          "tick": 222567,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -482,
+            "y": 63,
+            "z": -375
+          },
+          "detail": "minecraft:wheat",
+          "knownBy": []
+        },
+        {
+          "id": 4,
+          "kind": "OBSERVED_FARM",
+          "tick": 223017,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -482,
+            "y": 63,
+            "z": -364
+          },
+          "detail": "minecraft:beetroots",
+          "knownBy": []
+        },
+        {
+          "id": 5,
+          "kind": "OBSERVED_FARM",
+          "tick": 224037,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -483,
+            "y": 63,
+            "z": -360
+          },
+          "detail": "minecraft:beetroots",
+          "knownBy": []
+        },
+        {
+          "id": 6,
+          "kind": "OBSERVED_FARM",
+          "tick": 224657,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -487,
+            "y": 63,
+            "z": -362
+          },
+          "detail": "minecraft:wheat",
+          "knownBy": []
+        },
+        {
+          "id": 7,
+          "kind": "OBSERVED_FARM",
+          "tick": 225157,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -489,
+            "y": 63,
+            "z": -338
+          },
+          "detail": "minecraft:wheat",
+          "knownBy": []
+        }
+      ],
+      "rejected": 0,
+      "target": "none",
+      "lastPath": {
+        "canReach": true,
+        "target": "-482, 63, -375",
+        "permitted": true,
+        "fromObservation": true,
+        "nodes": 20,
+        "gameTime": 247684
+      },
+      "trips": 1,
+      "arrivals": 0,
+      "status": "returning to remembered farm"
+    },
+    "companyTarget": "none",
+    "companyJourneyActive": false,
+    "companyStatus": "not seeking",
+    "companyScans": 0,
+    "companyPathRejections": 0,
+    "nextCompanyScan": 0,
+    "cropTarget": "none",
+    "edibleCropTarget": "none",
+    "nativeJobSite": "ResourceKey[minecraft:dimension / minecraft:overworld] BlockPos{x=-478, y=64, z=-368}",
+    "navigationDone": true,
+    "navigationTarget": "none",
+    "craftingStatus": "idle",
+    "breadCraftedThisLoad": 0,
+    "toolStatus": "not working",
+    "woodRecipesThisLoad": 0,
+    "hoesCraftedThisLoad": 0,
+    "stationStatus": "not working",
+    "stationRecipesThisLoad": 0,
+    "tablesBuiltThisLoad": 0,
+    "villageBedding": {
+      "sheepWool": {
+        "craftedShears": 0,
+        "target": "",
+        "lastReceipt": {},
+        "collected": 0,
+        "sheared": 0
+      },
+      "store": "",
+      "lastReceipt": {},
+      "recipes": 0,
+      "site": "",
+      "transfers": 0,
+      "placed": 0,
+      "activity": "no village bedding work"
+    },
+    "restStatus": "not resting",
+    "groundRestsThisLoad": 0,
+    "bedRestsThisLoad": 0,
+    "restPathRejections": 0,
+    "survival": {
+      "refugePathQueries": 5,
+      "centeringSuccesses": 0,
+      "homePathPlans": 3,
+      "recoveryUntil": 0,
+      "plans": 43,
+      "partialHomeRoutes": 0,
+      "refugeStandInspections": 75,
+      "rejectedPaths": 0,
+      "centeringAttempts": 0,
+      "centeringActive": false,
+      "lastFloorRoute": {},
+      "centeringFailures": 0,
+      "floorRoutes": 0,
+      "intent": "SHELTER",
+      "routeStalls": 0,
+      "lastRefugePlan": {
+        "gameTime": 253804,
+        "position": [
+          -467.2806174798235,
+          64.5625,
+          -376.7016081717848
+        ],
+        "bed": "-467, 64, -377",
+        "distance": 0.8086505764150498,
+        "covered": true,
+        "inside": true,
+        "dusk": true,
+        "danger": false,
+        "nativeActivity": "rest",
+        "clockTime": 253804,
+        "skyDarken": 11,
+        "raining": false,
+        "pathPresent": false,
+        "pathCanReach": false,
+        "pathNodes": 0,
+        "partialAccepted": false,
+        "bounded": false,
+        "homeReachable": true,
+        "homeSafe": true,
+        "blockedUntil": 0,
+        "guardianReachable": false,
+        "chosenIntent": "SHELTER"
+      }
+    },
+    "forestryStatus": "not working",
+    "logsGatheredThisLoad": 0,
+    "propagulesGatheredThisLoad": 0,
+    "propagulesPlantedThisLoad": 0,
+    "leavesClearedThisLoad": 0,
+    "rootsClearedThisLoad": 0,
+    "foodHelp": {
+      "target": "none",
+      "status": "own need or request budget unmet",
+      "received": 0,
+      "requests": 0,
+      "journeyActive": false,
+      "scans": 0,
+      "given": 0,
+      "pathRejections": 0
+    },
+    "forestryRoute": {
+      "standCandidates": 0,
+      "rejections": 0,
+      "batches": 0,
+      "cursor": 0,
+      "lastPath": "none"
+    },
+    "adventureActivity": {
+      "doorsClosed": 0,
+      "doorsOpened": 1,
+      "replantsFromHarvest": 1,
+      "swordHits": 0,
+      "cropsHarvested": 2,
+      "replantsFromStock": 1
+    },
+    "quarry": {
+      "lastStop": {},
+      "inspection": {
+        "target": "",
+        "reviewAt": 0,
+        "route": "none",
+        "visited": 0,
+        "lastRepair": {},
+        "reconsidered": 0,
+        "returning": false,
+        "repairs": 0,
+        "lastRetirement": {},
+        "survey": {
+          "visited": 0,
+          "target": "",
+          "lastRoute": {}
+        }
+      },
+      "origin": "-480, 63, -379",
+      "lastReceipt": {},
+      "step": 16,
+      "lastApproach": {},
+      "dug": 0,
+      "centerings": 0,
+      "stand": "",
+      "activity": "no quarry job"
+    },
+    "mining": {
+      "lastReceipt": {
+        "drops": [
+          "1 minecraft:coal"
+        ],
+        "reach": 1.4536670139160324,
+        "toolDamageBefore": 69,
+        "accessRepaired": false,
+        "toolDamageAfter": 70,
+        "position": "-470, 58, -384",
+        "contact": "(-469.4979566886791, 58.49827515485761, -383.0)",
+        "gameTime": 250634,
+        "toolBefore": "1 minecraft:stone_pickaxe"
+      },
+      "activity": "needs observed exposed natural stone",
+      "blocks": 37
+    },
+    "woodPreparation": {
+      "goal": "NONE",
+      "logs": 0,
+      "stepsPlaced": 0,
+      "lastStep": {},
+      "survey": {
+        "target": "",
+        "lastRoute": {},
+        "canopy": {
+          "target": "",
+          "lastReceipt": {},
+          "blocks": 0
+        }
+      },
+      "gates": {
+        "opened": 0,
+        "lastReceipt": {},
+        "gate": "",
+        "closed": 0
+      },
+      "recipes": 2,
+      "pathQueries": 0,
+      "lastPath": "none",
+      "activity": "crafting iron_pickaxe supplies",
+      "craftFailure": "none"
+    },
+    "inventoryRoom": {
+      "actions": 2,
+      "lastReceipt": {
+        "action": "put down superseded wooden pickaxe",
+        "worldCount": 1,
+        "bagAfter": 0,
+        "item": "minecraft:stone_pickaxe",
+        "gameTime": 250624,
+        "itemEntity": "4e6865b2-f1bf-4920-aacd-92f3a85ddfa1",
+        "bagBefore": 1
+      }
+    },
+    "stonePickaxePrepared": true,
+    "ironArmor": {
+      "ready": false,
+      "ironTarget": 8,
+      "lastReceipt": {},
+      "crafted": 0,
+      "equipped": 0,
+      "nextPiece": "CHEST"
+    },
+    "ironPreparation": {
+      "lastApproach": {},
+      "lastReceipt": {
+        "count": 1,
+        "item": "minecraft:iron_ingot",
+        "action": "collected native furnace output",
+        "gameTime": 251614
+      },
+      "loadedOre": 3,
+      "activity": "needs a safe observed mining face",
+      "furnace": "-463, 63, -376",
+      "crafted": 0,
+      "ironTaken": 3,
+      "passage": {
+        "part": 1,
+        "retainedFloors": 66,
+        "root": "-464, 56, -383",
+        "depth": 5,
+        "turns": 2,
+        "reselect": false,
+        "face": "-470, 57, -383",
+        "mode": "level",
+        "faceBlock": "Block{minecraft:stone}",
+        "activity": "returning to the recorded supported prospecting floor",
+        "exhausted": false,
+        "failedScans": 0,
+        "entry": "-480, 63, -379",
+        "frontier": "",
+        "backtracks": 0,
+        "lastRoute": {
+          "end": "-480, 63, -379",
+          "target": "-480, 63, -379",
+          "safe": true,
+          "actor": "(-467.7402861753057, 56.0, -381.63790933597284)",
+          "nodes": 15,
+          "gameTime": 252014
+        },
+        "frontierSearch": {
+          "activity": "not checking junctions",
+          "candidates": 0,
+          "queries": 0
+        }
+      },
+      "plannedSite": "",
+      "fuelStored": true
+    },
+    "ironIngots": 0,
+    "villageSupplies": {
+      "inspected": 0,
+      "target": "",
+      "moved": 0,
+      "lastReceipt": {},
+      "activity": "not seeking village supplies"
+    },
+    "ironPickaxePrepared": true,
+    "nativeActivity": "rest",
+    "lastHarvest": {
+      "gameTime": 247904,
+      "position": "-483, 63, -373",
+      "crop": "CARROT",
+      "plantingSource": "owned stock",
+      "nativeDrops": [
+        "1 minecraft:carrot",
+        "3 minecraft:carrot"
+      ],
+      "inventoryBefore": [
+        "1 minecraft:stone_pickaxe",
+        "1 minecraft:stone_pickaxe",
+        "33 minecraft:dirt",
+        "2 minecraft:bread",
+        "2 minecraft:wheat",
+        "4 minecraft:carrot",
+        "2 minecraft:oak_planks",
+        "2 minecraft:stick"
+      ],
+      "inventoryAfter": [
+        "1 minecraft:stone_pickaxe",
+        "1 minecraft:stone_pickaxe",
+        "33 minecraft:dirt",
+        "2 minecraft:bread",
+        "2 minecraft:wheat",
+        "7 minecraft:carrot",
+        "2 minecraft:oak_planks",
+        "2 minecraft:stick"
+      ],
+      "overflow": [],
+      "hoeDamageBefore": 16,
+      "hoeDamageAfter": 17,
+      "hoeBroke": false,
+      "usedHoe": true,
+      "cropAfter": "Block{minecraft:carrots}[age=0]"
+    },
+    "soilWork": {
+      "gathered": 0,
+      "lastReceipt": {},
+      "lastPath": {},
+      "pathQueries": 0,
+      "tripActive": false,
+      "delivered": 0,
+      "status": "not ready for soil work",
+      "pathRejections": 0,
+      "job": "none"
+    },
+    "action": "FLEE",
+    "electiveLearningCredit": false,
+    "inventory": [
+      "1 minecraft:iron_pickaxe",
+      "1 minecraft:wooden_hoe",
+      "33 minecraft:dirt",
+      "2 minecraft:bread",
+      "2 minecraft:wheat",
+      "7 minecraft:carrot",
+      "0 minecraft:air",
+      "4 minecraft:stick"
+    ],
+    "hasActualBreedingFood": true,
+    "mind": {
+      "schemaVersion": 9,
+      "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+      "name": "Clover-edc5",
+      "personality": {
+        "boldness": 0.17772372290389538,
+        "sociability": 0.41146150219306343,
+        "curiosity": 0.4847705782400493
+      },
+      "hunger": 0.0,
+      "fatigue": 0.0018750000000000001,
+      "loneliness": 0.40285714285713486,
+      "home": {
+        "dimension": "minecraft:overworld",
+        "x": -467,
+        "y": 64,
+        "z": -377
+      },
+      "learningUpdates": 114,
+      "values": [
+        [
+          0.025,
+          -0.06999999999999995,
+          -0.0906150163922986,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.125,
+          -0.09249999999999986,
+          -0.14964928855399545,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "visits": [
+        [
+          1,
+          2,
+          8,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          3,
+          27,
+          66,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "memories": [
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -469, 58, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -469, 57, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -469, 56, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -468, 58, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -468, 57, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Ate owned minecraft:carrot for hunger or healing"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -468, 56, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Planned trip to remembered farm -482, 63, -375"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Harvested real WHEAT at -482, 63, -373; replanted from native harvest"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Harvested real CARROT at -483, 63, -373; replanted from owned stock"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -467, 58, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -467, 57, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Prepared 4 minecraft:stick from possessed materials using a native recipe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -467, 57, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -467, 56, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -466, 58, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -467, 57, -384 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -468, 57, -384 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -466, 57, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -466, 56, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -465, 58, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -465, 57, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -465, 56, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -464, 58, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -464, 57, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -464, 56, -382 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -464, 58, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -464, 57, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -464, 56, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -465, 58, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -465, 57, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -465, 56, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -466, 58, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -466, 57, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -466, 56, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -467, 58, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -467, 56, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -468, 58, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -468, 57, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -468, 56, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -469, 58, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -469, 57, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -469, 56, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -470, 58, -383 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Put down my old wooden pickaxe to make working space while retaining a usable upgraded pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Mined actual surface stone at -470, 58, -384 using my pickaxe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Prepared 1 minecraft:iron_pickaxe from possessed materials using a native recipe"
+        },
+        {
+          "index": 114,
+          "context": -1,
+          "reward": 0.0,
+          "note": "Safety decision SHELTER at -480, 63, -379"
+        }
+      ],
+      "impressions": [],
+      "episodes": [
+        {
+          "id": 0,
+          "kind": "OBSERVED_FARM",
+          "tick": 124613,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -486,
+            "y": 64,
+            "z": -324
+          },
+          "detail": "minecraft:wheat",
+          "knownBy": []
+        },
+        {
+          "id": 1,
+          "kind": "OBSERVED_FARM",
+          "tick": 125283,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -489,
+            "y": 64,
+            "z": -321
+          },
+          "detail": "minecraft:carrots",
+          "knownBy": []
+        },
+        {
+          "id": 2,
+          "kind": "OBSERVED_FARM",
+          "tick": 129212,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -485,
+            "y": 63,
+            "z": -329
+          },
+          "detail": "minecraft:wheat",
+          "knownBy": []
+        },
+        {
+          "id": 3,
+          "kind": "OBSERVED_FARM",
+          "tick": 222567,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -482,
+            "y": 63,
+            "z": -375
+          },
+          "detail": "minecraft:wheat",
+          "knownBy": []
+        },
+        {
+          "id": 4,
+          "kind": "OBSERVED_FARM",
+          "tick": 223017,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -482,
+            "y": 63,
+            "z": -364
+          },
+          "detail": "minecraft:beetroots",
+          "knownBy": []
+        },
+        {
+          "id": 5,
+          "kind": "OBSERVED_FARM",
+          "tick": 224037,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -483,
+            "y": 63,
+            "z": -360
+          },
+          "detail": "minecraft:beetroots",
+          "knownBy": []
+        },
+        {
+          "id": 6,
+          "kind": "OBSERVED_FARM",
+          "tick": 224657,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -487,
+            "y": 63,
+            "z": -362
+          },
+          "detail": "minecraft:wheat",
+          "knownBy": []
+        },
+        {
+          "id": 7,
+          "kind": "OBSERVED_FARM",
+          "tick": 225157,
+          "place": {
+            "dimension": "minecraft:overworld",
+            "x": -489,
+            "y": 63,
+            "z": -338
+          },
+          "detail": "minecraft:wheat",
+          "knownBy": []
+        }
+      ],
+      "nextEpisodeId": 8,
+      "genome": {
+        "traitGenes": [
+          {
+            "gene": "COURAGE",
+            "first": "SECOND",
+            "second": "NEUTRAL"
+          },
+          {
+            "gene": "GENEROSITY",
+            "first": "NEUTRAL",
+            "second": "SECOND"
+          },
+          {
+            "gene": "SOCIABILITY",
+            "first": "NEUTRAL",
+            "second": "SECOND"
+          },
+          {
+            "gene": "APPETITE",
+            "first": "NEUTRAL",
+            "second": "SECOND"
+          },
+          {
+            "gene": "INDUSTRY",
+            "first": "NEUTRAL",
+            "second": "SECOND"
+          }
+        ],
+        "tendencyGenes": [
+          {
+            "tendency": "BOLDNESS",
+            "first": [
+              0.22708157903186232,
+              0.22708908952561546,
+              0.2297267439934741,
+              0.2201518824144511
+            ],
+            "second": [
+              0.12836586677592843,
+              0.1283583562821753,
+              0.12572070181431666,
+              0.13529556339333965
+            ]
+          },
+          {
+            "tendency": "SOCIABILITY",
+            "first": [
+              0.8121303087080459,
+              0.5955198292326334,
+              0.7644674522176198,
+              0.6606125138899355
+            ],
+            "second": [
+              0.010792695678080944,
+              0.22740317515349354,
+              0.05845555216850712,
+              0.16231049049619134
+            ]
+          },
+          {
+            "tendency": "CURIOSITY",
+            "first": [
+              0.7738748733572779,
+              0.6283790821532184,
+              0.7302815908040446,
+              0.5537543651325152
+            ],
+            "second": [
+              0.19566628312282075,
+              0.3411620743268803,
+              0.239259565676054,
+              0.4157867913475834
+            ]
+          },
+          {
+            "tendency": "APPETITE",
+            "first": [
+              0.6267651538084085,
+              0.5152431925645176,
+              0.4014404728909988,
+              0.529572521730208
+            ],
+            "second": [
+              0.021949508634865278,
+              0.1334714698787561,
+              0.24727418955227487,
+              0.1191421407130657
+            ]
+          },
+          {
+            "tendency": "FERTILITY",
+            "first": [
+              0.937622663661718,
+              0.7796636320408191,
+              0.7268177379618959,
+              0.7294217012124055
+            ],
+            "second": [
+              0.4533415273584234,
+              0.6113005589793222,
+              0.6641464530582455,
+              0.6615424898077359
+            ]
+          }
+        ]
+      },
+      "food": {
+        "foodLevel": 20,
+        "saturation": 0.0,
+        "exhaustion": 3.912101,
+        "timer": 0
+      },
+      "ageTicks": 213932,
+      "lexicon": {
+        "entries": [
+          {
+            "concept": "YES",
+            "word": "na",
+            "strength": 1.0
+          },
+          {
+            "concept": "NO",
+            "word": "kivut",
+            "strength": 1.0
+          },
+          {
+            "concept": "THANKS",
+            "word": "taso",
+            "strength": 1.0
+          },
+          {
+            "concept": "TRADE",
+            "word": "za",
+            "strength": 1.0
+          },
+          {
+            "concept": "BED",
+            "word": "bemo",
+            "strength": 1.0
+          },
+          {
+            "concept": "FRIEND",
+            "word": "pozake",
+            "strength": 1.0
+          },
+          {
+            "concept": "WALK",
+            "word": "lub",
+            "strength": 1.0
+          },
+          {
+            "concept": "DANGER",
+            "word": "ser",
+            "strength": 1.0
+          },
+          {
+            "concept": "MONSTER",
+            "word": "vesuk",
+            "strength": 1.0
+          },
+          {
+            "concept": "HURT",
+            "word": "mi",
+            "strength": 1.0
+          },
+          {
+            "concept": "HUNGRY",
+            "word": "fu",
+            "strength": 1.0
+          },
+          {
+            "concept": "TIRED",
+            "word": "ba",
+            "strength": 1.0
+          },
+          {
+            "concept": "LONELY",
+            "word": "pi",
+            "strength": 1.0
+          },
+          {
+            "concept": "HAPPY",
+            "word": "rusigis",
+            "strength": 1.0
+          },
+          {
+            "concept": "AFRAID",
+            "word": "ru",
+            "strength": 1.0
+          },
+          {
+            "concept": "EMERALD",
+            "word": "zid",
+            "strength": 1.0
+          },
+          {
+            "concept": "BREAD",
+            "word": "vig",
+            "strength": 1.0
+          },
+          {
+            "concept": "WHEAT",
+            "word": "livise",
+            "strength": 1.0
+          },
+          {
+            "concept": "CARROT",
+            "word": "kava",
+            "strength": 1.0
+          },
+          {
+            "concept": "POTATO",
+            "word": "didu",
+            "strength": 1.0
+          },
+          {
+            "concept": "BEETROOT",
+            "word": "tega",
+            "strength": 1.0
+          },
+          {
+            "concept": "SEEDS",
+            "word": "dadobu",
+            "strength": 1.0
+          },
+          {
+            "concept": "SWORD",
+            "word": "ki",
+            "strength": 1.0
+          },
+          {
+            "concept": "WOOD",
+            "word": "sabo",
+            "strength": 1.0
+          },
+          {
+            "concept": "WANT",
+            "word": "ketik",
+            "strength": 1.0
+          },
+          {
+            "concept": "FOOD",
+            "word": "sasur",
+            "strength": 1.0
+          },
+          {
+            "concept": "HOE",
+            "word": "pilu",
+            "strength": 1.0
+          },
+          {
+            "concept": "HOE",
+            "word": "lub",
+            "strength": 0.44999999999999996
+          },
+          {
+            "concept": "HOE",
+            "word": "pi",
+            "strength": 0.15
+          },
+          {
+            "concept": "HELLO",
+            "word": "vuzefam",
+            "strength": 1.0
+          }
+        ],
+        "evidence": [
+          {
+            "word": "sasur",
+            "heard": 5,
+            "meanings": [
+              {
+                "concept": "FOOD",
+                "count": 5
+              }
+            ]
+          },
+          {
+            "word": "pi",
+            "heard": 3,
+            "meanings": [
+              {
+                "concept": "HOE",
+                "count": 3
+              }
+            ]
+          },
+          {
+            "word": "ba",
+            "heard": 1,
+            "meanings": [
+              {
+                "concept": "HOE",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "word": "bemo",
+            "heard": 2,
+            "meanings": [
+              {
+                "concept": "HOE",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "word": "ketik",
+            "heard": 4,
+            "meanings": [
+              {
+                "concept": "HOE",
+                "count": 3
+              },
+              {
+                "concept": "WANT",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "word": "pozake",
+            "heard": 1,
+            "meanings": [
+              {
+                "concept": "HOE",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "word": "livise",
+            "heard": 1,
+            "meanings": [
+              {
+                "concept": "WHEAT",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "word": "lub",
+            "heard": 5,
+            "meanings": [
+              {
+                "concept": "HOE",
+                "count": 5
+              }
+            ]
+          },
+          {
+            "word": "vuzefam",
+            "heard": 12,
+            "meanings": [
+              {
+                "concept": "HELLO",
+                "count": 12
+              }
+            ]
+          },
+          {
+            "word": "pilu",
+            "heard": 2,
+            "meanings": [
+              {
+                "concept": "HOE",
+                "count": 2
+              }
+            ]
+          }
+        ],
+        "developing": false
+      },
+      "opinions": {
+        "known": [
+          {
+            "other": "c5578b5b-8991-428d-9d82-7cb57a956269",
+            "liking": 0.04,
+            "trust": 0.02,
+            "fear": 0.0,
+            "witnessed": 1,
+            "hearsay": 0,
+            "lastTick": 51386
+          },
+          {
+            "other": "af2b94ad-f799-4b93-a2c3-e958b2836c84",
+            "liking": 0.18,
+            "trust": 0.18,
+            "fear": 0.0,
+            "witnessed": 0,
+            "hearsay": 1,
+            "lastTick": 176262
+          },
+          {
+            "other": "96cbd3bc-ebc5-4522-b101-b83ee55c471f",
+            "liking": 0.7129080000000001,
+            "trust": 0.35645400000000005,
+            "fear": 0.0,
+            "witnessed": 12,
+            "hearsay": 2,
+            "lastTick": 179425
+          },
+          {
+            "other": "f572553d-4483-44b5-8ed5-6ffe7e7745b7",
+            "liking": 1.0,
+            "trust": 1.0,
+            "fear": 0.0,
+            "witnessed": 202,
+            "hearsay": 0,
+            "lastTick": 225293
+          },
+          {
+            "other": "1d165330-2598-410c-827e-cc3b13c7bef9",
+            "liking": 1.0,
+            "trust": 1.0,
+            "fear": 0.0,
+            "witnessed": 206,
+            "hearsay": 0,
+            "lastTick": 242557
+          },
+          {
+            "other": "438701f4-3aba-4cda-b583-46051f1e0f53",
+            "liking": 0.4799999999999999,
+            "trust": 0.23999999999999996,
+            "fear": 0.0,
+            "witnessed": 12,
+            "hearsay": 0,
+            "lastTick": 243607
+          }
+        ]
+      },
+      "experience": {
+        "boldness": 0.12600000000000008,
+        "sociability": 0.2,
+        "curiosity": 0.2
+      },
+      "nextBreedingAt": 0,
+      "originBiome": "minecraft:plains"
+    },
+    "nativeHome": "ResourceKey[minecraft:dimension / minecraft:overworld] BlockPos{x=-467, y=64, z=-377}",
+    "spareHomePoisWithin16": []
+  },
+  "process": {
+    "pid": 1419772,
+    "started": 1794363415.5977323,
+    "tickBudget": 12000,
+    "minHealth": 12,
+    "observer": [
+      -490,
+      95,
+      -310
+    ],
+    "nativeTps": 80,
+    "initialNativeTps": 20,
+    "nativeTpsIsRequestedTarget": true,
+    "starvationGuard": true,
+    "stopOnStonePickaxe": false,
+    "stopOnIronIngots": false,
+    "stopOnIronPickaxe": true,
+    "productionJarSHA256": "bc61ce0e22b6861d566ead009176773cce549539e68b70fe90df8556b31d23cb",
+    "config": {
+      "godChildren": false,
+      "hayForaging": true,
+      "nativeAdventureQuarry": true
+    }
+  },
+  "rateInitialization": {
+    "reason": "Explicit native PLAY initialization before pacing; original cohort readiness was still waiting despite normal native-world play",
+    "commands": [
+      "villagers play",
+      "gamemode spectator @a",
+      "tick rate 80"
+    ],
+    "scope": "No body, hunger, health, items, terrain or game clock setters"
+  },
+  "rateRequest": {
+    "requestedTps": 80,
+    "gameTime": 248608,
+    "scope": "Native tick pacing only; no clock skip, body, inventory, health, crop or resource setters"
+  },
+  "primarySavedGameTime": 253965,
+  "scope": "Actual primary continuation and native saved inventory; no copied-world promotion"
+}

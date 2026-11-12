@@ -1,0 +1,13 @@
+# Earned falling-block fill and native foundation candidate
+
+Goal ACTIVE; no victory, new armor/diamond or population growth proof. No actual-main advancement or copied save promotion by this thread.
+
+Base immutable v340 (639tests, emergency-neighbor root gift), schema12. Gathering prototype `/tmp/villagers-worker-v340-mine-fill-source`, pinned SHAea94b616dcac012069d910baf91ad4d48b4e45100c87419ab53fd137f5c059ae. `worker-v340-mine-fill-care-20261111` PASS12000ticks,328120→340120; all192 original bodies alive, no new/missing/dead IDs, source unchanged. Clover earned4actual SAND through normal native block drops; final ironpick damage104, last receipt103→104. Last sand(-487,62,-357), native gameTime339842, handreach2.8001, inventoryfill3→4. No materials supplied. Natural gravel flint outcomes remain real loose drops.
+
+Frozen bed survey had0natural candidates in local perception; ordinary walk to quarry revealed actual fill, target(-493,62,-378), then4gathered. Physical inventory space made through existing native tool/inventory actions. No resource locations taught.
+
+Foundation candidate `/tmp/villagers-worker-v340-gravity-foundation-source`,641tests/0fails, pinefdf51e221f81d7a5d2cfc0942acce008f6dcf8abd202603ce6c85000e7a60b5. Exact6file delta vs v340, manifest/patch attached. Requires the entire1..4cell column funded before cutting. Only exact active foot-cell may expose its known water floor, all other mining checks remain. Origin must be recorded full dry floor. Real collision/contact, native tool/drop conservation, one-item placement payment, native FallingBlockEntity settling and confirmation before another placement. Paid settled support tags protect the column; adjacent-face exception applies only to settled paid columns with intact supports, never when mining below one. No general fluid/falling/terrain permission granted.
+
+Frozen funded-plan inspection `worker-funded-gravity-frozen-20261111` PASS, all192/source unchanged. Actual4sand,16funded locally inspectable recorded-floor jobs; no route issued or coordinates taught. Placement/settling/deeper descent UNPROVED; not merged or deployed.
+
+Live native placement rehearsal `worker-paid-gravity-care-20261111` from earned4sand healthy340120copy. New priority candidate `/tmp/villagers-worker-v340-gravity-priority-source`,641tests0fails, pine2e86b269de18a22961d1b599dfeb001f3fdf3e33997ca7121dbdde43c4d789c. Rechecks recorded funded descents before finishing another quarry; still needs a complete native route. Loose native mining items remain in world and do not block placement; physical entities still excluded. Native placement/settling/descent result pending.

@@ -24,15 +24,21 @@ final class IllagerFood {
         BlockPos target;
         long scanAt, pathAt, targetUntil, workAt, shareAt;
         long hayStarted,hayLast;
-        BlockPos workingHay;
+        BlockPos workingHay;boolean shortHayRoute;
         int harvested, crafted, shared;
         int repeatHarvests;
+        boolean restoredHayMemory;
+        Map<String,Object> hayReturn=Map.of();
+        net.minecraft.world.level.pathfinder.Path hayRoute,workRoute;BlockPos hayLandmark,workDestination;
+        final local.villagers.navigation.RouteProgress workProgress=new local.villagers.navigation.RouteProgress(120);
+        final local.villagers.navigation.RouteProgress hayProgress=new local.villagers.navigation.RouteProgress(120);
         final LinkedHashSet<BlockPos> harvestedCells = new LinkedHashSet<>();
         final Map<BlockPos, Long> blocked = new HashMap<>();
         final Set<BlockPos> doors = new HashSet<>();
         Map<String, Object> status() {
             return Map.of("harvested", harvested, "crafted", crafted, "shared", shared,
-                "repeatHarvests", repeatHarvests, "target", target == null ? "" : target.toShortString());
+                "repeatHarvests", repeatHarvests, "target", target == null ? "" : target.toShortString(),
+                "blocked",blocked.entrySet().stream().map(e->Map.of("position",e.getKey().toShortString(),"until",e.getValue())).toList(),"hayReturn",hayReturn);
         }
     }
     private IllagerFood() {}
@@ -72,9 +78,17 @@ final class IllagerFood {
     }
     private static boolean goHome(ServerLevel level,Mob mob,local.villagers.mind.Home home){
         if(NativeIllagers.member(mob)){
-            var path=mob.getNavigation().createPath(new BlockPos(home.x(),home.y(),home.z()),1,64);
-            if(NativeIllagers.safePath(level,mob,path))return mob.getNavigation().moveTo(path,.8);
-            return mob instanceof Pillager p&&approachNearby(level,p,new BlockPos(home.x(),home.y(),home.z()));
+            var target=new BlockPos(home.x(),home.y(),home.z());
+            var state=level.getBlockState(target);
+            // A useful partial route can repeatedly stop on a roof before the
+            // native search has explored the stairs. Prefer a complete safe
+            // interaction stand for the actual home before that fallback.
+            if(state.getBlock() instanceof BedBlock){
+                var foot=target.relative(state.getValue(BedBlock.FACING).getOpposite());
+                var path=CampBeds.approachPath(level,mob,target,foot);
+                if(path!=null&&mob.getNavigation().moveTo(path,.7))return true;
+            }else if(mob instanceof Pillager p&&approachNearby(level,p,target))return true;
+            return NativeIllagers.returnHome(level,mob,target);
         }
         return WarCombat.navigate(level,mob,home.x(),home.z());
     }
@@ -98,6 +112,7 @@ final class IllagerFood {
         if(drops.isEmpty()||drops.stream().anyMatch(s->!next.addItem(s.copy()).isEmpty())||!hay(level,mob,p)||!level.getBlockState(p).equals(state))return false;
         if(!level.destroyBlock(p,false,mob))return false;
         for(int i=0;i<next.getContainerSize();i++)mob.getInventory().setItem(i,next.getItem(i));
+        NativeIllagers.rememberHay(level,mob,p);
         mind.remember("Gathered native camp hay at "+p.toShortString());mind.exert(.005f);work.workingHay=null;return true;
     }
     private static boolean unpackHay(ServerLevel level,Pillager mob,AgentMind mind){
@@ -109,7 +124,10 @@ final class IllagerFood {
         mind.remember("Unpacked owned camp hay into nine wheat");return true;
     }
     private static boolean visible(ServerLevel level, Mob mob, BlockPos pos) {
-        var hit = level.clip(new ClipContext(mob.getEyePosition(), Vec3.atCenterOf(pos),
+        return visibleFrom(level,mob,mob.getEyePosition(),pos);
+    }
+    private static boolean visibleFrom(ServerLevel level,Mob mob,Vec3 eye,BlockPos pos){
+        var hit = level.clip(new ClipContext(eye, Vec3.atCenterOf(pos),
             ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, mob));
         return hit.getType() == HitResult.Type.MISS || hit.getBlockPos().equals(pos);
     }
@@ -167,13 +185,28 @@ final class IllagerFood {
         if (rule.getRemainingItems(reserved.input()).stream().anyMatch(s -> !s.isEmpty())) return false;
         return BreadCrafting.commit(mob.getInventory(), reserved, rule.assemble(reserved.input()));
     }
+    private static void hurryFoodSupplies(Pillager mob,long now){
+        var actor=CreatureAgents.loadedState(mob);
+        if(actor!=null&&NativeIllagers.member(mob))NativeCampMeals.hurryForCriticalSupplies(mob,actor,now);
+    }
     private static boolean approach(ServerLevel level, Pillager mob, Work work, BlockPos target, long now) {
         openRouteDoors(level, mob, work);
+        var active=mob.getNavigation().getPath();
+        if(active!=null&&active==work.workRoute&&!active.isDone()&&target.equals(work.workDestination)){
+            if(!work.workProgress.stalledAdvance(target.toShortString(),now,active.getNextNodeIndex())){
+                hurryFoodSupplies(mob,now);return true;
+            }
+            NativeBodyRoutes.failedStep(mob,active.getNextNodePos(),now);mob.getNavigation().stop();work.workRoute=null;work.pathAt=now;
+        }
         if (now < work.pathAt) return true;
         work.pathAt = now + 40;
         if (!NativeIllagers.member(mob)&&mob.distanceToSqr(Vec3.atCenterOf(target)) > 16*16)
             return WarCombat.navigate(level, mob, target.getX(), target.getZ());
-        return approachNearby(level, mob, target);
+        var path=approachPath(level,mob,target);
+        if(path!=null&&mob.getNavigation().moveTo(path,.8)){
+            work.workRoute=mob.getNavigation().getPath();work.workDestination=target;work.workProgress.reset();hurryFoodSupplies(mob,now);return true;
+        }
+        work.workRoute=null;mob.getNavigation().stop();return false;
     }
     static void openRouteDoors(ServerLevel level, Pillager mob, Work work) {
         mob.getNavigation().setCanOpenDoors(true);
@@ -192,22 +225,52 @@ final class IllagerFood {
         }
     }
     static boolean approachNearby(ServerLevel level, Pillager mob, BlockPos target) {
+        var path=approachPath(level,mob,target);
+        if(path!=null&&mob.getNavigation().moveTo(path,.8))return true;
+        // A failed new job must not leave the previous route driving the body.
+        mob.getNavigation().stop();return false;
+    }
+    static net.minecraft.world.level.pathfinder.Path approachPath(ServerLevel level,Pillager mob,BlockPos target){
         var stands = new ArrayList<BlockPos>();
         for (BlockPos pos : BlockPos.betweenClosed(target.offset(-2, -1, -2), target.offset(2, 1, 2))) {
             if (local(mob, pos) && level.isLoaded(pos) && level.getBlockState(pos).getCollisionShape(level, pos).isEmpty()
                 && level.getBlockState(pos.above()).getCollisionShape(level, pos.above()).isEmpty() && level.getFluidState(pos).isEmpty()
                 && (level.getBlockState(pos.below()).is(Blocks.FARMLAND)
                     || level.getBlockState(pos.below()).isFaceSturdy(level, pos.below(), Direction.UP))
-                && Vec3.atBottomCenterOf(pos).add(0, mob.getEyeHeight(), 0).distanceToSqr(Vec3.atCenterOf(target)) <= 9)
+                && Vec3.atBottomCenterOf(pos).add(0, mob.getEyeHeight(), 0).distanceToSqr(Vec3.atCenterOf(target)) <= 9
+                &&visibleFrom(level,mob,Vec3.atBottomCenterOf(pos).add(0,mob.getEyeHeight(),0),target))
                 stands.add(pos.immutable());
         }
         stands.sort(Comparator.comparingDouble(p -> mob.position().distanceToSqr(Vec3.atBottomCenterOf(p))));
+        if(NativeIllagers.member(mob)){
+            var route=CampBeds.pathToStands(level,mob,stands);
+            return route;
+        }
         for (var stand : stands.stream().limit(6).toList()) {
             var next = NativeIllagers.member(mob)?mob.getNavigation().createPath(stand,0,64):mob.getNavigation().createPath(stand, 0);
             if(NativeIllagers.member(mob)&&!NativeIllagers.safePath(level,mob,next))next=null;
-            if (next != null && next.canReach()) return mob.getNavigation().moveTo(next, .8);
+            if (next != null && next.canReach()) return next;
         }
-        return false;
+        return null;
+    }
+    /** Return near the actor's own remembered harvesting place, not to an
+     * interaction stand for a block that it already removed. Actual hay is
+     * still found by the ordinary local visible scan and harvested at contact. */
+    static net.minecraft.world.level.pathfinder.Path hayLandmarkPath(ServerLevel level,Pillager mob,BlockPos landmark){
+        if(!NativeIllagers.member(mob)||!local(mob,landmark)||!level.isLoaded(landmark))return null;
+        var stands=new ArrayList<BlockPos>();double distance=mob.position().distanceToSqr(Vec3.atCenterOf(landmark));
+        for(var p:BlockPos.betweenClosed(landmark.offset(-6,-3,-6),landmark.offset(6,2,6))){
+            if(!local(mob,p)||!NativeIllagers.insideCamp(level,mob,p)||!level.isLoaded(p.above())||!level.isLoaded(p.below())
+                ||!level.getBlockState(p).isAir()||!level.getBlockState(p.above()).isAir()
+                ||!level.getFluidState(p.below()).isEmpty())continue;
+            double floor=net.minecraft.world.level.pathfinder.WalkNodeEvaluator.getFloorLevel(level,p);
+            var feet=new Vec3(p.getX()+.5,floor,p.getZ()+.5);
+            double remaining=feet.distanceToSqr(Vec3.atCenterOf(landmark));
+            if(remaining>64||remaining>=distance-4)continue;
+            var body=mob.getBoundingBox().move(feet.subtract(mob.position()));
+            if(level.noCollision(mob,body)&&!level.noBlockCollision(mob,body.move(0,-.03,0)))stands.add(p.immutable());
+        }
+        return CampBeds.pathToStands(level,mob,stands);
     }
     private static void closeDoors(ServerLevel level, Mob mob, Work work) {
         work.doors.removeIf(pos -> {
@@ -223,6 +286,16 @@ final class IllagerFood {
     }
     static String tick(ServerLevel level, Mob actor, AgentMind mind, Work work) {
         if (!(actor instanceof Pillager mob) || IllagerFamilies.juvenile(mob) || !member(level, mob)) return null;
+        if(NativeIllagers.member(mob)&&!work.restoredHayMemory){
+            work.restoredHayMemory=true;
+            // Older saves already contain the actor's own paid harvesting
+            // memories. Migrate those landmarks, never operator coordinates.
+            String prefix="Gathered native camp hay at ";
+            for(var memory:mind.memories())if(memory.note()!=null&&memory.note().startsWith(prefix))try{
+                var a=memory.note().substring(prefix.length()).split(", ");
+                if(a.length==3)NativeIllagers.rememberHay(level,mob,new BlockPos(Integer.parseInt(a[0]),Integer.parseInt(a[1]),Integer.parseInt(a[2])));
+            }catch(NumberFormatException ignored){}
+        }
         long now = level.getGameTime();
         closeDoors(level, mob, work);
         openRouteDoors(level, mob, work);
@@ -252,7 +325,8 @@ final class IllagerFood {
         if (bread(mob) >= (NativeIllagers.member(mob)?6:8)) {
             work.target = null;
             var state = CreatureAgents.loadedState(mob);
-            boolean meetingFamily = state != null && state.familyAgreement != null && state.familyAgreement.active(now);
+            boolean meetingFamily = state != null && (state.familyAgreement != null && state.familyAgreement.active(now)
+                ||state.campMeals.patrolling(now));
             var home = mind.home();
             if (!meetingFamily && home != null && home.dimension().equals(level.dimension().identifier().toString())
                 && Math.hypot(mob.getX() - home.x(), mob.getZ() - home.z()) > 12) {
@@ -260,10 +334,20 @@ final class IllagerFood {
             }
             return null;
         }
-        if (mind.fatigue() > .65 || mob.getHealth() < mob.getMaxHealth() * .5 || level.isDarkOutside()) return null;
+        if (mind.fatigue() > .65 || mob.getHealth() < mob.getMaxHealth() * .5 || level.isDarkOutside()&&!NativeIllagers.member(mob)) return null;
         if(BreadCrafting.wheatCount(mob.getInventory())<3&&HayForaging.hasHay(mob.getInventory())&&unpackHay(level,mob,mind))return "unpacked real camp hay";
         boolean crafting = BreadCrafting.wheatCount(mob.getInventory()) >= 3;
+        // Finish this actor's selected, bounded store inspection before an old
+        // hay recollection starts a different route. No container contents are
+        // consulted here; NativeCampWork must still reach and open the store.
+        var state=CreatureAgents.loadedState(mob);
+        if(!crafting&&work.target==null&&state!=null&&state.campWork.target!=null
+                &&now<=state.campWork.targetUntil)return null;
         work.blocked.entrySet().removeIf(entry -> now >= entry.getValue());
+        var continuing=mob.getNavigation().getPath();
+        if(work.target!=null&&work.target.equals(work.workDestination)&&continuing!=null&&continuing==work.workRoute&&!continuing.isDone()
+            &&!work.workProgress.stalledAdvance(work.target.toShortString(),now,continuing.getNextNodeIndex()))
+            work.targetUntil=Math.max(work.targetUntil,now+120);
         if (work.target != null && (now >= work.targetUntil || !local(mob, work.target)
             || (crafting ? !level.getBlockState(work.target).is(Blocks.CRAFTING_TABLE) : !ripe(level, mob, work.target)&&!hay(level,mob,work.target)))) {
             if (now >= work.targetUntil) work.blocked.put(work.target, now + 400);
@@ -281,6 +365,19 @@ final class IllagerFood {
                             NativeIllagers.rememberTable(level,mob,pos);
                             if(work.target==null||mob.distanceToSqr(Vec3.atCenterOf(pos))<mob.distanceToSqr(Vec3.atCenterOf(work.target)))work.target=pos.immutable();
                         }
+                    // A geometrically close table can require a much longer
+                    // roof detour than another known station. Choose an actual
+                    // complete native route while this planning batch is open.
+                    net.minecraft.world.level.pathfinder.Path best=null;BlockPos chosen=null;
+                    for(var table:NativeIllagers.knownTables(level,mob).stream().filter(p->local(mob,p)&&!work.blocked.containsKey(p))
+                        .sorted(Comparator.comparingDouble(p->p.distSqr(mob.blockPosition()))).limit(4).toList()){
+                        var path=approachPath(level,mob,table);
+                        if(path!=null&&(best==null||path.getNodeCount()<best.getNodeCount())){best=path;chosen=table;}
+                    }
+                    work.target=chosen;
+                    if(best!=null&&mob.getNavigation().moveTo(best,.8)){
+                        work.pathAt=now+40;work.workRoute=mob.getNavigation().getPath();work.workDestination=chosen;work.workProgress.reset();hurryFoodSupplies(mob,now);
+                    }
                 }else{
                 // These are authored public town stations, already known like settlement destinations.
                 var home = WarCombat.home(mob);
@@ -307,6 +404,50 @@ final class IllagerFood {
             }
         }
         if (work.target == null) {
+            if(!crafting&&NativeIllagers.member(mob)){
+                var active=mob.getNavigation().getPath();
+                // Native navigation can abandon an obstructed short path before
+                // our route timeout. Reconstructing that path is not progress:
+                // measure the same landmark across replacements, using the body.
+                if(work.hayLandmark!=null&&work.shortHayRoute&&work.hayProgress.stalledCloser(work.hayLandmark.toShortString(),now,mob.position().distanceTo(Vec3.atCenterOf(work.hayLandmark)))){
+                    if(active==work.hayRoute){
+                        if(active!=null&&!active.isDone())NativeBodyRoutes.failedStep(mob,active.getNextNodePos(),now);
+                        mob.getNavigation().stop();
+                    }
+                    work.blocked.put(work.hayLandmark,now+400);work.hayRoute=null;work.hayLandmark=null;
+                }
+                if(work.hayRoute!=null&&active==work.hayRoute&&!active.isDone()){
+                    if(work.shortHayRoute||!work.hayProgress.stalledAdvance(work.hayLandmark.toShortString(),now,active.getNextNodeIndex()))
+                        return "following the native return to my observed hay area";
+                    NativeBodyRoutes.failedStep(mob,active.getNextNodePos(),now);mob.getNavigation().stop();
+                    work.blocked.put(work.hayLandmark,now+400);work.hayRoute=null;work.hayLandmark=null;
+                }
+                var stores=new ArrayList<>(NativeIllagers.knownHay(level,mob));
+                stores.sort(Comparator.comparingDouble(p->p.distSqr(mob.blockPosition())));
+                for(var store:stores){
+                    if(work.blocked.containsKey(store))continue;
+                    if(mob.distanceToSqr(Vec3.atCenterOf(store))<=8*8&&visible(level,mob,store)){
+                        NativeIllagers.forgetHay(mob,store);continue;
+                    }
+                    // No active return path means this is only a planning
+                    // cooldown. Let real local storage work use the turn.
+                    if(now<work.pathAt)return null;
+                    work.pathAt=now+40;
+                    var route=hayLandmarkPath(level,mob,store);
+                    boolean moved=route!=null&&mob.getNavigation().moveTo(route,.8);
+                    work.hayReturn=Map.of("gameTime",now,"landmark",store.toShortString(),"from",mob.position().toString(),
+                        "moved",moved,"nodes",route==null?0:route.getNodeCount(),"end",route==null?"":route.getEndNode().asBlockPos().toShortString());
+                    if(moved){
+                        work.hayRoute=mob.getNavigation().getPath();work.hayLandmark=store;
+                        work.shortHayRoute=route.getNodeCount()<=8;
+                        if(work.shortHayRoute)work.hayProgress.stalledCloser(store.toShortString(),now,mob.position().distanceTo(Vec3.atCenterOf(store)));
+                        else work.hayProgress.reset();
+                        hurryFoodSupplies(mob,now);
+                        return "returning near a hay store I actually harvested to observe its remaining supplies";
+                    }
+                    work.hayRoute=null;work.blocked.put(store,now+400);
+                }
+            }
             // A provisioner returns to a field it actually saw instead of wandering away
             // during scan cooldowns. Farm episodes persist through ordinary mind saves.
             if (!crafting) {
@@ -317,7 +458,10 @@ final class IllagerFood {
                         && !ConstructionSites.isProtected(level, p) && !ConstructionSites.isProtected(level, p.below()))
                     .min(Comparator.comparingDouble(p -> mob.distanceToSqr(Vec3.atCenterOf(p)))).orElse(null);
                 if (field != null) {
-                    if (mob.distanceToSqr(Vec3.atCenterOf(field)) <= 9) {
+                    if (mob.distanceToSqr(Vec3.atCenterOf(field)) <= 9&&visible(level,mob,field)) {
+                        if(!level.getBlockState(field).is(Blocks.WHEAT)){
+                            work.blocked.put(field,now+1200);return null;
+                        }
                         mob.getNavigation().stop(); if (now % 80 < 10) mind.rest();
                         return "waiting for wheat";
                     }
@@ -329,7 +473,18 @@ final class IllagerFood {
         }
         boolean nativeHay=hay(level,mob,work.target);
         if (now >= work.workAt && (crafting ? craft(level, mob, work.target) : nativeHay?gatherHay(level,mob,mind,work,work.target,now):harvest(level, mob, work.target))) {
-            if (crafting) { work.crafted++; mind.remember("Crafted real bread from three wheat"); }
+            if (crafting) {
+                int made=1;var actorState=CreatureAgents.loadedState(mob);
+                // Finish a small native shift-craft at the real bench before
+                // urgent deliveries take the provisioner away from it.
+                boolean urgent=NativeIllagers.member(mob)&&actorState!=null
+                    &&(actorState.campMeals.heard.entrySet().stream().anyMatch(e->now<e.getValue()&&actorState.campMeals.injured.contains(e.getKey()))
+                        ||NativeCampCalls.heardInjury(actorState.campMeals.calls,now));
+                while(urgent&&made<3&&craft(level,mob,work.target))made++;
+                work.crafted+=made;
+                for(int i=0;i<made;i++)mind.remember("Crafted real bread from three wheat");
+                if(made>1)mind.exert(.05f*(made-1));
+            }
             else if(!nativeHay){
                 work.harvested++;
                 if (!work.harvestedCells.add(work.target)) work.repeatHarvests++;

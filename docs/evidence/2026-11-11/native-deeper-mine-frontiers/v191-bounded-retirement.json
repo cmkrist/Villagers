@@ -1,0 +1,92 @@
+{
+  "elapsed": 18000,
+  "firstBoatTick": 16520,
+  "firstExhaustedTick": 16040,
+  "final": {
+    "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+    "position": [
+      -477.5008598342336,
+      56.0,
+      -372.6784695929871
+    ],
+    "health": 20.0,
+    "food": 20,
+    "inventory": "[1 minecraft:raw_iron, 1 minecraft:wooden_hoe, 32 minecraft:dirt, 2 minecraft:bread, 4 minecraft:carrot, 4 minecraft:stick, 1 minecraft:iron_ingot, 1 minecraft:wheat]",
+    "boat": {
+      "launches": 0,
+      "logsGathered": 0,
+      "recipes": 0,
+      "lastReturn": {},
+      "footReturns": 0,
+      "landings": 0,
+      "phase": "NONE",
+      "activity": "boat preparation timed out",
+      "purpose": "NONE",
+      "paddleTicks": 0
+    },
+    "ironPreparation": {
+      "ironTaken": 4,
+      "crafted": 0,
+      "furnace": "-463, 63, -376",
+      "activity": "mining real surface stone",
+      "loadedOre": 4,
+      "lastReceipt": {},
+      "lastApproach": {},
+      "plannedSite": "",
+      "passage": {
+        "faceBlock": "Block{minecraft:stone}",
+        "mode": "level",
+        "face": "-478, 58, -372",
+        "reselect": false,
+        "turns": 15,
+        "depth": 4,
+        "root": "-478, 56, -377",
+        "retainedFloors": 167,
+        "part": 0,
+        "activity": "mining real surface stone",
+        "retainedEntries": 1,
+        "stepsWithoutDepth": 4,
+        "waterSeals": {
+          "placed": 0,
+          "lastReceipt": {},
+          "activity": "no water sealing job",
+          "active": false
+        },
+        "foundations": 1,
+        "lastFoundation": {
+          "contact": "(-467.4999643663056, 55.0, -376.4996269652838)",
+          "gameTime": 342256,
+          "face": "UP",
+          "position": "-468, 55, -377",
+          "anchor": "-468, 54, -377",
+          "dirtAfter": 32,
+          "dirtBefore": 33,
+          "reach": 2.7979154851703063,
+          "replaced": "Block{minecraft:air}"
+        },
+        "exhausted": false,
+        "failedScans": 0,
+        "entry": "-480, 63, -379",
+        "frontier": "",
+        "backtracks": 10,
+        "lastRoute": {
+          "safe": true,
+          "target": "-478, 56, -376",
+          "end": "-478, 56, -376",
+          "gameTime": 346776,
+          "nodes": 2,
+          "actor": "(-477.69999998807907, 56.0, -376.69999998807907)"
+        },
+        "frontierSearch": {
+          "activity": "following a complete native path to a recorded junction",
+          "queries": 10,
+          "candidates": 26
+        }
+      },
+      "fuelStored": true
+    }
+  },
+  "minedBlocks": 72,
+  "armorMilestone": false,
+  "primaryUnadvanced": "v182 gameTime296313"
+}

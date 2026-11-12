@@ -46,6 +46,14 @@ public final class CreatureAgents {
         String activity="settling in";
         final IllagerFood.Work foodWork = new IllagerFood.Work();
         final NativeCampWork.State campWork=new NativeCampWork.State();
+        final NativeCampFarms.State campFarms=new NativeCampFarms.State();
+        final NativeCampMeals.State campMeals=new NativeCampMeals.State();
+        final NativeCampDoors.State campDoors=new NativeCampDoors.State();
+        UUID companyPeer;
+        long companyUntil,nextCompany,nextCompanyPath;
+        int companyContacts;
+        long nativeFloatTicks;
+        final NativeSwimming.State swimming=new NativeSwimming.State();
         State(AgentMind mind,long now) { this.mind=mind;lastTick=now; }
     }
     private CreatureAgents() {}
@@ -114,6 +122,7 @@ public final class CreatureAgents {
     }
     static AgentMind mind(Mob mob) { State s=state(mob,false);return s==null?null:s.mind; }
     static State loadedState(Mob mob) { return state(mob, false); }
+    public static void nativeFloatTick(Mob mob){var s=STATES.get(mob.getUUID());if(s!=null)s.nativeFloatTicks++;}
     static void persist(State state) { if (persistence != null) persistence.queue(state.mind); }
     static void registerChild(ServerLevel level, Mob baby, AgentMind mind) {
         baby.addTag(MANAGED); baby.setPersistenceRequired();
@@ -125,7 +134,12 @@ public final class CreatureAgents {
             "name",s.mind.name(),"activity",s.activity,"food",s.mind.foodLevel(),"fatigue",s.mind.fatigue(),
             "learningUpdates",s.mind.learningUpdates(),"memories",s.mind.memories(),"foodWork",s.foodWork.status(),"family",IllagerFamilies.status(mob,s)));
         report.put("health", mob.getHealth());
-        report.put("campWork",s.campWork.status());
+        report.put("waterSafety",Map.of("nativeFloatTicks",s.nativeFloatTicks,"air",mob.getAirSupply(),
+            "water",mob.isInWater(),"position",mob.position().toString(),"shore",s.swimming.receipt));
+        report.put("campWork",s.campWork.status());report.put("bodyRoutes",NativeBodyRoutes.state(mob).status());
+        report.put("campFarms",mob instanceof Pillager p?NativeCampFarms.status(p,s.campFarms):s.campFarms.status());
+        report.put("campMeals",s.campMeals.status());report.put("campDoors",NativeCampDoors.status(s.campDoors));
+        report.put("company",Map.of("target",s.companyPeer==null?"":s.companyPeer.toString(),"contacts",s.companyContacts));
         report.put("mainhand", mob.getMainHandItem().toString()); report.put("offhand", mob.getOffhandItem().toString());
         if (mob instanceof Pillager pillager) report.put("inventory", HarvestMaterials.snapshot(pillager.getInventory()).stream().map(ItemStack::toString).toList());
         else if (mob instanceof AbstractVillager trader) report.put("inventory", HarvestMaterials.snapshot(trader.getInventory()).stream().map(ItemStack::toString).toList());
@@ -151,15 +165,18 @@ public final class CreatureAgents {
             mob.getHealth()/mob.getMaxHealth(),danger,false,found,s.mind.home()!=null);
     }
     public static void tick(ServerLevel level,Mob mob) {
-        if(!managed(mob) || persistence==null || !mob.isAlive() || (mob.tickCount+mob.getId())%10!=0)return;
+        if(!managed(mob) || persistence==null || !mob.isAlive())return;
         State s=state(mob,false);if(s==null)return;
+        if(mob instanceof Pillager p&&NativeIllagers.member(mob))NativeCampMeals.chargeRunning(p,s,level.getGameTime());
+        if((mob.tickCount+mob.getId())%10!=0)return;
         long now=level.getGameTime(),elapsed=Math.clamp(now-s.lastTick,0,200);s.lastTick=now;
         s.mind.advanceDrives(elapsed,eats(mob)?Villagers.config().baseExhaustionPerDay():0);
         if(now>=s.nextSave){persistence.queue(s.mind);s.nextSave=now+600;}
         if(mob instanceof WanderingTrader trader && trader.isTrading()) {
             mob.getNavigation().stop();s.activity="trading";return;
         }
-        if(eats(mob) && (s.mind.foodLevel()<=16||MealPolicy.needsRecoveryFood(s.mind.foodLevel(),mob.getHealth(),mob.getMaxHealth())) && !ration(mob).isEmpty()) {
+        if(eats(mob) && (s.mind.foodLevel()<=16||MealPolicy.needsRecoveryFood(s.mind.foodLevel(),mob.getHealth(),mob.getMaxHealth())) && !ration(mob).isEmpty()
+            &&!(mob instanceof Pillager p&&NativeCampMeals.deferCriticalMeal(p,s,now))) {
             ItemStack real=ration(mob);var food=real.get(DataComponents.FOOD);
             interrupt(s);
             real.shrink(1);s.mind.eat(food.nutrition(),food.saturation());s.mind.remember("Ate owned food");
@@ -171,6 +188,10 @@ public final class CreatureAgents {
             }
         }
         if(!mob.isAlive())return;
+        if(mob.isInWater()){
+            interrupt(s);NativeSwimming.escape(level,mob,s.swimming,now);
+            label(mob,s,"floating and seeking dry ground");return;
+        }
         IllagerFamilies.care(level, mob, s);
         String combat=WarCombat.tick(level,mob,s.mind);
         if(combat!=null){interrupt(s);label(mob,s,combat);return;}
@@ -190,6 +211,32 @@ public final class CreatureAgents {
             else WarCombat.navigate(level,mob,away.x,away.z);
             label(mob,s,"escaping danger");return;
         }
+        if(mob instanceof Pillager)VocalSpeech.tick(level,mob);
+        if(mob instanceof Pillager p){
+            NativeCampDoors.tick(level,p,s.campDoors,now);
+            String meal=NativeCampMeals.tick(level,p,s,now);
+            if(meal!=null){interrupt(s);label(mob,s,meal);return;}
+            // Finish already committed entrance work even after the last
+            // spare ration is gone; the opening also permits real resupply.
+            String entrance=NativeCampEntrance.work(level,p,s.campMeals.calls.entrance,now);
+            if(entrance!=null){interrupt(s);label(mob,s,entrance);return;}
+            // A visible, willing pair gets an ordinary family visit before
+            // another optional housing round separates them. Actual heard
+            // meal requests above and every readiness/payment check remain.
+            String family=NativeIllagers.member(mob)?IllagerFamilies.seek(level,mob,s):null;
+            if(family!=null){interrupt(s);label(mob,s,family);return;}
+            String farm=NativeCampFarms.tick(level,p,s,now);
+            if(farm!=null){interrupt(s);label(mob,s,farm);return;}
+            // A stocked provisioner's housing round must not be replaced each
+            // tick by another trip home or another optional supplies job.
+            if((s.campMeals.patrolling(now)||NativeCampMeals.spareSlot(p.getInventory(),p.getOffhandItem())>=0)
+                &&(s.familyAgreement==null||!s.familyAgreement.active(now))){
+                String patrol=NativeCampMeals.patrol(level,p,s,now);
+                if(patrol!=null){interrupt(s);label(mob,s,patrol);return;}
+            }
+        }
+        String fallenBed=NativeCampWork.recoverBed(level,mob,s,now);
+        if(fallenBed!=null){interrupt(s);label(mob,s,fallenBed);return;}
         boolean campReserve=mob instanceof Pillager p&&NativeIllagers.member(mob)&&IllagerFood.bread(p)>=6&&s.mind.foodLevel()>=14;
         if(campReserve){String work=NativeCampWork.tick(level,mob,s,now);if(work!=null){interrupt(s);label(mob,s,work);return;}}
         String foodWork = IllagerFood.tick(level, mob, s.mind, s.foodWork);
@@ -198,8 +245,14 @@ public final class CreatureAgents {
         if(campWork!=null){interrupt(s);label(mob,s,campWork);return;}
         String foodRequest = IllagerFood.seekMeal(level, mob, s.mind);
         if (foodRequest != null) { interrupt(s); label(mob,s,foodRequest); return; }
-        String family = IllagerFamilies.seek(level, mob, s);
+        String family = mob instanceof Pillager&&NativeIllagers.member(mob) ? null : IllagerFamilies.seek(level, mob, s);
         if (family != null) { interrupt(s); label(mob,s,family); return; }
+        String company=CampCompany.seek(level,mob,s,now);
+        if(company!=null){interrupt(s);label(mob,s,company);return;}
+        if(mob instanceof Pillager p){
+            String patrol=NativeCampMeals.patrol(level,p,s,now);
+            if(patrol!=null){interrupt(s);label(mob,s,patrol);return;}
+        }
         Observation current=observe(mob,s,false);
         if(s.action!=null && now-s.started>=80) {
             if(Villagers.LEARNING_MODE!=LearningMode.FROZEN)s.mind.learn(s.before,s.action,current);

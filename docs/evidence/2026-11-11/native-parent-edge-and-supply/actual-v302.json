@@ -1,0 +1,1185 @@
+{
+  "runtime": "runs/native-actual-supply-and-prospect-v302",
+  "gameTime": 321513,
+  "elapsedTicks": 4001,
+  "result": {
+    "requestedNativeTps": 80,
+    "nativeRateVerifiedInObservation": true,
+    "lastObservedNativeTps": 80.0,
+    "observedNativeRates": [
+      20.0,
+      80.0
+    ],
+    "exitCode": 0,
+    "wallTimeGuard": false,
+    "oldSaveUnchanged": true,
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "managedVillagers": 56,
+    "minManagedHealth": 1.0,
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": [],
+    "combatGuard": "stop after first actual combat hit; normal damage retained",
+    "combatStop": {},
+    "reviewedCombat": {},
+    "stonePickaxeMilestoneRequested": false,
+    "sourceUnchangedDuringRun": true,
+    "nativeIllagerEnrollmentRequested": false,
+    "frozenExistingWorkerResume": true,
+    "frozenCareStartupFailure": null,
+    "frozenCareStartupRequested": true,
+    "frozenCareStartup": {
+      "schema": 1,
+      "stage": "resumed",
+      "gameTime": 317512,
+      "expectedGameTime": 317512,
+      "resident": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+      "worker": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "bodyBefore": "cb79c23c-9623-45ac-9776-90c0f0a7813e:(-595.5411388274904, 63.0, -629.5383464002545):24.0:false:false:[0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air]:1 minecraft:crossbow:0 minecraft:air",
+      "bodyAfter": "cb79c23c-9623-45ac-9776-90c0f0a7813e:(-595.5411388274904, 63.0, -629.5383464002545):24.0:false:false:[0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air, 0 minecraft:air]:1 minecraft:crossbow:0 minecraft:air",
+      "adoption": {
+        "enrolledExisting": 0,
+        "alreadyManaged": true,
+        "id": "cb79c23c-9623-45ac-9776-90c0f0a7813e"
+      },
+      "frozenFrames": 33,
+      "error": ""
+    },
+    "nativeWorkerReference": null,
+    "lastHealthRecovery": true,
+    "requestedSimulationDistance": null,
+    "observedSimulationDistance": 12,
+    "ironIngotsMilestoneRequested": false,
+    "ironPickaxeMilestoneRequested": false,
+    "stoneTierPickaxeOwned": true,
+    "ironIngotsOwned": 0,
+    "ironTierPickaxeOwned": true
+  },
+  "hero": {
+    "uuid": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+    "position": [
+      -471.4283696712345,
+      62.9375,
+      -345.3348509141077
+    ],
+    "health": 20.0,
+    "food": 20,
+    "fatigue": 0.2812499999999954,
+    "quarry": {
+      "dug": 5,
+      "centerings": 2,
+      "stand": "",
+      "activity": "following a safe route to observe quarry ground",
+      "lastStop": {
+        "block": "Block{minecraft:farmland}[moisture=0]",
+        "actor": "-467, 63, -358",
+        "gameTime": 321062,
+        "step": 2,
+        "idleTicks": 0,
+        "target": "-468, 61, -358",
+        "reason": "target is not natural overburden"
+      },
+      "inspection": {
+        "route": "none",
+        "visited": 0,
+        "lastRepair": {},
+        "reconsidered": 2,
+        "returning": false,
+        "repairs": 0,
+        "lastRetirement": {
+          "startedPosition": "(-466.69238584933134, 63.0, -357.5348282608069)",
+          "returnedPosition": "(-466.8811561118947, 63.0, -356.13664569850556)",
+          "returnedGameTime": 321202,
+          "started": 321062,
+          "returnedHeight": 63.0,
+          "entry": "-468, 63, -356",
+          "entryHeight": 63
+        },
+        "survey": {
+          "lastRoute": {
+            "nodes": 26,
+            "gameTime": 321412,
+            "moved": true,
+            "target": "-474, 63, -338",
+            "origin": "-468, 63, -356",
+            "end": "-474, 63, -338"
+          },
+          "visited": 5,
+          "target": "-474, 63, -338"
+        },
+        "target": "",
+        "reviewAt": 343202
+      },
+      "origin": "",
+      "lastReceipt": {
+        "drops": [
+          "1 minecraft:dirt"
+        ],
+        "step": 2,
+        "gameTime": 321002,
+        "position": "-468, 62, -358"
+      },
+      "step": 0,
+      "lastApproach": {
+        "actor": "(-471.4002550517149, 63.53584062504456, -361.43798364907866)",
+        "nodes": 0,
+        "gameTime": 320902,
+        "end": "",
+        "safe": false,
+        "accepted": false,
+        "target": "-468, 62, -357"
+      }
+    },
+    "mining": {
+      "activity": "needs observed exposed natural stone",
+      "blocks": 13,
+      "lastReceipt": {
+        "position": "-475, 56, -376",
+        "contact": "(-474.49777651735826, 57.0, -375.98972661986915)",
+        "gameTime": 318742,
+        "toolBefore": "1 minecraft:iron_pickaxe",
+        "drops": [
+          "1 minecraft:andesite"
+        ],
+        "reach": 0.8678557172129817,
+        "toolDamageBefore": 94,
+        "accessRepaired": false,
+        "toolDamageAfter": 95
+      }
+    },
+    "ironPreparation": {
+      "activity": "following a safe route to observe quarry ground",
+      "furnace": "-463, 63, -376",
+      "crafted": 0,
+      "ironTaken": 3,
+      "passage": {
+        "face": "",
+        "mode": "level",
+        "faceBlock": "Block{minecraft:andesite}",
+        "activity": "retained the dry exit after bounded prospecting found no deeper descent",
+        "part": 0,
+        "retainedFloors": 114,
+        "root": "",
+        "depth": 0,
+        "turns": 1,
+        "reselect": false,
+        "retainedEntries": 3,
+        "exhaustedEntries": 1,
+        "stepsWithoutDepth": 0,
+        "waterSeals": {
+          "placed": 0,
+          "active": false,
+          "activity": "no water sealing job",
+          "lastReceipt": {}
+        },
+        "foundations": 0,
+        "lastFoundation": {},
+        "exhausted": false,
+        "failedScans": 0,
+        "entry": "",
+        "frontier": "",
+        "backtracks": 0,
+        "lastRoute": {
+          "actor": "(-466.69238584933134, 63.0, -357.5348282608069)",
+          "nodes": 3,
+          "gameTime": 321192,
+          "end": "-468, 63, -356",
+          "target": "-468, 63, -356",
+          "safe": true
+        },
+        "frontierSearch": {
+          "activity": "no remaining eligible observed junctions",
+          "candidates": 0,
+          "queries": 0
+        }
+      },
+      "plannedSite": "",
+      "lastApproach": {},
+      "lastReceipt": {},
+      "loadedOre": 3,
+      "fuelStored": true
+    },
+    "ironArmor": {
+      "equipped": 0,
+      "nextPiece": "CHEST",
+      "ready": false,
+      "ironTarget": 8,
+      "lastReceipt": {},
+      "crafted": 0
+    },
+    "villageBedding": {
+      "site": "",
+      "transfers": 0,
+      "placed": 0,
+      "activity": "no village bedding work",
+      "sheepWool": {
+        "collected": 0,
+        "sheared": 0,
+        "craftedShears": 0,
+        "target": "",
+        "lastReceipt": {}
+      },
+      "store": "",
+      "lastReceipt": {},
+      "recipes": 0
+    },
+    "courtship": {
+      "partner": "438701f4-3aba-4cda-b583-46051f1e0f53",
+      "agreedAt": 321369,
+      "expiresAt": 322569
+    },
+    "familyStatus": "needs a spare sheltered bed"
+  },
+  "heroMindAge": 258053,
+  "heroBody": {
+    "inventory": [
+      {
+        "id": "minecraft:stone_pickaxe",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 70
+        }
+      },
+      {
+        "id": "minecraft:iron_pickaxe",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 100
+        }
+      },
+      {
+        "id": "minecraft:dirt",
+        "count": 35
+      },
+      {
+        "id": "minecraft:bread",
+        "count": 3
+      },
+      {
+        "id": "minecraft:carrot",
+        "count": 1
+      },
+      {
+        "id": "minecraft:stick",
+        "count": 4
+      },
+      {
+        "id": "minecraft:raw_iron",
+        "count": 1
+      }
+    ],
+    "equipment": {
+      "mainhand": {
+        "id": "minecraft:wooden_hoe",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 19
+        }
+      },
+      "offhand": {
+        "id": "minecraft:wooden_pickaxe",
+        "count": 1,
+        "components": {
+          "minecraft:damage": 4
+        }
+      }
+    },
+    "food": {
+      "foodLevel": 20,
+      "saturation": 0.0,
+      "exhaustion": 3.752479,
+      "timer": 0
+    }
+  },
+  "workers": [
+    {
+      "id": "460ab4b6-1522-4504-9673-25fd503e0610",
+      "health": 24.0,
+      "food": 20,
+      "activity": "following the native route to the selected camp store",
+      "foodWork": {
+        "shared": 0,
+        "hayReturn": {
+          "nodes": 6,
+          "from": "(-646.4996747982636, 64.0, -630.5852668279559)",
+          "gameTime": 318628,
+          "landmark": "-643, 65, -642",
+          "moved": true,
+          "end": "-647, 64, -636"
+        },
+        "repeatHarvests": 0,
+        "crafted": 3,
+        "harvested": 0,
+        "target": "",
+        "blocked": []
+      },
+      "campWork": {
+        "route": "native storage path started",
+        "recipes": 0,
+        "beds": 2,
+        "activity": "following the native route to the selected camp store",
+        "access": {
+          "blocks": 0,
+          "step": 0,
+          "lastReceipt": {},
+          "activity": "no bunkhouse access work",
+          "lastFailure": {},
+          "bed": ""
+        },
+        "target": "-688, 63, -596",
+        "lastReceipt": {
+          "container": "-688, 63, -596",
+          "sourceAfter": 0,
+          "gameTime": 321218,
+          "item": "minecraft:apple",
+          "moved": 1,
+          "sourceBefore": 1
+        },
+        "reusedBeds": {
+          "activity": "no bunk job",
+          "collected": 0,
+          "lastReceipt": {},
+          "routeRejections": 0
+        },
+        "inspections": 5,
+        "transfers": 2,
+        "storageRoute": {
+          "failures": 0,
+          "nodes": 26,
+          "from": "(-681.7083206390495, 63.0, -620.6549122462633)",
+          "gameTime": 321398,
+          "moved": true,
+          "store": "-688, 63, -596"
+        },
+        "bedSite": "",
+        "bedApproach": {},
+        "fallenBeds": 0,
+        "fallenAudit": {},
+        "fallenRoute": {}
+      },
+      "campMeals": {
+        "patrol": {
+          "cages": 0,
+          "until": 0,
+          "visited": 0,
+          "target": "",
+          "lastRoute": {}
+        },
+        "calls": {
+          "lastHeard": {
+            "heardRange": 120.0,
+            "position": "-596, 64, -634",
+            "volume": 10.0,
+            "gameTime": 321443,
+            "speaker": "88893f4d-fbba-4245-b563-089e8c0a5b52",
+            "sound": "minecraft:entity.villager.no",
+            "distance": 90.73429,
+            "nativeRange": 160.0
+          },
+          "deferred": 0,
+          "entrance": {
+            "activity": "no camp entrance work",
+            "removed": 2,
+            "outer": "",
+            "lastReceipt": {},
+            "step": 0
+          },
+          "target": "",
+          "walkingStep": {
+            "position": "(-670.6165683552802, 63.0, -633.6767287946444)",
+            "nextNode": "-671, 63, -634",
+            "gameTime": 319278,
+            "nextIndex": 45,
+            "onGround": true,
+            "wanted": [
+              -670.5,
+              63.0,
+              -633.5
+            ]
+          },
+          "waiting": 7,
+          "tripUntil": 320118,
+          "bodyRoutes": {
+            "failedSteps": [],
+            "searches": 74,
+            "waypoints": [
+              {
+                "floor": 63.0,
+                "position": "(-684.5000432183804, 63.0, -619.1328577353904)",
+                "node": "-685, 63, -620",
+                "gameTime": 321361,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-683.8592835212778, 63.0, -620.1098591188735)",
+                "node": "-684, 63, -621",
+                "gameTime": 321368,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-682.8980398913435, 63.0, -621.1005339446624)",
+                "node": "-683, 63, -622",
+                "gameTime": 321376,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-681.8784933519584, 63.0, -620.7572587147127)",
+                "node": "-682, 63, -621",
+                "gameTime": 321383,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-681.7083206390495, 63.0, -620.6549122462633)",
+                "node": "-682, 63, -621",
+                "gameTime": 321398,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-682.124648848464, 63.0, -621.2235728554568)",
+                "node": "-683, 63, -622",
+                "gameTime": 321404,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-683.1140316523799, 63.0, -620.7987851606663)",
+                "node": "-684, 63, -621",
+                "gameTime": 321411,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-684.1269997235223, 63.0, -619.8657067117445)",
+                "node": "-685, 63, -620",
+                "gameTime": 321419,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-684.4428780217512, 63.0, -618.9091252903099)",
+                "node": "-685, 63, -619",
+                "gameTime": 321425,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-684.4967891434324, 63.0, -617.8777687988614)",
+                "node": "-685, 63, -618",
+                "gameTime": 321431,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-684.4981947276922, 63.0, -616.8417871429886)",
+                "node": "-685, 63, -617",
+                "gameTime": 321437,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-684.4990140263776, 63.0, -615.8056697501984)",
+                "node": "-685, 63, -616",
+                "gameTime": 321443,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-684.4993597855993, 63.0, -614.942234298398)",
+                "node": "-685, 63, -615",
+                "gameTime": 321448,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-684.4996153467818, 63.0, -613.9061110437721)",
+                "node": "-685, 63, -614",
+                "gameTime": 321454,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-684.4997656768986, 63.0, -612.8699876341675)",
+                "node": "-685, 63, -613",
+                "gameTime": 321460,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-684.4998483584653, 63.0, -611.8338641554626)",
+                "node": "-685, 63, -612",
+                "gameTime": 321466,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-684.4999009740081, 63.0, -610.7977406598394)",
+                "node": "-685, 63, -611",
+                "gameTime": 321472,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-684.4999235235265, 63.0, -609.93430440868)",
+                "node": "-685, 63, -610",
+                "gameTime": 321477,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-684.4999385565387, 63.0, -608.8981809071112)",
+                "node": "-685, 63, -609",
+                "gameTime": 321483,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-684.4999460730448, 63.0, -607.862057405535)",
+                "node": "-685, 63, -608",
+                "gameTime": 321489,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-684.499953589551, 63.0, -606.8259339039588)",
+                "node": "-685, 63, -607",
+                "gameTime": 321495,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-684.4999611060571, 63.0, -605.7898104023826)",
+                "node": "-685, 63, -606",
+                "gameTime": 321501,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-684.4999611060571, 63.0, -604.9263741510691)",
+                "node": "-685, 63, -605",
+                "gameTime": 321506,
+                "grounded": true
+              },
+              {
+                "floor": 63.0,
+                "position": "(-684.4999611060571, 63.0, -603.8902506494929)",
+                "node": "-685, 63, -604",
+                "gameTime": 321512,
+                "grounded": true
+              }
+            ],
+            "lastReceipt": {
+              "action": "native route search avoids the actual neighboring living bodies",
+              "gameTime": 321398,
+              "bodies": [
+                "3a0f306d-a099-461b-8ea9-b902f01203b5",
+                "5378cbfc-37e2-46fd-a918-acb7d6bd472b",
+                "fad46718-2403-42a5-9067-b66e72485ec0",
+                "c73f2812-0861-417f-8180-38f671532381",
+                "78fcd36e-00a3-470f-8f82-e573eb1940fd",
+                "8ea7e1a5-6ea5-43b7-a3dd-fd713a991f38",
+                "e028b7be-3415-4f44-8c0e-d73e81ea7fd4"
+              ],
+              "from": "(-681.7083206390495, 63.0, -620.6549122462633)"
+            },
+            "blockedNodes": 3009
+          },
+          "heard": 278
+        },
+        "activity": "handed a real meal through the native cell gate",
+        "requests": 8,
+        "delivered": 3,
+        "rejectedPaths": 0,
+        "lastReceipt": {
+          "distance": 3.044158,
+          "giverBefore": 1,
+          "ownedItemBefore": 1,
+          "handReach": 2.867594441297609,
+          "to": "fad46718-2403-42a5-9067-b66e72485ec0",
+          "giverAfter": 0,
+          "from": "460ab4b6-1522-4504-9673-25fd503e0610",
+          "donorSource": "bag",
+          "lever": "-682, 65, -622",
+          "leverRestored": true,
+          "gameTime": 321388,
+          "usedEmergencyReserve": true,
+          "gatesClosed": true,
+          "count": 1,
+          "item": "minecraft:apple",
+          "receiverAfter": 1,
+          "contact": "(-679.7366535726381, 64.5, -622.7275000214577)",
+          "ownedItemAfter": 0,
+          "receiverBefore": 0
+        },
+        "hatch": {
+          "lastReceipt": {},
+          "opened": 0,
+          "target": ""
+        },
+        "waiting": 8,
+        "lastApproach": {
+          "rendezvous": "recipient",
+          "gameTime": 321228,
+          "nodes": 26,
+          "stands": 23,
+          "actor": "(-687.4831029094249, 63.0, -597.6814041918695)",
+          "nativeCrowdWalk": false,
+          "end": "-682, 63, -621",
+          "recipientId": "fad46718-2403-42a5-9067-b66e72485ec0",
+          "recipient": "(-679.4966535631014, 64.0, -622.4875000119209)"
+        },
+        "nativeSprinting": false,
+        "sprintDistance": 262.97204193763196,
+        "supplyRun": {
+          "from": "(-646.6859978768435, 64.0, -631.2035494730613)",
+          "nodes": 9,
+          "speed": 1.1,
+          "gameTime": 318668,
+          "food": 20
+        },
+        "injuredRequests": [
+          "4ed39acd-b764-4c41-b799-5ac9d5feefe7",
+          "573a309c-f0fc-4dd1-94cd-8246d352467c",
+          "64324351-28f6-4bc1-a8f8-949f3300763b",
+          "8ea7e1a5-6ea5-43b7-a3dd-fd713a991f38",
+          "c73f2812-0861-417f-8180-38f671532381",
+          "e028b7be-3415-4f44-8c0e-d73e81ea7fd4",
+          "f13adb74-0ccc-4105-af94-63bc300bc5c3"
+        ],
+        "pursuing": ""
+      },
+      "family": {
+        "ageTicks": 66245,
+        "generation": 0,
+        "lastBirth": {},
+        "blocked": "",
+        "juvenile": false,
+        "activity": "not ready for a child",
+        "nursery": "-685, 63, -638",
+        "attempts": 0,
+        "breedingEnabled": true,
+        "nextBedSearch": 322318,
+        "availableNurseries": [
+          "-664, 64, -630"
+        ]
+      }
+    },
+    {
+      "id": "40b3d4ca-683e-4f45-a8e4-0b38edf65b31",
+      "health": 24.0,
+      "food": 10,
+      "activity": "looking for real camp supplies",
+      "foodWork": {
+        "shared": 0,
+        "hayReturn": {},
+        "repeatHarvests": 0,
+        "crafted": 0,
+        "harvested": 0,
+        "target": "",
+        "blocked": []
+      },
+      "campWork": {
+        "route": "none",
+        "recipes": 0,
+        "beds": 0,
+        "activity": "looking for real camp supplies",
+        "access": {
+          "blocks": 0,
+          "step": 0,
+          "lastReceipt": {},
+          "activity": "no observed small masonry entrance to a free bunk",
+          "lastFailure": {},
+          "bed": ""
+        },
+        "target": "",
+        "lastReceipt": {},
+        "reusedBeds": {
+          "activity": "no reusable free upper bunk nearby",
+          "collected": 0,
+          "lastReceipt": {},
+          "routeRejections": 0
+        },
+        "inspections": 0,
+        "transfers": 0,
+        "storageRoute": {},
+        "bedSite": "",
+        "bedApproach": {},
+        "fallenBeds": 0,
+        "fallenAudit": {},
+        "fallenRoute": {}
+      },
+      "campMeals": {
+        "patrol": {
+          "cages": 0,
+          "until": 0,
+          "visited": 0,
+          "target": "",
+          "lastRoute": {}
+        },
+        "calls": {
+          "lastHeard": {
+            "heardRange": 120.0,
+            "position": "-596, 64, -634",
+            "volume": 10.0,
+            "gameTime": 321443,
+            "speaker": "88893f4d-fbba-4245-b563-089e8c0a5b52",
+            "sound": "minecraft:entity.villager.no",
+            "distance": 109.84705,
+            "nativeRange": 160.0
+          },
+          "deferred": 0,
+          "entrance": {
+            "activity": "no camp entrance work",
+            "removed": 0,
+            "outer": "",
+            "lastReceipt": {},
+            "step": 0
+          },
+          "target": "",
+          "walkingStep": {},
+          "waiting": 8,
+          "tripUntil": 0,
+          "bodyRoutes": {
+            "failedSteps": [],
+            "searches": 0,
+            "waypoints": [],
+            "lastReceipt": {},
+            "blockedNodes": 0
+          },
+          "heard": 212
+        },
+        "activity": "no camp meal request",
+        "requests": 0,
+        "delivered": 0,
+        "rejectedPaths": 0,
+        "lastReceipt": {},
+        "hatch": {
+          "lastReceipt": {},
+          "opened": 0,
+          "target": ""
+        },
+        "waiting": 0,
+        "lastApproach": {},
+        "nativeSprinting": false,
+        "sprintDistance": 0.0,
+        "supplyRun": {},
+        "injuredRequests": [],
+        "pursuing": ""
+      },
+      "family": {
+        "ageTicks": 27952,
+        "generation": 0,
+        "lastBirth": {},
+        "blocked": "",
+        "juvenile": false,
+        "activity": "not ready for a child",
+        "nursery": "-664, 64, -632",
+        "attempts": 0,
+        "breedingEnabled": true,
+        "nextBedSearch": 322318,
+        "availableNurseries": [
+          "-664, 64, -630"
+        ]
+      }
+    },
+    {
+      "id": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "health": 24.0,
+      "food": 17,
+      "activity": "looking for real camp supplies",
+      "foodWork": {
+        "shared": 0,
+        "hayReturn": {
+          "nodes": 3,
+          "from": "(-648.3922180884359, 64.0, -616.6208754621307)",
+          "gameTime": 321475,
+          "landmark": "-641, 64, -624",
+          "moved": true,
+          "end": "-647, 64, -619"
+        },
+        "repeatHarvests": 0,
+        "crafted": 0,
+        "harvested": 0,
+        "target": "",
+        "blocked": []
+      },
+      "campWork": {
+        "route": "native storage path started",
+        "recipes": 0,
+        "beds": 0,
+        "activity": "looking for real camp supplies",
+        "access": {
+          "blocks": 0,
+          "step": 0,
+          "lastReceipt": {},
+          "activity": "no observed small masonry entrance to a free bunk",
+          "lastFailure": {},
+          "bed": ""
+        },
+        "target": "",
+        "lastReceipt": {
+          "contents": [
+            "1 minecraft:arrow",
+            "1 minecraft:string",
+            "1 minecraft:arrow",
+            "1 minecraft:egg",
+            "1 minecraft:egg",
+            "1 minecraft:arrow",
+            "1 minecraft:egg",
+            "1 minecraft:egg",
+            "1 minecraft:arrow",
+            "1 minecraft:egg",
+            "2 minecraft:string"
+          ],
+          "gameTime": 319905,
+          "inspected": "-649, 64, -624"
+        },
+        "reusedBeds": {
+          "activity": "no reusable free upper bunk nearby",
+          "collected": 0,
+          "lastReceipt": {},
+          "routeRejections": 0
+        },
+        "inspections": 5,
+        "transfers": 2,
+        "storageRoute": {
+          "failures": 0,
+          "nodes": 17,
+          "from": "(-633.9655689723324, 65.0, -610.969305300959)",
+          "gameTime": 319795,
+          "moved": true,
+          "store": "-649, 64, -624"
+        },
+        "bedSite": "",
+        "bedApproach": {},
+        "fallenBeds": 0,
+        "fallenAudit": {},
+        "fallenRoute": {}
+      },
+      "campMeals": {
+        "patrol": {
+          "cages": 0,
+          "until": 0,
+          "visited": 0,
+          "target": "",
+          "lastRoute": {}
+        },
+        "calls": {
+          "lastHeard": {
+            "heardRange": 120.0,
+            "position": "-596, 64, -634",
+            "volume": 10.0,
+            "gameTime": 321443,
+            "speaker": "88893f4d-fbba-4245-b563-089e8c0a5b52",
+            "sound": "minecraft:entity.villager.no",
+            "distance": 54.62432,
+            "nativeRange": 160.0
+          },
+          "deferred": 0,
+          "entrance": {
+            "activity": "no camp entrance work",
+            "removed": 0,
+            "outer": "",
+            "lastReceipt": {},
+            "step": 0
+          },
+          "target": "-597, 64, -614",
+          "walkingStep": {
+            "position": "(-595.3222416823311, 63.0, -628.1870154199119)",
+            "nextNode": "-596, 63, -628",
+            "gameTime": 318505,
+            "nextIndex": 13,
+            "onGround": true,
+            "wanted": [
+              -595.5,
+              63.0,
+              -627.5
+            ]
+          },
+          "waiting": 8,
+          "tripUntil": 319675,
+          "bodyRoutes": {
+            "failedSteps": [],
+            "searches": 106,
+            "waypoints": [
+              {
+                "floor": 64.0,
+                "position": "(-648.4225883058497, 64.0, -616.5921780796941)",
+                "node": "-649, 64, -617",
+                "gameTime": 321355,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-647.7764396298136, 64.0, -617.1338828500072)",
+                "node": "-648, 64, -618",
+                "gameTime": 321363,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-646.8421258026051, 64.0, -618.1444853118842)",
+                "node": "-647, 64, -619",
+                "gameTime": 321371,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-646.7112979637546, 64.0, -618.2811413818735)",
+                "node": "-647, 64, -619",
+                "gameTime": 321375,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-647.2015634383233, 64.0, -617.8947879377503)",
+                "node": "-648, 64, -618",
+                "gameTime": 321382,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-648.0954452599063, 64.0, -616.9275471294853)",
+                "node": "-649, 64, -617",
+                "gameTime": 321392,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-648.3717904194293, 64.0, -616.6430575456033)",
+                "node": "-649, 64, -617",
+                "gameTime": 321395,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-647.8333507837721, 64.0, -617.0545128553124)",
+                "node": "-648, 64, -618",
+                "gameTime": 321402,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-646.9075454336289, 64.0, -618.068257968257)",
+                "node": "-647, 64, -619",
+                "gameTime": 321410,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-646.772232513779, 64.0, -618.212172053551)",
+                "node": "-647, 64, -619",
+                "gameTime": 321415,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-647.1865783175978, 64.0, -617.9173397222874)",
+                "node": "-648, 64, -618",
+                "gameTime": 321421,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-648.1671410251934, 64.0, -616.8548448308201)",
+                "node": "-649, 64, -617",
+                "gameTime": 321432,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-648.4431028086527, 64.0, -616.569993526504)",
+                "node": "-649, 64, -617",
+                "gameTime": 321435,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-647.7957881975558, 64.0, -617.1107386147385)",
+                "node": "-648, 64, -618",
+                "gameTime": 321443,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-646.8622818787849, 64.0, -618.1221760733162)",
+                "node": "-647, 64, -619",
+                "gameTime": 321451,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-646.7316748738037, 64.0, -618.2590440972833)",
+                "node": "-647, 64, -619",
+                "gameTime": 321455,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-647.2211376243064, 64.0, -617.8717444302204)",
+                "node": "-648, 64, -618",
+                "gameTime": 321462,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-648.1156239250283, 64.0, -616.9051243179874)",
+                "node": "-649, 64, -617",
+                "gameTime": 321472,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-648.3922180884359, 64.0, -616.6208754621307)",
+                "node": "-649, 64, -617",
+                "gameTime": 321475,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-647.7492078981734, 64.0, -617.1650434672681)",
+                "node": "-648, 64, -618",
+                "gameTime": 321483,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-646.9340427759607, 64.0, -618.0505326025295)",
+                "node": "-647, 64, -619",
+                "gameTime": 321490,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-646.7973886553838, 64.0, -618.1931591866123)",
+                "node": "-647, 64, -619",
+                "gameTime": 321495,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-647.2088206251595, 64.0, -617.8979463057241)",
+                "node": "-648, 64, -618",
+                "gameTime": 321501,
+                "grounded": true
+              },
+              {
+                "floor": 64.0,
+                "position": "(-648.096955996923, 64.0, -616.9302766191357)",
+                "node": "-649, 64, -617",
+                "gameTime": 321511,
+                "grounded": true
+              }
+            ],
+            "lastReceipt": {
+              "action": "native route search avoids the actual neighboring living bodies",
+              "gameTime": 321495,
+              "bodies": [
+                "e7f0b50f-ec2b-414f-9d8f-3deebf8f3118",
+                "ee8c7b71-ad8e-4052-be56-771ef569cf0b",
+                "82dc117c-d119-4601-8327-dcd930f9130b",
+                "d6dc22b1-7631-49d6-b91c-2d8f810f98d7",
+                "152c7ca6-a2bd-4c74-8f99-f85f0ee68bd6",
+                "22b5e173-6501-4cb6-bb5b-71352d10f681",
+                "99c34bb9-9f27-4519-a413-d0ec0ce7bd26"
+              ],
+              "from": "(-646.7973886553838, 64.0, -618.1931591866123)"
+            },
+            "blockedNodes": 1483
+          },
+          "heard": 285
+        },
+        "activity": "handed a real meal through the native cell gate",
+        "requests": 8,
+        "delivered": 2,
+        "rejectedPaths": 0,
+        "lastReceipt": {
+          "distance": 3.2251902,
+          "giverBefore": 2,
+          "ownedItemBefore": 2,
+          "handReach": 2.9509736321255886,
+          "to": "573a309c-f0fc-4dd1-94cd-8246d352467c",
+          "giverAfter": 0,
+          "from": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+          "donorSource": "bag",
+          "lever": "-634, 66, -610",
+          "leverRestored": true,
+          "gameTime": 319785,
+          "usedEmergencyReserve": true,
+          "gatesClosed": true,
+          "count": 2,
+          "item": "minecraft:apple",
+          "receiverAfter": 2,
+          "contact": "(-632.568577155473, 66.1, -608.4304368602501)",
+          "ownedItemAfter": 0,
+          "receiverBefore": 0
+        },
+        "hatch": {
+          "lastReceipt": {
+            "tool": "1 minecraft:crossbow",
+            "position": "-597, 64, -615",
+            "nativeWorldDrops": true,
+            "gameTime": 318795,
+            "duration": 60,
+            "upperFenceRetained": true
+          },
+          "opened": 1,
+          "target": ""
+        },
+        "waiting": 8,
+        "lastApproach": {
+          "rendezvous": "recipient",
+          "gameTime": 319655,
+          "nodes": 17,
+          "stands": 33,
+          "actor": "(-646.6763245873146, 64.0, -621.1858656052007)",
+          "nativeCrowdWalk": false,
+          "end": "-634, 65, -611",
+          "recipientId": "573a309c-f0fc-4dd1-94cd-8246d352467c",
+          "recipient": "(-632.6474983058838, 65.0, -607.9848307793104)"
+        },
+        "nativeSprinting": false,
+        "sprintDistance": 61.77829824541332,
+        "supplyRun": {
+          "from": "(-600.3911754574372, 63.0, -633.235796647587)",
+          "nodes": 21,
+          "speed": 1.1,
+          "gameTime": 318855,
+          "food": 19
+        },
+        "injuredRequests": [
+          "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+          "4ed39acd-b764-4c41-b799-5ac9d5feefe7",
+          "64324351-28f6-4bc1-a8f8-949f3300763b",
+          "764e71da-6e8c-4016-b4cb-b9aee031c564",
+          "88893f4d-fbba-4245-b563-089e8c0a5b52",
+          "f13adb74-0ccc-4105-af94-63bc300bc5c3"
+        ],
+        "pursuing": ""
+      },
+      "family": {
+        "ageTicks": 16982,
+        "generation": 0,
+        "lastBirth": {},
+        "blocked": "",
+        "juvenile": false,
+        "activity": "not ready for a child",
+        "nursery": "-660, 64, -629",
+        "attempts": 0,
+        "breedingEnabled": true,
+        "nextBedSearch": 322315,
+        "availableNurseries": [
+          "-664, 64, -630"
+        ]
+      }
+    }
+  ]
+}

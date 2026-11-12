@@ -58,7 +58,8 @@ public final class GlossaryStore {
     private static boolean supportedSchema(JsonObject object) {
         JsonElement version = object.get("schemaVersion");
         return version != null && version.isJsonPrimitive() && version.getAsJsonPrimitive().isNumber()
-                && version.getAsDouble() == Glossary.SCHEMA_VERSION;
+                && version.getAsDouble() == Math.rint(version.getAsDouble())
+                && version.getAsDouble() >= 1 && version.getAsDouble() <= Glossary.SCHEMA_VERSION;
     }
 
     /** Returns false, without writing, for protected files or on IO failure. */

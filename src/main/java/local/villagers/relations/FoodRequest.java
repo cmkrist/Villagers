@@ -38,10 +38,16 @@ public final class FoodRequest {
 
     /** Require the complete actual phrase and the listener's decoded meanings, not hidden concept labels. */
     public static boolean understands(Utterance words, Lexicon listener, Concept... expected) {
-        if (words == null || listener == null || expected.length == 0 || words.words().size() != expected.length) return false;
+        if (words == null || listener == null || expected.length == 0) return false;
+        if (words.sentence() != null) {
+            var interpretation = local.villagers.language.Sentence.interpret(words.sounds(), listener);
+            return interpretation.complete() && interpretation.clauses().equals(
+                    local.villagers.language.Clause.fromConcepts(java.util.List.of(expected)));
+        }
+        if (words.words().size() != expected.length) return false;
         for (int i = 0; i < expected.length; i++) {
             var spoken = words.words().get(i);
-            if (spoken.concept() != expected[i] || listener.meaning(spoken.word()) != expected[i]) return false;
+            if (listener.meaning(spoken.word()) != expected[i]) return false;
         }
         return true;
     }

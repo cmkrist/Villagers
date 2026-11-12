@@ -8,7 +8,9 @@ public enum Concept {
     HELLO, YES, NO, THANKS, WANT, TRADE,
     FOOD, BED, FRIEND, WALK, DANGER, MONSTER, HURT,
     HUNGRY, TIRED, LONELY, HAPPY, AFRAID,
-    EMERALD, BREAD, WHEAT, CARROT, POTATO, BEETROOT, SEEDS, HOE, SWORD, WOOD;
+    EMERALD, BREAD, WHEAT, CARROT, POTATO, BEETROOT, SEEDS, HOE, SWORD, WOOD,
+    I, YOU, IS, SEE, SAY, GIVE, NOT, PAST,
+    HAVE, LIKE, ASK, PROMISE, MEET, AGAIN, PERSON, PLACE, NAMED, HERE, SOURCE, RECENT, OLD, FROM, KNOW, PARTNER, CHILD, MAKE, PAY, WORK, ONE, TWO, SOON, STONE, WOODEN_HOE, STONE_HOE, WOODEN_SWORD, STONE_SWORD;
 
     private static final Map<String, Concept> ITEMS = Map.ofEntries(
             Map.entry("minecraft:emerald", EMERALD), Map.entry("minecraft:bread", BREAD),
@@ -21,14 +23,21 @@ public enum Concept {
         if (itemId == null) return null;
         Concept direct = ITEMS.get(itemId);
         if (direct != null) return direct;
+        if(itemId.equals("minecraft:stone")||itemId.equals("minecraft:cobblestone"))return STONE;
         if (itemId.endsWith("_hoe")) return HOE;
         if (itemId.endsWith("_sword")) return SWORD;
         if (itemId.endsWith("_log") || itemId.endsWith("_wood") || itemId.endsWith("_stem") || itemId.endsWith("_hyphae")) return WOOD;
         return null;
     }
 
+    /** Public appearance of supported tools; this refines rather than replaces legacy generic item categories. */
+    public static Concept specificItem(String itemId){return switch(itemId){
+        case "minecraft:wooden_hoe" -> WOODEN_HOE;case "minecraft:stone_hoe" -> STONE_HOE;
+        case "minecraft:wooden_sword" -> WOODEN_SWORD;case "minecraft:stone_sword" -> STONE_SWORD;default -> null;
+    };}
+
     /** The English gloss shown once a player has learned a word, e.g. "bread". */
-    public String gloss() { return name().toLowerCase(Locale.ROOT); }
+    public String gloss() { return name().toLowerCase(Locale.ROOT).replace('_',' '); }
 
     /** Parses a gloss typed by a player, case-insensitively; null if unknown. */
     public static Concept parse(String text) {

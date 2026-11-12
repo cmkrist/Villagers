@@ -1,0 +1,496 @@
+{
+  "runtime": "runs/native-nearer-hearing-route-v301",
+  "terminal": {
+    "pid": 2264765,
+    "exitCode": 0
+  },
+  "stop": {
+    "actor": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+    "position": "(-588.3496574417138, 64.0, -587.0964712984036)",
+    "air": 300,
+    "elapsed": 5239,
+    "health": 1.0,
+    "stage": "health_stop",
+    "gameTime": 322751,
+    "status": "failed"
+  },
+  "population": {
+    "beforeHumanoids": 192,
+    "afterHumanoids": 192,
+    "missingOriginalIds": [],
+    "newHumanoidIds": [],
+    "beforeLivingHumanoids": 192,
+    "afterLivingHumanoids": 192,
+    "newlyDeadOrMissingIds": [],
+    "nonlivingAfterIds": []
+  },
+  "adventurer": {
+    "elapsed": 5200,
+    "gameTime": 322712,
+    "actors": [
+      {
+        "mainhand": "1 minecraft:iron_pickaxe",
+        "position": "(-466.30000001192093, 62.0, -379.69999998807907)",
+        "navigation": {
+          "velocity": "(0.0, -0.0784000015258789, 0.0)",
+          "wanted": [
+            -466.5,
+            62.0,
+            -379.5
+          ],
+          "position": "(-466.30000001192093, 62.0, -379.69999998807907)",
+          "onGround": true,
+          "path": {}
+        },
+        "food": 19,
+        "id": "edc5ea2a-f488-4aea-961c-456c3f7200f1",
+        "armor": {
+          "equipped": 0,
+          "nextPiece": "CHEST",
+          "ready": false,
+          "ironTarget": 8,
+          "lastReceipt": {},
+          "crafted": 0
+        },
+        "inventory": [
+          "1 minecraft:stone_pickaxe",
+          "1 minecraft:wooden_hoe",
+          "32 minecraft:dirt",
+          "3 minecraft:bread",
+          "2 minecraft:carrot",
+          "4 minecraft:stick",
+          "1 minecraft:raw_iron",
+          "0 minecraft:air"
+        ],
+        "iron": {
+          "activity": "cleared a real quarry soil block",
+          "furnace": "-463, 63, -376",
+          "crafted": 0,
+          "ironTaken": 3,
+          "passage": {
+            "face": "",
+            "mode": "level",
+            "faceBlock": "Block{minecraft:andesite}",
+            "activity": "retained the dry exit after bounded prospecting found no deeper descent",
+            "part": 0,
+            "retainedFloors": 104,
+            "root": "",
+            "depth": 0,
+            "turns": 1,
+            "reselect": false,
+            "retainedEntries": 1,
+            "exhaustedEntries": 1,
+            "stepsWithoutDepth": 0,
+            "waterSeals": {
+              "placed": 0,
+              "active": false,
+              "activity": "no water sealing job",
+              "lastReceipt": {}
+            },
+            "foundations": 0,
+            "lastFoundation": {},
+            "exhausted": false,
+            "failedScans": 0,
+            "entry": "",
+            "frontier": "",
+            "backtracks": 0,
+            "lastRoute": {
+              "actor": "(-474.4972973502503, 56.0, -375.6118208361074)",
+              "nodes": 15,
+              "gameTime": 321083,
+              "end": "-480, 63, -379",
+              "target": "-480, 63, -379",
+              "safe": true
+            },
+            "frontierSearch": {
+              "activity": "no remaining eligible observed junctions",
+              "candidates": 0,
+              "queries": 0
+            }
+          },
+          "plannedSite": "",
+          "lastApproach": {},
+          "lastReceipt": {},
+          "loadedOre": 3,
+          "fuelStored": true
+        },
+        "ageTicks": 259245,
+        "health": 20.0,
+        "quarry": {
+          "lastApproach": {
+            "target": "-467, 62, -381",
+            "actor": "(-467.554565407429, 63.0, -378.501812802198)",
+            "nodes": 2,
+            "gameTime": 322673,
+            "end": "-467, 62, -380",
+            "safe": true,
+            "accepted": true
+          },
+          "dug": 2,
+          "centerings": 0,
+          "stand": "-467, 62, -380",
+          "activity": "cleared a real quarry soil block",
+          "lastStop": {},
+          "inspection": {
+            "reviewAt": 345203,
+            "route": "none",
+            "visited": 0,
+            "lastRepair": {},
+            "reconsidered": 2,
+            "returning": false,
+            "repairs": 0,
+            "lastRetirement": {
+              "entryHeight": 63,
+              "startedPosition": "(-479.1153911332483, 63.0, -378.50002342008275)",
+              "returnedPosition": "(-479.2970339387862, 63.0, -378.50002342008275)",
+              "returnedGameTime": 321213,
+              "started": 321203,
+              "returnedHeight": 63.0,
+              "entry": "-480, 63, -379"
+            },
+            "survey": {
+              "lastRoute": {},
+              "visited": 1,
+              "target": ""
+            },
+            "target": ""
+          },
+          "origin": "-467, 63, -379",
+          "lastReceipt": {
+            "drops": [
+              "1 minecraft:dirt"
+            ],
+            "step": 2,
+            "gameTime": 322703,
+            "position": "-467, 62, -381"
+          },
+          "step": 2
+        }
+      }
+    ]
+  },
+  "receipts": [
+    {
+      "actor": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "task": "campWork",
+      "receipt": {
+        "contents": [
+          "1 minecraft:egg",
+          "4 minecraft:iron_nugget",
+          "2 minecraft:iron_nugget",
+          "3 minecraft:iron_nugget",
+          "1 minecraft:egg"
+        ],
+        "gameTime": 318042,
+        "inspected": "-616, 64, -633"
+      }
+    },
+    {
+      "actor": "460ab4b6-1522-4504-9673-25fd503e0610",
+      "task": "campMeals",
+      "receipt": {
+        "receiverBefore": 0,
+        "distance": 1.9198127,
+        "giverBefore": 1,
+        "ownedItemBefore": 1,
+        "handReach": 2.014284386942535,
+        "to": "4ed39acd-b764-4c41-b799-5ac9d5feefe7",
+        "giverAfter": 0,
+        "from": "460ab4b6-1522-4504-9673-25fd503e0610",
+        "donorSource": "bag",
+        "lever": "-634, 66, -610",
+        "leverRestored": true,
+        "gameTime": 318177,
+        "usedEmergencyReserve": true,
+        "gatesClosed": true,
+        "count": 1,
+        "item": "minecraft:bread",
+        "receiverAfter": 1,
+        "contact": "(-632.1660759387655, 65.5, -607.6569541763225)",
+        "ownedItemAfter": 0
+      }
+    },
+    {
+      "actor": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "task": "campWork",
+      "receipt": {
+        "container": "-604, 63, -635",
+        "sourceAfter": 0,
+        "gameTime": 318432,
+        "item": "minecraft:beetroot",
+        "moved": 3,
+        "sourceBefore": 3
+      }
+    },
+    {
+      "actor": "460ab4b6-1522-4504-9673-25fd503e0610",
+      "task": "campWork",
+      "receipt": {
+        "container": "-649, 64, -626",
+        "sourceAfter": 0,
+        "gameTime": 318547,
+        "item": "minecraft:bread",
+        "moved": 2,
+        "sourceBefore": 2
+      }
+    },
+    {
+      "actor": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "task": "campMeals",
+      "receipt": {
+        "from": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+        "receiverAfter": 3,
+        "receiverBefore": 0,
+        "count": 3,
+        "item": "minecraft:beetroot",
+        "distance": 2.9210591,
+        "ownedItemBefore": 3,
+        "to": "4c3c0db4-75ea-42f5-8f91-b1c4814944d7",
+        "giverAfter": 0,
+        "gameTime": 318602,
+        "giverBefore": 3,
+        "contact": "(-596.4778931877928, 64.5, -613.6769378102347)",
+        "donorSource": "bag",
+        "handReach": 2.749071455282589,
+        "ownedItemAfter": 0,
+        "usedEmergencyReserve": true
+      }
+    },
+    {
+      "actor": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "task": "campWork",
+      "receipt": {
+        "contents": [
+          "2 minecraft:iron_ingot",
+          "1 minecraft:egg",
+          "2 minecraft:egg",
+          "1 minecraft:iron_ingot"
+        ],
+        "gameTime": 318742,
+        "inspected": "-604, 63, -635"
+      }
+    },
+    {
+      "actor": "460ab4b6-1522-4504-9673-25fd503e0610",
+      "task": "campMeals",
+      "receipt": {
+        "receiverBefore": 0,
+        "distance": 2.7416265,
+        "giverBefore": 2,
+        "ownedItemBefore": 2,
+        "handReach": 2.6109101097177376,
+        "to": "fad46718-2403-42a5-9067-b66e72485ec0",
+        "giverAfter": 0,
+        "from": "460ab4b6-1522-4504-9673-25fd503e0610",
+        "donorSource": "bag",
+        "lever": "-682, 65, -622",
+        "leverRestored": true,
+        "gameTime": 319357,
+        "usedEmergencyReserve": true,
+        "gatesClosed": true,
+        "count": 2,
+        "item": "minecraft:bread",
+        "receiverAfter": 2,
+        "contact": "(-679.7366535726381, 64.5, -622.7275000214577)",
+        "ownedItemAfter": 0
+      }
+    },
+    {
+      "actor": "460ab4b6-1522-4504-9673-25fd503e0610",
+      "task": "campWork",
+      "receipt": {
+        "contents": [
+          "1 minecraft:ominous_bottle"
+        ],
+        "gameTime": 319537,
+        "inspected": "-691, 63, -624"
+      }
+    },
+    {
+      "actor": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "task": "campWork",
+      "receipt": {
+        "container": "-649, 64, -624",
+        "sourceAfter": 0,
+        "gameTime": 319522,
+        "item": "minecraft:apple",
+        "moved": 2,
+        "sourceBefore": 2
+      }
+    },
+    {
+      "actor": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "task": "campMeals",
+      "receipt": {
+        "receiverBefore": 0,
+        "distance": 3.0489151,
+        "giverBefore": 2,
+        "ownedItemBefore": 2,
+        "handReach": 2.9505785772730633,
+        "to": "573a309c-f0fc-4dd1-94cd-8246d352467c",
+        "giverAfter": 0,
+        "from": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+        "donorSource": "bag",
+        "lever": "-634, 66, -610",
+        "leverRestored": true,
+        "gameTime": 319732,
+        "usedEmergencyReserve": true,
+        "gatesClosed": true,
+        "count": 2,
+        "item": "minecraft:apple",
+        "receiverAfter": 2,
+        "contact": "(-632.2685268574479, 66.56000003814697, -608.2619427761382)",
+        "ownedItemAfter": 0
+      }
+    },
+    {
+      "actor": "460ab4b6-1522-4504-9673-25fd503e0610",
+      "task": "campWork",
+      "receipt": {
+        "contents": [
+          "1 minecraft:egg",
+          "1 minecraft:arrow",
+          "1 minecraft:egg",
+          "1 minecraft:arrow",
+          "1 minecraft:egg",
+          "2 minecraft:egg",
+          "1 minecraft:arrow",
+          "1 minecraft:arrow"
+        ],
+        "gameTime": 319867,
+        "inspected": "-691, 63, -645"
+      }
+    },
+    {
+      "actor": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "task": "campWork",
+      "receipt": {
+        "contents": [
+          "1 minecraft:arrow",
+          "1 minecraft:string",
+          "1 minecraft:arrow",
+          "1 minecraft:egg",
+          "1 minecraft:egg",
+          "1 minecraft:arrow",
+          "1 minecraft:egg",
+          "1 minecraft:egg",
+          "1 minecraft:arrow",
+          "1 minecraft:egg",
+          "2 minecraft:string"
+        ],
+        "gameTime": 319852,
+        "inspected": "-649, 64, -624"
+      }
+    },
+    {
+      "actor": "460ab4b6-1522-4504-9673-25fd503e0610",
+      "task": "campWork",
+      "receipt": {
+        "contents": [
+          "1 minecraft:egg",
+          "1 minecraft:egg",
+          "1 minecraft:emerald",
+          "1 minecraft:egg",
+          "1 minecraft:emerald",
+          "1 minecraft:egg",
+          "1 minecraft:egg"
+        ],
+        "gameTime": 320447,
+        "inspected": "-676, 63, -641"
+      }
+    },
+    {
+      "actor": "460ab4b6-1522-4504-9673-25fd503e0610",
+      "task": "campWork",
+      "receipt": {
+        "contents": [],
+        "gameTime": 322577,
+        "inspected": "-674, 63, -573"
+      }
+    },
+    {
+      "actor": "cb79c23c-9623-45ac-9776-90c0f0a7813e",
+      "task": "campWork",
+      "receipt": {
+        "container": "-664, 64, -621",
+        "sourceAfter": 0,
+        "gameTime": 322572,
+        "item": "minecraft:bread",
+        "moved": 7,
+        "sourceBefore": 7
+      }
+    },
+    {
+      "actor": "460ab4b6-1522-4504-9673-25fd503e0610",
+      "task": "campWork",
+      "receipt": {
+        "contents": [
+          "1 minecraft:egg",
+          "2 minecraft:egg",
+          "1 minecraft:ominous_bottle",
+          "1 minecraft:ominous_bottle"
+        ],
+        "gameTime": 322657,
+        "inspected": "-666, 64, -573"
+      }
+    }
+  ],
+  "patients": [
+    {
+      "id": "fad46718-2403-42a5-9067-b66e72485ec0",
+      "name": "Moss-fad4",
+      "position": [
+        -679.4966535631014,
+        64.0,
+        -622.4875000119209
+      ],
+      "health": 3.0,
+      "food": {
+        "foodLevel": 10,
+        "saturation": 7.0,
+        "exhaustion": 2.2633684,
+        "timer": 0
+      },
+      "inventory": []
+    },
+    {
+      "id": "4ed39acd-b764-4c41-b799-5ac9d5feefe7",
+      "name": "Willow-4ed3",
+      "position": [
+        -631.9798613992008,
+        65.0,
+        -607.2811048587537
+      ],
+      "health": 7.0,
+      "food": {
+        "foodLevel": 5,
+        "saturation": 0.0,
+        "exhaustion": 1.6167896,
+        "timer": 0
+      },
+      "inventory": []
+    },
+    {
+      "id": "67f32c45-c10a-4f05-a74d-d1d31fdeac0e",
+      "name": "Birch-67f3",
+      "position": [
+        -588.3496574417138,
+        64.0,
+        -587.0964712984036
+      ],
+      "health": 1.0,
+      "food": {
+        "foodLevel": 0,
+        "saturation": 0.0,
+        "exhaustion": 3.1884532,
+        "timer": 60
+      },
+      "inventory": [
+        {
+          "id": "minecraft:potato",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}
